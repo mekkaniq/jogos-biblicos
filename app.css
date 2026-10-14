@@ -1,7 +1,7 @@
 /* Jogos Bíblicos — visual compartilhado
    Verde profundo · pergaminho · dourado */
-@font-face { font-family: 'Lora'; src: url('../fonts/Lora-Variable.woff') format('woff'); font-weight: 400 700; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Lora'; src: url('../fonts/Lora-Italic-Variable.woff') format('woff'); font-weight: 400 700; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Lora'; src: url('Lora-Variable.woff') format('woff'); font-weight: 400 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Lora'; src: url('Lora-Italic-Variable.woff') format('woff'); font-weight: 400 700; font-style: italic; font-display: swap; }
 
 :root {
   --green-950: #0a1c14; --green-900: #0f281c; --green-800: #163826; --green-700: #1e4a33; --green-600: #2a5e42; --green-500: #3b7454;
@@ -27,7 +27,7 @@ html, body { margin: 0; padding: 0; }
 html { font-size: var(--fs); background: var(--green-950); }
 body {
   font-family: var(--serif); color: var(--ink-900); line-height: 1.45; min-height: 100vh; min-height: 100dvh;
-  background: var(--green-950) url('../img/scenes/jardim.svg') center top / cover fixed;
+  background: var(--green-950) url('jardim.svg') center top / cover fixed;
   -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; overflow-x: hidden;
 }
 body::before { content: ''; position: fixed; inset: 0; background: linear-gradient(180deg, rgba(10, 28, 20, .18), rgba(10, 28, 20, .7) 50%, rgba(10, 28, 20, .9)); pointer-events: none; z-index: 0; }

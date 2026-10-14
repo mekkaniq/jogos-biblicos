@@ -174,7 +174,7 @@
     }
     curRoute = '#/'; render();
   }
-  const sceneUrl = name => `url('${new URL('img/scenes/' + name + '.svg', location.href).href}')`;
+  const sceneUrl = name => `url('${new URL('' + name + '.svg', location.href).href}')`;
   function setScene(name) { document.body.dataset.scene = name; document.body.style.setProperty('--scene', sceneUrl(name)); }
   function go(h) { curRoute = h; render(); try { if (location.hash !== h) history.pushState(null, '', h); } catch (e) { } }
 

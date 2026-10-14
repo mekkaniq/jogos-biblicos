@@ -22,20 +22,20 @@
     const last = st.last;
     const standalone = window.navigator.standalone || matchMedia('(display-mode: standalone)').matches;
     el.innerHTML = `
-      <section class="hero" style="background-image:url('img/tumba.jpg');background-position:center 38%;min-height:360px">
+      <section class="hero" style="background-image:url('tumba.jpg');background-position:center 38%;min-height:360px">
         ${cross}
         <h1><span class="gold-text">Jogos Bíblicos</span></h1>
         <div class="kicker">APRENDA · LEMBRE · DESCUBRA</div>
         <div class="verse">“Guardo no coração as tuas palavras, para não pecar contra ti.”<cite>Salmos 119:11</cite></div>
       </section>
       ${last ? `<button class="continue parch" data-go="${esc(last.route)}">
-          <div class="thumb" style="background-image:url('img/scenes/${games.find(g => g.id === last.game)?.scene || 'jardim'}.svg')"></div>
+          <div class="thumb" style="background-image:url('${games.find(g => g.id === last.game)?.scene || 'jardim'}.svg')"></div>
           <div class="txt"><small>Continuar de onde parei</small><b>${esc(last.label)}</b><span>${esc(last.sub || '')}</span></div>
           <span class="btn btn-gold" style="min-height:46px;padding:0 16px">${I.arrow}</span>
         </button>` : ''}
       <div class="section-title"><h2>Escolha um jogo</h2><span>3 jogos</span></div>
       ${games.map(g => `
-        <button class="game-card" data-go="#/${g.id}" style="background-image:url('img/scenes/${g.scene}.svg')">
+        <button class="game-card" data-go="#/${g.id}" style="background-image:url('${g.scene}.svg')">
           <div class="in">
             <div class="gicon">${g.icon}</div>
             <h3>${g.name}</h3>
