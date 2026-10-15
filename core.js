@@ -8,7 +8,7 @@
   const pad = n => String(n).padStart(2, '0');
 
   // ---------- Progresso (salvo no aparelho) ----------
-  const blank = () => ({ v: 1, settings: { big: false, sound: true }, last: null, caca: { found: {}, hints: {} }, cruzada: { fill: {}, solved: {}, hints: {}, stars: {} }, cartas: { done: {}, cur: null } });
+  const blank = () => ({ v: 1, settings: { big: false, sound: true }, last: null, caca: { found: {}, hints: {} }, cruzada: { fill: {}, solved: {}, hints: {}, stars: {} }, cartas: { done: {}, cur: null }, quiz: { best: 0, runs: 0, right: 0, wins: 0, seen: {}, cur: null } });
   let mem = null;
   function load() {
     if (mem) return mem;
@@ -36,6 +36,11 @@
 
   // ---------- Ícones ----------
   const I = {
+    quiz: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.2a2.8 2.8 0 0 1 5.4 1c0 1.9-2.7 2.4-2.7 4.2"/><circle cx="12" cy="17.6" r=".6" fill="currentColor"/></svg>',
+    skip: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5l8 7-8 7zM14 5l6 7-6 7"/></svg>',
+    people: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c.6-3.6 3-5.6 6-5.6s5.4 2 6 5.6"/><circle cx="17" cy="9" r="2.6"/><path d="M16.5 14.2c2.4.2 4 1.9 4.5 4.8"/></svg>',
+    half: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="8" height="14" rx="2"/><rect x="13" y="5" width="8" height="14" rx="2" stroke-dasharray="2.5 2.5"/></svg>',
+    stop: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v18M6 4h11l-2.5 4L17 12H6"/></svg>',
     back: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
     next: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>',
     arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
@@ -70,7 +75,7 @@
   // ---------- Interface: avisos, janelas, folhas ----------
   function toast(msg, ms = 2400) {
     $$('.toast').forEach(t => t.remove());
-    const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status'); t.textContent = msg;
+    const t = document.createElement('div'); t.className = 'toast' + (document.querySelector('#kb') ? '' : ' bottom'); t.setAttribute('role', 'status'); t.textContent = msg;
     document.body.appendChild(t); setTimeout(() => t.remove(), ms);
   }
   function modal(html, { onClose, dismiss = true } = {}) {

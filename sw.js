@@ -1,6 +1,6 @@
-/* Jogos Bíblicos — funciona sem internet. Versão: claude-v1.0 */
-const CACHE = 'jogos-biblicos-claude-v1.0';
-const ASSETS = ['./', './Lora-Italic-Variable.woff', './Lora-Variable.woff', './app.css', './aurora.svg', './campo.svg', './cidade.svg', './confins.svg', './core.js', './dados-caca.js', './dados-cartas.js', './dados-cruzada.js', './deserto.svg', './galileia.svg', './hub.js', './icon-180.png', './icon-192.png', './icon-512.png', './index.html', './jardim.svg', './jogo-caca.js', './jogo-cartas.js', './jogo-cruzada.js', './manifest.webmanifest', './mar.svg', './monte.svg', './noite.svg', './palacio.svg', './solver.js', './tumba.jpg'];
+/* Jogos Bíblicos — funciona sem internet. Versão: claude-v1.1 */
+const CACHE = 'jogos-biblicos-claude-v1.1';
+const ASSETS = ['./', './Lora-Italic-Variable.woff', './Lora-Variable.woff', './app.css', './aurora.svg', './campo.svg', './cidade.svg', './confins.svg', './core.js', './dados-caca.js', './dados-cartas.js', './dados-cruzada.js', './dados-quiz.js', './deserto.svg', './galileia.svg', './hub.js', './icon-180.png', './icon-192.png', './icon-512.png', './index.html', './jardim.svg', './jogo-caca.js', './jogo-cartas.js', './jogo-cruzada.js', './jogo-quiz.js', './manifest.webmanifest', './mar.svg', './monte.svg', './noite.svg', './palacio.svg', './solver.js', './tumba.jpg'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE && k.startsWith('jogos-biblicos')).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => {

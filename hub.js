@@ -1,4 +1,4 @@
-/* Tela inicial: os três jogos */
+/* Tela inicial: os quatro jogos */
 (function () {
   const { I, cross, esc, load, route, go, openSettings, installHelp } = App;
 
@@ -11,7 +11,8 @@
     return [
       { id: 'cruzada', name: 'Palavra Cruzada', sub: 'Responda às pistas e complete a grade, com teclado grande.', icon: I.grid, scene: 'jardim', done: cruzDone, total: X.challenges.length, unit: 'desafios' },
       { id: 'caca', name: 'Caça-Palavras', sub: 'Encontre as palavras e descubra a história de cada uma.', icon: I.search, scene: 'cidade', done: cacaDone, total: C.phases.length, unit: 'fases' },
-      { id: 'cartas', name: 'Solitaire Bíblico', sub: 'Junte as cartas de cada história bíblica.', icon: I.cards, scene: 'aurora', done: cartDone, total: K.levels.length, unit: 'partidas' }
+      { id: 'cartas', name: 'Solitaire Bíblico', sub: 'Junte as cartas de cada história bíblica.', icon: I.cards, scene: 'aurora', done: cartDone, total: K.levels.length, unit: 'partidas' },
+      { id: 'quiz', name: 'Quiz Bíblico', sub: 'Responda 16 perguntas e chegue ao milhão. Sem relógio!', icon: I.quiz, scene: 'palacio', quiz: st.quiz }
     ];
   }
 
@@ -33,14 +34,14 @@
           <div class="txt"><small>Continuar de onde parei</small><b>${esc(last.label)}</b><span>${esc(last.sub || '')}</span></div>
           <span class="btn btn-gold" style="min-height:46px;padding:0 16px">${I.arrow}</span>
         </button>` : ''}
-      <div class="section-title"><h2>Escolha um jogo</h2><span>3 jogos</span></div>
+      <div class="section-title"><h2>Escolha um jogo</h2><span>4 jogos</span></div>
       ${games.map(g => `
         <button class="game-card" data-go="#/${g.id}" style="background-image:url('${g.scene}.svg')">
           <div class="in">
             <div class="gicon">${g.icon}</div>
             <h3>${g.name}</h3>
             <p>${g.sub}</p>
-            <div class="meta"><div class="bar"><i style="width:${Math.round(g.done / g.total * 100)}%"></i></div><span>${g.done}/${g.total} ${g.unit}</span></div>
+            ${g.quiz ? `<div class="meta"><span>${g.quiz.best ? `Recorde: ${g.quiz.best >= 1e6 ? '1 milhão' : (g.quiz.best / 1e3) + ' mil'} pontos` : 'Novo! Experimente'}</span></div>` : `<div class="meta"><div class="bar"><i style="width:${Math.round(g.done / g.total * 100)}%"></i></div><span>${g.done}/${g.total} ${g.unit}</span></div>`}
           </div>
           <span class="go btn btn-gold" style="min-height:46px;padding:0 18px">Jogar</span>
         </button>`).join('')}
@@ -49,7 +50,7 @@
         <button class="btn" data-settings>${I.gear} Ajustes</button>
         ${standalone ? '' : `<button class="btn" data-install>${I.share} Instalar no iPhone</button>`}
       </div>
-      <p class="credit">Textos bíblicos: Almeida Revista e Atualizada · Foto da capa: Pisit Heng / Unsplash · versão 1.0</p>`;
+      <p class="credit">Textos bíblicos: Almeida Revista e Atualizada · Foto da capa: Pisit Heng / Unsplash · versão claude v1.1</p>`;
     el.addEventListener('click', e => {
       const g = e.target.closest('[data-go]'); if (g) { App.sfx.tap(); go(g.dataset.go); }
       if (e.target.closest('[data-settings]')) openSettings();
