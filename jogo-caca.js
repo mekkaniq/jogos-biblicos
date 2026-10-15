@@ -23,7 +23,7 @@
     D().phases.forEach(p => p.w.forEach(add)); (D().extra || []).forEach(add);
     return dictCache;
   }
-  App.caca = { isDone, dict };
+  App.caca = { isDone, dict, dailyDone: () => { const k = todayKey(); const dp = daily(k); return !!(dp && isDone(dp)); } };
 
   const topbar = (back, title, sub, right = '') => `<div class="topbar"><button class="icon-btn" data-back="${back}" aria-label="Voltar">${I.back}</button><div class="ttl"><b>${title}</b>${sub ? `<small>${sub}</small>` : ''}</div>${right || `<button class="icon-btn" data-settings aria-label="Ajustes">${I.gear}</button>`}</div>`;
   function common(el) {
