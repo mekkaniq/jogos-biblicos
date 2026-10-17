@@ -1,7 +1,7 @@
 /* Jogos Bíblicos — núcleo: progresso, rotas, ícones, avisos, sons */
 (function () {
   'use strict';
-  const KEY = 'jogos-biblicos';           // nunca muda: o progresso sobrevive às atualizações
+  const KEY = window.__BETA ? 'jogos-biblicos-beta' : 'jogos-biblicos';   // nunca muda: o progresso sobrevive às atualizações (o beta tem o seu, separado)
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -13,6 +13,8 @@
   function load() {
     if (mem) return mem;
     try { mem = JSON.parse(localStorage.getItem(KEY)) || null; } catch (e) { mem = null; }
+    // beta: começa com uma cópia do progresso do app oficial (o oficial nunca é alterado)
+    if (!mem && window.__BETA) { try { mem = JSON.parse(localStorage.getItem('jogos-biblicos')) || null; } catch (e) { mem = null; } if (mem) save(); }
     if (!mem) { mem = blank(); migrateOld(mem); save(); }
     const b = blank();
     for (const k of Object.keys(b)) if (mem[k] === undefined) mem[k] = b[k];
@@ -178,7 +180,7 @@
     for (const [re, fn] of routes) {
       const m = h.match(re);
       if (m) {
-        app.className = ''; document.body.removeAttribute('data-scene'); document.body.style.removeProperty('--scene');
+        app.className = ''; document.body.classList.remove('kids', 'turma'); try { speechSynthesis.cancel(); } catch (e) { } document.body.removeAttribute('data-scene'); document.body.style.removeProperty('--scene');
         app.innerHTML = '';
         const div = document.createElement('div'); div.className = 'screen'; app.appendChild(div);
         current = fn(div, ...m.slice(1)) || null;
