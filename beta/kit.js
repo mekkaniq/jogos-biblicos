@@ -34,7 +34,7 @@
       const desc = hasT && o.trackDesc ? o.trackDesc[trk] : '';
       el.innerHTML = `${topbar('#/', o.title, o.sub)}
       <section class="hero" style="background-image:url('${App.sceneUrl(o.scene).slice(5, -2)}');min-height:220px">
-        ${gicon(o.icon)}<h1 style="font-size:2rem"><span class="gold-text">${o.heroTitle}</span></h1><div class="sub">${o.heroSub}</div>
+        ${App.lumi ? App.lumi.html('lendo', 'quiet hero-lumi') : ''}${gicon(o.icon)}<h1 style="font-size:2rem"><span class="gold-text">${o.heroTitle}</span></h1><div class="sub">${o.heroSub}</div>
       </section>
       ${o.top || ''}
       ${hasT ? `<div class="trk-tabs">${[1, 2, 3].map(t => { const ls = o.levels.filter(l => l.t === t); const d = ls.filter(l => done[l.n]).length; return `<button class="trk ${t === trk ? 'on' : ''}" data-trk="${t}"><span>${TRK_IC[t]}</span><b>${TRK[t]}</b><small>${d}/${ls.length}</small></button>`; }).join('')}</div>

@@ -877,3 +877,14 @@ body.turma .kd-topts div { font-size: clamp(1.15rem, 3vw, 2rem); }
 .kd-win .kd-lumi.solo { margin-top: 34px; }
 .kd-stk { aspect-ratio: auto; min-height: 132px; }
 .kd-stk:not(.got) span { opacity: .55; filter: grayscale(.5); }
+
+/* ===================== v1.4 — Lumi discreta nos jogos dos adultos ===================== */
+.section-title.daily { align-items: flex-end; }
+.hub-lumi { width: 58px; margin: -26px 4px -4px auto; }
+.section-title.daily > span { margin-left: 0; }
+.hero-lumi { position: absolute; right: 8px; top: 8px; width: 66px; z-index: 2; }
+.lumi-peek { position: fixed; right: 10px; bottom: calc(14px + var(--safe-bottom, 0px)); z-index: 60; pointer-events: none; animation: lupeek .55s cubic-bezier(.3, 1.4, .5, 1) both; }
+.lumi-peek .lumi { width: 104px; }
+.lumi-peek.out { animation: lupeekout .55s ease-in both; }
+@keyframes lupeek { from { transform: translateY(140%); } }
+@keyframes lupeekout { to { transform: translateY(140%); opacity: 0; } }

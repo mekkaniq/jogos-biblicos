@@ -7,55 +7,31 @@
   const storyOf = id => D().stories.find(s => s.id === id);
   const pick = a => a[Math.floor(Math.random() * a.length)];
 
-  // =====================================================================
-  //  LUMI — a ovelhinha animada
-  //  Poses: oi, festa, pensando, dica, lendo, dormindo, rosto, sarca.
-  //  Quatro poses têm um quadro de "piscar" (olhos fechados) por cima.
-  // =====================================================================
-  const lumiSrc = n => 'lumi-' + n + '.webp';
-  const BLINK = { oi: [33.76, 21.67, 46.82], pensando: [32.11, 21.94, 48.16], dica: [31.39, 17.70, 41.39], lendo: [29.17, 26.01, 40.83] };
-  const body = p => { const b = BLINK[p]; return `<img class="lu-i" src="${lumiSrc(p)}" alt="" draggable="false">${b ? `<img class="lu-e" src="${lumiSrc(p + '-pisca')}" style="left:${b[0]}%;top:${b[1]}%;width:${b[2]}%" alt="" draggable="false">` : ''}`; };
-  const lumiHTML = (p, cls = '') => `<button class="lumi ${cls}" data-pose="${p}" data-lumi aria-label="Lumi"><span class="lu-sh"></span><span class="lu-b">${body(p)}</span><span class="lu-fx"></span></button>`;
-  function setPose(lu, p) {
-    if (!lu || lu.dataset.pose === p) return;
-    lu.dataset.pose = p; $('.lu-b', lu).innerHTML = body(p);
-    anim(lu, 'swap', 450);
-  }
-  function anim(lu, cls, ms) {
-    if (!lu) return; lu.classList.remove(cls); void lu.offsetWidth; lu.classList.add(cls);
-    clearTimeout(lu['_' + cls]); lu['_' + cls] = setTimeout(() => lu.classList.remove(cls), ms || 900);
-  }
-  function burst(lu, chars, n = 7) {
-    const fx = lu && $('.lu-fx', lu); if (!fx) return;
-    for (let i = 0; i < n; i++) {
-      const s = document.createElement('i'); s.textContent = pick(chars);
-      s.style.cssText = `--x:${((Math.random() * 2 - 1) * 70).toFixed(0)}px;--y:${(-50 - Math.random() * 60).toFixed(0)}px;--r:${((Math.random() * 2 - 1) * 40).toFixed(0)}deg;left:${(30 + Math.random() * 40).toFixed(0)}%;animation-delay:${i * 45}ms;font-size:${(14 + Math.random() * 12).toFixed(0)}px`;
-      fx.appendChild(s); setTimeout(() => s.remove(), 1600);
-    }
-  }
-  // reações prontas
-  const Lumi = {
-    yay(lu) { setPose(lu, 'festa'); anim(lu, 'hop', 800); burst(lu, ['✨', '⭐', '💛', '🌟'], 9); },
-    oops(lu) { setPose(lu, 'pensando'); anim(lu, 'no', 700); burst(lu, ['💭'], 1); },
-    hint(lu) { setPose(lu, 'dica'); anim(lu, 'lean', 1000); },
-    love(lu) { anim(lu, 'hop', 800); burst(lu, ['💛', '❤️', '💕'], 6); },
-    wave(lu) { anim(lu, 'wave', 1700); }
-  };
-  // piscar: um só relógio para todas as Lumis da tela
-  (function blinkLoop() {
-    $$('.lumi:not(.sleep)').forEach(lu => {
-      if (Math.random() < .55) { lu.classList.add('blink'); setTimeout(() => lu.classList.remove('blink'), 140); if (Math.random() < .25) setTimeout(() => { lu.classList.add('blink'); setTimeout(() => lu.classList.remove('blink'), 120); }, 300); }
-    });
-    setTimeout(blinkLoop, 1800 + Math.random() * 2400);
-  })();
+  // a Lumi animada vem do arquivo lumi.js (compartilhada com os jogos dos adultos)
+  const { html: lumiHTML, pose: setPose, anim, burst, react: Lumi } = App.lumi;
 
   // ---------- narração com a voz do próprio aparelho (a Lumi "fala" junto) ----------
   let voice = null, talkT = 0;
-  function pickVoice() { if (!('speechSynthesis' in window)) return; const vs = speechSynthesis.getVoices(); voice = vs.find(v => /pt[-_]BR/i.test(v.lang) && /Luciana|Fernanda|Google/i.test(v.name)) || vs.find(v => /pt[-_]BR/i.test(v.lang)) || vs.find(v => /^pt/i.test(v.lang)) || null; }
+  function pickVoice() {
+    if (!('speechSynthesis' in window)) return;
+    // prefere as vozes de alta qualidade que a pessoa baixou no aparelho (Premium / Aprimorada)
+    const pt = speechSynthesis.getVoices().filter(v => /^pt[-_]?BR/i.test(v.lang) || /^pt/i.test(v.lang));
+    const score = v => (/premium/i.test(v.name) ? 40 : 0) + (/enhanced|aprimorad|melhorad|natural|neural/i.test(v.name) ? 30 : 0) + (/pt[-_]BR/i.test(v.lang) ? 10 : 0) + (/Luciana|Fernanda|Francisca|Thalita|Google/i.test(v.name) ? 5 : 0);
+    voice = pt.sort((a, b) => score(b) - score(a))[0] || null;
+  }
   if ('speechSynthesis' in window) { pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
+  // referências bíblicas faladas por extenso: "Gênesis 1:3" → "Gênesis, capítulo 1, versículo 3" (antes virava "1 hora e 3 minutos")
+  const ORD = { 1: 'Primeiro', 2: 'Segundo', 3: 'Terceiro' };
+  function forSpeech(t) {
+    return t.replace(/[“”"]/g, '').replace(/[\u{1F300}-\u{1FAFF}☀-➿]️?/gu, '')
+      .replace(/\b([123]) (?=[A-ZÁÉÍÓÚ][a-záéíóúâêôãõç]+ \d)/g, (_, n) => ORD[n] + ' ')
+      .replace(/(\d+):(\d+)\s*[-–]\s*(\d+)/g, ', capítulo $1, versículos $2 a $3')
+      .replace(/(\d+):(\d+)/g, ', capítulo $1, versículo $2')
+      .replace(/(\d+)\s*[–-]\s*(\d+)/g, '$1 a $2').replace(/ ,/g, ',');
+  }
   const talking = on => $$('.lumi:not(.sleep)').forEach(lu => lu.classList.toggle('talk', on));
   function speak(t, words) {
-    const txt = t.replace(/[“”"]/g, '').replace(/[\u{1F300}-\u{1FAFF}☀-➿]/gu, '');
+    const txt = forSpeech(t);
     clearTimeout(talkT);
     if (!S().voice || !('speechSynthesis' in window)) { talking(true); talkT = setTimeout(() => talking(false), Math.min(2600, 500 + txt.length * 25)); return; }
     try {
