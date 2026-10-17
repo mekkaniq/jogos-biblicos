@@ -135,6 +135,7 @@
       <div style="margin-top:10px">
         <button class="setting" style="width:100%" data-s="big"><div><b>Letras grandes</b><span>Aumenta textos e botões</span></div><i class="switch ${st.big ? 'on' : ''}"></i></button>
         <button class="setting" style="width:100%" data-s="sound"><div><b>Sons</b><span>Toques suaves ao acertar</span></div><i class="switch ${st.sound ? 'on' : ''}"></i></button>
+        <button class="setting" style="width:100%" data-aboutset><div><b>Sobre o texto bíblico</b><span>Almeida Corrigida Fiel (ACF)</span></div>${I.next}</button>
         <button class="setting" style="width:100%" data-install><div><b>Instalar no iPhone</b><span>Ter o ícone na tela inicial</span></div>${I.next}</button>
         <button class="setting" style="width:100%;border:0" data-reset><div><b>Recomeçar do zero</b><span>Apaga o progresso deste aparelho</span></div>${I.next}</button>
       </div>
@@ -143,9 +144,10 @@
       const s = e.target.closest('[data-s]');
       if (s) { const k = s.dataset.s; st[k] = !st[k]; save(); applySettings(); $('.switch', s).classList.toggle('on', st[k]); if (k === 'sound' && st[k]) sfx.good(); if (k === 'big') changed = true; }
       if (e.target.closest('[data-install]')) { m.close(); installHelp(); }
+      if (e.target.closest('[data-aboutset]')) { m.close(); about(); }
       if (e.target.closest('[data-reset]')) {
         m.close();
-        const c = modal(`<h2>Recomeçar?</h2><p>Todo o progresso dos três jogos neste aparelho será apagado.</p><div class="actions"><button class="btn btn-ghost" data-close>Cancelar</button><button class="btn btn-green" data-yes>Sim, apagar</button></div>`);
+        const c = modal(`<h2>Recomeçar?</h2><p>Todo o progresso de todos os jogos neste aparelho será apagado.</p><div class="actions"><button class="btn btn-ghost" data-close>Cancelar</button><button class="btn btn-green" data-yes>Sim, apagar</button></div>`);
         c.el.addEventListener('click', ev => { if (ev.target.closest('[data-yes]')) { const s2 = load().settings; mem = blank(); mem.settings = s2; save(); c.close(); go('#/'); toast('Progresso apagado.'); } });
       }
     });
@@ -190,7 +192,14 @@
   function setScene(name) { document.body.dataset.scene = name; document.body.style.setProperty('--scene', sceneUrl(name)); }
   function go(h) { curRoute = h; render(); try { if (location.hash !== h) history.pushState(null, '', h); } catch (e) { } }
 
-  window.App = { $, $$, esc, pad, I, cross, goldIcon, load, save, setLast, toast, modal, sheet, confetti, sfx, route, go, setScene, sceneUrl, openSettings, installHelp, rerender: render, applySettings };
+  function about() {
+    modal(`<div class="badge">📖</div><h2>Sobre o texto bíblico</h2>
+      <p>Todos os versículos e referências deste aplicativo seguem a <b>Bíblia Almeida Corrigida Fiel (ACF)</b>, que adotamos como base e fonte oficial.</p>
+      <p style="font-size:.85rem;margin-top:10px">Almeida Corrigida Fiel © 1994, 1995, 2007, 2011 Sociedade Bíblica Trinitariana do Brasil. Todos os direitos reservados. Citações usadas conforme a política de citação da SBTB.</p>
+      <p style="font-size:.85rem">As explicações e pistas dos jogos são textos nossos, escritos com base nas Escrituras. Encontrou algo para corrigir? Fale com a gente.</p>
+      <div class="actions"><button class="btn btn-gold" data-close>Fechar</button></div>`);
+  }
+  window.App = { about, $, $$, esc, pad, I, cross, goldIcon, load, save, setLast, toast, modal, sheet, confetti, sfx, route, go, setScene, sceneUrl, openSettings, installHelp, rerender: render, applySettings };
   const fromUrl = () => { if (/^#\//.test(location.hash) && location.hash !== curRoute) { curRoute = location.hash; render(); } };
   window.addEventListener('hashchange', fromUrl); window.addEventListener('popstate', fromUrl);
   document.addEventListener('DOMContentLoaded', () => { applySettings(); render(); });

@@ -44,7 +44,7 @@
         <div class="kicker" style="margin:0">CAÇA-PALAVRAS</div>
         <h1 style="font-size:2.5rem"><span class="gold-text">BÍBLICO</span></h1>
         <div class="kicker">DESCUBRA · APRENDA · APROFUNDE</div>
-        <div class="verse">“Lâmpada para os meus pés é a tua palavra e, luz para os meus caminhos.”<cite>Salmos 119:105</cite></div>
+        <div class="verse">“Lâmpada para os meus pés é tua palavra, e luz para o meu caminho.”<cite>Salmos 119:105 · ACF</cite></div>
       </section>
       <button class="btn btn-gold btn-block" style="margin:14px 0 10px" data-play="${nx.id}">${doneAll ? 'Continuar' : 'Começar'} · Fase ${pad(nx.id)} ${I.arrow}</button>
       ${(() => { const k = todayKey(); const dp = daily(k); const ok = dp && isDone(dp); return dp ? `<button class="daily-card parch" data-daily>
@@ -63,7 +63,7 @@
           </button>
           <div class="journey-body">
             <div class="phase-grid">${ps.map(p => `<button class="phase-dot ${p.s ? 'special' : ''} ${isDone(p) ? 'done' : ''} ${p.id === nx.id && !isDone(p) ? 'next' : ''}" data-play="${p.id}" aria-label="Fase ${p.id}: ${esc(p.t)}">${p.s ? '<span class="star">⭐</span>' : ''}${pad(p.id)}</button>`).join('')}</div>
-            <div class="verse">“${esc(j.verse)}”<cite>${esc(j.ref)}</cite></div>
+            <div class="verse">“${esc(j.verse)}”<cite>${esc(j.ref)} · ACF</cite></div>
           </div>
         </div>`;
       }).join('')}
@@ -116,7 +116,7 @@
             <div class="head"><h3>Palavras para encontrar</h3><button class="btn btn-ghost" style="min-height:44px;padding:0 14px;font-size:.9rem" id="hint">${I.bulb} Dica</button></div>
             <div class="chips" id="chips">${ph.w.map((w, i) => `<button class="chip" data-w="${i}" style="--c:${COLORS[i % 8][0]};--cs:${COLORS[i % 8][1]}"><span class="ck"></span>${esc(w.w)}</button>`).join('')}</div>
           </div>
-          <div class="verse-foot parch"><div class="ic">${I.book}</div><p>“${esc(jr.verse)}”<cite>${esc(jr.ref)}</cite></p></div>
+          <div class="verse-foot parch"><div class="ic">${I.book}</div><p>“${esc(jr.verse)}”<cite>${esc(jr.ref)} · ACF</cite></p></div>
         </div>
       </div>`;
     common(el);

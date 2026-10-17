@@ -8,25 +8,25 @@
   const S = () => K.st('roda', { cur: {} });
 
   route(/^\/roda$/, el => {
-    const ls = D().levels.map(l => ({ n: l.n, label: `${l.letters.length} letras`, scene: scene(l.n) }));
+    const ls = D().levels.map(l => ({ n: l.n, t: l.t, i: l.i, label: `${l.words.length} palavras`, scene: scene(l.i) }));
     K.home(el, {
       id: 'roda', title: 'RODA', sub: 'de letras', scene: 'mar', icon: I.wheel, heroTitle: 'Roda de Letras', heroSub: 'Passe o dedo pelas letras e forme as palavras escondidas.', unit: 'fase', unitPl: 'fases',
-      groups: [{ name: 'Cinco letras', levels: ls.filter(l => l.label.startsWith('5')) }, { name: 'Seis letras', levels: ls.filter(l => l.label.startsWith('6')) }, { name: 'Sete letras', levels: ls.filter(l => l.label.startsWith('7')) }], levels: ls,
+      trackDesc: ['', 'Rodas de 5 letras para começar.', 'Rodas de 6 letras e mais palavras.', 'Rodas de 7 letras: muitas palavras escondidas!'], levels: ls,
       howto: ['<b>Arraste o dedo</b> de uma letra para outra para formar uma palavra e solte.', 'Se preferir, toque nas letras uma a uma e depois no botão <b>✓</b>.', 'Cada palavra certa aparece na cruzadinha. Palavras extras valem como <b>bônus</b>.', 'Os acentos não importam: LEAO vale LEÃO.', 'Travou? A <b>dica</b> revela uma letra. Sem dicas, 3 estrelas.']
     });
   });
 
   route(/^\/roda\/(\d+)$/, (el, nStr) => {
     const L = D().levels.find(l => l.n === +nStr); if (!L) return go('#/roda');
-    App.setScene(scene(L.n));
-    setLast('roda', '#/roda/' + L.n, `Roda de Letras · fase ${L.n}`, `${L.words.length} palavras para achar`);
+    App.setScene(scene(L.i));
+    setLast('roda', '#/roda/' + L.n, `Roda de Letras · ${K.label(L)}`, `${L.words.length} palavras para achar`);
     const s = S(); const P = s.cur[L.n] = s.cur[L.n] || { found: [], bonus: [], hints: [] };
     let letters = [...L.letters];
     const cellsOf = w => [...w.p].map((_, i) => (w.y + (w.dir === 'v' ? i : 0)) + ',' + (w.x + (w.dir === 'h' ? i : 0)));
     const cellCh = {}; L.words.forEach(w => cellsOf(w).forEach((k, i) => cellCh[k] = w.p[i]));
     const shown = () => { const o = new Set(P.hints); L.words.filter(w => P.found.includes(w.p)).forEach(w => cellsOf(w).forEach(k => o.add(k))); return o; };
     const csz = Math.min(42, Math.floor((Math.min(window.innerWidth, 560) - 40) / L.cols));
-    el.innerHTML = `${K.topbar('#/roda', `FASE ${L.n}`, 'Roda de Letras')}
+    el.innerHTML = `${K.topbar('#/roda', `FASE ${L.i}`, `Roda de Letras · ${K.TRK[L.t]}`)}
       <div class="rd-board" style="--cs:${csz}px;grid-template-columns:repeat(${L.cols},var(--cs));grid-template-rows:repeat(${L.rows},var(--cs))" id="board"></div>
       <div id="disc"></div>
       <div class="rd-play">
@@ -80,7 +80,7 @@
         if (L.words.every(x => P.found.includes(x.p))) {
           const h = P.hints.length; const stars = h === 0 ? 3 : h <= 2 ? 2 : 1;
           delete s.cur[L.n]; save();
-          setTimeout(() => K.finish({ id: 'roda', n: L.n, stars, title: 'Roda completa!', text: `Você achou ${L.words.length} palavras${P.bonus.length ? ` e mais ${P.bonus.length} de bônus` : ''}.`, learned: L.words.filter(x => x.d).map(x => `<div><b>${esc(x.w)}</b> — ${esc(x.d)}</div>`).join(''), next: L.n < D().levels.length ? '#/roda/' + (L.n + 1) : null }), 2200);
+          setTimeout(() => K.finish({ el, id: 'roda', n: L.n, stars, title: 'Roda completa!', text: `Você achou ${L.words.length} palavras${P.bonus.length ? ` e mais ${P.bonus.length} de bônus` : ''}.`, learned: L.words.filter(x => x.d).map(x => `<div><b>${esc(x.w)}</b> — ${esc(x.d)}</div>`).join(''), next: (x => x && '#/roda/' + x.n)(K.nextOf(D().levels, L)) }), 900);
         }
       } else if (L.bonus.includes(w)) {
         if (P.bonus.includes(w)) { toast('Esse bônus você já tem.'); return; }
@@ -114,7 +114,7 @@
         // se a dica completar uma palavra, ela conta como achada
         L.words.forEach(w => { if (!P.found.includes(w.p) && cellsOf(w).every(c => shown().has(c))) P.found.push(w.p); });
         save(); sfx.good(); drawBoard([k]);
-        if (L.words.every(x => P.found.includes(x.p))) { delete s.cur[L.n]; save(); setTimeout(() => K.finish({ id: 'roda', n: L.n, stars: 1, title: 'Roda completa!', next: L.n < D().levels.length ? '#/roda/' + (L.n + 1) : null }), 900); }
+        if (L.words.every(x => P.found.includes(x.p))) { delete s.cur[L.n]; save(); setTimeout(() => K.finish({ el, id: 'roda', n: L.n, stars: 1, title: 'Roda completa!', next: (x => x && '#/roda/' + x.n)(K.nextOf(D().levels, L)) }), 900); }
       }
     });
     drawBoard(); drawWheel(); showPath();

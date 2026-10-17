@@ -8,21 +8,21 @@
   const item = (L, id) => L.k === 'b' ? { o: id, e: '📖', t: D().books[id], d: `${id < 39 ? 'Antigo' : 'Novo'} Testamento · ${id + 1}º livro da Bíblia`, r: '' } : D().events[id];
 
   route(/^\/tempo$/, el => {
-    const ls = D().levels.map(l => ({ n: l.n, label: l.k === 'b' ? 'livros' : `${l.ids.length} fatos`, scene: scene(l.n) }));
+    const ls = D().levels.map(l => ({ n: l.n, t: l.t, i: l.i, label: l.k === 'b' ? 'livros' : `${l.ids.length} fatos`, scene: scene(l.i) }));
     K.home(el, {
-      id: 'tempo', title: 'LINHA DO TEMPO', sub: 'da Bíblia', scene: 'deserto', icon: I.timeline, heroTitle: 'Linha do Tempo', heroSub: 'Da criação ao Apocalipse: coloque cada acontecimento no seu lugar.', unit: 'fase', unitPl: 'fases', levels: ls,
+      id: 'tempo', title: 'LINHA DO TEMPO', sub: 'da Bíblia', scene: 'deserto', icon: I.timeline, heroTitle: 'Linha do Tempo', heroSub: 'Da criação ao Apocalipse: coloque cada acontecimento no seu lugar.', unit: 'fase', unitPl: 'fases', levels: ls, trackDesc: ['', '4 acontecimentos bem distantes no tempo.', '5 acontecimentos, mais próximos entre si.', '6 acontecimentos vizinhos: só para quem conhece bem a história!'],
       howto: ['Coloque os cartões na ordem em que aconteceram, <b>do mais antigo (em cima) ao mais recente</b>.', '<b>Arraste</b> um cartão com o dedo ou use as setas ▲ ▼.', 'Toque em <b>Conferir</b>: os que estiverem no lugar certo ficam verdes.', 'A cada 5 fases, um desafio diferente: a <b>ordem dos livros da Bíblia</b>.', 'Acertando de primeira, 3 estrelas.']
     });
   });
 
   route(/^\/tempo\/(\d+)$/, (el, nStr) => {
     const L = D().levels.find(l => l.n === +nStr); if (!L) return go('#/tempo');
-    App.setScene(scene(L.n));
+    App.setScene(scene(L.i));
     const books = L.k === 'b';
-    setLast('tempo', '#/tempo/' + L.n, `Linha do Tempo · fase ${L.n}`, books ? 'Ordem dos livros' : `${L.ids.length} acontecimentos`);
+    setLast('tempo', '#/tempo/' + L.n, `Linha do Tempo · ${K.label(L)}`, books ? 'Ordem dos livros' : `${L.ids.length} acontecimentos`);
     let order = K.shuffle(L.ids); while (order.every((v, i) => v === L.ids[i])) order = K.shuffle(L.ids);
     let tries = 0, okSet = new Set(), done = false;
-    el.innerHTML = `${K.topbar('#/tempo', `FASE ${L.n}`, books ? 'Livros da Bíblia' : 'Linha do Tempo')}
+    el.innerHTML = `${K.topbar('#/tempo', `FASE ${L.i} · ${K.TRK[L.t].toUpperCase()}`, books ? 'Livros da Bíblia' : 'Linha do Tempo')}
       <div class="tm-label top">${books ? '📖 Primeiro livro' : '🌅 Mais antigo'}</div>
       <div class="tm-list" id="list"></div>
       <div class="tm-label">${books ? 'Último livro 📖' : 'Mais recente ⏳'}</div>
@@ -46,7 +46,7 @@
           done = true; sfx.good(); render(); $('[data-check]', el).style.display = 'none';
           const stars = tries === 1 ? 3 : tries === 2 ? 2 : 1;
           $('#after', el).innerHTML = `<p class="vs-tip">${books ? 'Essa é a ordem na Bíblia!' : 'Essa é a ordem da história!'} Leia cada cartão. 📜</p>`;
-          setTimeout(() => K.finish({ id: 'tempo', n: L.n, stars, badge: '⏳', title: 'Ordem certa!', text: tries === 1 ? 'Acertou de primeira! 👏' : `Você acertou em ${tries} tentativas.`, next: L.n < D().levels.length ? '#/tempo/' + (L.n + 1) : null }), 2500);
+          setTimeout(() => K.finish({ el, id: 'tempo', n: L.n, stars, badge: '⏳', title: 'Ordem certa!', text: tries === 1 ? 'Acertou de primeira! 👏' : `Você acertou em ${tries} tentativas.`, next: (x => x && '#/tempo/' + x.n)(K.nextOf(D().levels, L)) }), 900);
         } else { sfx.bad(); render(); toast(`${okSet.size} de ${order.length} no lugar certo. Continue!`); }
       }
     });

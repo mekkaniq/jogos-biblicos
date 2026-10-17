@@ -9,10 +9,10 @@
   const fs = w => w.length > 10 ? 'xs' : w.length > 7 ? 'sm' : '';
 
   route(/^\/ligacoes$/, el => {
-    const ls = D().levels.map(l => ({ n: l.n, label: `${l.g.length} grupos`, scene: scene(l.n) }));
+    const ls = D().levels.map(l => ({ n: l.n, t: l.t, i: l.i, label: `${l.g.length} grupos`, scene: scene(l.i) }));
     K.home(el, {
       id: 'ligacoes', title: 'LIGAÇÕES', sub: 'Bíblicas', scene: 'campo', icon: I.link, heroTitle: 'Ligações Bíblicas', heroSub: 'Descubra o que as palavras têm em comum e forme os grupos.', unit: 'fase', unitPl: 'fases',
-      groups: [{ name: 'Primeiros passos', levels: ls.slice(0, 10) }, { name: 'Pede atenção', levels: ls.slice(10, 25) }, { name: 'Para os sábios', levels: ls.slice(25) }],
+      trackDesc: ['', '3 grupos por fase, com ligações bem claras.', '4 grupos, e as ligações pedem mais atenção.', '4 grupos com pegadinhas: palavras que parecem de dois grupos.'],
       levels: ls,
       howto: ['Toque em <b>quatro palavras</b> que tenham algo em comum e depois em <b>Confirmar</b>.', 'Quando acertar, o grupo se junta e aparece a explicação com o versículo.', 'Errou? Sem problema: as palavras continuam lá. Se faltar só uma, o jogo avisa.', 'Cuidado com as pegadinhas: uma palavra pode parecer de dois grupos!', 'Use a <b>dica</b> para ver o nome de um grupo. Menos erros e dicas, mais estrelas.']
     });
@@ -20,14 +20,14 @@
 
   route(/^\/ligacoes\/(\d+)$/, (el, nStr) => {
     const L = D().levels.find(l => l.n === +nStr); if (!L) return go('#/ligacoes');
-    App.setScene(scene(L.n));
-    setLast('ligacoes', '#/ligacoes/' + L.n, `Ligações · fase ${L.n}`, `${L.g.length} grupos para descobrir`);
+    App.setScene(scene(L.i));
+    setLast('ligacoes', '#/ligacoes/' + L.n, `Ligações · ${K.label(L)}`, `${L.g.length} grupos para descobrir`);
     const s = S(); const P = s.cur[L.n] = s.cur[L.n] || { found: [], mist: 0, hints: [], order: null };
     const all = L.g.flatMap((g, gi) => g.w.map(w => ({ w, gi })));
     if (!P.order || P.order.length !== all.length) P.order = K.shuffle(all.map((_, i) => i));
     let sel = [];
     const guessed = new Set(); // combinações já tentadas
-    el.innerHTML = `${K.topbar('#/ligacoes', `FASE ${L.n}`, 'Ligações Bíblicas')}
+    el.innerHTML = `${K.topbar('#/ligacoes', `FASE ${L.i}`, `Ligações · ${K.TRK[L.t]}`)}
       <div class="lg-info"><span>Forme <b>${L.g.length} grupos</b> de 4 palavras</span><span class="lg-mist" id="mist"></span></div>
       <div id="found" class="lg-found"></div>
       <div id="grid" class="lg-grid"></div>
@@ -63,7 +63,7 @@
         if (P.found.length === L.g.length) {
           const used = P.mist + P.hints.length; const stars = used <= 1 ? 3 : used <= 3 ? 2 : 1;
           delete s.cur[L.n]; save();
-          setTimeout(() => K.finish({ id: 'ligacoes', n: L.n, stars, title: 'Todas as ligações!', text: used ? `Você terminou com ${P.mist} ${P.mist === 1 ? 'erro' : 'erros'}${P.hints.length ? ` e ${P.hints.length} ${P.hints.length === 1 ? 'dica' : 'dicas'}` : ''}.` : 'Sem nenhum erro! 👏', learned: L.g.map(g => `<div><b>${esc(g.name)}</b> — <i style="color:var(--gold-700)">${esc(g.r)}</i></div>`).join(''), next: L.n < D().levels.length ? '#/ligacoes/' + (L.n + 1) : null }), 900);
+          setTimeout(() => K.finish({ el, id: 'ligacoes', n: L.n, stars, title: 'Todas as ligações!', text: used ? `Você terminou com ${P.mist} ${P.mist === 1 ? 'erro' : 'erros'}${P.hints.length ? ` e ${P.hints.length} ${P.hints.length === 1 ? 'dica' : 'dicas'}` : ''}.` : 'Sem nenhum erro! 👏', learned: L.g.map(g => `<div><b>${esc(g.name)}</b> — <i style="color:var(--gold-700)">${esc(g.r)}</i></div>`).join(''), next: (x => x && '#/ligacoes/' + x.n)(K.nextOf(D().levels, L)) }), 700);
         }
       } else {
         P.mist++; save(); sfx.bad();

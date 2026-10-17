@@ -51,7 +51,7 @@
         <div class="labels">${cs.map(c => `<span>${c.id}</span>`).join('')}</div>
         <p style="margin-top:10px;font-size:.85rem;color:var(--ink-500)">👑 Os desafios ${cs.filter(c => c.s).map(c => c.id).join(' e ')} são especiais deste arco.</p>
       </div>
-      <div class="verse-foot parch"><div class="ic">${I.book}</div><p>“${esc(a.verse)}”<cite>${esc(a.ref)}</cite></p></div>`;
+      <div class="verse-foot parch"><div class="ic">${I.book}</div><p>“${esc(a.verse)}”<cite>${esc(a.ref)} · ACF</cite></p></div>`;
     common(el);
     el.addEventListener('click', e => { const p = e.target.closest('[data-play]'); if (p) go('#/cruzada/' + p.dataset.play); });
   });

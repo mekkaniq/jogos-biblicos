@@ -14,7 +14,7 @@
       { id: 'ligacoes', name: 'Ligações', sub: 'Forme grupos de palavras ligadas.', icon: I.link, scene: 'campo', done: cnt('ligacoes'), total: window.LIGACOES_DATA.levels.length, isNew: 1 },
       { id: 'versiculo', name: 'Complete o Versículo', sub: 'Guarde a Palavra no coração.', icon: I.book, scene: 'aurora', done: cnt('versiculo'), total: window.VERSOS_DATA.levels.length, isNew: 1 },
       { id: 'roda', name: 'Roda de Letras', sub: 'Deslize o dedo e forme palavras.', icon: I.wheel, scene: 'mar', done: cnt('roda'), total: window.RODA_DATA.levels.length, isNew: 1 },
-      { id: 'quem', name: 'Quem Sou Eu?', sub: 'Descubra o personagem pelas pistas.', icon: I.who, scene: 'deserto', done: cnt('quem'), total: window.QUEM_DATA.items.length, isNew: 1 },
+      { id: 'quem', name: 'Quem Sou Eu?', sub: 'Descubra o personagem pelas pistas.', icon: I.who, scene: 'deserto', done: cnt('quem'), total: window.QUEM_DATA.levels.length, isNew: 1 },
       { id: 'tempo', name: 'Linha do Tempo', sub: 'Coloque a história em ordem.', icon: I.timeline, scene: 'monte', done: cnt('tempo'), total: window.TEMPO_DATA.levels.length, isNew: 1 },
       { id: 'memoria', name: 'Jogo da Memória', sub: 'Junte cada história à sua carta.', icon: I.brain, scene: 'galileia', done: cnt('memoria'), total: window.MEMORIA_DATA.levels.length, isNew: 1 },
       { id: 'cartas', name: 'Solitaire Bíblico', sub: 'Junte as cartas de cada história.', icon: I.cards, scene: 'noite', done: K.levels.filter(l => st.cartas.done[l.n]).length, total: K.levels.length }
@@ -34,7 +34,7 @@
         ${cross}
         <h1><span class="gold-text">Jogos Bíblicos</span></h1>
         <div class="kicker">APRENDA · LEMBRE · DESCUBRA</div>
-        <div class="verse">“Guardo no coração as tuas palavras, para não pecar contra ti.”<cite>Salmos 119:11</cite></div>
+        <div class="verse">“Escondi a tua palavra no meu coração, para eu não pecar contra ti.”<cite>Salmos 119:11 · ACF</cite></div>
       </section>
       ${last ? `<button class="continue parch" data-go="${esc(last.route)}">
           <div class="thumb" style="background-image:url('${scenes[last.game] || 'jardim'}.svg')"></div>
@@ -59,11 +59,12 @@
         <button class="btn" data-settings>${I.gear} Ajustes</button>
         ${standalone ? '' : `<button class="btn" data-install>${I.share} Instalar no iPhone</button>`}
       </div>
-      <p class="credit">Textos bíblicos: Almeida Revista e Atualizada · Foto da capa: Pisit Heng / Unsplash · versão claude v1.2</p>`;
+      <p class="credit">Textos bíblicos: Almeida Corrigida Fiel (ACF), fonte oficial deste app · <button class="lnk" data-about>Sobre</button> · Foto da capa: Pisit Heng / Unsplash · versão claude v1.3</p>`;
     el.addEventListener('click', e => {
       const g = e.target.closest('[data-go]'); if (g) { App.sfx.tap(); go(g.dataset.go); }
       if (e.target.closest('[data-settings]')) openSettings();
       if (e.target.closest('[data-install]')) installHelp();
+      if (e.target.closest('[data-about]')) App.about();
     });
   });
 })();

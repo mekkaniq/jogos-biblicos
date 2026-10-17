@@ -134,7 +134,7 @@
         </div>
         <button class="btn btn-gold btn-block" style="margin-top:14px" data-again>Jogar outra partida ${I.arrow}</button>
         <button class="btn btn-ghost btn-block" style="margin-top:8px" data-back="#/quiz">Voltar</button>
-        <div class="verse-foot parch" style="margin-top:14px"><div class="ic">${I.book}</div><p>“Toda a Escritura é inspirada por Deus e útil para o ensino.”<cite>2 Timóteo 3:16</cite></p></div>`;
+        <div class="verse-foot parch" style="margin-top:14px"><div class="ic">${I.book}</div><p>“Toda a Escritura é divinamente inspirada, e proveitosa para ensinar…”<cite>2 Timóteo 3:16 · ACF</cite></p></div>`;
     }
     common(el);
     el.addEventListener('click', e => {
