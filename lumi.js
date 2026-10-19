@@ -8,7 +8,7 @@
   //  Quatro poses têm um quadro de "piscar" (olhos fechados) por cima.
   // =====================================================================
   const lumiSrc = n => 'lumi-' + n + '.webp';
-  const BLINK = { oi: [33.76, 21.67, 46.82], pensando: [32.11, 21.94, 48.16], dica: [31.39, 17.70, 41.39], lendo: [29.17, 26.01, 40.83] };
+  const BLINK = { oi: [33.76, 21.67, 46.82], pensando: [32.11, 21.94, 48.16], dica: [32.82, 24.87, 38.21], lendo: [29.17, 33.61, 40.83] };
   const body = p => { const b = BLINK[p]; return `<img class="lu-i" src="${lumiSrc(p)}" alt="" draggable="false">${b ? `<img class="lu-e" src="${lumiSrc(p + '-pisca')}" style="left:${b[0]}%;top:${b[1]}%;width:${b[2]}%" alt="" draggable="false">` : ''}`; };
   const lumiHTML = (p, cls = '') => `<button class="lumi ${cls}" data-pose="${p}" data-lumi aria-label="Lumi"><span class="lu-sh"></span><span class="lu-b">${body(p)}</span><span class="lu-fx"></span></button>`;
   function setPose(lu, p) {
