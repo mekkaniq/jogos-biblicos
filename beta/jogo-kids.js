@@ -125,7 +125,8 @@
         <button class="${s.band === 'small' ? 'on' : ''}" data-band="small"><span>🐣</span><b>Pequeninos</b><small>4 a 6 anos</small></button>
         <button class="${s.band === 'big' ? 'on' : ''}" data-band="big"><span>📚</span><b>Leitores</b><small>7 a 10 anos</small></button>
       </div>
-      <div class="section-title"><h2>Histórias</h2><span>${got} de ${d.stories.length} figurinhas</span></div>
+      ${App.historia ? (pr => `<button class="kd-hbanner" data-go="#/kids/historia"><span class="ic">📜</span><span class="tx"><b>A Grande História da Bíblia</b><small>Do começo ao fim, lição por lição. Toda a Bíblia aponta para Jesus!</small><i class="bar"><u style="width:${Math.round(pr.done / pr.total * 100)}%"></u></i><small>${pr.done} de ${pr.total} lições</small></span><em class="nw">NOVO</em></button>`)(App.historia.progress()) : ''}
+      <div class="section-title"><h2>Histórias favoritas</h2><span>${got} de ${d.stories.length} figurinhas</span></div>
       <div class="kd-stories">
         ${d.stories.map((st, i) => `<button class="kd-story" data-story="${st.id}" style="background-image:${App.sceneUrl(st.scene)};--d:${i * 40}ms"><span class="ic">${st.icon}</span><b>${esc(st.name)}</b>${s.stickers[st.id] ? `<em>${st.sticker} já tenho</em>` : '<em class="new">Começar ▶</em>'}</button>`).join('')}
       </div>
@@ -257,7 +258,8 @@
       el.innerHTML = `${top('#/kids', 'MODO TURMA', 'para a escola dominical')}
         <div class="kd-turma-intro parch"><h3>Como funciona</h3><ol><li>Ligue o celular na TV ou no projetor.</li><li>Divida a turma em <b>🦁 Leões</b> e <b>🐑 Ovelhinhas</b>.</li><li>Leia a pergunta, deixe as equipes responderem e toque em <b>Mostrar resposta</b>.</li><li>Marque o ponto de quem acertou. No fim, festa para todos!</li></ol></div>
         <div class="section-title"><h2>Escolha a história da aula</h2></div>
-        <div class="kd-stories">${d.stories.map((s, i) => `<button class="kd-story" data-st="${s.id}" style="background-image:${App.sceneUrl(s.scene)};--d:${i * 40}ms"><span class="ic">${s.icon}</span><b>${esc(s.name)}</b><em class="new">Começar ▶</em></button>`).join('')}</div>`;
+        <div class="kd-stories">${d.stories.map((s, i) => `<button class="kd-story" data-st="${s.id}" style="background-image:${App.sceneUrl(s.scene)};--d:${i * 40}ms"><span class="ic">${s.icon}</span><b>${esc(s.name)}</b><em class="new">Começar ▶</em></button>`).join('')}</div>
+        ${App.historia ? `<div class="section-title"><h2>Lições da Grande História</h2></div>${App.historia.arcs().map(a => `<details class="kd-tarc parch"><summary>${a.icon} <b>${esc(a.name)}</b><small>${a.lessons.length} lições · ${esc(a.ref)}</small></summary>${a.lessons.map((l, i) => `<button class="kd-tl" data-st="${l.id}"><i>${i + 1}</i><span>${l.icon}</span><b>${esc(l.title)}</b><small>${esc(l.ref)}</small></button>`).join('')}</details>`).join('')}` : ''}`;
     }
     const score = big => `<div class="kd-score ${big ? 'big' : ''}"><div><span>${T[0][0]}</span><b>${pts[0]}</b><small>${T[0][1]}</small></div>${big ? '' : `<div class="kd-lumi solo mid">${lumiHTML(shown ? 'festa' : 'pensando', shown ? 'hop' : '')}</div>`}<div><span>${T[1][0]}</span><b>${pts[1]}</b><small>${T[1][1]}</small></div></div>`;
     function board() {
@@ -283,11 +285,13 @@
     const prep = s => ({ ...s, big: s.big.map(q => ({ ...q, show: K.shuffle(q.o) })) });
     common(el);
     el.addEventListener('click', e => {
-      const p = e.target.closest('[data-st]'); if (p) { st = prep(storyOf(p.dataset.st)); qi = 0; pts = [0, 0]; shown = false; board(); return; }
+      const p = e.target.closest('[data-st]'); if (p) { const id = p.dataset.st, L = App.historia && App.historia.lesson(id); st = prep(L ? { name: L.title, ref: L.ref, big: L.big } : storyOf(id)); qi = 0; pts = [0, 0]; shown = false; board(); return; }
       if (e.target.closest('[data-show]')) { shown = true; sfx.good(); board(); return; }
       const t = e.target.closest('[data-pt]'); if (t) { const k = +t.dataset.pt; if (k >= 0) pts[k]++; sfx.tap(); shown = false; if (qi < st.big.length - 1) { qi++; board(); } else end(); return; }
       if (e.target.closest('[data-again]')) { qi = 0; pts = [0, 0]; shown = false; board(); }
     });
     pickStory();
   });
+  // ferramentas compartilhadas com a Grande História da Bíblia (historia.js)
+  App.kidsUI = { S, top, common, bubble, say, speak, hush, artHTML, fxHTML, wordsHTML, reset, later, every, Lumi, lumiHTML, setPose, burst, pick };
 })();

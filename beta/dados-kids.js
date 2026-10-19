@@ -14,7 +14,7 @@ window.KIDS_DATA = {
         { art: '👫💛', bg: 'jardim', fx: 'coracoes', text: 'Por último, Deus fez o homem e a mulher, Adão e Eva, e cuidou deles com amor. Deus viu tudo e disse: "É muito bom!" E no sétimo dia, descansou.' }
       ],
       small: [
-        { q: 'Quem fez o mundo?', o: [['🙌', 'Deus'], ['🤖', 'Um robô'], ['🐶', 'Um cachorro']] },
+        { q: 'Quem fez o mundo?', o: [['✨', 'Deus'], ['🤖', 'Um robô'], ['🐶', 'Um cachorro']] },
         { q: 'O que brilha no céu de dia?', o: [['☀️', 'O sol'], ['🌙', 'A lua'], ['🔦', 'Uma lanterna']] },
         { q: 'Onde Deus colocou os peixes?', o: [['🌊', 'No mar'], ['🌳', 'Na árvore'], ['☁️', 'Na nuvem']] },
         { q: 'O que Deus disse de tudo que fez?', o: [['👍', 'É muito bom!'], ['😢', 'Ficou feio'], ['😴', 'Que sono']] }
@@ -65,7 +65,7 @@ window.KIDS_DATA = {
         { q: 'O que Abraão olhou no céu?', o: [['⭐', 'As estrelas'], ['🎈', 'Balões'], ['✈️', 'Um avião']] },
         { q: 'Quem nasceu na família de Abraão?', o: [['👶', 'Um bebê'], ['🐱', 'Um gatinho'], ['🐴', 'Um cavalo']] },
         { q: 'Como Sara ficou quando o bebê nasceu?', o: [['😄', 'Muito alegre'], ['😠', 'Brava'], ['😴', 'Com sono']] },
-        { q: 'Quem cumpre todas as promessas?', o: [['🙌', 'Deus'], ['🦊', 'A raposa'], ['🎩', 'Um mágico']] }
+        { q: 'Quem cumpre todas as promessas?', o: [['✨', 'Deus'], ['🦊', 'A raposa'], ['🎩', 'Um mágico']] }
       ],
       big: [
         { q: 'O que Deus pediu para Abraão contar?', o: ['As estrelas', 'As ovelhas', 'As moedas', 'As pedras'], e: 'Deus prometeu uma família tão numerosa quanto as estrelas.' },
@@ -87,7 +87,7 @@ window.KIDS_DATA = {
       ],
       small: [
         { q: 'O que José ganhou do pai?', o: [['🧥', 'Uma túnica colorida'], ['⚽', 'Uma bola'], ['🎸', 'Um violão']] },
-        { q: 'Quem estava sempre com José?', o: [['🙌', 'Deus'], ['🦁', 'Um leão'], ['🤡', 'Um palhaço']] },
+        { q: 'Quem estava sempre com José?', o: [['✨', 'Deus'], ['🦁', 'Um leão'], ['🤡', 'Um palhaço']] },
         { q: 'O que José guardou para não faltar comida?', o: [['🌾', 'Trigo'], ['🧸', 'Brinquedos'], ['👟', 'Sapatos']] },
         { q: 'O que José fez com os irmãos no final?', o: [['🤗', 'Perdoou e abraçou'], ['😡', 'Brigou'], ['🏃', 'Fugiu']] }
       ],
@@ -113,7 +113,7 @@ window.KIDS_DATA = {
         { q: 'Onde o bebê Moisés ficou no rio?', o: [['🧺', 'Num cestinho'], ['🚤', 'Numa lancha'], ['🛁', 'Numa banheira']] },
         { q: 'Quem achou o cestinho?', o: [['👸', 'A princesa'], ['🐊', 'Um jacaré'], ['🧑‍🚀', 'Um astronauta']] },
         { q: 'Quem ficou olhando o bebê de longe?', o: [['👧', 'A irmã dele'], ['🐒', 'Um macaco'], ['👮', 'Um guarda']] },
-        { q: 'Quem cuidou de Moisés desde bebê?', o: [['🙌', 'Deus'], ['🐸', 'Um sapo'], ['🌵', 'Um cacto']] }
+        { q: 'Quem cuidou de Moisés desde bebê?', o: [['✨', 'Deus'], ['🐸', 'Um sapo'], ['🌵', 'Um cacto']] }
       ],
       big: [
         { q: 'Por quanto tempo a mãe escondeu o bebê?', o: ['Três meses', 'Um dia', 'Dez anos', 'Uma semana'], e: 'Êxodo 2:2 diz que ela o escondeu três meses.' },
@@ -161,7 +161,7 @@ window.KIDS_DATA = {
         { q: 'O que Davi cuidava?', o: [['🐑', 'Ovelhas'], ['🐔', 'Galinhas'], ['🐠', 'Peixinhos']] },
         { q: 'Como era Golias?', o: [['🧌', 'Um gigante'], ['🐜', 'Bem pequeno'], ['👶', 'Um bebê']] },
         { q: 'O que Davi jogou com a funda?', o: [['🪨', 'Uma pedrinha'], ['🍌', 'Uma banana'], ['⚽', 'Uma bola']] },
-        { q: 'Quem ajudou Davi a vencer?', o: [['🙌', 'Deus'], ['🦸', 'Um super-herói'], ['🐉', 'Um dragão']] }
+        { q: 'Quem ajudou Davi a vencer?', o: [['✨', 'Deus'], ['🦸', 'Um super-herói'], ['🐉', 'Um dragão']] }
       ],
       big: [
         { q: 'Qual era o trabalho de Davi quando menino?', o: ['Pastor de ovelhas', 'Pescador', 'Soldado', 'Rei'], e: 'Davi cuidava do rebanho do seu pai, Jessé.' },
@@ -220,17 +220,17 @@ window.KIDS_DATA = {
       ]
     },
     {
-      id: 'natal', name: 'O nascimento de Jesus', icon: '👶', sticker: '⭐', scene: 'noite', ref: 'Lucas 2 e Mateus 2',
+      id: 'natal', name: 'O nascimento de Jesus', icon: '⭐', sticker: '⭐', scene: 'noite', ref: 'Lucas 2 e Mateus 2',
       scenes: [
         { art: '😇👩', bg: 'aurora', fx: 'luz', text: 'O anjo Gabriel visitou Maria e disse: "Você vai ter um bebê, e ele vai se chamar Jesus. Ele é o Filho de Deus!"' },
         { art: '🧔👩🫏', bg: 'deserto', text: 'Maria e José viajaram até a cidade de Belém. Era longe, e Maria ia montada num jumentinho.' },
         { art: '🏠🚫🐄', bg: 'noite', fx: 'estrelas', text: 'Em Belém não havia lugar na hospedaria. Então eles ficaram num lugar simples, onde moravam os animais.' },
-        { art: '👩👶🧔', bg: 'noite', fx: 'luz', text: 'Ali nasceu Jesus! Maria o enrolou em panos e o deitou numa manjedoura, o cocho onde os animais comem.' },
+        { art: '👩🌾🧔', bg: 'noite', fx: 'luz', text: 'Ali nasceu Jesus! Maria o enrolou em panos e o deitou numa manjedoura, o cocho onde os animais comem.' },
         { art: '😇🐑👨‍🌾', bg: 'campo', fx: 'estrelas', text: 'No campo, anjos apareceram aos pastores: "Nasceu o Salvador!" Os pastores correram para ver o menino Jesus.' },
         { art: '⭐🐪🎁', bg: 'noite', fx: 'brilho', text: 'Uma estrela brilhante guiou uns sábios do Oriente, os magos, que vieram adorar Jesus e trouxeram presentes. Jesus é o maior presente de Deus!' }
       ],
       small: [
-        { q: 'Quem nasceu em Belém?', o: [['👶', 'O menino Jesus'], ['🐣', 'Um pintinho'], ['🤴', 'Um príncipe bravo']] },
+        { q: 'Quem nasceu em Belém?', o: [['✝️', 'O menino Jesus'], ['🐣', 'Um pintinho'], ['🤴', 'Um príncipe bravo']] },
         { q: 'Onde Jesus foi deitado?', o: [['🌾', 'Na manjedoura'], ['🛏️', 'Numa cama de rei'], ['🚗', 'Num carro']] },
         { q: 'Quem cantou para os pastores?', o: [['😇', 'Os anjos'], ['🐸', 'Os sapos'], ['🎤', 'Um cantor']] },
         { q: 'O que guiou os magos?', o: [['⭐', 'Uma estrela'], ['🗺️', 'Um mapa'], ['📱', 'Um celular']] }
@@ -246,11 +246,11 @@ window.KIDS_DATA = {
     {
       id: 'tempestade', name: 'Jesus acalma o mar', icon: '⛵', sticker: '⛵', scene: 'galileia', ref: 'Marcos 4:35-41',
       scenes: [
-        { art: '🧔⛵👥', bg: 'galileia', text: 'Depois de um dia ensinando muita gente, Jesus disse aos discípulos: "Vamos para o outro lado do lago." E entraram no barco.' },
-        { art: '⛵😴', bg: 'galileia', fx: 'ondas', text: 'Jesus estava cansado e dormiu num travesseiro, lá na parte de trás do barco.' },
+        { art: '⛵👥', bg: 'galileia', text: 'Depois de um dia ensinando muita gente, Jesus disse aos discípulos: "Vamos para o outro lado do lago." E entraram no barco.' },
+        { art: '⛵💤🌙', bg: 'galileia', fx: 'ondas', text: 'Jesus estava cansado e dormiu num travesseiro, lá na parte de trás do barco.' },
         { art: '⛈️⛵🌊', bg: 'mar', fx: 'chuva', text: 'De repente, veio uma tempestade fortíssima! O vento soprava, e as ondas jogavam água para dentro do barco.' },
         { art: '😱👥', bg: 'mar', fx: 'chuva', text: 'Os discípulos ficaram apavorados e acordaram Jesus: "Mestre, não se importa que vamos afundar?"' },
-        { art: '🧔✋🌊', bg: 'galileia', fx: 'luz', text: 'Jesus se levantou e disse ao vento e ao mar: "Cale-se! Aquiete-se!" E na mesma hora, tudo ficou calmo.' },
+        { art: '💬🌊✨', bg: 'galileia', fx: 'luz', text: 'Jesus se levantou e disse ao vento e ao mar: "Cale-se! Aquiete-se!" E na mesma hora, tudo ficou calmo.' },
         { art: '⛵☀️😮', bg: 'galileia', fx: 'brilho', text: 'Os discípulos se perguntavam: "Quem é este, que até o vento e o mar lhe obedecem?" É Jesus, o Filho de Deus!' }
       ],
       small: [
@@ -270,16 +270,16 @@ window.KIDS_DATA = {
     {
       id: 'ovelha', name: 'A ovelha perdida', icon: '🐑', sticker: '🐑', scene: 'campo', ref: 'Lucas 15:3-7',
       scenes: [
-        { art: '🧔🐑🐑🐑', bg: 'campo', text: 'Jesus contou uma história: um pastor tinha cem ovelhas. Ele conhecia cada uma e cuidava de todas com carinho.' },
-        { art: '🧔🔢🐑', bg: 'campo', text: 'Um dia, ao contar as ovelhas, ele percebeu: "Noventa e oito, noventa e nove... Está faltando uma!"' },
+        { art: '🐑🐑🐑🐑', bg: 'campo', text: 'Jesus contou uma história: um pastor tinha cem ovelhas. Ele conhecia cada uma e cuidava de todas com carinho.' },
+        { art: '🔢🐑', bg: 'campo', text: 'Um dia, ao contar as ovelhas, ele percebeu: "Noventa e oito, noventa e nove... Está faltando uma!"' },
         { art: '🐑😢🌵', bg: 'monte', fx: 'vento', text: 'Uma ovelhinha tinha se perdido lá longe, no meio das pedras e dos espinhos. Ela estava sozinha e com medo.' },
-        { art: '🧔🔦⛰️', bg: 'noite', fx: 'estrelas', text: 'O pastor deixou as outras noventa e nove em segurança e foi procurar a ovelhinha perdida, até encontrar.' },
-        { art: '🧔🐑💛', bg: 'aurora', fx: 'coracoes', text: 'Quando a achou, ficou tão feliz que a colocou nos ombros e levou para casa, cantando de alegria!' },
-        { art: '🎉🧔🐑👥', bg: 'aurora', fx: 'brilho', text: 'Ele chamou os amigos: "Alegrem-se comigo! Achei a minha ovelha!" Jesus é o Bom Pastor, e ama cada um de nós, até você! 🐑' }
+        { art: '🔦👣⛰️', bg: 'noite', fx: 'estrelas', text: 'O pastor deixou as outras noventa e nove em segurança e foi procurar a ovelhinha perdida, até encontrar.' },
+        { art: '🐑💛', bg: 'aurora', fx: 'coracoes', text: 'Quando a achou, ficou tão feliz que a colocou nos ombros e levou para casa, cantando de alegria!' },
+        { art: '🎉🐑👥', bg: 'aurora', fx: 'brilho', text: 'Ele chamou os amigos: "Alegrem-se comigo! Achei a minha ovelha!" Jesus é o Bom Pastor, e ama cada um de nós, até você! 🐑' }
       ],
       small: [
         { q: 'Quantas ovelhas se perderam?', o: [['☝️', 'Uma'], ['🖐️', 'Cinco'], ['🔟', 'Dez']] },
-        { q: 'Quem foi procurar a ovelhinha?', o: [['🧔', 'O pastor'], ['🐺', 'O lobo'], ['🦅', 'A águia']] },
+        { q: 'Quem foi procurar a ovelhinha?', o: [['👣', 'O pastor'], ['🐺', 'O lobo'], ['🦅', 'A águia']] },
         { q: 'Como o pastor levou a ovelha para casa?', o: [['🤗', 'Nos ombros'], ['🚲', 'De bicicleta'], ['🚁', 'De helicóptero']] },
         { q: 'Quem é o Bom Pastor?', o: [['✝️', 'Jesus'], ['🤴', 'Um rei'], ['🐄', 'Uma vaca']] }
       ],
