@@ -1,432 +1,360 @@
-/* A Grande História da Bíblia — Arco 7: Juízes e Rute
-   Regra dos trechos difíceis: nunca mentir nem inventar; sem detalhes; trechos muito pesados viram resumo de uma frase com nota para os pais; toda lição aponta para frente. */
+/* A Grande História da Bíblia — Arco 7: No Sinai: a Lei e o tabernáculo (Êxodo 19–40 e Levítico) */
 window.HISTORIA = window.HISTORIA || { arcs: {} };
-window.HISTORIA.arcs.juizes = {
-  id: 'juizes', n: 11, name: 'Juízes e Rute', sub: 'O povo esquece, Deus não', ref: 'Juízes e Rute', icon: '🎺', scene: 'campo',
-  intro: 'O povo de Deus já morava na terra prometida. Mas, sem Josué, eles foram esquecendo de Deus. Neste arco, vamos ver um ciclo que se repete muitas vezes, os juízes que Deus levantou para salvar o povo, e uma história linda de amor e fidelidade: a de Rute.',
+window.HISTORIA.arcs.sinai = {
+  id: 'sinai', n: 7, name: 'No Sinai: a Lei e o tabernáculo', sub: 'Deus vem morar no meio do seu povo', ref: 'Êxodo 19–40 e Levítico', icon: '⛰️', scene: 'monte',
+  intro: 'Depois de libertar o povo do Egito, Deus o levou até o monte Sinai. Ali Ele deu os Dez Mandamentos, fez uma aliança com Israel e mandou construir o tabernáculo, uma tenda especial para morar no meio do povo. Em Levítico, Deus ensina como um povo pecador pode chegar perto de um Deus santo. Tudo isso é como um grande desenho que aponta para Jesus.',
   lessons: [
     {
-      id: 'j1', title: 'O povo esquece', ref: 'Juízes 1 – 2', icon: '🔁',
-      recap: 'Nos arcos anteriores, Deus tirou o povo do Egito, cuidou dele no deserto e, com Josué, levou todos para a terra prometida.',
+      id: 's1', title: 'Chegando ao monte Sinai', ref: 'Êxodo 19', icon: '⛰️',
+      recap: 'No arco passado, Deus tirou o povo do Egito, abriu o mar e cuidou dele no deserto com maná e água da rocha.',
       scenes: [
-        { art: '👴⛰️', bg: 'monte', text: 'Josué, o grande líder, morreu já bem velhinho. Enquanto ele e os líderes da sua geração viveram, o povo serviu ao Senhor.', r: 'Juízes 2:8-9' },
-        { art: '👦❓', bg: 'campo', text: 'Mas cresceu outra geração, que não conhecia o Senhor nem as coisas incríveis que Ele tinha feito. Os pais não contaram, ou os filhos não quiseram ouvir.', r: 'Juízes 2:10' },
-        { art: '🗿👥', bg: 'cidade', text: 'O povo começou a imitar os vizinhos e adorar ídolos, como Baal, deuses de mentira feitos por mãos humanas. Eles deixaram o Deus que os tinha tirado do Egito.', r: 'Juízes 2:11-13' },
-        { art: '⚔️😢', bg: 'deserto', text: 'Então Deus deixou que os inimigos vencessem o povo. Eles ficaram fracos, oprimidos e muito tristes.', r: 'Juízes 2:14-15' },
-        { art: '🙏😭', bg: 'noite', text: 'Quando sofriam, o povo clamava a Deus, gritando por socorro.', r: 'Juízes 2:18; 3:9' },
-        { art: '✨🧔', bg: 'aurora', fx: 'luz', text: 'E Deus, cheio de compaixão, levantava um juiz: um líder escolhido por Ele para livrar o povo dos inimigos.', r: 'Juízes 2:16' },
-        { art: '😊🕊️', bg: 'aurora', text: 'Enquanto o juiz vivia, havia paz. Mas, quando o juiz morria, o povo voltava a fazer coisas piores que antes.', r: 'Juízes 2:18-19' },
-        { art: '🔁', bg: 'campo', fx: 'vento', text: 'É um ciclo, uma roda que gira: o povo esquece de Deus, sofre, clama, Deus salva, e depois o povo esquece de novo. Esse ciclo se repete por todo o livro de Juízes.', r: 'Juízes 2:11-19' },
-        { art: '💛✨', bg: 'aurora', fx: 'coracoes', text: 'O livro mostra que o povo era infiel. Mas mostra, ainda mais, que Deus continuava fiel. Toda vez que eles clamavam, Ele respondia.', r: 'Juízes 2:18' }
+        { art: '👥⛺⛰️', bg: 'monte', text: 'Três meses depois de saírem do Egito, os israelitas chegaram ao deserto do Sinai e acamparam diante do monte.', r: 'Êxodo 19:1-2' },
+        { art: '🧔⬆️⛰️', bg: 'monte', text: 'Moisés subiu ao monte para falar com Deus. E Deus mandou uma mensagem para o povo.', r: 'Êxodo 19:3' },
+        { art: '🦅🪶✨', bg: 'aurora', fx: 'vento', text: '"Vocês viram o que eu fiz com os egípcios, e como carreguei vocês sobre asas de águia e os trouxe até mim."', r: 'Êxodo 19:4' },
+        { art: '💎👑✨', bg: 'aurora', fx: 'brilho', text: '"Se vocês ouvirem a minha voz e guardarem a minha aliança, serão o meu tesouro especial entre todos os povos, um reino de sacerdotes e um povo santo."', r: 'Êxodo 19:5-6' },
+        { art: '👥🗣️✅', bg: 'monte', text: 'O povo respondeu todo junto: "Tudo o que o Senhor falou, nós faremos!"', r: 'Êxodo 19:8' },
+        { art: '🧺👕🚿', bg: 'campo', text: 'Deus mandou o povo se preparar por três dias: lavar as roupas e ficar pronto. E colocou limites ao redor do monte, porque ninguém podia subir. Deus é santo!', r: 'Êxodo 19:10-13' },
+        { art: '⛈️⚡🎺', bg: 'noite', fx: 'chuva', text: 'No terceiro dia, de manhã, vieram trovões, relâmpagos e uma nuvem escura sobre o monte, e um som de trombeta muito forte. Todo o povo tremia no acampamento.', r: 'Êxodo 19:16' },
+        { art: '🔥💨⛰️', bg: 'monte', fx: 'luz', text: 'O monte Sinai fumegava inteiro, porque o Senhor tinha descido sobre ele em fogo. A fumaça subia como de uma fornalha, e o monte todo tremia.', r: 'Êxodo 19:18' },
+        { art: '🎺🔊🧔', bg: 'monte', fx: 'luz', text: 'O som da trombeta ia ficando cada vez mais forte. Moisés falava, e Deus respondia com uma voz de trovão. Deus estava ali, grande, santo e perto do seu povo.', r: 'Êxodo 19:19-20' }
       ],
-      god: 'Mesmo quando nós esquecemos de Deus, Ele não esquece de nós e responde quando clamamos.',
-      jesus: 'Cada juiz salvava o povo por um tempo, mas morria, e tudo voltava a piorar. Jesus é o Libertador que vive para sempre: Ele não morre mais, e o seu socorro nunca acaba (Hebreus 7:25).',
-      verse: { ref: 'Salmos 103:8', tx: 'Misericordioso e piedoso é o Senhor; longânimo e grande em benignidade.' },
+      god: 'Deus é santo e poderoso. E mesmo assim Ele quer ter um povo só seu, perto dele.',
+      jesus: 'No Sinai, o povo tremia de medo e não podia chegar perto do monte. Hebreus 12 diz que, por meio de Jesus, chegamos a um lugar ainda melhor: não a um monte de fogo e medo, mas a Jesus, que nos leva até Deus como filhos amados (Hebreus 12:18-24).',
+      verse: { ref: 'Êxodo 19:6', tx: 'E vós me sereis um reino sacerdotal e o povo santo.' },
       small: [
-        { q: 'O que o povo começou a adorar?', o: [['🗿', 'Ídolos'], ['✨', 'Só a Deus'], ['🌈', 'O arco-íris']] },
-        { q: 'O que o povo fazia quando sofria?', o: [['🙏', 'Clamava a Deus'], ['🎮', 'Jogava videogame'], ['🏖️', 'Ia à praia']] },
-        { q: 'Quem Deus mandava para salvar o povo?', o: [['🧔', 'Um juiz'], ['🤡', 'Um palhaço'], ['🐉', 'Um dragão']] }
+        { q: 'Onde o povo acampou?', o: [['⛰️', 'Diante de um monte'], ['🏖️', 'Na praia'], ['🏙️', 'Numa cidade']] },
+        { q: 'Como Deus disse que carregou o povo?', o: [['🦅', 'Sobre asas de águia'], ['🚌', 'De ônibus'], ['🐢', 'Numa tartaruga']] },
+        { q: 'O que aconteceu no monte?', o: [['⚡', 'Trovões, fogo e trombeta'], ['🌈', 'Arco-íris e sol'], ['❄️', 'Neve']] }
       ],
       big: [
-        { q: 'Por que a nova geração esqueceu de Deus?', o: ['Não conhecia o que Deus tinha feito', 'Porque eram maus desde bebês', 'Porque Josué mandou', 'Porque moravam longe'], e: 'Juízes 2:10. Por isso é tão importante contar a história de Deus às crianças.' },
-        { q: 'Quem era Baal?', o: ['Um deus falso dos vizinhos', 'Um juiz de Israel', 'Um anjo', 'Um rei bom'], e: 'Ídolos não veem, não ouvem e não salvam.' },
-        { q: 'O que era um juiz na Bíblia?', o: ['Um líder que Deus levantava para salvar o povo', 'Um homem de toga num tribunal', 'Um sacerdote do templo', 'Um rei de outro país'], e: 'Juízes 2:16.' },
-        { q: 'Qual é o ciclo do livro de Juízes?', o: ['Esquecer, sofrer, clamar, ser salvo', 'Plantar, colher, comer, dormir', 'Nascer, crescer, viajar, voltar', 'Lutar, vencer, festejar, lutar'], e: 'O ciclo se repete com cada juiz.' }
+        { q: 'Quanto tempo depois do Egito o povo chegou ao Sinai?', o: ['Três meses', 'Um dia', 'Dez anos', 'Uma semana'], e: 'Êxodo 19:1.' },
+        { q: 'O que Deus disse que o povo seria?', o: ['Um reino de sacerdotes e um povo santo', 'Escravos do Egito', 'Um povo como os outros', 'Uma tribo do deserto'], e: 'Êxodo 19:6; 1 Pedro 2:9.' },
+        { q: 'Por que ninguém podia subir no monte?', o: ['Porque Deus é santo', 'Porque era muito alto', 'Porque estava chovendo', 'Porque havia leões'], e: 'Êxodo 19:12.' },
+        { q: 'O que o povo respondeu a Deus?', o: ['"Tudo o que o Senhor falou, faremos"', '"Não queremos ouvir"', '"Vamos voltar ao Egito"', '"Depois a gente vê"'], e: 'Êxodo 19:8.' }
       ],
-      parents: 'Ponto central: Juízes 2:10 é um alerta para a família: cada geração precisa ouvir das obras de Deus. Use o ciclo (esquecer, sofrer, clamar, ser salvo) como chave para todo o arco. Leitura junto: Juízes 2:6-19.'
+      parents: 'Ponto central: a santidade de Deus e a aliança. Primeiro Deus salva (Êxodo 19:4), depois dá a Lei: a obediência é resposta à graça, não o caminho para ela. Leitura junto: Êxodo 19:1-8 e 16-20.'
     },
     {
-      id: 'j2', title: 'Otniel e Eúde', ref: 'Juízes 3', icon: '🗡️',
-      recap: 'Na lição passada, vimos o ciclo triste: o povo esquecia de Deus, sofria e clamava, e Deus levantava um juiz.',
+      id: 's2', title: 'Os Dez Mandamentos: amar a Deus', ref: 'Êxodo 20:1-11', icon: '📜',
+      recap: 'Na lição passada, o povo chegou ao monte Sinai, e Deus desceu sobre o monte em fogo.',
       scenes: [
-        { art: '🗿😢', bg: 'cidade', text: 'O povo fez de novo o que era mau aos olhos do Senhor. E um rei de longe, da Mesopotâmia, dominou Israel por oito anos.', r: 'Juízes 3:7-8' },
-        { art: '🙏', bg: 'noite', text: 'O povo clamou ao Senhor. E Deus levantou o primeiro juiz: Otniel, sobrinho de Calebe, aquele espião corajoso que confiou em Deus.', r: 'Juízes 3:9' },
-        { art: '🧔✨', bg: 'aurora', fx: 'luz', text: 'O Espírito do Senhor veio sobre Otniel. Ele liderou o povo, venceu o inimigo, e a terra teve paz por quarenta anos.', r: 'Juízes 3:10-11' },
-        { art: '🔁😞', bg: 'cidade', text: 'Mas Otniel morreu, e o povo voltou a pecar. Dessa vez, Eglom, rei de Moabe, um homem muito gordo, dominou Israel por dezoito anos e cobrava impostos pesados.', r: 'Juízes 3:12-14, 17' },
-        { art: '🙏✨', bg: 'noite', text: 'O povo clamou de novo, e Deus levantou outro libertador: Eúde, um homem da tribo de Benjamim que era canhoto.', r: 'Juízes 3:15' },
-        { art: '🧔🎁👑', bg: 'palacio', text: 'Eúde foi levar o imposto ao rei Eglom. Ele tinha um plano corajoso e escondeu uma espada curta do lado direito, onde ninguém procurava.', r: 'Juízes 3:15-16' },
-        { art: '🤫👑', bg: 'palacio', text: 'Eúde disse ao rei: "Tenho uma mensagem secreta de Deus para você." O rei mandou todos saírem. Ali, sozinho com o rei mau, Eúde o derrotou e fugiu.', r: 'Juízes 3:19-23' },
-        { art: '🎺⛰️', bg: 'monte', text: 'Eúde tocou a trombeta nas montanhas e chamou o povo: "Sigam-me, porque o Senhor entregou os inimigos nas nossas mãos!"', r: 'Juízes 3:27-28' },
-        { art: '🕊️🌾', bg: 'campo', fx: 'brilho', text: 'Israel venceu Moabe, e a terra teve paz por oitenta anos! Depois de Eúde veio Sangar, que também livrou o povo.', r: 'Juízes 3:30-31' }
+        { art: '⛰️🔥💬', bg: 'monte', fx: 'luz', text: 'Então Deus falou todas estas palavras. Antes de dar qualquer mandamento, Ele lembrou: "Eu sou o Senhor, o seu Deus, que tirou você do Egito, da casa da escravidão."', r: 'Êxodo 20:1-2' },
+        { art: '💛➡️📜', bg: 'aurora', text: 'Repare: primeiro Deus salvou, e só depois deu a Lei. Os mandamentos não são para ganhar o amor de Deus, mas para viver como povo amado por Ele.', r: 'Êxodo 20:2' },
+        { art: '1️⃣☝️', bg: 'aurora', fx: 'luz', text: 'Primeiro mandamento: "Não terá outros deuses diante de mim." Só o Senhor é Deus, e Ele deve ser o mais importante na nossa vida.', r: 'Êxodo 20:3' },
+        { art: '2️⃣🚫🗿', bg: 'monte', text: 'Segundo mandamento: "Não fará para você imagem de escultura" para adorar. Deus não pode ser desenhado nem colocado numa estátua. Ele é maior que tudo o que podemos imaginar.', r: 'Êxodo 20:4-6' },
+        { art: '🐑✨', bg: 'aurora', text: 'Por isso, aqui no app, Deus e Jesus nunca aparecem desenhados. Usamos só luz e símbolos, para lembrar que Deus é Espírito e se mostra pela sua Palavra.', r: 'Deuteronômio 4:15-16; João 4:24' },
+        { art: '3️⃣🗣️💛', bg: 'aurora', text: 'Terceiro mandamento: "Não tomará o nome do Senhor, o seu Deus, em vão." O nome de Deus é santo e deve ser falado com respeito e amor.', r: 'Êxodo 20:7' },
+        { art: '4️⃣📅😌', bg: 'aurora', fx: 'brilho', text: 'Quarto mandamento: "Lembre-se do dia de descanso, para santificá-lo." Seis dias para trabalhar, e um dia separado para descansar e adorar a Deus, como Deus descansou depois da criação.', r: 'Êxodo 20:8-11' },
+        { art: '📜📜', bg: 'monte', text: 'Esses quatro primeiros mandamentos falam de como amar a Deus. Os outros seis, que vamos ver na próxima lição, falam de como amar as pessoas.', r: 'Mateus 22:37-40' }
       ],
-      god: 'Deus ouve o clamor do seu povo e usa pessoas que ninguém espera, até um canhoto.',
-      jesus: 'Otniel e Eúde livraram o povo de reis maus, por alguns anos. Jesus nos livra do pior inimigo de todos, o pecado e a morte, e para sempre.',
-      verse: { ref: 'Juízes 3:9', tx: 'E os filhos de Israel clamaram ao Senhor, e o Senhor levantou aos filhos de Israel um libertador.' },
+      god: 'Deus é único e santo. Ele nos salva primeiro e depois nos ensina a amá-lo de todo o coração.',
+      jesus: 'Ninguém conseguiu guardar todos os mandamentos, só Jesus. Ele amou o Pai com todo o coração, todos os dias, sem falhar. E Jesus resumiu os quatro primeiros mandamentos assim: "Amarás o Senhor teu Deus de todo o teu coração" (Mateus 22:37).',
+      verse: { ref: 'Êxodo 20:3', tx: 'Não terás outros deuses diante de mim.' },
       small: [
-        { q: 'Quem foi o primeiro juiz?', o: [['🧔', 'Otniel'], ['👑', 'Eglom'], ['🦁', 'Um leão']] },
-        { q: 'Com qual mão Eúde lutava melhor?', o: [['🤛', 'A esquerda'], ['🦶', 'O pé'], ['👃', 'O nariz']] },
-        { q: 'O que Eúde tocou para chamar o povo?', o: [['🎺', 'Uma trombeta'], ['🥁', 'Um tambor'], ['🔔', 'Um sino']] }
+        { q: 'Quantos deuses verdadeiros existem?', o: [['☝️', 'Um só'], ['✌️', 'Dois'], ['🔟', 'Dez']] },
+        { q: 'Podemos fazer estátua para adorar?', o: [['🚫', 'Não'], ['✅', 'Sim'], ['🤷', 'Às vezes']] },
+        { q: 'O que Deus deu para descansar?', o: [['📅', 'Um dia especial'], ['🛌', 'Uma cama'], ['🎮', 'Um jogo']] }
       ],
       big: [
-        { q: 'De quem Otniel era sobrinho?', o: ['De Calebe', 'De Moisés', 'De Josué', 'De Arão'], e: 'Juízes 3:9. Calebe foi o espião que confiou em Deus (Números 14).' },
-        { q: 'Qual era o nome do rei de Moabe?', o: ['Eglom', 'Faraó', 'Golias', 'Sísera'], e: 'Juízes 3:12-14.' },
-        { q: 'O que havia de diferente em Eúde?', o: ['Era canhoto', 'Era gigante', 'Era muito velho', 'Era cego'], e: 'Juízes 3:15. Deus usou justamente isso no plano.' },
-        { q: 'Quantos anos de paz vieram depois de Eúde?', o: ['Oitenta', 'Quarenta', 'Dez', 'Mil'], e: 'Juízes 3:30.' }
+        { q: 'O que Deus lembrou antes de dar os mandamentos?', o: ['Que Ele tirou o povo do Egito', 'Que o povo era forte', 'Que Moisés era rei', 'Nada'], e: 'Êxodo 20:2: primeiro a salvação, depois a Lei.' },
+        { q: 'O que diz o segundo mandamento?', o: ['Não fazer imagem para adorar', 'Honrar pai e mãe', 'Não roubar', 'Não mentir'], e: 'Êxodo 20:4-6.' },
+        { q: 'O que quer dizer tomar o nome de Deus em vão?', o: ['Falar o nome de Deus sem respeito', 'Esquecer o nome', 'Cantar louvores', 'Orar'], e: 'Êxodo 20:7.' },
+        { q: 'Sobre o que falam os quatro primeiros mandamentos?', o: ['Como amar a Deus', 'Como amar o próximo', 'Como plantar', 'Como lutar'], e: 'Mateus 22:37-38.' }
       ],
-      parents: 'Atenção: a vitória de Eúde sobre Eglom (Juízes 3:21-22) foi contada sem detalhes: "Eúde o derrotou". Se a criança perguntar, explique que era uma guerra para libertar o povo oprimido. Leitura junto: Juízes 3:7-11 (Otniel) e 3:12-15, 26-31.'
+      parents: 'Ponto central: a Lei vem depois da redenção (Êxodo 20:2). A cena 5 explica a regra do app sobre imagens de Deus e de Jesus, a partir do segundo mandamento. Leitura junto: Êxodo 20:1-11.'
     },
     {
-      id: 'j3', title: 'Débora e Baraque', ref: 'Juízes 4 – 5', icon: '🌴',
-      recap: 'Na lição passada, Deus levantou Otniel e Eúde para libertar o povo.',
+      id: 's3', title: 'Os Dez Mandamentos: amar o próximo', ref: 'Êxodo 20:12-21', icon: '🤝',
+      recap: 'Na lição passada, aprendemos os quatro primeiros mandamentos, que falam de amar a Deus.',
       scenes: [
-        { art: '🔁⚔️', bg: 'cidade', text: 'Depois que Eúde morreu, o povo pecou de novo. Jabim, rei de Canaã, dominou Israel por vinte anos. O chefe do exército dele se chamava Sísera.', r: 'Juízes 4:1-2' },
-        { art: '🛞🛞🛞', bg: 'campo', text: 'Sísera tinha novecentos carros de ferro, como os tanques de guerra daquela época! Israel não tinha nada parecido e estava apavorado.', r: 'Juízes 4:3' },
-        { art: '👩🌴', bg: 'jardim', text: 'Naquele tempo, quem julgava Israel era uma mulher: Débora, uma profetisa. Ela se sentava debaixo de uma palmeira, e o povo vinha até ela para resolver suas questões.', r: 'Juízes 4:4-5' },
-        { art: '👩💬🧔', bg: 'jardim', fx: 'luz', text: 'Débora chamou Baraque e disse: "O Senhor manda você reunir dez mil homens no monte Tabor. Ele vai entregar Sísera nas suas mãos."', r: 'Juízes 4:6-7' },
-        { art: '🧔😟', bg: 'monte', text: 'Baraque respondeu: "Se você for comigo, eu vou. Se não for, não vou." Débora disse: "Eu vou. Mas a honra da vitória não será sua: Deus vai entregar Sísera nas mãos de uma mulher."', r: 'Juízes 4:8-9' },
-        { art: '⛰️👥', bg: 'monte', text: 'Débora disse: "Levante-se! Hoje é o dia! O Senhor vai à sua frente!" E Baraque desceu do monte com os dez mil homens.', r: 'Juízes 4:14' },
-        { art: '🌧️🛞💦', bg: 'mar', fx: 'chuva', text: 'O Senhor confundiu Sísera e o seu exército. A canção de Débora conta que o céu derramou água e o ribeiro de Quisom arrastou os inimigos. Os carros de ferro atolaram!', r: 'Juízes 4:15; 5:4, 20-21' },
-        { art: '🏃⛺', bg: 'deserto', text: 'Sísera fugiu a pé e se escondeu na tenda de uma mulher chamada Jael. E foi ali que Jael derrotou Sísera, como Débora tinha dito.', r: 'Juízes 4:17-21' },
-        { art: '🎶👩🧔', bg: 'aurora', fx: 'brilho', text: 'Débora e Baraque cantaram um cântico de louvor a Deus pela vitória. E a terra teve paz por quarenta anos.', r: 'Juízes 5:1-3, 31' }
+        { art: '5️⃣👨‍👩‍👧', bg: 'campo', fx: 'coracoes', text: 'Quinto mandamento: "Honre seu pai e sua mãe." É o primeiro mandamento com promessa: para que você viva muito na terra que Deus dá.', r: 'Êxodo 20:12; Efésios 6:2' },
+        { art: '6️⃣💛', bg: 'aurora', text: 'Sexto mandamento: "Não matará." A vida é um presente de Deus. Jesus ensinou que até a raiva e as palavras de ódio quebram esse mandamento no coração.', r: 'Êxodo 20:13; Mateus 5:21-22' },
+        { art: '7️⃣💍', bg: 'aurora', text: 'Sétimo mandamento: "Não adulterará." Deus quer que marido e mulher sejam fiéis um ao outro a vida toda.', r: 'Êxodo 20:14' },
+        { art: '8️⃣🚫👜', bg: 'cidade', text: 'Oitavo mandamento: "Não furtará." Não pegar o que é dos outros, e cuidar bem do que é nosso, sem preguiça.', r: 'Êxodo 20:15; Efésios 4:28' },
+        { art: '9️⃣🗣️✔️', bg: 'cidade', text: 'Nono mandamento: "Não dirá falso testemunho contra o seu próximo." Falar a verdade sobre as pessoas, sem mentir e sem fofocar.', r: 'Êxodo 20:16' },
+        { art: '🔟💭🚫', bg: 'cidade', text: 'Décimo mandamento: "Não cobiçará." Não ficar querendo o que é dos outros: a casa, as coisas, nada. Esse mandamento mostra que Deus olha até o nosso coração.', r: 'Êxodo 20:17' },
+        { art: '⛈️👥😨', bg: 'monte', fx: 'chuva', text: 'O povo viu os trovões, os relâmpagos e a fumaça, e ficou com muito medo. Disseram a Moisés: "Fale você conosco, e nós ouviremos. Mas que Deus não fale conosco, para não morrermos!"', r: 'Êxodo 20:18-19' },
+        { art: '🧔⬆️☁️', bg: 'monte', fx: 'luz', text: 'Moisés disse: "Não tenham medo. Deus veio para que vocês o respeitem e não pequem." E Moisés se aproximou da nuvem escura onde Deus estava, como um mediador entre Deus e o povo.', r: 'Êxodo 20:20-21' }
       ],
-      god: 'Nenhum exército é forte demais para Deus. Ele vai à nossa frente.',
-      jesus: 'Débora disse a Baraque: "O Senhor vai à sua frente!" Jesus vai à nossa frente e já venceu por nós. Ele disse: "No mundo tereis aflições, mas tende bom ânimo, eu venci o mundo" (João 16:33).',
-      verse: { ref: 'Juízes 5:31', tx: 'Porém os que o amam sejam como o sol quando sai na sua força.' },
+      god: 'Deus se importa com como tratamos as pessoas. Amar o próximo é parte de amar a Deus.',
+      jesus: 'O povo pediu um mediador, alguém que falasse com Deus por eles. Moisés foi esse mediador. Mas a Bíblia diz que há um Mediador perfeito entre Deus e os homens: Jesus Cristo (1 Timóteo 2:5). E Jesus resumiu estes seis mandamentos assim: "Amarás o teu próximo como a ti mesmo."',
+      verse: { ref: 'Êxodo 20:12', tx: 'Honra a teu pai e a tua mãe, para que se prolonguem os teus dias na terra que o Senhor teu Deus te dá.' },
       small: [
-        { q: 'Onde Débora se sentava?', o: [['🌴', 'Debaixo de uma palmeira'], ['🛋️', 'Num sofá'], ['🚌', 'Num ônibus']] },
-        { q: 'O que atolou na água?', o: [['🛞', 'Os carros de ferro'], ['🚲', 'As bicicletas'], ['🛶', 'Os barcos']] },
-        { q: 'O que Débora e Baraque fizeram no fim?', o: [['🎶', 'Cantaram a Deus'], ['😭', 'Choraram'], ['🏃', 'Fugiram']] }
+        { q: 'Quem devemos honrar?', o: [['👨‍👩‍👧', 'Pai e mãe'], ['🦁', 'Os leões'], ['🎈', 'Os balões']] },
+        { q: 'Podemos pegar o que é dos outros?', o: [['🚫', 'Não'], ['✅', 'Sim'], ['🤫', 'Se ninguém vir']] },
+        { q: 'O que devemos falar sempre?', o: [['✔️', 'A verdade'], ['🤥', 'Mentiras'], ['🤐', 'Nada']] }
       ],
       big: [
-        { q: 'Quem era Débora?', o: ['Profetisa e juíza de Israel', 'Rainha do Egito', 'Esposa de Sísera', 'Uma soldada inimiga'], e: 'Juízes 4:4.' },
-        { q: 'Quantos carros de ferro Sísera tinha?', o: ['Novecentos', 'Dez', 'Cem', 'Um só'], e: 'Juízes 4:3.' },
-        { q: 'O que Baraque pediu para Débora?', o: ['Que fosse com ele', 'Que lutasse sozinha', 'Que fugisse', 'Que ficasse em casa'], e: 'Juízes 4:8.' },
-        { q: 'Como Deus venceu os carros de ferro?', o: ['Com água e confusão', 'Com um terremoto', 'Com fogo do céu', 'Com gafanhotos'], e: 'Juízes 5:4, 21: o céu gotejou e o ribeiro de Quisom os arrastou.' }
+        { q: 'Qual é o primeiro mandamento com promessa?', o: ['Honrar pai e mãe', 'Não matar', 'Não roubar', 'Guardar o descanso'], e: 'Efésios 6:2.' },
+        { q: 'O que Jesus ensinou sobre o "não matarás"?', o: ['Que a raiva e o ódio também quebram o mandamento', 'Que só vale para soldados', 'Que não é mais importante', 'Nada'], e: 'Mateus 5:21-22.' },
+        { q: 'O que é cobiçar?', o: ['Ficar querendo o que é dos outros', 'Ajudar os outros', 'Trabalhar muito', 'Orar'], e: 'Êxodo 20:17.' },
+        { q: 'O que o povo pediu a Moisés?', o: ['Que ele falasse com Deus por eles', 'Que fosse embora', 'Que fizesse um ídolo', 'Que voltasse ao Egito'], e: 'Êxodo 20:19.' }
       ],
-      parents: 'Atenção: o modo como Jael derrotou Sísera (Juízes 4:21) foi contado sem detalhes. Destaque Débora como líder sábia que confiava em Deus. Leitura junto: Juízes 4:1-16 e 5:1-5, 31.'
+      parents: 'Ponto central: os mandamentos 5 a 10 são o amor ao próximo (Romanos 13:9-10). O sétimo foi explicado como fidelidade no casamento. Jesus aprofunda a Lei no coração (Mateus 5). Leitura junto: Êxodo 20:12-21.'
     },
     {
-      id: 'j4', title: 'Gideão é chamado', ref: 'Juízes 6', icon: '🌾',
-      recap: 'Na lição passada, Deus deu vitória a Débora e Baraque sobre os carros de ferro de Sísera.',
+      id: 's4', title: 'A aliança e as tábuas de pedra', ref: 'Êxodo 24', icon: '🪨',
+      recap: 'Na lição passada, terminamos os Dez Mandamentos, e o povo pediu que Moisés fosse o mediador.',
       scenes: [
-        { art: '🐪🐪🐪', bg: 'deserto', text: 'O povo pecou de novo. Dessa vez vieram os midianitas, com camelos que não se podiam contar, como uma nuvem de gafanhotos. Eles destruíam as plantações e levavam os animais.', r: 'Juízes 6:1-5' },
-        { art: '🕳️😟', bg: 'monte', text: 'Por sete anos, o povo ficou tão pobre e com tanto medo que se escondia em cavernas nas montanhas. Então clamaram ao Senhor.', r: 'Juízes 6:2, 6' },
-        { art: '🧑🌾🍇', bg: 'campo', text: 'Um moço chamado Gideão estava malhando trigo escondido, dentro de um lagar, o lugar de amassar uvas, para os midianitas não verem.', r: 'Juízes 6:11' },
-        { art: '✨🔥💬🧑', bg: 'campo', fx: 'luz', text: 'O Anjo do Senhor apareceu e disse: "O Senhor é contigo, homem valoroso!" Gideão quase não acreditou. Valoroso? Ele estava escondido com medo!', r: 'Juízes 6:12' },
-        { art: '🧑😟', bg: 'campo', text: 'Gideão disse: "Se o Senhor está conosco, por que tudo isso aconteceu? E como eu vou salvar Israel? Minha família é a mais pobre, e eu sou o menor da casa do meu pai."', r: 'Juízes 6:13-15' },
-        { art: '✨💛', bg: 'aurora', fx: 'coracoes', text: 'Deus respondeu: "Eu estarei com você." O que importa não é o tamanho de Gideão, mas o tamanho de Deus.', r: 'Juízes 6:16' },
-        { art: '🗿🔨', bg: 'noite', text: 'A primeira missão foi em casa: derrubar o altar do ídolo Baal que era do pai dele. Gideão teve medo e fez isso de noite, mas obedeceu.', r: 'Juízes 6:25-27' },
-        { art: '🐑🧶💧', bg: 'aurora', text: 'Gideão ainda estava inseguro e pediu um sinal: "Se amanhã esta lã estiver molhada de orvalho e o chão seco, vou saber que o Senhor vai me usar." E aconteceu!', r: 'Juízes 6:36-38' },
-        { art: '🧶☀️', bg: 'aurora', fx: 'brilho', text: 'Ele pediu de novo, ao contrário: a lã seca e o chão molhado. E Deus, com paciência, fez também. Deus é paciente com quem tem medo.', r: 'Juízes 6:39-40' }
+        { art: '🧔📜👥', bg: 'monte', text: 'Moisés desceu e contou ao povo todas as palavras do Senhor. E o povo respondeu: "Tudo o que o Senhor falou, nós faremos!"', r: 'Êxodo 24:3' },
+        { art: '✍️📜', bg: 'monte', text: 'Moisés escreveu todas as palavras do Senhor num livro: o Livro da Aliança.', r: 'Êxodo 24:4, 7' },
+        { art: '🪨🔥1️⃣2️⃣', bg: 'monte', fx: 'luz', text: 'De manhã cedo, ele construiu um altar ao pé do monte e levantou doze colunas de pedra, uma para cada tribo de Israel.', r: 'Êxodo 24:4' },
+        { art: '🐂🔥🩸', bg: 'monte', text: 'Ofereceram sacrifícios. Moisés pegou o sangue e aspergiu sobre o povo, dizendo: "Este é o sangue da aliança que o Senhor fez com vocês." A aliança foi selada com sangue.', r: 'Êxodo 24:5-8' },
+        { art: '🧔👥⛰️✨', bg: 'monte', fx: 'brilho', text: 'Moisés, Arão e os setenta anciãos subiram um pouco no monte. Viram a glória do Deus de Israel, como se o chão fosse de pedra de safira, azul como o céu. E comeram e beberam ali, diante de Deus.', r: 'Êxodo 24:9-11' },
+        { art: '✨💬🪨', bg: 'monte', fx: 'luz', text: 'O Senhor disse a Moisés: "Suba até mim no monte, e eu vou te dar as tábuas de pedra com a Lei e os mandamentos que escrevi."', r: 'Êxodo 24:12' },
+        { art: '☁️🔥⛰️', bg: 'monte', fx: 'luz', text: 'Moisés subiu com o seu ajudante, Josué. Uma nuvem cobriu o monte por seis dias, e a glória do Senhor parecia um fogo devorador no alto do monte.', r: 'Êxodo 24:13-17' },
+        { art: '4️⃣0️⃣☀️🌙', bg: 'noite', fx: 'estrelas', text: 'No sétimo dia, Deus chamou Moisés do meio da nuvem. Moisés entrou na nuvem e ficou no monte quarenta dias e quarenta noites, recebendo as instruções de Deus.', r: 'Êxodo 24:16-18' }
       ],
-      god: 'Deus enxerga em nós o que Ele mesmo vai fazer. Ele é paciente com os nossos medos.',
-      jesus: 'Gideão era o menor da casa do pai. Jesus nasceu numa família simples, numa cidade pequena, e Deus usou isso para salvar o mundo. E Jesus diz a nós o que Deus disse a Gideão: "Eu estou convosco todos os dias" (Mateus 28:20).',
-      verse: { ref: 'Juízes 6:12', tx: 'O Senhor é contigo, homem valoroso.' },
+      god: 'Deus faz aliança com o seu povo e é fiel a ela. A aliança de Deus é muito séria e preciosa.',
+      jesus: 'Moisés disse: "Este é o sangue da aliança." Na Santa Ceia, Jesus pegou o cálice e disse quase as mesmas palavras: "Isto é o meu sangue, o sangue da nova aliança, derramado por muitos" (Mateus 26:28). A antiga aliança foi selada com o sangue de animais; a nova, com o sangue de Jesus.',
+      verse: { ref: 'Êxodo 24:7', tx: 'Tudo o que o Senhor tem falado faremos, e obedeceremos.' },
       small: [
-        { q: 'Onde Gideão estava escondido?', o: [['🍇', 'Num lagar de uvas'], ['🌳', 'Numa árvore'], ['🛁', 'Na banheira']] },
-        { q: 'Quem apareceu para Gideão?', o: [['🔥', 'O Anjo do Senhor'], ['🦊', 'Uma raposa'], ['👻', 'Um fantasma']] },
-        { q: 'O que Gideão usou para pedir um sinal?', o: [['🧶', 'Lã de ovelha'], ['🎈', 'Um balão'], ['📺', 'Uma TV']] }
+        { q: 'Em que Deus escreveu os mandamentos?', o: [['🪨', 'Em tábuas de pedra'], ['📱', 'No celular'], ['🍃', 'Numa folha']] },
+        { q: 'Quantas colunas Moisés levantou?', o: [['1️⃣2️⃣', 'Doze'], ['1️⃣', 'Uma'], ['💯', 'Cem']] },
+        { q: 'Quantos dias Moisés ficou no monte?', o: [['4️⃣0️⃣', 'Quarenta'], ['1️⃣', 'Um'], ['7️⃣', 'Sete']] }
       ],
       big: [
-        { q: 'Que povo estava destruindo Israel?', o: ['Os midianitas', 'Os egípcios', 'Os romanos', 'Os filisteus'], e: 'Juízes 6:1-6.' },
-        { q: 'Do que o anjo chamou Gideão?', o: ['Homem valoroso', 'Homem medroso', 'Rei de Israel', 'Profeta'], e: 'Deus o chamou pelo que Ele faria nele.' },
-        { q: 'Qual foi a primeira missão de Gideão?', o: ['Derrubar o altar de Baal', 'Lutar contra um gigante', 'Construir um templo', 'Ir para o Egito'], e: 'Juízes 6:25-27.' },
-        { q: 'O que o sinal da lã mostra sobre Deus?', o: ['Ele é paciente com nosso medo', 'Ele gosta de lã', 'Ele queria brincar', 'Ele estava bravo'], e: 'Deus respondeu as duas vezes (Juízes 6:36-40).' }
+        { q: 'Por que Moisés levantou doze colunas?', o: ['Uma para cada tribo de Israel', 'Para fazer uma casa', 'Para contar os dias', 'Por acaso'], e: 'Êxodo 24:4.' },
+        { q: 'Como a aliança foi selada?', o: ['Com sangue', 'Com ouro', 'Com uma assinatura', 'Com uma festa'], e: 'Êxodo 24:8; Hebreus 9:18-20.' },
+        { q: 'Quem subiu com Moisés no monte?', o: ['Josué, seu ajudante', 'Faraó', 'Jetro', 'Calebe'], e: 'Êxodo 24:13.' },
+        { q: 'Com o que a glória do Senhor parecia?', o: ['Um fogo devorador', 'Uma chuva fina', 'Uma estrela', 'Uma flor'], e: 'Êxodo 24:17.' }
       ],
-      parents: 'Ponto central: Deus chama pessoas fracas e medrosas e as fortalece com a sua presença. Pergunte: "Do que você tem medo? Lembre que Deus está com você." Leitura junto: Juízes 6:11-16 e 36-40.'
+      parents: 'Ponto central: a aliança selada com sangue (Êxodo 24:8) e o paralelo direto com a Ceia (Mateus 26:28; Hebreus 9:18-22). A visão em 24:10 descreve o que estava sob os pés de Deus, não a forma de Deus; mantemos só a luz. Leitura junto: Êxodo 24:3-18.'
     },
     {
-      id: 'j5', title: 'Gideão e os 300', ref: 'Juízes 7', icon: '🎺',
-      recap: 'Na lição passada, Deus chamou Gideão, que era medroso, e disse: "Eu estarei com você."',
+      id: 's5', title: 'O tabernáculo: a casa de Deus', ref: 'Êxodo 25 – 27', icon: '⛺',
+      recap: 'Na lição passada, Deus fez a aliança com o povo, e Moisés subiu ao monte por quarenta dias.',
       scenes: [
-        { art: '👥👥👥', bg: 'campo', text: 'Gideão chamou o povo para a batalha e vieram trinta e dois mil homens. Os midianitas eram muitos mais, mas era um exército bom.', r: 'Juízes 6:35; 7:1-2' },
-        { art: '✨✋', bg: 'aurora', fx: 'luz', text: 'Deus disse: "Tem gente demais! Se vencerem, vão dizer que foi pela própria força." E mandou: "Quem estiver com medo, pode voltar para casa."', r: 'Juízes 7:2-3' },
-        { art: '🚶🚶🚶', bg: 'campo', text: 'Vinte e dois mil foram embora! Ficaram dez mil. Mas Deus disse: "Ainda é muita gente. Leve-os até a água."', r: 'Juízes 7:3-4' },
-        { art: '💧👥', bg: 'mar', fx: 'ondas', text: 'Na beira da água, a maioria se ajoelhou para beber. Só trezentos homens levaram a água até a boca com a mão, lambendo-a como faz um cachorro.', r: 'Juízes 7:5-6' },
-        { art: '3️⃣0️⃣0️⃣', bg: 'campo', text: 'Deus disse: "Com esses trezentos eu vou salvar vocês." Trezentos contra um exército enorme, como gafanhotos! Agora todo mundo ia saber que a vitória era de Deus.', r: 'Juízes 7:7, 12' },
-        { art: '🌙👂', bg: 'noite', fx: 'estrelas', text: 'De noite, Deus mandou Gideão espiar o acampamento inimigo. Ele ouviu um soldado contando um sonho, e outro dizendo: "Deus entregou Midiã nas mãos de Gideão!" Gideão adorou a Deus ali mesmo.', r: 'Juízes 7:9-15' },
-        { art: '🎺🏺🔥', bg: 'noite', fx: 'estrelas', text: 'Gideão deu a cada homem uma trombeta e um cântaro vazio com uma tocha acesa escondida dentro. Nada de espadas na mão!', r: 'Juízes 7:16' },
-        { art: '💥🔥🎺', bg: 'noite', fx: 'luz', text: 'No meio da noite, cercaram o acampamento. Tocaram as trombetas, quebraram os cântaros, levantaram as tochas e gritaram: "Espada do Senhor e de Gideão!"', r: 'Juízes 7:19-20' },
-        { art: '😱🏃🏃', bg: 'noite', text: 'Os midianitas acordaram apavorados, com luzes e barulho por todo lado. Na confusão, lutaram uns contra os outros e fugiram.', r: 'Juízes 7:21-22' },
-        { art: '✨🏆', bg: 'aurora', fx: 'brilho', text: 'Deus deu a vitória a Israel com só trezentos homens, trombetas e tochas. Ninguém podia dizer que foi força humana. Foi o Senhor!', r: 'Juízes 7:22; 8:28' }
+        { art: '✨💬🧔', bg: 'monte', fx: 'luz', text: 'No alto do monte, Deus disse a Moisés: "Façam para mim um santuário, e eu vou morar no meio deles." O Deus santo queria morar no meio do seu povo!', r: 'Êxodo 25:8' },
+        { art: '🎁🟨🧵', bg: 'aurora', fx: 'brilho', text: 'Deus pediu que cada um que quisesse, de coração, trouxesse ofertas: ouro, prata, bronze, tecidos coloridos, peles, madeira, azeite e pedras preciosas.', r: 'Êxodo 25:1-7' },
+        { art: '📐⛺', bg: 'deserto', text: 'Deus mostrou a Moisés o modelo exato do tabernáculo: uma tenda grande, que podia ser desmontada e carregada pelo deserto, cercada por um pátio.', r: 'Êxodo 25:9, 40; 26' },
+        { art: '📦✨', bg: 'aurora', fx: 'luz', text: 'A peça mais importante era a arca da aliança: uma caixa de madeira coberta de ouro, onde ficariam as tábuas da Lei. Em cima dela, a tampa de ouro, chamada propiciatório.', r: 'Êxodo 25:10-22' },
+        { art: '🍞🍞🟨', bg: 'aurora', text: 'Havia também uma mesa de ouro, com doze pães sempre ali, diante de Deus, um para cada tribo.', r: 'Êxodo 25:23-30; Levítico 24:5-8' },
+        { art: '🕎🔥', bg: 'noite', fx: 'luz', text: 'E um candelabro de ouro puro, com sete lâmpadas, para iluminar o lugar santo. As lâmpadas deviam ficar sempre acesas.', r: 'Êxodo 25:31-40; 27:20' },
+        { art: '🧶🚪', bg: 'aurora', text: 'Um véu bonito, de tecido azul, roxo e vermelho, separava o Lugar Santíssimo, onde ficava a arca, do resto da tenda. Era o lugar mais santo de todos.', r: 'Êxodo 26:31-33' },
+        { art: '🔥🪨🧺', bg: 'campo', text: 'No pátio, na entrada, ficava o altar de bronze, onde os sacrifícios eram oferecidos, e uma bacia de bronze com água, para os sacerdotes se lavarem.', r: 'Êxodo 27:1-8; 30:17-21' },
+        { art: '⛺👥💛', bg: 'aurora', fx: 'coracoes', text: 'Para chegar perto de Deus, era preciso passar pelo altar, pela água, pela luz, pelo pão, até o véu. Tudo no tabernáculo ensinava: Deus quer estar perto, mas o pecado precisa ser tratado.', r: 'Hebreus 9:1-8' }
       ],
-      god: 'Deus não precisa de muitos nem de fortes. A vitória vem dele, para que toda a glória seja dele.',
-      jesus: 'Deus venceu com poucos homens e cântaros quebrados com luz dentro. Jesus venceu sozinho, na cruz, quando todos achavam que Ele era fraco. E a Bíblia diz que nós somos vasos de barro com um tesouro de luz dentro (2 Coríntios 4:7).',
-      verse: { ref: 'Zacarias 4:6', tx: 'Não por força nem por violência, mas sim pelo meu Espírito, diz o Senhor dos Exércitos.' },
+      god: 'Deus quer morar perto de nós. Ele mesmo prepara o caminho para chegarmos até Ele.',
+      jesus: 'João escreveu: "E o Verbo se fez carne, e habitou entre nós" (João 1:14). A palavra "habitou" quer dizer "armou a sua tenda"! Jesus é o verdadeiro tabernáculo: Deus morando no meio do seu povo. Ele é o Pão da vida, a Luz do mundo, e o sacrifício que abre o caminho até Deus.',
+      verse: { ref: 'Êxodo 25:8', tx: 'E me farão um santuário, e habitarei no meio deles.' },
       small: [
-        { q: 'Com quantos homens Deus deu a vitória?', o: [['3️⃣', 'Trezentos'], ['🔟', 'Dez mil'], ['1️⃣', 'Um só']] },
-        { q: 'O que estava dentro dos cântaros?', o: [['🔥', 'Tochas acesas'], ['🍯', 'Mel'], ['🐸', 'Sapos']] },
-        { q: 'O que eles tocaram?', o: [['🎺', 'Trombetas'], ['🎸', 'Guitarras'], ['🎹', 'Pianos']] }
+        { q: 'O que era o tabernáculo?', o: [['⛺', 'Uma tenda especial de Deus'], ['🏰', 'Um castelo'], ['🎪', 'Um circo']] },
+        { q: 'O que iluminava o lugar santo?', o: [['🕎', 'Um candelabro'], ['💡', 'Uma lâmpada elétrica'], ['🔦', 'Uma lanterna']] },
+        { q: 'O que ficava dentro da arca?', o: [['🪨', 'As tábuas da Lei'], ['🧸', 'Brinquedos'], ['🍪', 'Biscoitos']] }
       ],
       big: [
-        { q: 'Por que Deus diminuiu o exército?', o: ['Para todos saberem que a vitória era dele', 'Porque faltava comida', 'Porque estava chovendo', 'Porque eram fracos demais'], e: 'Juízes 7:2.' },
-        { q: 'Como os trezentos beberam água?', o: ['Levando a água à boca com a mão', 'De joelhos com a boca na água', 'Num copo de ouro', 'Não beberam'], e: 'Juízes 7:5-7.' },
-        { q: 'O que os homens gritaram?', o: ['"Espada do Senhor e de Gideão!"', '"Vitória para Israel!"', '"Corram!"', '"Viva o rei!"'], e: 'Juízes 7:20.' },
-        { q: 'O que os midianitas fizeram na confusão?', o: ['Lutaram entre si e fugiram', 'Se renderam com festa', 'Atacaram Gideão', 'Continuaram dormindo'], e: 'Juízes 7:22.' }
+        { q: 'Por que Deus mandou fazer o tabernáculo?', o: ['Para morar no meio do povo', 'Para guardar ouro', 'Para fazer festas', 'Para os soldados'], e: 'Êxodo 25:8.' },
+        { q: 'Como as ofertas deviam ser dadas?', o: ['De coração, por quem quisesse', 'Obrigatórias', 'Só pelos ricos', 'Só por Moisés'], e: 'Êxodo 25:2.' },
+        { q: 'O que separava o Lugar Santíssimo?', o: ['Um véu', 'Uma porta de ferro', 'Um muro', 'Nada'], e: 'Êxodo 26:33.' },
+        { q: 'Que palavra de João 1:14 lembra o tabernáculo?', o: ['"Habitou" (armou a tenda)', '"Luz"', '"Princípio"', '"Graça"'], e: 'Jesus é Deus morando entre nós.' }
       ],
-      parents: 'Ponto central: Deus reduz o exército para que a glória seja dele (Juízes 7:2). Paralelo com 2 Coríntios 12:9: "o meu poder se aperfeiçoa na fraqueza". Leitura junto: Juízes 7:1-22.'
+      parents: 'Ponto central: o tabernáculo é a presença de Deus no meio do povo e uma grande figura de Cristo (João 1:14; Hebreus 8:5; 9:11-12). Os querubins sobre a arca foram omitidos na arte. Leitura junto: Êxodo 25:1-22.'
     },
     {
-      id: 'j6', title: 'Depois de Gideão', ref: 'Juízes 8 – 10', icon: '👑',
-      recap: 'Na lição passada, Deus deu vitória a Gideão com só trezentos homens.',
+      id: 's6', title: 'O sumo sacerdote', ref: 'Êxodo 28 – 29', icon: '🧶',
+      recap: 'Na lição passada, Deus mostrou a Moisés como construir o tabernáculo, a tenda onde Ele moraria no meio do povo.',
       scenes: [
-        { art: '👥👑🧔', bg: 'cidade', text: 'Depois da vitória, o povo disse a Gideão: "Seja nosso rei, você, seu filho e seu neto!"', r: 'Juízes 8:22' },
-        { art: '🧔✋', bg: 'cidade', fx: 'luz', text: 'Gideão respondeu muito bem: "Eu não vou reinar sobre vocês, nem meu filho. O Senhor é quem reina sobre vocês."', r: 'Juízes 8:23' },
-        { art: '💍🟨', bg: 'palacio', text: 'Mas Gideão pediu os brincos de ouro que tinham ficado dos inimigos e fez com eles um éfode, uma peça de roupa especial de sacerdote, e o colocou na sua cidade.', r: 'Juízes 8:24-27' },
-        { art: '🗿😞', bg: 'cidade', text: 'O que parecia uma lembrança virou uma armadilha: o povo começou a adorar aquele objeto de ouro, em vez de adorar a Deus. Até coisas boas podem virar ídolos.', r: 'Juízes 8:27' },
-        { art: '🔁🗿', bg: 'cidade', text: 'Quando Gideão morreu, o povo voltou a adorar Baal. E se esqueceu de Deus, que os tinha livrado, e da família de Gideão.', r: 'Juízes 8:33-35' },
-        { art: '😈👑', bg: 'palacio', text: 'Um filho de Gideão, chamado Abimeleque, quis ser rei de qualquer jeito. Ele fez coisas muito más contra a própria família para conseguir o trono, e trouxe guerra e destruição.', r: 'Juízes 9:1-6' },
-        { art: '🪨⬇️', bg: 'monte', text: 'Mas Deus não deixou o mal ficar sem resposta: Abimeleque reinou só três anos e caiu numa batalha. A Bíblia diz que Deus fez voltar sobre ele o mal que ele tinha feito.', r: 'Juízes 9:22, 53-57' },
-        { art: '🧔🧔', bg: 'campo', text: 'Depois disso, Deus levantou dois juízes mais tranquilos, Tola e Jair, que julgaram Israel em paz por muitos anos.', r: 'Juízes 10:1-5' },
-        { art: '🙏💔', bg: 'noite', text: 'Mas o povo voltou a adorar ídolos de todos os vizinhos. Quando os inimigos vieram, eles clamaram: "Pecamos! Faze conosco o que quiseres, mas livra-nos hoje!" E jogaram fora os deuses estranhos.', r: 'Juízes 10:6-16' },
-        { art: '💛✨', bg: 'aurora', fx: 'coracoes', text: 'A Bíblia diz uma das frases mais lindas do livro: o coração do Senhor se angustiou com o sofrimento de Israel. Deus sente a nossa dor.', r: 'Juízes 10:16' }
+        { art: '🧔🧔👦👦', bg: 'aurora', text: 'Deus escolheu Arão, o irmão de Moisés, e os filhos dele para serem sacerdotes. O sacerdote era quem servia a Deus no tabernáculo, em nome do povo.', r: 'Êxodo 28:1' },
+        { art: '👘✨', bg: 'aurora', fx: 'brilho', text: 'Deus mandou fazer roupas santas para Arão, "para glória e beleza": uma túnica, um manto azul, um cinto e um turbante.', r: 'Êxodo 28:2-4, 31' },
+        { art: '💎💎💎1️⃣2️⃣', bg: 'aurora', fx: 'brilho', text: 'No peito, Arão usava o peitoral, com doze pedras preciosas. Em cada pedra estava escrito o nome de uma tribo de Israel. Ele carregava o povo junto ao coração diante de Deus!', r: 'Êxodo 28:15-21, 29' },
+        { art: '💎💎🧥', bg: 'aurora', text: 'Nos ombros, havia mais duas pedras com os nomes das tribos. Arão levava o povo sobre os ombros, como um pastor leva a ovelha.', r: 'Êxodo 28:9-12' },
+        { art: '🟨✍️', bg: 'aurora', fx: 'luz', text: 'Na frente do turbante havia uma lâmina de ouro com as palavras: "Santidade ao Senhor." Isso lembrava que o sacerdote precisava ser santo para se aproximar de Deus.', r: 'Êxodo 28:36-38' },
+        { art: '💧🫗🧔', bg: 'aurora', text: 'Para começar o serviço, Arão e os filhos foram lavados com água, vestidos com as roupas santas e ungidos com azeite. Eram separados para Deus.', r: 'Êxodo 29:4-7' },
+        { art: '🔥🐂🐏', bg: 'monte', text: 'Também foram oferecidos sacrifícios por eles, porque até os sacerdotes eram pecadores e precisavam ser perdoados antes de servir.', r: 'Êxodo 29:10-21' },
+        { art: '⛺✨👥', bg: 'aurora', fx: 'coracoes', text: 'E Deus prometeu: "Vou morar no meio dos filhos de Israel e serei o Deus deles. E eles vão saber que eu sou o Senhor, que os tirou do Egito para morar no meio deles."', r: 'Êxodo 29:45-46' }
       ],
-      god: 'Só Deus deve reinar no nosso coração. Ele vê o mal, faz justiça, e se compadece de quem se arrepende.',
-      jesus: 'Gideão disse que só o Senhor devia reinar. Abimeleque tomou o trono à força e fez mal à própria família. Jesus é o Rei verdadeiro: em vez de tomar a vida dos outros, Ele deu a própria vida por nós.',
-      verse: { ref: 'Juízes 8:23', tx: 'Não dominarei sobre vós, nem tampouco meu filho sobre vós dominará; o Senhor sobre vós dominará.' },
+      god: 'Deus deu ao povo um sacerdote para representá-los. Ele quer que cheguemos perto dele.',
+      jesus: 'O sumo sacerdote carregava os nomes do povo no coração e nos ombros diante de Deus. Jesus é o nosso grande Sumo Sacerdote (Hebreus 4:14): Ele carrega o nosso nome diante do Pai, ora por nós, e, diferente de Arão, nunca precisou de sacrifício por si mesmo, porque nunca pecou (Hebreus 7:26-27).',
+      verse: { ref: 'Hebreus 4:14', tx: 'Visto que temos um grande sumo sacerdote, Jesus, Filho de Deus, que penetrou nos céus, retenhamos firmemente a nossa confissão.' },
       small: [
-        { q: 'O que o povo queria que Gideão fosse?', o: [['👑', 'Rei'], ['🧑‍🍳', 'Cozinheiro'], ['🤡', 'Palhaço']] },
-        { q: 'O que Gideão fez com o ouro?', o: [['🟨', 'Um éfode'], ['🏰', 'Um castelo'], ['🚗', 'Um carro']] },
-        { q: 'Deus se importa quando sofremos?', o: [['💛', 'Sim, muito'], ['❌', 'Não'], ['🤷', 'Às vezes']] }
+        { q: 'Quem Deus escolheu para ser sacerdote?', o: [['🧔', 'Arão'], ['👑', 'Faraó'], ['🐑', 'Uma ovelha']] },
+        { q: 'O que havia no peitoral de Arão?', o: [['💎', 'Doze pedras preciosas'], ['🍬', 'Balas'], ['🔔', 'Sinos de festa']] },
+        { q: 'Quem é o nosso grande Sumo Sacerdote?', o: [['✝️', 'Jesus'], ['🧔', 'Moisés'], ['👑', 'Um rei']] }
       ],
       big: [
-        { q: 'O que Gideão respondeu quando quiseram fazê-lo rei?', o: ['"O Senhor reinará sobre vocês"', '"Sim, serei rei"', '"Meu filho será rei"', '"Vou pensar"'], e: 'Juízes 8:23.' },
-        { q: 'O que aconteceu com o éfode de ouro?', o: ['O povo passou a adorá-lo', 'Foi guardado no templo', 'Foi derretido', 'Foi dado aos pobres'], e: 'Juízes 8:27: tornou-se um laço para Gideão e sua casa.' },
-        { q: 'Quem quis ser rei de qualquer jeito?', o: ['Abimeleque', 'Tola', 'Jair', 'Baraque'], e: 'Juízes 9.' },
-        { q: 'Como Deus reagiu ao sofrimento do povo arrependido?', o: ['Seu coração se angustiou', 'Ficou indiferente', 'Riu deles', 'Foi embora'], e: 'Juízes 10:16.' }
+        { q: 'O que estava escrito nas pedras do peitoral?', o: ['Os nomes das doze tribos', 'Os dez mandamentos', 'O nome de Arão', 'Nada'], e: 'Êxodo 28:21.' },
+        { q: 'O que estava escrito na lâmina de ouro?', o: ['"Santidade ao Senhor"', '"Arão, o sacerdote"', '"Israel"', '"Paz"'], e: 'Êxodo 28:36.' },
+        { q: 'Por que foram oferecidos sacrifícios pelos sacerdotes?', o: ['Eles também eram pecadores', 'Por tradição', 'Para fazer festa', 'Porque eram ricos'], e: 'Hebreus 7:27.' },
+        { q: 'O que torna Jesus diferente de Arão?', o: ['Jesus nunca pecou e vive para sempre', 'Jesus usava roupas mais bonitas', 'Jesus era da tribo de Levi', 'Não há diferença'], e: 'Hebreus 7:23-27.' }
       ],
-      parents: 'Atenção: a história de Abimeleque (Juízes 9), que matou os próprios irmãos para reinar, foi resumida em uma frase: "fez coisas muito más contra a própria família". Se quiser, leia antes Juízes 9 sozinho. Destaque Juízes 10:16, que mostra a compaixão de Deus. Leitura junto: Juízes 8:22-28 e 10:10-16.'
+      parents: 'Ponto central: o sacerdócio aponta para Cristo (Hebreus 4:14-16; 7:23-28). As roupas e a consagração foram simplificadas. Leitura junto: Êxodo 28:1-2, 29-30 e 36-38.'
     },
     {
-      id: 'j7', title: 'Jefté', ref: 'Juízes 11 – 12', icon: '⚠️',
-      recap: 'Na lição passada, Abimeleque quis ser rei de qualquer jeito, e o povo, de novo, precisou clamar a Deus.',
+      id: 's7', title: 'O bezerro de ouro', ref: 'Êxodo 32', icon: '🐂',
+      recap: 'Na lição passada, Deus escolheu Arão como sumo sacerdote, enquanto Moisés estava no monte.',
       scenes: [
-        { art: '🧔💔', bg: 'deserto', text: 'Jefté era um guerreiro valente de Gileade. Mas os irmãos dele o expulsaram de casa, dizendo que ele não tinha direito à herança. Ele foi rejeitado pela própria família.', r: 'Juízes 11:1-2' },
-        { art: '🧔🏜️', bg: 'deserto', text: 'Jefté foi morar longe, numa terra chamada Tobe, e juntou um grupo de homens ao seu redor.', r: 'Juízes 11:3' },
-        { art: '⚔️🙏', bg: 'cidade', text: 'Quando os amonitas atacaram Israel, os líderes de Gileade, os mesmos que o tinham rejeitado, foram pedir ajuda: "Venha ser o nosso chefe!"', r: 'Juízes 11:4-11' },
-        { art: '📜💬', bg: 'palacio', text: 'Jefté tentou resolver sem guerra primeiro. Mandou uma mensagem ao rei dos amonitas, contando a história de como Deus deu aquela terra a Israel. Mas o rei não quis ouvir.', r: 'Juízes 11:12-28' },
-        { art: '✨🧔', bg: 'aurora', fx: 'luz', text: 'O Espírito do Senhor veio sobre Jefté, e Deus deu a ele a vitória sobre os amonitas.', r: 'Juízes 11:29, 32-33' },
-        { art: '🗣️⚠️', bg: 'noite', text: 'Mas, antes da batalha, Jefté fez um voto, uma promessa a Deus, sem pensar direito no que estava prometendo. E essa promessa apressada trouxe uma tristeza enorme para ele e para a sua única filha.', r: 'Juízes 11:30-31, 34-35' },
-        { art: '😢👧', bg: 'noite', text: 'A Bíblia conta que, todo ano, as moças de Israel se lembravam da filha de Jefté e choravam por ela. Deus não tinha pedido aquela promessa. Ela veio do coração confuso de um povo que tinha esquecido como Deus é.', r: 'Juízes 11:39-40' },
-        { art: '⚔️👥', bg: 'monte', text: 'Depois disso, até os homens da tribo de Efraim brigaram com Jefté. O povo de Deus estava lutando contra si mesmo. O ciclo estava ficando cada vez pior.', r: 'Juízes 12:1-6' },
-        { art: '✨💛', bg: 'aurora', fx: 'coracoes', text: 'A história de Jefté nos ensina a pensar antes de prometer e a conhecer bem quem Deus é. Deus é bom, e nunca quer o mal dos seus filhos.', r: 'Eclesiastes 5:2' }
+        { art: '⛰️⏳👥', bg: 'monte', text: 'Moisés estava no monte havia quase quarenta dias. O povo, lá embaixo, ficou impaciente: "Não sabemos o que aconteceu com esse Moisés!"', r: 'Êxodo 32:1' },
+        { art: '👥💬🧔', bg: 'deserto', text: 'Eles foram até Arão e disseram: "Faça deuses para nós, que andem na nossa frente!" E Arão, em vez de dizer não, pediu os brincos de ouro do povo.', r: 'Êxodo 32:1-3' },
+        { art: '🔥🟨🐂', bg: 'deserto', text: 'Arão derreteu o ouro e fez a estátua de um bezerro. E o povo disse: "Estes são os seus deuses, Israel, que tiraram você do Egito!" Quebraram o primeiro e o segundo mandamento de uma vez.', r: 'Êxodo 32:4' },
+        { art: '🎉🐂💃', bg: 'deserto', text: 'No dia seguinte, ofereceram sacrifícios ao bezerro, comeram, beberam e fizeram uma festa barulhenta e desordenada.', r: 'Êxodo 32:6' },
+        { art: '✨😠⛰️', bg: 'monte', fx: 'luz', text: 'Deus disse a Moisés: "Desça, porque o povo se corrompeu. Depressa se desviaram do caminho que eu mandei." Deus estava muito irado com o pecado deles.', r: 'Êxodo 32:7-10' },
+        { art: '🧔🙏', bg: 'monte', fx: 'luz', text: 'Moisés orou pelo povo: "Senhor, por que a tua ira contra o teu povo, que tiraste do Egito? Lembra-te de Abraão, Isaque e Israel, e das tuas promessas!" E o Senhor teve misericórdia.', r: 'Êxodo 32:11-14' },
+        { art: '🧔🪨💥', bg: 'deserto', text: 'Moisés desceu com as duas tábuas da Lei. Quando viu o bezerro e a dança, ficou muito irado, jogou as tábuas no chão, e elas se quebraram ao pé do monte. A aliança tinha sido quebrada.', r: 'Êxodo 32:15-19' },
+        { art: '🔥🐂💧', bg: 'deserto', text: 'Moisés queimou o bezerro, moeu até virar pó, jogou na água e fez o povo beber. Arão inventou uma desculpa: "Joguei o ouro no fogo e saiu este bezerro!"', r: 'Êxodo 32:20-24' },
+        { art: '🧔💔🙏', bg: 'monte', text: 'Houve uma disciplina muito séria naquele dia. Depois, Moisés voltou a Deus e orou: "Este povo cometeu um grande pecado. Perdoa-lhes! E, se não, risca o meu nome do teu livro."', r: 'Êxodo 32:28-32' }
       ],
-      god: 'Deus é bom e conhecê-lo de verdade nos protege de escolhas apressadas.',
-      jesus: 'Jefté foi rejeitado pelos irmãos, e depois eles precisaram dele para serem salvos. Jesus também foi rejeitado pelo seu povo e se tornou o Salvador de todos. E, diferente de Jefté, tudo o que Jesus promete é sábio e bom.',
-      verse: { ref: 'Tiago 1:19', tx: 'Portanto, meus amados irmãos, todo o homem seja pronto para ouvir, tardio para falar, tardio para se irar.' },
+      god: 'Deus não divide o nosso coração com nada. E Ele ouve quem ora pelos outros.',
+      jesus: 'Moisés se ofereceu para ser riscado do livro de Deus no lugar do povo, mas não podia pagar pelo pecado deles. Jesus pôde! Ele não só pediu perdão pelo povo: Ele mesmo levou o castigo do pecado na cruz, para que o nosso nome fique escrito no livro da vida.',
+      verse: { ref: '1 João 5:21', tx: 'Filhinhos, guardai-vos dos ídolos.' },
       small: [
-        { q: 'Como os irmãos trataram Jefté?', o: [['💔', 'Mandaram ele embora'], ['🎁', 'Deram presentes'], ['🎂', 'Fizeram festa']] },
-        { q: 'Antes de prometer, o que devemos fazer?', o: [['🤔', 'Pensar bem'], ['🏃', 'Sair correndo'], ['🙈', 'Fechar os olhos']] },
-        { q: 'Quem deu a vitória a Jefté?', o: [['✨', 'Deus'], ['🦅', 'Uma águia'], ['⚡', 'Um raio']] }
+        { q: 'O que o povo fez de ouro?', o: [['🐂', 'Um bezerro'], ['👑', 'Uma coroa'], ['🏆', 'Uma taça']] },
+        { q: 'O que Moisés fez com as tábuas?', o: [['💥', 'Quebrou'], ['🎁', 'Embrulhou'], ['📦', 'Guardou']] },
+        { q: 'O que Moisés fez pelo povo?', o: [['🙏', 'Orou pedindo perdão'], ['😴', 'Dormiu'], ['🏃', 'Foi embora']] }
       ],
       big: [
-        { q: 'Por que Jefté foi morar longe?', o: ['Os irmãos o expulsaram', 'Ele quis viajar', 'Ficou rico', 'Foi preso'], e: 'Juízes 11:1-3.' },
-        { q: 'O que Jefté tentou fazer antes da guerra?', o: ['Resolver conversando', 'Fugir', 'Construir um muro', 'Se esconder'], e: 'Juízes 11:12-28: ele mandou mensageiros ao rei de Amom.' },
-        { q: 'Qual foi o erro de Jefté?', o: ['Fazer um voto apressado', 'Lutar com coragem', 'Ouvir a Deus', 'Perdoar os irmãos'], e: 'A promessa sem pensar trouxe grande tristeza.' },
-        { q: 'O que aprendemos com Jefté?', o: ['Pensar antes de prometer e conhecer a Deus', 'Que promessas não importam', 'Que guerras são boas', 'Que famílias não brigam'], e: 'Eclesiastes 5:2: não te precipites com a tua boca.' }
+        { q: 'Por que o povo pediu um ídolo?', o: ['Ficaram impacientes com a demora de Moisés', 'Deus mandou', 'Moisés pediu', 'Estavam com fome'], e: 'Êxodo 32:1.' },
+        { q: 'Quais mandamentos o povo quebrou com o bezerro?', o: ['O primeiro e o segundo', 'Só o décimo', 'O quinto', 'Nenhum'], e: 'Outros deuses e imagem de escultura.' },
+        { q: 'O que Moisés lembrou a Deus na oração?', o: ['As promessas a Abraão, Isaque e Israel', 'Que o povo era bom', 'Que estava cansado', 'Que queria ir embora'], e: 'Êxodo 32:13.' },
+        { q: 'Que desculpa Arão deu?', o: ['"Joguei o ouro no fogo e saiu este bezerro"', '"Deus mandou"', '"Foi Moisés"', '"Eu não estava lá"'], e: 'Êxodo 32:24.' }
       ],
-      parents: 'Atenção: esta é uma das passagens mais difíceis da Bíblia. O voto de Jefté e o que aconteceu com sua filha (Juízes 11:30-40) foram resumidos sem detalhes. Os estudiosos discutem se ela foi sacrificada ou consagrada a Deus para nunca se casar; o texto bíblico condena os sacrifícios humanos (Deuteronômio 12:31). Sugestão: leia a passagem sozinho antes e responda a perguntas com calma, mostrando que Deus não pediu esse voto. Leitura junto: Juízes 11:1-11 e 29-33.'
+      parents: 'A disciplina dos levitas contra os idólatras (Êxodo 32:25-29) foi resumida como "houve uma disciplina muito séria". Ponto central: idolatria, a intercessão de Moisés e a necessidade de um mediador melhor. Ídolos hoje também podem ser coisas boas que colocamos no lugar de Deus. Leitura junto: Êxodo 32:1-14 e 30-32.'
     },
     {
-      id: 'j8', title: 'Sansão nasce', ref: 'Juízes 13', icon: '👶',
-      recap: 'Na lição passada, Jefté fez uma promessa apressada, e aprendemos a pensar antes de prometer.',
+      id: 's8', title: 'Moisés vê a glória de Deus', ref: 'Êxodo 33 – 34', icon: '✨',
+      recap: 'Na lição passada, o povo fez um bezerro de ouro, e Moisés orou pedindo perdão.',
       scenes: [
-        { art: '🔁🗿', bg: 'cidade', text: 'O povo de novo fez o mal aos olhos do Senhor, e Deus os entregou aos filisteus por quarenta anos. Dessa vez, o povo nem clamou a Deus. Mas Deus agiu mesmo assim.', r: 'Juízes 13:1' },
-        { art: '👩😢', bg: 'campo', text: 'Na tribo de Dã morava um homem chamado Manoá. Sua esposa não podia ter filhos, e isso a deixava muito triste.', r: 'Juízes 13:2' },
-        { art: '✨🔥👩', bg: 'aurora', fx: 'luz', text: 'O Anjo do Senhor apareceu à mulher: "Você vai ter um filho! Ele vai começar a livrar Israel dos filisteus."', r: 'Juízes 13:3' },
-        { art: '✂️🚫', bg: 'aurora', text: 'O anjo explicou: "O menino será nazireu, separado para Deus desde o ventre. Ninguém pode cortar o cabelo dele, e ele não pode beber vinho."', r: 'Juízes 13:4-5' },
-        { art: '🧔🙏', bg: 'campo', text: 'Quando Manoá soube, orou: "Senhor, manda de novo o homem de Deus, para nos ensinar o que fazer com o menino." Que bonito: ele queria criar o filho do jeito de Deus!', r: 'Juízes 13:8' },
-        { art: '🔥⬆️✨', bg: 'monte', fx: 'luz', text: 'O anjo voltou. Manoá ofereceu um sacrifício a Deus, e o anjo subiu ao céu na chama do altar! Manoá e a esposa se prostraram com o rosto em terra.', r: 'Juízes 13:15-20' },
-        { art: '👶💛', bg: 'aurora', fx: 'coracoes', text: 'A mulher teve um filho e deu a ele o nome de Sansão. O menino cresceu, e o Senhor o abençoou.', r: 'Juízes 13:24' },
-        { art: '✨🧒', bg: 'aurora', fx: 'brilho', text: 'E o Espírito do Senhor começou a agir em Sansão. Deus tinha um plano para ele, desde antes de ele nascer.', r: 'Juízes 13:25' }
+        { art: '⛺☁️🧔', bg: 'deserto', fx: 'luz', text: 'Moisés armava uma tenda fora do acampamento para falar com Deus. Quando ele entrava, a coluna de nuvem descia, e o Senhor falava com Moisés face a face, como um homem fala com o seu amigo.', r: 'Êxodo 33:7-11' },
+        { art: '🧔🙏✨', bg: 'monte', text: 'Moisés pediu a Deus: "Se a tua presença não for conosco, não nos faças sair daqui." E Deus respondeu: "A minha presença irá com você, e eu lhe darei descanso."', r: 'Êxodo 33:14-15' },
+        { art: '🧔❓✨', bg: 'monte', fx: 'luz', text: 'Então Moisés fez o pedido mais ousado: "Mostra-me a tua glória!" Deus disse: "Vou fazer passar toda a minha bondade diante de você. Mas você não pode ver o meu rosto, porque ninguém pode me ver e continuar vivo."', r: 'Êxodo 33:18-20' },
+        { art: '🪨🕳️✋', bg: 'monte', fx: 'luz', text: 'Deus colocou Moisés numa fenda da rocha e o cobriu com a sua mão enquanto a sua glória passava. Depois, Moisés pôde ver só as costas, o rastro da glória de Deus.', r: 'Êxodo 33:21-23' },
+        { art: '🪨🪨✍️', bg: 'monte', text: 'Deus mandou Moisés cortar duas tábuas novas de pedra, como as primeiras. Deus ia escrever de novo os mandamentos. A aliança quebrada ia ser renovada!', r: 'Êxodo 34:1-4' },
+        { art: '☁️✨💬', bg: 'monte', fx: 'brilho', text: 'O Senhor desceu na nuvem e proclamou o seu nome: "Senhor, Senhor, Deus misericordioso e piedoso, tardio em irar-se e grande em bondade e verdade, que perdoa o pecado."', r: 'Êxodo 34:5-7' },
+        { art: '🧔🙇', bg: 'monte', text: 'Moisés se curvou rapidamente até o chão e adorou. E pediu de novo: "Senhor, vai conosco, perdoa o nosso pecado e toma-nos como teu povo."', r: 'Êxodo 34:8-9' },
+        { art: '🧔✨😮', bg: 'aurora', fx: 'luz', text: 'Moisés passou mais quarenta dias no monte. Quando desceu com as tábuas novas, o rosto dele brilhava, porque tinha falado com Deus! O povo ficou com medo de chegar perto, e Moisés passou a usar um véu.', r: 'Êxodo 34:28-35' }
       ],
-      god: 'Deus age mesmo quando ninguém pede. Ele tem planos para cada criança desde antes de nascer.',
-      jesus: 'Um anjo anunciou o nascimento de Sansão, que ia começar a livrar Israel. Muito tempo depois, um anjo anunciou o nascimento de Jesus, que ia salvar o seu povo dos seus pecados, não só começar, mas terminar a obra (Mateus 1:21).',
-      verse: { ref: 'Juízes 13:24', tx: 'Depois teve esta mulher um filho, e chamou o seu nome Sansão; e o menino cresceu, e o Senhor o abençoou.' },
+      god: 'Deus é misericordioso, paciente e cheio de amor. Ele perdoa e renova a aliança.',
+      jesus: 'Moisés pediu para ver a glória de Deus e só viu as costas. João diz: "Ninguém jamais viu a Deus; o Filho unigênito, que está no seio do Pai, esse o revelou" (João 1:18). Em Jesus, vemos a glória de Deus, cheia de graça e de verdade (João 1:14).',
+      verse: { ref: 'Êxodo 34:6', tx: 'Senhor, Senhor Deus, misericordioso e piedoso, tardio em irar-se e grande em beneficência e verdade.' },
       small: [
-        { q: 'Quem apareceu para a mãe de Sansão?', o: [['🔥', 'O Anjo do Senhor'], ['🦉', 'Uma coruja'], ['👮', 'Um guarda']] },
-        { q: 'O que não podia cortar de Sansão?', o: [['💇', 'O cabelo'], ['💅', 'As unhas'], ['👕', 'A roupa']] },
-        { q: 'Como o anjo subiu ao céu?', o: [['🔥', 'Na chama do altar'], ['🎈', 'Num balão'], ['🪜', 'Numa escada']] }
+        { q: 'O que Moisés pediu para ver?', o: [['✨', 'A glória de Deus'], ['🌈', 'Um arco-íris'], ['⭐', 'Uma estrela']] },
+        { q: 'Onde Deus colocou Moisés?', o: [['🪨', 'Numa fenda da rocha'], ['🛶', 'Num barco'], ['🌳', 'Numa árvore']] },
+        { q: 'Como ficou o rosto de Moisés?', o: [['✨', 'Brilhando'], ['😴', 'Com sono'], ['🤒', 'Doente']] }
       ],
       big: [
-        { q: 'Que povo dominava Israel nessa época?', o: ['Os filisteus', 'Os midianitas', 'Os amonitas', 'Os egípcios'], e: 'Juízes 13:1.' },
-        { q: 'O que era um nazireu?', o: ['Alguém separado para Deus', 'Alguém de Nazaré', 'Um soldado', 'Um sacerdote do templo'], e: 'Números 6 explica o voto de nazireu.' },
-        { q: 'O que Manoá pediu a Deus?', o: ['Que ensinasse como criar o menino', 'Que o menino fosse rico', 'Que o anjo fosse embora', 'Uma casa nova'], e: 'Juízes 13:8.' },
-        { q: 'O que aconteceu com Sansão enquanto crescia?', o: ['O Senhor o abençoou', 'Ele fugiu de casa', 'Ele ficou doente', 'Ele virou rei'], e: 'Juízes 13:24-25.' }
+        { q: 'Como Deus falava com Moisés na tenda?', o: ['Face a face, como um amigo', 'Por cartas', 'Por sinais de fumaça', 'Nunca falava'], e: 'Êxodo 33:11.' },
+        { q: 'Por que Moisés não podia ver o rosto de Deus?', o: ['Ninguém pode vê-lo e continuar vivo', 'Estava escuro', 'Moisés estava cansado', 'Deus estava longe'], e: 'Êxodo 33:20.' },
+        { q: 'Como Deus se descreveu em Êxodo 34:6?', o: ['Misericordioso, paciente e cheio de bondade', 'Bravo e distante', 'Cansado', 'Igual aos ídolos'], e: 'Esse texto é repetido muitas vezes na Bíblia.' },
+        { q: 'Em quem vemos a glória de Deus?', o: ['Em Jesus', 'Em Moisés', 'Nos anjos', 'Nas estátuas'], e: 'João 1:14, 18; 2 Coríntios 4:6.' }
       ],
-      parents: 'Ponto central: a oração de Manoá ("ensina-nos o que devemos fazer ao menino", Juízes 13:8) é um modelo para pais. Ore com a criança pelo futuro dela. Leitura junto: Juízes 13:2-25.'
+      parents: 'Ponto central: a autodeclaração de Deus em Êxodo 34:6-7, a passagem do Antigo Testamento mais citada dentro da própria Bíblia. "Face a face" (33:11) descreve a intimidade, não uma visão da essência de Deus (33:20). Não representamos Deus: só luz. Leitura junto: Êxodo 33:12-23 e 34:5-9.'
     },
     {
-      id: 'j9', title: 'Sansão, o forte', ref: 'Juízes 14 – 15', icon: '🦁',
-      recap: 'Na lição passada, Sansão nasceu, separado para Deus, com a promessa de começar a livrar Israel dos filisteus.',
+      id: 's9', title: 'A glória enche o tabernáculo', ref: 'Êxodo 35 – 40', icon: '☁️',
+      recap: 'Na lição passada, Deus renovou a aliança e mostrou a Moisés a sua bondade.',
       scenes: [
-        { art: '🧔💍', bg: 'cidade', text: 'Sansão cresceu e quis se casar com uma moça filisteia. Seus pais ficaram preocupados: ela não era do povo de Deus. Mas Sansão fazia o que achava bom aos próprios olhos.', r: 'Juízes 14:1-3' },
-        { art: '🦁🧔', bg: 'campo', text: 'No caminho, um leão novo veio rugindo contra ele. O Espírito do Senhor veio sobre Sansão e, sem nenhuma arma, ele venceu o leão com as próprias mãos!', r: 'Juízes 14:5-6' },
-        { art: '🐝🍯', bg: 'campo', fx: 'brilho', text: 'Tempos depois, ele passou de novo por ali e viu que um enxame de abelhas tinha feito mel no corpo do leão. Sansão pegou o mel e comeu. Nazireus não deviam tocar em animais mortos, mas Sansão não ligou.', r: 'Juízes 14:8-9; Números 6:6' },
-        { art: '❓🎉', bg: 'palacio', text: 'Na festa do casamento, Sansão contou uma adivinha aos filisteus: "Do que come saiu comida, e do forte saiu doçura." Ninguém conseguia adivinhar!', r: 'Juízes 14:12-14' },
-        { art: '😠🔥', bg: 'cidade', text: 'Os filisteus pressionaram a noiva para descobrir a resposta, e ela contou. A festa acabou em briga, e começou uma grande inimizade entre Sansão e os filisteus.', r: 'Juízes 14:15-20' },
-        { art: '🦊🔥🌾', bg: 'campo', fx: 'vento', text: 'Com raiva, Sansão pegou raposas, amarrou tochas nelas e soltou nas plantações dos filisteus. O trigo, as vinhas e as oliveiras pegaram fogo.', r: 'Juízes 15:4-5' },
-        { art: '🪢💪', bg: 'monte', text: 'Os filisteus vieram atrás dele. O próprio povo de Israel, com medo, amarrou Sansão com cordas novas e o entregou. Mas o Espírito do Senhor veio sobre ele, e as cordas se partiram como fios queimados!', r: 'Juízes 15:9-14' },
-        { art: '🦴💪', bg: 'monte', text: 'Com uma queixada de jumento que estava no chão, Sansão venceu mil filisteus. Deus usava a força de Sansão para livrar Israel.', r: 'Juízes 15:15-16' },
-        { art: '💧🙏', bg: 'deserto', fx: 'luz', text: 'Depois, Sansão sentiu uma sede enorme e clamou a Deus. E Deus abriu uma fonte de água ali mesmo! Sansão bebeu e recuperou as forças. Ele julgou Israel por vinte anos.', r: 'Juízes 15:18-20' }
+        { art: '👥🎁🎁', bg: 'deserto', fx: 'brilho', text: 'Moisés pediu as ofertas para o tabernáculo, e o povo trouxe tudo de coração: ouro, tecidos, madeira, pedras. Trouxeram tanto que Moisés teve que pedir para pararem!', r: 'Êxodo 35:20-29; 36:5-7' },
+        { art: '🧑‍🎨🔨✨', bg: 'aurora', text: 'Deus encheu um homem chamado Bezalel com o seu Espírito, com sabedoria e habilidade para trabalhar com ouro, pedra e madeira. E também Aoliabe, para ensinar os outros. O trabalho e a arte também são dons de Deus!', r: 'Êxodo 35:30-35' },
+        { art: '🧵🪡⛺', bg: 'deserto', text: 'Os artesãos fizeram tudo: as cortinas, as tábuas, a arca, a mesa, o candelabro, os altares e as roupas dos sacerdotes, exatamente como Deus tinha mostrado.', r: 'Êxodo 36 – 39' },
+        { art: '🧔👀✅', bg: 'aurora', text: 'Quando terminaram, trouxeram tudo a Moisés. Ele viu que tinham feito do jeito que o Senhor mandou, e os abençoou.', r: 'Êxodo 39:42-43' },
+        { art: '📅⛺🔨', bg: 'aurora', text: 'No primeiro dia do primeiro mês, quase um ano depois de saírem do Egito, Moisés levantou o tabernáculo e colocou cada coisa no seu lugar.', r: 'Êxodo 40:1-2, 17-33' },
+        { art: '☁️⛺✨', bg: 'aurora', fx: 'luz', text: 'Então a nuvem cobriu a tenda, e a glória do Senhor encheu o tabernáculo! A glória era tão forte que nem Moisés conseguia entrar.', r: 'Êxodo 40:34-35' },
+        { art: '☁️🔥🌙', bg: 'noite', fx: 'luz', text: 'De dia, a nuvem ficava sobre o tabernáculo. De noite, havia fogo na nuvem. Todo o povo podia ver: Deus estava ali, no meio deles.', r: 'Êxodo 40:38' },
+        { art: '☁️➡️🚶', bg: 'deserto', fx: 'vento', text: 'Quando a nuvem subia, o povo desmontava as tendas e seguia viagem. Quando ela parava, eles paravam. Deus guiava cada passo.', r: 'Êxodo 40:36-37' }
       ],
-      god: 'A força vem de Deus. Mas Deus quer mais que força: quer um coração obediente.',
-      jesus: 'Sansão foi amarrado e entregue aos inimigos pelo próprio povo, mas as cordas se partiram. Jesus também foi amarrado e entregue pelos seus, e nem a morte conseguiu segurá-lo: Ele ressuscitou!',
-      verse: { ref: 'Filipenses 4:13', tx: 'Posso todas as coisas em Cristo que me fortalece.' },
+      god: 'Deus cumpre o que promete: Ele veio morar no meio do seu povo e o guia em cada passo.',
+      jesus: 'A glória de Deus encheu o tabernáculo. Quando Jesus veio, João disse: "E vimos a sua glória, como a glória do unigênito do Pai" (João 1:14). E, depois de Jesus, o Espírito Santo veio morar em quem crê: agora somos nós o templo de Deus (1 Coríntios 3:16)!',
+      verse: { ref: 'Êxodo 40:34', tx: 'Então a nuvem cobriu a tenda da congregação, e a glória do Senhor encheu o tabernáculo.' },
       small: [
-        { q: 'Que animal Sansão venceu?', o: [['🦁', 'Um leão'], ['🐭', 'Um ratinho'], ['🐌', 'Uma lesma']] },
-        { q: 'O que as abelhas fizeram?', o: [['🍯', 'Mel'], ['🍞', 'Pão'], ['🧀', 'Queijo']] },
-        { q: 'De onde vinha a força de Sansão?', o: [['✨', 'De Deus'], ['💊', 'De remédio'], ['🥫', 'De espinafre']] }
+        { q: 'Quanto o povo trouxe de ofertas?', o: [['🎁', 'Tanto que tiveram que parar'], ['🤏', 'Quase nada'], ['❌', 'Nada']] },
+        { q: 'O que encheu o tabernáculo?', o: [['☁️', 'A glória de Deus na nuvem'], ['🎈', 'Balões'], ['🌊', 'Água']] },
+        { q: 'O que o povo fazia quando a nuvem subia?', o: [['🚶', 'Seguia viagem'], ['😴', 'Dormia'], ['🏊', 'Nadava']] }
       ],
       big: [
-        { q: 'Por que os pais de Sansão ficaram preocupados?', o: ['A noiva não era do povo de Deus', 'Ela era muito pobre', 'Ela morava longe', 'Ela era mais velha'], e: 'Juízes 14:3.' },
-        { q: 'Qual era a resposta da adivinha de Sansão?', o: ['O mel no leão', 'A chuva', 'O pão', 'O sol'], e: '"Que coisa há mais doce do que o mel, e mais forte do que o leão?" (Juízes 14:18).' },
-        { q: 'O que aconteceu com as cordas novas?', o: ['Se partiram como fios queimados', 'Prenderam Sansão para sempre', 'Viraram cobras', 'Sumiram'], e: 'Juízes 15:14.' },
-        { q: 'O que Deus fez quando Sansão teve sede?', o: ['Abriu uma fonte de água', 'Mandou chuva', 'Mandou um anjo com suco', 'Nada'], e: 'Juízes 15:18-19.' }
+        { q: 'Quem Deus encheu com o Espírito para ser artesão?', o: ['Bezalel', 'Arão', 'Josué', 'Calebe'], e: 'Êxodo 35:30-31.' },
+        { q: 'Por que Moisés pediu para o povo parar de ofertar?', o: ['Já havia mais que o suficiente', 'Era roubo', 'Deus ficou bravo', 'Acabou o ouro'], e: 'Êxodo 36:5-7.' },
+        { q: 'O que aconteceu quando o tabernáculo ficou pronto?', o: ['A glória do Senhor o encheu', 'Caiu uma tempestade', 'Nada', 'O povo foi embora'], e: 'Êxodo 40:34.' },
+        { q: 'Quem é o templo de Deus hoje?', o: ['Quem crê em Jesus', 'Uma tenda no deserto', 'Uma estátua', 'Ninguém'], e: '1 Coríntios 3:16; 6:19.' }
       ],
-      parents: 'Ponto central: Sansão é forte por fora, mas guiado pelos próprios desejos ("agrada aos meus olhos", Juízes 14:3). As batalhas foram contadas sem detalhes. Converse sobre a diferença entre ser forte e ser obediente. Leitura junto: Juízes 14:5-9 e 15:14-19.'
+      parents: 'Fim do livro de Êxodo: a glória que tinha ficado no monte agora habita no meio do povo. Destaque a generosidade alegre e o trabalho manual como dom do Espírito (Bezalel). Leitura junto: Êxodo 36:2-7 e 40:34-38.'
     },
     {
-      id: 'j10', title: 'Sansão e Dalila', ref: 'Juízes 16', icon: '✂️',
-      recap: 'Na lição passada, Deus deu a Sansão uma força enorme, mas Sansão vivia fazendo o que ele mesmo achava bom.',
+      id: 's10', title: 'Os sacrifícios de Levítico', ref: 'Levítico 1 – 10', icon: '🔥',
+      recap: 'Na lição passada, a glória de Deus encheu o tabernáculo. Agora vamos ao livro de Levítico.',
       scenes: [
-        { art: '👩💰', bg: 'palacio', text: 'Sansão gostou de uma mulher chamada Dalila. Os príncipes dos filisteus foram até ela e ofereceram muito dinheiro: "Descubra de onde vem a força dele!"', r: 'Juízes 16:4-5' },
-        { art: '👩❓🧔', bg: 'palacio', text: 'Dalila perguntou: "Qual é o segredo da sua força?" Sansão inventou: "Se me amarrarem com sete cordas de arco novas, fico fraco." Mas, quando ela tentou, ele arrebentou tudo.', r: 'Juízes 16:6-9' },
-        { art: '🪢🪢🪢', bg: 'palacio', text: 'Ela perguntou de novo, e de novo, e de novo. Ele inventou outras respostas, e sempre se soltava. Mas Dalila insistiu todos os dias, até ele ficar cansado.', r: 'Juízes 16:10-16' },
-        { art: '🧔💬✂️', bg: 'noite', text: 'Por fim, Sansão contou a verdade: "Nunca passou navalha na minha cabeça, porque sou nazireu de Deus. Se cortarem o meu cabelo, a força vai embora."', r: 'Juízes 16:17' },
-        { art: '😴✂️', bg: 'noite', text: 'Dalila fez Sansão dormir e chamou um homem, que cortou as sete tranças do cabelo dele. A força não estava no cabelo: o cabelo era o sinal da promessa a Deus, e Sansão tinha desprezado essa promessa.', r: 'Juízes 16:19' },
-        { art: '😰⛓️', bg: 'noite', text: 'Sansão acordou e pensou: "Vou me soltar como das outras vezes." Mas ele não sabia que o Senhor tinha se retirado dele. Os filisteus o prenderam e o deixaram sem enxergar.', r: 'Juízes 16:20-21' },
-        { art: '⛓️🌾', bg: 'cidade', text: 'Sansão, o homem mais forte, agora girava um moinho na prisão, como um animal. Foi muito triste. Mas a Bíblia conta um detalhe cheio de esperança: o cabelo dele começou a crescer de novo.', r: 'Juízes 16:21-22' },
-        { art: '🏛️🎉', bg: 'palacio', text: 'Os filisteus fizeram uma grande festa para o seu deus, Dagom, e trouxeram Sansão para zombar dele. O templo estava lotado.', r: 'Juízes 16:23-27' },
-        { art: '🧔🙏🏛️', bg: 'palacio', fx: 'luz', text: 'Sansão encostou nas duas colunas do meio e orou: "Senhor Deus, lembra-te de mim e fortalece-me só mais esta vez!" Pela primeira vez, ele pediu humildemente a ajuda de Deus.', r: 'Juízes 16:28-29' },
-        { art: '🏛️💥', bg: 'palacio', text: 'Deus ouviu. Sansão empurrou as colunas com toda a força, e o templo de Dagom caiu. Naquele dia, Sansão venceu mais inimigos do que em toda a sua vida, e morreu junto.', r: 'Juízes 16:30' },
-        { art: '💛✨', bg: 'aurora', fx: 'coracoes', text: 'Sansão errou muito. Mas, no fim, ele se voltou para Deus, e Deus o ouviu. Hebreus 11 coloca Sansão na lista dos que viveram pela fé. Deus nunca desiste de quem volta para Ele.', r: 'Hebreus 11:32-34' }
+        { art: '☁️⛺💬', bg: 'aurora', fx: 'luz', text: 'O livro de Levítico começa com Deus falando a Moisés de dentro do tabernáculo. Deus ia ensinar como um povo pecador podia se aproximar de um Deus santo.', r: 'Levítico 1:1' },
+        { art: '💔➡️✨', bg: 'aurora', text: 'O problema era sério: o pecado separa as pessoas de Deus, e a Bíblia diz que o salário do pecado é a morte. Como, então, pecadores poderiam viver perto de Deus?', r: 'Isaías 59:2; Romanos 6:23' },
+        { art: '🐑🔥', bg: 'campo', text: 'Deus deu um caminho: os sacrifícios. A pessoa trazia um animal sem defeito, colocava a mão sobre a cabeça dele, como quem diz: "Ele está no meu lugar." E o animal morria no lugar da pessoa.', r: 'Levítico 1:3-4' },
+        { art: '🔥🐂🌾🕊️', bg: 'aurora', text: 'Havia vários tipos de oferta: ofertas queimadas inteiras, ofertas de cereais, ofertas de paz, ofertas pelo pecado e pela culpa. Até os pobres podiam oferecer pombinhos ou farinha.', r: 'Levítico 1 – 7; 5:7, 11' },
+        { art: '🩸🙏', bg: 'aurora', text: 'Deus disse: "A vida está no sangue, e eu dei o sangue para fazer expiação por vocês no altar." Expiação quer dizer cobrir o pecado e tirar a culpa.', r: 'Levítico 17:11' },
+        { art: '🧔🧔🔥', bg: 'aurora', text: 'Arão e os filhos foram consagrados como sacerdotes e começaram o serviço no tabernáculo, oferecendo os sacrifícios pelo povo.', r: 'Levítico 8 – 9' },
+        { art: '🔥⬇️✨', bg: 'aurora', fx: 'luz', text: 'No primeiro dia, Arão abençoou o povo, a glória do Senhor apareceu e saiu fogo de diante do Senhor, que consumiu o sacrifício no altar. O povo gritou de alegria e se prostrou!', r: 'Levítico 9:22-24' },
+        { art: '⚠️🔥', bg: 'noite', text: 'Mas dois filhos de Arão, Nadabe e Abiú, ofereceram um fogo estranho, do jeito deles, e morreram diante do Senhor. Deus mostrou que Ele deve ser adorado do jeito que Ele ensina, com reverência.', r: 'Levítico 10:1-3' }
       ],
-      god: 'Deus é fiel até quando nós falhamos, e ouve quem volta para Ele com humildade.',
-      jesus: 'Sansão abriu os braços entre duas colunas e, morrendo, venceu os inimigos. Jesus abriu os braços na cruz e, morrendo, venceu o pecado e a morte. Mas Sansão ficou no túmulo; Jesus ressuscitou ao terceiro dia!',
-      verse: { ref: 'Juízes 16:28', tx: 'Senhor Deus, peço-te que te lembres de mim, e esforça-me agora só esta vez.' },
+      god: 'Deus é santo, e o pecado é sério. Mas Deus mesmo providenciou um jeito de perdoar.',
+      jesus: 'Todos aqueles animais apontavam para um único sacrifício perfeito: Jesus, o Cordeiro de Deus. Hebreus 10 diz que o sangue de animais não podia tirar pecados de verdade, mas Jesus se ofereceu uma vez por todas, e nos perdoou para sempre (Hebreus 10:4, 10-12). Por isso, hoje não oferecemos mais sacrifícios de animais.',
+      verse: { ref: 'Hebreus 9:22', tx: 'Sem derramamento de sangue não há remissão.' },
       small: [
-        { q: 'O que cortaram de Sansão?', o: [['✂️', 'O cabelo'], ['👟', 'O sapato'], ['🧣', 'O cachecol']] },
-        { q: 'O que Sansão fez no final?', o: [['🙏', 'Orou a Deus'], ['🎤', 'Cantou'], ['🏃', 'Fugiu']] },
-        { q: 'Deus ouviu a oração de Sansão?', o: [['✅', 'Sim'], ['❌', 'Não'], ['🤷', 'Talvez']] }
+        { q: 'Como devia ser o animal do sacrifício?', o: [['✅', 'Sem defeito'], ['🤕', 'Machucado'], ['🧸', 'De pelúcia']] },
+        { q: 'O que os pobres podiam oferecer?', o: [['🕊️', 'Pombinhos'], ['🚗', 'Carros'], ['💎', 'Diamantes']] },
+        { q: 'Quem é o sacrifício perfeito?', o: [['✝️', 'Jesus'], ['🐄', 'Uma vaca'], ['🍎', 'Uma maçã']] }
       ],
       big: [
-        { q: 'O que os filisteus ofereceram a Dalila?', o: ['Muito dinheiro', 'Um castelo', 'Um casamento', 'Um cavalo'], e: 'Cada príncipe ofereceu mil e cem moedas de prata (Juízes 16:5).' },
-        { q: 'De onde vinha, de verdade, a força de Sansão?', o: ['Do Senhor', 'Do cabelo', 'Dos músculos', 'Do mel'], e: 'O cabelo era o sinal do voto; a força vinha do Senhor (Juízes 16:20).' },
-        { q: 'O que começou a acontecer na prisão?', o: ['O cabelo voltou a crescer', 'Ele fugiu', 'Ele ficou rico', 'Ele virou filisteu'], e: 'Juízes 16:22: um sinal de esperança.' },
-        { q: 'Em que lista do Novo Testamento Sansão aparece?', o: ['Na lista dos heróis da fé, em Hebreus 11', 'Na lista dos apóstolos', 'Na lista dos reis', 'Em nenhuma'], e: 'Hebreus 11:32.' }
+        { q: 'O que significava colocar a mão sobre o animal?', o: ['Que ele estava no lugar da pessoa', 'Que era para fazer carinho', 'Que estava doente', 'Nada'], e: 'Levítico 1:4: a ideia de substituição.' },
+        { q: 'O que quer dizer expiação?', o: ['Cobrir o pecado e tirar a culpa', 'Fazer uma festa', 'Construir um altar', 'Viajar'], e: 'Levítico 17:11.' },
+        { q: 'O que aconteceu no primeiro sacrifício de Arão?', o: ['Saiu fogo de diante do Senhor', 'Choveu', 'Nada', 'O altar quebrou'], e: 'Levítico 9:24.' },
+        { q: 'Por que hoje não oferecemos sacrifícios de animais?', o: ['Jesus se ofereceu uma vez por todas', 'Porque acabaram os animais', 'Porque Deus mudou de ideia', 'Porque é proibido por lei'], e: 'Hebreus 10:10-14.' }
       ],
-      parents: 'Atenção: a prisão de Sansão (os filisteus lhe furaram os olhos) foi contada como "o deixaram sem enxergar", e a queda do templo sem detalhes. O ponto alto é a oração humilde de Sansão e a fidelidade de Deus. Leitura junto: Juízes 16:4-6, 15-22 e 28-30.'
+      parents: 'Atenção: os sacrifícios e a morte de Nadabe e Abiú foram contados sem detalhes. Ponto central: substituição e expiação, que se cumprem em Cristo (Hebreus 9 e 10). Se a criança ficar triste pelos animais, explique que tudo isso ensinava a seriedade do pecado e apontava para Jesus. Leitura junto: Levítico 1:1-4 e Hebreus 10:10-14.'
     },
     {
-      id: 'j11', title: 'Cada um fazia o que queria', ref: 'Juízes 17 – 21', icon: '🧭',
-      recap: 'Na lição passada, Sansão falhou muito, mas no fim orou a Deus com humildade, e Deus o ouviu.',
+      id: 's11', title: 'O Dia da Expiação', ref: 'Levítico 16', icon: '🐐',
+      recap: 'Na lição passada, aprendemos sobre os sacrifícios que Deus deu para cobrir o pecado.',
       scenes: [
-        { art: '📖🔚', bg: 'noite', text: 'Os últimos capítulos de Juízes não contam histórias de heróis. Contam como o povo estava perdido, longe de Deus. São capítulos tristes, mas importantes.', r: 'Juízes 17:6' },
-        { art: '🧑🗿🏠', bg: 'cidade', text: 'Um homem chamado Mica fez um ídolo e montou na própria casa um templo de mentira. Ele até contratou um sacerdote. Achava que estava agradando a Deus, mas fazia tudo do seu próprio jeito.', r: 'Juízes 17:1-13' },
-        { art: '👥🗿', bg: 'cidade', text: 'Depois, a tribo de Dã pegou aquele ídolo e o sacerdote para eles. E a idolatria se espalhou ainda mais.', r: 'Juízes 18:14-31' },
-        { art: '⚔️💔', bg: 'deserto', text: 'Mais tarde, aconteceu um crime horrível numa cidade da tribo de Benjamim. E, por causa disso, as tribos de Israel entraram em guerra umas contra as outras. Irmãos lutando contra irmãos.', r: 'Juízes 19 – 20' },
-        { art: '😢👥', bg: 'noite', text: 'Muita gente sofreu. Quase uma tribo inteira desapareceu. O povo chorou diante de Deus, triste com o que tinha acontecido.', r: 'Juízes 21:1-3' },
-        { art: '🧭❓', bg: 'campo', fx: 'vento', text: 'A Bíblia explica tudo isso com uma frase, repetida várias vezes: "Naqueles dias não havia rei em Israel; cada um fazia o que parecia certo aos seus próprios olhos."', r: 'Juízes 17:6; 21:25' },
-        { art: '👁️👉', bg: 'aurora', text: 'Quando cada pessoa decide sozinha o que é certo, sem ouvir a Deus, tudo vira confusão. O povo precisava de um rei bom, que os guiasse no caminho de Deus.', r: 'Juízes 21:25' },
-        { art: '👑✨', bg: 'aurora', fx: 'brilho', text: 'Deus ia mandar esse rei. Primeiro viria Davi, o rei pastor. E, muito depois, da família de Davi, viria o Rei perfeito: Jesus, o Rei que nunca erra e nos ensina o que é certo.', r: '2 Samuel 7:12-16; Lucas 1:32-33' }
+        { art: '📅✨', bg: 'aurora', text: 'Uma vez por ano, havia um dia muito especial em Israel: o Dia da Expiação, o grande dia do perdão para todo o povo.', r: 'Levítico 16:29-30, 34' },
+        { art: '🧶🚪🚫', bg: 'aurora', text: 'Era o único dia do ano em que alguém podia passar pelo véu e entrar no Lugar Santíssimo, onde estava a arca. E só uma pessoa: o sumo sacerdote.', r: 'Levítico 16:2; Hebreus 9:7' },
+        { art: '🧔💧👕', bg: 'aurora', text: 'Arão se lavava e vestia roupas simples de linho branco. Primeiro, oferecia um sacrifício pelos próprios pecados e pelos da sua família.', r: 'Levítico 16:4, 6, 11' },
+        { art: '☁️🔥📦', bg: 'noite', fx: 'luz', text: 'Ele entrava no Lugar Santíssimo com incenso, que fazia uma nuvem perfumada, e com o sangue do sacrifício, que aspergia sobre a tampa da arca, o propiciatório.', r: 'Levítico 16:12-14' },
+        { art: '🐐🐐', bg: 'campo', text: 'Depois vinham dois bodes, para o pecado do povo. O primeiro era oferecido em sacrifício, e o seu sangue também era levado para dentro do véu.', r: 'Levítico 16:7-9, 15' },
+        { art: '🧔✋🐐', bg: 'campo', text: 'Com o segundo bode, Arão fazia algo marcante: colocava as duas mãos sobre a cabeça dele e confessava todos os pecados do povo, como se colocasse os pecados em cima do bode.', r: 'Levítico 16:20-21' },
+        { art: '🐐🏜️💨', bg: 'deserto', fx: 'vento', text: 'Então o bode era levado para longe, para o deserto, e solto lá. Ele levava os pecados para longe, para nunca mais voltar. Era chamado de bode emissário.', r: 'Levítico 16:21-22' },
+        { art: '👥😌💛', bg: 'aurora', fx: 'coracoes', text: 'Deus disse: "Nesse dia será feita expiação por vocês, para purificá-los. Vocês ficarão limpos de todos os seus pecados diante do Senhor." Que alívio para o povo!', r: 'Levítico 16:30' }
       ],
-      god: 'O certo não é o que eu acho: é o que Deus diz. Ele nos dá um Rei bom para nos guiar.',
-      jesus: 'O povo vivia perdido, cada um fazendo o que achava certo, e precisava de um rei que mostrasse o caminho. Jesus é esse Rei, e Ele mesmo disse: "Eu sou o caminho, e a verdade, e a vida" (João 14:6).',
-      verse: { ref: 'Juízes 21:25', tx: 'Naqueles dias não havia rei em Israel; porém cada um fazia o que parecia reto aos seus olhos.' },
+      god: 'Deus quer tirar o nosso pecado para longe e nos deixar limpos diante dele.',
+      jesus: 'Jesus é as duas coisas do Dia da Expiação: Ele é o sacrifício que morreu pelos nossos pecados, e é quem leva os nossos pecados para longe, "tão longe quanto o oriente está do ocidente" (Salmo 103:12). E, quando Jesus morreu, o véu do templo se rasgou de cima a baixo (Mateus 27:51): agora o caminho até Deus está aberto para todos que creem!',
+      verse: { ref: 'Levítico 16:30', tx: 'Porque naquele dia se fará expiação por vós, para purificar-vos; e sereis purificados de todos os vossos pecados perante o Senhor.' },
       small: [
-        { q: 'O que Mica fez na casa dele?', o: [['🗿', 'Um ídolo'], ['🍰', 'Um bolo'], ['🧸', 'Um ursinho']] },
-        { q: 'Quem decide o que é certo?', o: [['✨', 'Deus'], ['🐒', 'O macaco'], ['🎲', 'O dado']] },
-        { q: 'Quem é o Rei perfeito que Deus mandou?', o: [['✝️', 'Jesus'], ['🤴', 'Um príncipe'], ['🦁', 'Um leão']] }
+        { q: 'Quantas vezes por ano era o Dia da Expiação?', o: [['1️⃣', 'Uma vez'], ['🔟', 'Dez vezes'], ['📅', 'Todo dia']] },
+        { q: 'Que animal levava os pecados para longe?', o: [['🐐', 'Um bode'], ['🐘', 'Um elefante'], ['🐟', 'Um peixe']] },
+        { q: 'O que aconteceu com o véu quando Jesus morreu?', o: [['🧶', 'Rasgou de cima a baixo'], ['🎀', 'Virou um laço'], ['❌', 'Nada']] }
       ],
       big: [
-        { q: 'Qual frase se repete no fim de Juízes?', o: ['"Cada um fazia o que parecia certo aos seus olhos"', '"E houve paz por quarenta anos"', '"E o Senhor os abençoou"', '"E todos foram felizes"'], e: 'Juízes 17:6 e 21:25.' },
-        { q: 'O que estava errado no templo de Mica?', o: ['Ele adorava do seu jeito, com um ídolo', 'Era pequeno demais', 'Era longe', 'Não tinha telhado'], e: 'Juízes 17:5-6.' },
-        { q: 'O que aconteceu entre as tribos de Israel?', o: ['Entraram em guerra entre si', 'Fizeram uma grande festa', 'Construíram um templo', 'Voltaram ao Egito'], e: 'Juízes 20.' },
-        { q: 'Do que o povo precisava?', o: ['De um rei bom que os guiasse a Deus', 'De mais ídolos', 'De mais dinheiro', 'De muros mais altos'], e: 'Esse desejo prepara a história de Samuel, Saul e Davi.' }
+        { q: 'Quem podia entrar no Lugar Santíssimo?', o: ['Só o sumo sacerdote, uma vez por ano', 'Qualquer pessoa', 'Os reis', 'Ninguém nunca'], e: 'Hebreus 9:7.' },
+        { q: 'O que Arão fazia sobre o segundo bode?', o: ['Confessava os pecados do povo', 'Dava comida', 'Pintava', 'Nada'], e: 'Levítico 16:21.' },
+        { q: 'Para onde o bode emissário era levado?', o: ['Para o deserto', 'Para o mar', 'Para o Egito', 'Para o templo'], e: 'Levítico 16:22.' },
+        { q: 'O que significa o véu rasgado na morte de Jesus?', o: ['O caminho até Deus está aberto', 'O templo estava velho', 'Houve um terremoto só', 'Nada'], e: 'Mateus 27:51; Hebreus 10:19-20.' }
       ],
-      parents: 'Atenção: Juízes 19–21 descreve violência grave contra uma mulher e uma guerra civil. O app apenas diz que "aconteceu um crime horrível" e que as tribos guerrearam. Recomendamos que adultos leiam esses capítulos sozinhos. O foco para a criança é a frase-chave (Juízes 21:25) e a necessidade de um Rei bom, que aponta para Davi e para Jesus.'
+      parents: 'Ponto central: os dois bodes mostram dois aspectos da obra de Cristo: o sacrifício (propiciação) e a remoção do pecado. Hebreus 9:11-12, 24-26 faz a aplicação. Leitura junto: Levítico 16:20-22 e 29-30.'
     },
     {
-      id: 'j12', title: 'Rute e Noemi', ref: 'Rute 1', icon: '🤝',
-      recap: 'Terminamos o livro de Juízes, um tempo muito confuso. Agora, uma história de amor e fidelidade que aconteceu nesse mesmo tempo.',
+      id: 's12', title: 'Sede santos', ref: 'Levítico 19 – 26', icon: '🎉',
+      recap: 'Na lição passada, aprendemos sobre o Dia da Expiação, o grande dia do perdão.',
       scenes: [
-        { art: '🌾🚫', bg: 'deserto', text: 'Nos dias em que os juízes governavam, houve fome em Israel. Em Belém, que quer dizer "casa do pão", não tinha pão!', r: 'Rute 1:1' },
-        { art: '👨👩👦👦🚶', bg: 'deserto', fx: 'vento', text: 'Um homem chamado Elimeleque foi com a esposa, Noemi, e os dois filhos morar em Moabe, uma terra estrangeira, para fugir da fome.', r: 'Rute 1:1-2' },
-        { art: '😢🕯️', bg: 'noite', text: 'Lá, Elimeleque morreu. Os filhos se casaram com duas moças moabitas, Orfa e Rute. Mas, depois de uns dez anos, os dois filhos também morreram. Noemi ficou sozinha, com as duas noras.', r: 'Rute 1:3-5' },
-        { art: '🌾✨', bg: 'aurora', fx: 'luz', text: 'Um dia, Noemi soube que o Senhor tinha visitado o seu povo e dado pão de novo em Belém. Ela decidiu voltar para casa.', r: 'Rute 1:6' },
-        { art: '👵💬👩👩', bg: 'deserto', text: 'No caminho, Noemi disse às noras: "Voltem para a casa das suas mães. Que o Senhor seja bom com vocês, como vocês foram comigo." E as beijou, e todas choraram.', r: 'Rute 1:8-9' },
-        { art: '👋👩', bg: 'deserto', text: 'Orfa beijou a sogra e voltou para o seu povo. Mas Rute se agarrou a Noemi e não quis deixá-la.', r: 'Rute 1:14' },
-        { art: '🤝💛', bg: 'aurora', fx: 'coracoes', text: 'Rute disse uma das frases mais lindas da Bíblia: "Aonde você for, eu irei. Onde você morar, eu morarei. O seu povo será o meu povo, e o seu Deus será o meu Deus."', r: 'Rute 1:16-17' },
-        { art: '✨👩', bg: 'aurora', fx: 'brilho', text: 'Rute era estrangeira, mas escolheu o Deus de Israel. Ela deixou tudo para trás para cuidar da sogra e confiar no Senhor.', r: 'Rute 1:16' },
-        { art: '🏘️👵👩', bg: 'campo', text: 'As duas chegaram a Belém no começo da colheita da cevada. A cidade toda se agitou: "Não é a Noemi?" Ela respondeu: "Não me chamem de Noemi, que quer dizer agradável. Me chamem de Mara, que quer dizer amarga."', r: 'Rute 1:19-22' }
+        { art: '✨💬👥', bg: 'aurora', fx: 'luz', text: 'Deus disse ao povo: "Sejam santos, porque eu, o Senhor, o seu Deus, sou santo." Ser santo quer dizer ser separado para Deus e viver do jeito dele.', r: 'Levítico 19:2' },
+        { art: '🌾🧺👵', bg: 'campo', fx: 'brilho', text: 'Na colheita, eles não deviam colher até os cantos do campo, nem catar o que caía. Deviam deixar para os pobres e os estrangeiros. Lembra de Rute, que catou espigas no campo de Boaz? Era por causa desta lei!', r: 'Levítico 19:9-10; Rute 2' },
+        { art: '🦻🦯💛', bg: 'aurora', fx: 'coracoes', text: 'Deus disse também: "Não fale mal do surdo, nem coloque obstáculo na frente do cego." Deus cuida especialmente dos mais fracos.', r: 'Levítico 19:14' },
+        { art: '🤝💛', bg: 'aurora', fx: 'coracoes', text: 'E deu um mandamento que Jesus chamou de um dos maiores: "Não se vingue e não guarde ódio, mas ame o seu próximo como a si mesmo. Eu sou o Senhor."', r: 'Levítico 19:18; Mateus 22:39' },
+        { art: '🌍🏠💛', bg: 'cidade', text: 'E até: "O estrangeiro que mora com vocês deve ser tratado como um de vocês. Amem-no como a si mesmos, porque vocês foram estrangeiros no Egito."', r: 'Levítico 19:33-34' },
+        { art: '🎉📅🍞', bg: 'campo', fx: 'brilho', text: 'Deus também deu ao povo festas para lembrar o que Ele tinha feito: a Páscoa, a festa dos Pães sem fermento, a das Primícias e a de Pentecostes, a das colheitas.', r: 'Levítico 23:4-22' },
+        { art: '🎺⛺🍇', bg: 'campo', fx: 'brilho', text: 'E no outono, as Trombetas, o Dia da Expiação e a festa dos Tabernáculos, quando moravam em cabaninhas de ramos por uma semana, lembrando o deserto. O povo de Deus é um povo que celebra!', r: 'Levítico 23:23-43' },
+        { art: '🌾🔔🆓', bg: 'aurora', fx: 'luz', text: 'A cada cinquenta anos havia o Ano do Jubileu: as dívidas eram perdoadas, os escravos eram libertados e as terras voltavam às famílias. Um ano inteiro de liberdade!', r: 'Levítico 25:8-13' },
+        { art: '⛺✨👣', bg: 'aurora', fx: 'coracoes', text: 'E Deus fez uma promessa linda: "Vou colocar a minha morada no meio de vocês. Vou andar no meio de vocês, e serei o seu Deus, e vocês serão o meu povo."', r: 'Levítico 26:11-12' }
       ],
-      god: 'Deus recebe todos os que confiam nele, de qualquer povo. E Ele está agindo mesmo quando a vida está triste.',
-      jesus: 'Rute era estrangeira, mas escolheu o Deus de Israel e foi recebida no povo de Deus. Em Jesus, pessoas de todos os povos, como nós aqui no Brasil, são recebidas na família de Deus.',
-      verse: { ref: 'Rute 1:16', tx: 'Aonde quer que tu fores irei eu, e onde quer que pousares, ali pousarei eu; o teu povo é o meu povo, o teu Deus é o meu Deus.' },
+      god: 'Deus é santo e nos chama para sermos santos: amando a Deus e cuidando do próximo.',
+      jesus: 'Jesus disse que todos os mandamentos se resumem em amar a Deus e amar o próximo (Mateus 22:37-40). Ele mesmo viveu isso perfeitamente. E na sinagoga de Nazaré, Jesus anunciou "o ano aceitável do Senhor" (Lucas 4:18-19): Ele é o nosso Jubileu, que perdoa as dívidas do pecado e liberta os cativos.',
+      verse: { ref: 'Levítico 19:18', tx: 'Amarás o teu próximo como a ti mesmo. Eu sou o Senhor.' },
       small: [
-        { q: 'Por que a família foi para Moabe?', o: [['🌾', 'Porque havia fome'], ['🏖️', 'Para passear'], ['🎪', 'Para ver o circo']] },
-        { q: 'Quem ficou com Noemi?', o: [['👩', 'Rute'], ['🐱', 'Um gatinho'], ['👑', 'Uma rainha']] },
-        { q: 'Para qual cidade elas voltaram?', o: [['🏘️', 'Belém'], ['🗼', 'Babel'], ['🏰', 'Egito']] }
+        { q: 'O que deviam deixar no campo para os pobres?', o: [['🌾', 'Espigas'], ['🗑️', 'Lixo'], ['🧸', 'Brinquedos']] },
+        { q: 'Como devemos amar o próximo?', o: [['💛', 'Como a nós mesmos'], ['😠', 'Só quando ele é legal'], ['🙈', 'Não precisa']] },
+        { q: 'O que o povo de Deus fazia para lembrar das obras dele?', o: [['🎉', 'Festas'], ['😴', 'Dormia'], ['🙊', 'Ficava calado']] }
       ],
       big: [
-        { q: 'O que quer dizer Belém?', o: ['Casa do pão', 'Cidade do rei', 'Terra das ovelhas', 'Lugar de festa'], e: 'Por isso era irônico haver fome em Belém.' },
-        { q: 'Como se chamava a nora que voltou para o seu povo?', o: ['Orfa', 'Rute', 'Raquel', 'Sara'], e: 'Rute 1:14.' },
-        { q: 'O que Rute prometeu a Noemi?', o: ['"O teu Deus é o meu Deus"', '"Vou voltar para casa"', '"Vou ficar rica"', '"Vou me casar logo"'], e: 'Rute 1:16.' },
-        { q: 'Por que Noemi pediu para ser chamada de Mara?', o: ['Porque estava muito triste', 'Porque gostava do nome', 'Porque era rainha', 'Porque era estrangeira'], e: 'Mara significa amarga (Rute 1:20).' }
+        { q: 'O que quer dizer ser santo?', o: ['Ser separado para Deus e viver do jeito dele', 'Nunca sair de casa', 'Ser rico', 'Ser sacerdote'], e: 'Levítico 19:2; 1 Pedro 1:15-16.' },
+        { q: 'Que lei explica por que Rute podia catar espigas?', o: ['Deixar os cantos do campo para os pobres', 'O Dia da Expiação', 'O sábado', 'A Páscoa'], e: 'Levítico 19:9-10.' },
+        { q: 'Como deviam tratar o estrangeiro?', o: ['Amá-lo como a si mesmos', 'Expulsá-lo', 'Ignorá-lo', 'Cobrar mais dele'], e: 'Levítico 19:34.' },
+        { q: 'O que acontecia no Ano do Jubileu?', o: ['Dívidas perdoadas e escravos libertados', 'Uma guerra', 'Ninguém trabalhava para sempre', 'Nada'], e: 'Levítico 25:10; Lucas 4:18-19.' }
       ],
-      parents: 'Ponto central: fidelidade (em hebraico, hesed: amor leal). Rute, estrangeira, entra no povo de Deus pela fé. Se a criança perguntar sobre as mortes, diga apenas que a família passou por muita tristeza, e que Deus não abandonou Noemi. Leitura junto: Rute 1.'
-    },
-    {
-      id: 'j13', title: 'Rute no campo de Boaz', ref: 'Rute 2 – 3', icon: '🌾',
-      recap: 'Na lição passada, Rute escolheu o Deus de Israel e foi com Noemi para Belém.',
-      scenes: [
-        { art: '👩🌾', bg: 'campo', text: 'Rute disse: "Deixe-me ir ao campo catar espigas." Na lei de Deus, os pobres e os estrangeiros podiam recolher as espigas que sobravam atrás dos ceifeiros.', r: 'Rute 2:2; Levítico 19:9-10' },
-        { art: '🧔🌾', bg: 'campo', text: 'Sem saber, Rute foi justamente para o campo de Boaz, um homem rico e bondoso, parente de Elimeleque, o marido de Noemi. Parecia sorte, mas era Deus guiando.', r: 'Rute 2:1, 3' },
-        { art: '🧔💬👨‍🌾', bg: 'campo', text: 'Boaz chegou e cumprimentou os trabalhadores: "O Senhor seja convosco!" Eles responderam: "O Senhor te abençoe!" Boaz amava a Deus.', r: 'Rute 2:4' },
-        { art: '🧔👀👩', bg: 'campo', text: 'Boaz perguntou quem era aquela moça. Contaram que era Rute, a moabita que tinha voltado com Noemi, e que trabalhava sem parar desde cedo.', r: 'Rute 2:5-7' },
-        { art: '🧔💛👩', bg: 'campo', fx: 'coracoes', text: 'Boaz disse a Rute: "Fique no meu campo. Ninguém vai incomodar você. Eu soube de tudo o que você fez pela sua sogra. Que o Deus de Israel, debaixo de cujas asas você veio se abrigar, recompense você."', r: 'Rute 2:8-12' },
-        { art: '🍞🌾', bg: 'campo', fx: 'brilho', text: 'Na hora do almoço, Boaz deu pão e grão tostado a Rute, até ela ficar satisfeita. E mandou os trabalhadores deixarem cair espigas de propósito para ela.', r: 'Rute 2:14-16' },
-        { art: '👵😮👩', bg: 'cidade', text: 'À noite, Rute chegou em casa com muita cevada. Noemi ficou surpresa e, quando soube que era o campo de Boaz, louvou a Deus: "Esse homem é nosso parente, um dos nossos remidores!"', r: 'Rute 2:17-20' },
-        { art: '🛡️❓', bg: 'aurora', text: 'Remidor era um parente próximo que, pela lei de Deus, podia resgatar a família: comprar de volta a terra perdida e cuidar da viúva. Era como um protetor da família.', r: 'Rute 2:20; Levítico 25:25' },
-        { art: '🌾🌙', bg: 'noite', fx: 'estrelas', text: 'Rute trabalhou até o fim das colheitas. Então, seguindo o conselho de Noemi, foi até Boaz e pediu, de forma respeitosa, que ele fosse o remidor da família.', r: 'Rute 2:23; 3:1-9' },
-        { art: '🧔🤝', bg: 'aurora', fx: 'luz', text: 'Boaz ficou muito feliz: "Todo o povo sabe que você é uma mulher virtuosa! Eu vou fazer o que você pediu." Mas havia um parente ainda mais próximo. Boaz prometeu resolver tudo do jeito certo.', r: 'Rute 3:10-13' }
-      ],
-      god: 'Deus cuida dos detalhes da nossa vida. O que parece acaso, muitas vezes, é a mão de Deus.',
-      jesus: 'Boaz, o remidor, abrigou Rute com bondade. Jesus é o nosso Remidor: Ele nos resgata e nos protege. Jesus disse que queria juntar o seu povo "como a galinha ajunta os seus pintinhos debaixo das asas" (Mateus 23:37).',
-      verse: { ref: 'Rute 2:12', tx: 'O Senhor galardoe o teu feito; e te seja concedido pleno galardão da parte do Senhor Deus de Israel, sob cujas asas te vieste abrigar.' },
-      small: [
-        { q: 'O que Rute catava no campo?', o: [['🌾', 'Espigas'], ['🐚', 'Conchas'], ['🍄', 'Cogumelos']] },
-        { q: 'Como Boaz tratou Rute?', o: [['💛', 'Com bondade'], ['😠', 'Com raiva'], ['🙈', 'Ignorou']] },
-        { q: 'Quem guiou Rute ao campo de Boaz?', o: [['✨', 'Deus'], ['🗺️', 'Um mapa'], ['🐕', 'Um cachorro']] }
-      ],
-      big: [
-        { q: 'Por que Rute podia catar espigas no campo?', o: ['A lei de Deus cuidava dos pobres e estrangeiros', 'Ela era dona do campo', 'Ela pagou', 'Ela era da família de Boaz'], e: 'Levítico 19:9-10.' },
-        { q: 'O que Boaz mandou os trabalhadores fazerem?', o: ['Deixar cair espigas para ela', 'Mandá-la embora', 'Cobrar dela', 'Vigiá-la'], e: 'Rute 2:15-16.' },
-        { q: 'O que era um remidor?', o: ['Um parente que resgatava a família', 'Um juiz', 'Um rei', 'Um ceifeiro'], e: 'Levítico 25:25 e Deuteronômio 25:5-6.' },
-        { q: 'O que parecia sorte na história?', o: ['Rute ir parar no campo de Boaz', 'A fome', 'A colheita', 'O almoço'], e: 'Rute 2:3: "caiu-lhe em sorte"... mas era Deus guiando.' }
-      ],
-      parents: 'Ponto central: a providência de Deus nos detalhes, e Boaz como figura do Redentor (Cristo, que nos resgata). A cena na eira (Rute 3) foi resumida como um pedido respeitoso para que Boaz fosse o remidor, que é o sentido do texto. Leitura junto: Rute 2.'
-    },
-    {
-      id: 'j14', title: 'O bisavô de Davi', ref: 'Rute 4', icon: '👶',
-      recap: 'Na lição passada, Rute trabalhou no campo de Boaz, e Boaz prometeu ser o remidor da família.',
-      scenes: [
-        { art: '🚪🏘️', bg: 'cidade', text: 'Boaz foi até a porta da cidade, onde os anciãos resolviam os assuntos importantes, e esperou o parente que era mais próximo que ele.', r: 'Rute 4:1' },
-        { art: '🧔💬🧔', bg: 'cidade', text: 'Boaz perguntou: "Você quer resgatar o campo de Elimeleque?" O homem disse que sim. Mas, quando soube que teria de cuidar de Rute também, desistiu: "Não posso. Resgate você."', r: 'Rute 4:3-6' },
-        { art: '👡🤝', bg: 'cidade', text: 'Naquele tempo, para fechar um negócio, a pessoa tirava a sandália e entregava ao outro. O parente tirou a sandália, e pronto: Boaz era o remidor!', r: 'Rute 4:7-8' },
-        { art: '👥✨', bg: 'cidade', fx: 'brilho', text: 'Boaz disse diante de todos: "Vocês são testemunhas de que eu resgato tudo o que era da família, e de que Rute será minha esposa." E o povo abençoou o casal.', r: 'Rute 4:9-12' },
-        { art: '💍💛', bg: 'aurora', fx: 'coracoes', text: 'Boaz se casou com Rute. A moça estrangeira, viúva e pobre agora fazia parte do povo de Deus, com uma família e um lar.', r: 'Rute 4:13' },
-        { art: '👶😊', bg: 'aurora', fx: 'brilho', text: 'Deus deu a eles um filho! As mulheres de Belém disseram a Noemi: "Bendito seja o Senhor, que não deixou você sem remidor! Sua nora, que te ama, vale mais que sete filhos."', r: 'Rute 4:13-15' },
-        { art: '👵👶', bg: 'aurora', fx: 'coracoes', text: 'Noemi pegou o bebê no colo e cuidou dele. Aquela que tinha voltado amarga agora estava cheia de alegria. Deus transformou a tristeza dela.', r: 'Rute 4:16' },
-        { art: '👶➡️👑', bg: 'palacio', fx: 'luz', text: 'O bebê se chamou Obede. Obede foi pai de Jessé, e Jessé foi pai de Davi, o grande rei de Israel! Rute, a moabita, foi bisavó do rei Davi.', r: 'Rute 4:17, 21-22' },
-        { art: '👑✝️', bg: 'aurora', fx: 'brilho', text: 'E tem mais: no Evangelho de Mateus, o nome de Rute aparece na lista da família de Jesus! Num tempo tão confuso como o dos juízes, Deus estava preparando o caminho para o Rei.', r: 'Mateus 1:5-6, 16' }
-      ],
-      god: 'Deus transforma tristeza em alegria e usa histórias simples para cumprir o seu grande plano.',
-      jesus: 'Do bebê Obede veio o rei Davi, e da família de Davi veio Jesus, nascido em Belém, a cidade de Rute e Boaz! Boaz pagou para resgatar Rute; Jesus pagou com a própria vida para nos resgatar.',
-      verse: { ref: 'Rute 4:17', tx: 'E chamaram o seu nome Obede. Este é o pai de Jessé, pai de Davi.' },
-      small: [
-        { q: 'Com quem Rute se casou?', o: [['🧔', 'Com Boaz'], ['🤴', 'Com o Faraó'], ['🧙', 'Com um mágico']] },
-        { q: 'Quem nasceu?', o: [['👶', 'O bebê Obede'], ['🐣', 'Um pintinho'], ['🐶', 'Um cachorrinho']] },
-        { q: 'Qual rei veio dessa família?', o: [['👑', 'O rei Davi'], ['🃏', 'O rei de copas'], ['🦁', 'O rei leão']] }
-      ],
-      big: [
-        { q: 'Onde Boaz resolveu o assunto?', o: ['Na porta da cidade', 'No templo', 'No campo', 'Na casa de Noemi'], e: 'A porta da cidade era o lugar dos anciãos e dos acordos (Rute 4:1).' },
-        { q: 'Como fechavam um negócio naquele tempo?', o: ['Entregando a sandália', 'Assinando um papel', 'Dando um aperto de mão', 'Com uma festa'], e: 'Rute 4:7-8.' },
-        { q: 'O que Obede era de Davi?', o: ['Avô', 'Pai', 'Irmão', 'Tio'], e: 'Obede foi pai de Jessé, que foi pai de Davi.' },
-        { q: 'Em que livro do Novo Testamento Rute aparece?', o: ['Mateus, na genealogia de Jesus', 'Apocalipse', 'Atos', 'Romanos'], e: 'Mateus 1:5.' }
-      ],
-      parents: 'Ponto central: Boaz, o remidor, prefigura Cristo, que nos resgata a um alto preço. Rute, estrangeira, entra na linhagem do Messias (Mateus 1:5), mostrando que o evangelho é para todos os povos. Leitura junto: Rute 4:9-22.'
+      parents: 'Encerramento do arco do Sinai. Levítico não é só regras: é santidade prática e amor ao próximo (Levítico 19:18 é citado por Jesus, Paulo e Tiago). As festas apontam para Cristo: Páscoa (a cruz), Primícias (a ressurreição), Pentecostes (o Espírito). As leis de pureza e as punições foram omitidas. Leitura junto: Levítico 19:1-18.'
     }
   ]
 };
