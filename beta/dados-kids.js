@@ -6,12 +6,12 @@ window.KIDS_DATA = {
     {
       id: 'criacao', name: 'A Criação', icon: '🌍', sticker: '🌍', scene: 'jardim', ref: 'Gênesis 1–2',
       scenes: [
-        { art: '🌑✨', bg: 'noite', fx: 'brilho', text: 'No princípio, tudo era escuro e vazio. Então Deus disse: "Haja luz!" E a luz apareceu!' },
-        { art: '☁️🌊', bg: 'mar', fx: 'ondas', text: 'Deus separou as águas lá de cima e as águas cá de baixo. Fez o céu bem azul e os mares bem grandes.' },
-        { art: '🌳🌻🍎', bg: 'jardim', text: 'Depois Deus fez a terra seca aparecer, com árvores, flores e frutas gostosas.' },
-        { art: '☀️🌙⭐', bg: 'noite', fx: 'estrelas', text: 'Deus colocou o sol para brilhar de dia, e a lua e as estrelas para enfeitar a noite.' },
-        { art: '🐟🐦🦁🐑', bg: 'campo', text: 'Deus encheu o mar de peixes, o céu de passarinhos e a terra de bichos: leões, coelhos e ovelhinhas!' },
-        { art: '👫💛', bg: 'jardim', fx: 'coracoes', text: 'Por último, Deus fez o homem e a mulher, Adão e Eva, e cuidou deles com amor. Deus viu tudo e disse: "É muito bom!" E no sétimo dia, descansou.' }
+        { art: '🌑✨', bg: 'noite', fx: 'brilho', text: 'No princípio, tudo era escuro e vazio. Então Deus disse: "Haja luz!" E a luz apareceu!', r: 'Gênesis 1:1-5' },
+        { art: '☁️🌊', bg: 'mar', fx: 'ondas', text: 'Deus separou as águas lá de cima e as águas cá de baixo. Fez o céu bem azul e os mares bem grandes.', r: 'Gênesis 1:6-10' },
+        { art: '🌳🌻🍎', bg: 'jardim', text: 'Depois Deus fez a terra seca aparecer, com árvores, flores e frutas gostosas.', r: 'Gênesis 1:11-13' },
+        { art: '☀️🌙⭐', bg: 'noite', fx: 'estrelas', text: 'Deus colocou o sol para brilhar de dia, e a lua e as estrelas para enfeitar a noite.', r: 'Gênesis 1:14-19' },
+        { art: '🐟🐦🦁🐑', bg: 'campo', text: 'Deus encheu o mar de peixes, o céu de passarinhos e a terra de bichos: leões, coelhos e ovelhinhas!', r: 'Gênesis 1:20-25' },
+        { art: '👫💛', bg: 'jardim', fx: 'coracoes', text: 'Por último, Deus fez o homem e a mulher, Adão e Eva, e cuidou deles com amor. Deus viu tudo e disse: "É muito bom!" E no sétimo dia, descansou.', r: 'Gênesis 1:26 – 2:3' }
       ],
       small: [
         { q: 'Quem fez o mundo?', o: [['✨', 'Deus'], ['🤖', 'Um robô'], ['🐶', 'Um cachorro']] },
@@ -30,12 +30,12 @@ window.KIDS_DATA = {
     {
       id: 'noe', name: 'Noé e a arca', icon: '🛶', sticker: '🌈', scene: 'mar', ref: 'Gênesis 6–9',
       scenes: [
-        { art: '🧔🙏', bg: 'campo', text: 'Há muito tempo, muitas pessoas esqueceram de Deus. Mas Noé amava a Deus e obedecia a Ele.' },
-        { art: '🔨🪵🛶', bg: 'campo', text: 'Deus disse a Noé: "Construa uma arca bem grande!" E Noé obedeceu e trabalhou muito.' },
-        { art: '🦁🐘🦒🐑', bg: 'jardim', text: 'Os animais vieram de dois em dois: leões, elefantes, girafas e ovelhinhas. Todos entraram na arca!' },
-        { art: '🛶', bg: 'mar', fx: 'chuva', text: 'Então choveu muito, quarenta dias e quarenta noites. A arca flutuava, e todos lá dentro estavam seguros.' },
-        { art: '🕊️🌿', bg: 'aurora', fx: 'vento', text: 'Quando a chuva parou, Noé soltou uma pomba. Ela voltou trazendo uma folhinha de oliveira!' },
-        { art: '🌈😊', bg: 'aurora', fx: 'brilho', text: 'Deus colocou um arco-íris no céu. Era a promessa do seu amor e do seu cuidado com todos nós.' }
+        { art: '🧔🙏', bg: 'campo', text: 'Há muito tempo, muitas pessoas esqueceram de Deus. Mas Noé amava a Deus e obedecia a Ele.', r: 'Gênesis 6:5-9' },
+        { art: '🔨🪵🛶', bg: 'campo', text: 'Deus disse a Noé: "Construa uma arca bem grande!" E Noé obedeceu e trabalhou muito.', r: 'Gênesis 6:13-22' },
+        { art: '🦁🐘🦒🐑', bg: 'jardim', text: 'Os animais vieram de dois em dois: leões, elefantes, girafas e ovelhinhas. Todos entraram na arca!', r: 'Gênesis 7:1-9' },
+        { art: '🛶', bg: 'mar', fx: 'chuva', text: 'Então choveu muito, quarenta dias e quarenta noites. A arca flutuava, e todos lá dentro estavam seguros.', r: 'Gênesis 7:10 – 8:5' },
+        { art: '🕊️🌿', bg: 'aurora', fx: 'vento', text: 'Quando a chuva parou, Noé soltou uma pomba. Ela voltou trazendo uma folhinha de oliveira!', r: 'Gênesis 8:6-12' },
+        { art: '🌈😊', bg: 'aurora', fx: 'brilho', text: 'Deus colocou um arco-íris no céu. Era a promessa do seu amor e do seu cuidado com todos nós.', r: 'Gênesis 9:8-17' }
       ],
       small: [
         { q: 'Quem construiu a arca?', o: [['🧔', 'Noé'], ['👑', 'Um rei'], ['🐟', 'Um peixe']] },
@@ -54,12 +54,12 @@ window.KIDS_DATA = {
     {
       id: 'abraao', name: 'Abraão e as estrelas', icon: '⭐', sticker: '✨', scene: 'noite', ref: 'Gênesis 12, 15 e 21',
       scenes: [
-        { art: '👴🐪⛺', bg: 'deserto', text: 'Deus chamou Abraão: "Saia da sua terra e vá para o lugar que eu vou te mostrar." E Abraão foi, confiando em Deus.' },
-        { art: '👴👵', bg: 'deserto', text: 'Abraão e Sara já eram bem velhinhos, e não tinham nenhum filho. Eles ficavam tristes com isso.' },
-        { art: '👴🌌', bg: 'noite', fx: 'estrelas', text: 'Uma noite, Deus disse: "Olhe para o céu e conte as estrelas, se puder!" Eram tantas que ninguém conseguia contar.' },
-        { art: '✨👨‍👩‍👧‍👦✨', bg: 'noite', fx: 'estrelas', text: '"Assim será a sua família", disse Deus. "Tão grande como as estrelas do céu!" E Abraão creu em Deus.' },
-        { art: '👵👶😄', bg: 'aurora', fx: 'coracoes', text: 'Deus cumpriu a promessa! Sara teve um bebê, chamado Isaque. O nome dele quer dizer "riso", porque todos ficaram muito alegres.' },
-        { art: '🙏⭐', bg: 'aurora', fx: 'brilho', text: 'Deus sempre cumpre o que promete. Podemos confiar nele, como Abraão confiou.' }
+        { art: '👴🐪⛺', bg: 'deserto', text: 'Deus chamou Abraão: "Saia da sua terra e vá para o lugar que eu vou te mostrar." E Abraão foi, confiando em Deus.', r: 'Gênesis 12:1-4' },
+        { art: '👴👵', bg: 'deserto', text: 'Abraão e Sara já eram bem velhinhos, e não tinham nenhum filho. Eles ficavam tristes com isso.', r: 'Gênesis 15:2-3' },
+        { art: '👴🌌', bg: 'noite', fx: 'estrelas', text: 'Uma noite, Deus disse: "Olhe para o céu e conte as estrelas, se puder!" Eram tantas que ninguém conseguia contar.', r: 'Gênesis 15:5' },
+        { art: '✨👨‍👩‍👧‍👦✨', bg: 'noite', fx: 'estrelas', text: '"Assim será a sua família", disse Deus. "Tão grande como as estrelas do céu!" E Abraão creu em Deus.', r: 'Gênesis 15:5-6' },
+        { art: '👵👶😄', bg: 'aurora', fx: 'coracoes', text: 'Deus cumpriu a promessa! Sara teve um bebê, chamado Isaque. O nome dele quer dizer "riso", porque todos ficaram muito alegres.', r: 'Gênesis 21:1-7' },
+        { art: '🙏⭐', bg: 'aurora', fx: 'brilho', text: 'Deus sempre cumpre o que promete. Podemos confiar nele, como Abraão confiou.', r: 'Gênesis 21:1; Hebreus 11:11' }
       ],
       small: [
         { q: 'O que Abraão olhou no céu?', o: [['⭐', 'As estrelas'], ['🎈', 'Balões'], ['✈️', 'Um avião']] },
@@ -78,12 +78,12 @@ window.KIDS_DATA = {
     {
       id: 'jose', name: 'José e sua túnica', icon: '🧥', sticker: '🌾', scene: 'deserto', ref: 'Gênesis 37–45',
       scenes: [
-        { art: '👦🧥🌈', bg: 'campo', fx: 'brilho', text: 'Jacó tinha doze filhos. Ele deu para José uma túnica de muitas cores, linda!' },
-        { art: '😠😠😠', bg: 'deserto', text: 'Os irmãos de José ficaram com ciúmes e fizeram uma coisa muito feia: venderam José para uns viajantes, que o levaram para o Egito.' },
-        { art: '👦🙏', bg: 'palacio', text: 'Lá no Egito, José passou por momentos difíceis. Mas ele não ficou longe de Deus, e Deus estava com ele.' },
-        { art: '👑💭🐄🌾', bg: 'palacio', text: 'O rei do Egito, o Faraó, teve sonhos estranhos. Deus ajudou José a explicar: "Vêm sete anos de muita comida e depois sete anos de fome."' },
-        { art: '🌾🏛️🌾', bg: 'palacio', fx: 'brilho', text: 'O Faraó colocou José para cuidar de tudo! José guardou muito trigo, e ninguém passou fome.' },
-        { art: '🤗👨‍👦‍👦', bg: 'aurora', fx: 'coracoes', text: 'Um dia, os irmãos vieram comprar comida. José os perdoou e deu um abraço bem apertado em cada um. A família ficou junta de novo!' }
+        { art: '👦🧥🌈', bg: 'campo', fx: 'brilho', text: 'Jacó tinha doze filhos. Ele deu para José uma túnica de muitas cores, linda!', r: 'Gênesis 37:3' },
+        { art: '😠😠😠', bg: 'deserto', text: 'Os irmãos de José ficaram com ciúmes e fizeram uma coisa muito feia: venderam José para uns viajantes, que o levaram para o Egito.', r: 'Gênesis 37:4, 28' },
+        { art: '👦🙏', bg: 'palacio', text: 'Lá no Egito, José passou por momentos difíceis. Mas ele não ficou longe de Deus, e Deus estava com ele.', r: 'Gênesis 39:2-3, 21' },
+        { art: '👑💭🐄🌾', bg: 'palacio', text: 'O rei do Egito, o Faraó, teve sonhos estranhos. Deus ajudou José a explicar: "Vêm sete anos de muita comida e depois sete anos de fome."', r: 'Gênesis 41:1-36' },
+        { art: '🌾🏛️🌾', bg: 'palacio', fx: 'brilho', text: 'O Faraó colocou José para cuidar de tudo! José guardou muito trigo, e ninguém passou fome.', r: 'Gênesis 41:41-49' },
+        { art: '🤗👨‍👦‍👦', bg: 'aurora', fx: 'coracoes', text: 'Um dia, os irmãos vieram comprar comida. José os perdoou e deu um abraço bem apertado em cada um. A família ficou junta de novo!', r: 'Gênesis 45:1-15' }
       ],
       small: [
         { q: 'O que José ganhou do pai?', o: [['🧥', 'Uma túnica colorida'], ['⚽', 'Uma bola'], ['🎸', 'Um violão']] },
@@ -102,12 +102,12 @@ window.KIDS_DATA = {
     {
       id: 'moises', name: 'Moisés no cestinho', icon: '🧺', sticker: '🧺', scene: 'mar', ref: 'Êxodo 2',
       scenes: [
-        { art: '👩👶', bg: 'cidade', text: 'No Egito, uma mamãe teve um bebezinho lindo. Mas o rei mau não queria que os meninos do povo de Deus crescessem.' },
-        { art: '👩🧺👶', bg: 'cidade', text: 'A mamãe escondeu o bebê por três meses. Depois, fez um cestinho bem fechadinho, para a água não entrar.' },
-        { art: '🧺🌿', bg: 'mar', fx: 'ondas', text: 'Ela colocou o bebê no cestinho e deixou entre os juncos, na beira do rio. A irmã dele, Miriã, ficou olhando de longe.' },
-        { art: '👸🧺', bg: 'mar', fx: 'ondas', text: 'A filha do Faraó, a princesa, foi se banhar no rio e encontrou o cestinho. O bebê chorava, e ela teve dó dele.' },
-        { art: '👧💬👸', bg: 'palacio', text: 'Miriã correu e perguntou: "Quer que eu chame uma mulher para cuidar dele?" E chamou a própria mamãe do bebê!' },
-        { art: '👸👦💛', bg: 'palacio', fx: 'coracoes', text: 'A princesa deu a ele o nome de Moisés. Deus cuidou de Moisés desde bebê, porque tinha um plano lindo para ele.' }
+        { art: '👩👶', bg: 'cidade', text: 'No Egito, uma mamãe teve um bebezinho lindo. Mas o rei mau não queria que os meninos do povo de Deus crescessem.', r: 'Êxodo 1:22; 2:1-2' },
+        { art: '👩🧺👶', bg: 'cidade', text: 'A mamãe escondeu o bebê por três meses. Depois, fez um cestinho bem fechadinho, para a água não entrar.', r: 'Êxodo 2:2-3' },
+        { art: '🧺🌿', bg: 'mar', fx: 'ondas', text: 'Ela colocou o bebê no cestinho e deixou entre os juncos, na beira do rio. A irmã dele, Miriã, ficou olhando de longe.', r: 'Êxodo 2:3-4' },
+        { art: '👸🧺', bg: 'mar', fx: 'ondas', text: 'A filha do Faraó, a princesa, foi se banhar no rio e encontrou o cestinho. O bebê chorava, e ela teve dó dele.', r: 'Êxodo 2:5-6' },
+        { art: '👧💬👸', bg: 'palacio', text: 'Miriã correu e perguntou: "Quer que eu chame uma mulher para cuidar dele?" E chamou a própria mamãe do bebê!', r: 'Êxodo 2:7-9' },
+        { art: '👸👦💛', bg: 'palacio', fx: 'coracoes', text: 'A princesa deu a ele o nome de Moisés. Deus cuidou de Moisés desde bebê, porque tinha um plano lindo para ele.', r: 'Êxodo 2:10' }
       ],
       small: [
         { q: 'Onde o bebê Moisés ficou no rio?', o: [['🧺', 'Num cestinho'], ['🚤', 'Numa lancha'], ['🛁', 'Numa banheira']] },
@@ -126,12 +126,12 @@ window.KIDS_DATA = {
     {
       id: 'mar', name: 'A travessia do mar', icon: '🌊', sticker: '🌊', scene: 'mar', ref: 'Êxodo 14',
       scenes: [
-        { art: '🧔👥🏜️', bg: 'deserto', text: 'Moisés cresceu, e Deus o escolheu para tirar o seu povo do Egito, onde eles eram escravos.' },
-        { art: '👥🌊', bg: 'mar', fx: 'ondas', text: 'O povo caminhou até a beira de um mar enorme. E o Faraó veio atrás deles com muitos carros e cavalos!' },
-        { art: '😨👥', bg: 'mar', fx: 'vento', text: 'O povo ficou com medo. Mas Moisés disse: "Não tenham medo! Fiquem firmes e vejam o que Deus vai fazer!"' },
-        { art: '🧔🙌🌊', bg: 'mar', fx: 'vento', text: 'Moisés levantou a vara, e Deus mandou um vento forte. O mar se abriu no meio, com uma parede de água de cada lado!' },
-        { art: '🌊👣🌊', bg: 'mar', fx: 'ondas', text: 'E o povo atravessou pelo meio do mar, andando em terra seca! Ninguém molhou nem os pés.' },
-        { art: '🥁💃🎶', bg: 'aurora', fx: 'brilho', text: 'Do outro lado, todos cantaram e dançaram para agradecer a Deus. Miriã tocava o tamborim. Deus salvou o seu povo!' }
+        { art: '🧔👥🏜️', bg: 'deserto', text: 'Moisés cresceu, e Deus o escolheu para tirar o seu povo do Egito, onde eles eram escravos.', r: 'Êxodo 3:10' },
+        { art: '👥🌊', bg: 'mar', fx: 'ondas', text: 'O povo caminhou até a beira de um mar enorme. E o Faraó veio atrás deles com muitos carros e cavalos!', r: 'Êxodo 14:9-10' },
+        { art: '😨👥', bg: 'mar', fx: 'vento', text: 'O povo ficou com medo. Mas Moisés disse: "Não tenham medo! Fiquem firmes e vejam o que Deus vai fazer!"', r: 'Êxodo 14:10-13' },
+        { art: '🧔🙌🌊', bg: 'mar', fx: 'vento', text: 'Moisés levantou a vara, e Deus mandou um vento forte. O mar se abriu no meio, com uma parede de água de cada lado!', r: 'Êxodo 14:21-22' },
+        { art: '🌊👣🌊', bg: 'mar', fx: 'ondas', text: 'E o povo atravessou pelo meio do mar, andando em terra seca! Ninguém molhou nem os pés.', r: 'Êxodo 14:22, 29' },
+        { art: '🥁💃🎶', bg: 'aurora', fx: 'brilho', text: 'Do outro lado, todos cantaram e dançaram para agradecer a Deus. Miriã tocava o tamborim. Deus salvou o seu povo!', r: 'Êxodo 15:1, 20-21' }
       ],
       small: [
         { q: 'O que Deus abriu no meio?', o: [['🌊', 'O mar'], ['🍉', 'Uma melancia'], ['🚪', 'Uma porta']] },
@@ -150,12 +150,12 @@ window.KIDS_DATA = {
     {
       id: 'davi', name: 'Davi e Golias', icon: '🪨', sticker: '🪨', scene: 'campo', ref: '1 Samuel 17',
       scenes: [
-        { art: '👦🐑🐑', bg: 'campo', text: 'Davi era um menino pastor. Ele cuidava das ovelhas do pai e tocava harpa para Deus.' },
-        { art: '🛡️🧌🛡️', bg: 'monte', text: 'Um dia, um gigante chamado Golias desafiou o povo de Deus. Ele era enorme, e todos os soldados tinham medo.' },
-        { art: '👦💪🙏', bg: 'monte', text: 'Davi disse: "Eu vou! Deus me ajudou a proteger as ovelhas do leão e do urso, e vai me ajudar agora!"' },
-        { art: '👦🪨🪨🪨', bg: 'campo', fx: 'brilho', text: 'Davi não quis armadura. Pegou só sua funda e cinco pedrinhas lisas do riacho.' },
-        { art: '👦🪨💫', bg: 'monte', fx: 'vento', text: 'Davi girou a funda e lançou uma pedrinha. Ela acertou a testa do gigante, e Golias caiu no chão: tum!' },
-        { art: '👦🎉👥', bg: 'aurora', fx: 'brilho', text: 'Todos comemoraram! Davi era pequeno, mas confiava num Deus muito grande.' }
+        { art: '👦🐑🐑', bg: 'campo', text: 'Davi era um menino pastor. Ele cuidava das ovelhas do pai e tocava harpa para Deus.', r: '1 Samuel 16:11, 23' },
+        { art: '🛡️🧌🛡️', bg: 'monte', text: 'Um dia, um gigante chamado Golias desafiou o povo de Deus. Ele era enorme, e todos os soldados tinham medo.', r: '1 Samuel 17:4-11' },
+        { art: '👦💪🙏', bg: 'monte', text: 'Davi disse: "Eu vou! Deus me ajudou a proteger as ovelhas do leão e do urso, e vai me ajudar agora!"', r: '1 Samuel 17:32-37' },
+        { art: '👦🪨🪨🪨', bg: 'campo', fx: 'brilho', text: 'Davi não quis armadura. Pegou só sua funda e cinco pedrinhas lisas do riacho.', r: '1 Samuel 17:38-40' },
+        { art: '👦🪨💫', bg: 'monte', fx: 'vento', text: 'Davi girou a funda e lançou uma pedrinha. Ela acertou a testa do gigante, e Golias caiu no chão: tum!', r: '1 Samuel 17:48-49' },
+        { art: '👦🎉👥', bg: 'aurora', fx: 'brilho', text: 'Todos comemoraram! Davi era pequeno, mas confiava num Deus muito grande.', r: '1 Samuel 17:45, 51-52' }
       ],
       small: [
         { q: 'O que Davi cuidava?', o: [['🐑', 'Ovelhas'], ['🐔', 'Galinhas'], ['🐠', 'Peixinhos']] },
@@ -174,12 +174,12 @@ window.KIDS_DATA = {
     {
       id: 'daniel', name: 'Daniel e os leões', icon: '🦁', sticker: '🦁', scene: 'palacio', ref: 'Daniel 6',
       scenes: [
-        { art: '🧔🙏🪟', bg: 'palacio', text: 'Daniel amava a Deus. Três vezes por dia, ele abria a janela e orava, agradecendo a Deus.' },
-        { art: '👑📜😈', bg: 'palacio', text: 'Uns homens invejosos enganaram o rei e fizeram uma lei: "Ninguém pode orar a Deus, só ao rei!"' },
-        { art: '🧔🙏💛', bg: 'palacio', fx: 'luz', text: 'Mas Daniel continuou orando a Deus, como sempre fazia. Ele não tinha vergonha de amar a Deus.' },
-        { art: '🦁🦁🧔🦁', bg: 'noite', text: 'Então jogaram Daniel numa cova cheia de leões famintos! O rei ficou muito triste e passou a noite sem dormir.' },
-        { art: '😇🦁😴', bg: 'noite', fx: 'luz', text: 'Mas Deus mandou um anjo, que fechou a boca dos leões! Eles não fizeram nada com Daniel. Ficaram mansinhos.' },
-        { art: '👑😄🧔', bg: 'aurora', fx: 'brilho', text: 'De manhã, o rei correu até a cova: "Daniel, você está bem?" "Estou, ó rei! Deus me protegeu!" E o rei louvou o Deus de Daniel.' }
+        { art: '🧔🙏🪟', bg: 'palacio', text: 'Daniel amava a Deus. Três vezes por dia, ele abria a janela e orava, agradecendo a Deus.', r: 'Daniel 6:10' },
+        { art: '👑📜😈', bg: 'palacio', text: 'Uns homens invejosos enganaram o rei e fizeram uma lei: "Ninguém pode orar a Deus, só ao rei!"', r: 'Daniel 6:4-9' },
+        { art: '🧔🙏💛', bg: 'palacio', fx: 'luz', text: 'Mas Daniel continuou orando a Deus, como sempre fazia. Ele não tinha vergonha de amar a Deus.', r: 'Daniel 6:10' },
+        { art: '🦁🦁🧔🦁', bg: 'noite', text: 'Então jogaram Daniel numa cova cheia de leões famintos! O rei ficou muito triste e passou a noite sem dormir.', r: 'Daniel 6:16-18' },
+        { art: '😇🦁😴', bg: 'noite', fx: 'luz', text: 'Mas Deus mandou um anjo, que fechou a boca dos leões! Eles não fizeram nada com Daniel. Ficaram mansinhos.', r: 'Daniel 6:22' },
+        { art: '👑😄🧔', bg: 'aurora', fx: 'brilho', text: 'De manhã, o rei correu até a cova: "Daniel, você está bem?" "Estou, ó rei! Deus me protegeu!" E o rei louvou o Deus de Daniel.', r: 'Daniel 6:19-23, 26' }
       ],
       small: [
         { q: 'O que Daniel fazia três vezes por dia?', o: [['🙏', 'Orava'], ['🍦', 'Tomava sorvete'], ['📺', 'Via TV']] },
@@ -198,12 +198,12 @@ window.KIDS_DATA = {
     {
       id: 'jonas', name: 'Jonas e o grande peixe', icon: '🐋', sticker: '🐋', scene: 'mar', ref: 'Jonas 1–3',
       scenes: [
-        { art: '🧔🏃⛵', bg: 'mar', text: 'Deus pediu a Jonas: "Vá à cidade de Nínive e fale de mim." Mas Jonas não quis e entrou num barco para o lado contrário.' },
-        { art: '⛵🌊', bg: 'mar', fx: 'chuva', text: 'Veio uma tempestade enorme! O barco balançava para lá e para cá. Os marinheiros ficaram com muito medo.' },
-        { art: '🧔💦🌊', bg: 'mar', fx: 'ondas', text: 'Jonas disse: "A culpa é minha, eu fugi de Deus. Joguem-me no mar." Eles jogaram, e o mar se acalmou.' },
-        { art: '🐋🧔', bg: 'mar', fx: 'ondas', text: 'Então Deus mandou um grande peixe, que engoliu Jonas! Jonas ficou três dias e três noites dentro da barriga do peixe.' },
-        { art: '🧔🙏🐋', bg: 'mar', fx: 'luz', text: 'Lá dentro, Jonas orou e pediu perdão a Deus. E Deus mandou o peixe soltar Jonas na praia: bluuurp!' },
-        { art: '🧔🏙️💛', bg: 'cidade', fx: 'coracoes', text: 'Dessa vez Jonas obedeceu e foi a Nínive. O povo da cidade se arrependeu, e Deus teve compaixão de todos.' }
+        { art: '🧔🏃⛵', bg: 'mar', text: 'Deus pediu a Jonas: "Vá à cidade de Nínive e fale de mim." Mas Jonas não quis e entrou num barco para o lado contrário.', r: 'Jonas 1:1-3' },
+        { art: '⛵🌊', bg: 'mar', fx: 'chuva', text: 'Veio uma tempestade enorme! O barco balançava para lá e para cá. Os marinheiros ficaram com muito medo.', r: 'Jonas 1:4-5' },
+        { art: '🧔💦🌊', bg: 'mar', fx: 'ondas', text: 'Jonas disse: "A culpa é minha, eu fugi de Deus. Joguem-me no mar." Eles jogaram, e o mar se acalmou.', r: 'Jonas 1:12-15' },
+        { art: '🐋🧔', bg: 'mar', fx: 'ondas', text: 'Então Deus mandou um grande peixe, que engoliu Jonas! Jonas ficou três dias e três noites dentro da barriga do peixe.', r: 'Jonas 1:17' },
+        { art: '🧔🙏🐋', bg: 'mar', fx: 'luz', text: 'Lá dentro, Jonas orou e pediu perdão a Deus. E Deus mandou o peixe soltar Jonas na praia: bluuurp!', r: 'Jonas 2:1-10' },
+        { art: '🧔🏙️💛', bg: 'cidade', fx: 'coracoes', text: 'Dessa vez Jonas obedeceu e foi a Nínive. O povo da cidade se arrependeu, e Deus teve compaixão de todos.', r: 'Jonas 3:1-10' }
       ],
       small: [
         { q: 'Quem engoliu Jonas?', o: [['🐋', 'Um grande peixe'], ['🐊', 'Um jacaré'], ['🦖', 'Um dinossauro']] },
@@ -222,12 +222,12 @@ window.KIDS_DATA = {
     {
       id: 'natal', name: 'O nascimento de Jesus', icon: '⭐', sticker: '⭐', scene: 'noite', ref: 'Lucas 2 e Mateus 2',
       scenes: [
-        { art: '😇👩', bg: 'aurora', fx: 'luz', text: 'O anjo Gabriel visitou Maria e disse: "Você vai ter um bebê, e ele vai se chamar Jesus. Ele é o Filho de Deus!"' },
-        { art: '🧔👩🫏', bg: 'deserto', text: 'Maria e José viajaram até a cidade de Belém. Era longe, e Maria ia montada num jumentinho.' },
-        { art: '🏠🚫🐄', bg: 'noite', fx: 'estrelas', text: 'Em Belém não havia lugar na hospedaria. Então eles ficaram num lugar simples, onde moravam os animais.' },
-        { art: '👩🌾🧔', bg: 'noite', fx: 'luz', text: 'Ali nasceu Jesus! Maria o enrolou em panos e o deitou numa manjedoura, o cocho onde os animais comem.' },
-        { art: '😇🐑👨‍🌾', bg: 'campo', fx: 'estrelas', text: 'No campo, anjos apareceram aos pastores: "Nasceu o Salvador!" Os pastores correram para ver o menino Jesus.' },
-        { art: '⭐🐪🎁', bg: 'noite', fx: 'brilho', text: 'Uma estrela brilhante guiou uns sábios do Oriente, os magos, que vieram adorar Jesus e trouxeram presentes. Jesus é o maior presente de Deus!' }
+        { art: '😇👩', bg: 'aurora', fx: 'luz', text: 'O anjo Gabriel visitou Maria e disse: "Você vai ter um bebê, e ele vai se chamar Jesus. Ele é o Filho de Deus!"', r: 'Lucas 1:26-33' },
+        { art: '🧔👩🫏', bg: 'deserto', text: 'Maria e José viajaram até a cidade de Belém. Era longe, e Maria ia montada num jumentinho.', r: 'Lucas 2:1-5' },
+        { art: '🏠🚫🐄', bg: 'noite', fx: 'estrelas', text: 'Em Belém não havia lugar na hospedaria. Então eles ficaram num lugar simples, onde moravam os animais.', r: 'Lucas 2:7' },
+        { art: '👩🌾🧔', bg: 'noite', fx: 'luz', text: 'Ali nasceu Jesus! Maria o enrolou em panos e o deitou numa manjedoura, o cocho onde os animais comem.', r: 'Lucas 2:6-7' },
+        { art: '😇🐑👨‍🌾', bg: 'campo', fx: 'estrelas', text: 'No campo, anjos apareceram aos pastores: "Nasceu o Salvador!" Os pastores correram para ver o menino Jesus.', r: 'Lucas 2:8-16' },
+        { art: '⭐🐪🎁', bg: 'noite', fx: 'brilho', text: 'Uma estrela brilhante guiou uns sábios do Oriente, os magos, que vieram adorar Jesus e trouxeram presentes. Jesus é o maior presente de Deus!', r: 'Mateus 2:1-11' }
       ],
       small: [
         { q: 'Quem nasceu em Belém?', o: [['✝️', 'O menino Jesus'], ['🐣', 'Um pintinho'], ['🤴', 'Um príncipe bravo']] },
@@ -246,12 +246,12 @@ window.KIDS_DATA = {
     {
       id: 'tempestade', name: 'Jesus acalma o mar', icon: '⛵', sticker: '⛵', scene: 'galileia', ref: 'Marcos 4:35-41',
       scenes: [
-        { art: '⛵👥', bg: 'galileia', text: 'Depois de um dia ensinando muita gente, Jesus disse aos discípulos: "Vamos para o outro lado do lago." E entraram no barco.' },
-        { art: '⛵💤🌙', bg: 'galileia', fx: 'ondas', text: 'Jesus estava cansado e dormiu num travesseiro, lá na parte de trás do barco.' },
-        { art: '⛈️⛵🌊', bg: 'mar', fx: 'chuva', text: 'De repente, veio uma tempestade fortíssima! O vento soprava, e as ondas jogavam água para dentro do barco.' },
-        { art: '😱👥', bg: 'mar', fx: 'chuva', text: 'Os discípulos ficaram apavorados e acordaram Jesus: "Mestre, não se importa que vamos afundar?"' },
-        { art: '💬🌊✨', bg: 'galileia', fx: 'luz', text: 'Jesus se levantou e disse ao vento e ao mar: "Cale-se! Aquiete-se!" E na mesma hora, tudo ficou calmo.' },
-        { art: '⛵☀️😮', bg: 'galileia', fx: 'brilho', text: 'Os discípulos se perguntavam: "Quem é este, que até o vento e o mar lhe obedecem?" É Jesus, o Filho de Deus!' }
+        { art: '⛵👥', bg: 'galileia', text: 'Depois de um dia ensinando muita gente, Jesus disse aos discípulos: "Vamos para o outro lado do lago." E entraram no barco.', r: 'Marcos 4:35-36' },
+        { art: '⛵💤🌙', bg: 'galileia', fx: 'ondas', text: 'Jesus estava cansado e dormiu num travesseiro, lá na parte de trás do barco.', r: 'Marcos 4:38' },
+        { art: '⛈️⛵🌊', bg: 'mar', fx: 'chuva', text: 'De repente, veio uma tempestade fortíssima! O vento soprava, e as ondas jogavam água para dentro do barco.', r: 'Marcos 4:37' },
+        { art: '😱👥', bg: 'mar', fx: 'chuva', text: 'Os discípulos ficaram apavorados e acordaram Jesus: "Mestre, não se importa que vamos afundar?"', r: 'Marcos 4:38' },
+        { art: '💬🌊✨', bg: 'galileia', fx: 'luz', text: 'Jesus se levantou e disse ao vento e ao mar: "Cale-se! Aquiete-se!" E na mesma hora, tudo ficou calmo.', r: 'Marcos 4:39' },
+        { art: '⛵☀️😮', bg: 'galileia', fx: 'brilho', text: 'Os discípulos se perguntavam: "Quem é este, que até o vento e o mar lhe obedecem?" É Jesus, o Filho de Deus!', r: 'Marcos 4:41' }
       ],
       small: [
         { q: 'Onde Jesus estava dormindo?', o: [['⛵', 'No barco'], ['🌳', 'Na árvore'], ['🏰', 'No castelo']] },
@@ -270,12 +270,12 @@ window.KIDS_DATA = {
     {
       id: 'ovelha', name: 'A ovelha perdida', icon: '🐑', sticker: '🐑', scene: 'campo', ref: 'Lucas 15:3-7',
       scenes: [
-        { art: '🐑🐑🐑🐑', bg: 'campo', text: 'Jesus contou uma história: um pastor tinha cem ovelhas. Ele conhecia cada uma e cuidava de todas com carinho.' },
-        { art: '🔢🐑', bg: 'campo', text: 'Um dia, ao contar as ovelhas, ele percebeu: "Noventa e oito, noventa e nove... Está faltando uma!"' },
-        { art: '🐑😢🌵', bg: 'monte', fx: 'vento', text: 'Uma ovelhinha tinha se perdido lá longe, no meio das pedras e dos espinhos. Ela estava sozinha e com medo.' },
-        { art: '🔦👣⛰️', bg: 'noite', fx: 'estrelas', text: 'O pastor deixou as outras noventa e nove em segurança e foi procurar a ovelhinha perdida, até encontrar.' },
-        { art: '🐑💛', bg: 'aurora', fx: 'coracoes', text: 'Quando a achou, ficou tão feliz que a colocou nos ombros e levou para casa, cantando de alegria!' },
-        { art: '🎉🐑👥', bg: 'aurora', fx: 'brilho', text: 'Ele chamou os amigos: "Alegrem-se comigo! Achei a minha ovelha!" Jesus é o Bom Pastor, e ama cada um de nós, até você! 🐑' }
+        { art: '🐑🐑🐑🐑', bg: 'campo', text: 'Jesus contou uma história: um pastor tinha cem ovelhas. Ele conhecia cada uma e cuidava de todas com carinho.', r: 'Lucas 15:3-4' },
+        { art: '🔢🐑', bg: 'campo', text: 'Um dia, ao contar as ovelhas, ele percebeu: "Noventa e oito, noventa e nove... Está faltando uma!"', r: 'Lucas 15:4' },
+        { art: '🐑😢🌵', bg: 'monte', fx: 'vento', text: 'Uma ovelhinha tinha se perdido lá longe, no meio das pedras e dos espinhos. Ela estava sozinha e com medo.', r: 'Lucas 15:4' },
+        { art: '🔦👣⛰️', bg: 'noite', fx: 'estrelas', text: 'O pastor deixou as outras noventa e nove em segurança e foi procurar a ovelhinha perdida, até encontrar.', r: 'Lucas 15:4' },
+        { art: '🐑💛', bg: 'aurora', fx: 'coracoes', text: 'Quando a achou, ficou tão feliz que a colocou nos ombros e levou para casa, cantando de alegria!', r: 'Lucas 15:5' },
+        { art: '🎉🐑👥', bg: 'aurora', fx: 'brilho', text: 'Ele chamou os amigos: "Alegrem-se comigo! Achei a minha ovelha!" Jesus é o Bom Pastor, e ama cada um de nós, até você! 🐑', r: 'Lucas 15:6-7' }
       ],
       small: [
         { q: 'Quantas ovelhas se perderam?', o: [['☝️', 'Uma'], ['🖐️', 'Cinco'], ['🔟', 'Dez']] },

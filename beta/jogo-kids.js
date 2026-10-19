@@ -162,6 +162,7 @@
         <div class="kd-dots">${st.scenes.map((_, i) => `<i class="${i < step ? 'on' : i === step ? 'now' : ''}"></i>`).join('')}</div>
         <div class="kd-scene ${dir < 0 ? 'back' : ''}" style="--bgimg:${App.sceneUrl(sc.bg)}">${fxHTML(sc.fx)}${artHTML(sc.art)}${lumiHTML('lendo', 'mini')}</div>
         <div class="kd-text ${small ? 'small' : ''}">${wordsHTML(sc.text)}</div>
+        ${sc.r ? `<div class="kd-ref">📖 ${esc(sc.r)}</div>` : ''}
         <div class="kd-nav">
           <button class="btn btn-ghost" data-prev ${step ? '' : 'disabled'} aria-label="Voltar">◀</button>
           <button class="btn btn-ghost" data-say>🔊 Ouvir</button>

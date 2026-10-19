@@ -6,13 +6,18 @@
   const H = () => window.HISTORIA || { arcs: {} };
   // os 20 arcos da grande história; os que já têm lições aparecem abertos
   const ARCS = [
-    ['comeco', 'O Começo', 'Gênesis 1–11', '🌍', 'AT'], ['promessa', 'A família da promessa', 'Gênesis 12–36', '⭐', 'AT'], ['jose', 'José no Egito', 'Gênesis 37–50', '🌾', 'AT'],
-    ['exodo', 'Êxodo: a libertação', 'Êxodo 1–18', '🌊', 'AT'], ['deserto', 'No deserto', 'Êxodo 19 – Deuteronômio', '⛺', 'AT'], ['josue', 'A terra prometida', 'Josué', '🧱', 'AT'],
-    ['juizes', 'Juízes e Rute', 'Juízes e Rute', '🎺', 'AT'], ['samuel', 'Samuel e o primeiro rei', '1 Samuel 1–15', '🪔', 'AT'], ['davi', 'Davi, o rei pastor', '1 Samuel 16 – 2 Samuel', '🪨', 'AT'],
-    ['salomao', 'Salomão e o templo', '1 Reis 1–11', '🏛️', 'AT'], ['reis', 'O reino dividido', '1 Reis 12 – 2 Reis', '🔥', 'AT'], ['profetas', 'Os profetas avisam', 'Profetas', '📜', 'AT'],
-    ['exilio', 'Longe de casa', 'Daniel e Ester', '🦁', 'AT'], ['volta', 'A volta e a espera', 'Esdras, Neemias, Malaquias', '🧱', 'AT'],
-    ['nasce', 'Jesus nasce', 'Evangelhos', '⭐', 'NT'], ['ensina', 'Jesus ensina e cura', 'Evangelhos', '🐑', 'NT'], ['cruz', 'A cruz e a ressurreição', 'Evangelhos', '✝️', 'NT'],
-    ['igreja', 'A igreja nasce', 'Atos 1–12', '🕊️', 'NT'], ['paulo', 'Paulo leva a notícia', 'Atos 13–28', '⛵', 'NT'], ['esperanca', 'As cartas e a grande esperança', 'Epístolas e Apocalipse', '🌅', 'NT']
+    ['comeco', 'O Começo', 'Gênesis 1–11', '🌍', 'AT'], ['abraao', 'Abraão, o amigo de Deus', 'Gênesis 12–25', '⭐', 'AT'], ['jaco', 'Isaque e Jacó', 'Gênesis 25–36', '🪜', 'AT'],
+    ['jose', 'José', 'Gênesis 37–50', '🌾', 'AT'], ['jo', 'Jó: a fé no sofrimento', 'Jó', '🌪️', 'AT'], ['exodo', 'Êxodo: a libertação', 'Êxodo 1–18', '🌊', 'AT'],
+    ['sinai', 'No Sinai: a Lei e o tabernáculo', 'Êxodo 19–40 e Levítico', '⛰️', 'AT'], ['deserto', 'Quarenta anos no deserto', 'Números', '⛺', 'AT'], ['despedida', 'Moisés se despede', 'Deuteronômio', '📜', 'AT'],
+    ['josue', 'A terra prometida', 'Josué', '🧱', 'AT'], ['juizes', 'Juízes e Rute', 'Juízes e Rute', '🎺', 'AT'], ['samuel', 'Samuel e o primeiro rei', '1 Samuel 1–15', '🪔', 'AT'],
+    ['davi', 'Davi, o pastor e rei', '1 Samuel 16 – 2 Samuel, 1 Crônicas', '🪨', 'AT'], ['salmos', 'Os cânticos do povo de Deus', 'Salmos', '🎶', 'AT'], ['salomao', 'Salomão: sabedoria e templo', '1 Reis 1–11, Provérbios, Eclesiastes, Cantares', '🏛️', 'AT'],
+    ['divisao', 'O reino se divide', '1 Reis 12–16', '💔', 'AT'], ['elias', 'Elias e Eliseu', '1 Reis 17 – 2 Reis 13', '🔥', 'AT'], ['norte', 'Os profetas do Norte', 'Jonas, Amós, Oseias', '🐋', 'AT'],
+    ['isaias', 'Os reis de Judá e Isaías', 'Isaías, Miqueias, Joel, Naum, Sofonias, Habacuque', '📯', 'AT'], ['jeremias', 'Jeremias e a queda de Jerusalém', 'Jeremias, Lamentações, Obadias', '😢', 'AT'], ['exilio', 'Longe de casa', 'Daniel e Ezequiel', '🦁', 'AT'],
+    ['volta', 'A volta para casa', 'Esdras, Ageu, Zacarias', '🏗️', 'AT'], ['ester', 'Ester, a rainha corajosa', 'Ester', '👑', 'AT'], ['muros', 'Os muros e a espera', 'Neemias, Malaquias e os 400 anos', '🧱', 'AT'],
+    ['nasce', 'Jesus nasce e cresce', 'Mateus e Lucas', '⭐', 'NT'], ['ensina', 'Jesus ensina', 'Sermão do Monte e parábolas', '🌄', 'NT'], ['milagres', 'Jesus cura e faz milagres', 'Os Evangelhos', '🐟', 'NT'],
+    ['jerusalem', 'A caminho de Jerusalém', 'A semana santa', '🌿', 'NT'], ['cruz', 'A cruz e a ressurreição', 'Os Evangelhos', '✝️', 'NT'], ['igreja', 'A igreja nasce', 'Atos 1–12', '🕊️', 'NT'],
+    ['paulo', 'Paulo leva o evangelho', 'Atos 13–28', '⛵', 'NT'], ['cartas', 'As cartas de Paulo', 'Romanos a Filemom', '✉️', 'NT'], ['outras', 'As outras cartas', 'Hebreus a Judas', '📨', 'NT'],
+    ['esperanca', 'A grande esperança', 'Apocalipse', '🌅', 'NT']
   ];
   const arcOf = id => H().arcs[id];
   const all = () => ARCS.map(a => arcOf(a[0])).filter(Boolean);
@@ -86,6 +91,7 @@
           ${dots(step)}
           <div class="kd-scene" style="--bgimg:${App.sceneUrl(sc.bg)}">${U.fxHTML(sc.fx)}${U.artHTML(sc.art)}${U.lumiHTML('lendo', 'mini')}</div>
           <div class="kd-text ${small ? 'small' : ''}">${U.wordsHTML(sc.text)}</div>
+          ${sc.r ? `<div class="kd-ref">📖 ${esc(sc.r)}</div>` : ''}
           ${nav(step < L.scenes.length - 1 ? 'Próxima ▶' : 'Continuar ▶')}`;
         read();
       } else if (stage === 'deus') {
