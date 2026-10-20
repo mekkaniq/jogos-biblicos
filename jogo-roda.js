@@ -25,7 +25,7 @@
     const cellsOf = w => [...w.p].map((_, i) => (w.y + (w.dir === 'v' ? i : 0)) + ',' + (w.x + (w.dir === 'h' ? i : 0)));
     const cellCh = {}; L.words.forEach(w => cellsOf(w).forEach((k, i) => cellCh[k] = w.p[i]));
     const shown = () => { const o = new Set(P.hints); L.words.filter(w => P.found.includes(w.p)).forEach(w => cellsOf(w).forEach(k => o.add(k))); return o; };
-    const csz = Math.min(42, Math.floor((Math.min(window.innerWidth, 560) - 40) / L.cols));
+    const csz = Math.min(42, Math.floor((Math.min(window.innerWidth, 560) - 48 - 4 * (L.cols - 1)) / L.cols));
     el.innerHTML = `${K.topbar('#/roda', `FASE ${L.i}`, `Roda de Letras · ${K.TRK[L.t]}`)}
       <div class="rd-board" style="--cs:${csz}px;grid-template-columns:repeat(${L.cols},var(--cs));grid-template-rows:repeat(${L.rows},var(--cs))" id="board"></div>
       <div id="disc"></div>

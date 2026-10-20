@@ -103,9 +103,9 @@
           </div>
           <div class="ws-board parch">
             <div class="ws-stage" id="stage" style="--n:${N}">
-              <div class="ws-tiles" style="grid-template-columns:repeat(${N},1fr)">${'<i></i>'.repeat(N * N)}</div>
+              <div class="ws-tiles" style="grid-template-columns:repeat(${N},minmax(0,1fr))">${'<i></i>'.repeat(N * N)}</div>
               <svg class="ws-marks" id="marks" viewBox="0 0 ${N} ${N}" preserveAspectRatio="none"></svg>
-              <div class="ws-grid" id="grid" style="grid-template-columns:repeat(${N},1fr)">${grid.map((row, r) => row.map((ch, c) => `<div class="ws-cell" data-r="${r}" data-c="${c}">${ch}</div>`).join('')).join('')}</div>
+              <div class="ws-grid" id="grid" style="grid-template-columns:repeat(${N},minmax(0,1fr))">${grid.map((row, r) => row.map((ch, c) => `<div class="ws-cell" data-r="${r}" data-c="${c}">${ch}</div>`).join('')).join('')}</div>
             </div>
           </div>
           <div style="margin-top:12px" class="discovery parch empty" id="disc"><div class="lbl">Palavra descoberta</div><h3>Encontre uma palavra para conhecer a sua história.</h3></div>
@@ -114,7 +114,7 @@
         <div class="ws-side">
           <div class="ws-words parch">
             <div class="head"><h3>Palavras para encontrar</h3><button class="btn btn-ghost" style="min-height:44px;padding:0 14px;font-size:.9rem" id="hint">${I.bulb} Dica</button></div>
-            <div class="chips" id="chips">${ph.w.map((w, i) => `<button class="chip" data-w="${i}" style="--c:${COLORS[i % 8][0]};--cs:${COLORS[i % 8][1]}"><span class="ck"></span>${esc(w.w)}</button>`).join('')}</div>
+            <div class="chips" id="chips">${ph.w.map((w, i) => `<button class="chip${pw(w.w).length > 9 ? ' long' : ''}" data-w="${i}" style="--c:${COLORS[i % 8][0]};--cs:${COLORS[i % 8][1]}"><span class="ck"></span>${esc(w.w)}</button>`).join('')}</div>
           </div>
           <div class="verse-foot parch"><div class="ic">${I.book}</div><p>“${esc(jr.verse)}”<cite>${esc(jr.ref)} · ACF</cite></p></div>
         </div>
