@@ -1,0 +1,11 @@
+{
+  "appId": "br.com.lumi.jogosbiblicos",
+  "appName": "Lumi Jogos",
+  "webDir": "www",
+  "backgroundColor": "#fbf3e0",
+  "ios": { "contentInset": "never", "scheme": "Lumi", "allowsLinkPreview": false },
+  "plugins": {
+    "SplashScreen": { "launchShowDuration": 1500, "launchAutoHide": false, "backgroundColor": "#fbf3e0", "showSpinner": false },
+    "LocalNotifications": { "iconColor": "#b8892f" }
+  }
+}
