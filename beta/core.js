@@ -88,7 +88,9 @@
     document.body.appendChild(t); setTimeout(() => t.remove(), ms);
   }
   function modal(html, { onClose, dismiss = true } = {}) {
-    const o = document.createElement('div'); o.className = 'overlay';
+    // evita empilhar o mesmo diálogo (toques repetidos em Ajustes escureciam o fundo)
+    for (const ex of document.querySelectorAll('.overlay')) { if (ex._h === html && ex.querySelector('.modal')) return { el: ex, close: () => ex.remove(), dup: true }; }
+    const o = document.createElement('div'); o.className = 'overlay'; o._h = html;
     o.innerHTML = `<div class="modal parch" role="dialog" aria-modal="true">${html}</div>`;
     document.body.appendChild(o);
     const close = () => { o.remove(); onClose && onClose(); };
@@ -97,7 +99,8 @@
     return { el: o, close };
   }
   function sheet(html) {
-    const o = document.createElement('div'); o.className = 'overlay'; o.style.placeItems = 'end stretch'; o.style.padding = '0';
+    for (const ex of document.querySelectorAll('.overlay')) { if (ex._h === html && ex.querySelector('.sheet')) return { el: ex, close: () => ex.remove() }; }
+    const o = document.createElement('div'); o.className = 'overlay'; o.style.placeItems = 'end stretch'; o.style.padding = '0'; o._h = html;
     o.innerHTML = `<div class="sheet parch">${html}</div>`;
     document.body.appendChild(o);
     const close = () => o.remove();
@@ -143,6 +146,7 @@
         <button class="setting" style="width:100%;border:0" data-reset><div><b>Recomeçar do zero</b><span>Apaga o progresso deste aparelho</span></div>${I.next}</button>
       </div>
       <div class="actions"><button class="btn btn-green" data-close>Pronto</button></div>`, { onClose: () => { if (changed) App.rerender(); } });
+    if (m.dup) return;
     m.el.addEventListener('click', e => {
       const s = e.target.closest('[data-s]');
       if (s) { const k = s.dataset.s; st[k] = !st[k]; save(); applySettings(); $('.switch', s).classList.toggle('on', st[k]); if (k === 'sound' && st[k]) sfx.good(); if (k === 'big') changed = true; }

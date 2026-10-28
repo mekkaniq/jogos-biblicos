@@ -1008,3 +1008,6 @@ html.in-app body.kids #appTabs { background: linear-gradient(180deg, rgba(255, 2
 .today-row .today:nth-child(2) { animation-delay: .05s; } .kids-banner { animation-delay: .1s; }
 .gtiles .gtile:nth-child(1) { animation-delay: .05s; } .gtiles .gtile:nth-child(2) { animation-delay: .09s; } .gtiles .gtile:nth-child(3) { animation-delay: .13s; } .gtiles .gtile:nth-child(4) { animation-delay: .17s; } .gtiles .gtile:nth-child(5) { animation-delay: .21s; } .gtiles .gtile:nth-child(6) { animation-delay: .25s; } .gtiles .gtile:nth-child(n+7) { animation-delay: .29s; }
 @media (prefers-reduced-motion: reduce) { .hero h1 .gold-text, .hero .motes, .today-row .today, .gtiles .gtile, .kids-banner, .continue { animation: none !important; } }
+
+/* v2.0 · sem zoom por toque duplo (app) */
+html, body { touch-action: manipulation; -webkit-text-size-adjust: 100%; }
