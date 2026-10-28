@@ -41,6 +41,8 @@ jobs:
           echo "::notice::APPLE_TEAM_ID: ${#TEAM_ID} caracteres (esperado 10)"
           echo "::notice::ASC_KEY_ID: ${#KEY_ID} caracteres (esperado 10)"
           echo "::notice::ASC_ISSUER_ID: ${#ISSUER_ID} caracteres (esperado 36)"
+          echo "::notice::ASC_KEY_ID começa com: $(echo $KEY_ID | cut -c1-3) e termina com: $(echo $KEY_ID | rev | cut -c1-2 | rev) (o ID não é segredo; a máscara de log esconde o resto)" | sed 's/./& /g' 
+          if openssl pkey -in $K -noout 2>/dev/null; then echo "::notice::ASC_KEY_P8: a chave privada é VÁLIDA (formato correto)"; else echo "::error::ASC_KEY_P8: a chave NÃO é válida (texto alterado, cortado ou colado errado)"; fi
           echo "::notice::ASC_KEY_P8: $(wc -l < $K | tr -d ' ') linhas; começa com: $(head -1 $K | cut -c1-27); termina com: $(tail -1 $K | cut -c1-25)"
       - name: Versão, build, iPhone em pé e áudio da narração
         working-directory: app-ios/ios/App
