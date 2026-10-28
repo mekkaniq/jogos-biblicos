@@ -187,6 +187,7 @@
         const div = document.createElement('div'); div.className = 'screen'; app.appendChild(div);
         current = fn(div, ...m.slice(1)) || null;
         window.scrollTo(0, 0);
+        try { document.dispatchEvent(new CustomEvent('app:route', { detail: '#' + h })); } catch (e) { }
         return;
       }
     }

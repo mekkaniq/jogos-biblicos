@@ -948,3 +948,13 @@ body.turma .kd-topts div { font-size: clamp(1.15rem, 3vw, 2rem); }
 html.in-app { -webkit-touch-callout: none; }
 html.in-app body { -webkit-user-select: none; user-select: none; overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; }
 html.in-app input, html.in-app textarea { -webkit-user-select: text; user-select: text; }
+#appTabs { display: none; }
+html.in-app.has-tabs #appTabs { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; background: rgba(15, 40, 28, .94); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-top: 1px solid rgba(233, 207, 140, .25); padding: 6px 4px calc(6px + env(safe-area-inset-bottom, 0px)); }
+html.in-app body.kids #appTabs { background: rgba(255, 250, 238, .94); border-top-color: #f0d6a8; }
+#appTabs button { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; background: none; border: 0; padding: 4px 2px; color: rgba(255, 250, 235, .72); font: 600 11px/1.1 var(--sans, system-ui), system-ui, sans-serif; }
+#appTabs button i { font-style: normal; font-size: 21px; line-height: 1.1; filter: grayscale(.35); opacity: .85; }
+#appTabs button.on { color: #f3d58f; }
+#appTabs button.on i { filter: none; opacity: 1; transform: scale(1.08); }
+html.in-app body.kids #appTabs button { color: #8a6a4a; }
+html.in-app body.kids #appTabs button.on { color: #b05a12; }
+html.in-app.has-tabs #app { padding-bottom: calc(var(--safe-bottom) + 92px); }

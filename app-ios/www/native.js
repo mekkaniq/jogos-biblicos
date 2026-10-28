@@ -43,6 +43,39 @@
     try { SB && SB.setStyle({ style: kids ? 'LIGHT' : 'DARK' }); } catch (e) { }
   }
   addEventListener('hashchange', statusStyle);
+
+  // ---------- 2b) Barra de abas do aplicativo (nas telas principais) ----------
+  const TABS = [
+    ['#/', '🏠', 'Início'], ['#/palavra', '☀️', 'Do Dia'], ['#/kids', '🐑', 'Kids'], ['#/kids/historia', '📖', 'História'], ['set', '⚙️', 'Ajustes']
+  ];
+  function tabbar() {
+    let bar = document.getElementById('appTabs');
+    if (!bar) {
+      bar = document.createElement('nav'); bar.id = 'appTabs'; bar.setAttribute('aria-label', 'Navegação do aplicativo');
+      bar.innerHTML = TABS.map(t => `<button data-tab="${t[0]}"><i>${t[1]}</i><span>${t[2]}</span></button>`).join('');
+      bar.addEventListener('click', e => {
+        const b = e.target.closest('[data-tab]'); if (!b || !window.App) return;
+        try { H && H.selectionChanged && H.selectionChanged(); } catch (x) { }
+        if (b.dataset.tab === 'set') App.openSettings(); else App.go(b.dataset.tab);
+      });
+      document.body.appendChild(bar);
+    }
+    return bar;
+  }
+  function onRoute(r) {
+    statusStyle();
+    const h = (r || location.hash || '#/').split('?')[0];
+    const show = ['#/', '#', '#/kids', '#/kids/historia', '#/kids/album', '#/kids/turma'].includes(h) || /^#\/kids\/historia\/\w+$/.test(h);
+    const bar = tabbar();
+    document.documentElement.classList.toggle('has-tabs', show);
+    bar.querySelectorAll('[data-tab]').forEach(b => {
+      const t = b.dataset.tab;
+      const on = t === '#/' ? (h === '#/' || h === '#') : (t !== 'set' && (h === t || (t === '#/kids/historia' && h.startsWith('#/kids/historia'))));
+      b.classList.toggle('on', on);
+    });
+  }
+  document.addEventListener('app:route', e => onRoute(e.detail));
+  addEventListener('load', () => onRoute());
   addEventListener('load', () => { statusStyle(); setTimeout(() => { try { P.SplashScreen && P.SplashScreen.hide(); } catch (e) { } }, 250); });
   document.addEventListener('click', e => {
     const a = e.target.closest && e.target.closest('a[href]'); if (!a) return;
