@@ -31,7 +31,7 @@
     const pd = App.palavra.today(), cd = App.caca.dailyDone();
     el.innerHTML = `
       <section class="hero" style="background-image:url('tumba.jpg');background-position:center 38%;min-height:340px">
-        ${cross}
+        <i class="motes"></i>${cross}
         <h1><span class="gold-text">Jogos Bíblicos</span></h1>${window.__BETA ? '<div class="beta-tag">VERSÃO BETA · TESTE</div>' : ''}
         <div class="kicker">APRENDA · LEMBRE · DESCUBRA</div>
         <div class="verse">“Escondi a tua palavra no meu coração, para eu não pecar contra ti.”<cite>Salmos 119:11 · ACF</cite></div>
