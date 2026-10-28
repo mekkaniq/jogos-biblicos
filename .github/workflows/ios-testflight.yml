@@ -35,6 +35,13 @@ jobs:
         run: |
           mkdir -p ~/.appstoreconnect/private_keys
           printf '%s' "${{ secrets.ASC_KEY_P8 }}" > ~/.appstoreconnect/private_keys/AuthKey_${KEY_ID}.p8
+      - name: Conferir os secrets (só mostra tamanhos, nunca os valores)
+        run: |
+          K=~/.appstoreconnect/private_keys/AuthKey_${KEY_ID}.p8
+          echo "::notice::APPLE_TEAM_ID: ${#TEAM_ID} caracteres (esperado 10)"
+          echo "::notice::ASC_KEY_ID: ${#KEY_ID} caracteres (esperado 10)"
+          echo "::notice::ASC_ISSUER_ID: ${#ISSUER_ID} caracteres (esperado 36)"
+          echo "::notice::ASC_KEY_P8: $(wc -l < $K | tr -d ' ') linhas; começa com: $(head -1 $K | cut -c1-27); termina com: $(tail -1 $K | cut -c1-25)"
       - name: Versão, build, iPhone em pé e áudio da narração
         working-directory: app-ios/ios/App
         run: |
@@ -83,6 +90,14 @@ jobs:
             <key>signingStyle</key><string>automatic</string>
           </dict></plist>
           PL
+          set +e
           xcodebuild -exportArchive -archivePath $RUNNER_TEMP/App.xcarchive -exportOptionsPlist $RUNNER_TEMP/export.plist \
             -allowProvisioningUpdates -authenticationKeyPath ~/.appstoreconnect/private_keys/AuthKey_${KEY_ID}.p8 \
-            -authenticationKeyID $KEY_ID -authenticationKeyIssuerID $ISSUER_ID
+            -authenticationKeyID $KEY_ID -authenticationKeyIssuerID $ISSUER_ID 2>&1 | tee $RUNNER_TEMP/export.log
+          RC=${PIPESTATUS[0]}
+          if [ "$RC" != "0" ]; then
+            echo "::error::exportArchive saiu com código $RC"
+            grep -iE "error|fail|denied|not found|no profiles|unauthor|forbidden|invalid|bundle" $RUNNER_TEMP/export.log | grep -v "^\s*$" | head -12 | while IFS= read -r l; do echo "::error::${l:0:300}"; done
+            tail -8 $RUNNER_TEMP/export.log | while IFS= read -r l; do echo "::warning::${l:0:300}"; done
+          fi
+          exit $RC
