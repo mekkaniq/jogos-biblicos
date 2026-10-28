@@ -134,7 +134,7 @@ window.HISTORIA.arcs.samuel = {
         { art: '⚔️⚔️😨', bg: 'monte', text: 'Os filisteus souberam da reunião e vieram atacar! O povo ficou com medo e pediu a Samuel: "Não pare de clamar ao Senhor por nós!"', r: '1 Samuel 7:7-8' },
         { art: '🧔🐑🔥🙏', bg: 'monte', fx: 'luz', text: 'Samuel ofereceu um cordeiro em sacrifício e clamou ao Senhor por Israel. E o Senhor respondeu!', r: '1 Samuel 7:9' },
         { art: '⛈️⚡💥', bg: 'monte', fx: 'chuva', text: 'Enquanto Samuel oferecia o sacrifício, o Senhor trovejou com um trovão enorme sobre os filisteus, e eles ficaram tão confusos que foram derrotados.', r: '1 Samuel 7:10-11' },
-        { art: '🪨✍️', bg: 'campo', fx: 'brilho', text: 'Samuel pegou uma pedra, colocou-a de pé e a chamou de Ebenézer, que quer dizer "pedra da ajuda". E disse: "Até aqui nos ajudou o Senhor."', r: '1 Samuel 7:12' },
+        { art: '🪨✍️', bg: 'campo', fx: 'brilho', text: 'Samuel pegou uma pedra, colocou-a de pé e a chamou de Ebenézer, que quer dizer "pedra da ajuda". E explicou: "Até aqui o Senhor nos ajudou."', r: '1 Samuel 7:12' },
         { art: '🧔🗺️⚖️', bg: 'campo', text: 'Os filisteus não voltaram a atacar enquanto Samuel viveu. E Samuel julgou Israel todos os dias da sua vida, viajando todo ano de cidade em cidade, e construiu um altar ao Senhor na sua casa, em Ramá.', r: '1 Samuel 7:13-17' }
       ],
       god: 'Quando voltamos para Deus de todo o coração, Ele nos ajuda. Ele tem nos ajudado até aqui.',

@@ -15,7 +15,7 @@ window.HISTORIA.arcs.jerusalem = {
         { art: '✨💬👧👦', bg: 'campo', fx: 'coracoes', text: 'Ele disse: "Deixem vir a mim as crianças e não as impeçam, porque o Reino de Deus pertence aos que são como elas."', r: 'Marcos 10:14' },
         { art: '✨👶💛', bg: 'aurora', fx: 'luz', text: '"Eu digo a verdade: quem não receber o Reino de Deus como uma criança, de jeito nenhum vai entrar nele." As crianças confiam e recebem presentes sem achar que precisam merecer.', r: 'Marcos 10:15' },
         { art: '✨🤗👧👦👶', bg: 'aurora', fx: 'coracoes', text: 'Então Jesus pegou as crianças nos braços, colocou as mãos sobre elas e as abençoou.', r: 'Marcos 10:16' },
-        { art: '🧔❓👑', bg: 'campo', text: 'Outra vez, os discípulos perguntaram: "Quem é o maior no Reino dos céus?" Jesus chamou uma criança, colocou no meio deles e disse: "Quem se humilhar como esta criança, esse é o maior no Reino dos céus."', r: 'Mateus 18:1-4' }
+        { art: '🧔❓👑', bg: 'campo', text: 'Outra vez, os discípulos perguntaram quem era o mais importante no Reino de Deus. Jesus chamou uma criança, colocou no meio deles e disse: "Quem se humilhar como esta criança, esse é o maior no Reino."', r: 'Mateus 18:1-4' }
       ],
       god: 'Deus ama as crianças e tem tempo para elas. O seu Reino é recebido com confiança humilde, como um presente.',
       jesus: 'Isaías disse que o Pastor de Deus ia "tomar os cordeirinhos nos braços" (Isaías 40:11). Foi exatamente o que Jesus fez com as crianças! Nenhuma criança é pequena demais para Jesus. E Ele nos ensina que a salvação não se conquista: se recebe, como uma criança recebe um presente do pai.',
@@ -29,7 +29,7 @@ window.HISTORIA.arcs.jerusalem = {
         { q: 'Por que os discípulos repreendiam o povo?', o: ['Achavam que Jesus estava ocupado demais', 'As crianças faziam barulho', 'Era tarde', 'Jesus mandou'], e: 'Marcos 10:13.' },
         { q: 'Como Jesus reagiu?', o: ['Ficou indignado com os discípulos', 'Concordou', 'Foi embora', 'Riu'], e: 'Marcos 10:14.' },
         { q: 'De quem é o Reino de Deus?', o: ['Dos que são como as crianças', 'Dos ricos', 'Dos fortes', 'Dos velhos'], e: 'Marcos 10:14.' },
-        { q: 'Quem é o maior no Reino dos céus?', o: ['Quem se humilha como uma criança', 'Quem manda mais', 'Quem tem mais dinheiro', 'Quem é mais alto'], e: 'Mateus 18:4.' }
+        { q: 'Quem é o maior no Reino de Deus?', o: ['Quem se humilha como uma criança', 'Quem manda mais', 'Quem tem mais dinheiro', 'Quem é mais alto'], e: 'Mateus 18:4.' }
       ],
       parents: 'Uma lição preciosa para o Cantinho. Ponto central: o valor das crianças para Jesus e a fé humilde que recebe o Reino como dom. Sugestão: orar abençoando cada filho, colocando as mãos sobre eles. Leitura junto: Marcos 10:13-16.'
     },
@@ -43,7 +43,7 @@ window.HISTORIA.arcs.jerusalem = {
         { art: '🧔🧥🫏✨', bg: 'monte', text: 'Os discípulos trouxeram os animais e colocaram as suas capas sobre eles, e Jesus montou.', r: 'Mateus 21:6-7' },
         { art: '👥🧥🛤️🌿', bg: 'cidade', fx: 'brilho', text: 'Uma multidão enorme estendia as suas capas no caminho. Outros cortavam ramos de palmeiras e espalhavam pela estrada. Era como um tapete para um rei!', r: 'Mateus 21:8; João 12:13' },
         { art: '👥🌿📣🎉', bg: 'cidade', fx: 'brilho', text: 'O povo, na frente e atrás, gritava: "Hosana ao Filho de Davi! Bendito o que vem em nome do Senhor! Hosana nas alturas!" Hosana quer dizer "Salva, por favor!"', r: 'Mateus 21:9; Salmos 118:25-26' },
-        { art: '🏙️❓👥', bg: 'cidade', text: 'Quando Jesus entrou em Jerusalém, a cidade toda ficou agitada: "Quem é este?" E a multidão respondia: "É Jesus, o profeta de Nazaré da Galileia!"', r: 'Mateus 21:10-11' },
+        { art: '🏙️❓👥', bg: 'cidade', text: 'Quando Jesus entrou em Jerusalém, a cidade toda ficou agitada: "Quem é este?" E a multidão respondia: "É o profeta Jesus, aquele de Nazaré, na Galileia!"', r: 'Mateus 21:10-11' },
         { art: '✨😢🏙️', bg: 'monte', text: 'Mas Lucas conta que, quando Jesus viu a cidade, chorou por ela, porque sabia que muitos ali o iam rejeitar.', r: 'Lucas 19:41-42' }
       ],
       god: 'Deus cumpre as profecias nos mínimos detalhes. O seu Rei vem com humildade e paz, não com orgulho.',
@@ -69,7 +69,7 @@ window.HISTORIA.arcs.jerusalem = {
         { art: '✨🏛️', bg: 'cidade', text: 'Jesus entrou no pátio do templo, a casa de Deus em Jerusalém.', r: 'Mateus 21:12' },
         { art: '🐑🐂🕊️💰🗣️', bg: 'cidade', text: 'Mas o pátio, que devia ser um lugar de oração, parecia uma feira barulhenta! Havia gente vendendo bois, ovelhas e pombas para os sacrifícios, e trocadores de dinheiro nas suas mesas, muitas vezes cobrando caro demais.', r: 'Mateus 21:12; João 2:14' },
         { art: '✨🔄🪙💨', bg: 'cidade', fx: 'vento', text: 'Jesus expulsou os que vendiam e compravam no templo, virou as mesas dos trocadores de dinheiro e as cadeiras dos que vendiam pombas!', r: 'Mateus 21:12' },
-        { art: '✨📣📜', bg: 'cidade', fx: 'luz', text: 'E disse: "Está escrito: a minha casa será chamada casa de oração para todos os povos. Mas vocês a transformaram num esconderijo de ladrões!"', r: 'Mateus 21:13; Marcos 11:17; Isaías 56:7' },
+        { art: '✨📣📜', bg: 'cidade', fx: 'luz', text: 'E disse: "Está escrito que a casa de Deus é uma casa de oração para todos os povos. Mas vocês a transformaram num esconderijo de ladrões!"', r: 'Mateus 21:13; Marcos 11:17; Isaías 56:7' },
         { art: '🦯🦽✨💛', bg: 'cidade', fx: 'coracoes', text: 'Então cegos e coxos vieram até Jesus no templo, e Ele os curou.', r: 'Mateus 21:14' },
         { art: '👧👦📣🌿', bg: 'cidade', fx: 'brilho', text: 'E as crianças, no templo, gritavam: "Hosana ao Filho de Davi!"', r: 'Mateus 21:15' },
         { art: '👨‍🏫😠👂', bg: 'cidade', text: 'Os chefes dos sacerdotes ficaram indignados: "Você está ouvindo o que essas crianças estão dizendo?"', r: 'Mateus 21:15-16' },
@@ -151,10 +151,10 @@ window.HISTORIA.arcs.jerusalem = {
       id: 'je6', title: 'Jesus lava os pés dos discípulos', ref: 'João 13:1-17, 34-35', icon: '🧺',
       recap: 'Na lição passada, Maria derramou um perfume caríssimo em Jesus, antecipando o seu sepultamento.',
       scenes: [
-        { art: '🏠🕯️🍞✨', bg: 'noite', fx: 'estrelas', text: 'Era a noite antes da Páscoa. Jesus sabia que tinha chegado a sua hora de passar deste mundo para o Pai. Ele tinha amado os seus, e os amou até o fim.', r: 'João 13:1' },
-        { art: '🧔🧔🧔🦶🛤️', bg: 'noite', text: 'Jesus e os doze discípulos estavam jantando. Naquele tempo, todos andavam de sandálias por estradas de terra, e os pés ficavam sujos. Normalmente, um servo lavava os pés dos convidados. Mas não havia servo ali.', r: 'João 13:2-4' },
+        { art: '🏠🕯️🍞✨', bg: 'noite', fx: 'estrelas', text: 'Era a noite antes da Páscoa. Jesus sabia que tinha chegado a hora de sair deste mundo e voltar para o Pai. Ele tinha amado os seus, e os amou até o fim.', r: 'João 13:1' },
+        { art: '✨🧔🧔🦶🛤️', bg: 'noite', text: 'Jesus e os doze discípulos estavam jantando. Naquele tempo, todos andavam de sandálias por estradas de terra, e os pés ficavam sujos. Normalmente, um servo lavava os pés dos convidados. Mas não havia servo ali.', r: 'João 13:2-4' },
         { art: '✨🧥➡️🤍', bg: 'noite', fx: 'luz', text: 'Jesus se levantou da mesa, tirou a capa e amarrou uma toalha na cintura, como um servo.', r: 'João 13:4' },
-        { art: '✨💧🧺🦶', bg: 'noite', fx: 'luz', text: 'Depois colocou água numa bacia e começou a lavar os pés dos discípulos e a enxugar com a toalha.', r: 'João 13:5' },
+        { art: '✨💧🧺🦶', bg: 'noite', fx: 'luz', text: 'Depois, pôs água numa bacia e começou a lavar os pés dos discípulos e a enxugar com a toalha.', r: 'João 13:5' },
         { art: '🧔✋😳', bg: 'noite', text: 'Quando chegou a vez de Pedro, ele disse: "Senhor, tu vais lavar os meus pés? Nunca!" Jesus respondeu: "Se eu não lavar você, você não tem parte comigo." Pedro disse: "Então, Senhor, lava também as mãos e a cabeça!"', r: 'João 13:6-9' },
         { art: '✨💬🧔🧔', bg: 'noite', fx: 'luz', text: 'Depois Jesus voltou à mesa e disse: "Vocês me chamam de Mestre e Senhor, e estão certos, porque eu sou. Se eu, o Senhor e Mestre, lavei os pés de vocês, vocês também devem lavar os pés uns dos outros."', r: 'João 13:12-14' },
         { art: '✨🤝💛', bg: 'aurora', fx: 'coracoes', text: '"Eu dei um exemplo para vocês, para que façam como eu fiz. Agora que sabem disso, felizes serão se o praticarem."', r: 'João 13:15, 17' },

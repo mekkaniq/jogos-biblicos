@@ -13,7 +13,7 @@ window.HISTORIA.arcs.norte = {
         { art: '🧔🏃⛵', bg: 'mar', text: 'Então Jonas fugiu! Nínive ficava a leste, e ele foi para o porto de Jope, pagou a passagem e entrou num navio para Társis, bem longe, a oeste. Ele queria fugir da presença do Senhor.', r: 'Jonas 1:3' },
         { art: '🌊⛈️⛵', bg: 'mar', fx: 'chuva', text: 'Mas o Senhor mandou um vento muito forte sobre o mar, e veio uma tempestade tão grande que o navio parecia que ia se partir!', r: 'Jonas 1:4' },
         { art: '🧑‍✈️😱📦🌊', bg: 'mar', fx: 'chuva', text: 'Os marinheiros ficaram com medo. Cada um gritava para o seu deus e jogavam a carga no mar para deixar o navio mais leve. E Jonas? Estava dormindo lá embaixo!', r: 'Jonas 1:5' },
-        { art: '🧑‍✈️❓🧔', bg: 'mar', fx: 'chuva', text: 'O capitão o acordou: "Como você consegue dormir? Levante e chame o seu Deus!" Os marinheiros descobriram que a culpa era de Jonas. Ele confessou: "Eu sou hebreu e temo o Senhor, o Deus do céu, que fez o mar e a terra seca."', r: 'Jonas 1:6-9' },
+        { art: '🧑‍✈️❓🧔', bg: 'mar', fx: 'chuva', text: 'O capitão o acordou: "Como você consegue dormir? Levante e chame o seu Deus!" Os marinheiros descobriram que a culpa era de Jonas. Ele confessou: "Eu sou hebreu e temo o Senhor, o Deus que está no céu e que criou o mar e a terra."', r: 'Jonas 1:6-9' },
         { art: '🧔💬🌊', bg: 'mar', fx: 'chuva', text: 'Jonas disse: "Joguem-me no mar, e o mar vai se acalmar. Eu sei que esta tempestade veio por minha causa."', r: 'Jonas 1:12' },
         { art: '🧑‍✈️🙏🌊', bg: 'mar', fx: 'ondas', text: 'Os marinheiros remaram com força para não fazer isso, mas não conseguiram. Então oraram ao Senhor e jogaram Jonas no mar. E o mar parou de se agitar!', r: 'Jonas 1:13-15' },
         { art: '🧑‍✈️🙌✨', bg: 'mar', fx: 'luz', text: 'Os marinheiros ficaram cheios de temor e respeito pelo Senhor, ofereceram sacrifícios e fizeram promessas a Ele. Até a fuga de Jonas fez estrangeiros conhecerem a Deus!', r: 'Jonas 1:16' }
@@ -30,7 +30,7 @@ window.HISTORIA.arcs.norte = {
         { q: 'Por que Jonas não queria ir a Nínive?', o: ['Não queria que Deus tivesse misericórdia dos inimigos', 'Tinha medo de altura', 'Não sabia o caminho', 'Estava doente'], e: 'Jonas 4:2.' },
         { q: 'Para onde Jonas tentou fugir?', o: ['Para Társis', 'Para o Egito', 'Para Jerusalém', 'Para Babilônia'], e: 'Jonas 1:3.' },
         { q: 'O que Jonas estava fazendo durante a tempestade?', o: ['Dormindo', 'Remando', 'Orando', 'Cantando'], e: 'Jonas 1:5.' },
-        { q: 'Como Jonas descreveu o Senhor?', o: ['O Deus do céu, que fez o mar e a terra', 'Um deus do navio', 'Um deus pequeno', 'Não falou'], e: 'Jonas 1:9.' }
+        { q: 'Como Jonas descreveu o Senhor?', o: ['O Deus que está no céu e criou o mar e a terra', 'Um deus do navio', 'Um deus pequeno', 'Não falou'], e: 'Jonas 1:9.' }
       ],
       parents: 'Jonas viveu no tempo do rei Jeroboão II (2 Reis 14:25). A Assíria era conhecida pela crueldade; o desagrado de Jonas é compreensível, e é esse o ponto do livro. A história também está no Cantinho Kids, numa versão mais curta. Leitura junto: Jonas 1.'
     },
@@ -41,7 +41,7 @@ window.HISTORIA.arcs.norte = {
         { art: '🌊🧔⬇️', bg: 'mar', fx: 'ondas', text: 'Jonas afundava no mar escuro. As águas o cercavam, e as algas se enrolavam na cabeça dele.', r: 'Jonas 2:3, 5' },
         { art: '🐋😮🧔', bg: 'mar', fx: 'ondas', text: 'Mas o Senhor tinha preparado um grande peixe para engolir Jonas! E Jonas ficou dentro do peixe três dias e três noites.', r: 'Jonas 1:17' },
         { art: '🐋🌑🧔', bg: 'noite', text: 'Imagine: escuro, apertado, no fundo do mar. Mas Jonas estava vivo! Deus o tinha salvado de se afogar.', r: 'Jonas 1:17; 2:6' },
-        { art: '🧔🙏🐋', bg: 'noite', fx: 'luz', text: 'Lá dentro do peixe, Jonas orou ao Senhor: "Na minha angústia, eu clamei ao Senhor, e Ele me respondeu. Do fundo do mar, eu gritei, e tu ouviste a minha voz."', r: 'Jonas 2:1-2' },
+        { art: '🧔🙏🐋', bg: 'noite', fx: 'luz', text: 'Lá dentro do peixe, Jonas orou ao Senhor: "Quando eu estava em apuros, chamei o Senhor, e Ele me respondeu. Lá do fundo do mar eu pedi socorro, e tu me ouviste."', r: 'Jonas 2:1-2' },
         { art: '🧔💭🏛️', bg: 'noite', fx: 'luz', text: '"Eu pensei: fui expulso da tua presença. Mas ainda vou olhar de novo para o teu santo templo!" Jonas lembrou do Senhor quando estava quase perdendo as forças.', r: 'Jonas 2:4, 7' },
         { art: '🧔🎶✨', bg: 'noite', fx: 'brilho', text: 'Ele terminou a oração com uma frase linda: "Eu vou te oferecer sacrifício com voz de agradecimento. A salvação vem do Senhor!"', r: 'Jonas 2:9' },
         { art: '🐋💦🏖️', bg: 'mar', fx: 'ondas', text: 'Então o Senhor falou ao peixe, e o peixe vomitou Jonas na terra seca! Splash! Jonas estava na praia, salvo!', r: 'Jonas 2:10' }
@@ -72,7 +72,7 @@ window.HISTORIA.arcs.norte = {
         { art: '👥😟🙏', bg: 'cidade', text: 'E algo incrível aconteceu: o povo de Nínive acreditou em Deus! Do maior ao menor, todos jejuaram e vestiram roupas de saco, mostrando tristeza pelo pecado.', r: 'Jonas 3:5' },
         { art: '👑🪑⬇️🙇', bg: 'palacio', text: 'Até o rei de Nínive, quando soube, levantou do trono, tirou a sua capa real, vestiu pano de saco e sentou na cinza.', r: 'Jonas 3:6' },
         { art: '👑📜🐄🐑', bg: 'cidade', text: 'O rei mandou anunciar: "Ninguém coma nem beba, nem gente, nem animais! Todos clamem a Deus com força e deixem os seus maus caminhos e a violência. Quem sabe Deus vai mudar de ideia e não vamos morrer!"', r: 'Jonas 3:7-9' },
-        { art: '✨💛🏙️', bg: 'aurora', fx: 'coracoes', text: 'Deus viu o que eles fizeram, que se converteram do seu mau caminho. E Deus teve compaixão e não destruiu a cidade!', r: 'Jonas 3:10' }
+        { art: '✨💛🏙️', bg: 'aurora', fx: 'coracoes', text: 'Deus viu o que eles fizeram: eles deixaram o caminho do mal. E Deus teve compaixão e não destruiu a cidade!', r: 'Jonas 3:10' }
       ],
       god: 'Deus dá segunda chance. Ele quer que todos se arrependam e é cheio de compaixão com quem se volta para Ele.',
       jesus: 'Jesus disse: "Os ninivitas se arrependeram com a pregação de Jonas. E eis que está aqui quem é mais do que Jonas" (Mateus 12:41). Jonas pregou só julgamento; Jesus trouxe a boa notícia do perdão. E Jesus veio "não para chamar os justos, mas os pecadores ao arrependimento" (Lucas 5:32).',
@@ -132,7 +132,7 @@ window.HISTORIA.arcs.norte = {
         { art: '🌊⚖️💧', bg: 'mar', fx: 'ondas', text: '"Em vez disso, corra a justiça como as águas, e a retidão como um ribeiro que nunca seca!" Deus queria que o amor por Ele aparecesse no jeito de tratar os outros.', r: 'Amós 5:24' },
         { art: '🧔😠🧑', bg: 'cidade', text: 'Um sacerdote de Betel chamado Amazias mandou Amós embora: "Volte para a sua terra! Não profetize mais aqui, porque este é o santuário do rei!"', r: 'Amós 7:10-13' },
         { art: '🧑💪📣', bg: 'cidade', fx: 'luz', text: 'Mas Amós respondeu com coragem: "Eu não era profeta, nem filho de profeta. Era boiadeiro. Mas o Senhor me tirou de trás do rebanho e disse: vá profetizar. Então ouça a palavra do Senhor!"', r: 'Amós 7:14-16' },
-        { art: '✨🔍🙏', bg: 'aurora', fx: 'luz', text: 'E a mensagem principal de Amós era um convite: "Busquem o Senhor e vivam! Busquem o bem, e não o mal, para que vocês vivam."', r: 'Amós 5:4, 14' }
+        { art: '✨🔍🙏', bg: 'aurora', fx: 'luz', text: 'E a mensagem principal de Amós era um convite: "Busquem o Senhor e vivam! Procurem fazer o bem, e não o mal, e vocês vão viver."', r: 'Amós 5:4, 14' }
       ],
       god: 'Deus se importa com os pobres e com a justiça. Ele não quer só cânticos, quer um coração que ama o próximo.',
       jesus: 'Amós disse que cânticos sem justiça não agradam a Deus. Jesus ensinou o mesmo: o maior mandamento é amar a Deus, e o segundo é amar o próximo como a nós mesmos (Mateus 22:37-39). E Jesus disse que, quando ajudamos o faminto, o sedento e o pobre, é a Ele que ajudamos (Mateus 25:40). Jesus também foi um homem simples, de uma cidadezinha, chamado por Deus.',
@@ -157,7 +157,7 @@ window.HISTORIA.arcs.norte = {
         { art: '🧱📏✨', bg: 'cidade', fx: 'luz', text: 'Deus mostrou a Amós uma visão: o Senhor estava em pé sobre um muro, com um prumo na mão. O prumo é um peso amarrado numa linha, que os pedreiros usam para ver se a parede está reta.', r: 'Amós 7:7' },
         { art: '📏🧱↘️', bg: 'cidade', text: 'Deus disse: "Eu vou colocar o prumo no meio do meu povo." A Palavra de Deus é como esse prumo: mostra o que está reto e o que está torto. E Israel estava torto, como uma parede prestes a cair.', r: 'Amós 7:8' },
         { art: '🧺🍑🍂', bg: 'campo', text: 'Deus mostrou também um cesto de frutas maduras de verão. Elas estavam passando do ponto. Era o sinal de que o tempo de Israel estava acabando.', r: 'Amós 8:1-2' },
-        { art: '🏜️📖😢', bg: 'deserto', fx: 'vento', text: 'E Deus disse algo muito triste: "Vêm dias em que vou mandar fome à terra. Não fome de pão, nem sede de água, mas de ouvir as palavras do Senhor."', r: 'Amós 8:11' },
+        { art: '🏜️📖😢', bg: 'deserto', fx: 'vento', text: 'E Deus disse algo muito triste: ia chegar um tempo de fome na terra. Não fome de comida, nem sede de água, mas fome de ouvir a Palavra de Deus.', r: 'Amós 8:11' },
         { art: '🏃🔍❌', bg: 'deserto', fx: 'vento', text: '"Vão andar de mar a mar, do norte ao leste, correndo para procurar a palavra do Senhor, e não vão achar." Quem rejeita a Palavra de Deus pode ficar sem ela.', r: 'Amós 8:12' },
         { art: '⛺🔨✨', bg: 'aurora', fx: 'luz', text: 'Mas o livro de Amós não termina triste! Deus prometeu: "Naquele dia, vou levantar a tenda caída de Davi, consertar os buracos e reconstruir as ruínas."', r: 'Amós 9:11' },
         { art: '🌍👥⛺', bg: 'aurora', fx: 'brilho', text: '"E ela vai incluir todas as nações que são chamadas pelo meu nome." A família de Davi ia ser levantada, e gente de todos os povos ia fazer parte dela!', r: 'Amós 9:12' },
@@ -186,7 +186,7 @@ window.HISTORIA.arcs.norte = {
         { art: '🧔✨💍', bg: 'cidade', fx: 'luz', text: 'Na mesma época, Deus chamou outro profeta, Oseias, e pediu algo muito difícil: que a vida da família dele fosse uma mensagem para todo Israel.', r: 'Oseias 1:1-2' },
         { art: '🧔💍👩', bg: 'cidade', fx: 'coracoes', text: 'Oseias se casou com uma mulher chamada Gômer. Mas Gômer não foi fiel: ela abandonou Oseias e foi embora atrás de outros.', r: 'Oseias 1:3; 3:1' },
         { art: '💔🗿👥', bg: 'cidade', text: 'Deus explicou: "É isso que o meu povo faz comigo." Israel era como uma esposa que abandonou o marido. Deus os amava, mas eles corriam atrás de Baal e dos ídolos.', r: 'Oseias 2:5, 8, 13' },
-        { art: '✨💬🧔', bg: 'aurora', fx: 'luz', text: 'Então Deus disse a Oseias: "Vá de novo, ame a sua esposa, assim como o Senhor ama os filhos de Israel, mesmo eles se voltando para outros deuses."', r: 'Oseias 3:1' },
+        { art: '✨💬🧔', bg: 'aurora', fx: 'luz', text: 'Então Deus disse a Oseias: "Vá de novo, ame a sua esposa, do mesmo jeito que eu amo o meu povo Israel, mesmo eles se voltando para outros deuses."', r: 'Oseias 3:1' },
         { art: '🧔🪙👩', bg: 'cidade', fx: 'coracoes', text: 'Gômer tinha caído numa situação tão ruim que tinha se tornado escrava. Oseias pagou o preço com prata e cevada, comprou a sua esposa de volta e a trouxe para casa.', r: 'Oseias 3:2-3' },
         { art: '👶👣💛', bg: 'aurora', fx: 'coracoes', text: 'Deus falou com ternura do seu povo: "Quando Israel era menino, eu o amei. Fui eu que o ensinei a andar, segurando pelos braços. Eu o puxei com cordas de amor."', r: 'Oseias 11:1-4' },
         { art: '💔❤️✨', bg: 'aurora', fx: 'luz', text: '"Como posso desistir de você, Israel? O meu coração se comove dentro de mim!" Deus estava triste com o pecado, mas o seu amor não desistia.', r: 'Oseias 11:8' },
@@ -217,7 +217,7 @@ window.HISTORIA.arcs.norte = {
         { art: '⚔️⚔️🏰🏙️', bg: 'cidade', fx: 'vento', text: 'Então veio o rei da Assíria, o império de Nínive, com um exército enorme, e cercou Samaria, a capital do norte, por três anos.', r: '2 Reis 17:5' },
         { art: '🏰💥', bg: 'noite', text: 'Samaria caiu. Foi o fim do reino de Israel, no norte.', r: '2 Reis 17:6' },
         { art: '👥⛓️🛤️', bg: 'deserto', fx: 'vento', text: 'O povo foi levado como prisioneiro para longe, para a Assíria. Eles perderam a terra que Deus tinha dado.', r: '2 Reis 17:6, 23' },
-        { art: '📖💬😢', bg: 'noite', text: 'A Bíblia explica por quê: "Isso aconteceu porque os filhos de Israel pecaram contra o Senhor, o seu Deus, que os tinha tirado do Egito." Deus tinha avisado muitas vezes, com paciência.', r: '2 Reis 17:7, 13-14; Deuteronômio 28:63-64' },
+        { art: '📖💬😢', bg: 'noite', text: 'A Bíblia explica por quê: tudo isso aconteceu porque o povo de Israel pecou contra o Senhor, o seu Deus, que os tinha tirado do Egito. Deus tinha avisado muitas vezes, com paciência.', r: '2 Reis 17:7, 13-14; Deuteronômio 28:63-64' },
         { art: '🏛️👀⚠️', bg: 'cidade', text: 'Só ficou o reino de Judá, no sul, com Jerusalém e o templo. Mas a Bíblia diz que Judá também não guardou os mandamentos. Será que Judá ia aprender a lição?', r: '2 Reis 17:18-19' },
         { art: '✨🌱🔙', bg: 'aurora', fx: 'luz', text: 'Mesmo assim, os profetas deixaram uma esperança: Deus ainda ia juntar o seu povo espalhado. Oseias tinha dito: "Eles vão voltar e buscar o Senhor, o seu Deus, e Davi, o seu rei."', r: 'Oseias 3:5; Amós 9:14' }
       ],

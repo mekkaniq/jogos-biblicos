@@ -99,11 +99,11 @@ window.HISTORIA.arcs.cruz = {
         { art: '⛰️🪵🪵🪵', bg: 'monte', text: 'Ali crucificaram Jesus, entre dois criminosos, um à direita e outro à esquerda. Isaías tinha dito: "Foi contado com os transgressores."', r: 'Lucas 23:33; Isaías 53:12' },
         { art: '✨🙏💛', bg: 'monte', fx: 'luz', text: 'E Jesus orou: "Pai, perdoa-lhes, porque não sabem o que fazem." Mesmo na cruz, Ele perdoava!', r: 'Lucas 23:34' },
         { art: '📜✍️👑', bg: 'monte', text: 'Pilatos mandou escrever uma placa em cima da cruz, em três línguas: "Jesus de Nazaré, o Rei dos Judeus." Era verdade, mesmo que eles não acreditassem.', r: 'João 19:19-20' },
-        { art: '🧔🙏✨🌅', bg: 'monte', fx: 'luz', text: 'Um dos criminosos disse: "Jesus, lembra-te de mim quando entrares no teu Reino." Jesus respondeu: "Eu te digo a verdade: hoje você vai estar comigo no paraíso."', r: 'Lucas 23:42-43' },
+        { art: '🧔🙏✨🌅', bg: 'monte', fx: 'luz', text: 'Um dos criminosos disse: "Jesus, lembra de mim quando vieres no teu Reino." Jesus respondeu: "Eu te digo a verdade: hoje você vai estar comigo no paraíso."', r: 'Lucas 23:42-43' },
         { art: '☀️⬛🌑', bg: 'noite', text: 'Ao meio-dia, o sol escureceu, e houve trevas sobre toda a terra até as três horas da tarde. Jesus gritou: "Deus meu, Deus meu, por que me desamparaste?", as palavras do Salmo 22. Ele estava levando o castigo do nosso pecado.', r: 'Lucas 23:44-45; Mateus 27:46; Salmos 22:1' },
-        { art: '✨📣✅', bg: 'noite', fx: 'luz', text: 'Então Jesus disse: "Está consumado!" Quer dizer: "Está tudo pago, terminado!" E, clamando em alta voz: "Pai, nas tuas mãos entrego o meu espírito", Jesus morreu.', r: 'João 19:30; Lucas 23:46' },
+        { art: '✨📣✅', bg: 'noite', fx: 'luz', text: 'Então Jesus disse: "Está consumado!" Quer dizer: "Está tudo pago, terminado!" Depois, com voz forte, entregou o seu espírito nas mãos do Pai, e morreu.', r: 'João 19:30; Lucas 23:46' },
         { art: '🏛️🧶✂️', bg: 'cidade', fx: 'luz', text: 'Na mesma hora, o véu do templo, a cortina grossa que separava o Lugar Santíssimo, rasgou-se ao meio, de cima até embaixo! O caminho até Deus estava aberto.', r: 'Mateus 27:51; Hebreus 10:19-20' },
-        { art: '🪖🙇✨', bg: 'monte', text: 'O oficial romano que estava de guarda viu tudo e disse: "Verdadeiramente este homem era o Filho de Deus!"', r: 'Mateus 27:54' }
+        { art: '🪖🙇✨', bg: 'monte', text: 'O oficial romano que estava de guarda viu tudo e disse: "Este homem era mesmo o Filho de Deus!"', r: 'Mateus 27:54' }
       ],
       god: 'Deus é justo e castiga o pecado. E Deus é amor: Ele mesmo pagou o castigo em Jesus, para nos perdoar.',
       jesus: 'Aqui toda a Bíblia se encontra. O cordeiro no lugar de Isaque, o sangue da Páscoa, a serpente levantada no deserto, o bode do Dia da Expiação, o Servo ferido de Isaías 53, tudo apontava para este momento. "Está consumado!" O preço foi pago por completo. E o véu rasgado mostra que agora, por meio de Jesus, qualquer pessoa pode chegar perto de Deus.',
@@ -221,7 +221,7 @@ window.HISTORIA.arcs.cruz = {
         { art: '🔥🐟🍞✨', bg: 'mar', fx: 'luz', text: 'Na praia havia uma fogueira de brasas, com peixe e pão. Jesus disse: "Venham comer." E serviu o café da manhã para eles.', r: 'João 21:9, 12-13' },
         { art: '✨❓🧔💛3️⃣', bg: 'mar', fx: 'coracoes', text: 'Depois, Jesus perguntou a Pedro três vezes: "Simão, você me ama?" E três vezes Pedro respondeu: "Sim, Senhor, tu sabes que eu te amo." Três negações, três declarações de amor!', r: 'João 21:15-17' },
         { art: '✨💬🧔🐑', bg: 'mar', fx: 'luz', text: 'E, cada vez, Jesus disse: "Cuide das minhas ovelhas." Jesus perdoou Pedro e deu a ele uma nova missão: ser pastor do povo de Deus.', r: 'João 21:15-17' },
-        { art: '⛰️✨🧔🧔🧔', bg: 'monte', fx: 'luz', text: 'Depois, num monte da Galileia, Jesus disse aos discípulos: "Toda a autoridade me foi dada no céu e na terra. Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, e do Filho, e do Espírito Santo."', r: 'Mateus 28:16-19' },
+        { art: '⛰️✨🧔🧔🧔', bg: 'monte', fx: 'luz', text: 'Depois, num monte da Galileia, Jesus disse aos discípulos: "Toda a autoridade me foi dada no céu e na terra. Portanto, vão a todos os povos e façam discípulos, batizando no nome do Pai, do Filho e do Espírito Santo."', r: 'Mateus 28:16-19' },
         { art: '🌍✨💛♾️', bg: 'aurora', fx: 'brilho', text: '"Ensinem a obedecer a tudo o que eu ordenei. E eu estou com vocês todos os dias, até o fim dos tempos!"', r: 'Mateus 28:20' }
       ],
       god: 'Deus perdoa de verdade e restaura quem caiu. Ele quer que pessoas de todas as nações o conheçam.',

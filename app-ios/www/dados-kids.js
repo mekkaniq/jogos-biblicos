@@ -24,7 +24,7 @@ window.KIDS_DATA = {
         { q: 'Para que Deus fez a lua e as estrelas?', o: ['Para brilhar à noite', 'Para esquentar a terra', 'Para molhar as plantas', 'Para fazer barulho'], e: 'O sol governa o dia, e a lua e as estrelas, a noite.' },
         { q: 'Como se chamavam o primeiro homem e a primeira mulher?', o: ['Adão e Eva', 'Abraão e Sara', 'José e Maria', 'Isaque e Rebeca'], e: 'Deus os colocou no jardim do Éden para cuidar dele.' },
         { q: 'O que Deus fez no sétimo dia?', o: ['Descansou', 'Fez os peixes', 'Fez o sol', 'Fez a chuva'], e: 'Deus abençoou o sétimo dia e descansou da sua obra.' },
-        { q: 'O que Deus achou de tudo o que criou?', o: ['Que era muito bom', 'Que era pequeno', 'Que era escuro', 'Que era chato'], e: '"E viu Deus tudo quanto tinha feito, e eis que era muito bom" (Gênesis 1:31).' }
+        { q: 'O que Deus achou de tudo o que criou?', o: ['Que era muito bom', 'Que era pequeno', 'Que era escuro', 'Que era chato'], e: 'Deus olhou tudo o que tinha feito e achou tudo muito bom (Gênesis 1:31).' }
       ]
     },
     {
@@ -141,7 +141,7 @@ window.KIDS_DATA = {
       ],
       big: [
         { q: 'Quem perseguiu o povo até o mar?', o: ['O Faraó e seu exército', 'Os filisteus', 'Os leões', 'Os romanos'], e: 'O Faraó mudou de ideia e foi atrás do povo.' },
-        { q: 'O que Moisés disse ao povo com medo?', o: ['Não tenham medo', 'Voltem para o Egito', 'Corram para o mato', 'Façam silêncio'], e: '"Não temais; estai quietos, e vede o livramento do Senhor" (Êxodo 14:13).' },
+        { q: 'O que Moisés disse ao povo com medo?', o: ['Não tenham medo', 'Voltem para o Egito', 'Corram para o mato', 'Façam silêncio'], e: 'Moisés disse ao povo para não ter medo, mas ficar firme e ver Deus salvar (Êxodo 14:13).' },
         { q: 'O que Deus usou para abrir o mar?', o: ['Um vento forte', 'Um terremoto', 'Uma ponte', 'Um barco'], e: 'Um forte vento oriental soprou a noite toda.' },
         { q: 'Como estava o chão no meio do mar?', o: ['Seco', 'Cheio de lama', 'Cheio de peixes', 'Com neve'], e: 'Os filhos de Israel passaram em seco.' },
         { q: 'Quem tocou tamborim depois da travessia?', o: ['Miriã', 'Eva', 'Sara', 'Ana'], e: 'Miriã e as mulheres louvaram a Deus com tamborins (Êxodo 15:20).' }
@@ -238,7 +238,7 @@ window.KIDS_DATA = {
       big: [
         { q: 'Qual anjo visitou Maria?', o: ['Gabriel', 'Miguel', 'Rafael', 'Nenhum'], e: 'O anjo Gabriel anunciou o nascimento de Jesus (Lucas 1:26-31).' },
         { q: 'Em que cidade Jesus nasceu?', o: ['Belém', 'Nazaré', 'Jerusalém', 'Jericó'], e: 'Belém é a cidade de Davi.' },
-        { q: 'Por que Jesus nasceu num lugar simples?', o: ['Não havia lugar na hospedaria', 'Maria quis assim', 'Estava chovendo', 'Os animais pediram'], e: '"Porque não havia lugar para eles na estalagem" (Lucas 2:7).' },
+        { q: 'Por que Jesus nasceu num lugar simples?', o: ['Não havia lugar na hospedaria', 'Maria quis assim', 'Estava chovendo', 'Os animais pediram'], e: 'Não havia lugar para eles na hospedaria (Lucas 2:7).' },
         { q: 'O que os anjos anunciaram aos pastores?', o: ['Que nasceu o Salvador', 'Que ia chover', 'Que as ovelhas fugiram', 'Que era hora de dormir'], e: '"Hoje vos nasceu o Salvador, que é Cristo, o Senhor" (Lucas 2:11).' },
         { q: 'O que os magos levaram para Jesus?', o: ['Ouro, incenso e mirra', 'Brinquedos', 'Frutas e pão', 'Roupas novas'], e: 'Eles adoraram Jesus e abriram seus tesouros (Mateus 2:11).' }
       ]
@@ -287,7 +287,7 @@ window.KIDS_DATA = {
         { q: 'Quantas ovelhas o pastor tinha?', o: ['Cem', 'Dez', 'Mil', 'Doze'], e: 'Ele tinha cem e uma se perdeu (Lucas 15:4).' },
         { q: 'O que o pastor fez com as outras 99?', o: ['Deixou em segurança e foi procurar', 'Vendeu todas', 'Esqueceu delas', 'Levou para passear'], e: 'Cada ovelha era importante para ele.' },
         { q: 'Como o pastor se sentiu ao achar a ovelha?', o: ['Muito feliz', 'Bravo', 'Cansado demais', 'Triste'], e: 'Ele a pôs nos ombros, cheio de alegria.' },
-        { q: 'O que o pastor fez quando chegou em casa?', o: ['Chamou os amigos para festejar', 'Brigou com a ovelha', 'Foi dormir sozinho', 'Mudou de casa'], e: '"Alegrai-vos comigo, porque já achei a minha ovelha perdida" (Lucas 15:6).' },
+        { q: 'O que o pastor fez quando chegou em casa?', o: ['Chamou os amigos para festejar', 'Brigou com a ovelha', 'Foi dormir sozinho', 'Mudou de casa'], e: 'O pastor chamou os amigos para festejar: a ovelha perdida foi achada! (Lucas 15:6).' },
         { q: 'O que Jesus quis ensinar?', o: ['Deus ama e procura cada pessoa', 'Ovelhas são bobas', 'Cem é um número grande', 'É bom se perder'], e: 'Há alegria no céu por cada um que volta para Deus.' }
       ]
     }

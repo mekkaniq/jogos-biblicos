@@ -195,7 +195,7 @@ window.HISTORIA.arcs.juizes = {
         { art: '🧔🏜️', bg: 'deserto', text: 'Jefté foi morar longe, numa terra chamada Tobe, e juntou um grupo de homens ao seu redor.', r: 'Juízes 11:3' },
         { art: '⚔️🙏', bg: 'cidade', text: 'Quando os amonitas atacaram Israel, os líderes de Gileade, os mesmos que o tinham rejeitado, foram pedir ajuda: "Venha ser o nosso chefe!"', r: 'Juízes 11:4-11' },
         { art: '📜💬', bg: 'palacio', text: 'Jefté tentou resolver sem guerra primeiro. Mandou uma mensagem ao rei dos amonitas, contando a história de como Deus deu aquela terra a Israel. Mas o rei não quis ouvir.', r: 'Juízes 11:12-28' },
-        { art: '✨🧔', bg: 'aurora', fx: 'luz', text: 'O Espírito do Senhor veio sobre Jefté, e Deus deu a ele a vitória sobre os amonitas.', r: 'Juízes 11:29, 32-33' },
+        { art: '✨🧔', bg: 'aurora', fx: 'luz', text: 'Então o Espírito do Senhor encheu Jefté de coragem, e Deus deu a ele a vitória sobre os amonitas.', r: 'Juízes 11:29, 32-33' },
         { art: '🗣️⚠️', bg: 'noite', text: 'Mas, antes da batalha, Jefté fez um voto, uma promessa a Deus, sem pensar direito no que estava prometendo. E essa promessa apressada trouxe uma tristeza enorme para ele e para a sua única filha.', r: 'Juízes 11:30-31, 34-35' },
         { art: '😢👧', bg: 'noite', text: 'A Bíblia conta que, todo ano, as moças de Israel se lembravam da filha de Jefté e choravam por ela. Deus não tinha pedido aquela promessa. Ela veio do coração confuso de um povo que tinha esquecido como Deus é.', r: 'Juízes 11:39-40' },
         { art: '⚔️👥', bg: 'monte', text: 'Depois disso, até os homens da tribo de Efraim brigaram com Jefté. O povo de Deus estava lutando contra si mesmo. O ciclo estava ficando cada vez pior.', r: 'Juízes 12:1-6' },
@@ -270,7 +270,7 @@ window.HISTORIA.arcs.juizes = {
       ],
       big: [
         { q: 'Por que os pais de Sansão ficaram preocupados?', o: ['A noiva não era do povo de Deus', 'Ela era muito pobre', 'Ela morava longe', 'Ela era mais velha'], e: 'Juízes 14:3.' },
-        { q: 'Qual era a resposta da adivinha de Sansão?', o: ['O mel no leão', 'A chuva', 'O pão', 'O sol'], e: '"Que coisa há mais doce do que o mel, e mais forte do que o leão?" (Juízes 14:18).' },
+        { q: 'Qual era a resposta da adivinha de Sansão?', o: ['O mel no leão', 'A chuva', 'O pão', 'O sol'], e: 'Os filisteus responderam com outra pergunta: o que é mais doce que o mel? E o que é mais forte que o leão? (Juízes 14:18).' },
         { q: 'O que aconteceu com as cordas novas?', o: ['Se partiram como fios queimados', 'Prenderam Sansão para sempre', 'Viraram cobras', 'Sumiram'], e: 'Juízes 15:14.' },
         { q: 'O que Deus fez quando Sansão teve sede?', o: ['Abriu uma fonte de água', 'Mandou chuva', 'Mandou um anjo com suco', 'Nada'], e: 'Juízes 15:18-19.' }
       ],
@@ -317,7 +317,7 @@ window.HISTORIA.arcs.juizes = {
         { art: '👥🗿', bg: 'cidade', text: 'Depois, a tribo de Dã pegou aquele ídolo e o sacerdote para eles. E a idolatria se espalhou ainda mais.', r: 'Juízes 18:14-31' },
         { art: '⚔️💔', bg: 'deserto', text: 'Mais tarde, aconteceu um crime horrível numa cidade da tribo de Benjamim. E, por causa disso, as tribos de Israel entraram em guerra umas contra as outras. Irmãos lutando contra irmãos.', r: 'Juízes 19 – 20' },
         { art: '😢👥', bg: 'noite', text: 'Muita gente sofreu. Quase uma tribo inteira desapareceu. O povo chorou diante de Deus, triste com o que tinha acontecido.', r: 'Juízes 21:1-3' },
-        { art: '🧭❓', bg: 'campo', fx: 'vento', text: 'A Bíblia explica tudo isso com uma frase, repetida várias vezes: "Naqueles dias não havia rei em Israel; cada um fazia o que parecia certo aos seus próprios olhos."', r: 'Juízes 17:6; 21:25' },
+        { art: '🧭❓', bg: 'campo', fx: 'vento', text: 'A Bíblia explica tudo isso com uma frase, repetida várias vezes: naquele tempo Israel não tinha rei, e cada um fazia o que achava certo aos seus próprios olhos.', r: 'Juízes 17:6; 21:25' },
         { art: '👁️👉', bg: 'aurora', text: 'Quando cada pessoa decide sozinha o que é certo, sem ouvir a Deus, tudo vira confusão. O povo precisava de um rei bom, que os guiasse no caminho de Deus.', r: 'Juízes 21:25' },
         { art: '👑✨', bg: 'aurora', fx: 'brilho', text: 'Deus ia mandar esse rei. Primeiro viria Davi, o rei pastor. E, muito depois, da família de Davi, viria o Rei perfeito: Jesus, o Rei que nunca erra e nos ensina o que é certo.', r: '2 Samuel 7:12-16; Lucas 1:32-33' }
       ],
@@ -344,7 +344,7 @@ window.HISTORIA.arcs.juizes = {
         { art: '🌾🚫', bg: 'deserto', text: 'Nos dias em que os juízes governavam, houve fome em Israel. Em Belém, que quer dizer "casa do pão", não tinha pão!', r: 'Rute 1:1' },
         { art: '👨👩👦👦🚶', bg: 'deserto', fx: 'vento', text: 'Um homem chamado Elimeleque foi com a esposa, Noemi, e os dois filhos morar em Moabe, uma terra estrangeira, para fugir da fome.', r: 'Rute 1:1-2' },
         { art: '😢🕯️', bg: 'noite', text: 'Lá, Elimeleque morreu. Os filhos se casaram com duas moças moabitas, Orfa e Rute. Mas, depois de uns dez anos, os dois filhos também morreram. Noemi ficou sozinha, com as duas noras.', r: 'Rute 1:3-5' },
-        { art: '🌾✨', bg: 'aurora', fx: 'luz', text: 'Um dia, Noemi soube que o Senhor tinha visitado o seu povo e dado pão de novo em Belém. Ela decidiu voltar para casa.', r: 'Rute 1:6' },
+        { art: '🌾✨', bg: 'aurora', fx: 'luz', text: 'Um dia, Noemi soube que Deus tinha cuidado do seu povo e que havia pão de novo em Belém. Ela decidiu voltar para casa.', r: 'Rute 1:6' },
         { art: '👵💬👩👩', bg: 'deserto', text: 'No caminho, Noemi disse às noras: "Voltem para a casa das suas mães. Que o Senhor seja bom com vocês, como vocês foram comigo." E as beijou, e todas choraram.', r: 'Rute 1:8-9' },
         { art: '👋👩', bg: 'deserto', text: 'Orfa beijou a sogra e voltou para o seu povo. Mas Rute se agarrou a Noemi e não quis deixá-la.', r: 'Rute 1:14' },
         { art: '🤝💛', bg: 'aurora', fx: 'coracoes', text: 'Rute disse uma das frases mais lindas da Bíblia: "Aonde você for, eu irei. Onde você morar, eu morarei. O seu povo será o meu povo, e o seu Deus será o meu Deus."', r: 'Rute 1:16-17' },
@@ -407,7 +407,7 @@ window.HISTORIA.arcs.juizes = {
         { art: '👡🤝', bg: 'cidade', text: 'Naquele tempo, para fechar um negócio, a pessoa tirava a sandália e entregava ao outro. O parente tirou a sandália, e pronto: Boaz era o remidor!', r: 'Rute 4:7-8' },
         { art: '👥✨', bg: 'cidade', fx: 'brilho', text: 'Boaz disse diante de todos: "Vocês são testemunhas de que eu resgato tudo o que era da família, e de que Rute será minha esposa." E o povo abençoou o casal.', r: 'Rute 4:9-12' },
         { art: '💍💛', bg: 'aurora', fx: 'coracoes', text: 'Boaz se casou com Rute. A moça estrangeira, viúva e pobre agora fazia parte do povo de Deus, com uma família e um lar.', r: 'Rute 4:13' },
-        { art: '👶😊', bg: 'aurora', fx: 'brilho', text: 'Deus deu a eles um filho! As mulheres de Belém disseram a Noemi: "Bendito seja o Senhor, que não deixou você sem remidor! Sua nora, que te ama, vale mais que sete filhos."', r: 'Rute 4:13-15' },
+        { art: '👶😊', bg: 'aurora', fx: 'brilho', text: 'Deus deu a eles um filho! As mulheres de Belém louvaram a Deus e disseram a Noemi: "Deus não deixou você sem um remidor! Sua nora, que te ama, vale mais que sete filhos."', r: 'Rute 4:13-15' },
         { art: '👵👶', bg: 'aurora', fx: 'coracoes', text: 'Noemi pegou o bebê no colo e cuidou dele. Aquela que tinha voltado amarga agora estava cheia de alegria. Deus transformou a tristeza dela.', r: 'Rute 4:16' },
         { art: '👶➡️👑', bg: 'palacio', fx: 'luz', text: 'O bebê se chamou Obede. Obede foi pai de Jessé, e Jessé foi pai de Davi, o grande rei de Israel! Rute, a moabita, foi bisavó do rei Davi.', r: 'Rute 4:17, 21-22' },
         { art: '👑✝️', bg: 'aurora', fx: 'brilho', text: 'E tem mais: no Evangelho de Mateus, o nome de Rute aparece na lista da família de Jesus! Num tempo tão confuso como o dos juízes, Deus estava preparando o caminho para o Rei.', r: 'Mateus 1:5-6, 16' }

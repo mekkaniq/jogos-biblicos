@@ -46,7 +46,7 @@ window.HISTORIA.arcs.exilio = {
         { art: '👦💬👑', bg: 'palacio', text: 'Daniel foi até o rei e disse: "Nenhum sábio pode revelar isso. Mas há um Deus no céu que revela os mistérios. Ó rei, você viu uma estátua enorme e brilhante."', r: 'Daniel 2:27-31' },
         { art: '🟨⬜🟫⬛🧱', bg: 'palacio', fx: 'brilho', text: '"A cabeça era de ouro, o peito e os braços de prata, a barriga de bronze, as pernas de ferro, e os pés eram de ferro misturado com barro."', r: 'Daniel 2:32-33' },
         { art: '🪨💥🗿⛰️', bg: 'monte', fx: 'vento', text: '"Então uma pedra foi cortada, sem ajuda de mão humana, bateu nos pés da estátua e a despedaçou. E a pedra virou uma grande montanha, que encheu toda a terra!"', r: 'Daniel 2:34-35' },
-        { art: '👑🙇👦', bg: 'palacio', fx: 'luz', text: 'Daniel explicou: os metais eram reinos que iam vir, um depois do outro. "Mas o Deus do céu vai levantar um reino que nunca vai ser destruído, e vai durar para sempre." O rei se ajoelhou: "O seu Deus é o Deus dos deuses e o Senhor dos reis!"', r: 'Daniel 2:36-47' }
+        { art: '👑🙇👦', bg: 'palacio', fx: 'luz', text: 'Daniel explicou: os metais eram reinos que iam vir, um depois do outro. "Mas o Deus do céu vai levantar um reino que nunca vai ser destruído, e vai durar para sempre." O rei se ajoelhou: "O seu Deus é maior do que todos os deuses e manda em todos os reis!"', r: 'Daniel 2:36-47' }
       ],
       god: 'Deus revela os segredos e governa sobre todos os reinos da história. O reino dele vai durar para sempre.',
       jesus: 'A pedra cortada sem mãos humanas, que vira uma montanha e enche a terra, é o Reino de Deus que veio com Jesus. Jesus começou pregando: "O reino dos céus está próximo" (Mateus 4:17), e disse que ele cresce como uma sementinha que vira árvore (Mateus 13:31-32). Jesus também se chamou de "a pedra" que os construtores rejeitaram (Mateus 21:42-44).',
@@ -76,7 +76,7 @@ window.HISTORIA.arcs.exilio = {
         { art: '🔥🔥🔥7️⃣', bg: 'noite', text: 'O rei mandou aquecer a fornalha sete vezes mais que o normal! Os três foram amarrados e jogados lá dentro.', r: 'Daniel 3:19-21' },
         { art: '👑😮🔥✨', bg: 'noite', fx: 'luz', text: 'De repente, o rei deu um pulo: "Não jogamos três homens amarrados? Eu estou vendo quatro homens soltos, andando no meio do fogo, sem nenhum dano! E o quarto tem um brilho como de um filho dos deuses!"', r: 'Daniel 3:24-25' },
         { art: '🧍🧍🧍😊🚫🔥', bg: 'aurora', fx: 'brilho', text: 'O rei chamou: "Servos do Deus Altíssimo, saiam!" Eles saíram, e o fogo não tinha queimado nem um fio de cabelo. As roupas não estavam chamuscadas, e eles nem tinham cheiro de fumaça!', r: 'Daniel 3:26-27' },
-        { art: '👑🙌✨', bg: 'aurora', fx: 'luz', text: 'Nabucodonosor disse: "Bendito seja o Deus de Sadraque, Mesaque e Abede-Nego, que enviou o seu anjo e livrou os seus servos que confiaram nele! Não há outro deus que possa livrar assim."', r: 'Daniel 3:28-29' }
+        { art: '👑🙌✨', bg: 'aurora', fx: 'luz', text: 'Nabucodonosor disse: "Louvado seja o Deus de Sadraque, Mesaque e Abede-Nego! Ele mandou o seu anjo e salvou os servos que confiaram nele! Não há outro deus que possa livrar assim."', r: 'Daniel 3:28-29' }
       ],
       god: 'Deus está conosco no meio do fogo. Devemos adorar só a Ele, mesmo que custe caro.',
       jesus: 'No meio do fogo, os três amigos não estavam sozinhos: havia um quarto, que brilhava. Deus prometeu: "Quando passares pelo fogo, não te queimarás" (Isaías 43:2). Jesus prometeu: "Eis que eu estou convosco todos os dias, até a consumação dos séculos" (Mateus 28:20). Jesus não nos tira de todas as dificuldades, mas entra nelas conosco.',
@@ -102,11 +102,11 @@ window.HISTORIA.arcs.exilio = {
         { art: '✨🪓🌳🪵', bg: 'noite', fx: 'luz', text: 'Então um mensageiro santo desceu do céu e disse: "Derrubem a árvore, mas deixem o toco com as raízes na terra, amarrado com ferro e bronze, até que passem sete tempos."', r: 'Daniel 4:13-16' },
         { art: '👦😟👑', bg: 'palacio', text: 'Daniel ficou preocupado ao entender o sonho. Mas falou com coragem: "Ó rei, a árvore é você. Você vai ser afastado das pessoas e vai viver como os animais do campo, até reconhecer que o Altíssimo governa sobre os reinos dos homens."', r: 'Daniel 4:19-25' },
         { art: '👦🙏👑', bg: 'palacio', fx: 'luz', text: 'Daniel aconselhou: "Deixe os seus pecados e seja bondoso com os pobres. Talvez a sua paz dure mais."', r: 'Daniel 4:27' },
-        { art: '👑😏🏙️', bg: 'palacio', text: 'Um ano depois, o rei passeava no terraço do palácio e disse, cheio de orgulho: "Não é esta a grande Babilônia que eu construí com o meu poder e para a minha glória?"', r: 'Daniel 4:29-30' },
+        { art: '👑😏🏙️', bg: 'palacio', text: 'Um ano depois, o rei passeava no terraço do palácio e disse, cheio de orgulho: "Olhem esta cidade enorme! Fui eu que construí a Babilônia, com o meu poder e para a minha glória!"', r: 'Daniel 4:29-30' },
         { art: '📣✨⬇️', bg: 'palacio', fx: 'luz', text: 'A frase ainda estava na boca do rei quando veio uma voz do céu: "O reino foi tirado de você!"', r: 'Daniel 4:31' },
         { art: '👑🐂🌾', bg: 'campo', text: 'Na mesma hora, o rei perdeu o juízo. Foi viver no campo e comia capim como os bois. O cabelo dele cresceu como penas de águia, e as unhas como garras de pássaro!', r: 'Daniel 4:33' },
         { art: '👑👀⬆️✨', bg: 'aurora', fx: 'luz', text: 'Depois de sete tempos, Nabucodonosor levantou os olhos para o céu, e o seu juízo voltou. Ele louvou o Altíssimo: "O seu domínio é eterno! Ele faz o que quer com o exército do céu e com os moradores da terra."', r: 'Daniel 4:34-35' },
-        { art: '👑🙇💛', bg: 'palacio', fx: 'brilho', text: 'O reino voltou para ele, e ele disse: "Agora eu louvo, exalto e glorifico o Rei do céu, porque todas as suas obras são verdade, e Ele pode humilhar os que andam com orgulho."', r: 'Daniel 4:36-37' }
+        { art: '👑🙇💛', bg: 'palacio', fx: 'brilho', text: 'O reino voltou para ele, e ele disse: "Agora eu louvo, exalto e glorifico o Rei do céu. Tudo o que Ele faz é certo, e Ele sabe humilhar quem anda cheio de orgulho."', r: 'Daniel 4:36-37' }
       ],
       god: 'Deus resiste aos orgulhosos e dá graça aos humildes. Ele governa sobre todos, até sobre os maiores reis.',
       jesus: 'Nabucodonosor se exaltou e foi humilhado. Jesus fez o caminho contrário: sendo Deus, "a si mesmo se humilhou, sendo obediente até a morte, e morte de cruz. Por isso, também Deus o exaltou soberanamente" (Filipenses 2:8-9). Jesus ensinou: "Qualquer que a si mesmo se exaltar será humilhado, e aquele que a si mesmo se humilhar será exaltado" (Lucas 14:11).',
@@ -129,7 +129,7 @@ window.HISTORIA.arcs.exilio = {
       recap: 'Na lição passada, o orgulhoso Nabucodonosor foi humilhado e depois louvou a Deus.',
       scenes: [
         { art: '👑🎉🍷👥', bg: 'palacio', text: 'Anos depois, o rei da Babilônia era Belsazar. Ele fez uma festa enorme para mil convidados importantes.', r: 'Daniel 5:1' },
-        { art: '👑🏆🗿😏', bg: 'palacio', text: 'No meio da festa, ele mandou trazer os vasos de ouro e de prata que tinham sido tirados do templo de Jerusalém. Beberam vinho neles e louvaram os deuses de ouro, de prata e de pedra. Que desrespeito com Deus!', r: 'Daniel 5:2-4' },
+        { art: '👑🏆🗿😏', bg: 'palacio', text: 'No meio da festa, ele pediu que trouxessem as taças de ouro e de prata que tinham sido tiradas do templo de Jerusalém. Beberam vinho nelas e louvaram os deuses de ouro, de prata e de pedra. Que desrespeito com Deus!', r: 'Daniel 5:2-4' },
         { art: '✋✍️🧱', bg: 'palacio', fx: 'luz', text: 'Na mesma hora, apareceram dedos de uma mão de homem, que começaram a escrever na parede do palácio, perto do candelabro! O rei viu a mão escrevendo.', r: 'Daniel 5:5' },
         { art: '👑😱🦵', bg: 'palacio', text: 'O rosto do rei ficou pálido, ele ficou tão assustado que os joelhos batiam um no outro!', r: 'Daniel 5:6' },
         { art: '🧙🤷❓', bg: 'palacio', text: 'Ele chamou todos os sábios, mas nenhum conseguiu ler nem explicar o que estava escrito.', r: 'Daniel 5:7-8' },
@@ -167,7 +167,7 @@ window.HISTORIA.arcs.exilio = {
         { art: '👑😟🌙', bg: 'noite', fx: 'estrelas', text: 'O rei voltou ao palácio e passou a noite sem comer e sem dormir, de tanta preocupação.', r: 'Daniel 6:18' },
         { art: '👑🏃🌅📣', bg: 'aurora', text: 'De manhã bem cedinho, o rei correu até a cova e gritou com voz triste: "Daniel, servo do Deus vivo! O seu Deus conseguiu te livrar dos leões?"', r: 'Daniel 6:19-20' },
         { art: '👴😊🦁😴', bg: 'aurora', fx: 'luz', text: 'E Daniel respondeu: "Ó rei, vive para sempre! O meu Deus enviou o seu anjo e fechou a boca dos leões, e eles não me fizeram mal nenhum!" Tiraram Daniel da cova, e ele não tinha nenhum arranhão, porque confiou no seu Deus.', r: 'Daniel 6:21-23' },
-        { art: '👑📜🌍', bg: 'palacio', fx: 'brilho', text: 'O rei Dario escreveu a todos os povos: "Que todos temam o Deus de Daniel, porque Ele é o Deus vivo, e o seu reino nunca vai ser destruído. Ele livra, salva e faz maravilhas no céu e na terra!"', r: 'Daniel 6:25-27' }
+        { art: '👑📜🌍', bg: 'palacio', fx: 'brilho', text: 'O rei Dario escreveu a todos os povos: "Que todos respeitem e temam o Deus de Daniel, porque Ele é o Deus que vive, e o seu reino nunca vai ser destruído. Ele livra, salva e faz maravilhas no céu e na terra!"', r: 'Daniel 6:25-27' }
       ],
       god: 'Deus é o Deus vivo, que livra quem confia nele. Vale a pena ser fiel e orar sempre.',
       jesus: 'Daniel foi colocado numa cova, taparam com uma pedra, e de manhã cedo ele saiu vivo! Jesus foi colocado num túmulo, taparam com uma pedra, e de manhã cedinho, no terceiro dia, a pedra foi removida e Jesus estava vivo (Marcos 16:2-6)! Daniel foi livrado da morte; Jesus venceu a morte para sempre.',
@@ -192,7 +192,7 @@ window.HISTORIA.arcs.exilio = {
         { art: '👴😴🌊🌬️', bg: 'noite', fx: 'ondas', text: 'Daniel teve um sonho: os quatro ventos do céu agitavam o grande mar, e do mar saíram quatro animais enormes, diferentes uns dos outros.', r: 'Daniel 7:1-3' },
         { art: '🦁🐻🐆🐉', bg: 'noite', fx: 'ondas', text: 'O primeiro era como um leão com asas de águia, o segundo como um urso, o terceiro como um leopardo com quatro asas, e o quarto era terrível e muito forte, com dentes de ferro.', r: 'Daniel 7:4-7' },
         { art: '🪑🔥✨', bg: 'aurora', fx: 'luz', text: 'Então Daniel viu tronos sendo colocados. E o Ancião de Dias se sentou. A sua roupa era branca como a neve, e o seu trono era de chamas de fogo.', r: 'Daniel 7:9' },
-        { art: '🔥🌊👥👥', bg: 'aurora', fx: 'luz', text: 'Um rio de fogo saía de diante dele. Milhares de milhares o serviam, e milhões de milhões estavam diante dele. Os livros foram abertos, e o tribunal começou.', r: 'Daniel 7:10' },
+        { art: '🔥🌊👥👥', bg: 'aurora', fx: 'luz', text: 'Um rio de fogo corria diante dele. Milhares e milhares de anjos o serviam, e uma multidão sem fim estava de pé na sua frente. Os livros foram abertos, e o tribunal começou.', r: 'Daniel 7:10' },
         { art: '🐉⚖️💨', bg: 'aurora', fx: 'vento', text: 'Os animais perderam o seu poder. Os reinos cruéis do mundo não iam durar para sempre.', r: 'Daniel 7:11-12' },
         { art: '☁️☁️✨', bg: 'aurora', fx: 'luz', text: 'Depois, Daniel viu algo maravilhoso: "Eis que vinha com as nuvens do céu alguém como um Filho do Homem. Ele chegou até o Ancião de Dias, e o levaram até a sua presença."', r: 'Daniel 7:13' },
         { art: '👑🌍♾️', bg: 'aurora', fx: 'brilho', text: '"E foi dado a Ele domínio, glória e um reino, para que todos os povos, nações e línguas o servissem. O seu domínio é eterno e não vai passar, e o seu reino nunca vai ser destruído."', r: 'Daniel 7:14' },

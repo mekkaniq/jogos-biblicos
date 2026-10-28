@@ -77,7 +77,7 @@ window.HISTORIA.arcs.abraao = {
         { art: '🏞️💧🏙️', bg: 'mar', fx: 'ondas', text: 'Ló olhou e viu a planície do rio Jordão, toda regada, verde e bonita, como o jardim do Senhor. E escolheu a melhor parte para ele.', r: 'Gênesis 13:10-11' },
         { art: '🏙️😈', bg: 'cidade', text: 'Ló foi armando suas tendas cada vez mais perto de Sodoma. Mas a Bíblia avisa: os homens de Sodoma eram maus e pecavam muito contra o Senhor.', r: 'Gênesis 13:12-13' },
         { art: '✨👴⬆️', bg: 'monte', fx: 'luz', text: 'Depois que Ló foi embora, o Senhor disse a Abrão: "Levante os olhos e olhe para o norte, para o sul, para o leste e para o oeste. Toda esta terra eu vou dar a você e aos seus descendentes."', r: 'Gênesis 13:14-15' },
-        { art: '🟤✨', bg: 'deserto', fx: 'brilho', text: '"Vou fazer os seus descendentes como o pó da terra: se alguém puder contar o pó da terra, poderá contar seus filhos." Abrão mudou-se para Hebrom e construiu mais um altar ao Senhor.', r: 'Gênesis 13:16-18' }
+        { art: '🟤✨', bg: 'deserto', fx: 'brilho', text: '"Vou fazer os seus descendentes como o pó da terra. Se alguém conseguir contar os grãos de pó, vai conseguir contar a sua família." Abrão mudou-se para Hebrom e construiu mais um altar ao Senhor.', r: 'Gênesis 13:16-18' }
       ],
       god: 'Quem confia em Deus pode ser generoso. Deus cuida de quem o coloca em primeiro lugar.',
       jesus: 'Abrão abriu mão do melhor para ter paz com Ló. Jesus fez muito mais: Ele era rico, morava no céu, mas se fez pobre por nós, para que fôssemos ricos com Ele (2 Coríntios 8:9). Jesus é o nosso promotor de paz.',
@@ -191,7 +191,7 @@ window.HISTORIA.arcs.abraao = {
       scenes: [
         { art: '👴⏳', bg: 'deserto', text: 'Passaram-se mais treze anos. Abrão já tinha noventa e nove anos! E ainda nada do filho da promessa.', r: 'Gênesis 17:1' },
         { art: '✨💬👴', bg: 'aurora', fx: 'luz', text: 'O Senhor apareceu a Abrão e disse: "Eu sou o Deus Todo-Poderoso. Ande na minha presença e seja íntegro."', r: 'Gênesis 17:1' },
-        { art: '👴🙇', bg: 'aurora', text: 'Abrão se prostrou com o rosto em terra. E Deus falou de novo da aliança: "Você será pai de muitas nações. Reis vão sair de você."', r: 'Gênesis 17:3-6' },
+        { art: '👴🙇', bg: 'aurora', text: 'Abrão se ajoelhou e encostou o rosto no chão. E Deus falou de novo da aliança: "Você será pai de muitas nações. Reis vão sair de você."', r: 'Gênesis 17:3-6' },
         { art: '✍️👴➡️', bg: 'aurora', fx: 'brilho', text: 'Deus mudou o nome dele: "Você não vai mais se chamar Abrão, mas Abraão, porque eu fiz de você pai de muitas nações." O nome novo era uma promessa.', r: 'Gênesis 17:5' },
         { art: '✍️👵👑', bg: 'aurora', fx: 'brilho', text: 'E Deus mudou também o nome de Sarai: "Ela vai se chamar Sara, que quer dizer princesa. Eu vou abençoá-la e dar a você um filho por meio dela."', r: 'Gênesis 17:15-16' },
         { art: '👴😂', bg: 'campo', text: 'Abraão caiu com o rosto em terra e riu, pensando: "Um homem de cem anos vai ter filho? E Sara, com noventa, vai dar à luz?"', r: 'Gênesis 17:17' },
@@ -272,7 +272,7 @@ window.HISTORIA.arcs.abraao = {
         { q: 'Até quantos justos Abraão pediu?', o: ['Dez', 'Cinquenta', 'Um', 'Cem'], e: 'Gênesis 18:32.' },
         { q: 'Por que os anjos levaram Ló pela mão?', o: ['O Senhor teve compaixão dele', 'Ló estava doente', 'Era noite', 'Ló quis ficar'], e: 'Gênesis 19:16.' },
         { q: 'O que aconteceu com a esposa de Ló?', o: ['Virou uma estátua de sal', 'Fugiu para o Egito', 'Ficou em Sodoma', 'Virou anjo'], e: 'Gênesis 19:26.' },
-        { q: 'O que Jesus disse sobre ela?', o: ['"Lembrai-vos da mulher de Ló"', 'Nada', '"Ela era sábia"', '"Ela foi rainha"'], e: 'Lucas 17:32: não ficar com o coração preso ao mundo.' }
+        { q: 'O que Jesus disse sobre ela?', o: ['"Lembrem-se da mulher de Ló"', 'Nada', '"Ela era sábia"', '"Ela foi rainha"'], e: 'Lucas 17:32: não ficar com o coração preso ao mundo.' }
       ],
       parents: 'Atenção: o pecado de Sodoma (Gênesis 19:4-9) foi descrito apenas como "queriam fazer muito mal aos visitantes". O episódio das filhas de Ló (Gênesis 19:30-38) foi omitido; leia-o sozinho, se quiser. O centro é a intercessão de Abraão e a misericórdia que tira Ló. Leitura junto: Gênesis 18:16-33.'
     },
@@ -315,11 +315,11 @@ window.HISTORIA.arcs.abraao = {
         { art: '👴😟', bg: 'noite', text: 'Era o pedido mais difícil do mundo. Mas a Bíblia diz que Abraão confiou: ele creu que Deus era poderoso até para trazer Isaque de volta da morte, porque a promessa viria por Isaque.', r: 'Hebreus 11:17-19' },
         { art: '🫏🪵👴👦', bg: 'deserto', fx: 'vento', text: 'Bem cedo, Abraão preparou o jumento, cortou lenha e partiu com Isaque e dois servos. A viagem durou três dias.', r: 'Gênesis 22:3-4' },
         { art: '👴💬👥', bg: 'monte', text: 'Ao ver o monte, Abraão disse aos servos: "Fiquem aqui. Eu e o menino vamos até lá, vamos adorar e depois voltaremos." Ele disse: voltaremos!', r: 'Gênesis 22:5' },
-        { art: '👦🪵❓', bg: 'monte', text: 'Isaque carregava a lenha. No caminho, perguntou: "Pai, aqui estão o fogo e a lenha. Mas onde está o cordeiro?"', r: 'Gênesis 22:6-7' },
+        { art: '👦🪵❓', bg: 'monte', text: 'Isaque carregava a lenha. No caminho, perguntou: "Pai, a lenha está aqui, e o fogo também. Mas onde está o cordeiro?"', r: 'Gênesis 22:6-7' },
         { art: '👴💛', bg: 'monte', fx: 'coracoes', text: 'Abraão respondeu: "Deus proverá para si o cordeiro, meu filho." E os dois continuaram caminhando juntos.', r: 'Gênesis 22:8' },
         { art: '🪨🔥✋', bg: 'monte', fx: 'luz', text: 'No alto do monte, Abraão preparou o altar. Quando estava pronto para obedecer até o fim, o Anjo do Senhor chamou do céu: "Abraão! Abraão! Não faça nada ao menino! Agora sei que você teme a Deus."', r: 'Gênesis 22:9-12' },
         { art: '🐏🌿', bg: 'monte', fx: 'brilho', text: 'Abraão olhou e viu um carneiro preso pelos chifres num arbusto. Ele ofereceu o carneiro no lugar do filho. Deus mesmo tinha providenciado!', r: 'Gênesis 22:13' },
-        { art: '⛰️✨', bg: 'aurora', fx: 'brilho', text: 'Abraão chamou aquele lugar de "O Senhor proverá". E Deus repetiu a promessa: "Na sua descendência serão benditas todas as nações da terra, porque você obedeceu à minha voz."', r: 'Gênesis 22:14-18' }
+        { art: '⛰️✨', bg: 'aurora', fx: 'brilho', text: 'Abraão chamou aquele lugar de "O Senhor proverá". E Deus repetiu a promessa: por meio da família de Abraão, todos os povos da terra iam ser abençoados, porque ele tinha obedecido.', r: 'Gênesis 22:14-18' }
       ],
       god: 'Deus provê. O que Ele pede, Ele mesmo providencia.',
       jesus: 'Isaque perguntou: "Onde está o cordeiro?" A resposta veio muitos anos depois, quando João Batista viu Jesus e disse: "Eis o Cordeiro de Deus, que tira o pecado do mundo!" (João 1:29). Deus poupou o filho de Abraão, mas não poupou o seu próprio Filho, e o entregou por nós (Romanos 8:32). E a Bíblia diz que o monte Moriá é onde depois ficou Jerusalém.',

@@ -188,12 +188,12 @@ window.HISTORIA.arcs.jose = {
       recap: 'Na lição passada, José explicou ao Faraó que viriam sete anos de fartura e sete anos de fome.',
       scenes: [
         { art: '👑👉👦', bg: 'palacio', text: 'O Faraó disse a José: "Já que Deus mostrou tudo isso a você, não há ninguém tão sábio quanto você. Você vai governar a minha casa, e todo o meu povo vai obedecer às suas ordens."', r: 'Gênesis 41:39-40' },
-        { art: '💍👔📿', bg: 'palacio', fx: 'brilho', text: 'O Faraó tirou o anel do dedo e colocou no dedo de José. Vestiu-o com roupas de linho fino e pôs um colar de ouro no pescoço dele.', r: 'Gênesis 41:42' },
+        { art: '💍👔📿', bg: 'palacio', fx: 'brilho', text: 'O Faraó tirou o anel do dedo e colocou no dedo de José. Deu a ele roupas finas de linho e pendurou um colar de ouro no pescoço dele.', r: 'Gênesis 41:42' },
         { art: '🐎🙇🙇', bg: 'cidade', text: 'José andava na segunda carruagem do reino, e gritavam na frente dele: "Ajoelhem-se!" Só o Faraó era maior do que ele no Egito.', r: 'Gênesis 41:43-44' },
         { art: '3️⃣0️⃣⏳', bg: 'aurora', text: 'José tinha trinta anos. Treze anos antes, ele era um menino vendido como escravo. Deus tinha transformado tudo!', r: 'Gênesis 41:46; 37:2' },
-        { art: '🌾🌾🌾📦', bg: 'campo', fx: 'brilho', text: 'Nos sete anos de fartura, a terra produziu muito. José juntou trigo em todas as cidades, tanto que parou de contar: era como a areia do mar!', r: 'Gênesis 41:47-49' },
-        { art: '👶👶💛', bg: 'aurora', fx: 'coracoes', text: 'José se casou e teve dois filhos. Chamou o primeiro de Manassés: "Deus me fez esquecer todo o meu sofrimento". E o segundo de Efraim: "Deus me fez crescer na terra da minha aflição."', r: 'Gênesis 41:50-52' },
-        { art: '🥀🌍😟', bg: 'deserto', text: 'Então começaram os sete anos de fome, como José tinha dito. A fome atingiu o Egito e todos os países ao redor.', r: 'Gênesis 41:53-54' },
+        { art: '🌾🌾🌾📦', bg: 'campo', fx: 'brilho', text: 'Durante os sete anos bons, a terra deu colheitas enormes. José juntou trigo em todas as cidades, tanto que parou de contar: era como a areia do mar!', r: 'Gênesis 41:47-49' },
+        { art: '👶👶💛', bg: 'aurora', fx: 'coracoes', text: 'José se casou e teve dois filhos. Chamou o primeiro de Manassés: "Deus me fez esquecer todo o meu sofrimento". E o segundo de Efraim: "Deus me fez prosperar na terra onde eu sofri."', r: 'Gênesis 41:50-52' },
+        { art: '🥀🌍😟', bg: 'deserto', text: 'Então chegaram os sete anos de fome, bem do jeito que José tinha dito. A fome atingiu o Egito e todos os países ao redor.', r: 'Gênesis 41:53-54' },
         { art: '👑👉👦🌾', bg: 'cidade', text: 'O povo gritava ao Faraó pedindo pão, e o Faraó dizia: "Vão até José e façam o que ele mandar." José abriu os armazéns e vendeu trigo aos egípcios.', r: 'Gênesis 41:55-56' },
         { art: '🌍🚶🌾', bg: 'deserto', fx: 'vento', text: 'E gente de toda a terra vinha ao Egito comprar trigo de José, porque a fome era grande no mundo inteiro. Inclusive... em Canaã.', r: 'Gênesis 41:57' }
       ],
@@ -307,7 +307,7 @@ window.HISTORIA.arcs.jose = {
       id: 'e11', title: 'Jacó vai para o Egito', ref: 'Gênesis 46 – 47', icon: '🐪',
       recap: 'Na lição passada, José revelou quem era, perdoou os irmãos e mandou buscar o pai.',
       scenes: [
-        { art: '👴🐪🙏', bg: 'deserto', fx: 'luz', text: 'Jacó partiu com toda a família. Em Berseba, onde Abraão e Isaque tinham adorado, ele parou e ofereceu sacrifícios ao Deus de seu pai.', r: 'Gênesis 46:1' },
+        { art: '👴🐪🙏', bg: 'deserto', fx: 'luz', text: 'Jacó partiu com toda a família. Em Berseba, onde Abraão e Isaque tinham adorado, ele parou para oferecer sacrifícios ao Deus do seu pai Isaque.', r: 'Gênesis 46:1' },
         { art: '✨🌙👴', bg: 'noite', fx: 'estrelas', text: 'De noite, Deus falou com Jacó numa visão: "Não tenha medo de descer ao Egito, porque lá eu vou fazer de você uma grande nação. Eu vou com você, e vou te trazer de volta."', r: 'Gênesis 46:2-4' },
         { art: '7️⃣0️⃣👨‍👩‍👧‍👦', bg: 'deserto', fx: 'vento', text: 'A família de Jacó que foi para o Egito, contando todos, eram setenta pessoas. Era o começo de um povo enorme.', r: 'Gênesis 46:26-27' },
         { art: '🐎💨👦', bg: 'deserto', text: 'José preparou a sua carruagem e foi correndo ao encontro do pai, em Gósen.', r: 'Gênesis 46:29' },

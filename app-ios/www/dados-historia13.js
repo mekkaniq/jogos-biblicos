@@ -44,7 +44,7 @@ window.HISTORIA.arcs.davi = {
         { art: '👦🎵👑', bg: 'palacio', fx: 'coracoes', text: 'Davi foi para o palácio. Toda vez que Saul ficava perturbado, Davi tocava a harpa, e Saul se acalmava e se sentia bem.', r: '1 Samuel 16:21-23' },
         { art: '👦🐑🌙', bg: 'noite', fx: 'estrelas', text: 'Quando não estava no palácio, Davi continuava cuidando das ovelhas do pai. No campo, ele compunha canções para Deus. Muitas delas estão no livro de Salmos.', r: '1 Samuel 17:15; 2 Samuel 23:1' },
         { art: '🐑🌿💧', bg: 'campo', fx: 'ondas', text: 'Uma das mais famosas é o Salmo 23: "O Senhor é o meu pastor, nada me faltará. Ele me faz deitar em pastos verdes e me guia para águas tranquilas."', r: 'Salmos 23:1-2' },
-        { art: '🌑🦯💛', bg: 'noite', fx: 'luz', text: '"Ainda que eu ande pelo vale da sombra da morte, não vou ter medo de mal nenhum, porque Tu estás comigo. A tua vara e o teu cajado me consolam."', r: 'Salmos 23:4' },
+        { art: '🌑🦯💛', bg: 'noite', fx: 'luz', text: '"Mesmo que eu passe por um vale bem escuro, não vou ter medo de mal nenhum, porque Tu estás comigo. O teu cajado de pastor me dá segurança."', r: 'Salmos 23:4' },
         { art: '🍽️🫗🏠', bg: 'aurora', fx: 'brilho', text: '"A bondade e a misericórdia vão me seguir todos os dias da minha vida, e eu vou morar na casa do Senhor para sempre." Davi, o pastor, sabia que ele mesmo era uma ovelha cuidada por Deus.', r: 'Salmos 23:5-6' }
       ],
       god: 'O Senhor é o nosso Pastor. Ele cuida, guia e protege, até nos momentos escuros.',
@@ -248,7 +248,7 @@ window.HISTORIA.arcs.davi = {
         { art: '👦🙏❓', bg: 'aurora', fx: 'luz', text: 'Depois da morte de Saul, Davi perguntou ao Senhor: "Devo subir para alguma cidade de Judá?" E o Senhor disse: "Suba para Hebrom."', r: '2 Samuel 2:1' },
         { art: '👑🏘️', bg: 'cidade', text: 'Em Hebrom, os homens de Judá ungiram Davi como rei sobre a sua tribo. As outras tribos ainda seguiam um filho de Saul, e houve uma longa disputa entre os dois lados.', r: '2 Samuel 2:4, 8-10; 3:1' },
         { art: '⏳7️⃣', bg: 'cidade', text: 'Davi reinou em Hebrom por sete anos e meio. Ele foi esperando o tempo de Deus, sem tentar tomar o trono à força.', r: '2 Samuel 2:11; 5:5' },
-        { art: '👥1️⃣2️⃣👑', bg: 'cidade', fx: 'brilho', text: 'Por fim, todas as tribos de Israel vieram a Davi em Hebrom: "Somos da mesma família! O Senhor disse a você: Você vai apascentar o meu povo e ser o líder dele." E ungiram Davi como rei de todo Israel.', r: '2 Samuel 5:1-3' },
+        { art: '👥1️⃣2️⃣👑', bg: 'cidade', fx: 'brilho', text: 'Por fim, as tribos de Israel foram todas até Davi, em Hebrom: "Somos da mesma família! O Senhor disse a você: Você vai apascentar o meu povo e ser o líder dele." E ungiram Davi como rei de todo Israel.', r: '2 Samuel 5:1-3' },
         { art: '3️⃣0️⃣👑', bg: 'palacio', text: 'Davi tinha trinta anos quando começou a reinar, e reinou quarenta anos.', r: '2 Samuel 5:4' },
         { art: '🏰⛰️', bg: 'cidade', text: 'Havia uma cidade no alto de um monte, muito bem protegida, onde moravam os jebuseus. Eles zombavam: "Você nunca vai entrar aqui!" Era Jerusalém.', r: '2 Samuel 5:6' },
         { art: '💧🕳️⬆️', bg: 'cidade', text: 'Mas Davi conquistou a fortaleza de Sião, entrando pelo canal de água. E Jerusalém passou a se chamar "a cidade de Davi".', r: '2 Samuel 5:7-9' },
@@ -280,7 +280,7 @@ window.HISTORIA.arcs.davi = {
         { art: '👑😨🏠', bg: 'cidade', text: 'Davi ficou triste e com medo, e deixou a arca na casa de um homem chamado Obede-Edom. Por três meses, o Senhor abençoou muito aquela casa.', r: '2 Samuel 6:8-11' },
         { art: '🧔🧔📦🪵', bg: 'aurora', fx: 'luz', text: 'Davi estudou a Lei e fez do jeito certo: os levitas carregaram a arca nos ombros. "Da primeira vez não buscamos o Senhor como Ele mandou", Davi reconheceu.', r: '1 Crônicas 15:2, 13-15' },
         { art: '🎺🥁🎶', bg: 'cidade', fx: 'brilho', text: 'Foi uma festa enorme! Havia trombetas, harpas, címbalos e cantores. Davi oferecia sacrifícios e todo o povo celebrava.', r: '2 Samuel 6:13-15; 1 Crônicas 15:16, 28' },
-        { art: '👑💃✨', bg: 'cidade', fx: 'coracoes', text: 'E o rei Davi dançava com todas as suas forças diante do Senhor, vestido com uma roupa simples de linho, como os levitas. Ele não estava preocupado em parecer importante: estava feliz com Deus!', r: '2 Samuel 6:14' },
+        { art: '👑💃✨', bg: 'cidade', fx: 'coracoes', text: 'E o rei Davi dançava diante do Senhor com toda a força, vestido com uma roupa simples de linho, como os levitas. Ele não estava preocupado em parecer importante: estava feliz com Deus!', r: '2 Samuel 6:14' },
         { art: '👩😒🪟', bg: 'palacio', text: 'Mical, filha de Saul e esposa de Davi, olhou pela janela e desprezou Davi no coração. Depois disse: "Que bonito o rei se rebaixando assim!" Davi respondeu: "Foi diante do Senhor! E vou me rebaixar ainda mais."', r: '2 Samuel 6:16, 20-22' },
         { art: '⛺📦🎶', bg: 'aurora', fx: 'brilho', text: 'A arca foi colocada numa tenda em Jerusalém. Davi abençoou o povo e deu pão e frutas para cada pessoa. E escreveu um cântico: "Louvem ao Senhor, porque Ele é bom; a sua misericórdia dura para sempre!"', r: '2 Samuel 6:17-19; 1 Crônicas 16:34' }
       ],
@@ -305,7 +305,7 @@ window.HISTORIA.arcs.davi = {
       recap: 'Na lição passada, Davi trouxe a arca para Jerusalém, dançando de alegria diante do Senhor.',
       scenes: [
         { art: '👑🏰😌', bg: 'palacio', text: 'Davi estava morando no seu palácio, e Deus tinha dado descanso de todos os inimigos.', r: '2 Samuel 7:1' },
-        { art: '👑💭⛺', bg: 'palacio', text: 'Davi disse ao profeta Natã: "Eu moro numa casa de cedro, e a arca de Deus mora numa tenda! Quero construir uma casa para Deus, um templo."', r: '2 Samuel 7:2' },
+        { art: '👑💭⛺', bg: 'palacio', text: 'Davi disse ao profeta Natã: "Eu moro num palácio de cedro, e a arca de Deus fica numa tenda! Quero construir uma casa para Deus, um templo."', r: '2 Samuel 7:2' },
         { art: '✨🌙💬', bg: 'noite', fx: 'luz', text: 'Mas naquela noite Deus falou com Natã: "Diga ao meu servo Davi: você vai construir uma casa para mim? Eu nunca pedi isso. Eu tirei você do pasto, de trás das ovelhas, para ser líder do meu povo."', r: '2 Samuel 7:4-8' },
         { art: '🐑➡️👑', bg: 'aurora', fx: 'brilho', text: '"Eu estive com você por onde você andou e vou fazer o seu nome grande, como o dos grandes da terra."', r: '2 Samuel 7:9' },
         { art: '✨🏠❗', bg: 'aurora', fx: 'luz', text: 'E então Deus fez uma promessa surpreendente: "Você queria construir uma casa para mim. Mas eu é que vou construir uma casa para você! Uma família, uma dinastia de reis."', r: '2 Samuel 7:11' },
@@ -429,7 +429,7 @@ window.HISTORIA.arcs.davi = {
         { art: '🙏📜', bg: 'noite', fx: 'estrelas', text: 'Foi nessa fuga que Davi escreveu o Salmo 3: "Senhor, como têm crescido os meus adversários! Mas tu, Senhor, és o meu escudo. Eu me deito e durmo em paz, porque o Senhor me sustenta."', r: 'Salmos 3:1, 3, 5' },
         { art: '⚔️🌳🐴', bg: 'campo', text: 'Houve uma grande batalha numa floresta. Davi pediu aos soldados: "Tratem com bondade o jovem Absalão, por amor a mim!" Mas Absalão fugiu montado numa mula, e o seu cabelo comprido ficou preso nos galhos de uma árvore.', r: '2 Samuel 18:5, 9' },
         { art: '💔🌳', bg: 'campo', text: 'Mesmo contra o pedido do rei, Joabe e os seus soldados mataram Absalão ali. A revolta tinha acabado.', r: '2 Samuel 18:14-15' },
-        { art: '👴😭', bg: 'cidade', text: 'Quando Davi recebeu a notícia, não comemorou a vitória. Subiu a um quarto e chorou: "Meu filho Absalão! Meu filho, meu filho Absalão! Quem me dera ter morrido no seu lugar! Absalão, meu filho, meu filho!"', r: '2 Samuel 18:33' }
+        { art: '👴😭', bg: 'cidade', text: 'Quando Davi recebeu a notícia, não comemorou a vitória. Subiu a um quarto e chorou muito, chamando o filho pelo nome: "Absalão, meu filho! Eu queria ter morrido no seu lugar! Absalão, meu filho, meu filho!"', r: '2 Samuel 18:33' }
       ],
       god: 'O pecado traz dor às famílias. Mas Deus sustenta quem confia nele, mesmo nos piores dias.',
       jesus: 'Davi chorou: "Quem me dera ter morrido no seu lugar!" Davi não pôde morrer no lugar do filho. Mas Deus Pai fez o que Davi desejou: entregou o seu próprio Filho, Jesus, para morrer no lugar de filhos rebeldes, como nós. E Jesus, como Davi, subiu o monte das Oliveiras chorando, na noite em que foi traído (Lucas 22:39-44).',
@@ -451,14 +451,14 @@ window.HISTORIA.arcs.davi = {
       id: 'v16', title: 'Davi prepara o templo', ref: '2 Samuel 23 – 24; 1 Crônicas 22 – 29', icon: '🏛️',
       recap: 'Na lição passada, Davi chorou por Absalão, o filho que se revoltou contra ele.',
       scenes: [
-        { art: '👴📜', bg: 'palacio', text: 'Davi voltou a reinar em Jerusalém. Já velho, ele disse as suas últimas palavras: "O Espírito do Senhor falou por mim, e a sua palavra esteve na minha língua." Davi sabia que os seus salmos vinham de Deus.', r: '2 Samuel 23:1-2' },
+        { art: '👴📜', bg: 'palacio', text: 'Davi voltou a reinar em Jerusalém. Já velho, ele disse as suas últimas palavras: o Espírito do Senhor tinha falado por meio dele, e a Palavra de Deus estava na sua boca. Davi sabia que os seus salmos vinham de Deus.', r: '2 Samuel 23:1-2' },
         { art: '👑😔📋', bg: 'palacio', text: 'Davi ainda cometeu outro erro: por orgulho, quis contar quantos soldados tinha, como se a força do reino estivesse no exército. Depois o coração dele doeu, e ele confessou: "Pequei gravemente!"', r: '2 Samuel 24:1-10' },
         { art: '⛰️🌾🪨', bg: 'monte', text: 'Para acabar com o castigo que veio, Deus mandou Davi construir um altar num lugar especial: a eira de um homem chamado Araúna, no alto de um monte em Jerusalém.', r: '2 Samuel 24:18' },
         { art: '👑💰🙅', bg: 'monte', text: 'Araúna quis dar o terreno de presente. Mas Davi disse: "Não! Eu vou pagar. Não vou oferecer ao Senhor uma oferta que não me custou nada." Ele comprou o lugar, ofereceu sacrifícios, e Deus atendeu a oração.', r: '2 Samuel 24:21-25' },
         { art: '⛰️✨🏛️', bg: 'aurora', fx: 'luz', text: 'Esse monte era o monte Moriá, onde Abraão tinha levado Isaque! E ali, mais tarde, seria construído o templo de Deus.', r: '2 Crônicas 3:1; Gênesis 22:2' },
         { art: '👴🪵🪨🟨', bg: 'palacio', text: 'Deus não deixou Davi construir o templo, mas Davi preparou tudo para o filho Salomão: juntou pedras, madeira de cedro, ferro, bronze, prata e muito ouro, e organizou os levitas, os cantores e os porteiros.', r: '1 Crônicas 22:2-5; 23 – 26' },
         { art: '👴🤲👦', bg: 'palacio', fx: 'luz', text: 'Davi chamou Salomão e disse: "Meu filho, conheça o Deus do seu pai e sirva a Ele de coração inteiro e com boa vontade, porque o Senhor examina todos os corações. Seja forte e mãos à obra!"', r: '1 Crônicas 28:9-10, 20' },
-        { art: '👥🎁🎁', bg: 'cidade', fx: 'brilho', text: 'O povo ofereceu com alegria tudo o que tinha para o templo. E Davi orou diante de todos: "Tua é, Senhor, a grandeza, o poder, a glória e a majestade! Tudo vem de ti, e do que é teu nós te damos."', r: '1 Crônicas 29:9-14' },
+        { art: '👥🎁🎁', bg: 'cidade', fx: 'brilho', text: 'O povo ofereceu com alegria tudo o que tinha para o templo. E Davi orou diante de todos: "Tua é, Senhor, a grandeza, o poder, a glória e a majestade! Tudo é teu, e só te devolvemos o que veio das tuas mãos."', r: '1 Crônicas 29:9-14' },
         { art: '👴🕊️👑', bg: 'aurora', fx: 'luz', text: 'Davi morreu numa boa velhice, depois de reinar quarenta anos. E Salomão, o seu filho, se sentou no trono. Mas a promessa de Deus a Davi ainda esperava o seu Rei eterno...', r: '1 Crônicas 29:26-28' }
       ],
       god: 'Tudo o que temos vem de Deus. Damos a Ele com alegria, e Ele merece toda a glória.',

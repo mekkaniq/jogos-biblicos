@@ -100,11 +100,11 @@ window.HISTORIA.arcs.jaco = {
       scenes: [
         { art: '👦🚶🏜️', bg: 'deserto', fx: 'vento', text: 'Jacó caminhava sozinho em direção a Harã. Tinha deixado tudo para trás: a casa, os pais e o irmão bravo com ele.', r: 'Gênesis 28:10' },
         { art: '🌙🪨😴', bg: 'noite', fx: 'estrelas', text: 'O sol se pôs, e Jacó parou num lugar para passar a noite. Pegou uma pedra, colocou de travesseiro e dormiu ali, no chão.', r: 'Gênesis 28:11' },
-        { art: '🪜✨✨', bg: 'noite', fx: 'luz', text: 'Jacó sonhou: viu uma escada que ia da terra até o céu. E os anjos de Deus subiam e desciam por ela!', r: 'Gênesis 28:12' },
+        { art: '🪜✨✨', bg: 'noite', fx: 'luz', text: 'Jacó sonhou: viu uma escada que ia da terra até o céu. E havia anjos de Deus subindo e descendo por ela!', r: 'Gênesis 28:12' },
         { art: '✨🪜💬', bg: 'noite', fx: 'brilho', text: 'No alto da escada estava o Senhor, que disse: "Eu sou o Senhor, o Deus de Abraão e de Isaque. Esta terra onde você está deitado eu vou dar a você e aos seus descendentes."', r: 'Gênesis 28:13' },
-        { art: '🟤🌍', bg: 'noite', fx: 'estrelas', text: '"Seus descendentes serão como o pó da terra. E em você e na sua descendência serão benditas todas as famílias da terra." A mesma promessa de Abraão, agora para Jacó!', r: 'Gênesis 28:14' },
+        { art: '🟤🌍', bg: 'noite', fx: 'estrelas', text: '"Seus descendentes vão ser tantos quanto o pó do chão. E, por meio de você e da sua família, todas as famílias do mundo vão ser abençoadas." A mesma promessa de Abraão, agora para Jacó!', r: 'Gênesis 28:14' },
         { art: '🛡️💛', bg: 'noite', fx: 'coracoes', text: 'E Deus disse ainda: "Eu estou com você, e vou te guardar por onde você for, e vou te trazer de volta a esta terra. Não vou te deixar." Jacó tinha enganado, mas Deus veio com graça.', r: 'Gênesis 28:15' },
-        { art: '👦😮', bg: 'aurora', text: 'Jacó acordou e disse: "O Senhor está neste lugar, e eu não sabia! Que lugar impressionante! Esta é a casa de Deus, a porta do céu!"', r: 'Gênesis 28:16-17' },
+        { art: '👦😮', bg: 'aurora', text: 'Jacó acordou e disse: "Deus está aqui, neste lugar, e eu nem sabia! Que lugar impressionante! Esta é a casa de Deus, a porta do céu!"', r: 'Gênesis 28:16-17' },
         { art: '🪨🫗', bg: 'aurora', fx: 'luz', text: 'De manhã, Jacó levantou a pedra que tinha usado de travesseiro como um monumento e derramou azeite em cima. Chamou o lugar de Betel, que quer dizer "casa de Deus".', r: 'Gênesis 28:18-19' },
         { art: '👦🙏', bg: 'aurora', text: 'Jacó fez uma promessa: "Se Deus estiver comigo e me trouxer de volta em paz, o Senhor será o meu Deus. E de tudo o que Ele me der, vou dar a décima parte."', r: 'Gênesis 28:20-22' }
       ],
@@ -119,7 +119,7 @@ window.HISTORIA.arcs.jaco = {
       big: [
         { q: 'O que quer dizer Betel?', o: ['Casa de Deus', 'Pedra grande', 'Lugar do sonho', 'Terra boa'], e: 'Gênesis 28:19.' },
         { q: 'Qual promessa Deus repetiu a Jacó?', o: ['A mesma que fez a Abraão', 'Que ele seria rei do Egito', 'Que ele nunca mais teria medo', 'Que Esaú o perdoaria logo'], e: 'Gênesis 28:13-14.' },
-        { q: 'O que Jacó disse ao acordar?', o: ['"O Senhor está neste lugar, e eu não sabia"', '"Que sonho estranho"', '"Vou voltar para casa"', '"Estou com fome"'], e: 'Gênesis 28:16.' },
+        { q: 'O que Jacó disse ao acordar?', o: ['"Deus está aqui, neste lugar, e eu nem sabia"', '"Que sonho estranho"', '"Vou voltar para casa"', '"Estou com fome"'], e: 'Gênesis 28:16.' },
         { q: 'Quem Jesus disse que é a escada?', o: ['Ele mesmo, o Filho do homem', 'Moisés', 'Os anjos', 'A igreja'], e: 'João 1:51.' }
       ],
       parents: 'Ponto central: graça. Jacó não estava buscando a Deus; Deus veio até ele. A ligação com João 1:51 é feita pelo próprio Jesus. Leitura junto: Gênesis 28:10-22.'

@@ -96,7 +96,7 @@ window.HISTORIA.arcs.sinai = {
       id: 's4', title: 'A aliança e as tábuas de pedra', ref: 'Êxodo 24', icon: '🪨',
       recap: 'Na lição passada, terminamos os Dez Mandamentos, e o povo pediu que Moisés fosse o mediador.',
       scenes: [
-        { art: '🧔📜👥', bg: 'monte', text: 'Moisés desceu e contou ao povo todas as palavras do Senhor. E o povo respondeu: "Tudo o que o Senhor falou, nós faremos!"', r: 'Êxodo 24:3' },
+        { art: '🧔📜👥', bg: 'monte', text: 'Moisés desceu e explicou ao povo tudo o que Deus tinha falado. E o povo respondeu: "Tudo o que o Senhor falou, nós faremos!"', r: 'Êxodo 24:3' },
         { art: '✍️📜', bg: 'monte', text: 'Moisés escreveu todas as palavras do Senhor num livro: o Livro da Aliança.', r: 'Êxodo 24:4, 7' },
         { art: '🪨🔥1️⃣2️⃣', bg: 'monte', fx: 'luz', text: 'De manhã cedo, ele construiu um altar ao pé do monte e levantou doze colunas de pedra, uma para cada tribo de Israel.', r: 'Êxodo 24:4' },
         { art: '🐂🔥🩸', bg: 'monte', text: 'Ofereceram sacrifícios. Moisés pegou o sangue e aspergiu sobre o povo, dizendo: "Este é o sangue da aliança que o Senhor fez com vocês." A aliança foi selada com sangue.', r: 'Êxodo 24:5-8' },

@@ -100,7 +100,7 @@ window.HISTORIA.arcs.volta = {
         { art: '🎉👧👑🫏', bg: 'cidade', fx: 'brilho', text: 'Zacarias também profetizou sobre o futuro: "Alegre-se muito, ó filha de Sião! Grite de alegria, ó filha de Jerusalém! Eis que o seu Rei vem a você, justo e salvador, humilde, montado num jumentinho."', r: 'Zacarias 9:9' },
         { art: '⚔️❌🕊️🌍', bg: 'aurora', fx: 'luz', text: '"Ele vai tirar os carros de guerra e quebrar os arcos de guerra, e vai anunciar paz às nações. O seu domínio vai de mar a mar, até os confins da terra."', r: 'Zacarias 9:10' },
         { art: '💰3️⃣0️⃣🪙', bg: 'cidade', text: 'Zacarias também escreveu coisas misteriosas: um pastor rejeitado pelo povo, avaliado por trinta moedas de prata. E disse que um dia o povo ia olhar para "aquele a quem traspassaram" e chorar.', r: 'Zacarias 11:12-13; 12:10' },
-        { art: '⛲✨♾️', bg: 'aurora', fx: 'brilho', text: 'E terminou com esperança: "Naquele dia, haverá uma fonte aberta para lavar o pecado. E o Senhor será Rei sobre toda a terra."', r: 'Zacarias 13:1; 14:9' }
+        { art: '⛲✨♾️', bg: 'aurora', fx: 'brilho', text: 'E terminou com esperança: "Naquele dia, haverá uma fonte aberta para lavar o pecado. E o Senhor vai reinar sobre o mundo inteiro."', r: 'Zacarias 13:1; 14:9' }
       ],
       god: 'A obra de Deus é feita pelo seu Espírito, não pela nossa força. Ele não despreza os começos pequenos.',
       jesus: 'Quinhentos anos depois, Jesus entrou em Jerusalém montado num jumentinho, e a multidão gritava: "Hosana!" Mateus diz: "Isso aconteceu para que se cumprisse o que foi dito pelo profeta" (Mateus 21:4-5). E outras profecias de Zacarias também se cumpriram em Jesus: Judas o traiu por trinta moedas de prata (Mateus 26:15; 27:9-10), e o seu lado foi traspassado na cruz (João 19:34-37). A fonte para lavar o pecado é o sangue de Jesus.',
@@ -129,7 +129,7 @@ window.HISTORIA.arcs.volta = {
         { art: '👑📜💰🐂', bg: 'palacio', fx: 'brilho', text: 'Então Dario escreveu: "Deixem a obra continuar! E paguem os custos com o dinheiro dos impostos do rei, e deem a eles os animais para os sacrifícios." Os inimigos acabaram tendo que ajudar!', r: 'Esdras 6:6-10' },
         { art: '🏛️✅🎉', bg: 'aurora', fx: 'brilho', text: 'Assim, o templo foi terminado no sexto ano do rei Dario, conforme a ordem de Deus. Uns vinte anos depois de lançados os alicerces!', r: 'Esdras 6:14-15' },
         { art: '👥🎶🏛️', bg: 'aurora', fx: 'brilho', text: 'O povo dedicou a casa de Deus com grande alegria, e os sacerdotes voltaram a servir, como estava escrito no livro de Moisés.', r: 'Esdras 6:16-18' },
-        { art: '🐑🍞🎉', bg: 'cidade', fx: 'coracoes', text: 'E celebraram a Páscoa, a festa da libertação do Egito, com alegria, "porque o Senhor os tinha alegrado".', r: 'Esdras 6:19-22' }
+        { art: '🐑🍞🎉', bg: 'cidade', fx: 'coracoes', text: 'E celebraram a Páscoa, a festa da libertação do Egito, muito felizes, porque foi Deus quem encheu o coração deles de alegria.', r: 'Esdras 6:19-22' }
       ],
       god: 'Deus protege a sua obra e vira até os planos dos inimigos a favor do seu povo. Os seus olhos estão sobre nós.',
       jesus: 'Os inimigos quiseram parar o templo, mas Deus fez o próprio rei pagar a obra. Na cruz, os inimigos de Jesus acharam que tinham vencido, mas Deus usou até isso para trazer a salvação (Atos 2:23-24). E Jesus disse: "Edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela" (Mateus 16:18).',

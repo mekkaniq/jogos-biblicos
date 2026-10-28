@@ -207,7 +207,7 @@
         <div class="stars-big">${starHtml(sN)}</div>
         <p>${sN === 3 ? 'Sem nenhuma ajuda. Que memória!' : sN === 2 ? 'Muito bem! Usou pouca ajuda.' : 'Muito bem! Cada desafio ensina algo novo.'}</p>
         <div class="learned">${learned}</div>
-        <div class="actions">${nextId ? `<button class="btn btn-gold" data-n>Próximo desafio ${I.arrow}</button>` : '<p><b>Você completou os 50 desafios! Glória a Deus!</b></p>'}<button class="btn btn-ghost" data-a>Ver os desafios do arco</button></div>`);
+        <div class="actions">${nextId ? `<button class="btn btn-gold" data-n>Próximo desafio ${I.arrow}</button>` : '<p><b>Você completou todos os desafios! Glória a Deus!</b></p>'}<button class="btn btn-ghost" data-a>Ver os desafios do arco</button></div>`);
       m.el.addEventListener('click', e => { if (e.target.closest('[data-n]')) { m.close(); go('#/cruzada/' + nextId); } if (e.target.closest('[data-a]')) { m.close(); go('#/cruzada/arco/' + ch.arc); } });
     }
     function clueList() {

@@ -133,7 +133,7 @@ window.HISTORIA.arcs.nasce = {
         { art: '🧑‍🌾🐑🌙', bg: 'campo', fx: 'estrelas', text: 'Naquela mesma noite, nos campos perto de Belém, havia pastores cuidando das suas ovelhas.', r: 'Lucas 2:8' },
         { art: '✨🧑‍🌾😨', bg: 'campo', fx: 'luz', text: 'Um anjo do Senhor apareceu a eles, e a glória do Senhor brilhou ao redor deles. Eles ficaram com muito medo.', r: 'Lucas 2:9' },
         { art: '✨📣💛', bg: 'campo', fx: 'luz', text: 'O anjo disse: "Não tenham medo! Eu trago boas notícias de grande alegria para todo o povo: hoje, na cidade de Davi, nasceu para vocês o Salvador, que é Cristo, o Senhor! O sinal é este: vocês vão encontrar um bebê enrolado em panos e deitado numa manjedoura."', r: 'Lucas 2:10-12' },
-        { art: '✨✨✨🎶', bg: 'noite', fx: 'estrelas', text: 'De repente, apareceu com o anjo uma multidão de anjos, louvando a Deus: "Glória a Deus nas alturas, paz na terra, boa vontade para com os homens!"', r: 'Lucas 2:13-14' },
+        { art: '✨✨✨🎶', bg: 'noite', fx: 'estrelas', text: 'De repente, apareceu junto com o anjo uma multidão de anjos, louvando a Deus: "Glória a Deus lá no alto do céu, e paz aqui na terra para as pessoas que Ele ama!"', r: 'Lucas 2:13-14' },
         { art: '🧑‍🌾🏃🌾⭐', bg: 'noite', fx: 'luz', text: 'Os pastores correram para Belém e encontraram Maria, José e o bebê deitado na manjedoura, exatamente como o anjo tinha dito!', r: 'Lucas 2:15-16' },
         { art: '🧑‍🌾📣🎉', bg: 'aurora', fx: 'brilho', text: 'Os pastores contaram a todos o que tinham ouvido sobre o menino, e todos ficaram admirados. Maria guardava todas essas coisas no coração. E os pastores voltaram glorificando e louvando a Deus.', r: 'Lucas 2:17-20' }
       ],
@@ -158,14 +158,14 @@ window.HISTORIA.arcs.nasce = {
       recap: 'Na lição passada, Jesus nasceu em Belém, e os pastores foram adorá-lo.',
       scenes: [
         { art: '🧔👩🕊️🕊️', bg: 'cidade', text: 'Quarenta dias depois, como a Lei de Moisés mandava, Maria e José levaram o bebê ao templo de Jerusalém para apresentá-lo ao Senhor. Eles ofereceram duas pombinhas, a oferta das famílias pobres.', r: 'Lucas 2:22-24; Levítico 12:8' },
-        { art: '👴🙏⏳', bg: 'cidade', text: 'Em Jerusalém, vivia um homem justo e piedoso chamado Simeão. Ele esperava a consolação de Israel, e o Espírito Santo tinha prometido a ele que ele não ia morrer antes de ver o Cristo do Senhor.', r: 'Lucas 2:25-26' },
+        { art: '👴🙏⏳', bg: 'cidade', text: 'Em Jerusalém, vivia um homem justo e piedoso chamado Simeão. Ele esperava o dia em que Deus ia consolar Israel, e o Espírito Santo tinha prometido a ele que ele não ia morrer antes de ver o Cristo do Senhor.', r: 'Lucas 2:25-26' },
         { art: '👴🏃🏛️', bg: 'cidade', fx: 'luz', text: 'Guiado pelo Espírito, Simeão foi ao templo bem na hora em que Maria e José chegavam com o menino.', r: 'Lucas 2:27' },
         { art: '👴🤲✨', bg: 'aurora', fx: 'luz', text: 'Simeão pegou o menino nos braços e louvou a Deus: "Agora, Senhor, podes deixar o teu servo ir em paz, conforme a tua palavra, porque os meus olhos já viram a tua salvação!"', r: 'Lucas 2:28-30' },
         { art: '🌍💡👥', bg: 'aurora', fx: 'brilho', text: '"Ela é luz para iluminar as nações e glória do teu povo Israel." Simeão entendeu que Jesus era a salvação para o mundo inteiro!', r: 'Lucas 2:31-32' },
         { art: '👴💬👩💔', bg: 'cidade', text: 'Depois, Simeão disse a Maria, com carinho e seriedade, que muitos iam se levantar contra aquele menino, e que uma espada ia atravessar a alma dela. Era um aviso do sofrimento que viria na cruz.', r: 'Lucas 2:34-35' },
         { art: '👵🙏🏛️', bg: 'cidade', fx: 'luz', text: 'Havia também no templo uma profetisa muito velhinha, Ana, de oitenta e quatro anos. Ela não saía do templo, adorando a Deus com jejuns e orações, dia e noite.', r: 'Lucas 2:36-37' },
         { art: '👵📣👥', bg: 'cidade', fx: 'brilho', text: 'Naquela mesma hora, Ana chegou, deu graças a Deus e falava do menino a todos os que esperavam a redenção de Jerusalém.', r: 'Lucas 2:38' },
-        { art: '🏘️🌱💪', bg: 'campo', fx: 'brilho', text: 'Depois, a família voltou para Nazaré. E o menino crescia, ficava forte, cheio de sabedoria, e a graça de Deus estava sobre Ele.', r: 'Lucas 2:39-40' }
+        { art: '🏘️🌱💪', bg: 'campo', fx: 'brilho', text: 'Depois, a família voltou para Nazaré. E o menino crescia, ficava forte e cada vez mais sábio, e Deus o enchia de graça.', r: 'Lucas 2:39-40' }
       ],
       god: 'Deus recompensa quem espera nele com paciência. Ele guia pelo seu Espírito os que o buscam.',
       jesus: 'Simeão chamou Jesus de "a tua salvação" e "luz para iluminar as nações". Deus tinha prometido a Abraão que todas as famílias da terra seriam abençoadas pela sua descendência (Gênesis 12:3), e Isaías falou do Servo que seria "luz para os gentios" (Isaías 49:6). Jesus é essa luz para o mundo inteiro, inclusive para nós!',
@@ -191,7 +191,7 @@ window.HISTORIA.arcs.nasce = {
         { art: '👑😠😟', bg: 'palacio', text: 'Quando o rei Herodes ouviu isso, ficou muito perturbado. Ele não queria outro rei! E toda Jerusalém ficou agitada com ele.', r: 'Mateus 2:3' },
         { art: '👑📜🧔', bg: 'palacio', text: 'Herodes reuniu os sacerdotes e os mestres da Lei e perguntou onde o Cristo devia nascer. Eles responderam: "Em Belém da Judeia, porque assim escreveu o profeta Miqueias."', r: 'Mateus 2:4-6' },
         { art: '👑🤫🧙', bg: 'palacio', text: 'Herodes chamou os magos em segredo e disse, mentindo: "Vão a Belém e procurem o menino. Quando encontrarem, me avisem, para eu ir adorá-lo também." Mas ele queria fazer mal ao menino.', r: 'Mateus 2:7-8' },
-        { art: '⭐➡️🏠🧙', bg: 'noite', fx: 'estrelas', text: 'Os magos partiram, e a estrela que tinham visto no Oriente ia na frente deles, até parar em cima do lugar onde estava o menino. Quando viram a estrela, ficaram muito, muito alegres!', r: 'Mateus 2:9-10' },
+        { art: '⭐➡️🏠🧙', bg: 'noite', fx: 'estrelas', text: 'Os magos partiram, e aquela mesma estrela que tinham visto no Oriente foi na frente deles, até parar em cima do lugar onde estava o menino. Quando viram a estrela, ficaram muito, muito alegres!', r: 'Mateus 2:9-10' },
         { art: '🧙🙇🎁✨', bg: 'noite', fx: 'luz', text: 'Entraram na casa, viram o menino com Maria, sua mãe, e se ajoelharam para adorá-lo. Abriram os seus tesouros e deram presentes: ouro, incenso e mirra.', r: 'Mateus 2:11' },
         { art: '🧙💭🛤️', bg: 'noite', fx: 'estrelas', text: 'Deus avisou os magos num sonho para não voltarem a Herodes. Então eles voltaram para a sua terra por outro caminho.', r: 'Mateus 2:12' },
         { art: '🧔👩🫏🌙', bg: 'deserto', fx: 'vento', text: 'Um anjo apareceu a José num sonho: "Levante-se, pegue o menino e a mãe dele e fuja para o Egito, porque Herodes vai procurar o menino." José se levantou de noite e foi com eles para o Egito.', r: 'Mateus 2:13-14' },

@@ -10,7 +10,7 @@ window.HISTORIA.arcs.despedida = {
       scenes: [
         { art: '🧔👴👥', bg: 'monte', text: 'Nas campinas de Moabe, Moisés reuniu todo o povo para falar com eles pela última vez. A maioria era a geração nova, que tinha crescido no deserto.', r: 'Deuteronômio 1:1-5' },
         { art: '🧔📜💬', bg: 'monte', text: 'Moisés começou lembrando a história: a saída do Egito, o Sinai, a falta de fé em Cades, os quarenta anos. Lembrar o que Deus fez é muito importante para continuar confiando.', r: 'Deuteronômio 1 – 3' },
-        { art: '👣🏜️💛', bg: 'deserto', fx: 'coracoes', text: '"Lembre-se de todo o caminho pelo qual o Senhor, o seu Deus, guiou você nestes quarenta anos no deserto, para humilhar e provar você, e saber o que estava no seu coração."', r: 'Deuteronômio 8:2' },
+        { art: '👣🏜️💛', bg: 'deserto', fx: 'coracoes', text: '"Lembre-se do caminho todo por onde o seu Deus guiou você nestes quarenta anos no deserto, para humilhar e provar você, e saber o que estava no seu coração."', r: 'Deuteronômio 8:2' },
         { art: '🍞☁️', bg: 'deserto', fx: 'brilho', text: '"Ele deixou você sentir fome e depois deu o maná, para você aprender que o homem não vive só de pão, mas de toda palavra que sai da boca do Senhor."', r: 'Deuteronômio 8:3' },
         { art: '👕👡✨', bg: 'deserto', fx: 'brilho', text: '"Nestes quarenta anos, a sua roupa não ficou velha e os seus pés não incharam." Que cuidado de Deus, todos os dias!', r: 'Deuteronômio 8:4' },
         { art: '👨‍👦💛', bg: 'aurora', fx: 'coracoes', text: '"Saiba no seu coração que, assim como um pai corrige o filho, o Senhor, o seu Deus, corrige você." As dificuldades do deserto eram cuidado de Pai.', r: 'Deuteronômio 8:5' },
@@ -38,13 +38,13 @@ window.HISTORIA.arcs.despedida = {
       recap: 'Na lição passada, Moisés pediu ao povo que se lembrasse de como Deus o guiou no deserto.',
       scenes: [
         { art: '🧔📜📜', bg: 'monte', text: 'Moisés repetiu os Dez Mandamentos para a nova geração, lembrando: "O Senhor fez esta aliança não só com os nossos pais, mas conosco, com todos nós que estamos vivos aqui hoje."', r: 'Deuteronômio 5:1-3, 6-21' },
-        { art: '👂✨', bg: 'aurora', fx: 'luz', text: 'Então Moisés disse as palavras mais importantes de todo o livro, que o povo de Israel repete até hoje: "Ouve, Israel: o Senhor, nosso Deus, é o único Senhor."', r: 'Deuteronômio 6:4' },
+        { art: '👂✨', bg: 'aurora', fx: 'luz', text: 'Então Moisés disse as palavras mais importantes de todo o livro, que o povo de Israel repete até hoje: "Escute, Israel: o Senhor, o nosso Deus, é um só Senhor."', r: 'Deuteronômio 6:4' },
         { art: '💛🧠💪', bg: 'aurora', fx: 'coracoes', text: '"Amarás o Senhor, o teu Deus, de todo o teu coração, de toda a tua alma e de todas as tuas forças." Não é só obedecer por fora: é amar a Deus com tudo o que somos.', r: 'Deuteronômio 6:5' },
         { art: '👨‍👩‍👧‍👦📖', bg: 'campo', fx: 'coracoes', text: '"E estas palavras estarão no seu coração. Você vai ensiná-las aos seus filhos, e vai falar delas sentado em casa, andando pelo caminho, ao deitar e ao levantar."', r: 'Deuteronômio 6:6-7' },
         { art: '🚪✍️', bg: 'cidade', text: '"Escreva-as nos batentes da sua casa e nos portões." A Palavra de Deus devia estar em toda parte, no dia a dia da família.', r: 'Deuteronômio 6:8-9' },
         { art: '👦❓👨', bg: 'campo', text: '"Quando o seu filho perguntar: o que significam estes mandamentos?, conte a ele: Nós éramos escravos do Faraó no Egito, e o Senhor nos tirou de lá com mão forte." A obediência começa com a história do que Deus fez.', r: 'Deuteronômio 6:20-21' },
         { art: '🐜💛', bg: 'aurora', fx: 'brilho', text: 'Moisés também explicou: "O Senhor não escolheu vocês por serem o maior povo. Vocês eram o menor de todos! Ele escolheu vocês porque os ama e porque é fiel às promessas que fez."', r: 'Deuteronômio 7:6-8' },
-        { art: '♾️💛', bg: 'aurora', fx: 'brilho', text: '"Saiba que o Senhor, o seu Deus, é Deus, o Deus fiel, que guarda a aliança e a misericórdia até mil gerações dos que o amam."', r: 'Deuteronômio 7:9' }
+        { art: '♾️💛', bg: 'aurora', fx: 'brilho', text: '"Saiba que o Senhor, o seu Deus, é o único Deus. Ele é fiel: cumpre a sua aliança e mostra o seu amor por mil gerações dos que o amam."', r: 'Deuteronômio 7:9' }
       ],
       god: 'Só existe um Deus, e Ele nos escolheu por amor. Ele merece todo o nosso amor.',
       jesus: 'Quando perguntaram a Jesus qual é o maior mandamento, Ele respondeu com Deuteronômio 6:5: "Amarás o Senhor teu Deus de todo o teu coração" (Marcos 12:29-30). E Jesus foi o único que amou o Pai assim, perfeitamente. Por meio dele, Deus coloca esse amor no nosso coração.',

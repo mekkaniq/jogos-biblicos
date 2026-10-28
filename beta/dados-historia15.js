@@ -12,10 +12,10 @@ window.HISTORIA.arcs.salomao = {
         { art: '🧑👑😏', bg: 'cidade', text: 'Um dos filhos de Davi, Adonias, decidiu: "Eu é que vou ser rei!" Juntou carruagens, cavalos e homens, e fez uma grande festa para se declarar rei, sem perguntar ao pai e sem perguntar a Deus.', r: '1 Reis 1:5-9' },
         { art: '🧔👩💬👴', bg: 'palacio', text: 'O profeta Natã e Bate-Seba, a mãe de Salomão, foram depressa falar com Davi: "O senhor não tinha prometido que Salomão seria o rei depois do senhor?"', r: '1 Reis 1:11-27' },
         { art: '👴✋📣', bg: 'palacio', fx: 'luz', text: 'Davi respondeu com firmeza: "Tão certo como vive o Senhor, que me livrou de toda angústia: Salomão, o seu filho, vai reinar depois de mim. E vai ser hoje!"', r: '1 Reis 1:29-30' },
-        { art: '🫏🫗👑', bg: 'cidade', fx: 'brilho', text: 'Colocaram Salomão montado na mula do rei Davi e o levaram até a fonte de Giom. Ali o sacerdote Zadoque e o profeta Natã o ungiram com azeite.', r: '1 Reis 1:33-34, 38-39' },
+        { art: '🫏🫗👑', bg: 'cidade', fx: 'brilho', text: 'Colocaram Salomão em cima da mula do próprio rei Davi e o levaram até a fonte de Giom. Ali o sacerdote Zadoque e o profeta Natã o ungiram com azeite.', r: '1 Reis 1:33-34, 38-39' },
         { art: '🎺🎶👥', bg: 'cidade', fx: 'brilho', text: 'Tocaram a trombeta, e todo o povo gritou: "Viva o rei Salomão!" Tocavam flautas e se alegravam tanto que a terra parecia tremer com o barulho.', r: '1 Reis 1:39-40' },
         { art: '👴💬👦', bg: 'palacio', fx: 'luz', text: 'Antes de morrer, Davi deu conselhos a Salomão: "Seja forte e seja homem! Guarde os mandamentos do Senhor, o seu Deus, e ande nos seus caminhos. Assim você vai prosperar em tudo o que fizer."', r: '1 Reis 2:1-4' },
-        { art: '👴🕊️👑', bg: 'aurora', text: 'Davi morreu depois de reinar quarenta anos e foi sepultado na cidade de Davi. E o trono de Salomão ficou firme.', r: '1 Reis 2:10-12' }
+        { art: '👴🕊️👑', bg: 'aurora', text: 'Davi morreu depois de reinar quarenta anos e foi enterrado em Jerusalém, a cidade de Davi. E o trono de Salomão ficou firme.', r: '1 Reis 2:10-12' }
       ],
       god: 'Deus cumpre as suas promessas e coloca no trono quem Ele escolhe, apesar dos planos humanos.',
       jesus: 'Salomão entrou na cidade montado numa mula, como rei escolhido. Mil anos depois, Jesus, o Filho de Davi, entrou em Jerusalém montado num jumentinho, e o povo gritou: "Hosana ao Filho de Davi!" (Mateus 21:5-9). Jesus é o Rei que Deus escolheu, o verdadeiro herdeiro do trono de Davi.',
@@ -97,13 +97,13 @@ window.HISTORIA.arcs.salomao = {
       recap: 'Na lição passada, Salomão descobriu quem era a mãe verdadeira do bebê.',
       scenes: [
         { art: '🏖️👥😊', bg: 'cidade', fx: 'brilho', text: 'No reinado de Salomão, o povo de Israel era muito numeroso, como a areia da praia. Todos comiam, bebiam e viviam alegres.', r: '1 Reis 4:20' },
-        { art: '🍇🌳🕊️', bg: 'campo', fx: 'brilho', text: 'Havia paz em todas as fronteiras. A Bíblia diz que cada um morava em segurança "debaixo da sua videira e debaixo da sua figueira". Era um tempo de paz e fartura.', r: '1 Reis 4:24-25' },
-        { art: '✨🧠🏖️', bg: 'aurora', fx: 'luz', text: 'Deus deu a Salomão muita sabedoria e inteligência, e um entendimento tão grande quanto a areia que está na praia do mar.', r: '1 Reis 4:29' },
+        { art: '🍇🌳🕊️', bg: 'campo', fx: 'brilho', text: 'Havia paz em todas as fronteiras. A Bíblia diz que cada família morava em segurança, sentada à sombra da sua própria videira e da sua figueira. Era um tempo de paz e fartura.', r: '1 Reis 4:24-25' },
+        { art: '✨🧠🏖️', bg: 'aurora', fx: 'luz', text: 'Deus deu a Salomão muita sabedoria e inteligência, e um entendimento tão grande que parecia não ter fim, como os grãos de areia da praia.', r: '1 Reis 4:29' },
         { art: '👑🌍🏆', bg: 'palacio', text: 'A sabedoria de Salomão era maior que a de todos os sábios do Oriente e do Egito. O nome dele ficou famoso em todas as nações ao redor.', r: '1 Reis 4:30-31' },
         { art: '📜3️⃣0️⃣0️⃣0️⃣', bg: 'palacio', text: 'Ele falou três mil provérbios e escreveu mil e cinco cânticos! Muitos desses provérbios estão no livro de Provérbios, na Bíblia.', r: '1 Reis 4:32' },
         { art: '🌲🌿🦁🐦🐍🐟', bg: 'jardim', fx: 'vento', text: 'Salomão também estudava a natureza: falava das árvores, desde o grande cedro do Líbano até a plantinha que nasce no muro. Falava dos animais, das aves, dos répteis e dos peixes. Ele era como um cientista!', r: '1 Reis 4:33' },
         { art: '🌍🚶👑', bg: 'palacio', text: 'Gente de todos os povos vinha para ouvir a sabedoria de Salomão, mandada pelos reis da terra.', r: '1 Reis 4:34' },
-        { art: '🤝🌲🪵', bg: 'monte', text: 'Hirão, rei de Tiro, que tinha sido amigo de Davi, ficou alegre quando Salomão pediu madeira de cedro para o templo: "Bendito seja o Senhor, que deu a Davi um filho sábio!"', r: '1 Reis 5:1-7' }
+        { art: '🤝🌲🪵', bg: 'monte', text: 'Hirão, rei de Tiro, que tinha sido amigo de Davi, ficou alegre quando Salomão pediu madeira de cedro para o templo: "Bendito seja o Senhor, que deu a Davi um filho tão sábio!"', r: '1 Reis 5:1-7' }
       ],
       god: 'Deus é a fonte de toda sabedoria. Estudar a criação também é conhecer a sabedoria do Criador.',
       jesus: 'Gente de todos os povos vinha ouvir Salomão. Jesus disse: "Aqui está quem é mais do que Salomão" (Mateus 12:42). Pessoas de todas as nações vêm até Jesus para aprender. E Jesus também ensinava com a natureza: "Olhai para os lírios do campo... olhai para as aves do céu" (Mateus 6:26-28).',
@@ -125,12 +125,12 @@ window.HISTORIA.arcs.salomao = {
       id: 'sl5', title: 'Provérbios: conselhos de pai para filho', ref: 'Provérbios 1 – 4', icon: '👨‍👦',
       recap: 'Na lição passada, Salomão ficou famoso no mundo todo pela sua sabedoria e pelos seus provérbios.',
       scenes: [
-        { art: '📜👑', bg: 'palacio', text: 'O livro de Provérbios começa assim: "Provérbios de Salomão, filho de Davi, rei de Israel." Um provérbio é uma frase curta e sábia, fácil de lembrar.', r: 'Provérbios 1:1' },
+        { art: '📜👑', bg: 'palacio', text: 'O livro de Provérbios começa dizendo quem escreveu: Salomão, o filho de Davi, rei de Israel. Um provérbio é uma frase curta e sábia, fácil de lembrar.', r: 'Provérbios 1:1' },
         { art: '🎯🧠', bg: 'aurora', text: 'Salomão explica por que escreveu: para que as pessoas aprendam sabedoria e disciplina, entendam palavras sábias e aprendam a viver com justiça. E também "para dar aos jovens conhecimento".', r: 'Provérbios 1:2-4' },
         { art: '🙇✨📖', bg: 'aurora', fx: 'luz', text: 'E dá a frase mais importante do livro: "O temor do Senhor é o princípio do conhecimento." Temer a Deus é respeitá-lo e amá-lo tanto que queremos obedecê-lo.', r: 'Provérbios 1:7' },
         { art: '👨👦💬', bg: 'campo', fx: 'coracoes', text: 'Muitos provérbios são como cartas de um pai para o filho: "Filho meu, ouça a instrução do seu pai e não abandone o ensino da sua mãe."', r: 'Provérbios 1:8' },
         { art: '👥🚫🛤️', bg: 'cidade', text: '"Filho meu, se os pecadores quiserem te convencer, não aceite. Não ande no caminho deles." Escolher bem os amigos é questão de sabedoria.', r: 'Provérbios 1:10, 15' },
-        { art: '❤️🛤️✨', bg: 'aurora', fx: 'luz', text: '"Confie no Senhor de todo o seu coração e não se apoie no seu próprio entendimento. Reconheça o Senhor em todos os seus caminhos, e Ele vai endireitar as suas veredas."', r: 'Provérbios 3:5-6' },
+        { art: '❤️🛤️✨', bg: 'aurora', fx: 'luz', text: '"Confie no Senhor de todo o seu coração e não se apoie no seu próprio entendimento. Lembre-se dele em tudo o que fizer, e Ele vai endireitar as suas veredas."', r: 'Provérbios 3:5-6' },
         { art: '💎👑', bg: 'aurora', fx: 'brilho', text: '"Feliz quem acha a sabedoria! Ela vale mais que a prata e o ouro, mais que as pedras preciosas. Nada do que você deseja se compara a ela."', r: 'Provérbios 3:13-15' },
         { art: '❤️🛡️💧', bg: 'aurora', fx: 'coracoes', text: '"Acima de tudo o que se deve guardar, guarde o seu coração, porque dele brotam as fontes da vida." O que entra no coração sai nas palavras e nas ações.', r: 'Provérbios 4:23' }
       ],
@@ -158,10 +158,10 @@ window.HISTORIA.arcs.salomao = {
         { art: '🐜🌾📦', bg: 'campo', fx: 'brilho', text: '"Ela não tem chefe, nem fiscal, nem governante, mas no verão prepara a sua comida e na colheita junta o seu alimento." A formiga trabalha sem ninguém mandar!', r: 'Provérbios 6:7-8' },
         { art: '😴🛌⏰', bg: 'noite', text: '"Até quando você vai dormir, preguiçoso? Um pouco de sono, um pouco de cochilo, um pouco de cruzar os braços... e a pobreza chega como um ladrão."', r: 'Provérbios 6:9-11' },
         { art: '🗣️🔥💧', bg: 'aurora', text: 'Provérbios fala muito das palavras: "A resposta branda desvia o furor, mas a palavra dura faz subir a raiva." Uma palavra calma apaga a briga, como água no fogo.', r: 'Provérbios 15:1' },
-        { art: '👅⚖️', bg: 'aurora', text: '"A morte e a vida estão no poder da língua." Com as palavras podemos machucar muito ou fazer muito bem.', r: 'Provérbios 18:21' },
+        { art: '👅⚖️', bg: 'aurora', text: 'Provérbios ensina que a nossa língua tem poder de vida e de morte. Com as palavras podemos machucar muito ou fazer muito bem.', r: 'Provérbios 18:21' },
         { art: '🍯💬💛', bg: 'aurora', fx: 'coracoes', text: '"Palavras bondosas são como mel: doces para a alma e saudáveis para o corpo."', r: 'Provérbios 16:24' },
         { art: '🤝👥', bg: 'campo', fx: 'coracoes', text: '"O amigo ama em todos os momentos, e o irmão nasce para a hora da angústia." E: "Quem anda com os sábios fica sábio."', r: 'Provérbios 17:17; 13:20' },
-        { art: '👦🌱🌳', bg: 'jardim', fx: 'brilho', text: '"Ensine a criança no caminho em que deve andar, e, até quando envelhecer, não vai se desviar dele." O que aprendemos de pequenos fica para a vida toda!', r: 'Provérbios 22:6' }
+        { art: '👦🌱🌳', bg: 'jardim', fx: 'brilho', text: '"Ensine a criança no caminho certo, e, mesmo quando ficar velhinha, ela não vai se desviar dele." O que aprendemos de pequenos fica para a vida toda!', r: 'Provérbios 22:6' }
       ],
       god: 'Deus se importa com o nosso trabalho, com as nossas palavras e com as nossas amizades.',
       jesus: 'Provérbios diz que a vida e a morte estão no poder da língua. Jesus ensinou que "a boca fala do que o coração está cheio" (Mateus 12:34), e que vamos dar contas de cada palavra. As palavras de Jesus eram sempre cheias de graça (Lucas 4:22). Quando Jesus muda o nosso coração, Ele muda também as nossas palavras.',
@@ -214,13 +214,13 @@ window.HISTORIA.arcs.salomao = {
       recap: 'Na lição passada, depois de sete anos, o templo ficou pronto, todo coberto de ouro.',
       scenes: [
         { art: '👥🎉🏛️', bg: 'cidade', fx: 'brilho', text: 'Salomão reuniu todo o povo de Israel em Jerusalém para a dedicação do templo, uma grande festa de inauguração.', r: '1 Reis 8:1-2' },
-        { art: '🧔🧔📦', bg: 'cidade', fx: 'luz', text: 'Os sacerdotes levaram a arca da aliança, do jeito certo, nos ombros, e a colocaram no Lugar Santíssimo. Dentro da arca estavam só as duas tábuas de pedra que Moisés recebeu no Sinai.', r: '1 Reis 8:3-9' },
+        { art: '🧔🧔📦', bg: 'cidade', fx: 'luz', text: 'Os sacerdotes levaram a arca da aliança, do jeito certo, nos ombros, e a colocaram no Lugar Santíssimo. Dentro da arca havia apenas as duas tábuas de pedra que Moisés recebeu no Sinai.', r: '1 Reis 8:3-9' },
         { art: '🎺🎶🎶', bg: 'aurora', fx: 'brilho', text: 'Cento e vinte sacerdotes tocavam trombetas, e os cantores levitas cantavam todos juntos, como uma só voz: "O Senhor é bom, e a sua misericórdia dura para sempre!"', r: '2 Crônicas 5:12-13' },
         { art: '☁️🏛️✨', bg: 'aurora', fx: 'luz', text: 'Nesse momento, uma nuvem encheu o templo! Era a glória do Senhor, tão forte que os sacerdotes nem conseguiam ficar em pé para servir. Como no tabernáculo, Deus veio morar ali!', r: '1 Reis 8:10-11; 2 Crônicas 5:13-14' },
-        { art: '👑🙇🙌', bg: 'aurora', fx: 'luz', text: 'Salomão se ajoelhou diante de todo o povo, levantou as mãos para o céu e orou: "Ó Senhor, Deus de Israel, não há Deus como tu, no céu nem na terra, que guardas a aliança e a misericórdia!"', r: '1 Reis 8:22-23; 2 Crônicas 6:13' },
+        { art: '👑🙇🙌', bg: 'aurora', fx: 'luz', text: 'Salomão se ajoelhou diante de todo o povo, levantou as mãos para o céu e orou: "Senhor, Deus de Israel, não existe nenhum Deus como tu, nem lá em cima nem aqui embaixo! Tu cumpres a tua aliança e o teu amor fiel!"', r: '1 Reis 8:22-23; 2 Crônicas 6:13' },
         { art: '🌌🏛️🤏', bg: 'noite', fx: 'estrelas', text: '"Mas será que Deus vai mesmo morar na terra? Nem o céu dos céus consegue te conter, quanto menos esta casa que eu construí!" Salomão sabia que Deus é muito maior que o templo.', r: '1 Reis 8:27' },
         { art: '🙏👂💛', bg: 'aurora', fx: 'coracoes', text: '"Ouve as orações que forem feitas nesta casa. E, quando ouvires, perdoa!" Salomão pediu que Deus ouvisse o povo e até os estrangeiros que viessem orar ali.', r: '1 Reis 8:28-30, 41-43' },
-        { art: '🔥⬇️🏛️', bg: 'aurora', fx: 'luz', text: 'Quando Salomão terminou de orar, desceu fogo do céu e consumiu os sacrifícios, e a glória do Senhor encheu o templo. Todo o povo se ajoelhou com o rosto em terra: "Ele é bom, e a sua misericórdia dura para sempre!"', r: '2 Crônicas 7:1-3' },
+        { art: '🔥⬇️🏛️', bg: 'aurora', fx: 'luz', text: 'Quando Salomão terminou de orar, desceu fogo do céu e queimou as ofertas, e a glória do Senhor tomou conta do templo. Todo o povo se ajoelhou com o rosto em terra: "Ele é bom, e a sua misericórdia dura para sempre!"', r: '2 Crônicas 7:1-3' },
         { art: '✨🌙💬', bg: 'noite', fx: 'luz', text: 'Depois, Deus apareceu a Salomão de noite: "Se o meu povo, que se chama pelo meu nome, se humilhar, orar, me buscar e se converter dos seus maus caminhos, eu vou ouvir dos céus, perdoar o seu pecado e sarar a sua terra."', r: '2 Crônicas 7:12-14' }
       ],
       god: 'Deus é grande demais para caber num templo, mas mesmo assim Ele vem morar com o seu povo e ouve as orações.',
@@ -276,7 +276,7 @@ window.HISTORIA.arcs.salomao = {
         { art: '📜💐', bg: 'jardim', text: 'Salomão escreveu mil e cinco cânticos. Um deles está na Bíblia com um nome especial: "Cântico dos Cânticos", ou seja, "o mais bonito de todos os cânticos".', r: 'Cantares 1:1; 1 Reis 4:32' },
         { art: '💍👫', bg: 'jardim', fx: 'coracoes', text: 'É um poema de amor entre um noivo e uma noiva, que depois se casam. Ele mostra que o amor entre marido e mulher é um presente bonito que Deus criou, desde o jardim do Éden.', r: 'Cantares 3:11; Gênesis 2:24' },
         { art: '🌸🌿🕊️', bg: 'jardim', fx: 'brilho', text: 'O poema é cheio de imagens da natureza: flores, vinhas, pombas, gazelas e jardins perfumados. "O inverno passou, a chuva acabou, as flores aparecem na terra, e chegou o tempo de cantar!"', r: 'Cantares 2:11-12' },
-        { art: '💛🔁💛', bg: 'aurora', fx: 'coracoes', text: 'A noiva diz: "O meu amado é meu, e eu sou dele." É um amor fiel, de um só para um só, para a vida inteira.', r: 'Cantares 2:16' },
+        { art: '💛🔁💛', bg: 'aurora', fx: 'coracoes', text: 'A noiva diz que o seu amado pertence a ela, e ela pertence a ele. É um amor fiel, de um só para um só, para a vida inteira.', r: 'Cantares 2:16' },
         { art: '⏳💐', bg: 'jardim', text: 'O livro dá um conselho repetido várias vezes: não apressar o amor, esperar o tempo certo. "Não despertem o amor antes da hora."', r: 'Cantares 2:7; 8:4' },
         { art: '🌊🔥💛', bg: 'mar', fx: 'ondas', text: 'E diz uma frase linda: "As muitas águas não conseguem apagar este amor, nem os rios conseguem afogá-lo." O amor verdadeiro é forte e não desiste.', r: 'Cantares 8:6-7' },
         { art: '✨👰', bg: 'aurora', fx: 'luz', text: 'Por muitos séculos, a igreja também leu esse cântico como uma figura de um amor ainda maior: o amor de Deus pelo seu povo, e de Cristo pela sua Igreja.', r: 'Efésios 5:25-32' }
@@ -291,7 +291,7 @@ window.HISTORIA.arcs.salomao = {
       ],
       big: [
         { q: 'O que quer dizer "Cântico dos Cânticos"?', o: ['O mais bonito de todos os cânticos', 'Um cântico pequeno', 'Um cântico triste', 'Um cântico de guerra'], e: 'Cantares 1:1.' },
-        { q: 'O que a noiva diz em Cantares 2:16?', o: ['"O meu amado é meu, e eu sou dele"', '"Vou embora"', '"Não sei"', '"Quero ouro"'], e: 'Cantares 2:16.' },
+        { q: 'O que a noiva diz em Cantares 2:16?', o: ['"O meu amado pertence a mim, e eu pertenço a ele"', '"Vou embora"', '"Não sei"', '"Quero ouro"'], e: 'Cantares 2:16.' },
         { q: 'Qual conselho se repete no livro?', o: ['Não despertar o amor antes da hora', 'Casar muito cedo', 'Nunca casar', 'Ter muitas esposas'], e: 'Cantares 2:7; 3:5; 8:4.' },
         { q: 'De que amor maior Cantares é uma figura?', o: ['Do amor de Cristo pela Igreja', 'Do amor pelos animais', 'Do amor pelo dinheiro', 'De nenhum'], e: 'Efésios 5:25-32.' }
       ],
@@ -330,11 +330,11 @@ window.HISTORIA.arcs.salomao = {
       id: 'sl12', title: 'Eclesiastes: tudo é vazio sem Deus', ref: 'Eclesiastes', icon: '🌬️',
       recap: 'Na lição passada, o coração de Salomão se desviou de Deus no fim da sua vida.',
       scenes: [
-        { art: '👴📜🌬️', bg: 'deserto', fx: 'vento', text: 'O livro de Eclesiastes é escrito pelo "Pregador", filho de Davi, rei em Jerusalém, alguém que tinha experimentado de tudo na vida. Ele começa assim: "Vaidade de vaidades! Tudo é vaidade!"', r: 'Eclesiastes 1:1-2' },
+        { art: '👴📜🌬️', bg: 'deserto', fx: 'vento', text: 'O livro de Eclesiastes foi escrito pelo "Pregador", um filho de Davi que reinou em Jerusalém, alguém que tinha experimentado de tudo na vida. Ele começa assim: "Vaidade de vaidades! Tudo é vaidade!"', r: 'Eclesiastes 1:1-2' },
         { art: '🫧💨', bg: 'deserto', fx: 'vento', text: '"Vaidade" quer dizer vapor, fumaça, sopro: algo que parece importante, mas some num instante, como uma bolha de sabão.', r: 'Eclesiastes 1:2, 14' },
         { art: '🏰🌳🎶💰', bg: 'palacio', text: 'O Pregador conta que procurou a felicidade em tudo: construiu palácios, plantou jardins e pomares, juntou prata e ouro, teve cantores, festas e tudo o que os olhos desejaram.', r: 'Eclesiastes 2:4-10' },
         { art: '🤷💨', bg: 'deserto', fx: 'vento', text: '"Então olhei para tudo o que eu tinha feito... e tudo era vaidade, como correr atrás do vento." Nada daquilo enchia o coração dele.', r: 'Eclesiastes 2:11' },
-        { art: '⏰🌱🍂', bg: 'campo', fx: 'vento', text: 'Ele percebeu que Deus organiza o tempo: "Tudo tem o seu tempo determinado: tempo de nascer e tempo de morrer, tempo de plantar e tempo de colher, tempo de chorar e tempo de rir, tempo de calar e tempo de falar."', r: 'Eclesiastes 3:1-7' },
+        { art: '⏰🌱🍂', bg: 'campo', fx: 'vento', text: 'Ele percebeu que Deus organiza o tempo: há hora para tudo debaixo do céu. Hora de nascer e hora de morrer, de plantar e de colher, de chorar e de rir, de ficar calado e de falar.', r: 'Eclesiastes 3:1-7' },
         { art: '♾️❤️', bg: 'aurora', fx: 'luz', text: '"Deus fez tudo bonito no seu tempo, e colocou a eternidade no coração do homem." Por isso, só as coisas deste mundo nunca nos satisfazem: fomos feitos para Deus!', r: 'Eclesiastes 3:11' },
         { art: '👦🌅💛', bg: 'aurora', fx: 'brilho', text: 'E deu um conselho especial para os jovens e as crianças: "Lembre-se do seu Criador nos dias da sua juventude, antes que cheguem os dias difíceis."', r: 'Eclesiastes 12:1' },
         { art: '🎯📖🙇', bg: 'aurora', fx: 'luz', text: 'E terminou o livro assim: "De tudo o que se ouviu, a conclusão é esta: tema a Deus e guarde os seus mandamentos, porque isso é o dever de todo homem." Depois de procurar em tudo, ele descobriu: só Deus dá sentido à vida.', r: 'Eclesiastes 12:13' }

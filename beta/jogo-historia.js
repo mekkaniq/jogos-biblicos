@@ -15,7 +15,7 @@
     ['isaias', 'Os reis de Judá e Isaías', 'Isaías, Miqueias, Joel, Naum, Sofonias, Habacuque', '📯', 'AT'], ['jeremias', 'Jeremias e a queda de Jerusalém', 'Jeremias, Lamentações, Obadias', '😢', 'AT'], ['exilio', 'Longe de casa', 'Daniel e Ezequiel', '🦁', 'AT'],
     ['volta', 'A volta para casa', 'Esdras, Ageu, Zacarias', '🏗️', 'AT'], ['ester', 'Ester, a rainha corajosa', 'Ester', '👑', 'AT'], ['muros', 'Os muros e a espera', 'Neemias, Malaquias e os 400 anos', '🧱', 'AT'],
     ['nasce', 'Jesus nasce e cresce', 'Mateus e Lucas', '⭐', 'NT'], ['ensina', 'Jesus ensina', 'Sermão do Monte e parábolas', '🌄', 'NT'], ['milagres', 'Jesus cura e faz milagres', 'Os Evangelhos', '🐟', 'NT'],
-    ['jerusalem', 'A caminho de Jerusalém', 'A semana santa', '🌿', 'NT'], ['cruz', 'A cruz e a ressurreição', 'Os Evangelhos', '✝️', 'NT'], ['igreja', 'A igreja nasce', 'Atos 1–12', '🕊️', 'NT'],
+    ['jerusalem', 'A caminho de Jerusalém', 'A semana santa', '🌿', 'NT'], ['cruz', 'A cruz e a ressurreição', 'Os Evangelhos', '🪨', 'NT'], ['igreja', 'A igreja nasce', 'Atos 1–12', '🕊️', 'NT'],
     ['paulo', 'Paulo leva o evangelho', 'Atos 13–28', '⛵', 'NT'], ['cartas', 'As cartas de Paulo', 'Romanos a Filemom', '✉️', 'NT'], ['outras', 'As outras cartas', 'Hebreus a Judas', '📨', 'NT'],
     ['esperanca', 'A grande esperança', 'Apocalipse', '🌅', 'NT']
   ];

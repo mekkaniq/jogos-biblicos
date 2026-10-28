@@ -30,7 +30,7 @@ window.HISTORIA.arcs.elias = {
         { q: 'Que deus falso Acabe e Jezabel adoravam?', o: ['Baal', 'Dagom', 'Zeus', 'O bezerro de ouro'], e: '1 Reis 16:31-32.' },
         { q: 'O que aconteceu com o riacho de Querite?', o: ['Secou', 'Encheu', 'Virou sangue', 'Congelou'], e: '1 Reis 17:7.' }
       ],
-      parents: 'Baal era o deus cananeu da tempestade e da fertilidade; a seca é um desafio direto a ele. Tiago 5:17 diz que Elias "era homem sujeito às mesmas paixões que nós" e orou. Leitura junto: 1 Reis 17:1-7.'
+      parents: 'Baal era o deus cananeu da tempestade e da fertilidade; a seca é um desafio direto a ele. Tiago 5:17 lembra que Elias era uma pessoa comum, como nós, e orou. Leitura junto: 1 Reis 17:1-7.'
     },
     {
       id: 'el2', title: 'A farinha e o azeite que não acabavam', ref: '1 Reis 17:8-16', icon: '🫙',
@@ -42,7 +42,7 @@ window.HISTORIA.arcs.elias = {
         { art: '🧔💬👩', bg: 'cidade', fx: 'luz', text: 'Elias disse: "Não tenha medo! Faça primeiro um pãozinho para mim e depois para você e o seu filho. Porque assim diz o Senhor: a farinha não vai acabar, e o azeite não vai faltar, até o dia em que o Senhor mandar chuva."', r: '1 Reis 17:13-14' },
         { art: '👩🫓🧔', bg: 'cidade', text: 'Era difícil acreditar. Mas a viúva confiou na palavra de Deus e fez exatamente o que Elias disse.', r: '1 Reis 17:15' },
         { art: '🫙✨🫙', bg: 'aurora', fx: 'brilho', text: 'E aconteceu o milagre! Cada dia, ela ia à panela e ainda tinha farinha. Ia à jarra, e ainda tinha azeite. A farinha não acabou, e o azeite não faltou!', r: '1 Reis 17:15-16' },
-        { art: '👩👦🧔🍞', bg: 'aurora', fx: 'coracoes', text: 'Ela, o filho e Elias comeram por muitos dias, durante toda a seca, conforme a palavra que o Senhor tinha falado.', r: '1 Reis 17:15-16' }
+        { art: '👩👦🧔🍞', bg: 'aurora', fx: 'coracoes', text: 'Ela, o filho e Elias comeram por muitos dias, durante toda a seca, exatamente como Deus tinha prometido.', r: '1 Reis 17:15-16' }
       ],
       god: 'Deus cuida até de uma viúva estrangeira e pobre. Quando damos a Deus o pouco que temos, Ele multiplica.',
       jesus: 'Jesus contou esta história na sinagoga de Nazaré: "Havia muitas viúvas em Israel no tempo de Elias, mas a nenhuma delas Elias foi enviado, senão a uma viúva de Sarepta, de Sidom" (Lucas 4:25-26). Jesus mostrou que o amor de Deus é para todos os povos. E Ele mesmo é o "pão da vida" que nunca acaba (João 6:35).',
@@ -68,9 +68,9 @@ window.HISTORIA.arcs.elias = {
         { art: '👩😭👦', bg: 'cidade', text: 'A mãe ficou desesperada e disse a Elias: "Homem de Deus, o que foi que eu fiz? Você veio aqui para fazer o meu filho morrer?"', r: '1 Reis 17:18' },
         { art: '🧔🫶👦⬆️', bg: 'cidade', text: 'Elias disse: "Me dê o seu filho." Pegou o menino do colo dela, subiu com ele para o quarto onde ficava hospedado e o deitou na cama.', r: '1 Reis 17:19' },
         { art: '🧔🙏✨', bg: 'noite', fx: 'luz', text: 'Elias clamou ao Senhor: "Ó Senhor, meu Deus, faz voltar a vida deste menino!" Ele se estendeu sobre o menino três vezes, orando.', r: '1 Reis 17:20-21' },
-        { art: '👦💓✨', bg: 'aurora', fx: 'brilho', text: 'E o Senhor ouviu a voz de Elias! A vida voltou ao menino, e ele reviveu!', r: '1 Reis 17:22' },
+        { art: '👦💓✨', bg: 'aurora', fx: 'brilho', text: 'E Deus atendeu a oração de Elias! A vida voltou ao menino, e ele reviveu!', r: '1 Reis 17:22' },
         { art: '🧔👦⬇️👩', bg: 'aurora', fx: 'coracoes', text: 'Elias desceu com o menino e o entregou à mãe: "Veja, o seu filho está vivo!"', r: '1 Reis 17:23' },
-        { art: '👩😊🙌', bg: 'aurora', fx: 'coracoes', text: 'A mulher disse: "Agora eu sei que você é um homem de Deus, e que a palavra do Senhor na sua boca é verdade."', r: '1 Reis 17:24' }
+        { art: '👩😊🙌', bg: 'aurora', fx: 'coracoes', text: 'A mulher disse: "Agora eu sei que você é um homem de Deus, e que o que Deus fala pela sua boca é verdade."', r: '1 Reis 17:24' }
       ],
       god: 'Deus tem poder sobre a vida e a morte. Ele ouve a oração de quem clama a Ele.',
       jesus: 'Elias orou três vezes para o menino reviver. Jesus, perto da cidade de Naim, encontrou uma viúva levando o filho para ser sepultado. Ele teve compaixão, disse "Jovem, eu te digo, levanta-te!", e o entregou à sua mãe (Lucas 7:11-15), as mesmas palavras desta história! Jesus nem precisou orar várias vezes: Ele é "a ressurreição e a vida" (João 11:25).',
@@ -93,12 +93,12 @@ window.HISTORIA.arcs.elias = {
       recap: 'Na lição passada, Deus devolveu a vida ao filho da viúva pela oração de Elias.',
       scenes: [
         { art: '🧔👑⛰️', bg: 'monte', text: 'Três anos depois, Deus mandou Elias falar com Acabe. Elias desafiou: "Junte todo Israel no monte Carmelo, junto com os quatrocentos e cinquenta profetas de Baal."', r: '1 Reis 18:1, 19' },
-        { art: '🧔📣👥', bg: 'monte', fx: 'vento', text: 'Diante de todo o povo, Elias disse: "Até quando vocês vão ficar mancando entre dois pensamentos? Se o Senhor é Deus, sigam o Senhor. Se Baal é deus, sigam Baal." E o povo não respondeu nada.', r: '1 Reis 18:21' },
+        { art: '🧔📣👥', bg: 'monte', fx: 'vento', text: 'Diante de todo o povo, Elias disse: "Até quando vocês vão ficar indecisos, mancando de um lado para o outro? Se o Senhor é Deus, sigam o Senhor. Se Baal é deus, sigam Baal." E o povo não respondeu nada.', r: '1 Reis 18:21' },
         { art: '🪵🪵🐂❓', bg: 'monte', text: 'Elias propôs: "Vamos preparar dois altares, com lenha e um sacrifício, mas sem fogo. Vocês chamam o seu deus, e eu chamo o Senhor. O Deus que responder com fogo, esse é Deus!" O povo disse: "Boa ideia!"', r: '1 Reis 18:23-24' },
         { art: '🗿🕺🕺🕺', bg: 'monte', text: 'Os profetas de Baal começaram de manhã: "Ó Baal, responde!" Gritaram e dançaram em volta do altar até o meio-dia. Mas não houve voz, nem resposta.', r: '1 Reis 18:26' },
         { art: '🧔😄🗿💤', bg: 'monte', text: 'Elias brincou com eles: "Gritem mais alto! Talvez ele esteja pensando, ou viajando, ou dormindo e precise acordar!" Eles gritaram mais até a tarde. Nada aconteceu.', r: '1 Reis 18:27-29' },
         { art: '🪨1️⃣2️⃣💧💧', bg: 'monte', text: 'Então Elias consertou o altar do Senhor com doze pedras, uma para cada tribo de Israel. E mandou derramar água sobre o sacrifício e a lenha. Três vezes! A água encheu até a valeta em volta do altar.', r: '1 Reis 18:30-35' },
-        { art: '🧔🙏⬆️', bg: 'monte', fx: 'luz', text: 'Elias orou com calma: "Ó Senhor, Deus de Abraão, de Isaque e de Israel, mostra hoje que tu és Deus em Israel! Responde-me, Senhor, para que este povo saiba que tu és Deus."', r: '1 Reis 18:36-37' },
+        { art: '🧔🙏⬆️', bg: 'monte', fx: 'luz', text: 'Elias orou com calma: "Senhor, Deus de Abraão, de Isaque e de Jacó, mostra hoje a todos que és o Deus de Israel! Responde-me, Senhor, para que este povo saiba que tu és Deus."', r: '1 Reis 18:36-37' },
         { art: '🔥⬇️🔥🔥', bg: 'monte', fx: 'luz', text: 'Então caiu fogo do Senhor do céu e queimou o sacrifício, a lenha, as pedras, o pó, e até secou a água da valeta!', r: '1 Reis 18:38' },
         { art: '👥🙇🙇', bg: 'monte', fx: 'luz', text: 'Todo o povo caiu com o rosto em terra e gritou: "O Senhor é Deus! O Senhor é Deus!"', r: '1 Reis 18:39' },
         { art: '☁️✋🌧️', bg: 'mar', fx: 'chuva', text: 'Depois, Elias orou no alto do Carmelo sete vezes, até que o seu servo viu uma nuvenzinha do tamanho da mão de um homem subindo do mar. E logo o céu escureceu, e caiu uma grande chuva!', r: '1 Reis 18:42-45' }
@@ -160,7 +160,7 @@ window.HISTORIA.arcs.elias = {
         { art: '👑😤🛌', bg: 'palacio', text: 'Acabe voltou para casa emburrado, deitou na cama, virou o rosto para a parede e não quis comer. Parecia uma criança mimada!', r: '1 Reis 21:4' },
         { art: '👸😈📜', bg: 'palacio', text: 'Jezabel disse: "Não é você o rei? Eu vou te dar essa vinha!" E fez um plano muito mau: pagou homens para mentir dizendo que Nabote tinha falado contra Deus e contra o rei. Por causa dessa mentira, Nabote foi morto injustamente.', r: '1 Reis 21:7-14' },
         { art: '👑😏🍇', bg: 'campo', text: 'Acabe desceu todo contente para pegar a vinha de Nabote. Achou que ninguém tinha visto.', r: '1 Reis 21:15-16' },
-        { art: '🧔👉👑', bg: 'campo', fx: 'luz', text: 'Mas Deus viu tudo. Elias estava lá esperando por ele! Acabe disse: "Você me achou, meu inimigo?" Elias respondeu: "Achei, porque você fez o que é mau aos olhos do Senhor." E anunciou o julgamento de Deus sobre Acabe e Jezabel.', r: '1 Reis 21:17-24' },
+        { art: '🧔👉👑', bg: 'campo', fx: 'luz', text: 'Mas Deus viu tudo. Elias estava lá esperando por ele! Acabe disse: "Você me achou, meu inimigo?" Elias respondeu: "Achei, porque você escolheu fazer o mal diante de Deus." E anunciou o julgamento de Deus sobre Acabe e Jezabel.', r: '1 Reis 21:17-24' },
         { art: '👑😔🙇', bg: 'palacio', text: 'Quando ouviu, Acabe rasgou as roupas, jejuou e andou humilhado. E Deus, que é misericordioso, disse a Elias: "Porque ele se humilhou, não vou trazer o mal nos dias dele."', r: '1 Reis 21:27-29' }
       ],
       god: 'Deus vê tudo, até o que é feito escondido. Ele defende o fraco e é misericordioso com quem se humilha.',
@@ -188,7 +188,7 @@ window.HISTORIA.arcs.elias = {
         { art: '🧔🧔🧔👍', bg: 'cidade', text: 'Acabe chamou quatrocentos profetas, que disseram tudo o que ele queria ouvir: "Suba! Deus vai entregar a cidade nas suas mãos!" Um deles até fez chifres de ferro para mostrar como o rei ia vencer.', r: '1 Reis 22:6, 11-12' },
         { art: '👑🤨❓', bg: 'palacio', text: 'Josafá desconfiou: "Não há mais nenhum profeta do Senhor aqui?" Acabe respondeu: "Há um, Micaías. Mas eu odeio ele, porque nunca profetiza coisas boas para mim, só coisas más."', r: '1 Reis 22:7-8' },
         { art: '🧑💬🧔', bg: 'cidade', text: 'O mensageiro que foi buscar Micaías disse: "Todos os profetas falaram coisas boas. Fale você também como eles!" Micaías respondeu: "Tão certo como vive o Senhor, o que o Senhor me disser, isso eu vou falar."', r: '1 Reis 22:13-14' },
-        { art: '🧔🐑🏔️', bg: 'monte', fx: 'vento', text: 'Micaías disse ao rei a verdade: "Eu vi todo Israel espalhado pelos montes, como ovelhas que não têm pastor." Ou seja: o rei ia morrer na batalha.', r: '1 Reis 22:17' },
+        { art: '🧔🐑🏔️', bg: 'monte', fx: 'vento', text: 'Micaías disse ao rei a verdade: ele tinha visto o povo de Israel espalhado nos montes, como ovelhas sem pastor. Ou seja: o rei ia morrer na batalha.', r: '1 Reis 22:17' },
         { art: '🧔⛓️🍞', bg: 'noite', text: 'Acabe ficou furioso e mandou prender Micaías, dando só pão e água para ele. Micaías respondeu: "Se você voltar em paz, então o Senhor não falou por mim."', r: '1 Reis 22:26-28' },
         { art: '👑🎭🏹', bg: 'deserto', fx: 'vento', text: 'Acabe tentou enganar a profecia: foi disfarçado para a batalha. Mas um soldado atirou uma flecha "ao acaso", e ela acertou o rei bem no lugar entre as peças da armadura. Ninguém escapa da palavra de Deus.', r: '1 Reis 22:30, 34-37' },
         { art: '👑🙏✨', bg: 'deserto', fx: 'luz', text: 'E Josafá? Na batalha, os inimigos o confundiram com Acabe e vieram contra ele. Josafá clamou, e o Senhor o socorreu e afastou os inimigos dele.', r: '2 Crônicas 18:31' }
@@ -218,10 +218,10 @@ window.HISTORIA.arcs.elias = {
         { art: '🧔🧥🌊', bg: 'mar', fx: 'ondas', text: 'Chegaram ao rio Jordão. Elias tirou a capa, enrolou e bateu nas águas. As águas se dividiram, e os dois passaram pelo chão seco, como no tempo de Josué!', r: '2 Reis 2:8' },
         { art: '🧔❓🧑', bg: 'campo', text: 'Do outro lado, Elias perguntou: "Peça o que você quer que eu faça por você antes que eu seja levado." Eliseu pediu: "Que eu receba porção dobrada do seu espírito."', r: '2 Reis 2:9' },
         { art: '🧔💬👀', bg: 'campo', text: 'Elias disse: "Você pediu uma coisa difícil. Mas, se você me vir quando eu for levado, você vai receber."', r: '2 Reis 2:10' },
-        { art: '🔥🐎🔥🌪️', bg: 'aurora', fx: 'luz', text: 'Enquanto andavam conversando, de repente apareceu um carro de fogo com cavalos de fogo, que separou os dois. E Elias subiu ao céu num redemoinho!', r: '2 Reis 2:11' },
-        { art: '🧑😮⬆️', bg: 'aurora', fx: 'vento', text: 'Eliseu viu tudo e gritou: "Meu pai, meu pai! Carros de Israel e seus cavaleiros!" E nunca mais viu Elias.', r: '2 Reis 2:12' },
+        { art: '🔥🐎🔥🌪️', bg: 'aurora', fx: 'luz', text: 'Enquanto andavam conversando, de repente apareceu uma carruagem de fogo, puxada por cavalos de fogo, e separou os dois. E um redemoinho levou Elias para o céu!', r: '2 Reis 2:11' },
+        { art: '🧑😮⬆️', bg: 'aurora', fx: 'vento', text: 'Eliseu viu tudo e gritou: "Meu pai, meu pai! Você era a força de Israel!" Depois disso, nunca mais viu Elias.', r: '2 Reis 2:12' },
         { art: '🧑🧥🌊', bg: 'mar', fx: 'ondas', text: 'Eliseu pegou a capa que tinha caído de Elias, voltou ao Jordão, bateu nas águas e disse: "Onde está o Senhor, o Deus de Elias?" E as águas se dividiram de novo!', r: '2 Reis 2:13-14' },
-        { art: '🧔🧔🙇🧑', bg: 'aurora', fx: 'brilho', text: 'Os outros profetas viram e disseram: "O espírito de Elias repousa sobre Eliseu!" E se inclinaram diante dele.', r: '2 Reis 2:15' }
+        { art: '🧔🧔🙇🧑', bg: 'aurora', fx: 'brilho', text: 'Os outros profetas viram e entenderam que o espírito que estava em Elias agora estava em Eliseu. E se inclinaram diante dele.', r: '2 Reis 2:15' }
       ],
       god: 'Deus tem poder para levar os seus para o céu. Quando um servo de Deus vai embora, o trabalho de Deus continua.',
       jesus: 'Elias subiu ao céu, e o seu espírito ficou sobre Eliseu. Jesus também subiu ao céu, numa nuvem, diante dos discípulos (Atos 1:9). E, como Eliseu recebeu o espírito de Elias, os discípulos receberam o Espírito Santo que Jesus enviou (Atos 2:1-4). E Jesus prometeu: "Aquele que crê em mim também fará as obras que eu faço" (João 14:12).',
@@ -272,13 +272,13 @@ window.HISTORIA.arcs.elias = {
       recap: 'Na lição passada, o azeite da viúva encheu todas as vasilhas.',
       scenes: [
         { art: '👩🏡🍲', bg: 'cidade', text: 'Na cidade de Suném, morava uma mulher importante. Sempre que Eliseu passava por lá, ela o convidava para comer na casa dela.', r: '2 Reis 4:8' },
-        { art: '🏡⬆️🛏️🪔', bg: 'cidade', fx: 'coracoes', text: 'Ela disse ao marido: "Esse homem é um santo homem de Deus. Vamos fazer um quartinho em cima da casa, com uma cama, uma mesa, uma cadeira e um candeeiro, para ele descansar quando passar por aqui."', r: '2 Reis 4:9-10' },
+        { art: '🏡⬆️🛏️🪔', bg: 'cidade', fx: 'coracoes', text: 'Ela disse ao marido: "Esse homem é um santo homem de Deus. Vamos fazer um quartinho em cima da casa, com cama, mesa, cadeira e uma lamparina, para ele descansar quando passar por aqui."', r: '2 Reis 4:9-10' },
         { art: '🧑🎁👶', bg: 'cidade', fx: 'brilho', text: 'Eliseu quis agradecer. Soube que ela não tinha filhos e o marido era velho. Então disse: "No ano que vem, nesta época, você vai abraçar um filho." E foi exatamente o que aconteceu!', r: '2 Reis 4:14-17' },
         { art: '👦🌾🤕', bg: 'campo', text: 'O menino cresceu. Um dia, foi ao campo com o pai, na colheita, e de repente gritou: "Ai, a minha cabeça! A minha cabeça!" Levaram-no para a mãe, e ao meio-dia ele morreu no colo dela.', r: '2 Reis 4:18-20' },
         { art: '👩🫏💨', bg: 'deserto', fx: 'vento', text: 'A mãe o deitou na cama do quarto de Eliseu, fechou a porta e saiu correndo numa jumenta até o monte Carmelo, onde estava o profeta. Ela tinha fé!', r: '2 Reis 4:21-25' },
         { art: '👩🙇🧑', bg: 'monte', text: 'Quando Eliseu perguntou se estava tudo bem, ela respondeu: "Está tudo bem." Mas se jogou aos pés dele e disse: "Eu não vou te deixar!" Eliseu foi com ela.', r: '2 Reis 4:26-30' },
         { art: '🧑🙏👦', bg: 'cidade', fx: 'luz', text: 'Eliseu entrou no quarto, fechou a porta e orou ao Senhor. Depois se estendeu sobre o menino, e o corpo dele foi ficando quentinho.', r: '2 Reis 4:32-34' },
-        { art: '👦🤧7️⃣✨', bg: 'aurora', fx: 'brilho', text: 'De repente, o menino espirrou sete vezes e abriu os olhos! Ele estava vivo!', r: '2 Reis 4:35' },
+        { art: '👦🤧7️⃣✨', bg: 'aurora', fx: 'brilho', text: 'De repente, o menino espirrou, espirrou... sete vezes! E abriu os olhos! Ele estava vivo!', r: '2 Reis 4:35' },
         { art: '👩🙇👦💛', bg: 'aurora', fx: 'coracoes', text: 'Eliseu chamou a mãe: "Pegue o seu filho." Ela se inclinou até o chão para agradecer, pegou o filho e saiu.', r: '2 Reis 4:36-37' }
       ],
       god: 'Deus vê quem é hospitaleiro e cuida dele. Ele tem poder até sobre a morte.',
@@ -337,8 +337,8 @@ window.HISTORIA.arcs.elias = {
         { art: '🐎🐎⚔️🏘️', bg: 'noite', text: 'O rei da Síria mandou de noite um grande exército, com cavalos e carros, cercar a cidade de Dotã, onde Eliseu estava.', r: '2 Reis 6:13-14' },
         { art: '🧑😱🐎🐎', bg: 'aurora', text: 'De manhã cedo, o servo de Eliseu saiu e viu a cidade cercada. Assustado, gritou: "Ai, meu senhor! O que vamos fazer?"', r: '2 Reis 6:15' },
         { art: '🧑😌💬', bg: 'aurora', fx: 'luz', text: 'Eliseu respondeu calmo: "Não tenha medo! Os que estão conosco são mais do que os que estão com eles."', r: '2 Reis 6:16' },
-        { art: '🧑🙏👀', bg: 'aurora', fx: 'luz', text: 'E orou: "Senhor, abre os olhos dele para que ele veja!" E o Senhor abriu os olhos do servo...', r: '2 Reis 6:17' },
-        { art: '⛰️🔥🐎🔥', bg: 'monte', fx: 'luz', text: '...e ele viu que o monte estava cheio de cavalos e carros de fogo ao redor de Eliseu! O exército de Deus estava ali o tempo todo!', r: '2 Reis 6:17' },
+        { art: '🧑🙏👀', bg: 'aurora', fx: 'luz', text: 'E orou: "Senhor, abre os olhos dele para que ele possa ver!" E Deus abriu os olhos do servo...', r: '2 Reis 6:17' },
+        { art: '⛰️🔥🐎🔥', bg: 'monte', fx: 'luz', text: '...e ele viu o monte todo cheio de cavalos e carruagens de fogo ao redor de Eliseu! O exército de Deus estava ali o tempo todo!', r: '2 Reis 6:17' },
         { art: '🍞🍷🤝', bg: 'cidade', fx: 'coracoes', text: 'Deus deixou os soldados sírios confusos, e Eliseu os levou até Samaria. Em vez de serem mortos, Eliseu mandou dar a eles um grande banquete e mandá-los para casa. E os ataques pararam por um tempo!', r: '2 Reis 6:18-23' }
       ],
       god: 'Deus está conosco, mesmo quando não vemos. Ele cuida das coisas pequenas e das grandes. E Ele ensina a vencer o mal com o bem.',
@@ -396,7 +396,7 @@ window.HISTORIA.arcs.elias = {
         { art: '🧔🛡️🛡️🏛️', bg: 'cidade', text: 'No sétimo ano, o sacerdote Joiada reuniu os capitães e os guardas no templo, mostrou o menino e fez um plano: "Fiquem em volta do rei com as armas na mão."', r: '2 Reis 11:4-8' },
         { art: '👦👑📜🫗', bg: 'cidade', fx: 'brilho', text: 'Então trouxeram o menino de sete anos, colocaram a coroa na cabeça dele, entregaram o livro da Lei e o ungiram. Todos bateram palmas e gritaram: "Viva o rei!"', r: '2 Reis 11:12' },
         { art: '🎺👥🎉', bg: 'cidade', fx: 'brilho', text: 'O povo se alegrou e tocou trombetas. O reinado de Atalia acabou, e a cidade ficou tranquila.', r: '2 Reis 11:14, 20' },
-        { art: '👦👑🧔📖', bg: 'palacio', fx: 'luz', text: 'Joás fez o que era reto aos olhos do Senhor todos os dias em que o sacerdote Joiada o ensinou.', r: '2 Reis 12:2' },
+        { art: '👦👑🧔📖', bg: 'palacio', fx: 'luz', text: 'Joás agradou a Deus durante todo o tempo em que o sacerdote Joiada o ensinou.', r: '2 Reis 12:2' },
         { art: '📦🪙🔨🏛️', bg: 'cidade', fx: 'brilho', text: 'Joás colocou uma arca com um buraco na tampa, ao lado do altar, para o povo trazer ofertas. O povo deu com alegria, e com esse dinheiro consertaram o templo do Senhor!', r: '2 Reis 12:9-11; 2 Crônicas 24:8-13' },
         { art: '✨🌳👑', bg: 'aurora', fx: 'luz', text: 'Deus tinha prometido a Davi que sempre haveria um filho dele no trono. Mesmo quando parecia que a família ia acabar, Deus guardou um menino escondido. A promessa estava segura!', r: '2 Samuel 7:16; 2 Crônicas 21:7' }
       ],

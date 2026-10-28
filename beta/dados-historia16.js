@@ -72,7 +72,7 @@ window.HISTORIA.arcs.divisao = {
         { art: '👑🙏🧔✋', bg: 'cidade', fx: 'brilho', text: 'O rei pediu: "Ore por mim ao Senhor, para que a minha mão volte!" O homem de Deus orou, e a mão do rei ficou boa de novo.', r: '1 Reis 13:6' },
         { art: '🧔🚫🍞💧', bg: 'campo', text: 'Deus tinha dado ao homem de Deus uma ordem clara: "Não coma pão, não beba água nesse lugar e volte por outro caminho." Por isso ele recusou o convite do rei para comer.', r: '1 Reis 13:7-10' },
         { art: '👴🤥🧔', bg: 'campo', text: 'Mas um velho profeta de Betel foi atrás dele e mentiu: "Um anjo me disse que você pode vir comer na minha casa." O homem de Deus acreditou, desobedeceu à ordem de Deus e foi comer.', r: '1 Reis 13:11-19' },
-        { art: '🦁🫏🛤️', bg: 'campo', text: 'Por ter desobedecido, quando voltava para casa, um leão o encontrou no caminho e o matou. Que triste! Ele foi tão corajoso diante do rei, mas não obedeceu até o fim.', r: '1 Reis 13:20-25' },
+        { art: '🦁🫏🛤️', bg: 'campo', text: 'Por ter desobedecido, quando voltava para casa, ele foi atacado e morto por um leão na estrada. Que triste! Ele foi tão corajoso diante do rei, mas não obedeceu até o fim.', r: '1 Reis 13:20-25' },
         { art: '📜⏳✅', bg: 'aurora', fx: 'luz', text: 'E a profecia? Trezentos anos depois, nasceu um rei chamado Josias, da família de Davi, e ele destruiu exatamente aquele altar de Betel, como o homem de Deus tinha dito!', r: '2 Reis 23:15-16' }
       ],
       god: 'A palavra de Deus sempre se cumpre. Devemos obedecer ao que Deus disse, mesmo quando alguém diz o contrário.',
@@ -95,10 +95,10 @@ window.HISTORIA.arcs.divisao = {
       id: 'dv4', title: 'Asa confia no Senhor', ref: '1 Reis 15:9-24; 2 Crônicas 14 – 16', icon: '🛡️',
       recap: 'Na lição passada, a palavra do homem de Deus contra o altar de Betel se cumpriu.',
       scenes: [
-        { art: '👑🏛️✨', bg: 'palacio', text: 'No reino de Judá, depois de Roboão e do seu filho, reinou Asa, bisneto de Salomão. A Bíblia diz que Asa fez o que era bom e reto aos olhos do Senhor.', r: '2 Crônicas 14:2' },
+        { art: '👑🏛️✨', bg: 'palacio', text: 'No reino de Judá, depois de Roboão e do seu filho, reinou Asa, bisneto de Salomão. A Bíblia diz que Asa agradou a Deus e fez o que era certo.', r: '2 Crônicas 14:2' },
         { art: '🔨🗿💥', bg: 'cidade', fx: 'vento', text: 'Ele tirou os altares dos deuses falsos, quebrou os ídolos e mandou o povo de Judá buscar o Senhor e obedecer à sua Lei.', r: '2 Crônicas 14:3-5' },
         { art: '⚔️⚔️⚔️🌍', bg: 'deserto', text: 'Um dia, veio contra Judá um exército enorme, de Zerá, o etíope, com muito mais soldados e carros de guerra do que Asa tinha.', r: '2 Crônicas 14:9' },
-        { art: '👑🙏✨', bg: 'deserto', fx: 'luz', text: 'Asa clamou: "Senhor, para ti não faz diferença ajudar o forte ou o fraco. Ajuda-nos, Senhor, nosso Deus, porque em ti confiamos, e em teu nome viemos contra esta multidão!"', r: '2 Crônicas 14:11' },
+        { art: '👑🙏✨', bg: 'deserto', fx: 'luz', text: 'Asa clamou: "Senhor, para ti não faz diferença ajudar o forte ou o fraco. Ajuda-nos, Senhor! Nós confiamos em ti, e foi no teu nome que viemos enfrentar este exército enorme!"', r: '2 Crônicas 14:11' },
         { art: '🏃🏃💨🛡️', bg: 'deserto', fx: 'brilho', text: 'E o Senhor derrotou o grande exército diante de Asa e de Judá. Os inimigos fugiram!', r: '2 Crônicas 14:12' },
         { art: '🧔📣👑', bg: 'cidade', fx: 'luz', text: 'O profeta Azarias disse a Asa: "O Senhor está com vocês enquanto vocês estiverem com Ele. Se vocês o buscarem, vão encontrá-lo." E o povo fez uma aliança de buscar o Senhor de todo o coração.', r: '2 Crônicas 15:1-2, 12' },
         { art: '👑💰🤝', bg: 'palacio', text: 'Mas, anos depois, quando outro rei atacou, Asa não orou. Pegou o ouro do templo e pagou o rei da Síria para ajudá-lo. Ele confiou num homem, e não em Deus.', r: '2 Crônicas 16:1-3' },

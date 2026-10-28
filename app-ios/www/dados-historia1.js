@@ -10,7 +10,7 @@ window.HISTORIA.arcs.comeco = {
       recap: 'Esta é a primeira lição da grande história da Bíblia! Vamos começar bem do comecinho.',
       scenes: [
         { art: '🌑', bg: 'noite', text: 'Antes de existir o céu, a terra, as pessoas e os bichos, só uma pessoa existia: Deus. Ele sempre existiu e nunca vai deixar de existir.', r: 'Gênesis 1:1; Salmos 90:2' },
-        { art: '🌊🌑', bg: 'noite', fx: 'ondas', text: 'A Bíblia conta que a terra era sem forma e vazia, e havia escuridão. E o Espírito de Deus se movia sobre as águas.', r: 'Gênesis 1:2' },
+        { art: '🌊🌑', bg: 'noite', fx: 'ondas', text: 'A Bíblia conta que, no começo, a terra não tinha forma, estava vazia, e tudo era escuro. E o Espírito de Deus pairava por cima das águas.', r: 'Gênesis 1:2' },
         { art: '✨💡', bg: 'aurora', fx: 'luz', text: 'Então Deus falou: "Haja luz!" E a luz apareceu! Deus não precisou de ferramentas. Ele só falou, e aconteceu.', r: 'Gênesis 1:3' },
         { art: '☀️🌙', bg: 'aurora', fx: 'brilho', text: 'Deus viu que a luz era boa. Ele separou a luz da escuridão. Chamou a luz de dia e a escuridão de noite. Esse foi o primeiro dia.', r: 'Gênesis 1:4-5' },
         { art: '☁️💧🌊', bg: 'mar', fx: 'ondas', text: 'No segundo dia, Deus separou as águas de cima das águas de baixo, e fez o céu bem grande no meio.', r: 'Gênesis 1:6-8' },
@@ -28,7 +28,7 @@ window.HISTORIA.arcs.comeco = {
       ],
       big: [
         { q: 'Como Deus criou a luz?', o: ['Falando: "Haja luz!"', 'Acendendo uma vela', 'Usando o sol', 'Pedindo aos anjos'], e: 'Deus cria com a sua palavra. Ele falou, e a luz existiu (Gênesis 1:3).' },
-        { q: 'Como Deus chamou a luz e a escuridão?', o: ['Dia e noite', 'Manhã e tarde', 'Sol e lua', 'Claro e escuro'], e: 'Gênesis 1:5: Deus chamou à luz Dia, e às trevas Noite.' },
+        { q: 'Como Deus chamou a luz e a escuridão?', o: ['Dia e noite', 'Manhã e tarde', 'Sol e lua', 'Claro e escuro'], e: 'Gênesis 1:5: Deus deu nome à luz: Dia. E deu nome à escuridão: Noite.' },
         { q: 'O que Deus dizia quando terminava cada coisa?', o: ['Que era bom', 'Que estava cansado', 'Que ia mudar depois', 'Nada'], e: 'Tudo o que Deus criou era bom.' },
         { q: 'O que apareceu quando Deus juntou as águas?', o: ['A terra seca', 'O sol', 'As estrelas', 'Os peixes'], e: 'Deus chamou a terra seca de Terra, e as águas juntas de Mares.' }
       ],
@@ -68,11 +68,11 @@ window.HISTORIA.arcs.comeco = {
       id: 'c3', title: 'O jardim do Éden', ref: 'Gênesis 2:4-25', icon: '🌳',
       recap: 'Na lição passada, Deus encheu o mundo de vida e fez as pessoas à sua imagem.',
       scenes: [
-        { art: '✨🧑', bg: 'campo', fx: 'luz', text: 'A Bíblia conta com mais detalhes como Deus fez o primeiro homem: Ele formou o homem do pó da terra e soprou nele o fôlego da vida. E o homem ganhou vida!', r: 'Gênesis 2:7' },
+        { art: '✨🧑', bg: 'campo', fx: 'luz', text: 'A Bíblia conta com mais detalhes como Deus fez o primeiro homem: Ele pegou o pó da terra, formou o homem e soprou nele o sopro de vida. E o homem ganhou vida!', r: 'Gênesis 2:7' },
         { art: '🌳🍎🌸', bg: 'jardim', text: 'O nome dele era Adão. Deus plantou um jardim lindo, no Éden, cheio de árvores com frutas gostosas, e colocou Adão lá.', r: 'Gênesis 2:8-9' },
-        { art: '🏞️💧', bg: 'jardim', fx: 'ondas', text: 'Um rio passava pelo jardim e regava tudo. No meio do jardim havia duas árvores especiais: a árvore da vida e a árvore do conhecimento do bem e do mal.', r: 'Gênesis 2:9-10' },
+        { art: '🏞️💧', bg: 'jardim', fx: 'ondas', text: 'Um rio passava pelo jardim e regava tudo. No meio do jardim havia duas árvores especiais: a árvore da vida e a árvore que fazia conhecer o que é bom e o que é mau.', r: 'Gênesis 2:9-10' },
         { art: '🧑🌱', bg: 'jardim', text: 'Deus deu a Adão um trabalho: cuidar do jardim e guardá-lo. Trabalhar é uma coisa boa, que Deus criou.', r: 'Gênesis 2:15' },
-        { art: '🌳🚫', bg: 'jardim', text: 'Deus disse: "Pode comer de todas as árvores, menos de uma: a árvore do conhecimento do bem e do mal. Se comer dela, você vai morrer."', r: 'Gênesis 2:16-17' },
+        { art: '🌳🚫', bg: 'jardim', text: 'Deus disse: "Pode comer de todas as árvores, menos de uma: a árvore que faz conhecer o bem e o mal. Se comer dela, você vai morrer."', r: 'Gênesis 2:16-17' },
         { art: '🦁🐘🦒', bg: 'campo', text: 'Deus trouxe os animais até Adão, e Adão deu um nome para cada um. Mas, entre todos os animais, não havia ninguém como ele, para ser sua companhia.', r: 'Gênesis 2:19-20' },
         { art: '😴🧑', bg: 'noite', text: 'Deus disse: "Não é bom que o homem esteja sozinho." Então fez Adão dormir um sono bem profundo, tirou uma costela dele e, dela, formou a mulher.', r: 'Gênesis 2:18, 21-22' },
         { art: '🧑💛👩', bg: 'aurora', fx: 'coracoes', text: 'Quando Adão viu a mulher, ficou muito feliz: "Esta, sim, é como eu!" Deus os uniu, e eles viraram uma família. O nome dela, mais tarde, foi Eva.', r: 'Gênesis 2:23-24; 3:20' },
@@ -87,7 +87,7 @@ window.HISTORIA.arcs.comeco = {
         { q: 'Quem deu nome aos animais?', o: [['🧑', 'Adão'], ['🐒', 'O macaco'], ['🦉', 'A coruja']] }
       ],
       big: [
-        { q: 'Como Adão ganhou vida?', o: ['Deus soprou nele o fôlego da vida', 'Um raio caiu nele', 'Ele acordou sozinho', 'Um anjo o tocou'], e: 'Gênesis 2:7: Deus soprou em suas narinas o fôlego da vida.' },
+        { q: 'Como Adão ganhou vida?', o: ['Deus soprou nele o fôlego da vida', 'Um raio caiu nele', 'Ele acordou sozinho', 'Um anjo o tocou'], e: 'Gênesis 2:7: Deus soprou o sopro de vida no nariz do homem.' },
         { q: 'De qual árvore Deus disse para não comer?', o: ['Do conhecimento do bem e do mal', 'Da árvore da vida', 'Da figueira', 'Da macieira'], e: 'Era só uma regra, e todo o resto do jardim era deles.' },
         { q: 'Por que Deus fez a mulher?', o: ['Não era bom o homem estar sozinho', 'Para cuidar dos bichos sozinha', 'Porque Adão pediu um animal', 'Para morar em outro jardim'], e: 'Deus criou a família: homem e mulher, para serem companhia um do outro.' },
         { q: 'Qual trabalho Adão recebeu no jardim?', o: ['Cuidar dele e guardá-lo', 'Construir uma torre', 'Pescar no rio', 'Contar as estrelas'], e: 'O trabalho existe desde antes do pecado; é um presente de Deus.' }
@@ -96,7 +96,7 @@ window.HISTORIA.arcs.comeco = {
     },
     {
       id: 'c4', title: 'A serpente e a escolha errada', ref: 'Gênesis 3:1-7', icon: '🐍',
-      recap: 'Na lição passada, Adão e Eva viviam felizes no jardim. Deus tinha dado só uma regra: não comer da árvore do conhecimento do bem e do mal.',
+      recap: 'Na lição passada, Adão e Eva viviam felizes no jardim. Deus tinha dado só uma regra: não comer do fruto da árvore que faz conhecer o bem e o mal.',
       scenes: [
         { art: '🐍🌳', bg: 'jardim', text: 'No jardim havia uma serpente, mais esperta que todos os animais. A Bíblia mostra depois que, por trás dela, estava Satanás, o inimigo de Deus.', r: 'Gênesis 3:1; Apocalipse 12:9' },
         { art: '🐍💬👩', bg: 'jardim', text: 'A serpente perguntou para Eva: "É verdade que Deus disse que vocês não podem comer de nenhuma árvore do jardim?" Era uma pergunta para confundir.', r: 'Gênesis 3:1' },
@@ -206,7 +206,7 @@ window.HISTORIA.arcs.comeco = {
       ],
       big: [
         { q: 'O que quer dizer "andar com Deus"?', o: ['Viver perto dele e obedecer', 'Fazer caminhadas longas', 'Morar num templo', 'Nunca sair de casa'], e: 'É ter amizade com Deus no dia a dia.' },
-        { q: 'O que aconteceu com Enoque?', o: ['Deus o levou sem ele morrer', 'Ele virou rei', 'Ele construiu uma arca', 'Ele viveu 969 anos'], e: 'Hebreus 11:5: pela fé Enoque foi trasladado para não ver a morte.' },
+        { q: 'O que aconteceu com Enoque?', o: ['Deus o levou sem ele morrer', 'Ele virou rei', 'Ele construiu uma arca', 'Ele viveu 969 anos'], e: 'Hebreus 11:5 conta que, pela fé, Deus levou Enoque para junto dele, e ele não passou pela morte.' },
         { q: 'Quantos anos Matusalém viveu?', o: ['969', '100', '365', '40'], e: 'Gênesis 5:27. Enoque, o pai dele, viveu 365 anos na terra.' },
         { q: 'Qual frase triste se repete em Gênesis 5?', o: ['"E morreu"', '"E fugiu"', '"E chorou"', '"E dormiu"'], e: 'A morte entrou no mundo pelo pecado, como Deus tinha avisado.' }
       ],

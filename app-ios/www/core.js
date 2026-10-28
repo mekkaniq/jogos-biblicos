@@ -200,8 +200,9 @@
   function about() {
     modal(`<div class="badge">📖</div><h2>Sobre o texto bíblico</h2>
       <p>Todos os versículos e referências deste aplicativo seguem a <b>Bíblia Almeida Corrigida Fiel (ACF)</b>, que adotamos como base e fonte oficial.</p>
-      <p style="font-size:.85rem;margin-top:10px">Almeida Corrigida Fiel © 1994, 1995, 2007, 2011 Sociedade Bíblica Trinitariana do Brasil. Todos os direitos reservados. Citações usadas conforme a política de citação da SBTB.</p>
+      <p style="font-size:.85rem;margin-top:10px">Citações bíblicas extraídas de A Bíblia Sagrada - Almeida Corrigida Fiel (ACF) © 1994, 1995, 2007, 2011 Sociedade Bíblica Trinitariana do Brasil, Trinitarian Bible Society. Todos os direitos reservados.</p>
       <p style="font-size:.85rem">As explicações e pistas dos jogos são textos nossos, escritos com base nas Escrituras. Encontrou algo para corrigir? Fale com a gente.</p>
+      ${NATIVE ? '<p style="font-size:.85rem">Este app não coleta dados: o progresso fica só neste aparelho. <a href="https://mekkaniq.github.io/jogos-biblicos/privacidade.html" style="color:inherit;font-weight:700">Política de privacidade</a></p>' : ''}
       <div class="actions"><button class="btn btn-gold" data-close>Fechar</button></div>`);
   }
   window.App = { native: NATIVE, about, $, $$, esc, pad, I, cross, goldIcon, load, save, setLast, toast, modal, sheet, confetti, sfx, route, go, setScene, sceneUrl, openSettings, installHelp, rerender: render, applySettings };

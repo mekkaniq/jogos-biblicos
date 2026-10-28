@@ -15,7 +15,7 @@ window.HISTORIA.arcs.milagres = {
         { art: '✨💬💧🏺', bg: 'cidade', fx: 'luz', text: 'Jesus disse aos empregados: "Encham as talhas de água." E eles encheram até a boca.', r: 'João 2:7' },
         { art: '🏺➡️🍷✨', bg: 'cidade', fx: 'brilho', text: 'Então Jesus disse: "Agora tirem um pouco e levem ao mestre-sala." Eles levaram, e a água tinha virado vinho!', r: 'João 2:8-9' },
         { art: '🧔😋🍷', bg: 'cidade', fx: 'brilho', text: 'O mestre-sala provou e, sem saber de onde vinha, chamou o noivo: "Todo mundo serve primeiro o vinho bom, e depois o inferior. Mas você guardou o melhor vinho até agora!"', r: 'João 2:9-10' },
-        { art: '✨🌟👥🙏', bg: 'aurora', fx: 'luz', text: 'Esse foi o primeiro dos sinais de Jesus. Assim Ele mostrou a sua glória, e os seus discípulos creram nele.', r: 'João 2:11' }
+        { art: '✨🌟👥🙏', bg: 'aurora', fx: 'luz', text: 'Esse foi o primeiro dos sinais de Jesus. Assim Ele mostrou quem Ele era, cheio de glória, e os discípulos creram nele.', r: 'João 2:11' }
       ],
       god: 'Deus se importa até com uma festa de casamento. Ele dá o melhor, e com abundância.',
       jesus: 'Os profetas diziam que, quando o Messias viesse, os montes iam "gotejar vinho" (Amós 9:13; Isaías 25:6). O vinho novo e melhor mostrava que a alegria do Reino tinha chegado com Jesus. E a Bíblia termina com uma grande festa de casamento: as bodas do Cordeiro com a sua Igreja (Apocalipse 19:7-9).',
@@ -129,7 +129,7 @@ window.HISTORIA.arcs.milagres = {
         { art: '👥👥👥⛰️✨', bg: 'monte', text: 'Uma multidão enorme seguia Jesus, porque via os sinais que Ele fazia nos doentes. Jesus subiu a um monte e se sentou com os discípulos.', r: 'João 6:1-3' },
         { art: '✨❓🍞', bg: 'monte', fx: 'luz', text: 'Vendo a multidão, Jesus perguntou a Filipe: "Onde vamos comprar pão para toda essa gente comer?" Ele disse isso para testar Filipe, porque já sabia o que ia fazer.', r: 'João 6:5-6' },
         { art: '🧔💰🤷', bg: 'monte', text: 'Filipe respondeu: "Nem duzentos dias de salário dariam para cada um comer um pedacinho!"', r: 'João 6:7' },
-        { art: '🧔👦🍞🐟', bg: 'monte', text: 'André, o irmão de Pedro, disse: "Aqui está um menino que tem cinco pães de cevada e dois peixinhos. Mas o que é isso para tanta gente?"', r: 'João 6:8-9' },
+        { art: '🧔👦🍞🐟', bg: 'monte', text: 'André, o irmão de Pedro, disse: "Tem um menino aqui com cinco pães de cevada e dois peixinhos. Mas o que é isso para tanta gente?"', r: 'João 6:8-9' },
         { art: '✨💬🌿👥', bg: 'campo', fx: 'luz', text: 'Jesus disse: "Mandem o povo se sentar." Havia muita grama naquele lugar, e sentaram-se uns cinco mil homens, fora as mulheres e as crianças.', r: 'João 6:10; Mateus 14:21' },
         { art: '✨🙏🍞🐟', bg: 'campo', fx: 'luz', text: 'Jesus pegou os pães, deu graças a Deus e os repartiu entre os que estavam sentados. E fez o mesmo com os peixes, quanto quiseram!', r: 'João 6:11' },
         { art: '👥😋🍞🍞🍞', bg: 'campo', fx: 'brilho', text: 'Todos comeram até ficarem satisfeitos! Então Jesus disse: "Recolham os pedaços que sobraram, para que nada se perca."', r: 'João 6:12' },
@@ -186,7 +186,7 @@ window.HISTORIA.arcs.milagres = {
       id: 'mi7', title: 'O cego de nascença', ref: 'João 9', icon: '👀',
       recap: 'Na lição passada, Jesus andou sobre as águas e salvou Pedro.',
       scenes: [
-        { art: '🧔🦯🛤️', bg: 'cidade', text: 'Jesus e os discípulos passaram por um homem que tinha nascido cego. Ele nunca tinha visto nada: nem o sol, nem as cores, nem o rosto da sua mãe.', r: 'João 9:1' },
+        { art: '✨👣🦯🛤️', bg: 'cidade', text: 'Jesus e os discípulos passaram por um homem que tinha nascido cego. Ele nunca tinha visto nada: nem o sol, nem as cores, nem o rosto da sua mãe.', r: 'João 9:1' },
         { art: '🧔❓✨', bg: 'cidade', text: 'Os discípulos perguntaram: "Mestre, quem pecou para ele nascer cego: ele ou os pais dele?" Eles achavam que toda doença era castigo por algum pecado.', r: 'João 9:2' },
         { art: '✨💬💡', bg: 'aurora', fx: 'luz', text: 'Jesus respondeu: "Nem ele nem os pais pecaram. Isso aconteceu para que as obras de Deus se manifestem nele. Enquanto estou no mundo, eu sou a luz do mundo."', r: 'João 9:3, 5' },
         { art: '✨🟫👀', bg: 'cidade', fx: 'luz', text: 'Então Jesus cuspiu no chão, fez um pouco de lama com a saliva, passou nos olhos do cego e disse: "Vá se lavar no tanque de Siloé."', r: 'João 9:6-7' },
@@ -194,7 +194,7 @@ window.HISTORIA.arcs.milagres = {
         { art: '👥🤔🧔', bg: 'cidade', text: 'Os vizinhos ficaram confusos: "Não é aquele que ficava sentado pedindo esmola?" Uns diziam: "É ele!" Outros: "Não, é só parecido." Ele dizia: "Sou eu mesmo!"', r: 'João 9:8-9' },
         { art: '👨‍🏫😠🧔', bg: 'cidade', text: 'Os fariseus interrogaram o homem várias vezes. Ficaram bravos porque Jesus tinha curado num sábado, e não queriam acreditar.', r: 'João 9:13-16' },
         { art: '🧔💪💬', bg: 'cidade', fx: 'luz', text: 'O homem respondeu com coragem: "Se Ele é pecador, eu não sei. Uma coisa eu sei: eu era cego e agora vejo!" Por causa disso, o expulsaram.', r: 'João 9:25, 34' },
-        { art: '✨🤝🧔🙇', bg: 'aurora', fx: 'luz', text: 'Jesus foi procurá-lo e perguntou: "Você crê no Filho do homem?" Ele disse: "Quem é, Senhor, para que eu creia nele?" Jesus disse: "Você o está vendo; é quem fala com você." E ele disse: "Creio, Senhor!" e o adorou.', r: 'João 9:35-38' }
+        { art: '✨🤝🧔🙇', bg: 'aurora', fx: 'luz', text: 'Jesus foi procurá-lo e perguntou: "Você crê no Filho do homem?" Ele disse: "Quem é, Senhor, para que eu creia nele?" Jesus disse: "Você o está vendo; é quem fala com você." Então o homem respondeu: "Eu creio, Senhor!" e se ajoelhou para adorá-lo.', r: 'João 9:35-38' }
       ],
       god: 'Deus pode usar até o sofrimento para mostrar a sua glória. Ele abre os olhos de quem não vê.',
       jesus: 'Isaías disse que o Messias ia "abrir os olhos dos cegos" (Isaías 35:5; 42:7). Jesus é a luz do mundo: Ele abriu os olhos do corpo e, depois, os olhos do coração daquele homem. Todos nascemos cegos para Deus por causa do pecado, e só Jesus pode nos fazer enxergar.',
@@ -217,7 +217,7 @@ window.HISTORIA.arcs.milagres = {
       recap: 'Na lição passada, Jesus deu visão ao homem que nasceu cego.',
       scenes: [
         { art: '✨🛤️🏘️', bg: 'deserto', text: 'Jesus estava a caminho de Jerusalém e passava entre Samaria e Galileia. Ao entrar numa aldeia...', r: 'Lucas 17:11-12' },
-        { art: '🧔🧔🧔🧔🧔🧔🧔🧔🧔🧔', bg: 'deserto', text: '...dez homens com lepra vieram ao seu encontro. Eles ficaram de longe, porque a lei mandava que os doentes de lepra vivessem separados de todos.', r: 'Lucas 17:12; Levítico 13:45-46' },
+        { art: '🧔🧔🧔🧔🔟', bg: 'deserto', text: '...dez homens com lepra vieram ao seu encontro. Eles ficaram de longe, porque a lei mandava que os doentes de lepra vivessem separados de todos.', r: 'Lucas 17:12; Levítico 13:45-46' },
         { art: '🧔📣🙏', bg: 'deserto', text: 'Eles gritaram: "Jesus, Mestre, tem compaixão de nós!"', r: 'Lucas 17:13' },
         { art: '✨💬🏛️', bg: 'deserto', fx: 'luz', text: 'Jesus olhou para eles e disse: "Vão e mostrem-se aos sacerdotes." Os sacerdotes eram quem confirmava se alguém estava curado.', r: 'Lucas 17:14; Levítico 14:2' },
         { art: '🧔🚶✨🩹', bg: 'deserto', fx: 'brilho', text: 'E, enquanto iam pelo caminho, ficaram limpos! A pele de todos os dez estava curada!', r: 'Lucas 17:14' },
@@ -338,7 +338,7 @@ window.HISTORIA.arcs.milagres = {
         { art: '✨🧔🧔🧔⛰️', bg: 'monte', text: 'Seis dias depois, Jesus levou Pedro, Tiago e João, sozinhos, para um monte alto.', r: 'Mateus 17:1' },
         { art: '☀️✨⛰️', bg: 'monte', fx: 'luz', text: 'Lá, Jesus foi transfigurado diante deles: o seu rosto brilhou como o sol, e as suas roupas ficaram brancas como a luz! Os discípulos viram um pouquinho da glória de Jesus.', r: 'Mateus 17:2' },
         { art: '🧔🧔✨', bg: 'monte', fx: 'luz', text: 'De repente, apareceram Moisés e Elias conversando com Jesus! Moisés representava a Lei, e Elias, os profetas. Eles falavam da morte que Jesus ia enfrentar em Jerusalém.', r: 'Mateus 17:3; Lucas 9:30-31' },
-        { art: '🧔💬⛺⛺⛺', bg: 'monte', text: 'Pedro, sem saber bem o que dizer, falou: "Senhor, que bom estarmos aqui! Se quiseres, vou fazer três tendas: uma para ti, uma para Moisés e uma para Elias."', r: 'Mateus 17:4; Marcos 9:6' },
+        { art: '🧔💬⛺⛺⛺', bg: 'monte', text: 'Pedro, sem saber bem o que dizer, falou: "Senhor, que bom estarmos aqui! Se quiseres, vou montar três tendas: para ti, para Moisés e para Elias."', r: 'Mateus 17:4; Marcos 9:6' },
         { art: '☁️✨📣', bg: 'monte', fx: 'luz', text: 'Enquanto ele ainda falava, uma nuvem luminosa os cobriu, e uma voz disse da nuvem: "Este é o meu Filho amado, em quem me comprazo. Escutem-no!"', r: 'Mateus 17:5' },
         { art: '🧔🧔🧔🙇😨', bg: 'monte', text: 'Ao ouvirem isso, os discípulos caíram com o rosto em terra, cheios de medo.', r: 'Mateus 17:6' },
         { art: '✨🤝🧔', bg: 'monte', fx: 'luz', text: 'Jesus chegou perto, tocou neles e disse: "Levantem-se e não tenham medo." Quando olharam, não viram mais ninguém, a não ser Jesus.', r: 'Mateus 17:7-8' },

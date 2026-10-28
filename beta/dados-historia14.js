@@ -36,7 +36,7 @@ window.HISTORIA.arcs.salmos = {
       id: 'p2', title: 'O Rei de Deus', ref: 'Salmo 2', icon: '👑',
       recap: 'Na lição passada, o Salmo 1 mostrou os dois caminhos: o da Palavra de Deus e o dos maus.',
       scenes: [
-        { art: '👑👑😠', bg: 'palacio', text: 'O Salmo 2 começa com uma pergunta: "Por que as nações se agitam e os povos fazem planos inúteis?" Os reis da terra se juntam contra o Senhor e contra o seu Ungido.', r: 'Salmos 2:1-2' },
+        { art: '👑👑😠', bg: 'palacio', text: 'O Salmo 2 começa com uma pergunta: "Por que as nações se agitam e os povos fazem planos inúteis?" Os reis da terra se juntam para lutar contra Deus e contra o Rei que Ele escolheu.', r: 'Salmos 2:1-2' },
         { art: '⛓️💥', bg: 'cidade', text: 'Eles dizem: "Vamos quebrar as correntes deles!" Querem viver sem Deus, sem ninguém mandando neles.', r: 'Salmos 2:3' },
         { art: '✨☁️😌', bg: 'aurora', fx: 'luz', text: 'Mas o Senhor, que está sentado nos céus, não fica com medo. Para Deus, esses planos são tão pequenos que Ele até ri deles.', r: 'Salmos 2:4' },
         { art: '✨👑⛰️', bg: 'monte', fx: 'brilho', text: 'Deus responde: "Eu mesmo coloquei o meu Rei sobre Sião, o meu monte santo." Ninguém consegue tirar o Rei que Deus escolheu.', r: 'Salmos 2:6' },
@@ -65,8 +65,8 @@ window.HISTORIA.arcs.salmos = {
       recap: 'Na lição passada, o Salmo 2 mostrou que Deus colocou o seu Rei e Filho sobre todas as nações.',
       scenes: [
         { art: '👦🌌🐑', bg: 'noite', fx: 'estrelas', text: 'Imagine Davi, ainda menino, deitado no campo à noite, cuidando das ovelhas e olhando para o céu cheio de estrelas.', r: 'Salmos 8:3' },
-        { art: '🌙⭐✨', bg: 'noite', fx: 'estrelas', text: '"Quando vejo os teus céus, obra dos teus dedos, a lua e as estrelas que preparaste..." Deus fez tudo isso como um artista que trabalha com os dedos!', r: 'Salmos 8:3' },
-        { art: '👦❓💛', bg: 'noite', fx: 'estrelas', text: '"...o que é o homem, para que te lembres dele? E o filho do homem, para que o visites?" Perto do universo, somos pequeninos. Mas Deus se lembra de cada um!', r: 'Salmos 8:4' },
+        { art: '🌙⭐✨', bg: 'noite', fx: 'estrelas', text: 'Davi olhava o céu de noite e pensava: a lua e as estrelas foram feitas pelos dedos de Deus! Deus fez tudo isso como um artista que trabalha com as mãos!', r: 'Salmos 8:3' },
+        { art: '👦❓💛', bg: 'noite', fx: 'estrelas', text: 'E Davi perguntou: quem somos nós, para Deus se lembrar de nós e cuidar de nós? Perto do universo, somos pequeninos. Mas Deus se lembra de cada um!', r: 'Salmos 8:4' },
         { art: '👑🐑🐟🐦', bg: 'campo', fx: 'brilho', text: '"Tu o fizeste pouco menor que os anjos e o coroaste de glória e de honra. Deste a ele o domínio sobre as ovelhas, os bois, as aves e os peixes."', r: 'Salmos 8:5-8' },
         { art: '☀️🌍', bg: 'aurora', fx: 'luz', text: 'No Salmo 19, Davi diz: "Os céus contam a glória de Deus, e o firmamento mostra a obra das suas mãos." Cada dia e cada noite falam de Deus, sem usar palavras!', r: 'Salmos 19:1-3' },
         { art: '☀️🏃', bg: 'aurora', fx: 'brilho', text: '"O sol é como um noivo saindo do quarto, feliz como um atleta que vai correr." Ele percorre o céu de uma ponta à outra, e nada se esconde do seu calor.', r: 'Salmos 19:4-6' },
@@ -125,7 +125,7 @@ window.HISTORIA.arcs.salmos = {
         { art: '💡✨', bg: 'aurora', fx: 'luz', text: 'Davi começa o Salmo 27 com uma frase cheia de coragem: "O Senhor é a minha luz e a minha salvação. De quem terei medo?"', r: 'Salmos 27:1' },
         { art: '🏰🛡️', bg: 'monte', fx: 'brilho', text: '"O Senhor é a fortaleza da minha vida. De quem vou ter pavor?" Uma fortaleza é um lugar alto e protegido, onde o inimigo não entra.', r: 'Salmos 27:1' },
         { art: '⚔️👥😌', bg: 'deserto', text: '"Ainda que um exército me cerque, o meu coração não vai temer. Ainda que uma guerra se levante contra mim, mesmo assim vou confiar."', r: 'Salmos 27:3' },
-        { art: '☝️🏛️💛', bg: 'aurora', fx: 'coracoes', text: '"Uma coisa pedi ao Senhor, e é isso que vou buscar: morar na casa do Senhor todos os dias da minha vida, para contemplar a beleza do Senhor." O maior desejo de Davi era estar perto de Deus!', r: 'Salmos 27:4' },
+        { art: '☝️🏛️💛', bg: 'aurora', fx: 'coracoes', text: 'Davi disse que só queria uma coisa de Deus: morar na casa do Senhor a vida inteira, para ver como o Senhor é lindo. O maior desejo de Davi era estar perto de Deus!', r: 'Salmos 27:4' },
         { art: '⛺🪨⬆️', bg: 'monte', text: '"No dia mau, Ele vai me esconder no seu abrigo, vai me colocar no alto de uma rocha."', r: 'Salmos 27:5' },
         { art: '👨‍👩‍👧💔✨', bg: 'aurora', fx: 'luz', text: '"Ainda que o meu pai e a minha mãe me abandonem, o Senhor vai me acolher." Nem a pessoa que mais nos ama na terra nos ama tanto quanto Deus!', r: 'Salmos 27:10' },
         { art: '⏳💪', bg: 'aurora', fx: 'brilho', text: 'O salmo termina com um conselho: "Espere no Senhor. Seja forte, e que o seu coração fique firme. Sim, espere no Senhor!"', r: 'Salmos 27:14' }
@@ -152,11 +152,11 @@ window.HISTORIA.arcs.salmos = {
       scenes: [
         { art: '🏰🛡️✨', bg: 'monte', fx: 'luz', text: 'O Salmo 46 foi escrito pelos filhos de Corá, cantores do templo. Ele começa assim: "Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia."', r: 'Salmos 46:1' },
         { art: '🌍🌋🌊', bg: 'mar', fx: 'ondas', text: '"Por isso não vamos temer, ainda que a terra trema, que os montes caiam no meio do mar, que as águas rujam e espumem." Mesmo se tudo balançar, Deus fica firme.', r: 'Salmos 46:2-3' },
-        { art: '🏞️💧🏙️', bg: 'cidade', fx: 'ondas', text: '"Há um rio cujas correntes alegram a cidade de Deus. Deus está no meio dela, e ela não será abalada."', r: 'Salmos 46:4-5' },
-        { art: '🤫✨', bg: 'aurora', fx: 'luz', text: 'E Deus diz uma frase linda: "Aquietai-vos, e sabei que eu sou Deus!" Às vezes, a gente só precisa ficar quietinho e lembrar quem Deus é.', r: 'Salmos 46:10' },
+        { art: '🏞️💧🏙️', bg: 'cidade', fx: 'ondas', text: '"Um rio alegra a cidade de Deus com as suas águas. Deus está no meio dela, e ela não será abalada."', r: 'Salmos 46:4-5' },
+        { art: '🤫✨', bg: 'aurora', fx: 'luz', text: 'E Deus diz uma frase linda: "Fiquem quietos e saibam que eu sou Deus!" Às vezes, a gente só precisa ficar quietinho e lembrar quem Deus é.', r: 'Salmos 46:10' },
         { art: '👦😨🏃', bg: 'cidade', text: 'O Salmo 56 foi escrito por Davi quando os filisteus o pegaram em Gate. Ele estava com muito medo.', r: 'Salmos 56 (título)' },
         { art: '👦🙏💛', bg: 'noite', fx: 'estrelas', text: 'Davi orou: "No dia em que eu tiver medo, vou confiar em ti. Em Deus eu confio e não vou temer. O que me pode fazer o homem?"', r: 'Salmos 56:3-4' },
-        { art: '😢🫙✨', bg: 'aurora', fx: 'coracoes', text: 'E disse algo muito carinhoso: "Tu contaste as minhas andanças. Põe as minhas lágrimas no teu odre. Não estão elas no teu livro?" Deus guarda até as nossas lágrimas!', r: 'Salmos 56:8' },
+        { art: '😢🫙✨', bg: 'aurora', fx: 'coracoes', text: 'E disse algo muito carinhoso: Deus conta cada passo nosso, guarda as nossas lágrimas como num frasco e anota tudo no seu livro. Deus guarda até as nossas lágrimas!', r: 'Salmos 56:8' },
         { art: '👦💡🚶', bg: 'aurora', fx: 'brilho', text: '"Tu livraste a minha alma da morte e os meus pés de tropeçar, para que eu ande diante de Deus na luz dos viventes."', r: 'Salmos 56:13' }
       ],
       god: 'Deus é o nosso refúgio quando temos medo. Ele vê e guarda cada lágrima nossa.',
@@ -169,7 +169,7 @@ window.HISTORIA.arcs.salmos = {
       ],
       big: [
         { q: 'Quem escreveu o Salmo 46?', o: ['Os filhos de Corá', 'Moisés', 'Salomão', 'Jonas'], e: 'Título do Salmo 46.' },
-        { q: 'O que diz Salmos 46:10?', o: ['"Aquietai-vos e sabei que eu sou Deus"', '"Corram"', '"Lutem"', '"Durmam"'], e: 'Salmos 46:10.' },
+        { q: 'O que diz Salmos 46:10?', o: ['"Fiquem quietos e saibam que eu sou Deus"', '"Corram"', '"Lutem"', '"Durmam"'], e: 'Salmos 46:10.' },
         { q: 'Quando Davi escreveu o Salmo 56?', o: ['Quando os filisteus o pegaram em Gate', 'Quando virou rei', 'Quando era bebê', 'No templo'], e: 'Título do Salmo 56; 1 Samuel 21:10-15.' },
         { q: 'O que Deus faz com as nossas lágrimas?', o: ['Guarda e se lembra delas', 'Ignora', 'Fica bravo', 'Joga fora'], e: 'Salmos 56:8.' }
       ],
@@ -179,7 +179,7 @@ window.HISTORIA.arcs.salmos = {
       id: 'p7', title: 'Bendize, ó minha alma', ref: 'Salmo 103', icon: '💛',
       recap: 'Na lição passada, aprendemos que Deus é o nosso refúgio e guarda as nossas lágrimas.',
       scenes: [
-        { art: '👑🎶💛', bg: 'aurora', fx: 'brilho', text: 'No Salmo 103, Davi conversa com a própria alma, como quem dá um empurrãozinho no coração: "Bendize, ó minha alma, ao Senhor, e tudo o que há em mim bendiga o seu santo nome!"', r: 'Salmos 103:1' },
+        { art: '👑🎶💛', bg: 'aurora', fx: 'brilho', text: 'No Salmo 103, Davi conversa com a própria alma, como quem dá um empurrãozinho no coração: "Minha alma, louve o Senhor! Tudo o que existe dentro de mim, louve o seu santo nome!"', r: 'Salmos 103:1' },
         { art: '🧠❌✨', bg: 'aurora', text: '"Bendize, ó minha alma, ao Senhor, e não te esqueças de nenhum dos seus benefícios." Nós esquecemos rápido as coisas boas que Deus faz. Davi não queria esquecer!', r: 'Salmos 103:2' },
         { art: '💔➡️💛🩹', bg: 'aurora', fx: 'coracoes', text: 'E ele lista: "É Ele quem perdoa todas as tuas culpas, quem sara as tuas doenças, quem resgata a tua vida da cova e te coroa de bondade e misericórdia."', r: 'Salmos 103:3-4' },
         { art: '🦅💪', bg: 'monte', fx: 'vento', text: '"Ele enche de coisas boas a tua vida, e a tua juventude se renova como a da águia."', r: 'Salmos 103:5' },
@@ -212,7 +212,7 @@ window.HISTORIA.arcs.salmos = {
         { art: '🔤🔤🔤', bg: 'aurora', text: 'Ele foi escrito como um acróstico: são 22 partes, uma para cada letra do alfabeto hebraico, de Álefe até Tau. Como se alguém dissesse: "a Palavra de Deus é boa de A a Z!"', r: 'Salmos 119' },
         { art: '👦❓🧼', bg: 'campo', text: 'Ele pergunta: "Como o jovem vai manter limpo o seu caminho?" E responde: "Obedecendo à tua palavra."', r: 'Salmos 119:9' },
         { art: '❤️📖🔒', bg: 'aurora', fx: 'coracoes', text: '"Escondi a tua palavra no meu coração, para eu não pecar contra ti." É o versículo que fica na capa do nosso app!', r: 'Salmos 119:11' },
-        { art: '🍯👅', bg: 'aurora', fx: 'brilho', text: '"Como são doces as tuas palavras ao meu paladar! Mais doces do que o mel na minha boca."', r: 'Salmos 119:103' },
+        { art: '🍯👅', bg: 'aurora', fx: 'brilho', text: 'Davi disse que as palavras de Deus são mais doces na boca do que o mel!', r: 'Salmos 119:103' },
         { art: '🪔👣🌙', bg: 'noite', fx: 'luz', text: '"Lâmpada para os meus pés é a tua palavra, e luz para o meu caminho." Antigamente, não havia lanterna: levavam uma lamparina que iluminava só o próximo passo. A Palavra de Deus mostra o próximo passo certo.', r: 'Salmos 119:105' },
         { art: '💎💰📖', bg: 'aurora', fx: 'brilho', text: '"Eu amo os teus mandamentos mais do que o ouro, mais do que o ouro mais puro." A Bíblia vale mais que qualquer tesouro.', r: 'Salmos 119:127' },
         { art: '🐑🔍', bg: 'campo', text: 'E o salmo termina humilde: "Andei sem rumo como uma ovelha perdida. Procura o teu servo, porque não me esqueço dos teus mandamentos." Até quem ama a Palavra precisa do Bom Pastor.', r: 'Salmos 119:176' }
@@ -245,7 +245,7 @@ window.HISTORIA.arcs.salmos = {
         { art: '🤰👶✨', bg: 'aurora', fx: 'coracoes', text: '"Tu formaste o meu interior e me teceste no ventre da minha mãe." Deus fez cada bebê com cuidado, como quem tece uma roupa bonita, fio por fio.', r: 'Salmos 139:13' },
         { art: '🙌💛', bg: 'aurora', fx: 'brilho', text: '"Eu te louvo porque fui feito de um modo tão especial e maravilhoso! As tuas obras são maravilhosas, e eu sei disso muito bem."', r: 'Salmos 139:14' },
         { art: '📖📅', bg: 'aurora', text: '"Os teus olhos me viram antes de eu nascer, e todos os meus dias foram escritos no teu livro, antes de qualquer um deles existir."', r: 'Salmos 139:16' },
-        { art: '❤️🔍🛤️', bg: 'aurora', fx: 'luz', text: 'E Davi termina pedindo: "Sonda-me, ó Deus, e conhece o meu coração. Vê se há em mim algum caminho mau, e guia-me pelo caminho eterno."', r: 'Salmos 139:23-24' }
+        { art: '❤️🔍🛤️', bg: 'aurora', fx: 'luz', text: 'E Davi termina pedindo: "Sonda-me, ó Deus, e conhece o meu coração. Se eu estiver num caminho errado, me mostra, e me leva pelo caminho que dura para sempre."', r: 'Salmos 139:23-24' }
       ],
       god: 'Deus nos conhece completamente, está em todo lugar e nos fez de modo maravilhoso.',
       jesus: 'Deus nos conhece por inteiro, até o que ninguém vê. Mesmo assim, Ele nos ama. Jesus disse que até os cabelos da nossa cabeça estão contados (Mateus 10:30). E Jesus conhecia o coração das pessoas: sabia que Natanael estava debaixo da figueira antes de vê-lo (João 1:48). Ser totalmente conhecido e totalmente amado: isso é o que Jesus nos dá.',
@@ -271,7 +271,7 @@ window.HISTORIA.arcs.salmos = {
         { art: '✨☀️🌙⭐', bg: 'noite', fx: 'estrelas', text: 'No Salmo 148, o salmista chama o universo inteiro para louvar: "Louvem ao Senhor, todos os seus anjos! Louvem-no, sol e lua! Louvem-no, todas as estrelas luminosas!"', r: 'Salmos 148:1-3' },
         { art: '🐋🌊🔥❄️', bg: 'mar', fx: 'ondas', text: '"Louvem ao Senhor, monstros do mar e todos os abismos! Fogo e granizo, neve e neblina, vento forte que obedece à sua palavra!"', r: 'Salmos 148:7-8' },
         { art: '⛰️🌳🦁🐦', bg: 'campo', fx: 'vento', text: '"Montes e todas as colinas, árvores frutíferas e cedros, animais selvagens e o gado, bichos que rastejam e aves que voam!"', r: 'Salmos 148:9-10' },
-        { art: '👑👦👧👴', bg: 'aurora', fx: 'coracoes', text: '"Reis da terra e todos os povos, moços e moças, velhos e crianças: louvem o nome do Senhor, porque só o seu nome é exaltado!" As crianças também!', r: 'Salmos 148:11-13' },
+        { art: '👑👦👧👴', bg: 'aurora', fx: 'coracoes', text: '"Reis da terra e todos os povos, rapazes e moças, idosos e crianças: louvem o nome do Senhor, porque só o seu nome é exaltado!" As crianças também!', r: 'Salmos 148:11-13' },
         { art: '🎺🎵🥁', bg: 'aurora', fx: 'brilho', text: 'E o Salmo 150, o último, é como o final de uma grande orquestra: "Louvem a Deus com som de trombeta, com harpa e lira, com tamborim e dança, com instrumentos de cordas e flauta!"', r: 'Salmos 150:3-4' },
         { art: '🔔🔔💥', bg: 'aurora', fx: 'brilho', text: '"Louvem-no com címbalos sonoros! Louvem-no com címbalos retumbantes!" Que barulho de alegria!', r: 'Salmos 150:5' },
         { art: '🌬️🙌✨', bg: 'aurora', fx: 'coracoes', text: 'E a última frase do livro de Salmos é um convite para todos, inclusive você: "Tudo o que tem fôlego louve ao Senhor. Aleluia!"', r: 'Salmos 150:6' }

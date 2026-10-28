@@ -40,7 +40,7 @@ window.HISTORIA.arcs.igreja = {
         { art: '🧔🧔🧔🏠🙏', bg: 'cidade', text: 'Chegou o dia de Pentecostes, uma festa judaica cinquenta dias depois da Páscoa. Os discípulos estavam todos reunidos no mesmo lugar.', r: 'Atos 2:1' },
         { art: '🌪️🏠💨', bg: 'cidade', fx: 'vento', text: 'De repente, veio do céu um barulho como de um vento muito forte, que encheu toda a casa onde eles estavam!', r: 'Atos 2:2' },
         { art: '🔥🔥🔥🧔', bg: 'cidade', fx: 'luz', text: 'E apareceram línguas como de fogo, que se separaram e pousaram sobre cada um deles.', r: 'Atos 2:3' },
-        { art: '🕊️🧔🗣️🌍', bg: 'cidade', fx: 'brilho', text: 'Todos ficaram cheios do Espírito Santo e começaram a falar em outras línguas, conforme o Espírito dava a eles.', r: 'Atos 2:4' },
+        { art: '🕊️🧔🗣️🌍', bg: 'cidade', fx: 'brilho', text: 'Todos foram cheios do Espírito Santo e falaram em outras línguas, do jeito que o Espírito dava a eles.', r: 'Atos 2:4' },
         { art: '🌍👥👥👥', bg: 'cidade', text: 'Em Jerusalém estavam judeus de muitos países, que tinham vindo para a festa. Quando ouviram o barulho, uma multidão se juntou.', r: 'Atos 2:5-6' },
         { art: '👥😮👂🗣️', bg: 'cidade', fx: 'brilho', text: 'Todos ficaram espantados, porque cada um ouvia os discípulos falando na sua própria língua! "Eles não são galileus? Como cada um de nós os ouve na nossa língua natal?"', r: 'Atos 2:6-8' },
         { art: '🗺️🌍🌍🌍', bg: 'aurora', fx: 'brilho', text: 'Eram pessoas de muitos lugares: partos, medos, mesopotâmios, egípcios, gente de Roma, cretenses e árabes. E todos ouviam falar das grandes obras de Deus!', r: 'Atos 2:9-11' },
@@ -72,7 +72,7 @@ window.HISTORIA.arcs.igreja = {
         { art: '🪨🌅✨', bg: 'aurora', fx: 'brilho', text: '"Mas Deus o ressuscitou, rompendo as dores da morte, porque não era possível que a morte o segurasse! Davi já tinha falado disso no Salmo 16. E nós todos somos testemunhas!"', r: 'Atos 2:24-32' },
         { art: '👑🪑☁️', bg: 'aurora', fx: 'luz', text: '"Saibam com certeza, todo o povo de Israel: a esse Jesus, que vocês crucificaram, Deus o fez Senhor e Cristo!"', r: 'Atos 2:36' },
         { art: '👥💔❓', bg: 'cidade', text: 'Quando ouviram isso, as pessoas ficaram com o coração cortado e perguntaram: "Irmãos, o que devemos fazer?"', r: 'Atos 2:37' },
-        { art: '🧔💬💧🕊️', bg: 'cidade', fx: 'luz', text: 'Pedro respondeu: "Arrependam-se, e cada um de vocês seja batizado em nome de Jesus Cristo para perdão dos pecados, e vocês vão receber o dom do Espírito Santo. A promessa é para vocês, para os seus filhos e para todos os que estão longe."', r: 'Atos 2:38-39' },
+        { art: '🧔💬💧🕊️', bg: 'cidade', fx: 'luz', text: 'Pedro respondeu: "Arrependam-se! Cada um de vocês seja batizado no nome de Jesus Cristo, para que os pecados sejam perdoados, e vocês vão receber o dom do Espírito Santo. A promessa é para vocês, para os seus filhos e para todos os que estão longe."', r: 'Atos 2:38-39' },
         { art: '👥💧3️⃣0️⃣0️⃣0️⃣', bg: 'mar', fx: 'brilho', text: 'Os que aceitaram a mensagem foram batizados, e naquele dia uns três mil foram acrescentados à igreja!', r: 'Atos 2:41' },
         { art: '📖🍞🙏🤝', bg: 'cidade', fx: 'coracoes', text: 'Eles perseveravam no ensino dos apóstolos, na comunhão, no partir do pão e nas orações. Repartiam o que tinham com quem precisava, louvavam a Deus com alegria, e o Senhor acrescentava todos os dias os que iam sendo salvos.', r: 'Atos 2:42-47' }
       ],
@@ -127,7 +127,7 @@ window.HISTORIA.arcs.igreja = {
       scenes: [
         { art: '🧔🧔📣👮', bg: 'cidade', text: 'Enquanto Pedro e João falavam ao povo, os sacerdotes, o capitão da guarda do templo e os saduceus ficaram irritados, porque eles anunciavam a ressurreição em Jesus. Prenderam os dois.', r: 'Atos 4:1-3' },
         { art: '👥5️⃣0️⃣0️⃣0️⃣', bg: 'cidade', fx: 'brilho', text: 'Mas muitos que ouviram creram, e o número de homens chegou a uns cinco mil!', r: 'Atos 4:4' },
-        { art: '👴👴⚖️🧔🧔', bg: 'palacio', text: 'No dia seguinte, os líderes perguntaram: "Com que poder ou em nome de quem vocês fizeram isso?"', r: 'Atos 4:5-7' },
+        { art: '👴👴⚖️🧔🧔', bg: 'palacio', text: 'No dia seguinte, os líderes quiseram saber com que poder, ou em nome de quem, eles tinham feito aquilo.', r: 'Atos 4:5-7' },
         { art: '🧔🕊️📣', bg: 'palacio', fx: 'luz', text: 'Pedro, cheio do Espírito Santo, respondeu: "Foi em nome de Jesus Cristo, a quem vocês crucificaram e Deus ressuscitou. Ele é a pedra que vocês, os construtores, rejeitaram, e que se tornou a pedra principal."', r: 'Atos 4:8-11; Salmos 118:22' },
         { art: '✨🛤️1️⃣', bg: 'aurora', fx: 'luz', text: '"E não há salvação em nenhum outro, porque debaixo do céu não existe nenhum outro nome, dado entre os homens, pelo qual devamos ser salvos."', r: 'Atos 4:12' },
         { art: '👴😮🧔🧔', bg: 'palacio', text: 'Os líderes ficaram admirados com a coragem de Pedro e João, porque eram homens simples e sem estudo. E reconheceram que eles tinham estado com Jesus.', r: 'Atos 4:13' },
@@ -219,7 +219,7 @@ window.HISTORIA.arcs.igreja = {
         { art: '🧔🏾🛞🐴📜', bg: 'deserto', text: 'Na estrada vinha uma carruagem. Nela estava um homem importante da Etiópia, tesoureiro da rainha Candace. Ele tinha ido adorar em Jerusalém e voltava lendo em voz alta o livro do profeta Isaías.', r: 'Atos 8:27-28' },
         { art: '🕊️💬🧔🏃', bg: 'deserto', fx: 'luz', text: 'O Espírito disse a Filipe: "Aproxime-se dessa carruagem." Filipe correu até lá e ouviu o homem lendo. Perguntou: "Você entende o que está lendo?"', r: 'Atos 8:29-30' },
         { art: '🧔🏾🤷📜', bg: 'deserto', text: 'Ele respondeu: "Como vou entender, se ninguém me explica?" E convidou Filipe para subir e sentar com ele.', r: 'Atos 8:31' },
-        { art: '📜🐑🤐', bg: 'deserto', fx: 'luz', text: 'Ele estava lendo Isaías 53: "Como ovelha foi levado ao matadouro, e como cordeiro mudo diante do que o tosquia, assim não abriu a sua boca." E perguntou: "De quem o profeta está falando? Dele mesmo ou de outro?"', r: 'Atos 8:32-34; Isaías 53:7' },
+        { art: '📜🐑🤐', bg: 'deserto', fx: 'luz', text: 'Ele estava lendo Isaías 53, que fala de alguém levado como ovelha para o matadouro, quietinho como um cordeiro quando cortam a sua lã, sem dizer nada. E perguntou: "De quem o profeta está falando? Dele mesmo ou de outro?"', r: 'Atos 8:32-34; Isaías 53:7' },
         { art: '🧔💬✨📜', bg: 'deserto', fx: 'luz', text: 'Então Filipe, começando por aquele texto, anunciou a ele a boa notícia de Jesus!', r: 'Atos 8:35' },
         { art: '💧🧔🏾🙏', bg: 'mar', fx: 'ondas', text: 'Seguindo pela estrada, chegaram a um lugar com água. O homem disse: "Aqui há água! O que me impede de ser batizado?" Ele mandou parar a carruagem, e Filipe o batizou.', r: 'Atos 8:36-38' },
         { art: '🧔🏾😊🛞🌍', bg: 'aurora', fx: 'brilho', text: 'E o etíope seguiu o seu caminho, cheio de alegria, levando a boa notícia de Jesus para a África!', r: 'Atos 8:39' }
@@ -305,9 +305,9 @@ window.HISTORIA.arcs.igreja = {
       recap: 'Na lição passada, Cornélio e a sua família receberam o Espírito Santo e foram batizados.',
       scenes: [
         { art: '👥🛤️🌊🏙️', bg: 'mar', fx: 'ondas', text: 'Os cristãos que se espalharam por causa da perseguição chegaram até lugares distantes, como a ilha de Chipre e a grande cidade de Antioquia, na Síria.', r: 'Atos 11:19' },
-        { art: '🧔📣👥🌍', bg: 'cidade', fx: 'luz', text: 'Em Antioquia, alguns começaram a falar de Jesus também aos gregos, que não eram judeus. E a mão do Senhor estava com eles: um grande número creu e se converteu ao Senhor.', r: 'Atos 11:20-21' },
+        { art: '🧔📣👥🌍', bg: 'cidade', fx: 'luz', text: 'Em Antioquia, alguns começaram a falar de Jesus também aos gregos, que não eram judeus. E a mão do Senhor estava com eles: muita gente creu e se voltou para o Senhor.', r: 'Atos 11:20-21' },
         { art: '🧔🏃🏙️😊', bg: 'cidade', fx: 'brilho', text: 'A igreja de Jerusalém mandou Barnabé até lá. Quando ele chegou e viu a graça de Deus, ficou muito alegre e animou todos a continuarem firmes no Senhor, de todo o coração.', r: 'Atos 11:22-23' },
-        { art: '🧔💛🕊️', bg: 'cidade', fx: 'coracoes', text: 'Barnabé era um homem bom, cheio do Espírito Santo e de fé. E muita gente se juntou ao Senhor.', r: 'Atos 11:24' },
+        { art: '🧔💛🕊️', bg: 'cidade', fx: 'coracoes', text: 'Barnabé era um homem bom, cheio de fé e do Espírito Santo. E muitas pessoas vieram para o Senhor.', r: 'Atos 11:24' },
         { art: '🧔🛤️🔍🧔', bg: 'deserto', text: 'Então Barnabé foi até a cidade de Tarso procurar Saulo, o antigo perseguidor, e o trouxe para Antioquia.', r: 'Atos 11:25-26' },
         { art: '🧔🧔📖👥', bg: 'cidade', fx: 'luz', text: 'Durante um ano inteiro, Barnabé e Saulo se reuniram com a igreja e ensinaram muita gente.', r: 'Atos 11:26' },
         { art: '📛✨👥', bg: 'aurora', fx: 'brilho', text: 'E foi em Antioquia que, pela primeira vez, os discípulos foram chamados de "cristãos", que quer dizer "os de Cristo"!', r: 'Atos 11:26' },

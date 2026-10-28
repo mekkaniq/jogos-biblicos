@@ -9,9 +9,9 @@ window.HISTORIA.arcs.jeremias = {
       recap: 'No arco passado, Isaías e os outros profetas anunciaram o Messias e chamaram Judá ao arrependimento.',
       scenes: [
         { art: '👦👑8️⃣', bg: 'palacio', text: 'Depois de reis muito maus, como Manassés, um menino de apenas oito anos se tornou rei de Judá. O nome dele era Josias.', r: '2 Reis 21:1-2; 22:1' },
-        { art: '👦🙏✨', bg: 'palacio', fx: 'luz', text: 'Josias fez o que era reto aos olhos do Senhor. Ainda jovem, com dezesseis anos, ele começou a buscar o Deus de Davi.', r: '2 Reis 22:2; 2 Crônicas 34:3' },
+        { art: '👦🙏✨', bg: 'palacio', fx: 'luz', text: 'Josias agradou a Deus e fez o que era certo. Ainda jovem, com dezesseis anos, ele começou a buscar o Deus de Davi.', r: '2 Reis 22:2; 2 Crônicas 34:3' },
         { art: '🔨🏛️👷', bg: 'cidade', text: 'Quando tinha vinte e seis anos, Josias mandou consertar o templo, que estava abandonado e estragado.', r: '2 Reis 22:3-6' },
-        { art: '🧔📜😮', bg: 'cidade', fx: 'brilho', text: 'Durante a obra, o sacerdote Hilquias achou algo no meio da bagunça: "Encontrei o livro da Lei na casa do Senhor!" O livro de Deus tinha ficado perdido e esquecido!', r: '2 Reis 22:8' },
+        { art: '🧔📜😮', bg: 'cidade', fx: 'brilho', text: 'Durante a obra, o sacerdote Hilquias achou algo no meio da bagunça: "Achei o livro da Lei no templo!" O livro de Deus tinha ficado perdido e esquecido!', r: '2 Reis 22:8' },
         { art: '📜👂👑😢', bg: 'palacio', text: 'O escrivão Safã leu o livro para o rei. Quando Josias ouviu as palavras da Lei, rasgou as roupas, muito triste: "Os nossos pais não obedeceram às palavras deste livro!"', r: '2 Reis 22:10-13' },
         { art: '👩‍🦳📣👑', bg: 'cidade', fx: 'luz', text: 'Josias mandou consultar a profetisa Hulda. Ela disse: "Porque o seu coração se comoveu e você se humilhou diante do Senhor, Deus ouviu você."', r: '2 Reis 22:14-20' },
         { art: '👑📜👥', bg: 'cidade', fx: 'luz', text: 'Josias reuniu todo o povo, do menor ao maior, e leu em voz alta o livro da aliança. Depois, prometeu diante do Senhor guardar os seus mandamentos de todo o coração, e todo o povo concordou.', r: '2 Reis 23:1-3' },
@@ -70,7 +70,7 @@ window.HISTORIA.arcs.jeremias = {
         { art: '🧔🏺🔄', bg: 'cidade', text: 'O oleiro é quem faz vasos de barro. Jeremias desceu e viu o oleiro trabalhando: ele girava uma roda com os pés, e com as mãos dava forma ao barro molhado.', r: 'Jeremias 18:3' },
         { art: '🏺💥😕', bg: 'cidade', text: 'Mas o vaso que ele estava fazendo se estragou nas mãos dele. Ficou torto.', r: 'Jeremias 18:4' },
         { art: '🧔🤲🏺✨', bg: 'cidade', fx: 'brilho', text: 'O oleiro não jogou o barro fora. Ele amassou tudo de novo e fez outro vaso, do jeito que achou melhor.', r: 'Jeremias 18:4' },
-        { art: '✨💬🏺', bg: 'aurora', fx: 'luz', text: 'Então o Senhor disse: "Ó casa de Israel, será que eu não posso fazer com vocês como este oleiro fez? Como o barro na mão do oleiro, assim são vocês na minha mão."', r: 'Jeremias 18:5-6' },
+        { art: '✨💬🏺', bg: 'aurora', fx: 'luz', text: 'Então o Senhor disse: "Ó casa de Israel, será que eu não posso fazer com vocês como este oleiro fez? Vocês estão na minha mão como o barro está na mão do oleiro."', r: 'Jeremias 18:5-6' },
         { art: '🔙🙏🌱', bg: 'aurora', fx: 'luz', text: '"Se um povo se arrepender da sua maldade, eu também desisto do mal que tinha pensado fazer." Deus estava chamando o povo a voltar enquanto ainda havia tempo.', r: 'Jeremias 18:7-8, 11' },
         { art: '👥🙉🚶', bg: 'cidade', text: 'Mas o povo respondeu: "Não adianta! Vamos seguir os nossos próprios planos, cada um com a dureza do seu coração mau." Eles não quiseram deixar Deus moldá-los.', r: 'Jeremias 18:12' }
       ],
@@ -217,7 +217,7 @@ window.HISTORIA.arcs.jeremias = {
         { art: '🚧🏃😈', bg: 'deserto', text: 'Pior: eles pegaram as coisas que sobraram e ficaram nas estradas para prender os que tentavam fugir!', r: 'Obadias 1:13-14' },
         { art: '🧔📣⛰️', bg: 'monte', fx: 'luz', text: 'Então Deus mandou o profeta Obadias, cujo nome quer dizer "servo do Senhor": "Ainda que você subisse como a águia e fizesse o seu ninho entre as estrelas, eu te derrubaria de lá, diz o Senhor."', r: 'Obadias 1:1, 4' },
         { art: '🪞🔄⚖️', bg: 'aurora', text: '"Como você fez, assim vai ser feito com você. O mal que você fez vai voltar sobre a sua cabeça."', r: 'Obadias 1:15' },
-        { art: '⛰️👑✨', bg: 'aurora', fx: 'brilho', text: 'Mas o livro termina com esperança para o povo de Deus: "No monte Sião haverá livramento, e ele será santo. E o reino será do Senhor."', r: 'Obadias 1:17, 21' }
+        { art: '⛰️👑✨', bg: 'aurora', fx: 'brilho', text: 'Mas o livro termina com esperança para o povo de Deus: no monte Sião haveria salvação, o monte seria santo, e o reino seria do Senhor.', r: 'Obadias 1:17, 21' }
       ],
       god: 'Deus derruba o orgulho e se importa com como tratamos o nosso próximo, principalmente na hora da dificuldade. No fim, o reino é do Senhor.',
       jesus: 'Edom ficou olhando de longe enquanto o irmão sofria. Jesus contou a história do bom samaritano, que não passou de longe, mas parou para ajudar (Lucas 10:30-37). Jesus ensinou: "Tudo o que vós quereis que os homens vos façam, fazei-lho também vós" (Mateus 7:12). E Jesus é o Rei do monte Sião: "O reino será do Senhor."',

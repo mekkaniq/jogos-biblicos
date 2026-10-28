@@ -24,7 +24,7 @@
 html.big { --fs: 21px; }
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body { margin: 0; padding: 0; }
-html { font-size: var(--fs); background: var(--green-950); }
+html { font-size: var(--fs); background: var(--green-950); overflow-x: hidden; }
 body {
   font-family: var(--serif); color: var(--ink-900); line-height: 1.45; min-height: 100vh; min-height: 100dvh;
   background: var(--green-950) url('jardim.svg') center top / cover fixed;
@@ -835,8 +835,8 @@ body.turma .kd-topts div { font-size: clamp(1.15rem, 3vw, 2rem); }
 /* ===================== v1.4 — cenas vivas ===================== */
 .kd-scene { position: relative; height: 240px; border-radius: 28px; overflow: hidden; display: grid; place-items: center; background: var(--bgimg) center / cover; border: 3px solid #f0c98a; animation: kdin .45s ease both; }
 .kd-scene.back { animation-name: kdinb; }
-@keyframes kdin { from { transform: translateX(24px); opacity: 0; } }
-@keyframes kdinb { from { transform: translateX(-24px); opacity: 0; } }
+@keyframes kdin { from { transform: translateX(14px) scale(.97); opacity: 0; } }
+@keyframes kdinb { from { transform: translateX(-14px) scale(.97); opacity: 0; } }
 .kd-art { position: relative; z-index: 2; display: flex; gap: 2px; align-items: flex-end; justify-content: center; flex-wrap: wrap; max-width: 86%; padding-bottom: 10px; }
 .kd-art span { display: inline-block; font-size: 3.6rem; line-height: 1.1; filter: drop-shadow(0 6px 8px rgba(0, 0, 0, .3)); animation: kdart .6s cubic-bezier(.3, 1.6, .5, 1) var(--d) both, kdfloat var(--f) ease-in-out calc(var(--d) + .6s) infinite; }
 .kd-art.n1 span { font-size: 6rem; } .kd-art.n2 span { font-size: 4.6rem; } .kd-art.n3 span { font-size: 4rem; }

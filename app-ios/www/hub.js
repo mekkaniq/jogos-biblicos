@@ -46,7 +46,7 @@
         <button class="today parch ${pd.done ? 'ok' : ''}" data-go="#/palavra"><span class="ti">${I.sun}</span><b>Palavra do Dia</b><small>${pd.done ? (pd.win ? `Acertou em ${pd.tries}/6 ✓` : 'Feita ✓') : `nº ${pd.num} · 5 letras`}</small><em class="nw">${pd.done ? '' : 'NOVO'}</em></button>
         <button class="today parch ${cd ? 'ok' : ''}" data-go="#/caca/dia"><span class="ti">${I.search}</span><b>Desafio do Dia</b><small>${cd ? 'Feito ✓' : 'Caça-palavras'}</small></button>
       </div>
-      <button class="kids-banner" data-go="#/kids"><img src="lumi-oi.webp" alt="Lumi"><div><b>Cantinho Kids</b><span>12 histórias da Bíblia com a Lumi, para crianças de 4 a 10 anos</span></div><em class="nw">NOVO</em></button>
+      <button class="kids-banner" data-go="#/kids"><img src="lumi-oi.webp" alt="Lumi"><div><b>Cantinho Kids</b><span>${App.historia ? '12 histórias com a Lumi e A Grande História da Bíblia, do Gênesis ao Apocalipse' : '12 histórias da Bíblia com a Lumi, para crianças de 4 a 10 anos'}</span></div><em class="nw">NOVO</em></button>
       <div class="section-title"><h2>Escolha um jogo</h2><span>${games.length + 1} jogos</span></div>
       <div class="gtiles">${games.map(g => `
         <button class="gtile" data-go="#/${g.id}" style="background-image:url('${g.scene}.svg')">

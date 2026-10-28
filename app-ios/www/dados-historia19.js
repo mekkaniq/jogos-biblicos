@@ -11,11 +11,11 @@ window.HISTORIA.arcs.isaias = {
         { art: '👑🕊️🧔', bg: 'cidade', text: 'No ano em que o rei Uzias morreu, um jovem chamado Isaías estava no templo de Jerusalém. E ali ele teve uma visão impressionante.', r: 'Isaías 6:1' },
         { art: '✨🪑✨', bg: 'aurora', fx: 'luz', text: 'Isaías viu o Senhor sentado num trono alto e elevado, e as abas da sua roupa enchiam o templo. Era uma luz e uma glória que ninguém consegue descrever.', r: 'Isaías 6:1' },
         { art: '🔥🪽🔥', bg: 'aurora', fx: 'luz', text: 'Acima dele estavam serafins, seres celestiais de fogo, cada um com seis asas: com duas cobriam o rosto, com duas cobriam os pés e com duas voavam.', r: 'Isaías 6:2' },
-        { art: '🔥📣✨', bg: 'aurora', fx: 'luz', text: 'Eles clamavam uns para os outros: "Santo, santo, santo é o Senhor dos Exércitos! Toda a terra está cheia da sua glória!"', r: 'Isaías 6:3' },
+        { art: '🔥📣✨', bg: 'aurora', fx: 'luz', text: 'Eles clamavam uns para os outros que o Senhor dos Exércitos é santo, santo, santo, e que a sua glória enche a terra inteira!', r: 'Isaías 6:3' },
         { art: '🏛️💨🌫️', bg: 'aurora', fx: 'vento', text: 'Com o som das vozes, as portas do templo tremeram, e a casa se encheu de fumaça.', r: 'Isaías 6:4' },
-        { art: '🧔😨💔', bg: 'noite', text: 'Isaías ficou apavorado: "Ai de mim! Estou perdido! Porque eu sou um homem de lábios impuros, vivo no meio de um povo de lábios impuros, e os meus olhos viram o Rei, o Senhor dos Exércitos!"', r: 'Isaías 6:5' },
+        { art: '🧔😨💔', bg: 'noite', text: 'Isaías ficou apavorado: "Ai de mim! Estou perdido! A minha boca não é pura, e eu moro no meio de um povo de boca impura. E eu vi o Rei, o Senhor dos Exércitos, com os meus próprios olhos!"', r: 'Isaías 6:5' },
         { art: '🔥🪨👄', bg: 'aurora', fx: 'luz', text: 'Então um dos serafins voou até ele com uma brasa viva tirada do altar, tocou a boca de Isaías e disse: "Isto tocou os seus lábios. A sua culpa foi tirada, e o seu pecado, perdoado."', r: 'Isaías 6:6-7' },
-        { art: '✨❓🧔🙋', bg: 'aurora', fx: 'brilho', text: 'Então Isaías ouviu a voz do Senhor: "A quem enviarei, e quem há de ir por nós?" E Isaías respondeu: "Eis-me aqui! Envia-me a mim!"', r: 'Isaías 6:8' }
+        { art: '✨❓🧔🙋', bg: 'aurora', fx: 'brilho', text: 'Então Isaías ouviu o Senhor perguntar quem Ele poderia enviar, quem iria em nome dele. E Isaías respondeu na hora: "Eu estou aqui! Pode me mandar!"', r: 'Isaías 6:8' }
       ],
       god: 'Deus é santo, santo, santo, totalmente puro e glorioso. Ele perdoa o pecador e o envia para servir.',
       jesus: 'O apóstolo João diz que Isaías "viu a glória de Jesus e falou dele" nesta visão (João 12:41). E a brasa do altar que tirou o pecado de Isaías aponta para o sacrifício de Jesus no altar da cruz, que tira de verdade o nosso pecado. Quem é perdoado por Jesus também pode dizer: "Eis-me aqui, envia-me!"',
@@ -41,7 +41,7 @@ window.HISTORIA.arcs.isaias = {
         { art: '🧔📣👑', bg: 'palacio', fx: 'luz', text: 'Isaías disse: "Não tenha medo! Confie no Senhor. Peça um sinal a Deus." Mas Acaz não quis confiar.', r: 'Isaías 7:4, 10-12' },
         { art: '✨📜⭐', bg: 'noite', fx: 'estrelas', text: 'Então o próprio Senhor deu um sinal, que ia muito além daquele tempo: "Eis que a virgem vai conceber e dar à luz um filho, e o seu nome será Emanuel."', r: 'Isaías 7:14' },
         { art: '💛🤝✨', bg: 'aurora', fx: 'luz', text: 'Emanuel é um nome maravilhoso. Quer dizer "Deus conosco". Deus ia vir morar com o seu povo de um jeito novo!', r: 'Isaías 7:14; Mateus 1:23' },
-        { art: '🌑➡️🌅', bg: 'aurora', fx: 'luz', text: 'Isaías continuou: "O povo que andava em trevas viu uma grande luz. Sobre os que moravam na terra da sombra da morte, a luz brilhou." E essa luz ia começar na Galileia!', r: 'Isaías 9:1-2' },
+        { art: '🌑➡️🌅', bg: 'aurora', fx: 'luz', text: 'Isaías continuou: o povo que vivia no escuro ia ver uma luz muito forte! A luz ia brilhar sobre quem morava na terra da sombra da morte. E essa luz ia começar na Galileia!', r: 'Isaías 9:1-2' },
         { art: '⭐👑🎁', bg: 'noite', fx: 'estrelas', text: '"Porque um menino nos nasceu, um filho nos foi dado. E o governo está sobre os seus ombros."', r: 'Isaías 9:6' },
         { art: '✨📛✨', bg: 'aurora', fx: 'brilho', text: '"E o seu nome será: Maravilhoso Conselheiro, Deus Forte, Pai da Eternidade, Príncipe da Paz." Que menino é esse que é chamado de Deus Forte?', r: 'Isaías 9:6' },
         { art: '👑🪑♾️', bg: 'aurora', fx: 'luz', text: '"Ele vai se sentar no trono de Davi, e o seu reino de paz nunca vai ter fim. O zelo do Senhor dos Exércitos vai fazer isso."', r: 'Isaías 9:7' }
@@ -132,7 +132,7 @@ window.HISTORIA.arcs.isaias = {
         { art: '👑😢🏛️', bg: 'cidade', text: 'Ezequias rasgou as roupas, vestiu pano de saco e foi ao templo. Mandou chamar o profeta Isaías, que respondeu: "Assim diz o Senhor: não tenha medo das palavras que você ouviu."', r: '2 Reis 19:1-7' },
         { art: '📜😈👑', bg: 'palacio', text: 'Senaqueribe mandou uma carta ameaçadora: "Não deixe o seu Deus, em quem você confia, te enganar!"', r: '2 Reis 19:9-13' },
         { art: '👑📜🙏🏛️', bg: 'cidade', fx: 'luz', text: 'Ezequias pegou a carta, subiu ao templo e a abriu diante do Senhor. Ele colocou o problema na frente de Deus!', r: '2 Reis 19:14' },
-        { art: '👑🙏✨', bg: 'cidade', fx: 'luz', text: 'E orou: "Ó Senhor, Deus de Israel, tu és o único Deus de todos os reinos da terra. Tu fizeste os céus e a terra. Livra-nos agora, para que todos os reinos saibam que só tu és o Senhor!"', r: '2 Reis 19:15-19' },
+        { art: '👑🙏✨', bg: 'cidade', fx: 'luz', text: 'E orou: "Senhor, Deus de Israel, só tu és Deus sobre todos os reinos do mundo. Foste tu que criaste o céu e a terra. Livra-nos agora, para que todos os reinos saibam que só tu és o Senhor!"', r: '2 Reis 19:15-19' },
         { art: '🧔📣🛡️', bg: 'aurora', fx: 'luz', text: 'Isaías mandou a resposta de Deus: "O rei da Assíria não vai entrar nesta cidade, nem vai atirar uma flecha aqui. Eu vou defender esta cidade, por amor de mim e de Davi, meu servo."', r: '2 Reis 19:32-34' },
         { art: '🌙✨⛺⛺', bg: 'noite', fx: 'luz', text: 'Naquela mesma noite, o Anjo do Senhor passou pelo acampamento da Assíria, e o grande exército foi derrotado. De manhã, Senaqueribe voltou para Nínive, envergonhado, e nunca mais voltou.', r: '2 Reis 19:35-36' }
       ],
@@ -304,9 +304,9 @@ window.HISTORIA.arcs.isaias = {
         { art: '🏙️😈⚔️', bg: 'cidade', text: 'Lembra de Nínive, que se arrependeu com Jonas? Uns cem anos depois, ela voltou a ser muito cruel, maltratando todos os povos.', r: 'Naum 3:1, 19' },
         { art: '🧔📣🏙️', bg: 'cidade', fx: 'luz', text: 'Então Deus mandou o profeta Naum anunciar que Nínive ia cair. O nome Naum quer dizer "consolo". Era um consolo saber que Deus não deixa o mal vencer para sempre.', r: 'Naum 1:1-3' },
         { art: '🏰🛡️💛', bg: 'monte', fx: 'luz', text: 'Naum escreveu: "O Senhor é bom, uma fortaleza no dia da angústia. Ele conhece os que confiam nele."', r: 'Naum 1:7' },
-        { art: '⛰️👣📣', bg: 'monte', fx: 'brilho', text: '"Vejam sobre os montes os pés do que traz boas notícias, do que anuncia a paz!"', r: 'Naum 1:15' },
+        { art: '⛰️👣📣', bg: 'monte', fx: 'brilho', text: '"Olhem lá nos montes: vem chegando alguém trazendo boas notícias, anunciando a paz!"', r: 'Naum 1:15' },
         { art: '🧔👑📜', bg: 'palacio', text: 'Mais tarde, no tempo do bom rei Josias, Deus chamou Sofonias, que era bisneto do rei Ezequias. Ele avisou Judá: "Busquem o Senhor, todos os humildes da terra!"', r: 'Sofonias 1:1; 2:3' },
-        { art: '🌍🗣️🙏', bg: 'aurora', fx: 'luz', text: 'Sofonias anunciou um dia em que Deus ia mudar o coração dos povos: "Vou dar aos povos lábios puros, para que todos invoquem o nome do Senhor e o sirvam juntos."', r: 'Sofonias 3:9' },
+        { art: '🌍🗣️🙏', bg: 'aurora', fx: 'luz', text: 'Sofonias anunciou um dia em que Deus ia mudar o coração dos povos: "Vou dar aos povos lábios puros, para que todos chamem pelo nome do Senhor e o sirvam juntos."', r: 'Sofonias 3:9' },
         { art: '👧🎶🎉', bg: 'cidade', fx: 'brilho', text: '"Cante, ó filha de Sião! Alegre-se de todo o coração! O Senhor tirou o seu castigo. O Rei de Israel, o Senhor, está no meio de você!"', r: 'Sofonias 3:14-15' },
         { art: '✨🎶💛', bg: 'aurora', fx: 'coracoes', text: 'E então vem uma das frases mais lindas da Bíblia: "O Senhor, o seu Deus, está no meio de você, poderoso para salvar. Ele vai se alegrar em você com júbilo, vai renovar você no seu amor, e vai se alegrar em você com cânticos!"', r: 'Sofonias 3:17' },
         { art: '🤔🎶✨', bg: 'aurora', fx: 'brilho', text: 'Imagine: nós cantamos para Deus, mas Sofonias diz que Deus também canta de alegria pelo seu povo!', r: 'Sofonias 3:17' }

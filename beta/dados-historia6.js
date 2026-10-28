@@ -69,9 +69,9 @@ window.HISTORIA.arcs.exodo = {
       recap: 'Na lição passada, Moisés fugiu para Midiã e virou pastor, e Deus ouviu o clamor do povo no Egito.',
       scenes: [
         { art: '🧔🐑⛰️', bg: 'monte', text: 'Moisés levou as ovelhas do sogro para o outro lado do deserto, até o monte Horebe, o monte de Deus.', r: 'Êxodo 3:1' },
-        { art: '🌿🔥', bg: 'monte', fx: 'luz', text: 'Ali, o Anjo do Senhor apareceu numa chama de fogo, no meio de uma sarça, um arbusto. Moisés olhou e viu: o arbusto pegava fogo, mas não se queimava!', r: 'Êxodo 3:2' },
+        { art: '🌿🔥', bg: 'monte', fx: 'luz', text: 'Ali, o Anjo do Senhor apareceu como uma chama de fogo saindo do meio de uma sarça, um arbusto. Moisés olhou e viu: o arbusto pegava fogo, mas não se queimava!', r: 'Êxodo 3:2' },
         { art: '🔥💬🧔', bg: 'monte', fx: 'luz', text: 'Moisés se aproximou para ver aquilo, e Deus chamou do meio da sarça: "Moisés! Moisés!" Ele respondeu: "Eis-me aqui."', r: 'Êxodo 3:3-4' },
-        { art: '👡🙇', bg: 'monte', fx: 'luz', text: '"Não chegue mais perto. Tire as sandálias, porque o lugar onde você está é terra santa. Eu sou o Deus de Abraão, de Isaque e de Jacó." Moisés cobriu o rosto, com medo de olhar para Deus.', r: 'Êxodo 3:5-6' },
+        { art: '👡🙇', bg: 'monte', fx: 'luz', text: '"Não chegue mais perto. Tire as sandálias, porque o lugar onde você está é terra santa. Eu sou o Deus do seu pai, o Deus de Abraão, Isaque e Jacó." Moisés cobriu o rosto, com medo de olhar para Deus.', r: 'Êxodo 3:5-6' },
         { art: '🔥👂😢', bg: 'monte', fx: 'luz', text: 'Deus disse: "Eu vi a aflição do meu povo no Egito, ouvi o clamor deles e conheço a sua dor. Desci para livrá-los. Agora vá: eu envio você ao Faraó, para tirar o meu povo do Egito."', r: 'Êxodo 3:7-10' },
         { art: '🧔😟❓', bg: 'monte', text: 'Moisés disse: "Quem sou eu para ir ao Faraó?" Deus respondeu: "Eu estarei com você." Moisés perguntou: "E se perguntarem qual é o seu nome?"', r: 'Êxodo 3:11-13' },
         { art: '🔥✨', bg: 'monte', fx: 'brilho', text: 'Deus disse: "EU SOU O QUE SOU. Diga: EU SOU me enviou a vocês." O nome de Deus quer dizer que Ele sempre existiu, não depende de ninguém e nunca muda.', r: 'Êxodo 3:14-15' },
@@ -104,7 +104,7 @@ window.HISTORIA.arcs.exodo = {
         { art: '👑😏', bg: 'palacio', text: 'O Faraó respondeu com orgulho: "Quem é o Senhor, para eu obedecer a Ele? Eu não conheço o Senhor e não vou deixar Israel ir!"', r: 'Êxodo 5:2' },
         { art: '🧱🌾🚫', bg: 'deserto', text: 'E o Faraó ainda piorou tudo: "Não deem mais palha para os tijolos. Eles que procurem palha, mas façam a mesma quantidade de tijolos!"', r: 'Êxodo 5:6-9' },
         { art: '😓🧱', bg: 'deserto', text: 'O povo sofreu ainda mais. Os capatazes batiam nos chefes hebreus. E eles ficaram bravos com Moisés e Arão: "Vocês só pioraram as coisas!"', r: 'Êxodo 5:14, 20-21' },
-        { art: '🧔🙏😟', bg: 'noite', text: 'Moisés levou a tristeza a Deus: "Senhor, por que fizeste mal a este povo? Por que me enviaste? Desde que falei com o Faraó, tudo piorou!"', r: 'Êxodo 5:22-23' },
+        { art: '🧔🙏😟', bg: 'noite', text: 'Moisés levou a tristeza a Deus: "Senhor, por que deixaste este povo sofrer assim? Para que me mandaste aqui? Desde que falei com o Faraó, tudo piorou!"', r: 'Êxodo 5:22-23' },
         { art: '✨💬', bg: 'aurora', fx: 'luz', text: 'Deus respondeu: "Agora você vai ver o que vou fazer ao Faraó. Eu sou o Senhor. Vou tirar vocês da escravidão com braço estendido e grandes juízos."', r: 'Êxodo 6:1, 6' },
         { art: '💛🤝', bg: 'aurora', fx: 'brilho', text: '"Eu vou tomar vocês como meu povo, e serei o seu Deus. E vocês vão saber que eu sou o Senhor, que os tirou do Egito." Às vezes, as coisas pioram antes de Deus agir. Mas Ele age!', r: 'Êxodo 6:7-8' }
       ],
@@ -138,7 +138,7 @@ window.HISTORIA.arcs.exodo = {
         { art: '🛡️💛', bg: 'aurora', fx: 'luz', text: 'Deus disse: "Vou fazer diferença entre o meu povo e o seu povo, para você saber que eu sou o Senhor no meio da terra." Deus protege os seus.', r: 'Êxodo 8:22-23' },
         { art: '👑😤🔁', bg: 'palacio', text: 'O Faraó prometeu de novo deixar o povo ir. Mas, quando as moscas foram embora, ele endureceu o coração mais uma vez. Que orgulho teimoso!', r: 'Êxodo 8:28-32' }
       ],
-      god: 'O Senhor é maior que todos os deuses falsos. E Ele faz diferença entre o seu povo e os outros.',
+      god: 'Nenhum deus falso chega perto do Senhor: Ele é o maior de todos. E Ele faz diferença entre o seu povo e os outros.',
       jesus: 'Os magos do Egito reconheceram: "Isso é o dedo de Deus!" Jesus também expulsava o mal e curava, e disse: "Se eu expulso os demônios pelo dedo de Deus, certamente a vós é chegado o reino de Deus" (Lucas 11:20). O mesmo poder que venceu o Egito estava em Jesus.',
       verse: { ref: 'Êxodo 7:5', tx: 'E os egípcios saberão que eu sou o Senhor.' },
       small: [
@@ -219,13 +219,13 @@ window.HISTORIA.arcs.exodo = {
       recap: 'Na lição passada, Deus livrou o seu povo na noite da Páscoa, e eles saíram do Egito.',
       scenes: [
         { art: '👥🚶🏜️', bg: 'deserto', fx: 'vento', text: 'O povo saiu do Egito, uma multidão enorme! E levaram também muitas coisas que os egípcios deram a eles: ouro, prata e roupas.', r: 'Êxodo 12:35-36' },
-        { art: '🍞🚫🦠', bg: 'campo', text: 'Deus mandou que, todo ano, eles lembrassem esse dia com a festa dos pães sem fermento, durante sete dias. E que contassem aos filhos: "O Senhor nos tirou do Egito com mão forte."', r: 'Êxodo 13:3-10' },
+        { art: '🍞🚫🦠', bg: 'campo', text: 'Deus mandou que, todo ano, eles lembrassem esse dia com a festa dos pães sem fermento, durante sete dias. E que contassem aos filhos como Deus os tirou do Egito com o seu braço forte.', r: 'Êxodo 13:3-10' },
         { art: '👦❓👨', bg: 'campo', text: 'Deus disse: "Quando o seu filho perguntar: o que significa isso?, você vai explicar." Deus quer que as famílias contem a história da salvação às crianças!', r: 'Êxodo 13:14' },
         { art: '🧔🦴', bg: 'deserto', text: 'Moisés levou com eles os ossos de José. Lembra? José tinha pedido isso antes de morrer, quatrocentos anos antes. A promessa estava se cumprindo!', r: 'Êxodo 13:19; Gênesis 50:25' },
         { art: '🗺️↪️', bg: 'deserto', text: 'Havia um caminho curto para Canaã, pela terra dos filisteus. Mas Deus não levou o povo por lá, para que eles não ficassem com medo das guerras e quisessem voltar. Deus levou pelo caminho do deserto.', r: 'Êxodo 13:17-18' },
         { art: '☁️🏜️', bg: 'deserto', fx: 'vento', text: 'E o Senhor ia na frente deles: de dia, numa coluna de nuvem, para mostrar o caminho e proteger do sol.', r: 'Êxodo 13:21' },
         { art: '🔥🌙', bg: 'noite', fx: 'luz', text: 'De noite, numa coluna de fogo, para iluminar. Assim eles podiam caminhar de dia e de noite.', r: 'Êxodo 13:21' },
-        { art: '☁️🔥💛', bg: 'aurora', fx: 'brilho', text: 'A Bíblia diz: a coluna de nuvem nunca saía da frente do povo de dia, nem a coluna de fogo de noite. Deus estava sempre com eles, o tempo todo.', r: 'Êxodo 13:22' }
+        { art: '☁️🔥💛', bg: 'aurora', fx: 'brilho', text: 'A Bíblia diz que a coluna de nuvem de dia, e a coluna de fogo de noite, nunca saíram da frente do povo. Deus estava sempre com eles, o tempo todo.', r: 'Êxodo 13:22' }
       ],
       god: 'Deus guia o seu povo pelo melhor caminho, mesmo quando não é o mais curto. E Ele está sempre presente.',
       jesus: 'Deus guiava o povo com a nuvem e o fogo. Hoje, Jesus é quem nos guia: Ele disse "Eu sou o caminho" (João 14:6) e prometeu: "Eu estou convosco todos os dias, até a consumação dos séculos" (Mateus 28:20). Ele nunca sai da nossa frente.',
@@ -252,10 +252,10 @@ window.HISTORIA.arcs.exodo = {
         { art: '😱👥🌊', bg: 'mar', fx: 'ondas', text: 'Quando os israelitas viram o exército chegando, ficaram apavorados e gritaram com Moisés: "Não havia túmulos no Egito? Você nos trouxe para morrer no deserto?"', r: 'Êxodo 14:10-12' },
         { art: '🧔✋💬', bg: 'mar', fx: 'luz', text: 'Moisés respondeu: "Não tenham medo! Fiquem firmes e vejam o livramento que o Senhor vai fazer hoje. O Senhor vai lutar por vocês, e vocês vão ficar quietos."', r: 'Êxodo 14:13-14' },
         { art: '☁️🛡️🔥', bg: 'noite', fx: 'luz', text: 'A coluna de nuvem passou para trás do povo, ficando entre os israelitas e os egípcios. Para os egípcios, era escuridão; para Israel, iluminava a noite. Os dois lados não se aproximaram a noite toda.', r: 'Êxodo 14:19-20' },
-        { art: '🧔🦯🌊💨', bg: 'mar', fx: 'vento', text: 'Moisés estendeu a mão sobre o mar, e o Senhor fez soprar um vento forte do oriente a noite inteira. O mar se abriu, e o fundo virou terra seca!', r: 'Êxodo 14:21' },
+        { art: '🧔🦯🌊💨', bg: 'mar', fx: 'vento', text: 'Moisés estendeu a mão em direção ao mar, e Deus mandou um vento forte do oriente, que soprou a noite inteira. O mar se abriu, e o fundo virou terra seca!', r: 'Êxodo 14:21' },
         { art: '🌊👣🌊', bg: 'mar', fx: 'ondas', text: 'Os filhos de Israel atravessaram pelo meio do mar, em terra seca, com as águas como um muro à direita e à esquerda!', r: 'Êxodo 14:22' },
         { art: '🛞🌊💥', bg: 'mar', fx: 'ondas', text: 'Os egípcios entraram atrás deles, mas Deus atrapalhou o exército: as rodas dos carros soltavam e eles mal andavam. Quando o povo de Deus chegou do outro lado, Moisés estendeu a mão, e as águas voltaram e cobriram o exército do Faraó.', r: 'Êxodo 14:23-28' },
-        { art: '👥🙌✨', bg: 'aurora', fx: 'brilho', text: 'Israel viu o grande poder que o Senhor tinha mostrado. O povo temeu ao Senhor e creu no Senhor e em Moisés, seu servo. Eles estavam livres!', r: 'Êxodo 14:30-31' }
+        { art: '👥🙌✨', bg: 'aurora', fx: 'brilho', text: 'Israel viu o grande poder que o Senhor tinha mostrado. O povo passou a respeitar o Senhor, e confiou nele e no seu servo Moisés. Eles estavam livres!', r: 'Êxodo 14:30-31' }
       ],
       god: 'O Senhor luta pelo seu povo. Quando não há saída, Deus abre um caminho.',
       jesus: 'O povo estava encurralado, sem saída, e Deus abriu um caminho pelo meio do mar. Por causa do pecado, nós também estávamos sem saída diante da morte. Jesus abriu o caminho: Ele passou pela morte e saiu vitorioso do outro lado, e quem confia nele atravessa junto. A Bíblia até compara a travessia do mar com o batismo (1 Coríntios 10:1-2).',
@@ -267,7 +267,7 @@ window.HISTORIA.arcs.exodo = {
       ],
       big: [
         { q: 'Quantos carros escolhidos o Faraó levou?', o: ['Seiscentos', 'Novecentos', 'Dez', 'Mil'], e: 'Êxodo 14:7.' },
-        { q: 'O que Moisés disse ao povo com medo?', o: ['"Não temais; estai quietos e vede o livramento"', '"Corram"', '"Voltem ao Egito"', '"Lutem"'], e: 'Êxodo 14:13.' },
+        { q: 'O que Moisés disse ao povo com medo?', o: ['"Não tenham medo! Fiquem firmes e vejam Deus salvar vocês"', '"Corram"', '"Voltem ao Egito"', '"Lutem"'], e: 'Êxodo 14:13.' },
         { q: 'Onde ficou a nuvem durante a noite?', o: ['Entre Israel e os egípcios', 'Na frente do povo', 'Sobre o mar', 'Desapareceu'], e: 'Êxodo 14:19-20.' },
         { q: 'Como o povo reagiu depois da travessia?', o: ['Temeu e creu no Senhor', 'Reclamou', 'Voltou ao Egito', 'Esqueceu'], e: 'Êxodo 14:31.' }
       ],
@@ -278,14 +278,14 @@ window.HISTORIA.arcs.exodo = {
       recap: 'Na lição passada, Deus abriu o mar Vermelho, e o povo atravessou em terra seca.',
       scenes: [
         { art: '🎶🧔👥', bg: 'aurora', fx: 'brilho', text: 'Do outro lado do mar, Moisés e o povo cantaram um cântico ao Senhor: "Cantarei ao Senhor, porque triunfou gloriosamente!"', r: 'Êxodo 15:1' },
-        { art: '💪🎶', bg: 'aurora', fx: 'luz', text: '"O Senhor é a minha força e o meu cântico; Ele é a minha salvação. Ele é o meu Deus, e eu vou louvá-lo!"', r: 'Êxodo 15:2' },
+        { art: '💪🎶', bg: 'aurora', fx: 'luz', text: '"O Senhor é a minha força, Ele é a minha canção; Ele é a minha salvação. Ele é o meu Deus, e eu vou louvá-lo!"', r: 'Êxodo 15:2' },
         { art: '❓✨', bg: 'aurora', fx: 'brilho', text: '"Quem é como tu, ó Senhor, entre os deuses? Quem é como tu, glorioso em santidade, terrível em louvores, que fazes maravilhas?"', r: 'Êxodo 15:11' },
-        { art: '🥁💃👩', bg: 'aurora', fx: 'coracoes', text: 'Então Miriã, a profetisa, irmã de Arão e Moisés, pegou um tamborim, e todas as mulheres saíram atrás dela com tamborins e danças, cantando: "Cantem ao Senhor!"', r: 'Êxodo 15:20-21' },
+        { art: '🥁💃👩', bg: 'aurora', fx: 'coracoes', text: 'Então Miriã, a profetisa, irmã de Arão e Moisés, pegou um tamborim, e as mulheres foram atrás dela, tocando e dançando, cantando: "Cantem ao Senhor!"', r: 'Êxodo 15:20-21' },
         { art: '🏜️😩💧', bg: 'deserto', text: 'Depois, o povo andou três dias no deserto sem encontrar água. Quando chegaram a um lugar chamado Mara, acharam água, mas era amarga, ninguém conseguia beber.', r: 'Êxodo 15:22-23' },
         { art: '😠🗣️🧔', bg: 'deserto', text: 'E o povo, que tinha acabado de cantar, começou a reclamar contra Moisés: "O que vamos beber?" Como a gente esquece rápido o que Deus fez!', r: 'Êxodo 15:24' },
         { art: '🧔🙏🪵', bg: 'deserto', fx: 'luz', text: 'Moisés clamou ao Senhor, e Deus mostrou a ele um pedaço de madeira. Moisés jogou a madeira na água, e a água ficou doce!', r: 'Êxodo 15:25' },
-        { art: '✨💬🩺', bg: 'aurora', fx: 'luz', text: 'Ali Deus disse: "Se vocês ouvirem a minha voz e obedecerem, eu não vou mandar sobre vocês as doenças do Egito, porque eu sou o Senhor que te sara."', r: 'Êxodo 15:26' },
-        { art: '🌴💧🌴', bg: 'jardim', fx: 'brilho', text: 'Depois chegaram a Elim, um oásis com doze fontes de água e setenta palmeiras. E ali acamparam junto às águas. Deus sabe do que precisamos.', r: 'Êxodo 15:27' }
+        { art: '✨💬🩺', bg: 'aurora', fx: 'luz', text: 'Ali Deus disse: "Se vocês ouvirem a minha voz e obedecerem, eu não vou mandar sobre vocês as doenças do Egito. Eu sou o Senhor, que cura vocês."', r: 'Êxodo 15:26' },
+        { art: '🌴💧🌴', bg: 'jardim', fx: 'brilho', text: 'Depois chegaram a Elim, um oásis com doze fontes e setenta palmeiras, e montaram acampamento perto da água. Deus sabe do que precisamos.', r: 'Êxodo 15:27' }
       ],
       god: 'Deus merece o nosso louvor. Ele transforma o amargo em doce e cuida de nós.',
       jesus: 'Em Mara, um pedaço de madeira transformou a água amarga em doce. Jesus foi pregado num madeiro, a cruz, e ali transformou o que era amargo, o pecado e a morte, em vida e alegria para nós. E no fim da Bíblia, o povo de Deus canta "o cântico de Moisés e o cântico do Cordeiro" (Apocalipse 15:3)!',
@@ -344,7 +344,7 @@ window.HISTORIA.arcs.exodo = {
         { art: '🧔🙌⛰️', bg: 'monte', fx: 'luz', text: 'Enquanto Moisés mantinha as mãos levantadas para Deus, Israel vencia. Quando ele cansava e abaixava as mãos, Amaleque vencia.', r: 'Êxodo 17:10-11' },
         { art: '🧔🪨👨👨', bg: 'monte', fx: 'coracoes', text: 'Os braços de Moisés ficaram pesados. Então Arão e Hur colocaram uma pedra para ele sentar e seguraram as mãos dele, um de cada lado, até o pôr do sol. E Josué venceu a batalha.', r: 'Êxodo 17:12-13' },
         { art: '🪨🚩', bg: 'aurora', fx: 'brilho', text: 'Moisés construiu um altar e o chamou de "O Senhor é a minha bandeira". A vitória vinha de Deus.', r: 'Êxodo 17:15' },
-        { art: '👴🤗🧔', bg: 'deserto', text: 'Jetro, o sogro de Moisés, veio visitá-lo com Zípora e os filhos. Moisés contou tudo o que Deus tinha feito, e Jetro se alegrou: "Agora sei que o Senhor é maior que todos os deuses!"', r: 'Êxodo 18:1-11' },
+        { art: '👴🤗🧔', bg: 'deserto', text: 'Jetro, o sogro de Moisés, veio visitá-lo com Zípora e os filhos. Moisés contou tudo o que Deus tinha feito, e Jetro se alegrou: "Agora eu sei: o Senhor é maior do que todos os deuses!"', r: 'Êxodo 18:1-11' },
         { art: '👥👥⚖️', bg: 'deserto', text: 'Jetro viu Moisés atendendo o povo sozinho, de manhã até a noite, e aconselhou: "Você vai se cansar! Escolha homens capazes, que temem a Deus e são honestos, para ajudar a julgar." Moisés ouviu o conselho. É sábio pedir e aceitar ajuda.', r: 'Êxodo 18:13-26' }
       ],
       god: 'Deus está no meio do seu povo. Ele dá água no deserto e vitória a quem depende dele.',
