@@ -111,14 +111,28 @@
     if (!LN) return;
     try { const p = await LN.getPending(); if (p.notifications.length) await LN.cancel({ notifications: p.notifications.map(n => ({ id: n.id })) }); } catch (e) { }
   }
+  // Versículo do dia: os 70 versículos (ACF) que o app já ensina, na mesma ordem para todos, um por dia.
+  function versesOfTheDay() {
+    const D = window.VERSOS_DATA, seen = new Map();
+    if (D && D.levels) D.levels.forEach(l => { if (l.ref && l.tx && !seen.has(l.ref)) seen.set(l.ref, l.tx); });
+    return [...seen.entries()];
+  }
   async function schedule(h) {
     await clearAll();
-    const now = new Date(), list = [];
+    const now = new Date(), list = [], V = versesOfTheDay();
     for (let d = 0; d < 30; d++) {
       const at = new Date(now.getFullYear(), now.getMonth(), now.getDate() + d, h, 0, 0);
       if (at <= now) continue;
-      const m = MSGS[(at.getDate() + d) % MSGS.length];
-      list.push({ id: 1000 + d, title: m[0], body: m[1], schedule: { at, allowWhileIdle: true }, extra: { route: d % 2 ? '#/palavra' : '#/caca/dia' } });
+      let n;
+      if (V.length) {
+        const day = Math.floor(Date.UTC(at.getFullYear(), at.getMonth(), at.getDate()) / 86400000);
+        const [ref, tx] = V[day % V.length];
+        n = { id: 1000 + d, title: 'Versículo do dia', body: `“${tx}” — ${ref} · ACF`, schedule: { at, allowWhileIdle: true }, extra: { route: '#/versiculo' } };
+      } else {
+        const m = MSGS[(at.getDate() + d) % MSGS.length];
+        n = { id: 1000 + d, title: m[0], body: m[1], schedule: { at, allowWhileIdle: true }, extra: { route: d % 2 ? '#/palavra' : '#/caca/dia' } };
+      }
+      list.push(n);
     }
     if (list.length) await LN.schedule({ notifications: list });
   }
@@ -135,7 +149,7 @@
     const c = readCfg();
     const HOURS = [7, 8, 9, 12, 15, 18, 19, 20, 21];
     const m = A.modal(`<div class="badge">🔔</div><h2>Lembrete diário</h2>
-      <p>Uma notificação por dia para a Palavra do Dia e o Desafio do Dia. Nada é enviado para fora do aparelho.</p>
+      <p>Uma notificação por dia com o versículo do dia (ACF). Sem cobrança nem contagem de dias. Nada é enviado para fora do aparelho.</p>
       <button class="setting" style="width:100%" data-ron><div><b>Lembrar todos os dias</b><span>${c.on ? 'Ligado' : 'Desligado'}</span></div><i class="switch ${c.on ? 'on' : ''}"></i></button>
       <div class="rem-hours" style="display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px">${HOURS.map(h => `<button class="btn ${h === c.h ? 'btn-gold' : 'btn-ghost'}" style="min-height:44px;padding:0 14px" data-rh="${h}">${h}h</button>`).join('')}</div>
       <p class="rem-msg" style="min-height:1.2em;color:#9b3b2a"></p>

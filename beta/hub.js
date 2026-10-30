@@ -17,6 +17,8 @@
       { id: 'quem', name: 'Quem Sou Eu?', sub: 'Descubra o personagem pelas pistas.', icon: I.who, scene: 'deserto', done: cnt('quem'), total: window.QUEM_DATA.levels.length, isNew: 1 },
       { id: 'tempo', name: 'Linha do Tempo', sub: 'Coloque a história em ordem.', icon: I.timeline, scene: 'monte', done: cnt('tempo'), total: window.TEMPO_DATA.levels.length, isNew: 1 },
       { id: 'memoria', name: 'Jogo da Memória', sub: 'Junte cada história à sua carta.', icon: I.brain, scene: 'galileia', done: cnt('memoria'), total: window.MEMORIA_DATA.levels.length, isNew: 1 },
+      { id: 'labirinto', name: 'Labirinto', sub: 'Guie a Lumi até o fim do caminho.', icon: I.maze, scene: 'campo', done: cnt('labirinto'), total: window.LABIRINTO_DATA.levels.length, isNew: 1 },
+      { id: 'quebra', name: 'Quebra-Cabeça', sub: 'Monte as cenas da Bíblia.', icon: I.puzzle, scene: 'jardim', done: cnt('quebra'), total: window.QUEBRA_DATA.levels.length, isNew: 1 },
       { id: 'cartas', name: 'Solitaire Bíblico', sub: 'Junte as cartas de cada história.', icon: I.cards, scene: 'noite', done: K.levels.filter(l => st.cartas.done[l.n]).length, total: K.levels.length }
     ];
   }
