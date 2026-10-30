@@ -27,11 +27,11 @@
     const games = stats();
     const last = st.last;
     const scenes = { palavra: 'aurora', ...Object.fromEntries(games.map(g => [g.id, g.scene])) };
-    const standalone = window.navigator.standalone || matchMedia('(display-mode: standalone)').matches;
+    const standalone = App.native || window.navigator.standalone || matchMedia('(display-mode: standalone)').matches;
     const pd = App.palavra.today(), cd = App.caca.dailyDone();
     el.innerHTML = `
       <section class="hero" style="background-image:url('tumba.jpg');background-position:center 38%;min-height:340px">
-        ${cross}
+        <i class="motes"></i>${cross}
         <h1><span class="gold-text">Jogos Bíblicos</span></h1>${window.__BETA ? '<div class="beta-tag">VERSÃO BETA · TESTE</div>' : ''}
         <div class="kicker">APRENDA · LEMBRE · DESCUBRA</div>
         <div class="verse">“Escondi a tua palavra no meu coração, para eu não pecar contra ti.”<cite>Salmos 119:11 · ACF</cite></div>
@@ -46,7 +46,7 @@
         <button class="today parch ${pd.done ? 'ok' : ''}" data-go="#/palavra"><span class="ti">${I.sun}</span><b>Palavra do Dia</b><small>${pd.done ? (pd.win ? `Acertou em ${pd.tries}/6 ✓` : 'Feita ✓') : `nº ${pd.num} · 5 letras`}</small><em class="nw">${pd.done ? '' : 'NOVO'}</em></button>
         <button class="today parch ${cd ? 'ok' : ''}" data-go="#/caca/dia"><span class="ti">${I.search}</span><b>Desafio do Dia</b><small>${cd ? 'Feito ✓' : 'Caça-palavras'}</small></button>
       </div>
-      <button class="kids-banner" data-go="#/kids"><img src="lumi-oi.webp" alt="Lumi"><div><b>Cantinho Kids</b><span>12 histórias da Bíblia com a Lumi, para crianças de 4 a 10 anos</span></div><em class="nw">NOVO</em></button>
+      <button class="kids-banner" data-go="#/kids"><img src="lumi-oi.webp" alt="Lumi"><div><b>Cantinho Kids</b><span>${App.historia ? '12 histórias com a Lumi e A Grande História da Bíblia, do Gênesis ao Apocalipse' : '12 histórias da Bíblia com a Lumi, para crianças de 4 a 10 anos'}</span></div><em class="nw">NOVO</em></button>
       <div class="section-title"><h2>Escolha um jogo</h2><span>${games.length + 1} jogos</span></div>
       <div class="gtiles">${games.map(g => `
         <button class="gtile" data-go="#/${g.id}" style="background-image:url('${g.scene}.svg')">
@@ -60,7 +60,7 @@
         <button class="btn" data-settings>${I.gear} Ajustes</button>
         ${standalone ? '' : `<button class="btn" data-install>${I.share} Instalar no iPhone</button>`}
       </div>
-      <p class="credit">Textos bíblicos: Almeida Corrigida Fiel (ACF), fonte oficial deste app · <button class="lnk" data-about>Sobre</button> · Foto da capa: Pisit Heng / Unsplash · versão claude v1.4.3${window.__BETA ? ' beta ' + window.__BETA : ''}</p>`;
+      <p class="credit">Textos bíblicos: Almeida Corrigida Fiel (ACF), fonte oficial deste app · <button class="lnk" data-about>Sobre</button> · Foto da capa: Pisit Heng / Unsplash · versão claude v2.0${window.__BETA ? ' beta ' + window.__BETA : ''}</p>`;
     el.addEventListener('click', e => {
       const g = e.target.closest('[data-go]'); if (g) { App.sfx.tap(); go(g.dataset.go); }
       if (e.target.closest('[data-settings]')) openSettings();
