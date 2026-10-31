@@ -1047,24 +1047,44 @@ html, body { touch-action: manipulation; -webkit-text-size-adjust: 100%; }
 .cl-card b { font-family: var(--display); font-size: .95rem; line-height: 1.2; margin-top: 4px; }
 .cl-card small { color: var(--gold-700); font-weight: 600; font-size: .78rem; }
 .cl-card.done { border-color: #4f9a6c; }
-.cl-wrap { display: flex; justify-content: center; margin: 4px 0 8px; }
-.cl-stage { position: relative; width: 100%; max-width: 560px; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 6px 18px rgba(0, 0, 0, .4); touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
-.cl-world { position: absolute; inset: 0; transform-origin: 0 0; will-change: transform; }
+.win-card .wc-learned svg { width: 16px; height: 16px; vertical-align: -2px; }
+
+/* ---- v2.1 · Colorir em tela cheia ---- */
+html.cl-on, html.cl-on body { overflow: hidden; overscroll-behavior: none; }
+html.cl-on #appTabs { display: none !important; }
+.cl-full { position: fixed; inset: 0; width: 100%; overflow: hidden; z-index: 40; display: flex; flex-direction: column; background: linear-gradient(180deg, #17261e, #0d1a14); color: var(--parch-50); padding: var(--safe-top) max(0px, env(safe-area-inset-right, 0px)) 0 max(0px, env(safe-area-inset-left, 0px)); overscroll-behavior: none; }
+.cl-head { display: flex; align-items: center; gap: 8px; padding: 6px 10px; flex: none; }
+.cl-head .icon-btn { width: 44px; height: 44px; border-radius: 13px; font-size: 1.3rem; }
+.cl-head .ttl { flex: 1; min-width: 0; text-align: center; }
+.cl-head .ttl b { display: block; font-family: var(--display); font-size: .98rem; color: var(--gold-300); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cl-head .ttl small { display: inline-flex; align-items: center; gap: 5px; font-size: .8rem; color: var(--parch-100); opacity: .9; }
+.cl-head .ttl small svg { width: 14px; height: 14px; }
+.cl-zoom { display: flex; gap: 6px; }
+.cl-view { position: relative; flex: 1 1 auto; min-height: 0; overflow: hidden; touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; background: #0f1d16; }
+.cl-world { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; background: #fff; box-shadow: 0 6px 24px rgba(0, 0, 0, .5); }
 .cl-world canvas, .cl-world img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 .cl-world .cl-lines { mix-blend-mode: multiply; pointer-events: none; }
-.cl-load { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(255, 255, 255, .9); color: #5a4a2c; font-style: italic; text-align: center; padding: 20px; }
-.cl-tools { display: flex; gap: 6px; justify-content: center; margin: 8px 0; }
-.cl-tools .btn { min-height: 46px; padding: 0 10px; font-size: .92rem; white-space: nowrap; flex: none; }
-.cl-tools .btn[data-zi], .cl-tools .btn[data-zo] { min-width: 46px; padding: 0; font-size: 1.2rem; }
-.cl-tools .btn.on { background: var(--gold-grad); color: #3b2a0c; border-color: #a47b2a; }
-.cl-pal { padding: 10px 10px 8px; border-radius: 16px; display: grid; gap: 6px; max-width: 560px; margin: 0 auto; }
-.cl-row small { display: block; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--gold-700); margin-bottom: 4px; }
-.cl-row > div { display: flex; gap: 6px; }
-.cl-sw { flex: 1 1 0; min-width: 0; max-width: 48px; aspect-ratio: 1; border-radius: 50%; border: 2px solid rgba(60, 40, 10, .25); box-shadow: inset 0 -3px 5px rgba(0, 0, 0, .1), 0 2px 4px rgba(0, 0, 0, .2); transition: transform .12s; }
-.cl-sw.on { transform: scale(1.14); border: 3px solid #c49a3e; box-shadow: 0 0 0 3px rgba(255, 255, 255, .85), 0 3px 8px rgba(0, 0, 0, .35); }
-.cl-ref { display: flex; flex-direction: column; align-items: center; gap: 2px; margin: 6px 0 10px; color: var(--parch-100); text-shadow: 0 1px 4px rgba(0, 0, 0, .6); }
-.cl-ref b { font-family: var(--display); font-size: 1rem; }
-.cl-ref span { display: inline-flex; align-items: center; gap: 6px; color: var(--gold-300); font-weight: 600; font-size: .88rem; }
-.cl-ref svg { width: 18px; height: 18px; }
-.cl-end { display: grid; gap: 8px; max-width: 560px; margin: 0 auto 12px; }
-.win-card .wc-learned svg { width: 16px; height: 16px; vertical-align: -2px; }
+.cl-load { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(15, 29, 22, .94); color: var(--parch-100); font-style: italic; text-align: center; padding: 20px; z-index: 3; }
+.cl-hint { position: absolute; left: 50%; bottom: 10px; width: max-content; transform: translateX(-50%); max-width: 92%; padding: 6px 14px; border-radius: 999px; background: rgba(10, 26, 18, .82); color: var(--parch-100); font-size: .82rem; text-align: center; pointer-events: none; transition: opacity .6s; z-index: 2; }
+.cl-hint.off { opacity: 0; }
+.cl-dock { flex: none; min-width: 0; display: grid; gap: 8px; padding: 10px 10px calc(10px + var(--safe-bottom)); background: linear-gradient(180deg, rgba(255, 250, 235, .1), rgba(255, 250, 235, .04)); border-top: 1px solid rgba(216, 178, 92, .4); }
+.cl-pal { display: grid; gap: 6px; }
+.cl-row { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 6px; }
+.cl-row.v { grid-template-columns: repeat(6, minmax(0, 1fr)); padding: 0 calc(100% / 8 - 3px); }
+.cl-sw { width: 100%; max-width: 46px; justify-self: center; aspect-ratio: 1; border-radius: 50%; border: 2px solid rgba(255, 255, 255, .55); box-shadow: inset 0 -3px 5px rgba(0, 0, 0, .1), 0 2px 4px rgba(0, 0, 0, .35); transition: transform .12s; }
+.cl-sw.on { transform: scale(1.14); border: 3px solid #e9cf8c; box-shadow: 0 0 0 3px rgba(255, 255, 255, .9), 0 3px 8px rgba(0, 0, 0, .45); }
+.cl-act { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.cl-act .btn { min-height: 46px; padding: 0 2px; font-size: .76rem; white-space: nowrap; min-width: 0; letter-spacing: -.01em; }
+.cl-act .btn.on { background: var(--gold-grad); color: #3b2a0c; border-color: #a47b2a; }
+.cl-full .btn-ghost { background: rgba(255, 250, 235, .12); color: var(--parch-50); border: 1px solid rgba(216, 178, 92, .5); }
+.cl-full .btn-ghost.on { color: #3b2a0c; }
+/* celular deitado: paleta fica ao lado e o desenho ocupa o resto */
+@media (orientation: landscape) and (max-height: 560px) {
+  .cl-full { display: grid; grid-template-columns: 1fr 230px; grid-template-rows: auto 1fr; }
+  .cl-head { grid-column: 1 / -1; padding: 4px 10px; }
+  .cl-head .icon-btn { width: 38px; height: 38px; }
+  .cl-view { grid-column: 1; grid-row: 2; }
+  .cl-dock { grid-column: 2; grid-row: 2; border-top: 0; border-left: 1px solid rgba(216, 178, 92, .4); align-content: start; overflow: auto; padding: 8px 10px calc(8px + var(--safe-bottom)); }
+  .cl-row, .cl-row.v { grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 0; }
+  .cl-act { grid-template-columns: 1fr 1fr; }
+}

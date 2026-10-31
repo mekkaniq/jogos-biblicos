@@ -43,8 +43,9 @@
     });
   });
 
-  // ---------- tela de pintar ----------
+  // ---------- tela de pintar (tela cheia) ----------
   route(/^\/colorir\/(\d+)$/, (el, nStr) => {
+    document.querySelectorAll('.cl-full').forEach(o => o.remove());
     const it = D.find(x => x.n === +nStr); if (!it) return go('#/colorir');
     App.setScene('jardim');
     setLast('colorir', '#/colorir/' + it.n, `Colorir · ${it.nome}`, it.ref);
@@ -52,27 +53,27 @@
     const rec = S.p[it.n] || (S.p[it.n] = { r: {} });
     const { w, h } = it;
     const sw = (c, i) => `<button class="cl-sw" data-c="${i}" style="background:${c[1]}" aria-label="${c[0]}" title="${c[0]}"></button>`;
-    el.innerHTML = `${K.topbar('#/colorir', 'COLORIR', esc(it.nome))}
-      <div class="cl-wrap"><div class="cl-stage" id="clst" style="aspect-ratio:${w}/${h}">
-        <div class="cl-world" id="clw"><canvas id="clc" width="${w}" height="${h}"></canvas><img class="cl-lines" id="cll" src="colorir-${it.n}.lines.png" alt="" draggable="false"></div>
-        <div class="cl-load" id="cld">Preparando o desenho…</div></div></div>
-      <div class="cl-tools">
-        <button class="btn btn-ghost" data-undo>↶ Desfazer</button>
-        <button class="btn btn-ghost" data-erase>⌫ Borracha</button>
-        <button class="btn btn-ghost" data-zo aria-label="Afastar">－</button>
-        <button class="btn btn-ghost" data-zi aria-label="Ampliar">＋</button>
-      </div>
-      <div class="cl-pal parch"><div class="cl-row"><small>Suaves</small><div>${SOFT.map((c, i) => sw(c, i + 1)).join('')}</div></div>
-        <div class="cl-row"><small>Vivas</small><div>${VIVID.map((c, i) => sw(c, SOFT.length + i + 1)).join('')}</div></div></div>
-      <p class="vs-tip" id="cltip">Toque numa área para pintar. Dois dedos para ampliar.</p>
-      <div class="cl-ref"><b>${esc(it.nome)}</b><span>${I.book} ${esc(it.ref)}</span></div>
-      <div class="cl-end"><button class="btn btn-gold btn-block" data-fin>Terminei ✓</button><button class="btn btn-ghost btn-block" data-clear>Limpar o desenho</button></div>`;
-    K.common(el);
-    const stage = $('#clst', el), world = $('#clw', el), cv = $('#clc', el), linesImg = $('#cll', el), loadEl = $('#cld', el), tip = $('#cltip', el);
+    el.innerHTML = '';
+    const full = document.createElement('div'); full.className = 'cl-full'; full.id = 'clfull';
+    full.innerHTML = `<header class="cl-head">
+        <button class="icon-btn" data-back="#/colorir" aria-label="Voltar">${I.back}</button>
+        <div class="ttl"><b>${esc(it.nome)}</b><small>${I.book} ${esc(it.ref)}</small></div>
+        <div class="cl-zoom"><button class="icon-btn" data-zo aria-label="Afastar">－</button><button class="icon-btn" data-zi aria-label="Ampliar">＋</button></div>
+      </header>
+      <div class="cl-view" id="clv"><div class="cl-world" id="clw"><canvas id="clc" width="${w}" height="${h}"></canvas><img class="cl-lines" id="cll" src="colorir-${it.n}.lines.png" alt="" draggable="false"></div>
+        <div class="cl-load" id="cld">Preparando o desenho…</div><div class="cl-hint" id="cltip">Toque para pintar · dois dedos para ampliar</div></div>
+      <footer class="cl-dock">
+        <div class="cl-pal"><div class="cl-row">${SOFT.map((c, i) => sw(c, i + 1)).join('')}</div><div class="cl-row v">${VIVID.map((c, i) => sw(c, SOFT.length + i + 1)).join('')}</div></div>
+        <div class="cl-act"><button class="btn btn-ghost" data-undo>↶ Desfazer</button><button class="btn btn-ghost" data-erase>⌫ Borracha</button><button class="btn btn-ghost" data-clear>Limpar</button><button class="btn btn-gold" data-fin>Pronto ✓</button></div>
+      </footer>`;
+    document.body.appendChild(full); document.documentElement.classList.add('cl-on');
+    K.common(full);
+    const view = $('#clv', full), world = $('#clw', full), cv = $('#clc', full), linesImg = $('#cll', full), loadEl = $('#cld', full), tip = $('#cltip', full);
     const ctx = cv.getContext('2d');
     let reg = null, bb = null, pix = null, pix32 = null, ready = false;
     let cur = 1, erase = false; const undo = [];
     const colors = rec.r;                          // { regiao: cor }
+    setTimeout(() => { tip.classList.add('off'); }, 5000);
 
     // ---- carrega o mapa de regiões ----
     const mi = new Image();
@@ -121,58 +122,69 @@
       save();
     }
     const onHide = () => { if (document.visibilityState === 'hidden') flush(); };
-    document.addEventListener('visibilitychange', onHide);
-    window.addEventListener('hashchange', function once() { flush(); document.removeEventListener('visibilitychange', onHide); window.removeEventListener('hashchange', once); });
+    const onResize = () => { fit(); };
+    document.addEventListener('visibilitychange', onHide); window.addEventListener('resize', onResize);
+    const leave = () => {
+      flush(); full.remove(); document.documentElement.classList.remove('cl-on');
+      document.removeEventListener('visibilitychange', onHide); window.removeEventListener('resize', onResize);
+    };
 
     // ---- paleta / ferramentas ----
     function mark() {
-      el.querySelectorAll('.cl-sw').forEach(b => b.classList.toggle('on', !erase && +b.dataset.c === cur));
-      $('[data-erase]', el).classList.toggle('on', erase);
+      full.querySelectorAll('.cl-sw').forEach(b => b.classList.toggle('on', !erase && +b.dataset.c === cur));
+      $('[data-erase]', full).classList.toggle('on', erase);
     }
     mark();
-    el.addEventListener('click', e => {
+    full.addEventListener('click', e => {
       const s = e.target.closest('.cl-sw'); if (s) { cur = +s.dataset.c; erase = false; mark(); sfx.tap(); return; }
       if (e.target.closest('[data-erase]')) { erase = !erase; mark(); sfx.tap(); return; }
-      if (e.target.closest('[data-undo]')) {
-        const u = undo.pop(); if (u && ready) { setColor(u[0], u[1], false); sfx.tap(); } return;
-      }
-      if (e.target.closest('[data-zi]')) { zoomAt(stage.clientWidth / 2, stage.clientHeight / 2, sc * 1.5); return; }
-      if (e.target.closest('[data-zo]')) { zoomAt(stage.clientWidth / 2, stage.clientHeight / 2, sc / 1.5); return; }
+      if (e.target.closest('[data-undo]')) { const u = undo.pop(); if (u && ready) { setColor(u[0], u[1], false); sfx.tap(); } return; }
+      if (e.target.closest('[data-zi]')) { zoomAt(VW / 2, VH / 2, sc * 1.5); return; }
+      if (e.target.closest('[data-zo]')) { zoomAt(VW / 2, VH / 2, sc / 1.5); return; }
       if (e.target.closest('[data-clear]')) {
         if (!Object.keys(colors).length) return;
         const m = modal(`<h3 style="font-family:var(--display);color:var(--green-800)">Limpar o desenho?</h3><p style="margin:8px 0 0">Todas as cores deste desenho serão apagadas.</p><div class="wc-actions" style="display:grid;gap:8px;margin-top:14px"><button class="btn btn-gold btn-block" data-yes>Limpar</button><button class="btn btn-ghost btn-block" data-no>Voltar</button></div>`);
         m.el.addEventListener('click', ev => {
           if (ev.target.closest('[data-no]')) m.close();
-          if (ev.target.closest('[data-yes]')) { m.close(); for (const k of Object.keys(colors)) delete colors[k]; undo.length = 0; pix32.fill(0xFFFFFFFF); ctx.putImageData(pix, 0, 0); delete S.done[it.n]; const o = el.querySelector('.win-slot'); if (o) o.remove(); persist(true); }
+          if (ev.target.closest('[data-yes]')) { m.close(); for (const k of Object.keys(colors)) delete colors[k]; undo.length = 0; pix32.fill(0xFFFFFFFF); ctx.putImageData(pix, 0, 0); delete S.done[it.n]; persist(true); }
         });
         return;
       }
       if (e.target.closest('[data-fin]')) finish();
     });
 
-    // ---- zoom e arrastar ----
-    let sc = 1, tx = 0, ty = 0; const MAXS = 6;
-    const clampPan = () => { const W = stage.clientWidth, H = stage.clientHeight; tx = Math.min(0, Math.max(W - W * sc, tx)); ty = Math.min(0, Math.max(H - H * sc, ty)); };
+    // ---- encaixe na tela, zoom e arrastar ----
+    let VW = 0, VH = 0, FW = 0, FH = 0, sc = 1, tx = 0, ty = 0; const MAXS = 8;
+    function fit() {
+      VW = view.clientWidth; VH = view.clientHeight; if (!VW || !VH) return;
+      const f = Math.min(VW / w, VH / h); FW = Math.floor(w * f); FH = Math.floor(h * f);
+      world.style.width = FW + 'px'; world.style.height = FH + 'px'; sc = 1; clampPan(); apply();
+    }
+    function clampPan() {
+      const sw_ = FW * sc, sh_ = FH * sc;
+      tx = sw_ <= VW ? (VW - sw_) / 2 : Math.min(0, Math.max(VW - sw_, tx));
+      ty = sh_ <= VH ? (VH - sh_) / 2 : Math.min(0, Math.max(VH - sh_, ty));
+    }
     const apply = () => { world.style.transform = `translate(${tx}px,${ty}px) scale(${sc})`; };
     function zoomAt(cx, cy, ns) { ns = Math.max(1, Math.min(MAXS, ns)); tx = cx - (cx - tx) * ns / sc; ty = cy - (cy - ty) * ns / sc; sc = ns; clampPan(); apply(); }
+    requestAnimationFrame(() => { fit(); requestAnimationFrame(fit); });
     const ptrs = new Map(); let tap = null, multi = false, pinch = null;
-    const rectOf = () => stage.getBoundingClientRect();
-    stage.addEventListener('pointerdown', e => {
-      try { stage.setPointerCapture(e.pointerId); } catch (x) { }
+    const rectOf = () => view.getBoundingClientRect();
+    view.addEventListener('pointerdown', e => {
+      try { view.setPointerCapture(e.pointerId); } catch (x) { }
       ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY });
       if (ptrs.size === 1) { multi = false; tap = { id: e.pointerId, x: e.clientX, y: e.clientY, moved: false, tx, ty }; }
       else if (ptrs.size === 2) {
         multi = true; tap = null; const [a, b] = [...ptrs.values()]; const r = rectOf();
-        pinch = { d: Math.hypot(a.x - b.x, a.y - b.y), sc, cx: (a.x + b.x) / 2 - r.left, cy: (a.y + b.y) / 2 - r.top, tx, ty };
+        pinch = { d: Math.hypot(a.x - b.x, a.y - b.y) || 1, sc, cx: (a.x + b.x) / 2 - r.left, cy: (a.y + b.y) / 2 - r.top, tx, ty };
       }
     });
-    stage.addEventListener('pointermove', e => {
+    view.addEventListener('pointermove', e => {
       const p = ptrs.get(e.pointerId); if (!p) return; p.x = e.clientX; p.y = e.clientY;
       if (ptrs.size >= 2 && pinch) {
         const [a, b] = [...ptrs.values()]; const r = rectOf(); const d = Math.hypot(a.x - b.x, a.y - b.y);
         const mx = (a.x + b.x) / 2 - r.left, my = (a.y + b.y) / 2 - r.top;
         const ns = Math.max(1, Math.min(MAXS, pinch.sc * d / pinch.d));
-        // mantém o ponto sob os dedos no mesmo lugar e acompanha o movimento do meio
         tx = mx - (pinch.cx - pinch.tx) * ns / pinch.sc; ty = my - (pinch.cy - pinch.ty) * ns / pinch.sc; sc = ns; clampPan(); apply();
       } else if (tap && tap.id === e.pointerId) {
         const dx = e.clientX - tap.x, dy = e.clientY - tap.y;
@@ -185,29 +197,29 @@
       if (t && t.id === e.pointerId && !t.moved && !multi && e.type === 'pointerup') paintAt(e.clientX, e.clientY);
       if (!ptrs.size) { tap = null; multi = false; }
     };
-    stage.addEventListener('pointerup', up); stage.addEventListener('pointercancel', up);
-    stage.addEventListener('wheel', e => { e.preventDefault(); const r = rectOf(); zoomAt(e.clientX - r.left, e.clientY - r.top, sc * (e.deltaY < 0 ? 1.2 : 1 / 1.2)); }, { passive: false });
+    view.addEventListener('pointerup', up); view.addEventListener('pointercancel', up);
+    view.addEventListener('wheel', e => { e.preventDefault(); const r = rectOf(); zoomAt(e.clientX - r.left, e.clientY - r.top, sc * (e.deltaY < 0 ? 1.2 : 1 / 1.2)); }, { passive: false });
 
     function paintAt(cx, cy) {
-      if (!ready) return;
+      if (!ready || !FW) return;
       const r = rectOf(); const lx = (cx - r.left - tx) / sc, ly = (cy - r.top - ty) / sc;
-      const px = Math.floor(lx / r.width * w), py = Math.floor(ly / r.height * h);
-      if (px < 0 || py < 0 || px >= w || py >= h) return;
+      const px = Math.floor(lx / FW * w), py = Math.floor(ly / FH * h);
+      if (lx < 0 || ly < 0 || px < 0 || py < 0 || px >= w || py >= h) return;
       const id = reg[py * w + px]; if (!id) return;     // tinta preta grossa: não pinta
       if (setColor(id, erase ? 0 : cur, true)) sfx.tap();
     }
 
     // ---- terminei ----
     function finish() {
-      if (!Object.keys(colors).length) { tip.textContent = 'Pinte alguma coisa primeiro. Sem pressa!'; return; }
+      if (!Object.keys(colors).length) { tip.textContent = 'Pinte alguma coisa primeiro. Sem pressa!'; tip.classList.remove('off'); setTimeout(() => tip.classList.add('off'), 2500); return; }
       S.done[it.n] = 1; persist(true);
       const nx = D.find(x => x.n === it.n + 1 && x.t === it.t);
-      let box = el.querySelector('.win-slot'); if (!box) { box = document.createElement('div'); box.className = 'win-slot'; el.appendChild(box); }
-      box.innerHTML = `<div class="win-card parch"><div class="wc-top"><div class="wc-badge">🎨</div><div><h2>${esc(it.nome)}</h2></div></div>
+      const m = modal(`<div class="win-card" style="box-shadow:none;border:0;background:none;padding:0"><div class="wc-top"><div class="wc-badge">🎨</div><div><h2>${esc(it.nome)}</h2></div></div>
         <p class="wc-text">${esc(it.win)}</p><div class="wc-learned"><div>${I.book} <b>${esc(it.ref)}</b></div></div>
-        <div class="wc-actions">${nx ? `<button class="btn btn-gold btn-block" data-wn>Próximo desenho ${I.arrow}</button>` : ''}<button class="btn btn-ghost btn-block" data-wl>Ver todos os desenhos</button></div></div>`;
-      box.onclick = ev => { if (ev.target.closest('[data-wn]')) go('#/colorir/' + nx.n); if (ev.target.closest('[data-wl]')) go('#/colorir'); };
-      sfx.good(); setTimeout(() => box.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120);
+        <div class="wc-actions">${nx ? `<button class="btn btn-gold btn-block" data-wn>Próximo desenho ${I.arrow}</button>` : ''}<button class="btn btn-ghost btn-block" data-wl>Ver todos os desenhos</button><button class="btn btn-ghost btn-block" data-close>Continuar pintando</button></div></div>`);
+      m.el.addEventListener('click', ev => { if (ev.target.closest('[data-wn]')) { m.close(); go('#/colorir/' + nx.n); } if (ev.target.closest('[data-wl]')) { m.close(); go('#/colorir'); } });
+      sfx.good();
     }
+    return { leave };
   });
 })();
