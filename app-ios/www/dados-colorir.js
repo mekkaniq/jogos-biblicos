@@ -9,7 +9,7 @@ window.COLORIR_DATA = {
 "win": "A pomba voltou com um ramo de oliveira: as águas tinham baixado.",
 "w": 1200,
 "h": 900,
-"r": 141
+"r": 142
 },
 {
 "n": 2,
@@ -394,7 +394,7 @@ window.COLORIR_DATA = {
 "win": "Deus mandou Noé entrar na arca com a sua família, e ali ficaram seguros.",
 "w": 1200,
 "h": 900,
-"r": 244
+"r": 246
 },
 {
 "n": 202,
