@@ -75,7 +75,7 @@ window.COLORIR_DATA = {
 "win": "Deus fechou a boca dos leões, e Daniel ficou em segurança.",
 "w": 1200,
 "h": 900,
-"r": 141
+"r": 93
 },
 {
 "n": 8,
@@ -147,6 +147,17 @@ window.COLORIR_DATA = {
 "n": 14,
 "t": 1,
 "i": 14,
+"nome": "Zaqueu sobe na árvore",
+"ref": "Lucas 19:4",
+"win": "Zaqueu subiu numa árvore para ver Jesus passar.",
+"w": 1200,
+"h": 900,
+"r": 120
+},
+{
+"n": 15,
+"t": 1,
+"i": 15,
 "nome": "O pai abraça o filho",
 "ref": "Lucas 15:20",
 "win": "O pai correu e abraçou o filho que voltou para casa.",
@@ -155,9 +166,9 @@ window.COLORIR_DATA = {
 "r": 149
 },
 {
-"n": 15,
+"n": 16,
 "t": 1,
-"i": 15,
+"i": 16,
 "nome": "Ajudando quem precisa",
 "ref": "Mateus 25:40",
 "win": "Jesus nos ensina a ajudar quem precisa.",
@@ -166,9 +177,9 @@ window.COLORIR_DATA = {
 "r": 177
 },
 {
-"n": 16,
+"n": 17,
 "t": 1,
-"i": 16,
+"i": 17,
 "nome": "O túmulo vazio",
 "ref": "Mateus 28:5-6",
 "win": "Jesus ressuscitou! O túmulo está vazio.",
@@ -235,17 +246,6 @@ window.COLORIR_DATA = {
 "n": 106,
 "t": 2,
 "i": 6,
-"nome": "Caminhando no meio do mar",
-"ref": "Êxodo 14:22",
-"win": "O povo caminhou no meio do mar, com as águas como muros dos dois lados.",
-"w": 1200,
-"h": 900,
-"r": 156
-},
-{
-"n": 107,
-"t": 2,
-"i": 7,
 "nome": "Os muros de Jericó",
 "ref": "Josué 6:20",
 "win": "Os muros de Jericó caíram quando o povo obedeceu a Deus.",
@@ -254,9 +254,9 @@ window.COLORIR_DATA = {
 "r": 180
 },
 {
-"n": 108,
+"n": 107,
 "t": 2,
-"i": 8,
+"i": 7,
 "nome": "Rute e Noemi",
 "ref": "Rute 1:16",
 "win": "Rute ficou ao lado de Noemi e disse: o teu povo será o meu povo.",
@@ -265,9 +265,9 @@ window.COLORIR_DATA = {
 "r": 175
 },
 {
-"n": 109,
+"n": 108,
 "t": 2,
-"i": 9,
+"i": 8,
 "nome": "Ana entrega Samuel",
 "ref": "1 Samuel 1:27-28",
 "win": "Ana levou o pequeno Samuel ao sacerdote Eli para servir ao Senhor.",
@@ -276,9 +276,9 @@ window.COLORIR_DATA = {
 "r": 197
 },
 {
-"n": 110,
+"n": 109,
 "t": 2,
-"i": 10,
+"i": 9,
 "nome": "Samuel ouve o Senhor",
 "ref": "1 Samuel 3:10",
 "win": "Samuel respondeu: Fala, Senhor, que o teu servo ouve.",
@@ -287,9 +287,9 @@ window.COLORIR_DATA = {
 "r": 176
 },
 {
-"n": 111,
+"n": 110,
 "t": 2,
-"i": 11,
+"i": 10,
 "nome": "Davi toca a harpa",
 "ref": "1 Samuel 16:23",
 "win": "Davi tocava harpa, e a música acalmava o rei Saul.",
@@ -298,9 +298,9 @@ window.COLORIR_DATA = {
 "r": 181
 },
 {
-"n": 112,
+"n": 111,
 "t": 2,
-"i": 12,
+"i": 11,
 "nome": "Davi e o gigante",
 "ref": "1 Samuel 17:49-50",
 "win": "Com uma funda e uma pedra, confiando em Deus, Davi venceu o gigante.",
@@ -309,9 +309,9 @@ window.COLORIR_DATA = {
 "r": 152
 },
 {
-"n": 113,
+"n": 112,
 "t": 2,
-"i": 13,
+"i": 12,
 "nome": "A caminho de Jerusalém",
 "ref": "Salmos 122:1",
 "win": "Que alegria quando disseram: vamos à casa do Senhor!",
@@ -320,9 +320,9 @@ window.COLORIR_DATA = {
 "r": 203
 },
 {
-"n": 114,
+"n": 113,
 "t": 2,
-"i": 14,
+"i": 13,
 "nome": "A cidade do nosso Deus",
 "ref": "Salmos 48:1",
 "win": "Jerusalém, a cidade do nosso Deus.",
@@ -331,9 +331,9 @@ window.COLORIR_DATA = {
 "r": 169
 },
 {
-"n": 115,
+"n": 114,
 "t": 2,
-"i": 15,
+"i": 14,
 "nome": "Amigos levam o paralítico",
 "ref": "Marcos 2:3-5",
 "win": "Os amigos levaram o paralítico a Jesus pelo telhado.",
@@ -342,20 +342,9 @@ window.COLORIR_DATA = {
 "r": 204
 },
 {
-"n": 116,
+"n": 115,
 "t": 2,
-"i": 16,
-"nome": "Zaqueu sobe na árvore",
-"ref": "Lucas 19:4",
-"win": "Zaqueu subiu numa árvore para ver Jesus passar.",
-"w": 1200,
-"h": 900,
-"r": 177
-},
-{
-"n": 117,
-"t": 2,
-"i": 17,
+"i": 15,
 "nome": "O bom samaritano",
 "ref": "Lucas 10:33-34",
 "win": "O samaritano parou e cuidou de quem precisava.",
@@ -364,9 +353,9 @@ window.COLORIR_DATA = {
 "r": 182
 },
 {
-"n": 118,
+"n": 116,
 "t": 2,
-"i": 18,
+"i": 16,
 "nome": "Pentecostes",
 "ref": "Atos 2:3-4",
 "win": "O Espírito Santo veio sobre os que oravam, e eles louvaram a Deus.",
@@ -375,9 +364,9 @@ window.COLORIR_DATA = {
 "r": 165
 },
 {
-"n": 119,
+"n": 117,
 "t": 2,
-"i": 19,
+"i": 17,
 "nome": "As correntes caem",
 "ref": "Atos 12:7",
 "win": "As correntes caíram, e Deus libertou o seu servo da prisão.",
@@ -394,7 +383,7 @@ window.COLORIR_DATA = {
 "win": "Deus mandou Noé entrar na arca com a sua família, e ali ficaram seguros.",
 "w": 1200,
 "h": 900,
-"r": 246
+"r": 238
 },
 {
 "n": 202,
@@ -427,7 +416,7 @@ window.COLORIR_DATA = {
 "win": "Deus ajudou José a guardar trigo nos anos de fartura.",
 "w": 1200,
 "h": 900,
-"r": 246
+"r": 223
 },
 {
 "n": 205,
@@ -444,17 +433,28 @@ window.COLORIR_DATA = {
 "n": 206,
 "t": 3,
 "i": 6,
-"nome": "A rainha Ester",
-"ref": "Ester 4:14",
-"win": "Ester foi corajosa e se apresentou ao rei para ajudar o seu povo.",
+"nome": "Caminhando no meio do mar",
+"ref": "Êxodo 14:22",
+"win": "O povo caminhou no meio do mar, com as águas como muros dos dois lados.",
 "w": 1200,
 "h": 900,
-"r": 253
+"r": 195
 },
 {
 "n": 207,
 "t": 3,
 "i": 7,
+"nome": "A rainha Ester",
+"ref": "Ester 4:14",
+"win": "Ester foi corajosa e se apresentou ao rei para ajudar o seu povo.",
+"w": 1200,
+"h": 900,
+"r": 254
+},
+{
+"n": 208,
+"t": 3,
+"i": 8,
 "nome": "O templo é reconstruído",
 "ref": "Esdras 3:10-11",
 "win": "O povo reconstruiu o templo e louvou ao Senhor.",
@@ -463,9 +463,9 @@ window.COLORIR_DATA = {
 "r": 285
 },
 {
-"n": 208,
+"n": 209,
 "t": 3,
-"i": 8,
+"i": 9,
 "nome": "Esdras lê a Lei",
 "ref": "Neemias 8:8",
 "win": "O sacerdote leu o livro da Lei, e o povo escutou com atenção.",
@@ -474,9 +474,9 @@ window.COLORIR_DATA = {
 "r": 235
 },
 {
-"n": 209,
+"n": 210,
 "t": 3,
-"i": 9,
+"i": 10,
 "nome": "O muro de Jerusalém",
 "ref": "Neemias 4:6",
 "win": "Com todos trabalhando juntos, o muro de Jerusalém foi sendo reconstruído.",
@@ -485,9 +485,9 @@ window.COLORIR_DATA = {
 "r": 239
 },
 {
-"n": 210,
+"n": 211,
 "t": 3,
-"i": 10,
+"i": 11,
 "nome": "A rede cheia de peixes",
 "ref": "Lucas 5:4-6",
 "win": "Jesus disse para lançarem as redes, e a rede ficou cheia de peixes.",
