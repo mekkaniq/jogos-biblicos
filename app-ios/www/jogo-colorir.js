@@ -154,7 +154,7 @@
     });
 
     // ---- encaixe na tela, zoom e arrastar ----
-    let VW = 0, VH = 0, FW = 0, FH = 0, sc = 1, tx = 0, ty = 0; const MAXS = 8;
+    let VW = 0, VH = 0, FW = 0, FH = 0, sc = 1, tx = 0, ty = 0; const MAXS = 5;
     function fit() {
       VW = view.clientWidth; VH = view.clientHeight; if (!VW || !VH) return;
       const f = Math.min(VW / w, VH / h); FW = Math.floor(w * f); FH = Math.floor(h * f);
