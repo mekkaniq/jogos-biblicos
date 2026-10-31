@@ -75,7 +75,7 @@ window.COLORIR_DATA = {
 "win": "Deus fechou a boca dos leões, e Daniel ficou em segurança.",
 "w": 1200,
 "h": 900,
-"r": 93
+"r": 105
 },
 {
 "n": 8,
