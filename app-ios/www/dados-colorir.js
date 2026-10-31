@@ -4,17 +4,6 @@ window.COLORIR_DATA = {
 "n": 1,
 "t": 1,
 "i": 1,
-"nome": "A pomba e o ramo de oliveira",
-"ref": "Gênesis 8:11",
-"win": "A pomba voltou com um ramo de oliveira: as águas tinham baixado.",
-"w": 1200,
-"h": 900,
-"r": 142
-},
-{
-"n": 2,
-"t": 1,
-"i": 2,
 "nome": "O mar se abre",
 "ref": "Êxodo 14:21-22",
 "win": "Deus abriu o mar, e o povo passou em terra seca.",
@@ -23,9 +12,9 @@ window.COLORIR_DATA = {
 "r": 115
 },
 {
-"n": 3,
+"n": 2,
 "t": 1,
-"i": 3,
+"i": 2,
 "nome": "Os Dez Mandamentos",
 "ref": "Êxodo 20:1-3",
 "win": "Deus deu ao seu povo os Dez Mandamentos.",
@@ -34,9 +23,9 @@ window.COLORIR_DATA = {
 "r": 111
 },
 {
-"n": 4,
+"n": 3,
 "t": 1,
-"i": 4,
+"i": 3,
 "nome": "Débora, a juíza",
 "ref": "Juízes 4:14",
 "win": "Débora animou o povo a confiar no Senhor.",
@@ -45,9 +34,9 @@ window.COLORIR_DATA = {
 "r": 125
 },
 {
-"n": 5,
+"n": 4,
 "t": 1,
-"i": 5,
+"i": 4,
 "nome": "O Senhor é o meu pastor",
 "ref": "Salmos 23:1",
 "win": "O Senhor é o meu pastor: ele cuida das suas ovelhas.",
@@ -56,9 +45,9 @@ window.COLORIR_DATA = {
 "r": 156
 },
 {
-"n": 6,
+"n": 5,
 "t": 1,
-"i": 6,
+"i": 5,
 "nome": "Os corvos alimentam Elias",
 "ref": "1 Reis 17:6",
 "win": "Deus mandou corvos levarem pão e carne a Elias.",
@@ -67,9 +56,9 @@ window.COLORIR_DATA = {
 "r": 152
 },
 {
-"n": 7,
+"n": 6,
 "t": 1,
-"i": 7,
+"i": 6,
 "nome": "Jonas e o grande peixe",
 "ref": "Jonas 1:17",
 "win": "Deus enviou um grande peixe, e Jonas foi guardado.",
@@ -78,9 +67,9 @@ window.COLORIR_DATA = {
 "r": 157
 },
 {
-"n": 8,
+"n": 7,
 "t": 1,
-"i": 8,
+"i": 7,
 "nome": "Daniel e os leões",
 "ref": "Daniel 6:22",
 "win": "Deus fechou a boca dos leões, e Daniel ficou em segurança.",
@@ -89,9 +78,9 @@ window.COLORIR_DATA = {
 "r": 141
 },
 {
-"n": 9,
+"n": 8,
 "t": 1,
-"i": 9,
+"i": 8,
 "nome": "Daniel ora a Deus",
 "ref": "Daniel 6:10",
 "win": "Daniel orava a Deus todos os dias, mesmo quando era difícil.",
@@ -100,9 +89,9 @@ window.COLORIR_DATA = {
 "r": 93
 },
 {
-"n": 10,
+"n": 9,
 "t": 1,
-"i": 10,
+"i": 9,
 "nome": "Deus livra Daniel",
 "ref": "Daniel 6:23",
 "win": "Daniel confiou em Deus, e Deus o livrou dos leões.",
@@ -111,9 +100,9 @@ window.COLORIR_DATA = {
 "r": 139
 },
 {
-"n": 11,
+"n": 10,
 "t": 1,
-"i": 11,
+"i": 10,
 "nome": "Ester e o rei",
 "ref": "Ester 5:2",
 "win": "O rei recebeu Ester com bondade, e ela pôde falar.",
@@ -122,9 +111,9 @@ window.COLORIR_DATA = {
 "r": 116
 },
 {
-"n": 12,
+"n": 11,
 "t": 1,
-"i": 12,
+"i": 11,
 "nome": "Neemias anima o povo",
 "ref": "Neemias 2:18",
 "win": "Neemias animou o povo: vamos levantar o muro!",
@@ -133,9 +122,9 @@ window.COLORIR_DATA = {
 "r": 127
 },
 {
-"n": 13,
+"n": 12,
 "t": 1,
-"i": 13,
+"i": 12,
 "nome": "Cinco pães e dois peixes",
 "ref": "João 6:9-11",
 "win": "Um menino ofereceu cinco pães e dois peixes, e Jesus alimentou a multidão.",
@@ -144,9 +133,9 @@ window.COLORIR_DATA = {
 "r": 146
 },
 {
-"n": 14,
+"n": 13,
 "t": 1,
-"i": 14,
+"i": 13,
 "nome": "A tempestade no mar",
 "ref": "Marcos 4:37-39",
 "win": "Uma grande tempestade veio, mas Jesus acalmou o mar.",
@@ -155,9 +144,9 @@ window.COLORIR_DATA = {
 "r": 111
 },
 {
-"n": 15,
+"n": 14,
 "t": 1,
-"i": 15,
+"i": 14,
 "nome": "O pai abraça o filho",
 "ref": "Lucas 15:20",
 "win": "O pai correu e abraçou o filho que voltou para casa.",
@@ -166,9 +155,9 @@ window.COLORIR_DATA = {
 "r": 149
 },
 {
-"n": 16,
+"n": 15,
 "t": 1,
-"i": 16,
+"i": 15,
 "nome": "Ajudando quem precisa",
 "ref": "Mateus 25:40",
 "win": "Jesus nos ensina a ajudar quem precisa.",
@@ -177,9 +166,9 @@ window.COLORIR_DATA = {
 "r": 177
 },
 {
-"n": 17,
+"n": 16,
 "t": 1,
-"i": 17,
+"i": 16,
 "nome": "O túmulo vazio",
 "ref": "Mateus 28:5-6",
 "win": "Jesus ressuscitou! O túmulo está vazio.",
@@ -202,6 +191,17 @@ window.COLORIR_DATA = {
 "n": 102,
 "t": 2,
 "i": 2,
+"nome": "A pomba e o ramo de oliveira",
+"ref": "Gênesis 8:11",
+"win": "A pomba voltou com um ramo de oliveira: as águas tinham baixado.",
+"w": 1200,
+"h": 900,
+"r": 157
+},
+{
+"n": 103,
+"t": 2,
+"i": 3,
 "nome": "Abraão e o carneiro",
 "ref": "Gênesis 22:13",
 "win": "Abraão confiou em Deus, e Deus providenciou um carneiro.",
@@ -210,9 +210,9 @@ window.COLORIR_DATA = {
 "r": 194
 },
 {
-"n": 103,
+"n": 104,
 "t": 2,
-"i": 3,
+"i": 4,
 "nome": "Os irmãos diante de José",
 "ref": "Gênesis 42:6",
 "win": "Os irmãos de José se inclinaram diante dele, sem saber quem ele era.",
@@ -221,9 +221,9 @@ window.COLORIR_DATA = {
 "r": 208
 },
 {
-"n": 104,
+"n": 105,
 "t": 2,
-"i": 4,
+"i": 5,
 "nome": "José perdoa os irmãos",
 "ref": "Gênesis 45:14-15",
 "win": "José perdoou os seus irmãos e os abraçou chorando.",
@@ -232,9 +232,9 @@ window.COLORIR_DATA = {
 "r": 171
 },
 {
-"n": 105,
+"n": 106,
 "t": 2,
-"i": 5,
+"i": 6,
 "nome": "Caminhando no meio do mar",
 "ref": "Êxodo 14:22",
 "win": "O povo caminhou no meio do mar, com as águas como muros dos dois lados.",
@@ -243,9 +243,9 @@ window.COLORIR_DATA = {
 "r": 156
 },
 {
-"n": 106,
+"n": 107,
 "t": 2,
-"i": 6,
+"i": 7,
 "nome": "Os muros de Jericó",
 "ref": "Josué 6:20",
 "win": "Os muros de Jericó caíram quando o povo obedeceu a Deus.",
@@ -254,9 +254,9 @@ window.COLORIR_DATA = {
 "r": 180
 },
 {
-"n": 107,
+"n": 108,
 "t": 2,
-"i": 7,
+"i": 8,
 "nome": "Rute e Noemi",
 "ref": "Rute 1:16",
 "win": "Rute ficou ao lado de Noemi e disse: o teu povo será o meu povo.",
@@ -265,9 +265,9 @@ window.COLORIR_DATA = {
 "r": 175
 },
 {
-"n": 108,
+"n": 109,
 "t": 2,
-"i": 8,
+"i": 9,
 "nome": "Ana entrega Samuel",
 "ref": "1 Samuel 1:27-28",
 "win": "Ana levou o pequeno Samuel ao sacerdote Eli para servir ao Senhor.",
@@ -276,9 +276,9 @@ window.COLORIR_DATA = {
 "r": 197
 },
 {
-"n": 109,
+"n": 110,
 "t": 2,
-"i": 9,
+"i": 10,
 "nome": "Samuel ouve o Senhor",
 "ref": "1 Samuel 3:10",
 "win": "Samuel respondeu: Fala, Senhor, que o teu servo ouve.",
@@ -287,9 +287,9 @@ window.COLORIR_DATA = {
 "r": 176
 },
 {
-"n": 110,
+"n": 111,
 "t": 2,
-"i": 10,
+"i": 11,
 "nome": "Davi toca a harpa",
 "ref": "1 Samuel 16:23",
 "win": "Davi tocava harpa, e a música acalmava o rei Saul.",
@@ -298,9 +298,9 @@ window.COLORIR_DATA = {
 "r": 181
 },
 {
-"n": 111,
+"n": 112,
 "t": 2,
-"i": 11,
+"i": 12,
 "nome": "Davi e o gigante",
 "ref": "1 Samuel 17:49-50",
 "win": "Com uma funda e uma pedra, confiando em Deus, Davi venceu o gigante.",
@@ -309,9 +309,9 @@ window.COLORIR_DATA = {
 "r": 152
 },
 {
-"n": 112,
+"n": 113,
 "t": 2,
-"i": 12,
+"i": 13,
 "nome": "A caminho de Jerusalém",
 "ref": "Salmos 122:1",
 "win": "Que alegria quando disseram: vamos à casa do Senhor!",
@@ -320,9 +320,9 @@ window.COLORIR_DATA = {
 "r": 203
 },
 {
-"n": 113,
+"n": 114,
 "t": 2,
-"i": 13,
+"i": 14,
 "nome": "A cidade do nosso Deus",
 "ref": "Salmos 48:1",
 "win": "Jerusalém, a cidade do nosso Deus.",
@@ -331,9 +331,9 @@ window.COLORIR_DATA = {
 "r": 169
 },
 {
-"n": 114,
+"n": 115,
 "t": 2,
-"i": 14,
+"i": 15,
 "nome": "Amigos levam o paralítico",
 "ref": "Marcos 2:3-5",
 "win": "Os amigos levaram o paralítico a Jesus pelo telhado.",
@@ -342,9 +342,9 @@ window.COLORIR_DATA = {
 "r": 204
 },
 {
-"n": 115,
+"n": 116,
 "t": 2,
-"i": 15,
+"i": 16,
 "nome": "Zaqueu sobe na árvore",
 "ref": "Lucas 19:4",
 "win": "Zaqueu subiu numa árvore para ver Jesus passar.",
@@ -353,9 +353,9 @@ window.COLORIR_DATA = {
 "r": 177
 },
 {
-"n": 116,
+"n": 117,
 "t": 2,
-"i": 16,
+"i": 17,
 "nome": "O bom samaritano",
 "ref": "Lucas 10:33-34",
 "win": "O samaritano parou e cuidou de quem precisava.",
@@ -364,9 +364,9 @@ window.COLORIR_DATA = {
 "r": 182
 },
 {
-"n": 117,
+"n": 118,
 "t": 2,
-"i": 17,
+"i": 18,
 "nome": "Pentecostes",
 "ref": "Atos 2:3-4",
 "win": "O Espírito Santo veio sobre os que oravam, e eles louvaram a Deus.",
@@ -375,9 +375,9 @@ window.COLORIR_DATA = {
 "r": 165
 },
 {
-"n": 118,
+"n": 119,
 "t": 2,
-"i": 18,
+"i": 19,
 "nome": "As correntes caem",
 "ref": "Atos 12:7",
 "win": "As correntes caíram, e Deus libertou o seu servo da prisão.",
