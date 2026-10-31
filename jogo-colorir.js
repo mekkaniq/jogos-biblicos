@@ -9,8 +9,11 @@
   const VIVID0 = [['Vermelho', '#E4545E'], ['Laranja', '#F2A03B'], ['Ouro', '#F2C230'], ['Verde', '#4DB366'], ['Azul', '#3E8EDE'], ['Marrom', '#8A5C3B']];
   const SOFT1 = [['Salmão', '#F4B3A3'], ['Limão', '#E1EEA9'], ['Turquesa', '#B4E4E2'], ['Lilás', '#E6C5E9'], ['Pele clara', '#F2D2B0'], ['Pele morena', '#DBA97E'], ['Pele escura', '#A8704B'], ['Cinza', '#D6D7DC']];
   const VIVID1 = [['Rosa vivo', '#E8629F'], ['Roxo', '#8E5CC7']];
+  // 4ª linha (v2.1): tons que faltavam. Fica no fim para não mudar o número das cores já salvas.
+  const DEEP = [['Vinho', '#8E2F4F'], ['Verde-pinho', '#2E6B4F'], ['Musgo', '#7C9A3C'], ['Azul-marinho', '#2D4A8A'],
+                ['Celeste vivo', '#4FC3F7'], ['Água-marinha', '#22B8A6'], ['Coral vivo', '#FF7062'], ['Grafite', '#5B6068']];
   const SOFT = SOFT0.concat(SOFT1), VIVID = VIVID0.concat(VIVID1);
-  const ALL = SOFT0.concat(VIVID0, SOFT1, VIVID1);   // cor número c (1..24) = ALL[c-1]; 0 = sem cor
+  const ALL = SOFT0.concat(VIVID0, SOFT1, VIVID1, DEEP);   // cor número c (1..24) = ALL[c-1]; 0 = sem cor
   const idx = c => ALL.indexOf(c) + 1;
   const rgb = h => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
   const C32 = [0xFFFFFFFF].concat(ALL.map(([, h]) => { const [r, g, b] = rgb(h); return (0xFF000000 | (b << 16) | (g << 8) | r) >>> 0; }));
@@ -68,7 +71,7 @@
       <div class="cl-view" id="clv"><div class="cl-world" id="clw"><canvas id="clc" width="${w}" height="${h}"></canvas><img class="cl-lines" id="cll" src="colorir-${it.n}.lines.png" alt="" draggable="false"></div>
         <div class="cl-load" id="cld">Preparando o desenho…</div><div class="cl-hint" id="cltip">Toque para pintar · dois dedos para ampliar</div></div>
       <footer class="cl-dock">
-        <div class="cl-pal"><div class="cl-row">${SOFT.map(sw).join('')}</div><div class="cl-row">${VIVID.map(sw).join('')}</div></div>
+        <div class="cl-pal"><div class="cl-row">${SOFT.map(sw).join('')}</div><div class="cl-row">${VIVID.map(sw).join('')}</div><div class="cl-row">${DEEP.map(sw).join('')}</div></div>
         <div class="cl-act"><button class="btn btn-ghost" data-undo>↶ Desfazer</button><button class="btn btn-ghost" data-erase>⌫ Borracha</button><button class="btn btn-ghost" data-clear>Limpar</button><button class="btn btn-gold" data-fin>Pronto ✓</button></div>
       </footer>`;
     document.body.appendChild(full); document.documentElement.classList.add('cl-on');

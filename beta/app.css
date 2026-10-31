@@ -1085,7 +1085,9 @@ html.cl-on #appTabs { display: none !important; }
   .cl-head .icon-btn { width: 38px; height: 38px; }
   .cl-view { grid-column: 1; grid-row: 2; }
   .cl-dock { grid-column: 2; grid-row: 2; border-top: 0; border-left: 1px solid rgba(216, 178, 92, .4); align-content: start; overflow: auto; padding: 8px 10px calc(8px + var(--safe-bottom)); }
-  .cl-row, .cl-row.v { grid-template-columns: repeat(6, minmax(0, 1fr)); padding: 0; gap: 5px; }
-  .cl-full { grid-template-columns: 1fr 270px; }
+  .cl-pal { grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 5px; }
+  .cl-row, .cl-row.v { display: contents; }
+  .cl-sw { max-width: 34px; }
+  .cl-full { grid-template-columns: 1fr 300px; }
   .cl-act { grid-template-columns: 1fr 1fr; }
 }
