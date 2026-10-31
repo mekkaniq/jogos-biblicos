@@ -4,9 +4,14 @@
   const K = App.kit;
   const D = window.COLORIR_DATA.items;
   // poucas cores, suaves; e algumas vivas
-  const SOFT = [['Rosa', '#F6C9D3'], ['Pêssego', '#F8D7BE'], ['Amarelo', '#F9EDA9'], ['Menta', '#C3E8D2'], ['Céu', '#C4DEF3'], ['Lavanda', '#DACFF0'], ['Areia', '#E7D4AE'], ['Cacau', '#C9A788']];
-  const VIVID = [['Vermelho', '#E4545E'], ['Laranja', '#F2A03B'], ['Ouro', '#F2C230'], ['Verde', '#4DB366'], ['Azul', '#3E8EDE'], ['Marrom', '#8A5C3B']];
-  const ALL = SOFT.concat(VIVID);                 // cor número c (1..14) = ALL[c-1]; 0 = sem cor
+  // a ordem das 14 primeiras não muda (o progresso salvo guarda o número da cor); as novas entram no fim
+  const SOFT0 = [['Rosa', '#F6C9D3'], ['Pêssego', '#F8D7BE'], ['Amarelo', '#F9EDA9'], ['Menta', '#C3E8D2'], ['Céu', '#C4DEF3'], ['Lavanda', '#DACFF0'], ['Areia', '#E7D4AE'], ['Cacau', '#C9A788']];
+  const VIVID0 = [['Vermelho', '#E4545E'], ['Laranja', '#F2A03B'], ['Ouro', '#F2C230'], ['Verde', '#4DB366'], ['Azul', '#3E8EDE'], ['Marrom', '#8A5C3B']];
+  const SOFT1 = [['Salmão', '#F4B3A3'], ['Limão', '#E1EEA9'], ['Turquesa', '#B4E4E2'], ['Lilás', '#E6C5E9'], ['Pele clara', '#F2D2B0'], ['Pele morena', '#DBA97E'], ['Pele escura', '#A8704B'], ['Cinza', '#D6D7DC']];
+  const VIVID1 = [['Rosa vivo', '#E8629F'], ['Roxo', '#8E5CC7']];
+  const SOFT = SOFT0.concat(SOFT1), VIVID = VIVID0.concat(VIVID1);
+  const ALL = SOFT0.concat(VIVID0, SOFT1, VIVID1);   // cor número c (1..24) = ALL[c-1]; 0 = sem cor
+  const idx = c => ALL.indexOf(c) + 1;
   const rgb = h => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
   const C32 = [0xFFFFFFFF].concat(ALL.map(([, h]) => { const [r, g, b] = rgb(h); return (0xFF000000 | (b << 16) | (g << 8) | r) >>> 0; }));
   const TRK = ['', 'Fáceis', 'Médios', 'Detalhados'], TRK_IC = ['', '🌱', '🌼', '🌳'];
@@ -52,7 +57,7 @@
     const S = K.st('colorir', { p: {}, trk: 1 });
     const rec = S.p[it.n] || (S.p[it.n] = { r: {} });
     const { w, h } = it;
-    const sw = (c, i) => `<button class="cl-sw" data-c="${i}" style="background:${c[1]}" aria-label="${c[0]}" title="${c[0]}"></button>`;
+    const sw = c => `<button class="cl-sw" data-c="${idx(c)}" style="background:${c[1]}" aria-label="${c[0]}" title="${c[0]}"></button>`;
     el.innerHTML = '';
     const full = document.createElement('div'); full.className = 'cl-full'; full.id = 'clfull';
     full.innerHTML = `<header class="cl-head">
@@ -63,7 +68,7 @@
       <div class="cl-view" id="clv"><div class="cl-world" id="clw"><canvas id="clc" width="${w}" height="${h}"></canvas><img class="cl-lines" id="cll" src="colorir-${it.n}.lines.png" alt="" draggable="false"></div>
         <div class="cl-load" id="cld">Preparando o desenho…</div><div class="cl-hint" id="cltip">Toque para pintar · dois dedos para ampliar</div></div>
       <footer class="cl-dock">
-        <div class="cl-pal"><div class="cl-row">${SOFT.map((c, i) => sw(c, i + 1)).join('')}</div><div class="cl-row v">${VIVID.map((c, i) => sw(c, SOFT.length + i + 1)).join('')}</div></div>
+        <div class="cl-pal"><div class="cl-row">${SOFT.map(sw).join('')}</div><div class="cl-row">${VIVID.map(sw).join('')}</div></div>
         <div class="cl-act"><button class="btn btn-ghost" data-undo>↶ Desfazer</button><button class="btn btn-ghost" data-erase>⌫ Borracha</button><button class="btn btn-ghost" data-clear>Limpar</button><button class="btn btn-gold" data-fin>Pronto ✓</button></div>
       </footer>`;
     document.body.appendChild(full); document.documentElement.classList.add('cl-on');
