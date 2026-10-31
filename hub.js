@@ -17,6 +17,9 @@
       { id: 'quem', name: 'Quem Sou Eu?', sub: 'Descubra o personagem pelas pistas.', icon: I.who, scene: 'deserto', done: cnt('quem'), total: window.QUEM_DATA.levels.length, isNew: 1 },
       { id: 'tempo', name: 'Linha do Tempo', sub: 'Coloque a história em ordem.', icon: I.timeline, scene: 'monte', done: cnt('tempo'), total: window.TEMPO_DATA.levels.length, isNew: 1 },
       { id: 'memoria', name: 'Jogo da Memória', sub: 'Junte cada história à sua carta.', icon: I.brain, scene: 'galileia', done: cnt('memoria'), total: window.MEMORIA_DATA.levels.length, isNew: 1 },
+      { id: 'labirinto', name: 'Labirinto', sub: 'Guie a Lumi até o fim do caminho.', icon: I.maze, scene: 'campo', done: cnt('labirinto'), total: window.LABIRINTO_DATA.levels.length, isNew: 1 },
+      { id: 'quebra', name: 'Quebra-Cabeça', sub: 'Monte as cenas da Bíblia.', icon: I.puzzle, scene: 'jardim', done: cnt('quebra'), total: window.QUEBRA_DATA.levels.length, isNew: 1 },
+      { id: 'colorir', name: 'Colorir', sub: 'Pinte as cenas da Bíblia, no seu ritmo.', icon: I.palette, scene: 'aurora', done: cnt('colorir'), total: window.COLORIR_DATA.items.length, isNew: 1 },
       { id: 'cartas', name: 'Solitaire Bíblico', sub: 'Junte as cartas de cada história.', icon: I.cards, scene: 'noite', done: K.levels.filter(l => st.cartas.done[l.n]).length, total: K.levels.length }
     ];
   }
@@ -60,7 +63,7 @@
         <button class="btn" data-settings>${I.gear} Ajustes</button>
         ${standalone ? '' : `<button class="btn" data-install>${I.share} Instalar no iPhone</button>`}
       </div>
-      <p class="credit">Textos bíblicos: Almeida Corrigida Fiel (ACF), fonte oficial deste app · <button class="lnk" data-about>Sobre</button> · Foto da capa: Pisit Heng / Unsplash · versão claude v2.0${window.__BETA ? ' beta ' + window.__BETA : ''}</p>`;
+      <p class="credit">Textos bíblicos: Almeida Corrigida Fiel (ACF), fonte oficial deste app · <button class="lnk" data-about>Sobre</button> · Foto da capa: Pisit Heng / Unsplash · versão claude v2.1${window.__BETA ? ' beta ' + window.__BETA : ''}</p>`;
     el.addEventListener('click', e => {
       const g = e.target.closest('[data-go]'); if (g) { App.sfx.tap(); go(g.dataset.go); }
       if (e.target.closest('[data-settings]')) openSettings();
