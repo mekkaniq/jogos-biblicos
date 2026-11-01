@@ -1087,7 +1087,9 @@ html.cl-on #appTabs { display: none !important; }
   .cl-dock { grid-column: 2; grid-row: 2; border-top: 0; border-left: 1px solid rgba(216, 178, 92, .4); align-content: start; overflow: auto; padding: 8px 10px calc(8px + var(--safe-bottom)); }
   .cl-pal { grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 5px; }
   .cl-row, .cl-row.v { display: contents; }
-  .cl-sw { max-width: 34px; }
+  .cl-sw { max-width: 30px; }
+  .cl-pal { gap: 4px; }
+  .cl-dock { gap: 6px; }
   .cl-full { grid-template-columns: 1fr 300px; }
   .cl-act { grid-template-columns: 1fr 1fr; }
 }
