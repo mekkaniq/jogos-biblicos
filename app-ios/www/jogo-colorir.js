@@ -38,7 +38,7 @@
       <section class="hero" style="background-image:url('${App.sceneUrl('aurora').slice(5, -2)}');min-height:220px">
         ${App.lumi ? App.lumi.html('lendo', 'quiet hero-lumi') : ''}${K.gicon(I.palette)}<h1 style="font-size:2rem"><span class="gold-text">Colorir</span></h1><div class="sub">Pinte as cenas da Bíblia, no seu ritmo.</div>
       </section>
-      <div class="trk-tabs">${[1, 2, 3, 4].map(t => { const ls = D.filter(x => x.t === t); return `<button class="trk ${t === trk ? 'on' : ''}" data-trk="${t}"><span>${TRK_IC[t]}</span><b>${TRK[t]}</b><small>${ls.filter(x => S.done[x.n]).length}/${ls.length}</small></button>`; }).join('')}</div>
+      <div class="trk-tabs">${[1, 2, 3].map(t => { const ls = D.filter(x => x.t === t); return `<button class="trk ${t === trk ? 'on' : ''}" data-trk="${t}"><span>${TRK_IC[t]}</span><b>${TRK[t]}</b><small>${ls.filter(x => S.done[x.n]).length}/${ls.length}</small></button>`; }).join('')}</div>
       <p class="trk-desc">${TRK_DESC[trk]}</p>
       <div class="section-title"><h2>Desenhos</h2><span>${doneC} de ${items.length} prontos</span></div>
       <div class="cl-grid">${items.map(x => `<button class="cl-card ${S.done[x.n] ? 'done' : ''}" data-open="${x.n}">
@@ -69,7 +69,7 @@
     el.innerHTML = '';
     const full = document.createElement('div'); full.className = 'cl-full'; full.id = 'clfull';
     full.innerHTML = `<header class="cl-head">
-        <button class="icon-btn" data-back="#/colorir" aria-label="Voltar">${I.back}</button>
+        <button class="icon-btn" data-back="${it.t === 4 ? '#/natal' : '#/colorir'}" aria-label="Voltar">${I.back}</button>
         <div class="ttl"><b>${esc(it.nome)}</b><small>${I.book} ${esc(it.ref)}</small></div>
         <div class="cl-zoom"><button class="icon-btn" data-zo aria-label="Afastar">－</button><button class="icon-btn" data-zi aria-label="Ampliar">＋</button></div>
       </header>
@@ -230,7 +230,7 @@
       const m = modal(`<div class="win-card" style="box-shadow:none;border:0;background:none;padding:0"><div class="wc-top"><div class="wc-badge">🎨</div><div><h2>${esc(it.nome)}</h2></div></div>
         <p class="wc-text">${esc(it.win)}</p><div class="wc-learned"><div>${I.book} <b>${esc(it.ref)}</b></div></div>
         <div class="wc-actions">${nx ? `<button class="btn btn-gold btn-block" data-wn>Próximo desenho ${I.arrow}</button>` : ''}<button class="btn btn-ghost btn-block" data-wl>Ver todos os desenhos</button><button class="btn btn-ghost btn-block" data-close>Continuar pintando</button></div></div>`);
-      m.el.addEventListener('click', ev => { if (ev.target.closest('[data-wn]')) { m.close(); go('#/colorir/' + nx.n); } if (ev.target.closest('[data-wl]')) { m.close(); go('#/colorir'); } });
+      m.el.addEventListener('click', ev => { if (ev.target.closest('[data-wn]')) { m.close(); go('#/colorir/' + nx.n); } if (ev.target.closest('[data-wl]')) { m.close(); go(it.t === 4 ? '#/natal' : '#/colorir'); } });
       sfx.good();
     }
     return { leave };

@@ -4,7 +4,7 @@
   const K = App.kit;
   const D = () => window.KIDS_DATA;
   const S = () => K.st('kids', { band: 'small', stickers: {}, voice: 1 });
-  const storyOf = id => D().stories.find(s => s.id === id);
+  const storyOf = id => D().stories.find(s => s.id === id) || (window.NATAL_DATA && window.NATAL_DATA.stories.find(s => s.id === id));
   const pick = a => a[Math.floor(Math.random() * a.length)];
 
   // a Lumi animada vem do arquivo lumi.js (compartilhada com os jogos dos adultos)
@@ -150,6 +150,7 @@
   route(/^\/kids\/h\/(\w+)$/, (el, id) => {
     reset();
     const st = storyOf(id); if (!st) return go('#/kids');
+    const home = st.natal ? '#/natal' : '#/kids';
     document.body.classList.add('kids');
     const s = S(); const small = s.band === 'small';
     setLast('kids', '#/kids/h/' + id, `Kids · ${st.name}`, small ? 'Pequeninos' : 'Leitores');
@@ -158,7 +159,7 @@
     let order = null;
     function scene(dir = 1) {
       const sc = st.scenes[step]; App.setScene(sc.bg);
-      el.innerHTML = `${top('#/kids', st.name.toUpperCase(), `${step + 1} de ${st.scenes.length}`)}
+      el.innerHTML = `${top(home, st.name.toUpperCase(), `${step + 1} de ${st.scenes.length}`)}
         <div class="kd-dots">${st.scenes.map((_, i) => `<i class="${i < step ? 'on' : i === step ? 'now' : ''}"></i>`).join('')}</div>
         <div class="kd-scene ${dir < 0 ? 'back' : ''}" style="--bgimg:${App.sceneUrl(sc.bg)}">${fxHTML(sc.fx)}${artHTML(sc.art)}${lumiHTML('lendo', 'mini')}</div>
         <div class="kd-text ${small ? 'small' : ''}">${wordsHTML(sc.text)}</div>
@@ -174,7 +175,7 @@
     function question() {
       const q = Q[qi]; App.setScene(st.scene); qmist = 0;
       if (!order) order = K.shuffle(q.o.map((_, i) => i));
-      el.innerHTML = `${top('#/kids', st.name.toUpperCase(), `Pergunta ${qi + 1} de ${Q.length}`)}
+      el.innerHTML = `${top(home, st.name.toUpperCase(), `Pergunta ${qi + 1} de ${Q.length}`)}
         <div class="kd-dots">${Q.map((_, i) => `<i class="${i < qi ? 'on' : i === qi ? 'now' : ''}"></i>`).join('')}</div>
         ${bubble('pensando', esc(q.q), qi ? 'swap' : 'enter')}
         <div class="kd-opts ${small ? 'pics' : 'words'}">${order.map((i, k) => small
@@ -204,15 +205,15 @@
     function sticker() {
       App.setScene('aurora'); hush();
       const first = !s.stickers[id]; s.stickers[id] = 1; save(); sfx.win();
-      const left = D().stories.filter(x => !s.stickers[x.id]).length;
-      el.innerHTML = `${top('#/kids', 'PARABÉNS!', st.name)}
+      const left = (st.natal ? window.NATAL_DATA.stories : D().stories).filter(x => !s.stickers[x.id]).length;
+      el.innerHTML = `${top(home, 'PARABÉNS!', st.name)}
         <div class="kd-win">
           <div class="kd-lumi solo">${lumiHTML('festa', 'enter party')}</div>
           <div class="kd-sticker"><span>${st.sticker}</span><b>${esc(st.name)}</b><small>${esc(st.ref)}</small></div>
           <h2>${first ? 'Você ganhou uma figurinha!' : 'Você ouviu de novo!'}</h2>
-          <p>${small ? 'A Lumi está muito feliz com você!' : `Você respondeu tudo${mist ? '' : ' sem errar nenhuma'}! A figurinha já está no seu álbum.`}${left ? '' : '<br><b>Você completou o álbum inteiro! 🎉</b>'}</p>
+          <p>${small ? 'A Lumi está muito feliz com você!' : `Você respondeu tudo${mist ? '' : ' sem errar nenhuma'}! A figurinha já está guardada.`}${left ? '' : '<br><b>Você completou o álbum inteiro! 🎉</b>'}</p>
         </div>
-        <div class="kd-row"><button class="btn btn-gold" data-go="#/kids/album">📒 Meu álbum</button><button class="btn btn-ghost" data-go="#/kids">Outras histórias</button></div>`;
+        <div class="kd-row">${st.natal ? '' : '<button class="btn btn-gold" data-go="#/kids/album">📒 Meu álbum</button>'}<button class="btn btn-ghost" data-go="${home}">Outras histórias</button></div>`;
       later(() => { confetti(); burst($('.lumi', el), ['✨', '⭐', '🌟', '💛'], 12); }, 350);
       every(() => { const lu = $('.lumi', el); lu && burst(lu, ['✨', '⭐'], 3); }, 1600);
       speak(first ? 'Parabéns! Você ganhou uma figurinha!' : 'Parabéns! Você ouviu a história de novo!');

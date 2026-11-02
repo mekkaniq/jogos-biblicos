@@ -46,7 +46,7 @@
 
   // ---------- 2b) Barra de abas do aplicativo (nas telas principais) ----------
   const TABS = [
-    ['#/', '🧩', 'Jogos'], ['#/kids', '🐑', 'Kids'], ['#/kids/historia', '📖', 'História'], ['set', '⚙️', 'Ajustes']
+    ['#/', '🧩', 'Jogos'], ['#/kids', '🐑', 'Kids'], ['#/natal', '✨', 'Natal'], ['#/kids/historia', '📖', 'História'], ['set', '⚙️', 'Ajustes']
   ];
   function tabbar() {
     let bar = document.getElementById('appTabs');
@@ -65,7 +65,7 @@
   function onRoute(r) {
     statusStyle();
     const h = (r || location.hash || '#/').split('?')[0];
-    const show = ['#/', '#', '#/kids', '#/kids/historia', '#/kids/album', '#/kids/turma'].includes(h) || /^#\/kids\/historia\/\w+$/.test(h);
+    const show = ['#/', '#', '#/natal', '#/kids', '#/kids/historia', '#/kids/album', '#/kids/turma'].includes(h) || /^#\/kids\/historia\/\w+$/.test(h);
     const bar = tabbar();
     document.documentElement.classList.toggle('has-tabs', show);
     bar.querySelectorAll('[data-tab]').forEach(b => {
