@@ -46,9 +46,35 @@
     return () => { dead = true; cancelAnimationFrame(raf); cv.remove(); };
   }
 
+
+  // neve caindo bem devagar (flocos pequenos e suaves, por cima de tudo, sem atrapalhar o toque nem a leitura)
+  function startSnow() {
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return () => { };
+    const cv = document.createElement('canvas'); cv.className = 'nt-snow'; cv.setAttribute('aria-hidden', 'true'); document.body.appendChild(cv);
+    const cx = cv.getContext('2d'); let W = 0, H = 0, dpr = Math.min(devicePixelRatio || 1, 2), raf = 0, last = 0, dead = false;
+    const N = innerWidth < 600 ? 38 : 70;
+    const fl = Array.from({ length: N }, () => ({ x: Math.random(), y: Math.random(), r: .8 + Math.random() * 2.4, v: 12 + Math.random() * 22, ph: Math.random() * 6.28, sw: 6 + Math.random() * 14, a: .3 + Math.random() * .4 }));
+    function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+    size(); addEventListener('resize', size);
+    function draw(now) {
+      if (dead) return; raf = requestAnimationFrame(draw);
+      if (document.hidden) { last = 0; return; }
+      const dt = last ? Math.min(.05, (now - last) / 1000) : 0; last = now;
+      cx.clearRect(0, 0, W, H);
+      for (const f of fl) {
+        f.y += f.v * dt / H; f.ph += dt * .8;
+        if (f.y > 1.02) { f.y = -.02; f.x = Math.random(); }
+        const x = f.x * W + Math.sin(f.ph) * f.sw, y = f.y * H;
+        cx.beginPath(); cx.arc(x, y, f.r, 0, 6.283); cx.fillStyle = `rgba(255,255,255,${f.a})`; cx.fill();
+      }
+    }
+    raf = requestAnimationFrame(draw);
+    return () => { dead = true; cancelAnimationFrame(raf); removeEventListener('resize', size); cv.remove(); };
+  }
+
   route(/^\/natal$/, el => {
     App.setScene('noite');
-    const stop = startShader(); document.documentElement.classList.add('nt-on');
+    const stopBg = startShader(), stopSnow = startSnow(), stop = () => { stopBg(); stopSnow(); }; document.documentElement.classList.add('nt-on');
     const stories = window.NATAL_DATA.stories, s = st(), c = cl();
     const open = window.__ntOpen || '';
     const draws = window.COLORIR_DATA.items.filter(x => x.t === 4);
