@@ -7,6 +7,7 @@
   route(/^\/natal$/, el => {
     App.setScene('noite');
     const stories = window.NATAL_DATA.stories, s = st(), c = cl();
+    const open = window.__ntOpen || '';
     const draws = window.COLORIR_DATA.items.filter(x => x.t === 4);
     const doneS = stories.filter(x => s.stickers[x.id]).length, doneD = draws.filter(x => (c.done || {})[x.n]).length;
     el.innerHTML = `
@@ -15,13 +16,24 @@
         <h1>Caminho até Belém</h1>
         <p class="nt-verse">“Hoje, na cidade de Davi, vos nasceu o Salvador, que é Cristo, o Senhor.”<cite>Lucas 2:11 · ACF</cite></p>
         <small>Sem pressa e sem contagem de dias: siga no seu ritmo.</small></section>
-      <div class="section-title"><h2>As histórias</h2><span>${doneS} de ${stories.length}</span></div>
-      <div class="nt-list">${stories.map((x, i) => `<button class="nt-story parch ${s.stickers[x.id] ? 'ok' : ''}" data-go="#/kids/h/${x.id}"><span class="nt-n">${i + 1}</span><span class="nt-ic">${x.icon}</span><span class="nt-tx"><b>${esc(x.name)}</b><small>${I.book} ${esc(x.ref)}</small></span><em>${s.stickers[x.id] ? '✓' : ''}</em></button>`).join('')}</div>
-      <div class="section-title"><h2>Colorir o Natal</h2><span>${doneD} de ${draws.length}</span></div>
-      <div class="nt-draws">${draws.map(x => `<button class="nt-draw ${(c.done || {})[x.n] ? 'ok' : ''}" data-go="#/colorir/${x.n}"><img src="colorir-${x.n}.th.webp" alt="" loading="lazy"><b>${esc(x.nome)}</b><small>${esc(x.ref)}</small></button>`).join('')}</div>
+      <div class="nt-tabs">
+        <button class="nt-tab ${open === 'h' ? 'on' : ''}" data-tab="h" aria-expanded="${open === 'h'}"><span class="nt-ti">📖</span><span class="nt-tt"><b>Histórias</b><small>${doneS} de ${stories.length} ouvidas</small></span><i>▾</i></button>
+        <div class="nt-panel" data-panel="h" ${open === 'h' ? '' : 'hidden'}>
+          <div class="nt-list">${stories.map((x, i) => `<button class="nt-story parch ${s.stickers[x.id] ? 'ok' : ''}" data-go="#/kids/h/${x.id}"><span class="nt-n">${i + 1}</span><span class="nt-ic">${x.icon}</span><span class="nt-tx"><b>${esc(x.name)}</b><small>${I.book} ${esc(x.ref)}</small></span><em>${s.stickers[x.id] ? '✓' : ''}</em></button>`).join('')}</div>
+        </div>
+        <button class="nt-tab ${open === 'd' ? 'on' : ''}" data-tab="d" aria-expanded="${open === 'd'}"><span class="nt-ti">🎨</span><span class="nt-tt"><b>Desenhos para colorir</b><small>${doneD} de ${draws.length} prontos</small></span><i>▾</i></button>
+        <div class="nt-panel" data-panel="d" ${open === 'd' ? '' : 'hidden'}>
+          <div class="nt-draws">${draws.map(x => `<button class="nt-draw ${(c.done || {})[x.n] ? 'ok' : ''}" data-go="#/colorir/${x.n}"><img src="colorir-${x.n}.th.webp" alt="" loading="lazy"><b>${esc(x.nome)}</b><small>${esc(x.ref)}</small></button>`).join('')}</div>
+        </div>
+      </div>
       <p class="nt-foot">Todas as histórias apontam para Jesus, o Salvador que Deus prometeu e enviou por amor a nós.</p>`;
     el.addEventListener('click', e => {
       const b = e.target.closest('[data-back]'); if (b) { go(b.dataset.back); return; }
+      const t = e.target.closest('[data-tab]');
+      if (t) { const k = t.dataset.tab, was = t.classList.contains('on'); window.__ntOpen = was ? '' : k;
+        el.querySelectorAll('[data-tab]').forEach(x => { const on = !was && x.dataset.tab === k; x.classList.toggle('on', on); x.setAttribute('aria-expanded', on); });
+        el.querySelectorAll('[data-panel]').forEach(x => { x.hidden = was || x.dataset.panel !== k; });
+        if (!was) t.scrollIntoView({ block: 'start', behavior: 'smooth' }); return; }
       const g = e.target.closest('[data-go]'); if (g) go(g.dataset.go);
     });
   });

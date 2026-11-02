@@ -1123,3 +1123,15 @@ html.cl-on #appTabs { display: none !important; }
 .nt-draw small { color: #8a6a1a; }
 .nt-draw.ok { outline: 2.5px solid #2e7d4f; }
 .nt-foot { text-align: center; color: var(--parch-100, #f4e9cf); opacity: .9; margin: 18px 8px 8px; font-size: .95rem; }
+.nt-tabs { display: grid; gap: 10px; margin-top: 10px; }
+.nt-tab { display: flex; align-items: center; gap: 12px; width: 100%; padding: 14px 16px; border-radius: 20px; text-align: left; color: #fff7e2; background: linear-gradient(180deg, #2c4276, #1b2a54); border: 1.5px solid rgba(233, 207, 140, .7); box-shadow: 0 6px 14px rgba(10, 18, 46, .3); }
+.nt-tab .nt-ti { font-size: 1.8rem; flex: none; }
+.nt-tab .nt-tt { flex: 1; min-width: 0; }
+.nt-tab b { display: block; font-family: var(--display); font-size: 1.1rem; color: #f6dc9b; }
+.nt-tab small { opacity: .9; }
+.nt-tab i { font-style: normal; font-size: 1.3rem; color: #f6dc9b; transition: transform .2s; }
+.nt-tab.on i { transform: rotate(180deg); }
+.nt-tab.on { background: linear-gradient(180deg, #d9b45a, #b88a2c); color: #3b2a0c; }
+.nt-tab.on b, .nt-tab.on i { color: #3b2a0c; }
+.nt-panel { padding: 2px 0 6px; }
+.nt-panel[hidden] { display: none; }
