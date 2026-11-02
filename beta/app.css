@@ -688,9 +688,9 @@ p { margin: 0; }
 .win-card .wc-learned div { padding: 8px 12px; border-radius: 12px; background: rgba(255, 255, 255, .55); border: 1px solid var(--parch-300); font-size: .88rem; }
 .win-card .wc-learned b { color: var(--green-800); }
 .win-card .wc-actions { display: grid; gap: 8px; margin-top: 14px; }
-.trk-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 14px; }
+.trk-tabs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 14px; }
 .trk { display: grid; justify-items: center; gap: 1px; padding: 8px 4px; border-radius: 16px; background: rgba(255, 250, 235, .14); border: 1.5px solid rgba(216, 178, 92, .45); color: var(--parch-100); }
-.trk span { font-size: 1.3rem; } .trk b { font-family: var(--display); font-size: .95rem; } .trk small { font-size: .72rem; opacity: .85; }
+.trk span { font-size: 1.3rem; } .trk b { font-family: var(--display); font-size: .82rem; } .trk small { font-size: .72rem; opacity: .85; }
 .trk.on { background: var(--gold-grad); color: #3b2a0c; border-color: #a47b2a; box-shadow: 0 6px 16px -8px rgba(0,0,0,.6); }
 .trk-desc { text-align: center; color: var(--parch-200); font-size: .88rem; margin: 8px 4px 0; text-shadow: 0 1px 3px rgba(0,0,0,.6); }
 .lnk { color: var(--gold-300); text-decoration: underline; font-size: inherit; padding: 0; }

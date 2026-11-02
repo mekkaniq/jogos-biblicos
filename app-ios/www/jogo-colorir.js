@@ -22,8 +22,8 @@
   const idx = c => ALL.indexOf(c) + 1;
   const rgb = h => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
   const C32 = [0xFFFFFFFF].concat(ALL.map(([, h]) => { const [r, g, b] = rgb(h); return (0xFF000000 | (b << 16) | (g << 8) | r) >>> 0; }));
-  const TRK = ['', 'Fáceis', 'Médios', 'Detalhados'], TRK_IC = ['', '🌱', '🌼', '🌳'];
-  const TRK_DESC = ['', 'Áreas grandes, para começar com calma.', 'Mais detalhes para colorir.', 'Cenas cheias de detalhes, para os pacientes. Use o zoom de dois dedos!'];
+  const TRK = ['', 'Fáceis', 'Médios', 'Detalhados', 'Natal'], TRK_IC = ['', '🌱', '🌼', '🌳', '⭐'];
+  const TRK_DESC = ['', 'Áreas grandes, para começar com calma.', 'Mais detalhes para colorir.', 'Cenas cheias de detalhes, para os pacientes. Use o zoom de dois dedos!', 'O caminho até Belém, para colorir com calma e pensar em Jesus.'];
 
   // ---------- galeria ----------
   route(/^\/colorir$/, el => {
@@ -38,7 +38,7 @@
       <section class="hero" style="background-image:url('${App.sceneUrl('aurora').slice(5, -2)}');min-height:220px">
         ${App.lumi ? App.lumi.html('lendo', 'quiet hero-lumi') : ''}${K.gicon(I.palette)}<h1 style="font-size:2rem"><span class="gold-text">Colorir</span></h1><div class="sub">Pinte as cenas da Bíblia, no seu ritmo.</div>
       </section>
-      <div class="trk-tabs">${[1, 2, 3].map(t => { const ls = D.filter(x => x.t === t); return `<button class="trk ${t === trk ? 'on' : ''}" data-trk="${t}"><span>${TRK_IC[t]}</span><b>${TRK[t]}</b><small>${ls.filter(x => S.done[x.n]).length}/${ls.length}</small></button>`; }).join('')}</div>
+      <div class="trk-tabs">${[1, 2, 3, 4].map(t => { const ls = D.filter(x => x.t === t); return `<button class="trk ${t === trk ? 'on' : ''}" data-trk="${t}"><span>${TRK_IC[t]}</span><b>${TRK[t]}</b><small>${ls.filter(x => S.done[x.n]).length}/${ls.length}</small></button>`; }).join('')}</div>
       <p class="trk-desc">${TRK_DESC[trk]}</p>
       <div class="section-title"><h2>Desenhos</h2><span>${doneC} de ${items.length} prontos</span></div>
       <div class="cl-grid">${items.map(x => `<button class="cl-card ${S.done[x.n] ? 'done' : ''}" data-open="${x.n}">
