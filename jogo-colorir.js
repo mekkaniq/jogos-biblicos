@@ -22,8 +22,8 @@
   const idx = c => ALL.indexOf(c) + 1;
   const rgb = h => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
   const C32 = [0xFFFFFFFF].concat(ALL.map(([, h]) => { const [r, g, b] = rgb(h); return (0xFF000000 | (b << 16) | (g << 8) | r) >>> 0; }));
-  const TRK = ['', 'Fáceis', 'Médios', 'Detalhados'], TRK_IC = ['', '🌱', '🌼', '🌳'];
-  const TRK_DESC = ['', 'Áreas grandes, para começar com calma.', 'Mais detalhes para colorir.', 'Cenas cheias de detalhes, para os pacientes. Use o zoom de dois dedos!'];
+  const TRK = ['', 'Fáceis', 'Médios', 'Detalhados', 'Natal'], TRK_IC = ['', '🌱', '🌼', '🌳', '⭐'];
+  const TRK_DESC = ['', 'Áreas grandes, para começar com calma.', 'Mais detalhes para colorir.', 'Cenas cheias de detalhes, para os pacientes. Use o zoom de dois dedos!', 'O caminho até Belém, para colorir com calma e pensar em Jesus.'];
 
   // ---------- galeria ----------
   route(/^\/colorir$/, el => {
@@ -69,7 +69,7 @@
     el.innerHTML = '';
     const full = document.createElement('div'); full.className = 'cl-full'; full.id = 'clfull';
     full.innerHTML = `<header class="cl-head">
-        <button class="icon-btn" data-back="#/colorir" aria-label="Voltar">${I.back}</button>
+        <button class="icon-btn" data-back="${it.t === 4 ? '#/natal' : '#/colorir'}" aria-label="Voltar">${I.back}</button>
         <div class="ttl"><b>${esc(it.nome)}</b><small>${I.book} ${esc(it.ref)}</small></div>
         <div class="cl-zoom"><button class="icon-btn" data-zo aria-label="Afastar">－</button><button class="icon-btn" data-zi aria-label="Ampliar">＋</button></div>
       </header>
@@ -230,7 +230,7 @@
       const m = modal(`<div class="win-card" style="box-shadow:none;border:0;background:none;padding:0"><div class="wc-top"><div class="wc-badge">🎨</div><div><h2>${esc(it.nome)}</h2></div></div>
         <p class="wc-text">${esc(it.win)}</p><div class="wc-learned"><div>${I.book} <b>${esc(it.ref)}</b></div></div>
         <div class="wc-actions">${nx ? `<button class="btn btn-gold btn-block" data-wn>Próximo desenho ${I.arrow}</button>` : ''}<button class="btn btn-ghost btn-block" data-wl>Ver todos os desenhos</button><button class="btn btn-ghost btn-block" data-close>Continuar pintando</button></div></div>`);
-      m.el.addEventListener('click', ev => { if (ev.target.closest('[data-wn]')) { m.close(); go('#/colorir/' + nx.n); } if (ev.target.closest('[data-wl]')) { m.close(); go('#/colorir'); } });
+      m.el.addEventListener('click', ev => { if (ev.target.closest('[data-wn]')) { m.close(); go('#/colorir/' + nx.n); } if (ev.target.closest('[data-wl]')) { m.close(); go(it.t === 4 ? '#/natal' : '#/colorir'); } });
       sfx.good();
     }
     return { leave };

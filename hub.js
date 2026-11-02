@@ -19,7 +19,7 @@
       { id: 'memoria', name: 'Jogo da Memória', sub: 'Junte cada história à sua carta.', icon: I.brain, scene: 'galileia', done: cnt('memoria'), total: window.MEMORIA_DATA.levels.length, isNew: 1 },
       { id: 'labirinto', name: 'Labirinto', sub: 'Guie a Lumi até o fim do caminho.', icon: I.maze, scene: 'campo', done: cnt('labirinto'), total: window.LABIRINTO_DATA.levels.length, isNew: 1 },
       { id: 'quebra', name: 'Quebra-Cabeça', sub: 'Monte as cenas da Bíblia.', icon: I.puzzle, scene: 'jardim', done: cnt('quebra'), total: window.QUEBRA_DATA.levels.length, isNew: 1 },
-      { id: 'colorir', name: 'Colorir', sub: 'Pinte as cenas da Bíblia, no seu ritmo.', icon: I.palette, scene: 'aurora', done: cnt('colorir'), total: window.COLORIR_DATA.items.length, isNew: 1 },
+      { id: 'colorir', name: 'Colorir', sub: 'Pinte as cenas da Bíblia, no seu ritmo.', icon: I.palette, scene: 'aurora', done: Object.keys((load().colorir || {}).done || {}).filter(n => +n < 400 && load().colorir.done[n]).length, total: window.COLORIR_DATA.items.filter(x => x.t < 4).length, isNew: 1 },
       { id: 'cartas', name: 'Solitaire Bíblico', sub: 'Junte as cartas de cada história.', icon: I.cards, scene: 'noite', done: K.levels.filter(l => st.cartas.done[l.n]).length, total: K.levels.length }
     ];
   }
@@ -49,6 +49,7 @@
         <button class="today parch ${pd.done ? 'ok' : ''}" data-go="#/palavra"><span class="ti">${I.sun}</span><b>Palavra do Dia</b><small>${pd.done ? (pd.win ? `Acertou em ${pd.tries}/6 ✓` : 'Feita ✓') : `nº ${pd.num} · 5 letras`}</small><em class="nw">${pd.done ? '' : 'NOVO'}</em></button>
         <button class="today parch ${cd ? 'ok' : ''}" data-go="#/caca/dia"><span class="ti">${I.search}</span><b>Desafio do Dia</b><small>${cd ? 'Feito ✓' : 'Caça-palavras'}</small></button>
       </div>
+      <button class="nt-banner" data-go="#/natal"><span class="nt-star">⭐</span><div><b>Edição de Natal</b><span>Caminho até Belém: histórias e desenhos para colorir</span></div></button>
       <button class="kids-banner" data-go="#/kids"><img src="lumi-oi.webp" alt="Lumi"><div><b>Cantinho Kids</b><span>${App.historia ? '12 histórias com a Lumi e A Grande História da Bíblia, do Gênesis ao Apocalipse' : '12 histórias da Bíblia com a Lumi, para crianças de 4 a 10 anos'}</span></div><em class="nw">NOVO</em></button>
       <div class="section-title"><h2>Escolha um jogo</h2><span>${games.length + 1} jogos</span></div>
       <div class="gtiles">${games.map(g => `

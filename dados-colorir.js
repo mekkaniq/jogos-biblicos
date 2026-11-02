@@ -494,6 +494,116 @@ window.COLORIR_DATA = {
 "w": 1200,
 "h": 1200,
 "r": 274
+},
+{
+"n": 401,
+"t": 4,
+"i": 1,
+"nome": "A Lumi com Maria",
+"ref": "Lucas 1:30",
+"win": "O anjo disse a Maria: não temas, porque achaste graça diante de Deus.",
+"w": 1200,
+"h": 900,
+"r": 66
+},
+{
+"n": 402,
+"t": 4,
+"i": 2,
+"nome": "A viagem a Belém",
+"ref": "Lucas 2:4-5",
+"win": "José e Maria foram a Belém, a cidade de Davi.",
+"w": 1200,
+"h": 800,
+"r": 104
+},
+{
+"n": 403,
+"t": 4,
+"i": 3,
+"nome": "A manjedoura",
+"ref": "Lucas 2:7",
+"win": "Maria deu à luz o seu filho e o deitou numa manjedoura.",
+"w": 1200,
+"h": 900,
+"r": 64
+},
+{
+"n": 404,
+"t": 4,
+"i": 4,
+"nome": "Os pastores e a luz do céu",
+"ref": "Lucas 2:9-10",
+"win": "Os pastores se encheram de temor, mas lhes foi dito: não temais, trago boas novas de grande alegria.",
+"w": 1200,
+"h": 900,
+"r": 107
+},
+{
+"n": 405,
+"t": 4,
+"i": 5,
+"nome": "Os pastores vão a Belém",
+"ref": "Lucas 2:15-16",
+"win": "Os pastores foram apressadamente e acharam o menino deitado na manjedoura.",
+"w": 1200,
+"h": 900,
+"r": 83
+},
+{
+"n": 406,
+"t": 4,
+"i": 6,
+"nome": "A estrela dos magos",
+"ref": "Mateus 2:2",
+"win": "Vimos a sua estrela no oriente e viemos adorá-lo.",
+"w": 1200,
+"h": 800,
+"r": 127
+},
+{
+"n": 407,
+"t": 4,
+"i": 7,
+"nome": "Os magos chegam",
+"ref": "Mateus 2:10-11",
+"win": "Ao verem a estrela, os magos se alegraram muito e entraram na casa.",
+"w": 1200,
+"h": 900,
+"r": 158
+},
+{
+"n": 408,
+"t": 4,
+"i": 8,
+"nome": "Os presentes dos magos",
+"ref": "Mateus 2:11",
+"win": "Os magos o adoraram e lhe ofereceram ouro, incenso e mirra.",
+"w": 1200,
+"h": 900,
+"r": 85
+},
+{
+"n": 409,
+"t": 4,
+"i": 9,
+"nome": "A manjedoura e a estrela",
+"ref": "Lucas 2:12",
+"win": "Este será o sinal: achareis o menino envolto em panos e deitado numa manjedoura.",
+"w": 1200,
+"h": 900,
+"r": 131
+},
+{
+"n": 410,
+"t": 4,
+"i": 10,
+"nome": "Adoração em Belém",
+"ref": "Mateus 2:11",
+"win": "Vendo o menino com Maria sua mãe, prostrando-se, o adoraram.",
+"w": 1200,
+"h": 900,
+"r": 147
 }
 ]
 };
