@@ -1146,3 +1146,11 @@ html.nt-on .topbar .ttl, html.nt-on .nt-foot { text-shadow: 0 1px 6px rgba(0, 0,
 .nt-tab.on { background: linear-gradient(180deg, #e3c06a, #b88a2c) !important; }
 .nt-banner { background: linear-gradient(135deg, #a3222f 0%, #7c1c2a 45%, #1d6a45 100%) !important; }
 .nt-snow { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; }
+.lumi .lu-hat { position: absolute; height: auto; pointer-events: none; transform-origin: 50% 80%; filter: drop-shadow(0 3px 4px rgba(90, 10, 20, .3)); z-index: 2; }
+.lumi { overflow: visible; }
+/* Início: versículo menor, para aparecer mais a foto da tumba vazia */
+.hero .verse { margin-top: 10px; max-width: 330px; padding: 8px 12px; font-size: .8rem; line-height: 1.35; background: var(--paper-noise), linear-gradient(180deg, rgba(255, 252, 244, .86), rgba(244, 232, 205, .82)); }
+.hero .verse cite { margin-top: 3px; font-size: .7rem; }
+/* Natal: touca no canto do cartão */
+.nt-heroW { position: relative; }
+.nt-hat { position: absolute; left: -10px; top: -14px; width: 84px; height: auto; transform: rotate(-18deg); z-index: 3; pointer-events: none; filter: drop-shadow(0 3px 4px rgba(0, 0, 0, .35)); }

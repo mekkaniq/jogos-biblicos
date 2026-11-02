@@ -151,6 +151,7 @@
     reset();
     const st = storyOf(id); if (!st) return go('#/kids');
     const home = st.natal ? '#/natal' : '#/kids';
+    document.body.dataset.natal = st.natal ? '1' : '';
     document.body.classList.add('kids');
     const s = S(); const small = s.band === 'small';
     setLast('kids', '#/kids/h/' + id, `Kids · ${st.name}`, small ? 'Pequeninos' : 'Leitores');

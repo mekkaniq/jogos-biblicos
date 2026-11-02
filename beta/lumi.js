@@ -9,7 +9,10 @@
   // =====================================================================
   const lumiSrc = n => 'lumi-' + n + '.webp';
   const BLINK = { oi: [33.76, 21.67, 46.82], pensando: [32.11, 21.94, 48.16], dica: [32.82, 24.87, 38.21], lendo: [29.17, 33.61, 40.83] };
-  const body = p => { const b = BLINK[p]; return `<img class="lu-i" src="${lumiSrc(p)}" alt="" draggable="false">${b ? `<img class="lu-e" src="${lumiSrc(p + '-pisca')}" style="left:${b[0]}%;top:${b[1]}%;width:${b[2]}%" alt="" draggable="false">` : ''}`; };
+  // touca de Natal (só na Edição de Natal): posição por pose, em % da imagem [esquerda, topo, largura, giro]
+  const HAT = { dica: [8.33, -22.2, 52.78, -6], festa: [19.09, -23.5, 54.13, 8], lendo: [17.92, -20.2, 48.61, 0], oi: [18.47, -22.2, 57.32, 0], pensando: [17.73, -22.2, 60.2, 2], rosto: [21.53, -20, 59.72, 0] };
+  const hat = p => { const h = HAT[p]; return h && document.body.dataset.natal === '1' ? `<img class="lu-hat" src="hat.png" style="left:${h[0]}%;top:${h[1]}%;width:${h[2]}%;transform:rotate(${h[3]}deg)" alt="" draggable="false">` : ''; };
+  const body = p => { const b = BLINK[p]; return `<img class="lu-i" src="${lumiSrc(p)}" alt="" draggable="false">${hat(p)}${b ? `<img class="lu-e" src="${lumiSrc(p + '-pisca')}" style="left:${b[0]}%;top:${b[1]}%;width:${b[2]}%" alt="" draggable="false">` : ''}`; };
   const lumiHTML = (p, cls = '') => `<button class="lumi ${cls}" data-pose="${p}" data-lumi aria-label="Lumi"><span class="lu-sh"></span><span class="lu-b">${body(p)}</span><span class="lu-fx"></span></button>`;
   function setPose(lu, p) {
     if (!lu || lu.dataset.pose === p) return;

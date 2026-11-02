@@ -189,7 +189,7 @@
     for (const [re, fn] of routes) {
       const m = h.match(re);
       if (m) {
-        app.className = ''; document.body.classList.remove('kids', 'turma'); try { speechSynthesis.cancel(); } catch (e) { } document.body.removeAttribute('data-scene'); document.body.style.removeProperty('--scene');
+        app.className = ''; document.body.removeAttribute('data-natal'); document.body.classList.remove('kids', 'turma'); try { speechSynthesis.cancel(); } catch (e) { } document.body.removeAttribute('data-scene'); document.body.style.removeProperty('--scene');
         app.innerHTML = '';
         const div = document.createElement('div'); div.className = 'screen'; app.appendChild(div);
         current = fn(div, ...m.slice(1)) || null;
