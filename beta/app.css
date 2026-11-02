@@ -1108,7 +1108,7 @@ html.cl-on #appTabs { display: none !important; }
 .nt-hero small { position: relative; opacity: .8; }
 .nt-list { display: grid; gap: 8px; }
 .nt-story { display: flex; align-items: center; gap: 10px; width: 100%; padding: 10px 12px; border-radius: 18px; text-align: left; }
-.nt-n { flex: none; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: #1c2b58; color: #f6dc9b; font-weight: 700; font-size: .9rem; }
+.nt-n { flex: none; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: #7d1a2a; color: #f6dc9b; font-weight: 700; font-size: .9rem; }
 .nt-ic { font-size: 1.6rem; flex: none; }
 .nt-tx { flex: 1; min-width: 0; }
 .nt-tx b { display: block; font-family: var(--display); font-size: 1.05rem; color: var(--ink, #3b2a0c); }
@@ -1135,3 +1135,13 @@ html.cl-on #appTabs { display: none !important; }
 .nt-tab.on b, .nt-tab.on i { color: #3b2a0c; }
 .nt-panel { padding: 2px 0 6px; }
 .nt-panel[hidden] { display: none; }
+/* Natal: fundo animado vermelho e verde */
+.nt-bg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; background: linear-gradient(135deg, #8f1d2c, #1f6b45); }
+html.nt-on #app { position: relative; z-index: 1; }
+html.nt-on .topbar .ttl, html.nt-on .nt-foot { text-shadow: 0 1px 6px rgba(0, 0, 0, .45); }
+.nt-hero { background: rgba(24, 8, 12, .38) !important; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border-color: rgba(233, 207, 140, .8) !important; }
+.nt-glow { background: radial-gradient(circle, rgba(255, 224, 140, .45), rgba(255, 224, 140, 0) 65%) !important; }
+.nt-tab[data-tab="h"] { background: linear-gradient(180deg, #b32d40, #7d1a2a); }
+.nt-tab[data-tab="d"] { background: linear-gradient(180deg, #2f8a58, #1b5a3b); }
+.nt-tab.on { background: linear-gradient(180deg, #e3c06a, #b88a2c) !important; }
+.nt-banner { background: linear-gradient(135deg, #a3222f 0%, #7c1c2a 45%, #1d6a45 100%) !important; }

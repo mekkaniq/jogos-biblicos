@@ -4,8 +4,51 @@
   const st = () => K.st('kids', { band: 'small', stickers: {}, voice: 1 });
   const cl = () => K.st('colorir', { p: {}, trk: 1 });
 
+
+  // fundo animado, bem devagar: vermelho e verde de Natal (WebGL; sem WebGL fica um degradê parado)
+  const VS = 'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
+  const FS = `precision mediump float;uniform vec2 r;uniform float t;
+    float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+    float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),f.x),f.y);}
+    void main(){
+      vec2 uv=gl_FragCoord.xy/r; uv.x*=r.x/r.y;
+      vec2 q=uv*1.6; float k=t*.06;
+      q+=vec2(n(q+k),n(q-k+3.7))*1.1;
+      float a=n(q*1.3+vec2(k,-k));
+      float b=n(q*.9+vec2(-k*.7,k)+9.1);
+      vec3 red=vec3(.62,.10,.17), red2=vec3(.80,.17,.23), grn=vec3(.08,.38,.25), grn2=vec3(.18,.55,.36), gold=vec3(.91,.78,.42);
+      vec3 c=mix(mix(red,red2,b),mix(grn,grn2,b),smoothstep(.32,.68,a));
+      c=mix(c,gold,.10*smoothstep(.62,.9,n(q*2.2-k*2.)));
+      float v=smoothstep(1.25,.25,length(gl_FragCoord.xy/r-.5)); c*=.72+.28*v;
+      gl_FragColor=vec4(c,1.);}`;
+  function startShader() {
+    const cv = document.createElement('canvas'); cv.className = 'nt-bg'; cv.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(cv);
+    const gl = cv.getContext('webgl', { antialias: false, alpha: false, powerPreference: 'low-power' });
+    if (!gl) return () => cv.remove();
+    const sh = (ty, src) => { const o = gl.createShader(ty); gl.shaderSource(o, src); gl.compileShader(o); return o; };
+    const pr = gl.createProgram(); gl.attachShader(pr, sh(gl.VERTEX_SHADER, VS)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, FS)); gl.linkProgram(pr);
+    if (!gl.getProgramParameter(pr, gl.LINK_STATUS)) return () => cv.remove();
+    gl.useProgram(pr);
+    const bf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, bf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
+    const lp = gl.getAttribLocation(pr, 'p'); gl.enableVertexAttribArray(lp); gl.vertexAttribPointer(lp, 2, gl.FLOAT, false, 0, 0);
+    const ur = gl.getUniformLocation(pr, 'r'), ut = gl.getUniformLocation(pr, 't');
+    const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let raf = 0, last = 0, t0 = performance.now(), dead = false;
+    function size() { const sc = .5, w = Math.max(2, Math.round(innerWidth * sc)), hh = Math.max(2, Math.round(innerHeight * sc)); if (cv.width !== w || cv.height !== hh) { cv.width = w; cv.height = hh; gl.viewport(0, 0, w, hh); } }
+    function draw(now) {
+      if (dead) return;
+      if (!document.hidden && now - last > 33) { last = now; size(); gl.uniform2f(ur, cv.width, cv.height); gl.uniform1f(ut, (now - t0) / 1000 + 20); gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4); }
+      if (!still) raf = requestAnimationFrame(draw);
+    }
+    raf = requestAnimationFrame(draw);
+    if (still) setTimeout(() => draw(performance.now() + 100), 50);
+    return () => { dead = true; cancelAnimationFrame(raf); cv.remove(); };
+  }
+
   route(/^\/natal$/, el => {
     App.setScene('noite');
+    const stop = startShader(); document.documentElement.classList.add('nt-on');
     const stories = window.NATAL_DATA.stories, s = st(), c = cl();
     const open = window.__ntOpen || '';
     const draws = window.COLORIR_DATA.items.filter(x => x.t === 4);
@@ -36,5 +79,6 @@
         if (!was) t.scrollIntoView({ block: 'start', behavior: 'smooth' }); return; }
       const g = e.target.closest('[data-go]'); if (g) go(g.dataset.go);
     });
+    return { leave() { stop(); document.documentElement.classList.remove('nt-on'); } };
   });
 })();
