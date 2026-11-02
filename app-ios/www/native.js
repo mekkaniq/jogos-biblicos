@@ -46,7 +46,7 @@
 
   // ---------- 2b) Barra de abas do aplicativo (nas telas principais) ----------
   const TABS = [
-    ['#/', '🏠', 'Início'], ['#/palavra', '☀️', 'Do Dia'], ['#/kids', '🐑', 'Kids'], ['#/kids/historia', '📖', 'História'], ['set', '⚙️', 'Ajustes']
+    ['#/', '🧩', 'Jogos'], ['#/kids', '🐑', 'Kids'], ['#/kids/historia', '📖', 'História'], ['set', '⚙️', 'Ajustes']
   ];
   function tabbar() {
     let bar = document.getElementById('appTabs');
