@@ -1,5 +1,5 @@
 {
-  "name": "lumi-jogos-biblicos-app",
+  "name": "verso-vivo-jogos-biblicos-app",
   "version": "1.0.0",
   "private": true,
   "description": "App Verso Vivo - Jogos Bíblicos (iOS) empacotando o site com Capacitor. A pasta www já vem pronta.",

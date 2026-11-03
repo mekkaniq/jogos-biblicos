@@ -1,4 +1,4 @@
-/* A Grande História da Bíblia — a Bíblia inteira, em ordem, lição por lição, com a Lumi.
+/* A Grande História da Bíblia — a Bíblia inteira, em ordem, lição por lição, com a Nine.
    Regra do app: nenhuma imagem de Jesus nem de Deus (segundo mandamento). Usamos só símbolos: ✨ luz, ✝️ cruz, 🔥, ☁️. */
 (function () {
   const { $, $$, esc, save, route, go, setLast, sfx, confetti } = App;
@@ -89,7 +89,7 @@
         const sc = L.scenes[step]; App.setScene(sc.bg);
         el.innerHTML = `${U.top('#/kids/historia/' + a.id, L.title.toUpperCase(), `${step + 1} de ${L.scenes.length}`)}
           ${dots(step)}
-          <div class="kd-scene" style="--bgimg:${App.sceneUrl(sc.bg)}">${U.fxHTML(sc.fx)}${U.artHTML(sc.art)}${U.lumiHTML('lendo', 'mini')}</div>
+          <div class="kd-scene" style="--bgimg:${App.sceneUrl(sc.bg)}">${U.fxHTML(sc.fx)}${U.artHTML(sc.art)}${U.nineHTML('lendo', 'mini')}</div>
           <div class="kd-text ${small ? 'small' : ''}">${U.wordsHTML(sc.text)}</div>
           ${sc.r ? `<div class="kd-ref">📖 ${esc(sc.r)}</div>` : ''}
           ${nav(step < L.scenes.length - 1 ? 'Próxima ▶' : 'Continuar ▶')}`;
@@ -155,14 +155,14 @@
       const full = doneIn(a) === a.lessons.length;
       el.innerHTML = `${U.top('#/kids/historia/' + a.id, 'LIÇÃO CONCLUÍDA!', L.title)}
         <div class="kd-win">
-          <div class="kd-lumi solo">${U.lumiHTML('festa', 'enter party')}</div>
+          <div class="kd-nine solo">${U.nineHTML('festa', 'enter party')}</div>
           <div class="kd-sticker small"><span>${L.icon}</span><b>${esc(L.title)}</b><small>${esc(L.ref)}</small></div>
           <h2>${full ? `Você completou a parte ${a.n}: ${esc(a.name)}! 🎉` : first ? 'Mais um passo na grande história!' : 'Você ouviu de novo!'}</h2>
           <p>${doneAll()} de ${total()} lições da Grande História.</p>
         </div>
         <div class="kd-row">${nx ? `<button class="btn btn-gold" data-go="#/kids/licao/${nx.id}">Próxima lição ▶</button>` : `<button class="btn btn-gold" data-go="#/kids/historia">Ver a trilha ▶</button>`}<button class="btn btn-ghost" data-go="#/kids/historia/${a.id}">Ver as lições</button></div>
         <details class="kd-parents parch"><summary>👨‍👩‍👧 Para os pais e professores</summary><p>${esc(L.parents)}</p></details>`;
-      U.later(() => { confetti(); U.burst($('.lumi', el), ['✨', '⭐', '🌟', '💛'], 12); }, 350);
+      U.later(() => { confetti(); U.burst($('.nine', el), ['✨', '⭐', '🌟', '💛'], 12); }, 350);
       U.speak(full ? 'Parabéns! Você completou a parte ' + a.n + '!' : 'Parabéns! Mais um passo na grande história!');
     }
     function move(d) {

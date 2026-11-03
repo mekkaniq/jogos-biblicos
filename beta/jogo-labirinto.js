@@ -108,7 +108,7 @@
         <polyline id="trail" class="lb-trail" points=""/>
         <polyline id="hint" class="lb-hint" points=""/>
         <text x="${ctr(...goal)[0]}" y="${ctr(...goal)[1]}" class="lb-goal" font-size="${cs * .7}" text-anchor="middle" dominant-baseline="central">${tema.goal}</text>
-        <g id="me"><circle r="${cs * .42}" class="lb-me"/><image href="lumi-rosto.webp" x="${-cs * .38}" y="${-cs * .38}" width="${cs * .76}" height="${cs * .76}"/></g>
+        <g id="me"><circle r="${cs * .42}" class="lb-me"/><image href="nine-rosto.webp" x="${-cs * .38}" y="${-cs * .38}" width="${cs * .76}" height="${cs * .76}"/></g>
       </svg></div>
       <p class="vs-tip" id="lbtip">Arraste a Nine pelo caminho até o fim.</p>`;
     K.common(el);

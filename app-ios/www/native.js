@@ -7,7 +7,7 @@
   document.documentElement.classList.add('in-app');
 
   // ---------- 1) Progresso guardado em dobro (localStorage + Preferences nativo) ----------
-  const KEYS = ['jogos-biblicos', 'lumi-lembrete'];
+  const KEYS = ['jogos-biblicos', 'nine-lembrete', 'lumi-lembrete'];
   const Pref = P.Preferences;
   const origSet = Storage.prototype.setItem;
   let pending = 0; const timers = {};
@@ -105,8 +105,8 @@
     ['A Nine lembrou de você', '"Provai e vede que o Senhor é bom." Salmos 34:8'],
     ['Palavra do Dia', 'Descubra a palavra bíblica de hoje em até 6 tentativas.']
   ];
-  const readCfg = () => { try { return JSON.parse(localStorage.getItem('lumi-lembrete')) || { on: false, h: 19 }; } catch (e) { return { on: false, h: 19 }; } };
-  const writeCfg = c => { try { localStorage.setItem('lumi-lembrete', JSON.stringify(c)); } catch (e) { } };
+  const readCfg = () => { try { return JSON.parse((localStorage.getItem('nine-lembrete') || localStorage.getItem('lumi-lembrete'))) || { on: false, h: 19 }; } catch (e) { return { on: false, h: 19 }; } };
+  const writeCfg = c => { try { localStorage.setItem('nine-lembrete', JSON.stringify(c)); } catch (e) { } };
   async function clearAll() {
     if (!LN) return;
     try { const p = await LN.getPending(); if (p.notifications.length) await LN.cancel({ notifications: p.notifications.map(n => ({ id: n.id })) }); } catch (e) { }

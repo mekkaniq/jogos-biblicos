@@ -1,4 +1,4 @@
-/* Área Kids — histórias com a Lumi. Cada história: cenas narradas, perguntas para Pequeninos (figuras) e Leitores (texto) e uma figurinha.
+/* Área Kids — histórias com a Nine. Cada história: cenas narradas, perguntas para Pequeninos (figuras) e Leitores (texto) e uma figurinha.
    Em cada pergunta a PRIMEIRA opção é a certa (o app embaralha na hora de mostrar).
    fx da cena (opcional): chuva, estrelas, brilho, ondas, coracoes, luz, vento */
 window.KIDS_DATA = {

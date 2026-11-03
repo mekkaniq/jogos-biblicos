@@ -709,7 +709,7 @@ body.kids::before { background: linear-gradient(180deg, rgba(255, 248, 230, .25)
 body.kids { background-color: #f6e6c8; }
 .kd-top .ttl b { color: #fff8e6; } .kd-top .ttl small { color: #fff3d6; }
 .kd-top .icon-btn { font-size: 1.3rem; }
-.kd-lumi { display: flex; align-items: flex-end; gap: 6px; margin: 4px 0 12px; }
+.kd-nine { display: flex; align-items: flex-end; gap: 6px; margin: 4px 0 12px; }
 @keyframes kdbob { 50% { transform: translateY(-4px); } }
 .kd-bubble { position: relative; flex: 1; background: #fffdf6; border: 2px solid #f0c98a; border-radius: 22px 22px 22px 6px; padding: 12px 14px; font-size: 1.08rem; line-height: 1.4; color: #5a3a1a; box-shadow: 0 8px 18px -10px rgba(120, 70, 10, .4); animation: rise .35s ease both; }
 .kd-bubble b { color: #b05a12; }
@@ -778,59 +778,59 @@ body.kids .btn-ghost { background: rgba(255, 253, 246, .9); color: #6a4a2a; bord
 body.turma .kd-tq { font-size: clamp(1.5rem, 4vw, 2.6rem); }
 body.turma .kd-topts div { font-size: clamp(1.15rem, 3vw, 2rem); }
 
-/* ===================== v1.4 — Lumi animada ===================== */
-.lumi { position: relative; display: block; flex: none; width: 112px; aspect-ratio: 1; padding: 0; background: none; border: 0; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
-.lumi .lu-b { position: absolute; inset: 0; display: block; transform-origin: 50% 96%; animation: lubreath 3.4s ease-in-out infinite; }
-.lumi .lu-i { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: 50% 100%; filter: drop-shadow(0 8px 10px rgba(120, 70, 10, .22)); user-select: none; -webkit-user-select: none; pointer-events: none; }
+/* ===================== v1.4 — Nine animada ===================== */
+.nine { position: relative; display: block; flex: none; width: 112px; aspect-ratio: 1; padding: 0; background: none; border: 0; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+.nine .lu-b { position: absolute; inset: 0; display: block; transform-origin: 50% 96%; animation: lubreath 3.4s ease-in-out infinite; }
+.nine .lu-i { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: 50% 100%; filter: drop-shadow(0 8px 10px rgba(120, 70, 10, .22)); user-select: none; -webkit-user-select: none; pointer-events: none; }
 /* o quadro de piscar fica alinhado à imagem: a pose ocupa a caixa inteira pela largura */
-.lumi .lu-e { position: absolute; height: auto; opacity: 0; pointer-events: none; }
-.lumi[data-pose="oi"] .lu-i, .lumi[data-pose="pensando"] .lu-i, .lumi[data-pose="dica"] .lu-i, .lumi[data-pose="lendo"] .lu-i { object-fit: fill; }
-.lumi[data-pose="oi"] .lu-b { inset: 0 6.4%; } .lumi[data-pose="pensando"] .lu-b { inset: 0 8.5%; } .lumi[data-pose="lendo"] .lu-b { inset: 10.3% 0 0; } .lumi[data-pose="dica"] .lu-b { inset: 1.1% 0 0; }
-.lumi.blink .lu-e { opacity: 1; }
-.lumi .lu-sh { position: absolute; left: 22%; right: 22%; bottom: -2px; height: 9px; border-radius: 50%; background: rgba(120, 70, 10, .18); filter: blur(2px); animation: lushadow 3.4s ease-in-out infinite; }
-.lumi .lu-fx { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
-.lumi .lu-fx i { position: absolute; top: 18%; font-style: normal; animation: lupart 1.3s ease-out both; }
+.nine .lu-e { position: absolute; height: auto; opacity: 0; pointer-events: none; }
+.nine[data-pose="oi"] .lu-i, .nine[data-pose="pensando"] .lu-i, .nine[data-pose="dica"] .lu-i, .nine[data-pose="lendo"] .lu-i { object-fit: fill; }
+.nine[data-pose="oi"] .lu-b { inset: 0 6.4%; } .nine[data-pose="pensando"] .lu-b { inset: 0 8.5%; } .nine[data-pose="lendo"] .lu-b { inset: 10.3% 0 0; } .nine[data-pose="dica"] .lu-b { inset: 1.1% 0 0; }
+.nine.blink .lu-e { opacity: 1; }
+.nine .lu-sh { position: absolute; left: 22%; right: 22%; bottom: -2px; height: 9px; border-radius: 50%; background: rgba(120, 70, 10, .18); filter: blur(2px); animation: lushadow 3.4s ease-in-out infinite; }
+.nine .lu-fx { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
+.nine .lu-fx i { position: absolute; top: 18%; font-style: normal; animation: lupart 1.3s ease-out both; }
 @keyframes lubreath { 0%, 100% { transform: scale(1, 1); } 50% { transform: scale(1.025, .975) translateY(1px); } }
 @keyframes lushadow { 50% { transform: scaleX(1.06); } }
 @keyframes lupart { 0% { opacity: 0; transform: translate(0, 0) scale(.4); } 15% { opacity: 1; } 100% { opacity: 0; transform: translate(var(--x), var(--y)) rotate(var(--r)) scale(1.1); } }
 /* falando: balança junto com a voz */
-.lumi.talk .lu-b { animation: lutalk .46s ease-in-out infinite; }
+.nine.talk .lu-b { animation: lutalk .46s ease-in-out infinite; }
 @keyframes lutalk { 0%, 100% { transform: translateY(0) rotate(0) scale(1, 1); } 30% { transform: translateY(-3px) rotate(-1.5deg) scale(.99, 1.02); } 70% { transform: translateY(-1px) rotate(1.5deg) scale(1.01, .99); } }
 /* pulo de alegria */
-.lumi.hop .lu-b, .lumi.party .lu-b { animation: luhop .8s cubic-bezier(.3, .6, .3, 1); }
-.lumi.party .lu-b { animation: luhop 1s cubic-bezier(.3, .6, .3, 1) infinite; }
-.lumi.hop .lu-sh, .lumi.party .lu-sh { animation: lushhop .8s ease; }
-.lumi.party .lu-sh { animation: lushhop 1s ease infinite; }
+.nine.hop .lu-b, .nine.party .lu-b { animation: luhop .8s cubic-bezier(.3, .6, .3, 1); }
+.nine.party .lu-b { animation: luhop 1s cubic-bezier(.3, .6, .3, 1) infinite; }
+.nine.hop .lu-sh, .nine.party .lu-sh { animation: lushhop .8s ease; }
+.nine.party .lu-sh { animation: lushhop 1s ease infinite; }
 @keyframes luhop { 0% { transform: scale(1, 1); } 15% { transform: scale(1.12, .86); } 40% { transform: translateY(-26%) scale(.94, 1.08) rotate(-4deg); } 62% { transform: translateY(0) scale(1.1, .9); } 80% { transform: scale(.97, 1.03); } 100% { transform: scale(1, 1); } }
 @keyframes lushhop { 40% { transform: scaleX(.6); opacity: .5; } }
 /* "não foi essa": balança a cabeça */
-.lumi.no .lu-b { animation: luno .7s ease; }
+.nine.no .lu-b { animation: luno .7s ease; }
 @keyframes luno { 20% { transform: rotate(-7deg); } 40% { transform: rotate(6deg); } 60% { transform: rotate(-4deg); } 80% { transform: rotate(2deg); } }
 /* tchauzinho e dica */
-.lumi.wave .lu-b { animation: luwave .55s ease-in-out 3; }
+.nine.wave .lu-b { animation: luwave .55s ease-in-out 3; }
 @keyframes luwave { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-7deg) translateY(-2px); } }
-.lumi.lean .lu-b { animation: lulean 1s ease; }
+.nine.lean .lu-b { animation: lulean 1s ease; }
 @keyframes lulean { 30%, 70% { transform: translateX(6%) rotate(5deg); } }
 /* troca de pose e entrada */
-.lumi.swap .lu-b { animation: luswap .45s cubic-bezier(.3, 1.6, .5, 1); }
+.nine.swap .lu-b { animation: luswap .45s cubic-bezier(.3, 1.6, .5, 1); }
 @keyframes luswap { 0% { transform: scale(.82, 1.12); opacity: .4; } 100% { transform: scale(1); opacity: 1; } }
-.lumi.enter { animation: luenter .75s cubic-bezier(.3, 1.5, .5, 1) both; }
+.nine.enter { animation: luenter .75s cubic-bezier(.3, 1.5, .5, 1) both; }
 @keyframes luenter { 0% { transform: translateY(40%) scale(.5); opacity: 0; } 100% { transform: none; opacity: 1; } }
 /* dormindo */
-.lumi.sleep .lu-b { animation: lusleep 4s ease-in-out infinite; }
+.nine.sleep .lu-b { animation: lusleep 4s ease-in-out infinite; }
 @keyframes lusleep { 50% { transform: scale(1.03, .96); } }
-.lumi.sleep .lu-fx i { color: #8a6a9a; font-weight: 800; font-family: var(--display); animation: luzzz 2.4s ease-out both; top: 10%; left: 70% !important; }
+.nine.sleep .lu-fx i { color: #8a6a9a; font-weight: 800; font-family: var(--display); animation: luzzz 2.4s ease-out both; top: 10%; left: 70% !important; }
 @keyframes luzzz { 0% { opacity: 0; transform: translate(0, 0) scale(.6); } 20% { opacity: 1; } 100% { opacity: 0; transform: translate(26px, -60px) scale(1.4) rotate(15deg); } }
-.kd-lumi { display: flex; align-items: flex-end; gap: 6px; margin: 4px 0 12px; }
-.kd-lumi.solo { justify-content: center; margin: 0; }
-.kd-lumi.solo .lumi { width: 150px; }
-.kd-lumi.solo.mid .lumi { width: 84px; }
+.kd-nine { display: flex; align-items: flex-end; gap: 6px; margin: 4px 0 12px; }
+.kd-nine.solo { justify-content: center; margin: 0; }
+.kd-nine.solo .nine { width: 150px; }
+.kd-nine.solo.mid .nine { width: 84px; }
 .kd-bubble.pop { animation: kdpop .35s cubic-bezier(.3, 1.5, .5, 1); }
 @keyframes kdpop { 0% { transform: scale(.92); } 100% { transform: none; } }
 .kd-bubble small { display: block; color: #8a6a4a; font-size: .86rem; }
-.kd-score:has(.kd-lumi) { grid-template-columns: 1fr auto 1fr; align-items: center; }
-/* Lumi pequenina lendo no canto da cena */
-.lumi.mini { position: absolute; right: 2px; bottom: 0; width: 86px; z-index: 3; }
+.kd-score:has(.kd-nine) { grid-template-columns: 1fr auto 1fr; align-items: center; }
+/* Nine pequenina lendo no canto da cena */
+.nine.mini { position: absolute; right: 2px; bottom: 0; width: 86px; z-index: 3; }
 
 /* ===================== v1.4 — cenas vivas ===================== */
 .kd-scene { position: relative; height: 240px; border-radius: 28px; overflow: hidden; display: grid; place-items: center; background: var(--bgimg) center / cover; border: 3px solid #f0c98a; animation: kdin .45s ease both; }
@@ -876,21 +876,21 @@ body.turma .kd-topts div { font-size: clamp(1.15rem, 3vw, 2rem); }
 .kd-prog { height: 14px; border-radius: 999px; background: rgba(255, 253, 246, .7); border: 2px solid #f0d6a8; overflow: hidden; margin: 0 0 12px; }
 .kd-prog i { display: block; height: 100%; background: linear-gradient(90deg, #ffd98a, #f5b951); border-radius: 999px; transition: width .6s; }
 .kd-stories { grid-template-columns: 1fr 1fr; }
-@media (prefers-reduced-motion: reduce) { .lumi *, .kd-art span, .kfx i, .kfx { animation-duration: .01s !important; animation-iteration-count: 1 !important; } }
+@media (prefers-reduced-motion: reduce) { .nine *, .kd-art span, .kfx i, .kfx { animation-duration: .01s !important; animation-iteration-count: 1 !important; } }
 .kids-banner img { animation: luwave 2.6s ease-in-out infinite; transform-origin: 50% 92%; }
 .beta-tag { display: inline-block; margin: 2px auto 6px; padding: 3px 12px; border-radius: 999px; background: #ffcf6e; color: #5a2f05; font-weight: 800; font-size: .74rem; letter-spacing: .12em; }
-.kd-win .kd-lumi.solo { margin-top: 34px; }
+.kd-win .kd-nine.solo { margin-top: 34px; }
 .kd-stk { aspect-ratio: auto; min-height: 132px; }
 .kd-stk:not(.got) span { opacity: .55; filter: grayscale(.5); }
 
-/* ===================== v1.4 — Lumi discreta nos jogos dos adultos ===================== */
+/* ===================== v1.4 — Nine discreta nos jogos dos adultos ===================== */
 .section-title.daily { align-items: flex-end; }
-.hub-lumi { width: 58px; margin: -26px 4px -4px auto; }
+.hub-nine { width: 58px; margin: -26px 4px -4px auto; }
 .section-title.daily > span { margin-left: 0; }
-.hero-lumi { position: absolute; right: 8px; top: 8px; width: 66px; z-index: 2; }
-.lumi-peek { position: fixed; right: 10px; bottom: calc(14px + var(--safe-bottom, 0px)); z-index: 60; pointer-events: none; animation: lupeek .55s cubic-bezier(.3, 1.4, .5, 1) both; }
-.lumi-peek .lumi { width: 104px; }
-.lumi-peek.out { animation: lupeekout .55s ease-in both; }
+.hero-nine { position: absolute; right: 8px; top: 8px; width: 66px; z-index: 2; }
+.nine-peek { position: fixed; right: 10px; bottom: calc(14px + var(--safe-bottom, 0px)); z-index: 60; pointer-events: none; animation: lupeek .55s cubic-bezier(.3, 1.4, .5, 1) both; }
+.nine-peek .nine { width: 104px; }
+.nine-peek.out { animation: lupeekout .55s ease-in both; }
 @keyframes lupeek { from { transform: translateY(140%); } }
 @keyframes lupeekout { to { transform: translateY(140%); opacity: 0; } }
 
@@ -1146,8 +1146,8 @@ html.nt-on .topbar .ttl, html.nt-on .nt-foot { text-shadow: 0 1px 6px rgba(0, 0,
 .nt-tab.on { background: linear-gradient(180deg, #e3c06a, #b88a2c) !important; }
 .nt-banner { background: linear-gradient(135deg, #a3222f 0%, #7c1c2a 45%, #1d6a45 100%) !important; }
 .nt-snow { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; }
-.lumi .lu-hat { position: absolute; height: auto; pointer-events: none; transform-origin: 50% 80%; filter: drop-shadow(0 3px 4px rgba(90, 10, 20, .3)); z-index: 2; }
-.lumi { overflow: visible; }
+.nine .lu-hat { position: absolute; height: auto; pointer-events: none; transform-origin: 50% 80%; filter: drop-shadow(0 3px 4px rgba(90, 10, 20, .3)); z-index: 2; }
+.nine { overflow: visible; }
 /* Início: versículo menor, para aparecer mais a foto da tumba vazia */
 .hero .verse { margin-top: 10px; max-width: 330px; padding: 8px 12px; font-size: .8rem; line-height: 1.35; background: var(--paper-noise), linear-gradient(180deg, rgba(255, 252, 244, .86), rgba(244, 232, 205, .82)); }
 .hero .verse cite { margin-top: 3px; font-size: .7rem; }

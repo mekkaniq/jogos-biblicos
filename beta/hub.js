@@ -50,7 +50,7 @@
         <button class="today parch ${cd ? 'ok' : ''}" data-go="#/caca/dia"><span class="ti">${I.search}</span><b>Desafio do Dia</b><small>${cd ? 'Feito ✓' : 'Caça-palavras'}</small></button>
       </div>
       <button class="nt-banner" data-go="#/natal"><span class="nt-star">⭐</span><div><b>Edição de Natal</b><span>Caminho até Belém: histórias e desenhos para colorir</span></div></button>
-      <button class="kids-banner" data-go="#/kids"><img src="lumi-oi.webp" alt="Nine"><div><b>Cantinho Kids</b><span>${App.historia ? '12 histórias com a Nine e A Grande História da Bíblia, do Gênesis ao Apocalipse' : '12 histórias da Bíblia com a Nine, para crianças de 4 a 10 anos'}</span></div><em class="nw">NOVO</em></button>
+      <button class="kids-banner" data-go="#/kids"><img src="nine-oi.webp" alt="Nine"><div><b>Cantinho Kids</b><span>${App.historia ? '12 histórias com a Nine e A Grande História da Bíblia, do Gênesis ao Apocalipse' : '12 histórias da Bíblia com a Nine, para crianças de 4 a 10 anos'}</span></div><em class="nw">NOVO</em></button>
       <div class="section-title"><h2>Escolha um jogo</h2><span>${games.length + 1} jogos</span></div>
       <div class="gtiles">${games.map(g => `
         <button class="gtile" data-go="#/${g.id}" style="background-image:url('${g.scene}.svg')">
