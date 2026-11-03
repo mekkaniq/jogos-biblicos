@@ -92,7 +92,7 @@
         </div>
         <button class="nt-tab ${open === 'd' ? 'on' : ''}" data-tab="d" aria-expanded="${open === 'd'}"><span class="nt-ti">🎨</span><span class="nt-tt"><b>Desenhos para colorir</b><small>${doneD} de ${draws.length} prontos</small></span><i>▾</i></button>
         <div class="nt-panel" data-panel="d" ${open === 'd' ? '' : 'hidden'}>
-          <div class="nt-draws">${draws.map(x => `<button class="nt-draw ${(c.done || {})[x.n] ? 'ok' : ''}" data-go="#/colorir/${x.n}"><img src="colorir-${x.n}.th.webp" alt="" loading="lazy"><b>${esc(x.nome)}</b><small>${esc(x.ref)}</small></button>`).join('')}</div>
+          <div class="nt-draws">${draws.map(x => `<button class="nt-draw ${(c.done || {})[x.n] ? 'ok' : ''}" data-go="#/colorir/${x.n}"><span class="nt-th"><img src="${(c.p && c.p[x.n] && c.p[x.n].th) || 'colorir-' + x.n + '.th.webp'}" alt="" loading="lazy">${(c.done || {})[x.n] ? '<em>✓ Pronto</em>' : (c.p && c.p[x.n] && Object.keys(c.p[x.n].r || {}).length) ? '<em class="wip">Pintando</em>' : ''}</span><b>${esc(x.nome)}</b><small>${esc(x.ref)}</small></button>`).join('')}</div>
         </div>
       </div>
       <p class="nt-foot">Todas as histórias apontam para Jesus, o Salvador que Deus prometeu e enviou por amor a nós.</p>`;

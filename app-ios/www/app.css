@@ -1165,3 +1165,9 @@ html.nt-on .topbar .ttl, html.nt-on .nt-foot { text-shadow: 0 1px 6px rgba(0, 0,
 .nh-bubble b { color: #b05a12; }
 .nh-btn { appearance: none; border: 0; border-radius: 999px; padding: 12px 26px; font: inherit; font-weight: 700; font-size: 1.02rem; color: #fff; background: linear-gradient(180deg, #e8923a, #c9701c); box-shadow: 0 4px 12px rgba(160, 80, 10, .35); cursor: pointer; }
 @media (prefers-reduced-motion: reduce) { .nine-hi, .nh-card { transition: none; } }
+
+/* Natal: cartão do desenho mostra a pintura salva e a etiqueta de estado, como no Colorir */
+.nt-draw .nt-th { position: relative; display: block; border-radius: 12px; overflow: hidden; background: #fff; aspect-ratio: 4/3; }
+.nt-draw .nt-th img { display: block; width: 100%; height: 100%; aspect-ratio: auto; border-radius: 0; object-fit: cover; }
+.nt-draw .nt-th em { position: absolute; left: 6px; bottom: 6px; font-style: normal; font-size: .72rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: rgba(46, 107, 72, .92); color: #fff; }
+.nt-draw .nt-th em.wip { background: rgba(196, 154, 62, .95); color: #3b2a0c; }
