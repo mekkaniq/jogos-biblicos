@@ -3,7 +3,7 @@
   const { $, esc, I, route, go, setLast, sfx } = App;
   const K = App.kit;
 
-  // cena do app + a Lumi (para as peças terem detalhes) + uma frase curta e a referência
+  // cena do app + a Nine (para as peças terem detalhes) + uma frase curta e a referência
   const TEMAS = [
     { sc: 'aurora', lumi: ['lumi-festa', .30, .60, .62], nome: 'No princípio', win: 'Deus disse: haja luz. E houve luz. Mais tarde, Jesus diria: Eu sou a luz do mundo.', ref: 'Gênesis 1:3 · João 8:12' },
     { sc: 'campo', lumi: ['lumi-oi', .30, .62, .60], nome: 'Os campos de Belém', win: 'Pastores guardavam as suas ovelhas à noite quando ouviram a boa notícia do nascimento do Salvador.', ref: 'Lucas 2:8-11' },

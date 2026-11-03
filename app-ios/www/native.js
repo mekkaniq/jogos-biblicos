@@ -1,4 +1,4 @@
-/* Lumi · camada do aplicativo do iPhone (Capacitor). Só funciona dentro do app; no navegador não faz nada.
+/* Verso Vivo · camada do aplicativo do iPhone (Capacitor). Só funciona dentro do app; no navegador não faz nada.
    Carrega ANTES do core.js: guarda o progresso também no armazenamento nativo (o iOS pode limpar o do navegador). */
 (function () {
   const C = window.Capacitor;
@@ -99,10 +99,10 @@
   const MSGS = [
     ['Sua Palavra do Dia está esperando', '"Escondi a tua palavra no meu coração." Salmos 119:11'],
     ['Hora do Desafio do Dia', 'Um caça-palavras novo, feito para hoje.'],
-    ['Que tal uma história com a Lumi?', 'Uma lição da Grande História da Bíblia leva poucos minutos.'],
+    ['Que tal uma história com a Nine?', 'Uma lição da Grande História da Bíblia leva poucos minutos.'],
     ['Guarde um versículo hoje', '"Lâmpada para os meus pés é tua palavra." Salmos 119:105'],
     ['Um minutinho com a Bíblia', 'Jogue uma fase e aprenda algo novo hoje.'],
-    ['A Lumi lembrou de você', '"Provai e vede que o Senhor é bom." Salmos 34:8'],
+    ['A Nine lembrou de você', '"Provai e vede que o Senhor é bom." Salmos 34:8'],
     ['Palavra do Dia', 'Descubra a palavra bíblica de hoje em até 6 tentativas.']
   ];
   const readCfg = () => { try { return JSON.parse(localStorage.getItem('lumi-lembrete')) || { on: false, h: 19 }; } catch (e) { return { on: false, h: 19 }; } };
@@ -166,7 +166,7 @@
         if (!c.on) {
           let ok = false;
           try { let p = await LN.checkPermissions(); if (p.display !== 'granted') p = await LN.requestPermissions(); ok = p.display === 'granted'; } catch (x) { }
-          if (!ok) { msg('Permita as notificações em Ajustes do iPhone → Lumi → Notificações.'); return; }
+          if (!ok) { msg('Permita as notificações em Ajustes do iPhone → Verso Vivo → Notificações.'); return; }
           c.on = true; writeCfg(c); await schedule(c.h);
         } else { c.on = false; writeCfg(c); await clearAll(); }
         on.querySelector('.switch').classList.toggle('on', c.on);

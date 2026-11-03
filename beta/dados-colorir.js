@@ -499,7 +499,7 @@ window.COLORIR_DATA = {
 "n": 401,
 "t": 4,
 "i": 1,
-"nome": "A Lumi com Maria",
+"nome": "A Nine com Maria",
 "ref": "Lucas 1:30",
 "win": "O anjo disse a Maria: não temas, porque achaste graça diante de Deus.",
 "w": 1200,

@@ -1,4 +1,4 @@
-# App iOS · Lumi - Jogos Bíblicos
+# App iOS · Verso Vivo - Jogos Bíblicos
 
 - `www/` é o app completo (jogos, Cantinho Kids e A Grande História), já montado. Não editar à mão: é gerado a partir do código-fonte (`build/flat.py VERSAO --app`).
 - O envio ao TestFlight é feito pelo GitHub: aba **Actions → App iOS → TestFlight → Run workflow**.

@@ -1,17 +1,17 @@
-/* Labirinto — guie a Lumi com o dedo até o fim do caminho. Calmo, sem tempo e sem pressão. */
+/* Labirinto — guie a Nine com o dedo até o fim do caminho. Calmo, sem tempo e sem pressão. */
 (function () {
   const { $, esc, I, route, go, setLast, sfx } = App;
   const K = App.kit;
 
   // 10 pequenas histórias (cada fase usa uma). Só referência e frase própria; nada de imagem de Jesus.
   const TEMAS = [
-    { sc: 'campo', goal: '🐑', nome: 'A ovelha perdida', go: 'Ajude a Lumi a achar a ovelhinha que se perdeu.', win: 'O pastor deixou as outras e foi buscar a que se perdeu, e ficou alegre ao achá-la.', ref: 'Lucas 15:4-6' },
-    { sc: 'mar', goal: '🚢', nome: 'A arca de Noé', go: 'Leve a Lumi até a arca antes de a chuva começar.', win: 'Deus abriu um caminho de salvação para Noé e a sua família.', ref: 'Gênesis 7:1' },
+    { sc: 'campo', goal: '🐑', nome: 'A ovelha perdida', go: 'Ajude a Nine a achar a ovelhinha que se perdeu.', win: 'O pastor deixou as outras e foi buscar a que se perdeu, e ficou alegre ao achá-la.', ref: 'Lucas 15:4-6' },
+    { sc: 'mar', goal: '🚢', nome: 'A arca de Noé', go: 'Leve a Nine até a arca antes de a chuva começar.', win: 'Deus abriu um caminho de salvação para Noé e a sua família.', ref: 'Gênesis 7:1' },
     { sc: 'deserto', goal: '🔥', nome: 'A coluna de fogo', go: 'Siga a luz que guiava o povo pelo deserto.', win: 'O Senhor ia adiante do povo, de dia numa coluna de nuvem e de noite numa coluna de fogo.', ref: 'Êxodo 13:21' },
     { sc: 'noite', goal: '⭐', nome: 'A estrela de Belém', go: 'Siga a estrela com os magos até Belém.', win: 'Os magos viram a estrela e se alegraram muito.', ref: 'Mateus 2:9-10' },
-    { sc: 'jardim', goal: '🌿', nome: 'O Senhor é o meu pastor', go: 'Leve a Lumi para as águas tranquilas.', win: 'O Senhor é o meu pastor; nada me faltará.', ref: 'Salmos 23:1' },
+    { sc: 'jardim', goal: '🌿', nome: 'O Senhor é o meu pastor', go: 'Leve a Nine para as águas tranquilas.', win: 'O Senhor é o meu pastor; nada me faltará.', ref: 'Salmos 23:1' },
     { sc: 'cidade', goal: '🌳', nome: 'Zaqueu', go: 'Ajude Zaqueu a chegar à árvore para ver quem passava.', win: 'Zaqueu subiu numa árvore para ver Jesus, e Jesus o chamou pelo nome.', ref: 'Lucas 19:4-5' },
-    { sc: 'galileia', goal: '🏡', nome: 'Os pastores de Belém', go: 'Os pastores foram depressa: leve a Lumi com eles.', win: 'Os pastores foram depressa e acharam o menino deitado numa manjedoura.', ref: 'Lucas 2:15-16' },
+    { sc: 'galileia', goal: '🏡', nome: 'Os pastores de Belém', go: 'Os pastores foram depressa: leve a Nine com eles.', win: 'Os pastores foram depressa e acharam o menino deitado numa manjedoura.', ref: 'Lucas 2:15-16' },
     { sc: 'monte', goal: '🌅', nome: 'O Jordão', go: 'Atravesse o povo em terra seca.', win: 'Os sacerdotes ficaram firmes em terra seca no meio do Jordão, e todo o povo passou.', ref: 'Josué 3:17' },
     { sc: 'aurora', goal: '🌷', nome: 'O túmulo vazio', go: 'Corra com as mulheres até o túmulo, ao amanhecer.', win: 'O anjo disse: Não está aqui, porque ressuscitou, como disse.', ref: 'Mateus 28:5-6' },
     { sc: 'palacio', goal: '🍞', nome: 'A estrada de Emaús', go: 'Caminhe com os dois discípulos até Emaús.', win: 'Jesus mesmo se aproximou e ia com eles.', ref: 'Lucas 24:15' }
@@ -76,10 +76,10 @@
 
   route(/^\/labirinto$/, el => {
     K.home(el, {
-      id: 'labirinto', title: 'LABIRINTO', sub: 'Caminhos', scene: 'campo', icon: I.maze, heroTitle: 'Labirinto', heroSub: 'Guie a Lumi com o dedo, sem pressa, até o fim do caminho.', unit: 'fase', unitPl: 'fases',
+      id: 'labirinto', title: 'LABIRINTO', sub: 'Caminhos', scene: 'campo', icon: I.maze, heroTitle: 'Labirinto', heroSub: 'Guie a Nine com o dedo, sem pressa, até o fim do caminho.', unit: 'fase', unitPl: 'fases',
       trackDesc: ['', 'Caminhos curtos, com várias saídas.', 'Labirintos maiores, para quem já pegou o jeito.', 'Os maiores: calma e atenção!'],
       levels: LEVELS.map(l => ({ n: l.n, t: l.t, i: l.i, label: l.label, scene: l.scene })),
-      howto: ['Encoste o dedo na <b>Lumi</b> (no canto de cima) e arraste pelo caminho.', 'Se chegar a um beco sem saída, volte arrastando para trás: não há pressa nem pontos perdidos.', 'Chegue ao fim para ouvir a pequena história da fase. Precisa de ajuda? Toque em <b>Dica</b>.']
+      howto: ['Encoste o dedo na <b>Nine</b> (no canto de cima) e arraste pelo caminho.', 'Se chegar a um beco sem saída, volte arrastando para trás: não há pressa nem pontos perdidos.', 'Chegue ao fim para ouvir a pequena história da fase. Precisa de ajuda? Toque em <b>Dica</b>.']
     });
   });
 
@@ -110,7 +110,7 @@
         <text x="${ctr(...goal)[0]}" y="${ctr(...goal)[1]}" class="lb-goal" font-size="${cs * .7}" text-anchor="middle" dominant-baseline="central">${tema.goal}</text>
         <g id="me"><circle r="${cs * .42}" class="lb-me"/><image href="lumi-rosto.webp" x="${-cs * .38}" y="${-cs * .38}" width="${cs * .76}" height="${cs * .76}"/></g>
       </svg></div>
-      <p class="vs-tip" id="lbtip">Arraste a Lumi pelo caminho até o fim.</p>`;
+      <p class="vs-tip" id="lbtip">Arraste a Nine pelo caminho até o fim.</p>`;
     K.common(el);
     const svg = $('#lb', el), me = $('#me', el), trail = $('#trail', el), hint = $('#hint', el);
     svg.__sol = () => solve(M, rows, cols, [0, 0], goal).map(p => ctr(...p));
@@ -145,7 +145,7 @@
     svg.addEventListener('pointerdown', e => {
       e.preventDefault(); if (done) return;
       const [r, c] = cellAt(e.clientX, e.clientY), [pr, pc] = path[path.length - 1];
-      if (Math.abs(r - pr) + Math.abs(c - pc) > 1) return; // precisa começar perto da Lumi
+      if (Math.abs(r - pr) + Math.abs(c - pc) > 1) return; // precisa começar perto da Nine
       dragging = true; last = [e.clientX, e.clientY]; try { svg.setPointerCapture(e.pointerId); } catch (x) { }
       hint.setAttribute('points', ''); step(r, c);
     });

@@ -13,7 +13,7 @@
   const HAT = { dica: [8.33, -22.2, 52.78, -6], festa: [19.09, -23.5, 54.13, 8], lendo: [17.92, -20.2, 48.61, 0], oi: [18.47, -22.2, 57.32, 0], pensando: [17.73, -22.2, 60.2, 2], rosto: [21.53, -20, 59.72, 0] };
   const hat = p => { const h = HAT[p]; return h && document.body.dataset.natal === '1' ? `<img class="lu-hat" src="hat.png" style="left:${h[0]}%;top:${h[1]}%;width:${h[2]}%;transform:rotate(${h[3]}deg)" alt="" draggable="false">` : ''; };
   const body = p => { const b = BLINK[p]; return `<img class="lu-i" src="${lumiSrc(p)}" alt="" draggable="false">${hat(p)}${b ? `<img class="lu-e" src="${lumiSrc(p + '-pisca')}" style="left:${b[0]}%;top:${b[1]}%;width:${b[2]}%" alt="" draggable="false">` : ''}`; };
-  const lumiHTML = (p, cls = '') => `<button class="lumi ${cls}" data-pose="${p}" data-lumi aria-label="Lumi"><span class="lu-sh"></span><span class="lu-b">${body(p)}</span><span class="lu-fx"></span></button>`;
+  const lumiHTML = (p, cls = '') => `<button class="lumi ${cls}" data-pose="${p}" data-lumi aria-label="Nine"><span class="lu-sh"></span><span class="lu-b">${body(p)}</span><span class="lu-fx"></span></button>`;
   function setPose(lu, p) {
     if (!lu || lu.dataset.pose === p) return;
     lu.dataset.pose = p; $('.lu-b', lu).innerHTML = body(p);
@@ -51,7 +51,7 @@
   // ---------- participação discreta nos jogos dos adultos: sem fala, só animação ----------
   // toque numa Lumi "quieta": um pulinho com corações
   document.addEventListener('click', e => { const lu = e.target.closest('.lumi.quiet'); if (lu) { e.preventDefault(); Lumi.love(lu); } });
-  // em toda vitória (confete), a Lumi aparece no canto, comemora e vai embora
+  // em toda vitória (confete), a Nine aparece no canto, comemora e vai embora
   const confetti0 = App.confetti;
   App.confetti = function () {
     confetti0.apply(this, arguments);

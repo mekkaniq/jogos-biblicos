@@ -1,7 +1,7 @@
-# Ficha da App Store · Lumi - Jogos Bíblicos
+# Ficha da App Store · Verso Vivo - Jogos Bíblicos
 
-**Nome (até 30):** Lumi - Jogos Bíblicos
-(se estiver ocupado: "Lumi: Jogos Bíblicos")
+**Nome (até 30):** Verso Vivo - Jogos Bíblicos
+(se estiver ocupado: "Verso Vivo: Jogos Bíblicos")
 
 **Subtítulo (até 30):** Aprenda a Bíblia brincando
 
@@ -18,10 +18,10 @@
 bíblia,jogos bíblicos,caça-palavras,cruzadinha,quiz,crianças,igreja,cristão,versículo,história
 
 **Texto promocional (até 170):**
-Jogos bíblicos para toda a família e A Grande História da Bíblia para crianças, do Gênesis ao Apocalipse, com a Lumi. Funciona sem internet.
+Jogos bíblicos para toda a família e A Grande História da Bíblia para crianças, do Gênesis ao Apocalipse, com a Nine. Funciona sem internet.
 
 **Descrição:**
-O Lumi - Jogos Bíblicos foi feito para pais, avós, filhos e igrejas aprenderem a Bíblia juntos, de um jeito bonito, calmo e sem anúncios.
+O Verso Vivo - Jogos Bíblicos foi feito para pais, avós, filhos e igrejas aprenderem a Bíblia juntos, de um jeito bonito, calmo e sem anúncios.
 
 JOGOS PARA A FAMÍLIA
 • Caça-Palavras com 230 fases e um desafio novo todo dia
@@ -30,8 +30,8 @@ JOGOS PARA A FAMÍLIA
 • Palavra do Dia, Ligações, Complete o Versículo, Roda de Letras, Quem Sou Eu?, Linha do Tempo, Jogo da Memória e Solitaire Bíblico, cada um com muitas fases em três níveis
 Cada palavra encontrada vem com a sua história e a referência bíblica.
 
-CANTINHO KIDS COM A LUMI
-• 12 histórias narradas para crianças de 4 a 10 anos, com a ovelhinha Lumi
+CANTINHO KIDS COM A NINE
+• 12 histórias narradas para crianças de 4 a 10 anos, com a ovelhinha Nine
 • A Grande História da Bíblia: 343 lições em 34 partes, da Criação ao Apocalipse, mostrando como toda a Bíblia aponta para Jesus
 • Perguntas para os pequenos e para os maiores, e uma nota para os pais em cada lição
 

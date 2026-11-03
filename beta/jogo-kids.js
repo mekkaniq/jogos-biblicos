@@ -1,4 +1,4 @@
-/* Área Kids — histórias narradas com a Lumi (animada), perguntas, álbum de figurinhas e Modo Turma */
+/* Área Kids — histórias narradas com a Nine (animada), perguntas, álbum de figurinhas e Modo Turma */
 (function () {
   const { $, $$, esc, save, route, go, setLast, sfx, confetti, toast } = App;
   const K = App.kit;
@@ -7,10 +7,10 @@
   const storyOf = id => D().stories.find(s => s.id === id) || (window.NATAL_DATA && window.NATAL_DATA.stories.find(s => s.id === id));
   const pick = a => a[Math.floor(Math.random() * a.length)];
 
-  // a Lumi animada vem do arquivo lumi.js (compartilhada com os jogos dos adultos)
+  // a Nine animada vem do arquivo lumi.js (compartilhada com os jogos dos adultos)
   const { html: lumiHTML, pose: setPose, anim, burst, react: Lumi } = App.lumi;
 
-  // ---------- narração com a voz do próprio aparelho (a Lumi "fala" junto) ----------
+  // ---------- narração com a voz do próprio aparelho (a Nine "fala" junto) ----------
   let voice = null, talkT = 0;
   function pickVoice() {
     if (!('speechSynthesis' in window)) return;
@@ -45,10 +45,10 @@
     } catch (e) { }
   }
   const hush = () => { clearTimeout(talkT); talking(false); try { speechSynthesis.cancel(); } catch (e) { } };
-  // texto com cada palavra marcada, para destacar enquanto a Lumi lê
+  // texto com cada palavra marcada, para destacar enquanto a Nine lê
   function wordsHTML(t) { const src = t.replace(/[“”"]/g, ''); let i = 0; return t.split(/(\s+)/).map(p => { const clean = p.replace(/[“”"]/g, ''); const s = src.indexOf(clean, i); const e = s + clean.length; if (s >= 0) i = e; return /^\s+$/.test(p) ? p : `<span data-c="${s}" data-e="${e}">${esc(p)}</span>`; }).join(''); }
 
-  // ---------- relógios da tela (sono da Lumi etc.) ----------
+  // ---------- relógios da tela (sono da Nine etc.) ----------
   let timers = [];
   const later = (f, ms) => timers.push(setTimeout(f, ms));
   const every = (f, ms) => timers.push(setInterval(f, ms));
@@ -56,7 +56,7 @@
 
   const top = (back, title, sub) => `<div class="topbar kd-top"><button class="icon-btn" data-back="${back}" aria-label="Voltar">${App.I.back}</button><div class="ttl"><b>${title}</b>${sub ? `<small>${sub}</small>` : ''}</div><button class="icon-btn" data-voice aria-label="Voz">${S().voice ? '🔊' : '🔇'}</button></div>`;
   const TAPS = ['Hihi! Que cosquinha!', 'Bééé! 🐑', 'Deus te ama muito!', 'Você é muito especial!', 'Oba! Vamos brincar?', 'Eu adoro histórias da Bíblia!'];
-  // balão da Lumi: monta uma vez e depois só troca a fala
+  // balão da Nine: monta uma vez e depois só troca a fala
   const bubble = (pose, text, cls = 'enter') => `<div class="kd-lumi">${lumiHTML(pose, cls)}<div class="kd-bubble">${text}</div></div>`;
   function say(el, text, pose, react, voiceText) {
     const lu = $('.kd-lumi .lumi', el), b = $('.kd-bubble', el);
@@ -77,7 +77,7 @@
       }
     });
   }
-  // a Lumi cochila quando ninguém mexe por um tempo; um toque acorda
+  // a Nine cochila quando ninguém mexe por um tempo; um toque acorda
   function sleepy(el, wakeText) {
     let idle = 0;
     el.addEventListener('pointerdown', () => { idle = 0; });
@@ -118,8 +118,8 @@
     reset(); App.setScene('aurora'); document.body.classList.add('kids');
     const s = S(); const d = D();
     const got = d.stories.filter(st => s.stickers[st.id]).length;
-    const hi = got ? `Oi de novo! Você já tem <b>${got}</b> ${got === 1 ? 'figurinha' : 'figurinhas'}. Qual história vamos ouvir hoje?` : 'Oi! Eu sou a <b>Lumi</b>! Vamos ouvir uma história da Bíblia e brincar juntos?';
-    el.innerHTML = `${top('#/', 'CANTINHO KIDS', 'com a Lumi')}
+    const hi = got ? `Oi de novo! Você já tem <b>${got}</b> ${got === 1 ? 'figurinha' : 'figurinhas'}. Qual história vamos ouvir hoje?` : 'Oi! Eu sou a <b>Nine</b>! Vamos ouvir uma história da Bíblia e brincar juntos?';
+    el.innerHTML = `${top('#/', 'CANTINHO KIDS', 'com a Nine')}
       ${bubble('oi', hi)}
       <div class="kd-band">
         <button class="${s.band === 'small' ? 'on' : ''}" data-band="small"><span>🐣</span><b>Pequeninos</b><small>4 a 6 anos</small></button>
@@ -134,7 +134,7 @@
         <button class="btn btn-gold" data-go="#/kids/album">📒 Meu álbum</button>
         <button class="btn btn-ghost" data-go="#/kids/turma">👨‍👩‍👧‍👦 Modo Turma</button>
       </div>
-      <p class="kd-note">Para os pais e professores: toque em 🔊 lá em cima para ligar ou desligar a narração. A criança pode tocar na Lumi! 🐑</p>
+      <p class="kd-note">Para os pais e professores: toque em 🔊 lá em cima para ligar ou desligar a narração. A criança pode tocar na Nine! 🐑</p>
       ${K.signature}`;
     const wake = sleepy(el, 'Ah! Eu cochilei um pouquinho! 😊 Vamos ouvir uma história?');
     common(el, wake);
@@ -197,7 +197,7 @@
       } else {
         mist++; qmist++; sfx.bad(); btn.classList.add('no'); btn.disabled = true;
         if (qmist >= 2) {
-          // errou duas vezes: a Lumi aponta a resposta certa
+          // errou duas vezes: a Nine aponta a resposta certa
           const ok = $('[data-o="0"]', el); ok && ok.classList.add('hint');
           say(el, 'Quase! Olha, eu te ajudo: é <b>esta aqui</b> que está pulando! 👇', null, 'hint', 'Quase! Eu te ajudo: é esta aqui que está pulando!');
         } else say(el, pick(['Quase! Tente de novo. 💛', 'Hmm, não foi essa. Tente outra! 💛', 'Ops! Vamos tentar de novo? 💛']), null, 'oops');
@@ -212,7 +212,7 @@
           <div class="kd-lumi solo">${lumiHTML('festa', 'enter party')}</div>
           <div class="kd-sticker"><span>${st.sticker}</span><b>${esc(st.name)}</b><small>${esc(st.ref)}</small></div>
           <h2>${first ? 'Você ganhou uma figurinha!' : 'Você ouviu de novo!'}</h2>
-          <p>${small ? 'A Lumi está muito feliz com você!' : `Você respondeu tudo${mist ? '' : ' sem errar nenhuma'}! A figurinha já está guardada.`}${left ? '' : '<br><b>Você completou o álbum inteiro! 🎉</b>'}</p>
+          <p>${small ? 'A Nine está muito feliz com você!' : `Você respondeu tudo${mist ? '' : ' sem errar nenhuma'}! A figurinha já está guardada.`}${left ? '' : '<br><b>Você completou o álbum inteiro! 🎉</b>'}</p>
         </div>
         <div class="kd-row">${st.natal ? '' : '<button class="btn btn-gold" data-go="#/kids/album">📒 Meu álbum</button>'}<button class="btn btn-ghost" data-go="${home}">Outras histórias</button></div>`;
       later(() => { confetti(); burst($('.lumi', el), ['✨', '⭐', '🌟', '💛'], 12); }, 350);
@@ -242,7 +242,7 @@
     const s = S(); const d = D();
     const got = d.stories.filter(x => s.stickers[x.id]).length, all = d.stories.length;
     el.innerHTML = `${top('#/kids', 'MEU ÁLBUM', `${got} de ${all} figurinhas`)}
-      ${bubble(got ? 'festa' : 'dica', got === all ? 'Uau! Você completou o álbum! A Lumi está muuuito feliz! 🎉' : got ? `Você já tem <b>${got}</b> ${got === 1 ? 'figurinha' : 'figurinhas'}! Faltam ${all - got}. Vamos completar?` : 'Ouça uma história e ganhe sua primeira figurinha!')}
+      ${bubble(got ? 'festa' : 'dica', got === all ? 'Uau! Você completou o álbum! A Nine está muuuito feliz! 🎉' : got ? `Você já tem <b>${got}</b> ${got === 1 ? 'figurinha' : 'figurinhas'}! Faltam ${all - got}. Vamos completar?` : 'Ouça uma história e ganhe sua primeira figurinha!')}
       <div class="kd-prog"><i style="width:${Math.round(got / all * 100)}%"></i></div>
       <div class="kd-album">${d.stories.map((x, i) => s.stickers[x.id]
         ? `<button class="kd-stk got" data-story="${x.id}" style="--d:${i * 50}ms;--r:${(i % 3 - 1) * 2.5}deg"><span>${x.sticker}</span><b>${esc(x.name)}</b></button>`

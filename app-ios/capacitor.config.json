@@ -1,6 +1,6 @@
 {
   "appId": "br.com.lumi.jogosbiblicos",
-  "appName": "Lumi Jogos",
+  "appName": "Verso Vivo",
   "webDir": "www",
   "backgroundColor": "#fbf3e0",
   "ios": { "contentInset": "never", "scheme": "Lumi", "allowsLinkPreview": false },

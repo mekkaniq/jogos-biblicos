@@ -2,7 +2,7 @@
   "name": "lumi-jogos-biblicos-app",
   "version": "1.0.0",
   "private": true,
-  "description": "App Lumi - Jogos Bíblicos (iOS) empacotando o site com Capacitor. A pasta www já vem pronta.",
+  "description": "App Verso Vivo - Jogos Bíblicos (iOS) empacotando o site com Capacitor. A pasta www já vem pronta.",
   "dependencies": {
     "@capacitor/app": "^8.0.0",
     "@capacitor/browser": "^8.0.0",

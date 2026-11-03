@@ -91,7 +91,7 @@ window.HISTORIA.arcs.esperanca = {
         { q: 'O ancião falou de um Leão. O que João viu?', o: ['Um Cordeiro que tinha sido morto', 'Um leão rugindo', 'Um rei', 'Um anjo'], e: 'Apocalipse 5:5-6.' },
         { q: 'De onde vieram os comprados pelo Cordeiro?', o: ['De toda tribo, língua, povo e nação', 'Só de Israel', 'Só de Roma', 'Só dos ricos'], e: 'Apocalipse 5:9.' }
       ],
-      parents: 'Deus no trono é mostrado só como luz e arco-íris; o Cordeiro como emoji de ovelha, que é o próprio símbolo do texto (Jesus não aparece como pessoa). A Lumi também é uma cordeirinha: vale dizer às crianças que a Lumi é só uma amiguinha, e o Cordeiro de Deus é Jesus. Leitura junto: Apocalipse 5:1-14.'
+      parents: 'Deus no trono é mostrado só como luz e arco-íris; o Cordeiro como emoji de ovelha, que é o próprio símbolo do texto (Jesus não aparece como pessoa). A Nine também é uma cordeirinha: vale dizer às crianças que a Nine é só uma amiguinha, e o Cordeiro de Deus é Jesus. Leitura junto: Apocalipse 5:1-14.'
     },
     {
       id: 'ap4', title: 'Uma multidão de todas as nações', ref: 'Apocalipse 7:9-17', icon: '🌍',
