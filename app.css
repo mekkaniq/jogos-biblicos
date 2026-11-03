@@ -1154,3 +1154,14 @@ html.nt-on .topbar .ttl, html.nt-on .nt-foot { text-shadow: 0 1px 6px rgba(0, 0,
 /* Natal: touca no canto do cartão */
 .nt-heroW { position: relative; }
 .nt-hat { position: absolute; left: -10px; top: -14px; width: 84px; height: auto; transform: rotate(-18deg); z-index: 3; pointer-events: none; filter: drop-shadow(0 3px 4px rgba(0, 0, 0, .35)); }
+
+/* ===================== Apresentação da Nine (uma vez) ===================== */
+.nine-hi { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(20, 12, 6, .55); opacity: 0; transition: opacity .35s ease; }
+.nine-hi.on { opacity: 1; }
+.nh-card { width: min(340px, 100%); display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 22px 20px 20px; border-radius: 28px; background: linear-gradient(180deg, #fff8e6, #fbe9c4); border: 2px solid #f0c98a; box-shadow: 0 18px 50px rgba(0, 0, 0, .35); transform: translateY(14px) scale(.97); transition: transform .45s cubic-bezier(.3, 1.3, .5, 1); }
+.nine-hi.on .nh-card { transform: none; }
+.nh-card .nh-nine { width: 150px; }
+.nh-bubble { text-align: center; font-size: 1.12rem; line-height: 1.45; color: #5a3a1a; }
+.nh-bubble b { color: #b05a12; }
+.nh-btn { appearance: none; border: 0; border-radius: 999px; padding: 12px 26px; font: inherit; font-weight: 700; font-size: 1.02rem; color: #fff; background: linear-gradient(180deg, #e8923a, #c9701c); box-shadow: 0 4px 12px rgba(160, 80, 10, .35); cursor: pointer; }
+@media (prefers-reduced-motion: reduce) { .nine-hi, .nh-card { transition: none; } }

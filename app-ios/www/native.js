@@ -7,7 +7,7 @@
   document.documentElement.classList.add('in-app');
 
   // ---------- 1) Progresso guardado em dobro (localStorage + Preferences nativo) ----------
-  const KEYS = ['jogos-biblicos', 'nine-lembrete', 'lumi-lembrete'];
+  const KEYS = ['jogos-biblicos', 'nine-lembrete', 'lumi-lembrete', 'nine-oi'];
   const Pref = P.Preferences;
   const origSet = Storage.prototype.setItem;
   let pending = 0; const timers = {};

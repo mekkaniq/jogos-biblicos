@@ -65,5 +65,26 @@
     setTimeout(() => w.classList.add('out'), 2800);
     setTimeout(() => w.remove(), 3400);
   };
+
+  // ---------- apresentação da Nine: aparece uma única vez, na primeira abertura ----------
+  const INTRO_KEY = 'nine-oi';
+  const seen = () => { try { return !!localStorage.getItem(INTRO_KEY); } catch (e) { return true; } };
+  const markSeen = () => { try { localStorage.setItem(INTRO_KEY, '1'); } catch (e) { } };
+  App.nineIntro = function (force) {
+    if (!force && seen()) return;
+    if (document.querySelector('.nine-hi')) return;
+    const w = document.createElement('div');
+    w.className = 'nine-hi'; w.setAttribute('role', 'dialog'); w.setAttribute('aria-label', 'Apresentação da Nine');
+    w.innerHTML = `<div class="nh-card">${nineHTML('oi', 'nh-nine')}<div class="nh-bubble">Oi! Eu sou a <b>Nine</b>, vou acompanhar você por aqui! 🧡</div><button class="nh-btn" type="button">Oi, Nine!</button></div>`;
+    document.body.appendChild(w);
+    requestAnimationFrame(() => w.classList.add('on'));
+    const lu = w.querySelector('.nine');
+    setTimeout(() => { anim(lu, 'hop', 800); burst(lu, ['🧡', '✨'], 6); }, 450);
+    const close = () => { markSeen(); w.classList.remove('on'); setTimeout(() => w.remove(), 350); };
+    w.querySelector('.nh-btn').addEventListener('click', () => { anim(lu, 'hop', 600); burst(lu, ['🧡'], 5); setTimeout(close, 450); });
+    w.addEventListener('click', e => { if (e.target === w) close(); });
+  };
+  // primeira abertura: espera a tela inicial aparecer; nunca interrompe quem já entrou num jogo
+  setTimeout(() => { const h = location.hash; if (!seen() && (h === '' || h === '#' || h === '#/')) App.nineIntro(); }, 1200);
   App.nine = { html: nineHTML, pose: setPose, anim, burst, react: Nine };
 })();
