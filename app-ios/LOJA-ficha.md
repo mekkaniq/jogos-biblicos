@@ -18,10 +18,20 @@
 bíblia,jogos bíblicos,caça-palavras,cruzadinha,quiz,crianças,igreja,cristão,versículo,história
 
 **Texto promocional (até 170):**
-Jogos bíblicos para toda a família e A Grande História da Bíblia para crianças, do Gênesis ao Apocalipse, com a Nine. Funciona sem internet.
+343 lições, da Criação ao Apocalipse, mostram como toda a Bíblia aponta para Jesus, com a ovelhinha Nine. E jogos bíblicos para a família. Funciona sem internet.
 
 **Descrição:**
 O Verso Vivo - Jogos Bíblicos foi feito para pais, avós, filhos e igrejas aprenderem a Bíblia juntos, de um jeito bonito, calmo e sem anúncios.
+
+A GRANDE HISTÓRIA DA BÍBLIA
+• 343 lições em 34 partes, da Criação ao Apocalipse, para ler e ouvir em família
+• Mostra, passo a passo, como toda a Bíblia aponta para Jesus
+• Cada lição traz o versículo, perguntas para os pequenos e para os maiores, e uma nota para os pais
+• Narração em voz alta e a ovelhinha Nine acompanhando as crianças
+
+CANTINHO KIDS COM A NINE
+• 12 histórias narradas para crianças de 4 a 10 anos
+• Desenhos para colorir, com cores suaves e sem pressa
 
 JOGOS PARA A FAMÍLIA
 • Caça-Palavras com 230 fases e um desafio novo todo dia
@@ -30,15 +40,10 @@ JOGOS PARA A FAMÍLIA
 • Palavra do Dia, Ligações, Complete o Versículo, Roda de Letras, Quem Sou Eu?, Linha do Tempo, Jogo da Memória e Solitaire Bíblico, cada um com muitas fases em três níveis
 Cada palavra encontrada vem com a sua história e a referência bíblica.
 
-CANTINHO KIDS COM A NINE
-• 12 histórias narradas para crianças de 4 a 10 anos, com a ovelhinha Nine
-• A Grande História da Bíblia: 343 lições em 34 partes, da Criação ao Apocalipse, mostrando como toda a Bíblia aponta para Jesus
-• Perguntas para os pequenos e para os maiores, e uma nota para os pais em cada lição
-
 FEITO COM CUIDADO
 • Textos bíblicos da Almeida Corrigida Fiel (ACF)
 • Funciona totalmente sem internet
-• Lembrete diário opcional
+• Lembrete diário opcional do versículo
 • Letras grandes para quem precisa
 • Sem anúncios, sem cadastro e sem coleta de dados
 
