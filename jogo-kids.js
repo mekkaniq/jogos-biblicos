@@ -1,4 +1,4 @@
-/* Área Kids — histórias narradas com a Lumi (animada), perguntas, álbum de figurinhas e Modo Turma */
+/* Área Kids — histórias narradas com a Nine (animada), perguntas, álbum de figurinhas e Modo Turma */
 (function () {
   const { $, $$, esc, save, route, go, setLast, sfx, confetti, toast } = App;
   const K = App.kit;
@@ -7,10 +7,10 @@
   const storyOf = id => D().stories.find(s => s.id === id) || (window.NATAL_DATA && window.NATAL_DATA.stories.find(s => s.id === id));
   const pick = a => a[Math.floor(Math.random() * a.length)];
 
-  // a Lumi animada vem do arquivo lumi.js (compartilhada com os jogos dos adultos)
-  const { html: lumiHTML, pose: setPose, anim, burst, react: Lumi } = App.lumi;
+  // a Nine animada vem do arquivo nine.js (compartilhada com os jogos dos adultos)
+  const { html: nineHTML, pose: setPose, anim, burst, react: Nine } = App.nine;
 
-  // ---------- narração com a voz do próprio aparelho (a Lumi "fala" junto) ----------
+  // ---------- narração com a voz do próprio aparelho (a Nine "fala" junto) ----------
   let voice = null, talkT = 0;
   function pickVoice() {
     if (!('speechSynthesis' in window)) return;
@@ -29,7 +29,7 @@
       .replace(/(\d+):(\d+)/g, ', capítulo $1, versículo $2')
       .replace(/(\d+)\s*[–-]\s*(\d+)/g, '$1 a $2').replace(/ ,/g, ',');
   }
-  const talking = on => $$('.lumi:not(.sleep)').forEach(lu => lu.classList.toggle('talk', on));
+  const talking = on => $$('.nine:not(.sleep)').forEach(lu => lu.classList.toggle('talk', on));
   function speak(t, words) {
     const txt = forSpeech(t);
     clearTimeout(talkT);
@@ -45,10 +45,10 @@
     } catch (e) { }
   }
   const hush = () => { clearTimeout(talkT); talking(false); try { speechSynthesis.cancel(); } catch (e) { } };
-  // texto com cada palavra marcada, para destacar enquanto a Lumi lê
+  // texto com cada palavra marcada, para destacar enquanto a Nine lê
   function wordsHTML(t) { const src = t.replace(/[“”"]/g, ''); let i = 0; return t.split(/(\s+)/).map(p => { const clean = p.replace(/[“”"]/g, ''); const s = src.indexOf(clean, i); const e = s + clean.length; if (s >= 0) i = e; return /^\s+$/.test(p) ? p : `<span data-c="${s}" data-e="${e}">${esc(p)}</span>`; }).join(''); }
 
-  // ---------- relógios da tela (sono da Lumi etc.) ----------
+  // ---------- relógios da tela (sono da Nine etc.) ----------
   let timers = [];
   const later = (f, ms) => timers.push(setTimeout(f, ms));
   const every = (f, ms) => timers.push(setInterval(f, ms));
@@ -56,33 +56,33 @@
 
   const top = (back, title, sub) => `<div class="topbar kd-top"><button class="icon-btn" data-back="${back}" aria-label="Voltar">${App.I.back}</button><div class="ttl"><b>${title}</b>${sub ? `<small>${sub}</small>` : ''}</div><button class="icon-btn" data-voice aria-label="Voz">${S().voice ? '🔊' : '🔇'}</button></div>`;
   const TAPS = ['Hihi! Que cosquinha!', 'Bééé! 🐑', 'Deus te ama muito!', 'Você é muito especial!', 'Oba! Vamos brincar?', 'Eu adoro histórias da Bíblia!'];
-  // balão da Lumi: monta uma vez e depois só troca a fala
-  const bubble = (pose, text, cls = 'enter') => `<div class="kd-lumi">${lumiHTML(pose, cls)}<div class="kd-bubble">${text}</div></div>`;
+  // balão da Nine: monta uma vez e depois só troca a fala
+  const bubble = (pose, text, cls = 'enter') => `<div class="kd-nine">${nineHTML(pose, cls)}<div class="kd-bubble">${text}</div></div>`;
   function say(el, text, pose, react, voiceText) {
-    const lu = $('.kd-lumi .lumi', el), b = $('.kd-bubble', el);
+    const lu = $('.kd-nine .nine', el), b = $('.kd-bubble', el);
     if (b) { b.innerHTML = text; b.classList.remove('pop'); void b.offsetWidth; b.classList.add('pop'); }
     if (pose) setPose(lu, pose);
-    if (react) Lumi[react](lu);
+    if (react) Nine[react](lu);
     speak(voiceText || (b ? b.textContent : ''));
   }
   function common(el, onTap) {
     el.addEventListener('click', e => {
       const b = e.target.closest('[data-back]'); if (b) { hush(); reset(); go(b.dataset.back); return; }
       const v = e.target.closest('[data-voice]'); if (v) { const s = S(); s.voice = s.voice ? 0 : 1; save(); v.textContent = s.voice ? '🔊' : '🔇'; if (!s.voice) hush(); toast(s.voice ? 'Narração ligada' : 'Narração desligada'); return; }
-      const lu = e.target.closest('[data-lumi]');
+      const lu = e.target.closest('[data-nine]');
       if (lu) {
         if (onTap && onTap(lu) !== false) return;
         sfx.tap(); const t = pick(TAPS);
-        if (lu.closest('.kd-lumi') && $('.kd-bubble', lu.closest('.kd-lumi'))) say(el, t, null, 'love'); else { Lumi.love(lu); speak(t); }
+        if (lu.closest('.kd-nine') && $('.kd-bubble', lu.closest('.kd-nine'))) say(el, t, null, 'love'); else { Nine.love(lu); speak(t); }
       }
     });
   }
-  // a Lumi cochila quando ninguém mexe por um tempo; um toque acorda
+  // a Nine cochila quando ninguém mexe por um tempo; um toque acorda
   function sleepy(el, wakeText) {
     let idle = 0;
     el.addEventListener('pointerdown', () => { idle = 0; });
     every(() => {
-      const lu = $('.kd-lumi .lumi', el); if (!lu || !document.contains(lu)) return;
+      const lu = $('.kd-nine .nine', el); if (!lu || !document.contains(lu)) return;
       if (lu.classList.contains('sleep')) { burst(lu, ['z', 'Z', 'z'], 1); return; }
       if (++idle >= 14 && !(window.speechSynthesis && speechSynthesis.speaking)) { hush(); lu.classList.add('sleep'); setPose(lu, 'dormindo'); const b = $('.kd-bubble', el); if (b) b.innerHTML = 'Zzz… <small>Toque em mim para me acordar!</small>'; }
     }, 2000);
@@ -118,8 +118,8 @@
     reset(); App.setScene('aurora'); document.body.classList.add('kids');
     const s = S(); const d = D();
     const got = d.stories.filter(st => s.stickers[st.id]).length;
-    const hi = got ? `Oi de novo! Você já tem <b>${got}</b> ${got === 1 ? 'figurinha' : 'figurinhas'}. Qual história vamos ouvir hoje?` : 'Oi! Eu sou a <b>Lumi</b>! Vamos ouvir uma história da Bíblia e brincar juntos?';
-    el.innerHTML = `${top('#/', 'CANTINHO KIDS', 'com a Lumi')}
+    const hi = got ? `Oi de novo! Você já tem <b>${got}</b> ${got === 1 ? 'figurinha' : 'figurinhas'}. Qual história vamos ouvir hoje?` : 'Oi! Eu sou a <b>Nine</b>! Vamos ouvir uma história da Bíblia e brincar juntos?';
+    el.innerHTML = `${top('#/', 'CANTINHO KIDS', 'com a Nine')}
       ${bubble('oi', hi)}
       <div class="kd-band">
         <button class="${s.band === 'small' ? 'on' : ''}" data-band="small"><span>🐣</span><b>Pequeninos</b><small>4 a 6 anos</small></button>
@@ -134,11 +134,11 @@
         <button class="btn btn-gold" data-go="#/kids/album">📒 Meu álbum</button>
         <button class="btn btn-ghost" data-go="#/kids/turma">👨‍👩‍👧‍👦 Modo Turma</button>
       </div>
-      <p class="kd-note">Para os pais e professores: toque em 🔊 lá em cima para ligar ou desligar a narração. A criança pode tocar na Lumi! 🐑</p>
+      <p class="kd-note">Para os pais e professores: toque em 🔊 lá em cima para ligar ou desligar a narração. A criança pode tocar na Nine! 🐑</p>
       ${K.signature}`;
     const wake = sleepy(el, 'Ah! Eu cochilei um pouquinho! 😊 Vamos ouvir uma história?');
     common(el, wake);
-    later(() => { Lumi.wave($('.kd-lumi .lumi', el)); speak($('.kd-bubble', el).textContent); }, 450);
+    later(() => { Nine.wave($('.kd-nine .nine', el)); speak($('.kd-bubble', el).textContent); }, 450);
     el.addEventListener('click', e => {
       const b = e.target.closest('[data-band]'); if (b) { s.band = b.dataset.band; save(); sfx.tap(); $$('[data-band]', el).forEach(x => x.classList.toggle('on', x === b)); say(el, b.dataset.band === 'small' ? 'Pequeninos! As respostas vão ter figuras. 🐣' : 'Leitores! Agora as perguntas são com palavras. Você consegue! 📚', 'oi', 'love'); return; }
       const st = e.target.closest('[data-story]'); if (st) { sfx.tap(); hush(); go('#/kids/h/' + st.dataset.story); return; }
@@ -162,7 +162,7 @@
       const sc = st.scenes[step]; App.setScene(sc.bg);
       el.innerHTML = `${top(home, st.name.toUpperCase(), `${step + 1} de ${st.scenes.length}`)}
         <div class="kd-dots">${st.scenes.map((_, i) => `<i class="${i < step ? 'on' : i === step ? 'now' : ''}"></i>`).join('')}</div>
-        <div class="kd-scene ${dir < 0 ? 'back' : ''}" style="--bgimg:${App.sceneUrl(sc.bg)}">${fxHTML(sc.fx)}${artHTML(sc.art)}${lumiHTML('lendo', 'mini')}</div>
+        <div class="kd-scene ${dir < 0 ? 'back' : ''}" style="--bgimg:${App.sceneUrl(sc.bg)}">${fxHTML(sc.fx)}${artHTML(sc.art)}${nineHTML('lendo', 'mini')}</div>
         <div class="kd-text ${small ? 'small' : ''}">${wordsHTML(sc.text)}</div>
         ${sc.r ? `<div class="kd-ref">📖 ${esc(sc.r)}</div>` : ''}
         <div class="kd-nav">
@@ -197,7 +197,7 @@
       } else {
         mist++; qmist++; sfx.bad(); btn.classList.add('no'); btn.disabled = true;
         if (qmist >= 2) {
-          // errou duas vezes: a Lumi aponta a resposta certa
+          // errou duas vezes: a Nine aponta a resposta certa
           const ok = $('[data-o="0"]', el); ok && ok.classList.add('hint');
           say(el, 'Quase! Olha, eu te ajudo: é <b>esta aqui</b> que está pulando! 👇', null, 'hint', 'Quase! Eu te ajudo: é esta aqui que está pulando!');
         } else say(el, pick(['Quase! Tente de novo. 💛', 'Hmm, não foi essa. Tente outra! 💛', 'Ops! Vamos tentar de novo? 💛']), null, 'oops');
@@ -209,14 +209,14 @@
       const left = (st.natal ? window.NATAL_DATA.stories : D().stories).filter(x => !s.stickers[x.id]).length;
       el.innerHTML = `${top(home, 'PARABÉNS!', st.name)}
         <div class="kd-win">
-          <div class="kd-lumi solo">${lumiHTML('festa', 'enter party')}</div>
+          <div class="kd-nine solo">${nineHTML('festa', 'enter party')}</div>
           <div class="kd-sticker"><span>${st.sticker}</span><b>${esc(st.name)}</b><small>${esc(st.ref)}</small></div>
           <h2>${first ? 'Você ganhou uma figurinha!' : 'Você ouviu de novo!'}</h2>
-          <p>${small ? 'A Lumi está muito feliz com você!' : `Você respondeu tudo${mist ? '' : ' sem errar nenhuma'}! A figurinha já está guardada.`}${left ? '' : '<br><b>Você completou o álbum inteiro! 🎉</b>'}</p>
+          <p>${small ? 'A Nine está muito feliz com você!' : `Você respondeu tudo${mist ? '' : ' sem errar nenhuma'}! A figurinha já está guardada.`}${left ? '' : '<br><b>Você completou o álbum inteiro! 🎉</b>'}</p>
         </div>
         <div class="kd-row">${st.natal ? '' : '<button class="btn btn-gold" data-go="#/kids/album">📒 Meu álbum</button>'}<button class="btn btn-ghost" data-go="${home}">Outras histórias</button></div>`;
-      later(() => { confetti(); burst($('.lumi', el), ['✨', '⭐', '🌟', '💛'], 12); }, 350);
-      every(() => { const lu = $('.lumi', el); lu && burst(lu, ['✨', '⭐'], 3); }, 1600);
+      later(() => { confetti(); burst($('.nine', el), ['✨', '⭐', '🌟', '💛'], 12); }, 350);
+      every(() => { const lu = $('.nine', el); lu && burst(lu, ['✨', '⭐'], 3); }, 1600);
       speak(first ? 'Parabéns! Você ganhou uma figurinha!' : 'Parabéns! Você ouviu a história de novo!');
     }
     common(el);
@@ -242,13 +242,13 @@
     const s = S(); const d = D();
     const got = d.stories.filter(x => s.stickers[x.id]).length, all = d.stories.length;
     el.innerHTML = `${top('#/kids', 'MEU ÁLBUM', `${got} de ${all} figurinhas`)}
-      ${bubble(got ? 'festa' : 'dica', got === all ? 'Uau! Você completou o álbum! A Lumi está muuuito feliz! 🎉' : got ? `Você já tem <b>${got}</b> ${got === 1 ? 'figurinha' : 'figurinhas'}! Faltam ${all - got}. Vamos completar?` : 'Ouça uma história e ganhe sua primeira figurinha!')}
+      ${bubble(got ? 'festa' : 'dica', got === all ? 'Uau! Você completou o álbum! A Nine está muuuito feliz! 🎉' : got ? `Você já tem <b>${got}</b> ${got === 1 ? 'figurinha' : 'figurinhas'}! Faltam ${all - got}. Vamos completar?` : 'Ouça uma história e ganhe sua primeira figurinha!')}
       <div class="kd-prog"><i style="width:${Math.round(got / all * 100)}%"></i></div>
       <div class="kd-album">${d.stories.map((x, i) => s.stickers[x.id]
         ? `<button class="kd-stk got" data-story="${x.id}" style="--d:${i * 50}ms;--r:${(i % 3 - 1) * 2.5}deg"><span>${x.sticker}</span><b>${esc(x.name)}</b></button>`
         : `<button class="kd-stk" data-story="${x.id}" style="--d:${i * 50}ms"><span>${x.icon}</span><b>${esc(x.name)}</b><small>toque para ouvir</small></button>`).join('')}</div>`;
     common(el);
-    later(() => { const lu = $('.lumi', el); got ? Lumi.yay(lu) : Lumi.hint(lu); speak($('.kd-bubble', el).textContent); }, 400);
+    later(() => { const lu = $('.nine', el); got ? Nine.yay(lu) : Nine.hint(lu); speak($('.kd-bubble', el).textContent); }, 400);
     el.addEventListener('click', e => { const b = e.target.closest('[data-story]'); if (b) { sfx.tap(); hush(); go('#/kids/h/' + b.dataset.story); } });
   });
 
@@ -264,7 +264,7 @@
         <div class="kd-stories">${d.stories.map((s, i) => `<button class="kd-story" data-st="${s.id}" style="background-image:${App.sceneUrl(s.scene)};--d:${i * 40}ms"><span class="ic">${s.icon}</span><b>${esc(s.name)}</b><em class="new">Começar ▶</em></button>`).join('')}</div>
         ${App.historia ? `<div class="section-title"><h2>Lições da Grande História</h2></div>${App.historia.arcs().map(a => `<details class="kd-tarc parch"><summary>${a.icon} <b>${esc(a.name)}</b><small>${a.lessons.length} lições · ${esc(a.ref)}</small></summary>${a.lessons.map((l, i) => `<button class="kd-tl" data-st="${l.id}"><i>${i + 1}</i><span>${l.icon}</span><b>${esc(l.title)}</b><small>${esc(l.ref)}</small></button>`).join('')}</details>`).join('')}` : ''}`;
     }
-    const score = big => `<div class="kd-score ${big ? 'big' : ''}"><div><span>${T[0][0]}</span><b>${pts[0]}</b><small>${T[0][1]}</small></div>${big ? '' : `<div class="kd-lumi solo mid">${lumiHTML(shown ? 'festa' : 'pensando', shown ? 'hop' : '')}</div>`}<div><span>${T[1][0]}</span><b>${pts[1]}</b><small>${T[1][1]}</small></div></div>`;
+    const score = big => `<div class="kd-score ${big ? 'big' : ''}"><div><span>${T[0][0]}</span><b>${pts[0]}</b><small>${T[0][1]}</small></div>${big ? '' : `<div class="kd-nine solo mid">${nineHTML(shown ? 'festa' : 'pensando', shown ? 'hop' : '')}</div>`}<div><span>${T[1][0]}</span><b>${pts[1]}</b><small>${T[1][1]}</small></div></div>`;
     function board() {
       const q = st.big[qi];
       el.innerHTML = `${top('#/kids/turma', st.name.toUpperCase(), `Pergunta ${qi + 1} de ${st.big.length}`)}
@@ -273,16 +273,16 @@
         <div class="kd-topts">${q.show.map((o, i) => `<div class="${shown && o === q.o[0] ? 'ok' : shown ? 'dim' : ''}"><i>${'ABCD'[i]}</i>${esc(o)}</div>`).join('')}</div>
         ${shown ? `<p class="kd-te">${esc(q.e)}</p><div class="kd-row three"><button class="btn btn-gold" data-pt="0">+1 ${T[0][0]}</button><button class="btn btn-ghost" data-pt="-1">Ninguém</button><button class="btn btn-gold" data-pt="1">+1 ${T[1][0]}</button></div>`
           : `<button class="btn btn-gold btn-block" data-show>Mostrar resposta</button>`}`;
-      if (shown) burst($('.lumi', el), ['✨', '⭐', '💛'], 8);
+      if (shown) burst($('.nine', el), ['✨', '⭐', '💛'], 8);
     }
     function end() {
       sfx.win();
       el.innerHTML = `${top('#/kids/turma', 'FIM DO JOGO', st.name)}
-        <div class="kd-win"><div class="kd-lumi solo">${lumiHTML('festa', 'enter party')}</div>
+        <div class="kd-win"><div class="kd-nine solo">${nineHTML('festa', 'enter party')}</div>
           ${score(true)}
           <h2>Todo mundo venceu, porque todo mundo aprendeu! 🎉</h2><p>${esc(st.name)} · ${esc(st.ref)}</p></div>
         <div class="kd-row"><button class="btn btn-gold" data-again>Jogar de novo</button><button class="btn btn-ghost" data-back="#/kids">Sair</button></div>`;
-      later(() => { confetti(); burst($('.lumi', el), ['✨', '⭐', '🌟', '💛'], 12); }, 300);
+      later(() => { confetti(); burst($('.nine', el), ['✨', '⭐', '🌟', '💛'], 12); }, 300);
     }
     // a ordem das alternativas é embaralhada uma vez por partida, guardando qual é a certa
     const prep = s => ({ ...s, big: s.big.map(q => ({ ...q, show: K.shuffle(q.o) })) });
@@ -296,5 +296,5 @@
     pickStory();
   });
   // ferramentas compartilhadas com a Grande História da Bíblia (historia.js)
-  App.kidsUI = { S, top, common, bubble, say, speak, hush, artHTML, fxHTML, wordsHTML, reset, later, every, Lumi, lumiHTML, setPose, burst, pick };
+  App.kidsUI = { S, top, common, bubble, say, speak, hush, artHTML, fxHTML, wordsHTML, reset, later, every, Nine, nineHTML, setPose, burst, pick };
 })();

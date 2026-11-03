@@ -36,7 +36,7 @@
       const doneC = items.filter(x => S.done[x.n]).length;
       el.innerHTML = `${K.topbar('#/', 'COLORIR', 'Cenas da Bíblia')}
       <section class="hero" style="background-image:url('${App.sceneUrl('aurora').slice(5, -2)}');min-height:220px">
-        ${App.lumi ? App.lumi.html('lendo', 'quiet hero-lumi') : ''}${K.gicon(I.palette)}<h1 style="font-size:2rem"><span class="gold-text">Colorir</span></h1><div class="sub">Pinte as cenas da Bíblia, no seu ritmo.</div>
+        ${App.nine ? App.nine.html('lendo', 'quiet hero-nine') : ''}${K.gicon(I.palette)}<h1 style="font-size:2rem"><span class="gold-text">Colorir</span></h1><div class="sub">Pinte as cenas da Bíblia, no seu ritmo.</div>
       </section>
       <div class="trk-tabs">${[1, 2, 3].map(t => { const ls = D.filter(x => x.t === t); return `<button class="trk ${t === trk ? 'on' : ''}" data-trk="${t}"><span>${TRK_IC[t]}</span><b>${TRK[t]}</b><small>${ls.filter(x => S.done[x.n]).length}/${ls.length}</small></button>`; }).join('')}</div>
       <p class="trk-desc">${TRK_DESC[trk]}</p>

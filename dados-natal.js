@@ -12,7 +12,7 @@ window.NATAL_DATA = {
         { art: '💛🙏', bg: 'aurora', fx: 'coracoes', text: 'Maria respondeu com confiança: "Eis aqui a serva do Senhor; cumpra-se em mim segundo a tua palavra." Ela acreditou na promessa de Deus.', r: 'Lucas 1:38' }
       ],
       small: [
-        { q: 'Qual era o nome da moça de Nazaré?', o: [['💛', 'Maria'], ['🐑', 'Lumi'], ['🌟', 'Estrela']] },
+        { q: 'Qual era o nome da moça de Nazaré?', o: [['💛', 'Maria'], ['🐑', 'Nine'], ['🌟', 'Estrela']] },
         { q: 'Que nome o menino ia ter?', o: [['⭐', 'Jesus'], ['🦁', 'Leão'], ['🌳', 'Árvore']] },
         { q: 'Maria confiou em quem?', o: [['🙏', 'Em Deus'], ['🤖', 'Num robô'], ['🐶', 'Num cachorro']] }
       ],

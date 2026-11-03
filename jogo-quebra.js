@@ -3,19 +3,19 @@
   const { $, esc, I, route, go, setLast, sfx } = App;
   const K = App.kit;
 
-  // cena do app + a Lumi (para as peças terem detalhes) + uma frase curta e a referência
+  // cena do app + a Nine (para as peças terem detalhes) + uma frase curta e a referência
   const TEMAS = [
-    { sc: 'aurora', lumi: ['lumi-festa', .30, .60, .62], nome: 'No princípio', win: 'Deus disse: haja luz. E houve luz. Mais tarde, Jesus diria: Eu sou a luz do mundo.', ref: 'Gênesis 1:3 · João 8:12' },
-    { sc: 'campo', lumi: ['lumi-oi', .30, .62, .60], nome: 'Os campos de Belém', win: 'Pastores guardavam as suas ovelhas à noite quando ouviram a boa notícia do nascimento do Salvador.', ref: 'Lucas 2:8-11' },
-    { sc: 'cidade', lumi: ['lumi-lendo', .30, .08, .64], nome: 'Jerusalém', win: 'O povo de Deus se alegrava em subir à casa do Senhor.', ref: 'Salmos 122:1' },
-    { sc: 'confins', lumi: ['lumi-dica', .28, .62, .56], nome: 'Até os confins da terra', win: 'Jesus enviou os seus discípulos para levar a boa notícia a todos os povos.', ref: 'Atos 1:8' },
-    { sc: 'deserto', lumi: ['lumi-pensando', .28, .08, .60], nome: 'O pão no deserto', win: 'Deus deu pão do céu ao povo no deserto. Jesus disse: Eu sou o pão da vida.', ref: 'Êxodo 16:4 · João 6:35' },
-    { sc: 'galileia', lumi: ['lumi-oi', .30, .62, .62], nome: 'O mar da Galileia', win: 'Ali Jesus chamou pescadores para o seguirem.', ref: 'Mateus 4:18-19' },
-    { sc: 'jardim', lumi: ['lumi-festa', .30, .06, .62], nome: 'O jardim do Éden', win: 'Deus plantou um jardim e colocou ali o homem que tinha formado.', ref: 'Gênesis 2:8' },
-    { sc: 'mar', lumi: ['lumi-dica', .28, .64, .58], nome: 'A arca sobre as águas', win: 'Deus se lembrou de Noé, e a arca repousou sobre os montes.', ref: 'Gênesis 8:1-4' },
-    { sc: 'monte', lumi: ['lumi-lendo', .30, .60, .62], nome: 'O monte Sinai', win: 'O Senhor falou ao seu povo no monte e deu a sua lei.', ref: 'Êxodo 19:20' },
-    { sc: 'noite', lumi: ['lumi-pensando', .28, .08, .62], nome: 'A noite em Belém', win: 'Uma estrela guiou os magos até onde estava o menino.', ref: 'Mateus 2:9-10' },
-    { sc: 'palacio', lumi: ['lumi-oi', .30, .62, .60], nome: 'O rei Salomão', win: 'Salomão pediu a Deus um coração sábio para governar o povo.', ref: '1 Reis 3:9' }
+    { sc: 'aurora', nine: ['nine-festa', .30, .60, .62], nome: 'No princípio', win: 'Deus disse: haja luz. E houve luz. Mais tarde, Jesus diria: Eu sou a luz do mundo.', ref: 'Gênesis 1:3 · João 8:12' },
+    { sc: 'campo', nine: ['nine-oi', .30, .62, .60], nome: 'Os campos de Belém', win: 'Pastores guardavam as suas ovelhas à noite quando ouviram a boa notícia do nascimento do Salvador.', ref: 'Lucas 2:8-11' },
+    { sc: 'cidade', nine: ['nine-lendo', .30, .08, .64], nome: 'Jerusalém', win: 'O povo de Deus se alegrava em subir à casa do Senhor.', ref: 'Salmos 122:1' },
+    { sc: 'confins', nine: ['nine-dica', .28, .62, .56], nome: 'Até os confins da terra', win: 'Jesus enviou os seus discípulos para levar a boa notícia a todos os povos.', ref: 'Atos 1:8' },
+    { sc: 'deserto', nine: ['nine-pensando', .28, .08, .60], nome: 'O pão no deserto', win: 'Deus deu pão do céu ao povo no deserto. Jesus disse: Eu sou o pão da vida.', ref: 'Êxodo 16:4 · João 6:35' },
+    { sc: 'galileia', nine: ['nine-oi', .30, .62, .62], nome: 'O mar da Galileia', win: 'Ali Jesus chamou pescadores para o seguirem.', ref: 'Mateus 4:18-19' },
+    { sc: 'jardim', nine: ['nine-festa', .30, .06, .62], nome: 'O jardim do Éden', win: 'Deus plantou um jardim e colocou ali o homem que tinha formado.', ref: 'Gênesis 2:8' },
+    { sc: 'mar', nine: ['nine-dica', .28, .64, .58], nome: 'A arca sobre as águas', win: 'Deus se lembrou de Noé, e a arca repousou sobre os montes.', ref: 'Gênesis 8:1-4' },
+    { sc: 'monte', nine: ['nine-lendo', .30, .60, .62], nome: 'O monte Sinai', win: 'O Senhor falou ao seu povo no monte e deu a sua lei.', ref: 'Êxodo 19:20' },
+    { sc: 'noite', nine: ['nine-pensando', .28, .08, .62], nome: 'A noite em Belém', win: 'Uma estrela guiou os magos até onde estava o menino.', ref: 'Mateus 2:9-10' },
+    { sc: 'palacio', nine: ['nine-oi', .30, .62, .60], nome: 'O rei Salomão', win: 'Salomão pediu a Deus um coração sábio para governar o povo.', ref: '1 Reis 3:9' }
   ];
   const LEVELS = [];
   [[1, 3, 3], [2, 4, 4], [3, 5, 5]].forEach(([t, cols, rows]) => TEMAS.forEach((tema, k) => {
@@ -41,9 +41,9 @@
     const avail = Math.min(400, (el.clientWidth || window.innerWidth) - 8);
     const W = Math.floor(avail / cols) * cols, H = Math.round(W * 3 / 4 / rows) * rows;
     const pw = W / cols, ph = H / rows, N = cols * rows;
-    // fundo "cobrindo" o quadro: cena 3:2 + Lumi por cima
+    // fundo "cobrindo" o quadro: cena 3:2 + Nine por cima
     const sc = Math.max(W / 1200, H / 800), sw = 1200 * sc, sh = 800 * sc, sx = (W - sw) / 2, sy = (H - sh) / 2;
-    const [lname, lfrac, lx, ly] = tema.lumi, lw = W * lfrac, lh = lw * 1.0, lxx = W * lx, lyy = H * ly - lh * .4;
+    const [lname, lfrac, lx, ly] = tema.nine, lw = W * lfrac, lh = lw * 1.0, lxx = W * lx, lyy = H * ly - lh * .4;
     const bg = (i) => {
       const c = i % cols, r = Math.floor(i / cols), ox = c * pw, oy = r * ph;
       return `background-image:url('${lname}.webp'),url('${tema.sc}.svg');background-repeat:no-repeat;background-size:${lw}px ${lh}px,${sw}px ${sh}px;background-position:${lxx - ox}px ${lyy - oy}px,${sx - ox}px ${sy - oy}px`;
