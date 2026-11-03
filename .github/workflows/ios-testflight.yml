@@ -19,7 +19,7 @@ jobs:
       TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
       KEY_ID: ${{ secrets.ASC_KEY_ID }}
       ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
-      BUNDLE_ID: br.com.lumi.jogosbiblicos
+      BUNDLE_ID: br.com.editoraversovivo.jogosbiblicos
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

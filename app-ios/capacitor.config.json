@@ -1,9 +1,9 @@
 {
-  "appId": "br.com.lumi.jogosbiblicos",
+  "appId": "br.com.editoraversovivo.jogosbiblicos",
   "appName": "Verso Vivo",
   "webDir": "www",
   "backgroundColor": "#fbf3e0",
-  "ios": { "contentInset": "never", "scheme": "Lumi", "allowsLinkPreview": false },
+  "ios": { "contentInset": "never", "scheme": "VersoVivo", "allowsLinkPreview": false },
   "plugins": {
     "SplashScreen": { "launchShowDuration": 1500, "launchAutoHide": false, "backgroundColor": "#fbf3e0", "showSpinner": false },
     "LocalNotifications": { "iconColor": "#b8892f" }
