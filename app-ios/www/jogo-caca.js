@@ -67,7 +67,7 @@
           </div>
         </div>`;
       }).join('')}
-      <div class="signature"><b>Feito por Eduardo de Souza</b><i>com muito amor, para a minha família. ❤️</i></div>`;
+      <div class="signature"><b>Feito por <a class="sig-link" href="https://www.instagram.com/yesdudu" target="_blank" rel="noopener">Eduardo de Souza</a></b><i>com muito amor, para a minha família. ❤️</i></div>`;
     common(el);
     el.addEventListener('click', e => {
       const t = e.target.closest('[data-toggle]'); if (t) { const j = t.parentElement; j.classList.toggle('open'); t.setAttribute('aria-expanded', j.classList.contains('open')); App.sfx.tap(); }

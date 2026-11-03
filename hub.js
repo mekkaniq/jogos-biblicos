@@ -59,7 +59,7 @@
           <b>${g.name}</b><small>${g.sub}</small>
           ${g.note ? `<span class="pg"><span>${g.note}</span></span>` : `<span class="pg"><i><u style="width:${Math.round(g.done / g.total * 100)}%"></u></i><span>${g.done}/${g.total}</span></span>`}
         </button>`).join('')}</div>
-      <div class="signature"><span class="divider">✦</span><b>Feito por Eduardo de Souza</b><i>com muito amor, para a minha família. ❤️</i></div>
+      <div class="signature"><span class="divider">✦</span><b>Feito por <a class="sig-link" href="https://www.instagram.com/yesdudu" target="_blank" rel="noopener">Eduardo de Souza</a></b><i>com muito amor, para a minha família. ❤️</i></div>
       <div class="footer-links">
         <button class="btn" data-settings>${I.gear} Ajustes</button>
         ${standalone ? '' : `<button class="btn" data-install>${I.share} Instalar no iPhone</button>`}

@@ -28,7 +28,7 @@
             <div class="meta"><div class="bar"><i style="width:${dn / cs.length * 100}%"></i></div><em>${dn}/${cs.length}</em></div></div>
           <span class="chev">${I.next}</span></button>`;
       }).join('')}
-      <div class="signature"><span class="divider">★</span><b>Feito por Eduardo de Souza</b><i>com muito amor, para a minha família. ❤️</i></div>`;
+      <div class="signature"><span class="divider">★</span><b>Feito por <a class="sig-link" href="https://www.instagram.com/yesdudu" target="_blank" rel="noopener">Eduardo de Souza</a></b><i>com muito amor, para a minha família. ❤️</i></div>`;
     common(el);
     el.addEventListener('click', e => {
       const a = e.target.closest('[data-arc]'); if (a) go('#/cruzada/arco/' + a.dataset.arc);

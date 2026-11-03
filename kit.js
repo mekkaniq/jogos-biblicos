@@ -14,7 +14,7 @@
   const plain = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toUpperCase().replace(/[^A-Z]/g, '');
   const stars = n => [1, 2, 3].map(i => `<span class="${i <= n ? '' : 'off'}">★</span>`).join('');
   const gicon = icon => `<div class="gicon" style="width:58px;height:58px;border-radius:16px;display:grid;place-items:center;background:var(--gold-grad);color:#3b2a0c;margin-bottom:6px">${icon.replace('<svg', '<svg style="width:32px;height:32px"')}</div>`;
-  const signature = `<div class="signature"><b>Feito por Eduardo de Souza</b><i>com muito amor, para a minha família. ❤️</i></div>`;
+  const signature = `<div class="signature"><b>Feito por <a class="sig-link" href="https://www.instagram.com/yesdudu" target="_blank" rel="noopener">Eduardo de Souza</a></b><i>com muito amor, para a minha família. ❤️</i></div>`;
 
   // Tela inicial padrão de um jogo com fases
   // Trilhas de dificuldade: cada fase tem t (1 fácil, 2 médio, 3 difícil) e i (número dentro da trilha)

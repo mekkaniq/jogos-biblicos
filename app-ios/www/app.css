@@ -89,6 +89,7 @@ p { margin: 0; }
 .signature { text-align: center; color: rgba(248, 240, 220, .92); margin: 22px 0 6px; font-size: .92rem; }
 .signature b { display: block; font-weight: 600; color: var(--parch-50); }
 .signature i { color: rgba(248, 240, 220, .8); }
+.signature a.sig-link { color: inherit; text-decoration: underline dotted; text-underline-offset: 3px; }
 
 /* ---------- Hub ---------- */
 .continue { display: flex; align-items: center; gap: 14px; padding: 14px; margin-top: 16px; text-align: left; width: 100%; }
