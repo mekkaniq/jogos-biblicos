@@ -11,8 +11,8 @@
 **Idioma principal:** Português (Brasil)
 **Preço:** Gratuito
 
-**URL de suporte:** https://mekkaniq.github.io/jogos-biblicos/
-**URL de privacidade:** https://mekkaniq.github.io/jogos-biblicos/privacidade.html
+**URL de suporte:** https://editoraversovivo.com.br/jogos
+**URL de privacidade:** https://editoraversovivo.com.br/jogos/privacidade
 
 **Palavras-chave (até 100 caracteres):**
 bíblia,jogos bíblicos,caça-palavras,cruzadinha,quiz,crianças,igreja,cristão,versículo,história
