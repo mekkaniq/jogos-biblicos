@@ -1,6 +1,6 @@
 {
   "appId": "br.com.editoraversovivo.jogosbiblicos",
-  "appName": "Verso Vivo Jogos Bíblicos",
+  "appName": "Verso Vivo",
   "webDir": "www",
   "backgroundColor": "#fbf3e0",
   "ios": { "contentInset": "never", "scheme": "VersoVivo", "allowsLinkPreview": false },
