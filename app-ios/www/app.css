@@ -2,6 +2,7 @@
    Verde profundo · pergaminho · dourado */
 @font-face { font-family: 'Lora'; src: url('Lora-Variable.woff') format('woff'); font-weight: 400 700; font-style: normal; font-display: swap; }
 @font-face { font-family: 'Lora'; src: url('Lora-Italic-Variable.woff') format('woff'); font-weight: 400 700; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Cinzel'; src: url('Cinzel-Variable.woff') format('woff'); font-weight: 400 900; font-style: normal; font-display: swap; }
 
 :root {
   --green-950: #0a1c14; --green-900: #0f281c; --green-800: #163826; --green-700: #1e4a33; --green-600: #2a5e42; --green-500: #3b7454;
