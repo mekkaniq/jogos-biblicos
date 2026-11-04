@@ -51,7 +51,7 @@ jobs:
           /usr/libexec/PlistBuddy -c "Set :CFBundleVersion ${{ inputs.build_number }}" $P
           /usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString ${{ inputs.version }}" $P || /usr/libexec/PlistBuddy -c "Add :CFBundleShortVersionString string ${{ inputs.version }}" $P
           /usr/libexec/PlistBuddy -c "Add :ITSAppUsesNonExemptEncryption bool false" $P || true
-          /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName Verso Vivo" $P || /usr/libexec/PlistBuddy -c "Add :CFBundleDisplayName string Verso Vivo" $P
+          /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName Verso Vivo Jogos Bíblicos" $P || /usr/libexec/PlistBuddy -c "Add :CFBundleDisplayName string Verso Vivo Jogos Bíblicos" $P
           /usr/libexec/PlistBuddy -c "Add :CFBundleDevelopmentRegion string pt-BR" $P || /usr/libexec/PlistBuddy -c "Set :CFBundleDevelopmentRegion pt-BR" $P
           /usr/libexec/PlistBuddy -c "Delete :UISupportedInterfaceOrientations" $P || true
           /usr/libexec/PlistBuddy -c "Add :UISupportedInterfaceOrientations array" $P
