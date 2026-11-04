@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Editora Verso Vivo · Jogos, catecismos e materiais para aprender a Bíblia</title>
+<meta name="description" content="Jogos, catecismos e materiais para aprender a Bíblia em família e na igreja, com calma e sempre apontando para Jesus.">
+<meta name="theme-color" content="#1c140a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Editora Verso Vivo">
+<meta property="og:description" content="Aprender a Bíblia com calma: jogos, catecismos e materiais que apontam para Jesus.">
+<meta property="og:image" content="https://editoraversovivo.com.br/_ed/img/og.jpg">
+<meta property="og:url" content="https://editoraversovivo.com.br/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/webp" href="/_ed/img/nine-rosto.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  --gold:#f0cd7e; --gold2:#d8a94a; --ink:#1c140a; --cream:#fbf1d8; --leaf:#8fb065;
+  --glass:rgba(28,20,10,.58); --glass2:rgba(28,20,10,.74); --line:rgba(240,205,126,.35);
+  --serif:'Lora',Georgia,'Times New Roman',serif; --title:'Cinzel','Lora',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:#1c140a;color:var(--cream);font-family:var(--serif);line-height:1.65;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+/* ===== o mundo (fundo fixo) ===== */
+#world{position:fixed;inset:0;z-index:0;overflow:hidden;background:#243a2a}
+#bgwrap{position:absolute;inset:-6%;will-change:transform,filter}
+#bgwrap .bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity .2s linear}
+#bg0{background-image:url(/_ed/img/mundo1.webp)}
+#bg1{background-image:url(/_ed/img/mundo2.webp)}
+#bg2{background-image:url(/_ed/img/mundo3.webp)}
+#dusk{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,120,60,.0) 0%,rgba(255,128,70,.38) 55%,rgba(150,50,70,.35) 100%);opacity:0;mix-blend-mode:soft-light}
+#night{position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 0%,rgba(24,38,90,.55),rgba(8,12,34,.86));opacity:0}
+#vignette{position:absolute;inset:0;background:radial-gradient(130% 100% at 50% 40%,transparent 45%,rgba(10,6,2,.5) 100%)}
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}
+
+/* ===== topo ===== */
+header.top{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(10px + env(safe-area-inset-top)) 18px 10px;background:linear-gradient(180deg,rgba(18,12,5,.62),transparent)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--title);font-weight:600;letter-spacing:.12em;font-size:.82rem;text-transform:uppercase;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.brand img{width:34px;height:34px;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.4))}
+nav.top{display:flex;gap:6px}
+nav.top a{padding:8px 13px;border-radius:99px;font-size:.88rem;text-decoration:none;text-shadow:0 1px 6px rgba(0,0,0,.6);transition:background .25s}
+nav.top a:hover{background:rgba(255,255,255,.14)}
+nav.top a.cta{background:rgba(240,205,126,.92);color:var(--ink);text-shadow:none;font-weight:600}
+@media(max-width:640px){nav.top a:not(.cta){display:none}}
+
+/* ===== seções ===== */
+main{position:relative}
+section{position:relative;padding:clamp(80px,12vh,150px) 20px}
+.wrap{position:relative;z-index:3;max-width:1060px;margin:0 auto}
+.kicker{font-family:var(--title);letter-spacing:.32em;text-transform:uppercase;font-size:.74rem;color:var(--gold);text-shadow:0 1px 3px rgba(0,0,0,.9),0 2px 14px rgba(0,0,0,.8);font-weight:700}
+h1,h2{font-family:var(--title);font-weight:700;line-height:1.12;text-shadow:0 2px 4px rgba(0,0,0,.55),0 4px 26px rgba(0,0,0,.65)}
+h1{font-size:clamp(2.5rem,8.5vw,5.6rem);letter-spacing:.03em;margin:.25em 0 .2em;color:var(--gold)}
+h2{font-size:clamp(1.7rem,4.8vw,2.9rem);margin:.2em 0 .35em}
+.lead{font-size:clamp(1.05rem,2.4vw,1.3rem);max-width:640px;text-shadow:0 1px 3px rgba(0,0,0,.8),0 2px 14px rgba(0,0,0,.75)}
+.glass{background:var(--glass);border:1px solid var(--line);border-radius:22px;backdrop-filter:blur(14px) saturate(1.1);-webkit-backdrop-filter:blur(14px) saturate(1.1);box-shadow:0 18px 50px rgba(0,0,0,.28)}
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1s ease,transform 1s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* hero */
+#topo{min-height:100svh;display:flex;align-items:center;padding-top:110px}
+.verse{margin-top:30px;padding:20px 24px;max-width:560px}
+.verse p{font-style:italic;font-size:1.12rem}
+.verse cite{display:block;margin-top:8px;font-style:normal;font-family:var(--title);font-size:.8rem;letter-spacing:.14em;color:var(--gold)}
+.scrollhint{margin-top:34px;font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);opacity:.9}
+.scrollhint i{display:inline-block;margin-left:8px;animation:bob 2.6s ease-in-out infinite;font-style:normal}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+
+/* caminhos */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:34px}
+.card{padding:26px 24px;display:flex;flex-direction:column;gap:10px;transition:transform .5s ease,border-color .4s}
+.card:hover{transform:translateY(-6px);border-color:var(--gold)}
+.card .ic{font-size:2rem;line-height:1}
+.card h3{font-family:var(--title);font-size:1.25rem;color:var(--gold);letter-spacing:.04em}
+.card p{opacity:.94;font-size:.98rem;flex:1}
+.badge{align-self:flex-start;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:4px 11px;border-radius:99px;border:1px solid var(--line);color:var(--gold)}
+.btn{display:inline-block;align-self:flex-start;text-decoration:none;padding:11px 22px;border-radius:99px;background:linear-gradient(180deg,#f6d98e,#d8a94a);color:var(--ink);font-weight:600;font-size:.95rem;box-shadow:0 6px 20px rgba(216,169,74,.3);transition:transform .3s,box-shadow .3s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(216,169,74,.45)}
+
+/* grande história */
+.stats{display:flex;gap:28px;margin:22px 0 6px;flex-wrap:wrap}
+.stats b{display:block;font-family:var(--title);font-size:2.6rem;color:var(--gold);line-height:1}
+.stats span{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;opacity:.9}
+.trail-wrap{margin:26px -20px 0;position:relative}
+.trail{overflow-x:auto;overflow-y:hidden;padding:20px 20px 12px;cursor:grab;scrollbar-width:thin;scrollbar-color:var(--gold2) transparent;-webkit-overflow-scrolling:touch}
+.trail.drag{cursor:grabbing;user-select:none}
+.trail-in{position:relative;height:250px}
+.trail svg{position:absolute;inset:0;overflow:visible}
+.node{position:absolute;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;border:2px solid var(--line);background:var(--glass2);color:var(--cream);font-family:var(--title);font-size:.82rem;font-weight:600;cursor:pointer;transition:transform .35s,background .35s,border-color .35s,box-shadow .35s}
+.node:hover{transform:scale(1.15);border-color:var(--gold)}
+.node.nt{border-color:rgba(255,226,150,.7)}
+.node.jesus{background:radial-gradient(circle,#fff0bf,#e9bd5a);color:var(--ink);box-shadow:0 0 22px rgba(255,214,120,.8)}
+.node.on{transform:scale(1.35);border-color:#fff;box-shadow:0 0 0 4px rgba(240,205,126,.35),0 0 26px rgba(255,214,120,.9);z-index:3}
+.testa{position:absolute;top:2px;font-family:var(--title);font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);opacity:.85;white-space:nowrap}
+.detail{margin-top:8px;padding:22px 24px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center}
+.detail .big{font-size:2.6rem;line-height:1}
+.detail h3{font-family:var(--title);font-size:1.3rem;color:var(--gold)}
+.detail p{opacity:.92;font-size:.96rem}
+.detail small{display:block;margin-top:4px;letter-spacing:.12em;text-transform:uppercase;font-size:.72rem;color:var(--gold)}
+.jnote{margin-top:14px;font-size:.92rem;opacity:.92;max-width:680px}
+
+/* nine */
+.nine-grid{display:grid;grid-template-columns:minmax(200px,340px) 1fr;gap:30px;align-items:center}
+.nine-btn{background:none;border:0;cursor:pointer;display:block;margin:0 auto;position:relative;transition:transform .4s}
+.nine-btn:hover{transform:scale(1.04) rotate(-2deg)}
+.nine-btn img{width:100%;max-width:320px;height:auto;filter:drop-shadow(0 18px 26px rgba(0,0,0,.45));animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.nine-say{padding:26px 28px;min-height:190px;display:flex;flex-direction:column;justify-content:center;position:relative}
+.nine-say:before{content:"";position:absolute;left:-10px;top:50%;width:20px;height:20px;background:var(--glass);border-left:1px solid var(--line);border-bottom:1px solid var(--line);transform:translateY(-50%) rotate(45deg)}
+.nine-say blockquote{font-style:italic;font-size:1.2rem;transition:opacity .5s}
+.nine-say cite{display:block;margin-top:10px;font-style:normal;font-family:var(--title);font-size:.8rem;letter-spacing:.14em;color:var(--gold);transition:opacity .5s}
+.nine-say .hint{margin-top:16px;font-size:.82rem;opacity:.8}
+@media(max-width:760px){.nine-grid{grid-template-columns:1fr}.nine-say:before{left:50%;top:-10px;transform:translateX(-50%) rotate(135deg)}}
+
+/* princípios */
+.pr{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:30px}
+.pr div{padding:22px}
+.pr h3{font-family:var(--title);color:var(--gold);font-size:1.08rem;margin:8px 0 4px}
+.pr p{font-size:.94rem;opacity:.94}
+.pr .ic{font-size:1.8rem}
+
+/* estante */
+#estante{padding-bottom:70px;min-height:90vh}
+.sec-bg{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(14,9,4,.35),rgba(14,9,4,.62)),url(/_ed/img/livros.webp) center/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 30%);mask-image:linear-gradient(180deg,transparent 0,#000 30%)}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 8px}
+.chip{padding:14px 20px;display:flex;gap:10px;align-items:center}
+.chip b{font-family:var(--title);color:var(--gold);font-weight:600}
+footer{position:relative;z-index:3;margin-top:80px;padding-top:28px;border-top:1px solid var(--line);font-size:.84rem;opacity:.92}
+footer p{margin:6px 0;max-width:760px}
+footer .sig{margin-top:14px}
+footer a{text-decoration-color:var(--gold)}
+
+/* nine passeando */
+#walker{position:fixed;left:0;bottom:calc(6px + env(safe-area-inset-bottom));width:clamp(74px,9vw,110px);z-index:15;background:none;border:0;cursor:pointer;will-change:transform;transition:opacity .6s}
+#walker img{width:100%;height:auto;filter:drop-shadow(0 6px 8px rgba(0,0,0,.45));animation:step .9s ease-in-out infinite}
+#walker.rest img{animation:none}
+@keyframes step{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-5px) rotate(1.5deg)}}
+#wbub{position:fixed;z-index:16;max-width:260px;padding:12px 16px;font-size:.88rem;font-style:italic;pointer-events:none;opacity:0;transform:translateY(6px);transition:opacity .5s,transform .5s}
+#wbub.on{opacity:1;transform:none}
+#wbub cite{display:block;margin-top:4px;font-style:normal;font-family:var(--title);font-size:.7rem;letter-spacing:.12em;color:var(--gold)}
+@media(prefers-reduced-motion:reduce){#walker img,.nine-btn img,.scrollhint i{animation:none}}
+</style>
+</head>
+<body>
+
+<div id="world" aria-hidden="true">
+  <div id="bgwrap"><div class="bg" id="bg0"></div><div class="bg" id="bg1"></div><div class="bg" id="bg2"></div></div>
+  <div id="dusk"></div><div id="night"></div><div id="vignette"></div>
+</div>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<header class="top">
+  <a class="brand" href="#topo" aria-label="Editora Verso Vivo, voltar ao início"><img src="/_ed/img/nine-rosto.webp" alt="" width="34" height="34"><span>Verso Vivo</span></a>
+  <nav class="top" aria-label="Principal">
+    <a href="#caminhos">Caminhos</a><a href="#historia">A Grande História</a><a href="#nine">Nine</a>
+    <a class="cta" href="/jogos/">Jogar agora</a>
+  </nav>
+</header>
+
+<main>
+<section id="topo">
+  <div class="wrap">
+    <p class="kicker rv">Aprenda · Lembre · Descubra</p>
+    <h1 class="rv">Editora<br>Verso Vivo</h1>
+    <p class="lead rv">Jogos, catecismos e materiais para aprender a Bíblia em família e na igreja, com calma e sempre apontando para Jesus.</p>
+    <div class="verse glass rv"><p>“Lâmpada para os meus pés é tua palavra, e luz para o meu caminho.”</p><cite>Salmos 119:105 · ACF</cite></div>
+    <p class="scrollhint rv">Role para caminhar<i>↓</i></p>
+  </div>
+</section>
+
+<section id="caminhos">
+  <div class="wrap">
+    <p class="kicker rv">Nossos caminhos</p>
+    <h2 class="rv">Um mundo para aprender<br>a Palavra de Deus</h2>
+    <div class="cards">
+      <article class="card glass rv">
+        <span class="ic">🎲</span><h3>Jogos Bíblicos</h3>
+        <p>Caça-palavras, cruzadas, quiz, o Cantinho Kids com a Nine e a Grande História da Bíblia. Sem anúncios, sem pressa e funciona sem internet.</p>
+        <span class="badge">App para iPhone em breve</span>
+        <a class="btn" href="/jogos/">Jogar agora</a>
+      </article>
+      <article class="card glass rv">
+        <span class="ic">📜</span><h3>Catecismos</h3>
+        <p>Breve Catecismo, Catecismo Maior e Confissão de Fé de Westminster, para ensinar e memorizar em casa e na igreja.</p>
+        <span class="badge">Disponível online</span>
+        <a class="btn" href="/catecismo">Abrir catecismos</a>
+      </article>
+      <article class="card glass rv">
+        <span class="ic">📚</span><h3>Na estante</h3>
+        <p>Um livro com A Grande História da Bíblia, um podcast e materiais educativos estão sendo preparados com cuidado.</p>
+        <span class="badge">Em preparo</span>
+        <a class="btn" href="#estante">Ver o que vem</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="historia">
+  <div class="wrap">
+    <p class="kicker rv">Do Gênesis ao Apocalipse</p>
+    <h2 class="rv">A Grande História da Bíblia</h2>
+    <p class="lead rv">Uma só história, contada passo a passo para crianças e famílias, mostrando como toda a Bíblia aponta para Jesus.</p>
+    <div class="stats rv"><div><b data-n="34">0</b><span>partes</span></div><div><b data-n="343">0</b><span>lições</span></div></div>
+    <div class="trail-wrap rv">
+      <div class="trail" id="trail" tabindex="0" aria-label="Caminho das 34 partes da Grande História. Arraste ou use as setas."><div class="trail-in" id="trailin"></div></div>
+    </div>
+    <div class="detail glass" id="detail" aria-live="polite"></div>
+    <p class="jnote rv">Todo o caminho se encaminha para o centro: <b>Jesus</b>, a cruz e a ressurreição (partes 25 a 29), e depois a igreja e a grande esperança.</p>
+  </div>
+</section>
+
+<section id="nine">
+  <div class="wrap">
+    <p class="kicker rv">Conheça a Nine</p>
+    <h2 class="rv">Uma ovelhinha no caminho</h2>
+    <p class="lead rv">A Nine acompanha as crianças (e os pais) pelos jogos e histórias. Toque nela para ouvir uma palavra.</p>
+    <div class="nine-grid" style="margin-top:34px">
+      <button class="nine-btn rv" id="nineBtn" aria-label="Tocar na Nine para um novo versículo"><img id="nineImg" src="/_ed/img/nine-oi.webp" alt="Nine, a ovelhinha do Verso Vivo" width="320" height="367"></button>
+      <div class="nine-say glass rv"><blockquote id="nq"></blockquote><cite id="nc"></cite><p class="hint">Toque na Nine para outro versículo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="principios">
+  <div class="wrap">
+    <p class="kicker rv">Como fazemos</p>
+    <h2 class="rv">Cuidado em cada detalhe</h2>
+    <div class="pr">
+      <div class="glass rv"><span class="ic">✝️</span><h3>Aponta para Jesus</h3><p>Toda lição, do Antigo ao Novo Testamento, caminha até Cristo.</p></div>
+      <div class="glass rv"><span class="ic">🌿</span><h3>Calmo e sem pressa</h3><p>Sem anúncios, sem moedas, sem sequências ou pressão. Aprender no ritmo de cada um.</p></div>
+      <div class="glass rv"><span class="ic">📖</span><h3>Fiel às Escrituras</h3><p>Textos bíblicos da Almeida Corrigida Fiel (ACF), sempre com a referência à vista.</p></div>
+      <div class="glass rv"><span class="ic">🔒</span><h3>Privacidade</h3><p>Nossos apps não coletam dados. O progresso fica só no seu aparelho.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="estante">
+  <div class="sec-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker rv">Na estante</p>
+    <h2 class="rv">O que vem por aí</h2>
+    <p class="lead rv">Estamos preparando, com revisão e calma, novos materiais para a igreja e para o lar.</p>
+    <div class="chips">
+      <div class="chip glass rv"><span>📕</span><span><b>Livro</b> · A Grande História da Bíblia</span></div>
+      <div class="chip glass rv"><span>🎙️</span><span><b>Podcast</b> · em preparo</span></div>
+      <div class="chip glass rv"><span>🧒</span><span><b>Materiais educativos</b> · em preparo</span></div>
+    </div>
+    <footer>
+      <p><b>Editora Verso Vivo</b> · Jogos, catecismos e materiais para aprender a Bíblia.</p>
+      <p>Citações bíblicas extraídas de A Bíblia Sagrada - Almeida Corrigida Fiel (ACF) © 1994, 1995, 2007, 2011 Sociedade Bíblica Trinitariana do Brasil, Trinitarian Bible Society. Todos os direitos reservados.</p>
+      <p><a href="/jogos/privacidade/">Política de privacidade</a></p>
+      <p class="sig">Feito por <a href="https://www.instagram.com/yesdudu" target="_blank" rel="noopener">Eduardo de Souza</a>, com muito amor, para a família. ❤️</p>
+      <p>© 2026 Editora Verso Vivo</p>
+    </footer>
+  </div>
+</section>
+</main>
+
+<button id="walker" class="rest" aria-label="Nine passeando. Toque para um versículo"><img id="wimg" src="/_ed/img/nine-pensando.webp" alt="" width="110" height="132"></button>
+<div id="wbub" class="glass" role="status"></div>
+
+<script>
+(()=>{
+'use strict';
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
+const smooth=(a,b,x)=>{x=clamp((x-a)/(b-a),0,1);return x*x*(3-2*x)};
+
+/* ---------- dados ---------- */
+const VERSES=[
+ ['O SENHOR é o meu pastor, nada me faltará.','Salmos 23:1'],
+ ['Eu sou o bom pastor; o bom pastor dá a sua vida pelas ovelhas.','João 10:11'],
+ ['Lâmpada para os meus pés é tua palavra, e luz para o meu caminho.','Salmos 119:105'],
+ ['Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei.','Mateus 11:28'],
+ ['Disse-lhe Jesus: Eu sou o caminho, e a verdade e a vida; ninguém vem ao Pai, senão por mim.','João 14:6'],
+ ['Escondi a tua palavra no meu coração, para eu não pecar contra ti.','Salmos 119:11'],
+ ['Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.','João 3:16']
+];
+const ARCS=/*ARCS*/[[1, "O Começo", "Gênesis 1–11", "🌍", 12], [2, "Abraão, o amigo de Deus", "Gênesis 12–25", "⭐", 12], [3, "Isaque e Jacó", "Gênesis 25–36", "🪜", 10], [4, "José", "Gênesis 37–50", "🌾", 12], [5, "Jó: a fé no sofrimento", "Jó", "🌪️", 6], [6, "Êxodo: a libertação", "Êxodo 1–18", "🌊", 12], [7, "No Sinai: a Lei e o tabernáculo", "Êxodo 19–40 e Levítico", "⛰️", 12], [8, "Quarenta anos no deserto", "Números", "⛺", 10], [9, "Moisés se despede", "Deuteronômio", "📜", 6], [10, "A terra prometida", "Josué", "🧱", 10], [11, "Juízes e Rute", "Juízes e Rute", "🎺", 14], [12, "Samuel e o primeiro rei", "1 Samuel 1–15", "🪔", 10], [13, "Davi, o pastor e rei", "1 Samuel 16 – 2 Samuel 24 e 1 Crônicas", "🪨", 16], [14, "Os cânticos do povo de Deus", "Salmos", "🎶", 10], [15, "Salomão: sabedoria e templo", "1 Reis 1–11, Provérbios, Eclesiastes, Cantares", "🏛️", 12], [16, "O reino dividido", "1 Reis 12 – 16, 2 Crônicas 10 – 20", "💔", 6], [17, "Elias e Eliseu", "1 Reis 17 – 2 Reis 13", "🔥", 14], [18, "Profetas para o norte", "Jonas, Amós, Oseias, 2 Reis 14 – 17", "🐋", 8], [19, "Isaías e o rei Ezequias", "Isaías, 2 Reis 18 – 20, Miqueias, Joel, Naum, Sofonias, Habacuque", "📜", 12], [20, "Jeremias e a queda de Jerusalém", "Jeremias, Lamentações, Obadias, 2 Reis 22 – 25", "🏺", 8], [21, "No exílio da Babilônia", "Daniel, Ezequiel", "🦁", 10], [22, "A volta para casa", "Esdras, Ageu, Zacarias", "🧱", 6], [23, "A rainha Ester", "Ester", "👸", 5], [24, "Os muros de Jerusalém", "Neemias, Malaquias", "🧱", 6], [25, "Jesus nasce e cresce", "Mateus 1 – 2, Lucas 1 – 2", "⭐", 8], [26, "Jesus ensina", "Os Evangelhos", "🌄", 14], [27, "Jesus cura e faz milagres", "Os Evangelhos", "🐟", 12], [28, "A caminho de Jerusalém", "Mateus 19 – 26, Marcos 10 – 14, Lucas 22, João 12 – 14", "🌿", 8], [29, "A cruz e a ressurreição", "Os Evangelhos", "🪨", 8], [30, "A igreja nasce", "Atos 1 – 12", "🕊️", 12], [31, "Paulo leva o evangelho", "Atos 13 – 28", "⛵", 14], [32, "As cartas de Paulo", "Romanos a Filemom", "✉️", 14], [33, "As outras cartas", "Hebreus a Judas", "📨", 8], [34, "A grande esperança", "Apocalipse", "🌅", 6]];
+
+/* ---------- mundo: scroll, ciclo do dia, parallax ---------- */
+const bgwrap=$('#bgwrap'), b0=$('#bg0'), b1=$('#bg1'), b2=$('#bg2'), dusk=$('#dusk'), night=$('#night');
+let sp=0, nightV=0, tx=0, ty=0, cx=0, cy=0;
+function frameWorld(){
+  const max=document.documentElement.scrollHeight-innerHeight;
+  sp=max>0?clamp(scrollY/max,0,1):0;
+  const w0=1-smooth(.14,.38,sp), w2=smooth(.42,.70,sp), w1=Math.max(0,1-w0-w2);
+  b0.style.opacity=w0; b1.style.opacity=w1; b2.style.opacity=w2;
+  const d=smooth(.30,.52,sp)*(1-smooth(.60,.80,sp));
+  nightV=smooth(.56,.84,sp);
+  dusk.style.opacity=d; night.style.opacity=nightV*.92;
+  bgwrap.style.filter=`brightness(${(1-.42*nightV).toFixed(3)}) saturate(${(1+.18*d-.25*nightV).toFixed(3)})`;
+  cx+=(tx-cx)*.06; cy+=(ty-cy)*.06;
+  bgwrap.style.transform=`translate3d(${(-cx*18).toFixed(1)}px,${(-cy*12-sp*46).toFixed(1)}px,0) scale(1.04)`;
+}
+
+/* ---------- partículas de luz + estrelas ---------- */
+const cv=$('#fx'), g=cv.getContext('2d');
+let W=0,H=0,DPR=1,parts=[],stars=[],ptr={x:-999,y:-999,on:false},sparks=[];
+function size(){
+  DPR=Math.min(devicePixelRatio||1,2); W=innerWidth; H=innerHeight;
+  cv.width=W*DPR; cv.height=H*DPR; g.setTransform(DPR,0,0,DPR,0,0);
+  const n=W<700?38:80; parts=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*2.2+.8,vx:(Math.random()-.5)*.15,vy:-(Math.random()*.22+.05),ph:Math.random()*6.28,sp:Math.random()*.012+.004}));
+  stars=Array.from({length:W<700?70:140},()=>({x:Math.random()*W,y:Math.random()*H*.72,r:Math.random()*1.3+.3,ph:Math.random()*6.28,sp:Math.random()*.02+.006}));
+}
+function drawFx(t){
+  g.clearRect(0,0,W,H);
+  if(nightV>.02){ // estrelas
+    for(const s of stars){const a=nightV*(.35+.65*Math.abs(Math.sin(s.ph+t*s.sp)));g.globalAlpha=a;g.fillStyle='#fff7da';g.beginPath();g.arc(s.x,s.y,s.r,0,6.283);g.fill()}
+  }
+  const warm=nightV; // dia: ouro; noite: vaga-lumes
+  for(const p of parts){
+    if(!RM){
+      p.x+=p.vx+Math.sin(t*.0004+p.ph)*.18; p.y+=p.vy*(1-.5*warm);
+      if(ptr.on){const dx=ptr.x-p.x,dy=ptr.y-p.y,d=Math.hypot(dx,dy);if(d<170){p.x+=dx/d*.35;p.y+=dy/d*.35}}
+      if(p.y<-10){p.y=H+10;p.x=Math.random()*W} if(p.x<-10)p.x=W+10; if(p.x>W+10)p.x=-10;
+    }
+    const a=(.28+.5*Math.abs(Math.sin(p.ph+t*p.sp)))*(.55+.45*warm);
+    const col=warm>.4?'200,255,150':'255,222,140';
+    const gr=g.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*5);
+    gr.addColorStop(0,`rgba(${col},${a})`);gr.addColorStop(1,`rgba(${col},0)`);
+    g.globalAlpha=1;g.fillStyle=gr;g.beginPath();g.arc(p.x,p.y,p.r*5,0,6.283);g.fill();
+  }
+  for(let i=sparks.length-1;i>=0;i--){const s=sparks[i];s.life-=.012;s.x+=s.vx;s.y+=s.vy;s.vy-=.004;
+    if(s.life<=0){sparks.splice(i,1);continue}
+    const gr=g.createRadialGradient(s.x,s.y,0,s.x,s.y,s.r*6);gr.addColorStop(0,`rgba(255,230,150,${s.life})`);gr.addColorStop(1,'rgba(255,230,150,0)');
+    g.globalAlpha=1;g.fillStyle=gr;g.beginPath();g.arc(s.x,s.y,s.r*6,0,6.283);g.fill()}
+  g.globalAlpha=1;
+}
+function burst(x,y){ if(RM)return; for(let i=0;i<9;i++){const a=Math.random()*6.283,v=Math.random()*.9+.2;sparks.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,r:Math.random()*1.6+.8,life:1})} }
+
+/* ---------- ponteiro ---------- */
+addEventListener('pointermove',e=>{tx=(e.clientX/innerWidth-.5)*2;ty=(e.clientY/innerHeight-.5)*2;ptr.x=e.clientX;ptr.y=e.clientY;ptr.on=e.pointerType!=='touch'},{passive:true});
+addEventListener('pointerdown',e=>{if(e.target.closest('a,button,.trail'))return;burst(e.clientX,e.clientY)},{passive:true});
+
+/* ---------- Nine passeando ---------- */
+const walker=$('#walker'), wimg=$('#wimg'), wbub=$('#wbub');
+let nx=18, dir=1, pause=1.5, lastT=0, vi=0, bubT=0, bubTimer=0;
+function showBubble(){
+  const v=VERSES[vi++%VERSES.length]; wbub.innerHTML=`“${v[0]}”<cite>${v[1]} · ACF</cite>`;
+  const r=walker.getBoundingClientRect(), bw=Math.min(260,innerWidth-24);
+  wbub.style.maxWidth=bw+'px';
+  wbub.style.left=clamp(r.left+r.width/2-bw/2,12,innerWidth-bw-12)+'px';
+  wbub.classList.add('on'); wbub.style.bottom=(innerHeight-r.top+10)+'px';
+  clearTimeout(bubTimer); bubTimer=setTimeout(()=>wbub.classList.remove('on'),8000);
+  wimg.src='/_ed/img/nine-festa.webp'; setTimeout(()=>{wimg.src=nightV>.7?'/_ed/img/nine-dormindo.webp':'/_ed/img/nine-pensando.webp'},2500);
+}
+walker.addEventListener('click',e=>{showBubble();const r=walker.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/3)});
+function walk(t){
+  const dt=Math.min(.05,(t-lastT)/1000); lastT=t;
+  const sleepy=nightV>.7;
+  if(sleepy){ if(!walker.dataset.s){wimg.src='/_ed/img/nine-dormindo.webp';walker.dataset.s=1} walker.classList.add('rest')}
+  else{ if(walker.dataset.s){wimg.src='/_ed/img/nine-pensando.webp';delete walker.dataset.s}
+    if(pause>0){pause-=dt;walker.classList.add('rest')}
+    else{ walker.classList.remove('rest'); nx+=dir*18*dt; const mx=innerWidth-walker.offsetWidth-12;
+      if(nx>mx){nx=mx;dir=-1;pause=2+Math.random()*3} else if(nx<12){nx=12;dir=1;pause=2+Math.random()*3}
+      else if(Math.random()<dt*.07)pause=1.8+Math.random()*2.6 } }
+  walker.style.transform=`translateX(${nx.toFixed(1)}px)`; wimg.style.transform=sleepy?'':`scaleX(${dir>0?-1:1})`;
+}
+
+/* ---------- loop ---------- */
+size(); addEventListener('resize',size);
+let running=true; document.addEventListener('visibilitychange',()=>{running=!document.hidden; if(running)requestAnimationFrame(loop)});
+function loop(t){ if(!running)return; frameWorld(); drawFx(t); if(!RM)walk(t); requestAnimationFrame(loop) }
+frameWorld(); if(RM){drawFx(0);addEventListener('scroll',()=>{frameWorld();drawFx(0)},{passive:true});addEventListener('resize',()=>{frameWorld();drawFx(0)});walker.style.transform='translateX(18px)'} else requestAnimationFrame(loop);
+
+/* ---------- aparecer suavemente ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+$$('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+
+/* ---------- contadores ---------- */
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);
+  const to=+e.target.dataset.n; if(RM){e.target.textContent=to;return}
+  const t0=performance.now();(function s(t){const k=smooth(0,1,(t-t0)/1600);e.target.textContent=Math.round(to*k);if(k<1)requestAnimationFrame(s)})(t0)}),{threshold:.6});
+$$('[data-n]').forEach(el=>co.observe(el));
+
+/* ---------- caminho da Grande História ---------- */
+const trail=$('#trail'), tin=$('#trailin'), detail=$('#detail');
+const STEP=118, PADX=60, H0=250;
+const pos=i=>({x:PADX+i*STEP,y:H0/2+Math.sin(i*.62)*58+ (i%2?10:-10)*0});
+tin.style.width=(PADX*2+(ARCS.length-1)*STEP)+'px';
+let d='';ARCS.forEach((a,i)=>{const p=pos(i);d+=(i?'L':'M')+p.x.toFixed(1)+' '+p.y.toFixed(1)+' '});
+// curva suave
+let path='';ARCS.forEach((a,i)=>{const p=pos(i);if(!i){path+=`M${p.x} ${p.y}`}else{const q=pos(i-1),mx=(q.x+p.x)/2;path+=` C${mx} ${q.y} ${mx} ${p.y} ${p.x} ${p.y}`}});
+const jx=pos(24).x-STEP/2, ex=pos(28).x+STEP/2;
+tin.innerHTML=`<svg width="${PADX*2+(ARCS.length-1)*STEP}" height="${H0}" aria-hidden="true">
+<defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#a8c97a"/><stop offset=".7" stop-color="#f0cd7e"/><stop offset="1" stop-color="#fff0bf"/></linearGradient>
+<radialGradient id="jg"><stop offset="0" stop-color="rgba(255,226,150,.55)"/><stop offset="1" stop-color="rgba(255,226,150,0)"/></radialGradient></defs>
+<ellipse cx="${(jx+ex)/2}" cy="${H0/2}" rx="${(ex-jx)/2+40}" ry="110" fill="url(#jg)"/>
+<path d="${path}" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="7" stroke-linecap="round"/>
+<path d="${path}" fill="none" stroke="url(#lg)" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 9"/></svg>
+<span class="testa" style="left:${PADX-20}px">Antigo Testamento</span><span class="testa" style="left:${pos(24).x-30}px">Novo Testamento</span>`;
+const nodes=ARCS.map((a,i)=>{const p=pos(i),b=document.createElement('button');
+  b.className='node'+(a[0]>=25?' nt':'')+(a[0]>=25&&a[0]<=29?' jesus':'');
+  b.style.left=p.x+'px';b.style.top=p.y+'px';b.textContent=a[0];b.setAttribute('aria-label',`Parte ${a[0]}: ${a[1]}`);
+  b.addEventListener('click',()=>select(i,true));tin.appendChild(b);return b});
+let cur=-1;
+function select(i,center){
+  i=clamp(i,0,ARCS.length-1); if(i===cur&&!center)return; cur=i;
+  nodes.forEach((n,k)=>n.classList.toggle('on',k===i));
+  const a=ARCS[i];
+  detail.innerHTML=`<div class="big" aria-hidden="true">${a[3]}</div><div><small>Parte ${a[0]} de ${ARCS.length} · ${a[0]>=25?'Novo':'Antigo'} Testamento</small><h3>${a[1]}</h3><p>${a[2]} · ${a[4]} lições</p></div>`;
+  if(center){const p=pos(i);trail.scrollTo({left:p.x-trail.clientWidth/2,behavior:RM?'auto':'smooth'})}
+}
+select(0,false);
+// arrastar
+let dr=null;
+trail.addEventListener('pointerdown',e=>{if(e.pointerType==='touch'||e.target.closest('.node'))return;dr={x:e.clientX,l:trail.scrollLeft,m:false}});
+addEventListener('pointermove',e=>{if(!dr)return;const dx=e.clientX-dr.x;if(Math.abs(dx)>4){dr.m=true;trail.classList.add('drag')}trail.scrollLeft=dr.l-dx});
+addEventListener('pointerup',()=>{dr=null;trail.classList.remove('drag')});
+trail.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){select(cur+1,true);e.preventDefault()}if(e.key==='ArrowLeft'){select(cur-1,true);e.preventDefault()}});
+// quando a trilha aparece, caminha devagar até Jesus
+const tw=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;tw.disconnect();
+  if(RM)return; let k=0;const tm=setInterval(()=>{k+=4;if(k>28){clearInterval(tm);return}select(k,true)},900)}),{threshold:.6});
+tw.observe($('#trail'));
+
+/* ---------- Nine (seção) ---------- */
+const POSES=['oi','lendo','pensando','festa'], nImg=$('#nineImg'), nq=$('#nq'), nc=$('#nc');
+let ni=0,np=0;
+function sayVerse(first){
+  const v=VERSES[ni++%VERSES.length];
+  if(!first){nq.style.opacity=0;nc.style.opacity=0}
+  setTimeout(()=>{nq.textContent='“'+v[0]+'”';nc.textContent=v[1]+' · ACF';nq.style.opacity=1;nc.style.opacity=1},first?0:380);
+}
+sayVerse(true);
+$('#nineBtn').addEventListener('click',e=>{np=(np+1)%POSES.length;nImg.src=`/_ed/img/nine-${POSES[np]}.webp`;sayVerse(false);const r=nImg.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/3)});
+// primeira dica ao entrar na seção: pré-carrega poses
+POSES.forEach(p=>{const i=new Image();i.src=`/_ed/img/nine-${p}.webp`});['dormindo','festa','pensando'].forEach(p=>{const i=new Image();i.src=`/_ed/img/nine-${p}.webp`});
+})();
+</script>
+</body>
+</html>
