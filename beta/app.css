@@ -1236,3 +1236,40 @@ html.nt-on .topbar .ttl, html.nt-on .nt-foot { text-shadow: 0 1px 6px rgba(0, 0,
 html.nt-on #app { padding-bottom: min(34vw, 380px); }
 .nt-art .nt-star { width: 96px; }
 .nt-art .nt-crib { width: 132px; }
+/* Advento: mapa do caminho até Belém */
+.mp-svg { display: block; width: 100%; height: auto; margin-top: 8px; overflow: visible; }
+.mp-svg path { fill: none; stroke-width: 4; stroke-linecap: round; }
+.mp-svg path.off { stroke: rgba(240, 205, 126, .25); stroke-dasharray: 2 7; }
+.mp-svg path.on { stroke: #e9c36d; filter: drop-shadow(0 0 4px rgba(233, 195, 109, .55)); }
+.mp-st { cursor: pointer; }
+.mp-st circle { fill: rgba(23, 27, 57, .9); stroke: rgba(233, 195, 109, .35); stroke-width: 1.5; }
+.mp-st.open circle { fill: #f3d58c; stroke: #fff3c4; }
+.mp-st.done circle { fill: #fbf1d8; stroke: #e9c36d; }
+.mp-st .mp-halo { fill: rgba(255, 228, 150, .25); stroke: #fff3c4; stroke-width: 2; animation: mpPulse 2.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes mpPulse { 50% { opacity: .45; transform: scale(1.12); } }
+@media (prefers-reduced-motion: reduce) { .mp-st .mp-halo { animation: none; } }
+.mp-st.end circle { stroke-width: 2.5; }
+.mp-st.end .mp-ic { font-size: 15px; fill: #1c140a; }
+.mp-st.end.lock .mp-ic { opacity: .55; }
+.mp-ic { text-anchor: middle; font-size: 12px; font-family: var(--serif); fill: rgba(246, 235, 209, .5); pointer-events: none; }
+.mp-st.open .mp-ic { font-size: 13px; fill: #1c140a; }
+.mp-lb { text-anchor: middle; font-size: 9.5px; font-family: var(--display); letter-spacing: .06em; fill: rgba(246, 235, 209, .45); text-transform: uppercase; pointer-events: none; }
+.mp-lb.on { fill: #f0cd7e; }
+.mp-now { margin-top: 4px; text-align: center; color: rgba(251, 241, 216, .9); font-size: .9rem; }
+.mp-now b { color: #f0cd7e; font-family: var(--display); letter-spacing: .03em; }
+.mp-strip { margin: 10px auto 0; padding: 9px 14px 8px; width: fit-content; max-width: 100%; text-align: center; border-radius: 999px; background: rgba(12, 16, 40, .62); border: 1px solid rgba(240, 205, 126, .3); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.mp-dots { display: flex; justify-content: center; align-items: center; gap: 3px; }
+.mp-dots i { width: 7px; height: 7px; border-radius: 50%; background: rgba(240, 205, 126, .25); }
+.mp-dots i.on { background: #e9c36d; }
+.mp-dots i.now { width: 11px; height: 11px; background: #fff3c4; box-shadow: 0 0 8px rgba(255, 228, 150, .9); }
+.mp-dots i.gap { margin-left: 6px; }
+.mp-strip small { display: block; margin-top: 6px; color: rgba(251, 241, 216, .85); font-size: .82rem; }
+.mp-strip small b { color: #f0cd7e; font-family: var(--display); }
+.adv-verse small, .adv-pray small, .adv-next small { display: block; font-family: var(--display); font-weight: 700; letter-spacing: .06em; font-size: .8rem; color: #8a6420; text-transform: uppercase; }
+.adv-verse p { font-family: var(--serif); font-style: italic; font-size: 1.22rem; line-height: 1.4; margin: 8px 0 6px; }
+.adv-verse cite { font-style: normal; opacity: .75; font-size: .88rem; }
+.adv-pray { margin: 12px 0; padding: 12px 14px; border-radius: 16px; background: rgba(165, 43, 62, .08); text-align: left; }
+.adv-pray p { margin-top: 4px; line-height: 1.5; }
+.adv-next { margin-top: 12px; padding: 14px 16px; border-radius: 20px; text-align: center; background: rgba(20, 14, 6, .5); border: 1px dashed rgba(240, 205, 126, .45); }
+.adv-next small { color: #f0cd7e; }
+.adv-next p { margin-top: 4px; color: rgba(251, 241, 216, .95); font-style: italic; }

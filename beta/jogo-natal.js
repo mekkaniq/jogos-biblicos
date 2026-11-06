@@ -101,6 +101,40 @@
   const advStory = id => ADV().stories.find(s => s.id === id) || window.NATAL_DATA.stories.find(s => s.id === id);
   const DRAW = { natal1: 401, natal3: 402, natal4: 403, natal5: 404 }; // desenhos novos entram aqui quando ficarem prontos
 
+  // Caminho até Belém: 27 paradas em 5 etapas, numa trilha que vai acendendo
+  const STAGES = [
+    { a: 1, b: 3, name: 'A promessa', sub: 'Deus promete um Salvador' },
+    { a: 4, b: 10, name: 'Os profetas', sub: 'Reis e profetas anunciam o Rei' },
+    { a: 11, b: 18, name: 'Os anúncios', sub: 'Anjos e sonhos: o Rei está chegando' },
+    { a: 19, b: 25, name: 'Rumo a Belém', sub: 'A viagem, e quem é esse menino' },
+    { a: 26, b: 27, name: 'Belém', sub: 'Nasceu o Salvador!' }
+  ];
+  const stageOf = n => STAGES.find(g => n >= g.a && n <= g.b);
+  function mapHTML(s) {
+    const days = ADV().days, per = 7, X0 = 40, X1 = 300, DY = 66, Y0 = 34, R = DY / 2;
+    const pos = i => { const r = Math.floor(i / per), c = i % per, x = X0 + (X1 - X0) * c / (per - 1); return { x: r % 2 ? X0 + X1 - x : x, y: Y0 + r * DY, r }; };
+    const N = days.length, rows = Math.ceil(N / per), H = Y0 + (rows - 1) * DY + 34;
+    let cur = -1; days.forEach((d, i) => { if (isOpen(d)) cur = i; });
+    const seg = i => { const a = pos(i), b = pos(i + 1); if (a.r === b.r) return `M${a.x} ${a.y}L${b.x} ${b.y}`; const sw = a.x > 170 ? 1 : 0; return `M${a.x} ${a.y}A${R} ${R} 0 0 ${sw} ${b.x} ${b.y}`; };
+    let path = '';
+    for (let i = 0; i < N - 1; i++) path += `<path d="${seg(i)}" class="${i < cur ? 'on' : 'off'}"/>`;
+    const labels = STAGES.map(g => { const p = pos(g.a - 1); return `<text x="${p.x}" y="${p.y - 17}" class="mp-lb ${cur + 1 >= g.a ? 'on' : ''}">${g.name}</text>`; }).join('');
+    const stops = days.map((d, i) => { const p = pos(i), open = isOpen(d), done = open && s.stickers[d.story], today = isToday(d), x = advStory(d.story), last = i === N - 1;
+      return `<g class="mp-st ${open ? 'open' : 'lock'} ${done ? 'done' : ''} ${today ? 'now' : ''} ${last ? 'end' : ''}" data-adv="${i}" role="button" aria-label="Parada ${i + 1}: ${open ? esc(x.name) : 'fechada'}">
+        ${today ? `<circle cx="${p.x}" cy="${p.y}" r="17" class="mp-halo"/>` : ''}<circle cx="${p.x}" cy="${p.y}" r="${last ? 14 : 11.5}"/>
+        <text x="${p.x}" y="${p.y + 4.5}" class="mp-ic">${last ? '⭐' : open ? x.icon : d.d}</text></g>`; }).join('');
+    const g = stageOf(Math.max(cur, 0) + 1);
+    return `<section class="adv mp"><div class="adv-h"><b>O caminho até Belém</b><small>Do jardim até a manjedoura: cada porta acende uma parada</small></div>
+      <svg class="mp-svg" viewBox="0 0 340 ${H}" aria-label="Mapa do caminho">${path}${labels}${stops}</svg>
+      <p class="mp-now">${cur < 0 ? 'O caminho começa em 29 de novembro, no jardim.' : `<b>${g.name}</b> · ${g.sub}`}</p></section>`;
+  }
+  // faixa pequena no topo da porta: onde estamos no caminho
+  function stripHTML(n) {
+    const N = ADV().days.length, g = stageOf(n);
+    return `<div class="mp-strip"><div class="mp-dots">${Array.from({ length: N }, (_, i) => `<i class="${i + 1 < n ? 'on' : i + 1 === n ? 'now' : ''} ${STAGES.some(x => x.a === i + 1) && i ? 'gap' : ''}"></i>`).join('')}</div>
+      <small>Parada ${n} · <b>${g.name}</b></small></div>`;
+  }
+
   // cartão "Hoje aprendi" em pé (1080x1920) para compartilhar no WhatsApp ou no Instagram
   function wrap(cx, text, maxW) { const out = []; let line = ''; for (const w of text.split(' ')) { const t = line ? line + ' ' + w : w; if (cx.measureText(t).width > maxW && line) { out.push(line); line = w; } else line = t; } if (line) out.push(line); return out; }
   async function shareCard({ title, learn, ref, kicker }) {
@@ -150,6 +184,7 @@
         <h1>Caminho até Belém</h1>
         <p class="nt-verse">“Hoje, na cidade de Davi, vos nasceu o Salvador, que é Cristo, o Senhor.”<cite>Lucas 2:11 · ACF</cite></p>
         <small>Sem pressa e sem contagem de dias: siga no seu ritmo.</small></section></div>
+      ${mapHTML(s)}
       ${calendarHTML(s)}
       <div class="nt-tabs">
         <button class="nt-tab ${open === 'h' ? 'on' : ''}" data-tab="h" aria-expanded="${open === 'h'}"><span class="nt-ti">${NI.book}</span><span class="nt-tt"><b>Histórias</b><small>${doneS} de ${stories.length} ouvidas</small></span><i>▾</i></button>
@@ -184,19 +219,23 @@
     const x = advStory(d.story), s = st(), heard = !!s.stickers[x.id], draw = DRAW[x.id];
     el.innerHTML = `
       <div class="topbar"><button class="icon-btn" data-back="#/natal" aria-label="Voltar">${I.back}</button><div class="ttl"><b>PORTA ${n}</b><small>${d.d} de ${MES[d.m - 1]}</small></div><span style="width:44px"></span></div>
+      ${stripHTML(+n)}
       <section class="adv-day parch">
         <img class="adv-lantern" src="natal-lanterna.webp" alt="" draggable="false">
         <h1>${esc(x.name)}</h1>
         <p class="adv-ref">${esc(x.ref)} · ACF</p>
         <button class="btn btn-gold adv-go" data-go="#/kids/h/${x.id}">${heard ? NI.check + ' Ouvir de novo' : NI.book + ' Ouvir a lição'}</button>
       </section>
+      ${d.verse ? `<section class="adv-day parch adv-verse"><small>Versículo para guardar</small><p>“${esc(d.verse)}”</p><cite>${esc(d.vref)} · ACF</cite></section>` : ''}
       <section class="adv-day parch">
         <h2>Para fazer juntos</h2>
         <p class="adv-talk"><i class="adv-ti">${NI.talk}</i>${esc(d.talk)}</p>
+        ${d.pray ? `<div class="adv-pray"><small>Vamos orar</small><p>${esc(d.pray)}</p></div>` : ''}
         ${draw ? `<button class="btn btn-ghost adv-go" data-go="#/colorir/${draw}">${NI.palette} Pintar o desenho do dia</button>` : ''}
         <div class="adv-learn"><small>Hoje aprendi</small><p>${esc(d.learn)}</p></div>
         <button class="btn btn-green adv-go" data-share>${NI.share} Compartilhar o que aprendi</button>
       </section>
+      ${d.next ? `<section class="adv-next"><small>${+n < ADV().days.length ? 'Amanhã no caminho' : 'E agora?'}</small><p>${esc(d.next.replace(/^Amanhã no caminho: /, ''))}</p></section>` : ''}
       <p class="nt-foot">Sem pressa: as portas que já abriram ficam sempre abertas.</p>`;
     el.addEventListener('click', e => {
       const b = e.target.closest('[data-back]'); if (b) { go(b.dataset.back); return; }
