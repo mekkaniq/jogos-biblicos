@@ -1139,8 +1139,8 @@ html.cl-on #appTabs { display: none !important; }
 .nt-panel[hidden] { display: none; }
 /* Natal: fundo animado vermelho e verde */
 .nt-bg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; background: linear-gradient(180deg, #090f2b, #1b2a5c 60%, #3a2a4a); }
-.nt-town { position: fixed; left: 0; right: 0; bottom: 0; height: 30vw; max-height: 260px; z-index: 0; pointer-events: none; }
-.nt-town svg { width: 100%; height: 100%; display: block; }
+.nt-town { position: fixed; left: 0; right: 0; bottom: 0; z-index: 0; pointer-events: none; display: flex; justify-content: center; }
+.nt-town img { width: 100%; max-width: 1100px; height: auto; display: block; opacity: .92; }
 html.nt-on #app { position: relative; z-index: 1; }
 html.nt-on .topbar .ttl, html.nt-on .nt-foot { text-shadow: 0 1px 6px rgba(0, 0, 0, .45); }
 .nt-hero { background: rgba(10, 16, 44, .42) !important; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border-color: rgba(233, 207, 140, .8) !important; }
@@ -1214,3 +1214,25 @@ html.nt-on .topbar .ttl, html.nt-on .nt-foot { text-shadow: 0 1px 6px rgba(0, 0,
 .adv-learn small { font-family: var(--display); font-weight: 700; letter-spacing: .06em; color: #8a6420; }
 .adv-learn p { font-style: italic; margin-top: 4px; }
 .adv-go { width: 100%; margin-top: 10px; }
+
+/* Natal: refinamento visual (paleta azul-noite #171B39, índigo #34345D, dourado #E9C36D, creme #F6EBD1, vinho #A52B3E, verde #176343) */
+.nt-art { position: relative; display: grid; justify-items: center; margin: 0 auto 4px; }
+.nt-art .nt-star { width: 104px; height: auto; position: relative; z-index: 1; filter: drop-shadow(0 0 14px rgba(233, 195, 109, .55)); }
+.nt-art .nt-crib { width: 150px; height: auto; margin-top: -22px; filter: drop-shadow(0 6px 14px rgba(0, 0, 0, .35)); }
+.nt-tab .nt-ti { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 14px; background: rgba(246, 235, 209, .14); color: #e9c36d; }
+.nt-tab .nt-ti svg { width: 28px; height: 28px; }
+.adv-door.lock { background: rgba(23, 27, 57, .72); color: rgba(246, 235, 209, .42); border: 1px solid rgba(233, 195, 109, .16); }
+.adv-door i.adv-lk { top: 5px; right: 5px; width: 11px; height: 11px; color: rgba(233, 195, 109, .45); }
+.adv-door i.adv-ok { top: 4px; right: 4px; width: 15px; height: 15px; color: #176343; }
+.adv-door i svg { width: 100%; height: 100%; display: block; }
+.adv-door.is-today { outline-color: #f6ebd1; box-shadow: 0 0 16px rgba(233, 195, 109, .6); }
+.adv-day .adv-lantern { display: block; width: 92px; height: auto; margin: 0 auto 2px; }
+.adv-go svg { width: 20px; height: 20px; vertical-align: -4px; margin-right: 4px; }
+.adv-talk { display: flex; gap: 8px; align-items: flex-start; }
+.adv-talk .adv-ti { flex: none; width: 22px; height: 22px; margin-top: 3px; color: #a52b3e; }
+.adv-talk .adv-ti svg { width: 100%; height: 100%; }
+.adv-go { display: flex; align-items: center; justify-content: center; gap: 8px; }
+.adv-go svg { flex: none; margin: 0; }
+html.nt-on #app { padding-bottom: min(34vw, 380px); }
+.nt-art .nt-star { width: 96px; }
+.nt-art .nt-crib { width: 132px; }

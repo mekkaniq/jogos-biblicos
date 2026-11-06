@@ -16,24 +16,25 @@
       vec3 top=vec3(.035,.06,.17),mid=vec3(.08,.13,.32),low=vec3(.22,.16,.30),hor=vec3(.55,.33,.22);
       vec3 c=mix(low,mid,smoothstep(.05,.55,uv.y));c=mix(c,top,smoothstep(.55,1.,uv.y));c=mix(hor,c,smoothstep(0.,.22,uv.y));
       c+=vec3(.05,.07,.16)*n(q*2.+vec2(t*.01,0.))*smoothstep(.2,.9,uv.y);
-      float s=stars(q,38.,.86)+stars(q+5.,70.,.9)*.7;c+=vec3(1.,.96,.85)*s*smoothstep(.15,.5,uv.y);
+      float s=stars(q,38.,.9)+stars(q+5.,70.,.93)*.6;c+=vec3(1.,.96,.85)*s*smoothstep(.15,.5,uv.y);
       vec2 sp=vec2(.5*asp,.84),d=q-sp;float L=length(d);
-      float glow=exp(-L*7.)*.6+exp(-L*22.)*.9;
+      float glow=exp(-L*7.)*.45+exp(-L*22.)*.8;
       float rays=(exp(-abs(d.x)*90.)*exp(-abs(d.y)*2.2)+exp(-abs(d.y)*90.)*exp(-abs(d.x)*3.))*.55;
       vec2 e=vec2(d.x+d.y,d.x-d.y)*.7071;rays+=(exp(-abs(e.x)*140.)+exp(-abs(e.y)*140.))*exp(-L*5.)*.5;
       float pulse=.88+.12*sin(t*1.3);c+=vec3(1.,.88,.6)*(glow+rays)*pulse;
       c+=vec3(.25,.18,.08)*exp(-L*2.2)*.6;
       gl_FragColor=vec4(c,1.);}`;
-  // silhueta das colinas e casinhas de Belém, com janelas acesas
-  const TOWN = `<svg viewBox="0 0 400 120" preserveAspectRatio="xMidYMax meet"><defs><linearGradient id="tw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141a36"/><stop offset="1" stop-color="#070a18"/></linearGradient></defs>
-    <path d="M0 78 Q60 58 120 70 T240 64 T400 72 V120 H0z" fill="#0f1530" opacity=".9"/>
-    <g fill="url(#tw)"><path d="M0 92 Q50 80 100 88 T200 84 T300 90 T400 86 V120 H0z"/>
-    <rect x="132" y="66" width="22" height="24"/><rect x="152" y="58" width="18" height="32"/><path d="M150 58 l11 -9 l11 9z"/><rect x="170" y="70" width="26" height="20"/>
-    <rect x="196" y="62" width="14" height="28"/><circle cx="203" cy="61" r="7"/><rect x="210" y="72" width="30" height="18"/><rect x="238" y="64" width="18" height="26"/>
-    <rect x="256" y="74" width="24" height="16"/><rect x="60" y="80" width="20" height="14"/><rect x="318" y="78" width="24" height="14"/><rect x="340" y="72" width="14" height="20"/></g>
-    <g fill="#ffcf6e"><rect x="138" y="72" width="3" height="4"/><rect x="157" y="66" width="3" height="5"/><rect x="164" y="66" width="3" height="5"/><rect x="178" y="76" width="4" height="4"/>
-    <rect x="201" y="70" width="3" height="5"/><rect x="218" y="77" width="3" height="4"/><rect x="226" y="77" width="3" height="4"/><rect x="244" y="70" width="3" height="5"/><rect x="264" y="79" width="4" height="3"/>
-    <rect x="66" y="85" width="3" height="3"/><rect x="326" y="83" width="4" height="3"/><rect x="345" y="78" width="3" height="4"/></g></svg>`;
+  // silhueta de Belém no rodapé (arte fornecida, com transparência)
+  const TOWN = '<img src="natal-belem.webp" alt="" draggable="false">';
+  // ícones da edição de Natal (traço dourado, todos no mesmo estilo)
+  const NI = {
+    book: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C10.3 5 7.8 4.5 4 4.5v13c3.8 0 6.3.5 8 2 1.7-1.5 4.2-2 8-2v-13c-3.8 0-6.3.5-8 2z"/><path d="M12 6.5v13"/></svg>',
+    palette: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-.9 2-1.9 0-1.6-1.3-1.8-1.3-3 0-1 .8-1.7 1.9-1.7H17a4 4 0 0 0 4-4c0-3.9-4-7.4-9-7.4z"/><circle cx="7.5" cy="11.5" r="1.1" fill="currentColor"/><circle cx="10" cy="7.5" r="1.1" fill="currentColor"/><circle cx="14.5" cy="7.5" r="1.1" fill="currentColor"/></svg>',
+    share: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M8 7l4-4 4 4"/><path d="M5 11v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8"/></svg>',
+    talk: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>',
+    check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+    lock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>'
+  };
   function startShader() {
     const cv = document.createElement('canvas'); cv.className = 'nt-bg'; cv.setAttribute('aria-hidden', 'true');
     document.body.appendChild(cv);
@@ -67,7 +68,7 @@
     if (matchMedia('(prefers-reduced-motion: reduce)').matches) return () => { };
     const cv = document.createElement('canvas'); cv.className = 'nt-snow'; cv.setAttribute('aria-hidden', 'true'); document.body.appendChild(cv);
     const cx = cv.getContext('2d'); let W = 0, H = 0, dpr = Math.min(devicePixelRatio || 1, 2), raf = 0, last = 0, dead = false;
-    const N = innerWidth < 600 ? 38 : 70;
+    const N = innerWidth < 600 ? 26 : 48;
     const fl = Array.from({ length: N }, () => ({ x: Math.random(), y: Math.random(), r: .8 + Math.random() * 2.4, v: 12 + Math.random() * 22, ph: Math.random() * 6.28, sw: 6 + Math.random() * 14, a: .3 + Math.random() * .4 }));
     function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cx.setTransform(dpr, 0, 0, dpr, 0, 0); }
     size(); addEventListener('resize', size);
@@ -133,7 +134,7 @@
     const days = ADV().days;
     return `<section class="adv"><div class="adv-h"><b>Calendário do Advento</b><small>Uma porta por dia, de 29 de novembro ao Natal</small></div>
       <div class="adv-grid">${days.map((d, i) => { const open = isOpen(d), done = open && s.stickers[d.story], today = isToday(d);
-        return `<button class="adv-door ${open ? 'open' : 'lock'} ${today ? 'is-today' : ''} ${done ? 'done' : ''}" data-adv="${i}" aria-label="Porta ${i + 1}, ${d.d} de ${MES[d.m - 1]}${open ? '' : ', fechada'}"><b>${d.d}</b><small>${MESC[d.m - 1]}</small>${done ? '<i>✓</i>' : open ? '' : '<i>🔒</i>'}</button>`; }).join('')}</div></section>`;
+        return `<button class="adv-door ${open ? 'open' : 'lock'} ${today ? 'is-today' : ''} ${done ? 'done' : ''}" data-adv="${i}" aria-label="Porta ${i + 1}, ${d.d} de ${MES[d.m - 1]}${open ? '' : ', fechada'}"><b>${d.d}</b><small>${MESC[d.m - 1]}</small>${done ? `<i class="adv-ok">${NI.check}</i>` : open ? '' : `<i class="adv-lk">${NI.lock}</i>`}</button>`; }).join('')}</div></section>`;
   }
 
   route(/^\/natal$/, el => {
@@ -145,17 +146,17 @@
     const doneS = stories.filter(x => s.stickers[x.id]).length, doneD = draws.filter(x => (c.done || {})[x.n]).length;
     el.innerHTML = `
       <div class="topbar"><button class="icon-btn" data-back="#/" aria-label="Voltar">${I.back}</button><div class="ttl"><b>EDIÇÃO DE NATAL</b><small>Caminho até Belém</small></div><span style="width:44px"></span></div>
-      <div class="nt-heroW"><img class="nt-hat" src="hat.png" alt="" draggable="false"><section class="nt-hero"><i class="nt-glow"></i><div class="nt-big">⭐</div>
+      <div class="nt-heroW"><section class="nt-hero"><i class="nt-glow"></i><div class="nt-art"><img class="nt-star" src="natal-estrela.webp" alt="" draggable="false"><img class="nt-crib" src="natal-manjedoura.webp" alt="Manjedoura iluminada" draggable="false"></div>
         <h1>Caminho até Belém</h1>
         <p class="nt-verse">“Hoje, na cidade de Davi, vos nasceu o Salvador, que é Cristo, o Senhor.”<cite>Lucas 2:11 · ACF</cite></p>
         <small>Sem pressa e sem contagem de dias: siga no seu ritmo.</small></section></div>
       ${calendarHTML(s)}
       <div class="nt-tabs">
-        <button class="nt-tab ${open === 'h' ? 'on' : ''}" data-tab="h" aria-expanded="${open === 'h'}"><span class="nt-ti">📖</span><span class="nt-tt"><b>Histórias</b><small>${doneS} de ${stories.length} ouvidas</small></span><i>▾</i></button>
+        <button class="nt-tab ${open === 'h' ? 'on' : ''}" data-tab="h" aria-expanded="${open === 'h'}"><span class="nt-ti">${NI.book}</span><span class="nt-tt"><b>Histórias</b><small>${doneS} de ${stories.length} ouvidas</small></span><i>▾</i></button>
         <div class="nt-panel" data-panel="h" ${open === 'h' ? '' : 'hidden'}>
           <div class="nt-list">${stories.map((x, i) => `<button class="nt-story parch ${s.stickers[x.id] ? 'ok' : ''}" data-go="#/kids/h/${x.id}"><span class="nt-n">${i + 1}</span><span class="nt-ic">${x.icon}</span><span class="nt-tx"><b>${esc(x.name)}</b><small>${I.book} ${esc(x.ref)}</small></span><em>${s.stickers[x.id] ? '✓' : ''}</em></button>`).join('')}</div>
         </div>
-        <button class="nt-tab ${open === 'd' ? 'on' : ''}" data-tab="d" aria-expanded="${open === 'd'}"><span class="nt-ti">🎨</span><span class="nt-tt"><b>Desenhos para colorir</b><small>${doneD} de ${draws.length} prontos</small></span><i>▾</i></button>
+        <button class="nt-tab ${open === 'd' ? 'on' : ''}" data-tab="d" aria-expanded="${open === 'd'}"><span class="nt-ti">${NI.palette}</span><span class="nt-tt"><b>Desenhos para colorir</b><small>${doneD} de ${draws.length} prontos</small></span><i>▾</i></button>
         <div class="nt-panel" data-panel="d" ${open === 'd' ? '' : 'hidden'}>
           <div class="nt-draws">${draws.map(x => `<button class="nt-draw ${(c.done || {})[x.n] ? 'ok' : ''}" data-go="#/colorir/${x.n}"><span class="nt-th"><img src="${(c.p && c.p[x.n] && c.p[x.n].th) || 'colorir-' + x.n + '.th.webp'}" alt="" loading="lazy">${(c.done || {})[x.n] ? '<em>✓ Pronto</em>' : (c.p && c.p[x.n] && Object.keys(c.p[x.n].r || {}).length) ? '<em class="wip">Pintando</em>' : ''}</span><b>${esc(x.nome)}</b><small>${esc(x.ref)}</small></button>`).join('')}</div>
         </div>
@@ -184,17 +185,17 @@
     el.innerHTML = `
       <div class="topbar"><button class="icon-btn" data-back="#/natal" aria-label="Voltar">${I.back}</button><div class="ttl"><b>PORTA ${n}</b><small>${d.d} de ${MES[d.m - 1]}</small></div><span style="width:44px"></span></div>
       <section class="adv-day parch">
-        <div class="adv-ic">${x.icon}</div>
+        <img class="adv-lantern" src="natal-lanterna.webp" alt="" draggable="false">
         <h1>${esc(x.name)}</h1>
         <p class="adv-ref">${esc(x.ref)} · ACF</p>
-        <button class="btn btn-gold adv-go" data-go="#/kids/h/${x.id}">${heard ? '✓ Ouvir de novo' : '📖 Ouvir a lição'}</button>
+        <button class="btn btn-gold adv-go" data-go="#/kids/h/${x.id}">${heard ? NI.check + ' Ouvir de novo' : NI.book + ' Ouvir a lição'}</button>
       </section>
       <section class="adv-day parch">
         <h2>Para fazer juntos</h2>
-        <p class="adv-talk">💬 ${esc(d.talk)}</p>
-        ${draw ? `<button class="btn btn-ghost adv-go" data-go="#/colorir/${draw}">🎨 Pintar o desenho do dia</button>` : ''}
+        <p class="adv-talk"><i class="adv-ti">${NI.talk}</i>${esc(d.talk)}</p>
+        ${draw ? `<button class="btn btn-ghost adv-go" data-go="#/colorir/${draw}">${NI.palette} Pintar o desenho do dia</button>` : ''}
         <div class="adv-learn"><small>Hoje aprendi</small><p>${esc(d.learn)}</p></div>
-        <button class="btn btn-green adv-go" data-share>📤 Compartilhar o que aprendi</button>
+        <button class="btn btn-green adv-go" data-share>${NI.share} Compartilhar o que aprendi</button>
       </section>
       <p class="nt-foot">Sem pressa: as portas que já abriram ficam sempre abertas.</p>`;
     el.addEventListener('click', e => {
