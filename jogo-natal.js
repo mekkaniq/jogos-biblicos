@@ -90,32 +90,21 @@
   async function shareCard({ title, learn, ref, kicker }) {
     try { await Promise.all([document.fonts.load('700 60px Cinzel'), document.fonts.load('italic 400 60px Lora'), document.fonts.load('400 40px Lora')]); } catch (e) { }
     const W = 1080, H = 1920, cv = document.createElement('canvas'); cv.width = W; cv.height = H; const cx = cv.getContext('2d');
-    const g = cx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#16224a'); g.addColorStop(.5, '#1c140a'); g.addColorStop(1, '#0d2418'); cx.fillStyle = g; cx.fillRect(0, 0, W, H);
-    let seed = 7; const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
-    for (let i = 0; i < 140; i++) { const x = rnd() * W, y = rnd() * H * .62, r = rnd() * 2.2 + .5; cx.fillStyle = `rgba(255,247,218,${.25 + rnd() * .6})`; cx.beginPath(); cx.arc(x, y, r, 0, 6.283); cx.fill(); }
-    // medir o texto para centralizar o bloco na tela
-    cx.font = 'italic 400 60px Lora'; const L = wrap(cx, learn, W - 220);
-    cx.font = '700 42px Cinzel'; const T = wrap(cx, title, W - 240);
-    const nineH = 430, blockH = 60 + 30 + nineH + 70 + 64 + L.length * 82 + 60 + 40 + T.length * 56 + 50 + 150;
-    let y = Math.max(230, (H - blockH) / 2);
-    // luz e raios atrás da Nine
-    const cyN = y + 90 + nineH / 2;
-    const rg = cx.createRadialGradient(W / 2, cyN, 30, W / 2, cyN, 520); rg.addColorStop(0, 'rgba(255,226,150,.55)'); rg.addColorStop(.45, 'rgba(255,214,120,.16)'); rg.addColorStop(1, 'rgba(255,214,120,0)'); cx.fillStyle = rg; cx.fillRect(0, 0, W, H);
-    cx.save(); cx.translate(W / 2, cyN); for (let k = 0; k < 18; k++) { cx.rotate(Math.PI / 9); cx.fillStyle = 'rgba(255,230,160,.06)'; cx.beginPath(); cx.moveTo(0, 0); cx.lineTo(-38, -640); cx.lineTo(38, -640); cx.closePath(); cx.fill(); } cx.restore();
-    // moldura dourada
-    cx.strokeStyle = 'rgba(240,205,126,.75)'; cx.lineWidth = 3; cx.beginPath(); cx.roundRect ? cx.roundRect(54, 54, W - 108, H - 108, 44) : cx.rect(54, 54, W - 108, H - 108); cx.stroke();
-    cx.strokeStyle = 'rgba(240,205,126,.3)'; cx.lineWidth = 1.5; cx.beginPath(); cx.roundRect ? cx.roundRect(70, 70, W - 140, H - 140, 36) : cx.rect(70, 70, W - 140, H - 140); cx.stroke();
+    const g = cx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#1b2a54'); g.addColorStop(.55, '#1c140a'); g.addColorStop(1, '#0f281c'); cx.fillStyle = g; cx.fillRect(0, 0, W, H);
+    const rg = cx.createRadialGradient(W / 2, 520, 40, W / 2, 520, 620); rg.addColorStop(0, 'rgba(255,226,150,.35)'); rg.addColorStop(1, 'rgba(255,226,150,0)'); cx.fillStyle = rg; cx.fillRect(0, 0, W, H);
+    cx.fillStyle = 'rgba(255,255,255,.55)'; for (let i = 0; i < 70; i++) { const x = (i * 337) % W, y = (i * 211) % 900, r = (i % 3) + 1; cx.beginPath(); cx.arc(x, y, r, 0, 6.283); cx.fill(); }
     cx.textAlign = 'center';
-    cx.fillStyle = '#f0cd7e'; cx.font = '700 32px Cinzel'; cx.fillText((kicker || 'VERSO VIVO').toUpperCase().split('').join(' '), W / 2, y + 30); y += 90;
-    try { const img = new Image(); img.src = 'nine-lendo.webp'; await img.decode(); const h = nineH, w = h * img.width / img.height; cx.shadowColor = 'rgba(0,0,0,.45)'; cx.shadowBlur = 40; cx.shadowOffsetY = 18; cx.drawImage(img, (W - w) / 2, y, w, h); cx.shadowColor = 'transparent'; } catch (e) { }
-    y += nineH + 70;
-    const gg = cx.createLinearGradient(0, y - 50, 0, y + 10); gg.addColorStop(0, '#fff0bf'); gg.addColorStop(1, '#d8a94a'); cx.fillStyle = gg; cx.font = '700 60px Cinzel'; cx.fillText('Hoje aprendi', W / 2, y); y += 92;
-    cx.fillStyle = '#fbf1d8'; cx.font = 'italic 400 60px Lora'; for (const l of L) { cx.fillText(l, W / 2, y); y += 82; }
-    y += 20; cx.fillStyle = 'rgba(240,205,126,.8)'; cx.font = '400 40px Cinzel'; cx.fillText('— ✦ —', W / 2, y); y += 70;
-    cx.fillStyle = '#f0cd7e'; cx.font = '700 42px Cinzel'; for (const l of T) { cx.fillText(l, W / 2, y); y += 56; }
-    cx.fillStyle = 'rgba(251,241,216,.85)'; cx.font = '400 38px Lora'; cx.fillText(ref + ' · ACF', W / 2, y + 6); y += 120;
-    cx.fillStyle = 'rgba(251,241,216,.9)'; cx.font = '400 34px Lora'; cx.fillText('Jogue também, de graça:', W / 2, y);
-    cx.fillStyle = '#f0cd7e'; cx.font = '700 42px Cinzel'; cx.fillText('editoraversovivo.com.br/jogos', W / 2, y + 58);
+    cx.fillStyle = '#f0cd7e'; cx.font = '700 34px Cinzel'; cx.fillText((kicker || 'VERSO VIVO').toUpperCase().split('').join(' '), W / 2, 300);
+    try { const img = new Image(); img.src = 'nine-lendo.webp'; await img.decode(); const w = 400, h = w * img.height / img.width; cx.drawImage(img, (W - w) / 2, 360, w, h); } catch (e) { }
+    let y = 900;
+    cx.fillStyle = '#f0cd7e'; cx.font = '700 56px Cinzel'; cx.fillText('Hoje aprendi', W / 2, y); y += 90;
+    cx.fillStyle = '#fbf1d8'; cx.font = 'italic 400 58px Lora';
+    for (const l of wrap(cx, learn, W - 180)) { cx.fillText(l, W / 2, y); y += 78; }
+    y += 50; cx.fillStyle = '#f0cd7e'; cx.font = '700 40px Cinzel';
+    for (const l of wrap(cx, title, W - 200)) { cx.fillText(l, W / 2, y); y += 54; }
+    cx.fillStyle = 'rgba(251,241,216,.85)'; cx.font = '400 36px Lora'; cx.fillText(ref, W / 2, y + 10);
+    cx.fillStyle = 'rgba(251,241,216,.9)'; cx.font = '400 34px Lora'; y += 170; cx.fillText('Jogue também:', W / 2, y);
+    cx.fillStyle = '#f0cd7e'; cx.font = '700 40px Cinzel'; cx.fillText('editoraversovivo.com.br/jogos', W / 2, y + 56);
     const blob = await new Promise(r => cv.toBlob(r, 'image/png'));
     const file = new File([blob], 'verso-vivo-hoje-aprendi.png', { type: 'image/png' });
     const text = `Hoje aprendi: ${learn} (${ref}) · editoraversovivo.com.br/jogos`;
@@ -126,28 +115,11 @@
   App.shareCard = shareCard;
 
   function calendarHTML(s) {
-    const days = ADV().days; const opened = days.filter(isOpen).length;
-    const today = days.findIndex(isToday);
-    const sub = today >= 0 ? `Hoje é dia ${days[today].d}: toque na porta que brilha` : opened ? 'Abra as portas no seu ritmo, sem pressa' : 'A primeira porta abre em 29 de novembro';
-    return `<section class="adv"><div class="adv-h"><span class="adv-star" aria-hidden="true">✦</span><div><b>Calendário do Advento</b><small>${sub}</small></div></div>
-      <div class="adv-grid">${days.map((d, i) => { const open = isOpen(d), x = advStory(d.story), done = open && s.stickers[d.story], td = isToday(d);
-        return `<button class="adv-door ${open ? 'open' : 'lock'} ${td ? 'is-today' : ''} ${done ? 'done' : ''}" style="--i:${i}" data-adv="${i}" aria-label="Porta ${i + 1}, ${d.d} de ${MES[d.m - 1]}${open ? '' : ', fechada'}">
-          <span class="adv-in">${done ? `<em>${x.icon}</em>` : ''}<b>${d.d}</b><small>${MESC[d.m - 1]}</small></span>
-          ${open ? '' : '<i class="adv-lock" aria-hidden="true"></i>'}${td ? '<i class="adv-twinkle" aria-hidden="true">✦</i>' : ''}</button>`; }).join('')}</div></section>`;
+    const days = ADV().days;
+    return `<section class="adv"><div class="adv-h"><b>Calendário do Advento</b><small>Uma porta por dia, de 29 de novembro ao Natal</small></div>
+      <div class="adv-grid">${days.map((d, i) => { const open = isOpen(d), done = open && s.stickers[d.story], today = isToday(d);
+        return `<button class="adv-door ${open ? 'open' : 'lock'} ${today ? 'is-today' : ''} ${done ? 'done' : ''}" data-adv="${i}" aria-label="Porta ${i + 1}, ${d.d} de ${MES[d.m - 1]}${open ? '' : ', fechada'}"><b>${d.d}</b><small>${MESC[d.m - 1]}</small>${done ? '<i>✓</i>' : open ? '' : '<i>🔒</i>'}</button>`; }).join('')}</div></section>`;
   }
-
-  // efeito de abrir a porta: duas folhas se abrem e a luz enche a tela
-  function openDoorFx(btn, then) {
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return then();
-    const r = btn.getBoundingClientRect(), fx = document.createElement('div');
-    fx.className = 'adv-fx';
-    fx.innerHTML = `<div class="adv-fx-door" style="left:${r.left}px;top:${r.top}px;width:${r.width}px;height:${r.height}px"><i class="l"></i><i class="r"></i><span class="adv-fx-light"></span></div><div class="adv-fx-flood" style="--x:${r.left + r.width / 2}px;--y:${r.top + r.height / 2}px"></div>`;
-    document.body.appendChild(fx);
-    for (let k = 0; k < 14; k++) { const sp = document.createElement('b'); sp.className = 'adv-spark'; const a = Math.random() * 6.283, d = 40 + Math.random() * 70; sp.style.cssText = `left:${r.left + r.width / 2}px;top:${r.top + r.height / 2}px;--dx:${Math.cos(a) * d}px;--dy:${Math.sin(a) * d}px;animation-delay:${.15 + Math.random() * .2}s`; sp.textContent = '✦'; fx.appendChild(sp); }
-    try { App.sfx.good(); } catch (e) { }
-    setTimeout(then, 820); setTimeout(() => fx.remove(), 1500);
-  }
-
 
   route(/^\/natal$/, el => {
     App.setScene('noite');
@@ -182,7 +154,7 @@
         el.querySelectorAll('[data-panel]').forEach(x => { x.hidden = was || x.dataset.panel !== k; });
         if (!was) t.scrollIntoView({ block: 'start', behavior: 'smooth' }); return; }
       const dv = e.target.closest('[data-adv]');
-      if (dv) { const d = ADV().days[+dv.dataset.adv]; if (!isOpen(d)) { App.toast(`Esta porta abre em ${d.d} de ${MES[d.m - 1]}. 🌙`); return; } openDoorFx(dv, () => go('#/natal/dia/' + (+dv.dataset.adv + 1))); return; }
+      if (dv) { const d = ADV().days[+dv.dataset.adv]; if (!isOpen(d)) { App.toast(`Esta porta abre em ${d.d} de ${MES[d.m - 1]}. 🌙`); return; } App.sfx.tap(); go('#/natal/dia/' + (+dv.dataset.adv + 1)); return; }
       const g = e.target.closest('[data-go]'); if (g) go(g.dataset.go);
     });
     return { leave() { stop(); document.documentElement.classList.remove('nt-on'); } };
@@ -196,15 +168,13 @@
     const x = advStory(d.story), s = st(), heard = !!s.stickers[x.id], draw = DRAW[x.id];
     el.innerHTML = `
       <div class="topbar"><button class="icon-btn" data-back="#/natal" aria-label="Voltar">${I.back}</button><div class="ttl"><b>PORTA ${n}</b><small>${d.d} de ${MES[d.m - 1]}</small></div><span style="width:44px"></span></div>
-      <section class="adv-hero">
-        <div class="adv-rays" aria-hidden="true"></div>
+      <section class="adv-day parch">
         <div class="adv-ic">${x.icon}</div>
-        <small class="adv-kick">Porta ${n} · ${d.d} de ${MES[d.m - 1]}</small>
         <h1>${esc(x.name)}</h1>
-        <p class="adv-ref">📖 ${esc(x.ref)} · ACF</p>
-        <button class="btn btn-gold adv-go" data-go="#/kids/h/${x.id}">${heard ? '✓ Ouvir de novo' : '▶ Ouvir a lição'}</button>
+        <p class="adv-ref">${esc(x.ref)} · ACF</p>
+        <button class="btn btn-gold adv-go" data-go="#/kids/h/${x.id}">${heard ? '✓ Ouvir de novo' : '📖 Ouvir a lição'}</button>
       </section>
-      <section class="adv-day parch adv-rise">
+      <section class="adv-day parch">
         <h2>Para fazer juntos</h2>
         <p class="adv-talk">💬 ${esc(d.talk)}</p>
         ${draw ? `<button class="btn btn-ghost adv-go" data-go="#/colorir/${draw}">🎨 Pintar o desenho do dia</button>` : ''}
