@@ -146,7 +146,7 @@
     const doneS = stories.filter(x => s.stickers[x.id]).length, doneD = draws.filter(x => (c.done || {})[x.n]).length;
     el.innerHTML = `
       <div class="topbar"><button class="icon-btn" data-back="#/" aria-label="Voltar">${I.back}</button><div class="ttl"><b>EDIÇÃO DE NATAL</b><small>Caminho até Belém</small></div><span style="width:44px"></span></div>
-      <div class="nt-heroW"><section class="nt-hero"><i class="nt-glow"></i><div class="nt-art"><img class="nt-star" src="natal-estrela.webp" alt="" draggable="false"><img class="nt-crib" src="natal-manjedoura.webp" alt="Manjedoura iluminada" draggable="false"></div>
+      <div class="nt-heroW"><img class="nt-hat" src="hat.png" alt="" draggable="false"><section class="nt-hero"><i class="nt-glow"></i><div class="nt-art"><img class="nt-star" src="natal-estrela.webp" alt="" draggable="false"><img class="nt-crib" src="natal-manjedoura.webp" alt="Manjedoura iluminada" draggable="false"></div>
         <h1>Caminho até Belém</h1>
         <p class="nt-verse">“Hoje, na cidade de Davi, vos nasceu o Salvador, que é Cristo, o Senhor.”<cite>Lucas 2:11 · ACF</cite></p>
         <small>Sem pressa e sem contagem de dias: siga no seu ritmo.</small></section></div>
