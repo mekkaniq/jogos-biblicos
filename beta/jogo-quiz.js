@@ -55,7 +55,7 @@
         <li>Se não tiver certeza, pode <b>parar</b> e levar os pontos que já ganhou.</li>
         <li>Se errar, leva a metade. Acertando as 16, você ganha <b>1 milhão</b>! 👑</li>
       </ol></div>
-      <div class="signature"><b>Feito por Eduardo de Souza</b><i>com muito amor, para a minha família. ❤️</i></div>`;
+      <div class="signature"><b>Feito por <a class="sig-link" href="https://www.instagram.com/yesdudu" target="_blank" rel="noopener">Eduardo de Souza</a></b><i>com muito amor, para a minha família. ❤️</i></div>`;
     common(el);
     el.addEventListener('click', e => {
       if (e.target.closest('[data-play]')) { if (!cur) newRun(); sfx.tap(); go('#/quiz/jogo'); }

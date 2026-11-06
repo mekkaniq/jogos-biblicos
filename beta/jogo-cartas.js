@@ -38,7 +38,7 @@
         <li>Toque no baralho para revelar novas cartas. Há mais histórias do que casas: escolha bem quais abrir!</li>
         <li>Cada partida tem <b>3 dicas</b> e <b>5 desfazer</b>. Sem usar nenhum, você ganha 3 estrelas.</li>
       </ol></div>
-      <div class="signature"><b>Feito por Eduardo de Souza</b><i>com muito amor, para a minha família. ❤️</i></div>`;
+      <div class="signature"><b>Feito por <a class="sig-link" href="https://www.instagram.com/yesdudu" target="_blank" rel="noopener">Eduardo de Souza</a></b><i>com muito amor, para a minha família. ❤️</i></div>`;
     common(el);
     el.addEventListener('click', e => { const p = e.target.closest('[data-play]'); if (p) go('#/cartas/' + p.dataset.play); });
   });
