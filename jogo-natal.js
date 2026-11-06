@@ -68,7 +68,7 @@
     if (matchMedia('(prefers-reduced-motion: reduce)').matches) return () => { };
     const cv = document.createElement('canvas'); cv.className = 'nt-snow'; cv.setAttribute('aria-hidden', 'true'); document.body.appendChild(cv);
     const cx = cv.getContext('2d'); let W = 0, H = 0, dpr = Math.min(devicePixelRatio || 1, 2), raf = 0, last = 0, dead = false;
-    const N = innerWidth < 600 ? 26 : 48;
+    const N = innerWidth < 600 ? 36 : 67;
     const fl = Array.from({ length: N }, () => ({ x: Math.random(), y: Math.random(), r: .8 + Math.random() * 2.4, v: 12 + Math.random() * 22, ph: Math.random() * 6.28, sw: 6 + Math.random() * 14, a: .3 + Math.random() * .4 }));
     function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cx.setTransform(dpr, 0, 0, dpr, 0, 0); }
     size(); addEventListener('resize', size);
