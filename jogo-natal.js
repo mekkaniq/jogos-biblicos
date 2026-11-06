@@ -93,8 +93,8 @@
   const ADV = () => window.ADVENTO_DATA;
   const MES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
   const MESC = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
-  // para testar: localStorage 'adv-hoje' = '2026-12-10'
-  function advNow() { try { const o = localStorage.getItem('adv-hoje'); if (o) return new Date(o + 'T12:00:00'); } catch (e) { } return new Date(); }
+  // para testar (so no beta): ?hoje=2026-12-10 grava localStorage 'adv-hoje'
+  function advNow() { try { const o = window.__BETA && localStorage.getItem('adv-hoje'); if (o) return new Date(o + 'T12:00:00'); } catch (e) { } return new Date(); }
   function dayDate(d) { const now = advNow(); let y = now.getFullYear(); if (now.getMonth() < 10) y -= 1; return new Date(y, d.m - 1, d.d); } // jan a out: o Advento que passou
   const isOpen = d => advNow() >= dayDate(d);
   const isToday = d => { const a = advNow(), b = dayDate(d); return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate(); };
