@@ -4,7 +4,7 @@
   const K = App.kit;
   const D = () => window.KIDS_DATA;
   const S = () => K.st('kids', { band: 'small', stickers: {}, voice: 1 });
-  const storyOf = id => D().stories.find(s => s.id === id) || (window.NATAL_DATA && window.NATAL_DATA.stories.find(s => s.id === id));
+  const storyOf = id => D().stories.find(s => s.id === id) || (window.NATAL_DATA && window.NATAL_DATA.stories.find(s => s.id === id)) || (window.ADVENTO_DATA && window.ADVENTO_DATA.stories.find(s => s.id === id));
   const pick = a => a[Math.floor(Math.random() * a.length)];
 
   // a Nine animada vem do arquivo nine.js (compartilhada com os jogos dos adultos)
@@ -206,7 +206,7 @@
     function sticker() {
       App.setScene('aurora'); hush();
       const first = !s.stickers[id]; s.stickers[id] = 1; save(); sfx.win();
-      const left = (st.natal ? window.NATAL_DATA.stories : D().stories).filter(x => !s.stickers[x.id]).length;
+      const left = (st.natal ? (/^adv/.test(st.id) ? window.ADVENTO_DATA.stories : window.NATAL_DATA.stories) : D().stories).filter(x => !s.stickers[x.id]).length;
       el.innerHTML = `${top(home, 'PARABÉNS!', st.name)}
         <div class="kd-win">
           <div class="kd-nine solo">${nineHTML('festa', 'enter party')}</div>

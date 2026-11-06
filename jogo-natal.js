@@ -72,6 +72,55 @@
     return () => { dead = true; cancelAnimationFrame(raf); removeEventListener('resize', size); cv.remove(); };
   }
 
+
+  // ---------- Calendário do Advento (29/11 a 25/12): cada porta abre à meia-noite do horário do aparelho ----------
+  const ADV = () => window.ADVENTO_DATA;
+  const MES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+  const MESC = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+  // para testar: localStorage 'adv-hoje' = '2026-12-10'
+  function advNow() { try { const o = localStorage.getItem('adv-hoje'); if (o) return new Date(o + 'T12:00:00'); } catch (e) { } return new Date(); }
+  function dayDate(d) { const now = advNow(); let y = now.getFullYear(); if (now.getMonth() < 10) y -= 1; return new Date(y, d.m - 1, d.d); } // jan a out: o Advento que passou
+  const isOpen = d => advNow() >= dayDate(d);
+  const isToday = d => { const a = advNow(), b = dayDate(d); return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate(); };
+  const advStory = id => ADV().stories.find(s => s.id === id) || window.NATAL_DATA.stories.find(s => s.id === id);
+  const DRAW = { natal1: 401, natal3: 402, natal4: 403, natal5: 404 }; // desenhos novos entram aqui quando ficarem prontos
+
+  // cartão "Hoje aprendi" em pé (1080x1920) para compartilhar no WhatsApp ou no Instagram
+  function wrap(cx, text, maxW) { const out = []; let line = ''; for (const w of text.split(' ')) { const t = line ? line + ' ' + w : w; if (cx.measureText(t).width > maxW && line) { out.push(line); line = w; } else line = t; } if (line) out.push(line); return out; }
+  async function shareCard({ title, learn, ref, kicker }) {
+    try { await Promise.all([document.fonts.load('700 60px Cinzel'), document.fonts.load('italic 400 60px Lora'), document.fonts.load('400 40px Lora')]); } catch (e) { }
+    const W = 1080, H = 1920, cv = document.createElement('canvas'); cv.width = W; cv.height = H; const cx = cv.getContext('2d');
+    const g = cx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#1b2a54'); g.addColorStop(.55, '#1c140a'); g.addColorStop(1, '#0f281c'); cx.fillStyle = g; cx.fillRect(0, 0, W, H);
+    const rg = cx.createRadialGradient(W / 2, 520, 40, W / 2, 520, 620); rg.addColorStop(0, 'rgba(255,226,150,.35)'); rg.addColorStop(1, 'rgba(255,226,150,0)'); cx.fillStyle = rg; cx.fillRect(0, 0, W, H);
+    cx.fillStyle = 'rgba(255,255,255,.55)'; for (let i = 0; i < 70; i++) { const x = (i * 337) % W, y = (i * 211) % 900, r = (i % 3) + 1; cx.beginPath(); cx.arc(x, y, r, 0, 6.283); cx.fill(); }
+    cx.textAlign = 'center';
+    cx.fillStyle = '#f0cd7e'; cx.font = '700 34px Cinzel'; cx.fillText((kicker || 'VERSO VIVO').toUpperCase().split('').join(' '), W / 2, 300);
+    try { const img = new Image(); img.src = 'nine-lendo.webp'; await img.decode(); const w = 400, h = w * img.height / img.width; cx.drawImage(img, (W - w) / 2, 360, w, h); } catch (e) { }
+    let y = 900;
+    cx.fillStyle = '#f0cd7e'; cx.font = '700 56px Cinzel'; cx.fillText('Hoje aprendi', W / 2, y); y += 90;
+    cx.fillStyle = '#fbf1d8'; cx.font = 'italic 400 58px Lora';
+    for (const l of wrap(cx, learn, W - 180)) { cx.fillText(l, W / 2, y); y += 78; }
+    y += 50; cx.fillStyle = '#f0cd7e'; cx.font = '700 40px Cinzel';
+    for (const l of wrap(cx, title, W - 200)) { cx.fillText(l, W / 2, y); y += 54; }
+    cx.fillStyle = 'rgba(251,241,216,.85)'; cx.font = '400 36px Lora'; cx.fillText(ref, W / 2, y + 10);
+    cx.fillStyle = 'rgba(251,241,216,.9)'; cx.font = '400 34px Lora'; y += 170; cx.fillText('Jogue também:', W / 2, y);
+    cx.fillStyle = '#f0cd7e'; cx.font = '700 40px Cinzel'; cx.fillText('editoraversovivo.com.br/jogos', W / 2, y + 56);
+    const blob = await new Promise(r => cv.toBlob(r, 'image/png'));
+    const file = new File([blob], 'verso-vivo-hoje-aprendi.png', { type: 'image/png' });
+    const text = `Hoje aprendi: ${learn} (${ref}) · editoraversovivo.com.br/jogos`;
+    try { if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], text }); return; } } catch (e) { if (e && e.name === 'AbortError') return; }
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = file.name; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+    App.toast('Imagem salva. Agora é só compartilhar!');
+  }
+  App.shareCard = shareCard;
+
+  function calendarHTML(s) {
+    const days = ADV().days;
+    return `<section class="adv"><div class="adv-h"><b>Calendário do Advento</b><small>Uma porta por dia, de 29 de novembro ao Natal</small></div>
+      <div class="adv-grid">${days.map((d, i) => { const open = isOpen(d), done = open && s.stickers[d.story], today = isToday(d);
+        return `<button class="adv-door ${open ? 'open' : 'lock'} ${today ? 'is-today' : ''} ${done ? 'done' : ''}" data-adv="${i}" aria-label="Porta ${i + 1}, ${d.d} de ${MES[d.m - 1]}${open ? '' : ', fechada'}"><b>${d.d}</b><small>${MESC[d.m - 1]}</small>${done ? '<i>✓</i>' : open ? '' : '<i>🔒</i>'}</button>`; }).join('')}</div></section>`;
+  }
+
   route(/^\/natal$/, el => {
     App.setScene('noite');
     const stopBg = startShader(), stopSnow = startSnow(), stop = () => { stopBg(); stopSnow(); }; document.documentElement.classList.add('nt-on');
@@ -85,6 +134,7 @@
         <h1>Caminho até Belém</h1>
         <p class="nt-verse">“Hoje, na cidade de Davi, vos nasceu o Salvador, que é Cristo, o Senhor.”<cite>Lucas 2:11 · ACF</cite></p>
         <small>Sem pressa e sem contagem de dias: siga no seu ritmo.</small></section></div>
+      ${calendarHTML(s)}
       <div class="nt-tabs">
         <button class="nt-tab ${open === 'h' ? 'on' : ''}" data-tab="h" aria-expanded="${open === 'h'}"><span class="nt-ti">📖</span><span class="nt-tt"><b>Histórias</b><small>${doneS} de ${stories.length} ouvidas</small></span><i>▾</i></button>
         <div class="nt-panel" data-panel="h" ${open === 'h' ? '' : 'hidden'}>
@@ -103,8 +153,40 @@
         el.querySelectorAll('[data-tab]').forEach(x => { const on = !was && x.dataset.tab === k; x.classList.toggle('on', on); x.setAttribute('aria-expanded', on); });
         el.querySelectorAll('[data-panel]').forEach(x => { x.hidden = was || x.dataset.panel !== k; });
         if (!was) t.scrollIntoView({ block: 'start', behavior: 'smooth' }); return; }
+      const dv = e.target.closest('[data-adv]');
+      if (dv) { const d = ADV().days[+dv.dataset.adv]; if (!isOpen(d)) { App.toast(`Esta porta abre em ${d.d} de ${MES[d.m - 1]}. 🌙`); return; } App.sfx.tap(); go('#/natal/dia/' + (+dv.dataset.adv + 1)); return; }
       const g = e.target.closest('[data-go]'); if (g) go(g.dataset.go);
     });
     return { leave() { stop(); document.documentElement.classList.remove('nt-on'); } };
+  });
+
+  route(/^\/natal\/dia\/(\d+)$/, (el, n) => {
+    const d = ADV().days[+n - 1]; if (!d) return go('#/natal');
+    if (!isOpen(d)) { App.toast(`Esta porta abre em ${d.d} de ${MES[d.m - 1]}. 🌙`); return go('#/natal'); }
+    App.setScene('noite');
+    const stopBg = startShader(), stopSnow = startSnow(); document.documentElement.classList.add('nt-on');
+    const x = advStory(d.story), s = st(), heard = !!s.stickers[x.id], draw = DRAW[x.id];
+    el.innerHTML = `
+      <div class="topbar"><button class="icon-btn" data-back="#/natal" aria-label="Voltar">${I.back}</button><div class="ttl"><b>PORTA ${n}</b><small>${d.d} de ${MES[d.m - 1]}</small></div><span style="width:44px"></span></div>
+      <section class="adv-day parch">
+        <div class="adv-ic">${x.icon}</div>
+        <h1>${esc(x.name)}</h1>
+        <p class="adv-ref">${esc(x.ref)} · ACF</p>
+        <button class="btn btn-gold adv-go" data-go="#/kids/h/${x.id}">${heard ? '✓ Ouvir de novo' : '📖 Ouvir a lição'}</button>
+      </section>
+      <section class="adv-day parch">
+        <h2>Para fazer juntos</h2>
+        <p class="adv-talk">💬 ${esc(d.talk)}</p>
+        ${draw ? `<button class="btn btn-ghost adv-go" data-go="#/colorir/${draw}">🎨 Pintar o desenho do dia</button>` : ''}
+        <div class="adv-learn"><small>Hoje aprendi</small><p>${esc(d.learn)}</p></div>
+        <button class="btn btn-green adv-go" data-share>📤 Compartilhar o que aprendi</button>
+      </section>
+      <p class="nt-foot">Sem pressa: as portas que já abriram ficam sempre abertas.</p>`;
+    el.addEventListener('click', e => {
+      const b = e.target.closest('[data-back]'); if (b) { go(b.dataset.back); return; }
+      if (e.target.closest('[data-share]')) { shareCard({ title: x.name, learn: d.learn, ref: x.ref, kicker: 'Verso Vivo · Advento' }); return; }
+      const g = e.target.closest('[data-go]'); if (g) go(g.dataset.go);
+    });
+    return { leave() { stopBg(); stopSnow(); document.documentElement.classList.remove('nt-on'); } };
   });
 })();

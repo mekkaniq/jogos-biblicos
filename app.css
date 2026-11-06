@@ -1187,3 +1187,28 @@ html.nt-on .topbar .ttl, html.nt-on .nt-foot { text-shadow: 0 1px 6px rgba(0, 0,
   #app:has(.gtiles) { max-width: 1120px; }
   .gtiles { grid-template-columns: repeat(4, 1fr); }
 }
+
+/* Calendário do Advento */
+.adv { margin: 14px 0 6px; padding: 14px; border-radius: 22px; background: rgba(20, 14, 6, .55); border: 1.5px solid rgba(240, 205, 126, .45); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.adv-h b { display: block; font-family: var(--display); color: #f0cd7e; font-size: 1.1rem; letter-spacing: .04em; }
+.adv-h small { color: rgba(251, 241, 216, .85); font-size: .82rem; }
+.adv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(58px, 1fr)); gap: 8px; margin-top: 12px; }
+.adv-door { position: relative; aspect-ratio: 1; border-radius: 14px; display: grid; place-content: center; text-align: center; line-height: 1; font-family: var(--display); }
+.adv-door b { font-size: 1.35rem; }
+.adv-door small { display: block; margin-top: 3px; font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; font-family: var(--serif); }
+.adv-door i { position: absolute; top: 3px; right: 5px; font-style: normal; font-size: .72rem; }
+.adv-door.open { background: linear-gradient(180deg, #f6d98e, #d8a94a); color: #1c140a; box-shadow: 0 3px 10px rgba(0, 0, 0, .3); }
+.adv-door.lock { background: rgba(255, 255, 255, .06); color: rgba(251, 241, 216, .55); border: 1px dashed rgba(240, 205, 126, .35); }
+.adv-door.done { background: linear-gradient(180deg, #fbf1d8, #e9d7a8); }
+.adv-door.done i { color: #2e7d4f; font-weight: 800; }
+.adv-door.is-today { outline: 3px solid #fff3c4; outline-offset: 2px; box-shadow: 0 0 22px rgba(255, 214, 120, .8); }
+.adv-day { margin-top: 12px; padding: 18px; border-radius: 22px; text-align: center; }
+.adv-day .adv-ic { font-size: 3rem; }
+.adv-day h1 { font-family: var(--display); font-size: 1.45rem; margin: 6px 0 4px; }
+.adv-day h2 { font-family: var(--display); font-size: 1.1rem; margin-bottom: 8px; }
+.adv-ref { opacity: .8; font-size: .9rem; }
+.adv-talk { text-align: left; font-size: 1.02rem; line-height: 1.5; margin: 6px 0 12px; }
+.adv-learn { margin: 12px 0; padding: 12px 14px; border-radius: 16px; background: rgba(216, 169, 74, .16); text-align: left; }
+.adv-learn small { font-family: var(--display); font-weight: 700; letter-spacing: .06em; color: #8a6420; }
+.adv-learn p { font-style: italic; margin-top: 4px; }
+.adv-go { width: 100%; margin-top: 10px; }
