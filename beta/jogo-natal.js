@@ -137,24 +137,37 @@
 
   // cartão "Hoje aprendi" em pé (1080x1920) para compartilhar no WhatsApp ou no Instagram
   function wrap(cx, text, maxW) { const out = []; let line = ''; for (const w of text.split(' ')) { const t = line ? line + ' ' + w : w; if (cx.measureText(t).width > maxW && line) { out.push(line); line = w; } else line = t; } if (line) out.push(line); return out; }
+  function rr(c, x, y, w, h, r) { c.beginPath(); c.moveTo(x + r, y); c.arcTo(x + w, y, x + w, y + h, r); c.arcTo(x + w, y + h, x, y + h, r); c.arcTo(x, y + h, x, y, r); c.arcTo(x, y, x + w, y, r); c.closePath(); }
   async function shareCard({ title, learn, ref, kicker }) {
     try { await Promise.all([document.fonts.load('700 60px Cinzel'), document.fonts.load('italic 400 60px Lora'), document.fonts.load('400 40px Lora')]); } catch (e) { }
+    // 9:16 para status e stories; todo o conteúdo fica no miolo 3:4 (o que o WhatsApp mostra na conversa)
     const W = 1080, H = 1920, cv = document.createElement('canvas'); cv.width = W; cv.height = H; const cx = cv.getContext('2d');
-    const g = cx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#1b2a54'); g.addColorStop(.55, '#1c140a'); g.addColorStop(1, '#0f281c'); cx.fillStyle = g; cx.fillRect(0, 0, W, H);
-    const rg = cx.createRadialGradient(W / 2, 520, 40, W / 2, 520, 620); rg.addColorStop(0, 'rgba(255,226,150,.35)'); rg.addColorStop(1, 'rgba(255,226,150,0)'); cx.fillStyle = rg; cx.fillRect(0, 0, W, H);
-    cx.fillStyle = 'rgba(255,255,255,.55)'; for (let i = 0; i < 70; i++) { const x = (i * 337) % W, y = (i * 211) % 900, r = (i % 3) + 1; cx.beginPath(); cx.arc(x, y, r, 0, 6.283); cx.fill(); }
-    cx.textAlign = 'center';
-    cx.fillStyle = '#f0cd7e'; cx.font = '700 34px Cinzel'; cx.fillText((kicker || 'VERSO VIVO').toUpperCase().split('').join(' '), W / 2, 300);
-    try { const img = new Image(); img.src = 'nine-lendo.webp'; await img.decode(); const w = 400, h = w * img.height / img.width; cx.drawImage(img, (W - w) / 2, 360, w, h); } catch (e) { }
-    let y = 900;
-    cx.fillStyle = '#f0cd7e'; cx.font = '700 56px Cinzel'; cx.fillText('Hoje aprendi', W / 2, y); y += 90;
-    cx.fillStyle = '#fbf1d8'; cx.font = 'italic 400 58px Lora';
-    for (const l of wrap(cx, learn, W - 180)) { cx.fillText(l, W / 2, y); y += 78; }
-    y += 50; cx.fillStyle = '#f0cd7e'; cx.font = '700 40px Cinzel';
-    for (const l of wrap(cx, title, W - 200)) { cx.fillText(l, W / 2, y); y += 54; }
-    cx.fillStyle = 'rgba(251,241,216,.85)'; cx.font = '400 36px Lora'; cx.fillText(ref, W / 2, y + 10);
-    cx.fillStyle = 'rgba(251,241,216,.9)'; cx.font = '400 34px Lora'; y += 170; cx.fillText('Jogue também:', W / 2, y);
-    cx.fillStyle = '#f0cd7e'; cx.font = '700 40px Cinzel'; cx.fillText('editoraversovivo.com.br/jogos', W / 2, y + 56);
+    const g = cx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#141a3c'); g.addColorStop(.5, '#1d2347'); g.addColorStop(1, '#120f1e'); cx.fillStyle = g; cx.fillRect(0, 0, W, H);
+    cx.fillStyle = 'rgba(255,255,255,.6)'; for (let i = 0; i < 110; i++) { const x = (i * 337 + 41) % W, y = (i * 211 + 17) % H, r = (i % 4 === 0) ? 2.4 : (i % 3) * .6 + .8; cx.globalAlpha = .35 + (i % 5) * .12; cx.beginPath(); cx.arc(x, y, r, 0, 6.283); cx.fill(); }
+    cx.globalAlpha = 1; cx.textAlign = 'center'; cx.textBaseline = 'alphabetic';
+    let nine = null; try { nine = new Image(); nine.src = 'nine-lendo.webp'; await nine.decode(); } catch (e) { nine = null; }
+    // medir o bloco
+    const PAD = 120, MW = W - 2 * PAD;
+    cx.font = 'italic 400 60px Lora'; const L = wrap(cx, learn, MW); const LH = 80;
+    cx.font = '700 40px Cinzel'; const T = wrap(cx, title.toUpperCase(), MW); const TH = 52;
+    const nw = 330, nh = nine ? nw * nine.height / nine.width : 0;
+    const parts = [nh, 40, 44, 34, L.length * LH, 40, 2, 48, T.length * TH, 46, 0, 90, 34, 56];
+    const total = parts.reduce((a, b) => a + b, 0);
+    let y = Math.round((H - total) / 2);
+    // moldura suave do miolo
+    const top = y - 70, bot = y + total + 60;
+    cx.strokeStyle = 'rgba(240,205,126,.35)'; cx.lineWidth = 3; rr(cx, 60, top, W - 120, bot - top, 48); cx.stroke();
+    const glow = cx.createRadialGradient(W / 2, y + nh * .55, 20, W / 2, y + nh * .55, 420); glow.addColorStop(0, 'rgba(255,226,150,.28)'); glow.addColorStop(1, 'rgba(255,226,150,0)'); cx.fillStyle = glow; cx.fillRect(0, top, W, bot - top);
+    if (nine) cx.drawImage(nine, (W - nw) / 2, y, nw, nh); y += nh + 40;
+    cx.fillStyle = '#f0cd7e'; cx.font = '700 44px Cinzel'; y += 44; cx.fillText('Hoje aprendi', W / 2, y); y += 34;
+    cx.fillStyle = '#fbf1d8'; cx.font = 'italic 400 60px Lora';
+    for (const l of L) { y += LH; cx.fillText(l, W / 2, y - 18); }
+    y += 40; cx.fillStyle = 'rgba(240,205,126,.6)'; cx.fillRect(W / 2 - 70, y, 140, 2); y += 2 + 48;
+    cx.fillStyle = '#f0cd7e'; cx.font = '700 40px Cinzel';
+    for (const l of T) { cx.fillText(l, W / 2, y); y += TH; }
+    cx.fillStyle = 'rgba(251,241,216,.8)'; cx.font = '400 36px Lora'; cx.fillText(ref, W / 2, y - 4); y += 46;
+    y += 90; cx.fillStyle = 'rgba(251,241,216,.75)'; cx.font = '400 32px Lora'; cx.fillText((kicker || 'Verso Vivo') + ' · jogue também', W / 2, y - 56);
+    cx.fillStyle = '#f0cd7e'; cx.font = '700 38px Cinzel'; cx.fillText('editoraversovivo.com.br/jogos', W / 2, y);
     const blob = await new Promise(r => cv.toBlob(r, 'image/png'));
     const file = new File([blob], 'verso-vivo-hoje-aprendi.png', { type: 'image/png' });
     const text = `Hoje aprendi: ${learn} (${ref}) · editoraversovivo.com.br/jogos`;
