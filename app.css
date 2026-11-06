@@ -162,7 +162,7 @@ p { margin: 0; }
 .ws-stage { position: relative; touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
 .ws-grid { display: grid; gap: 0; position: relative; z-index: 2; }
 .ws-cell { min-width: 0; overflow: hidden; aspect-ratio: 1; display: grid; place-items: center; font-family: var(--serif); font-weight: 600; color: var(--ink-900); font-size: calc(var(--cell) * .54); line-height: 1; border-radius: 6px; transition: color .2s, transform .15s; }
-.ws-cell.hint { animation: hint 1.2s ease-in-out 3; }
+.ws-cell.hint { background: rgba(233, 207, 140, .95); box-shadow: inset 0 0 0 3px #c49a3e; border-radius: 8px; animation: hint 1.2s ease-in-out 3; }
 @keyframes hint { 50% { background: rgba(233, 207, 140, .9); transform: scale(1.15); } }
 .ws-tiles { position: absolute; inset: 0; display: grid; z-index: 0; pointer-events: none; }
 .ws-tiles i { margin: 1.5px; border-radius: 7px; background: linear-gradient(180deg, rgba(255, 253, 246, .95), rgba(246, 236, 212, .95)); box-shadow: inset 0 -1px 0 rgba(160, 130, 70, .25), 0 1px 1px rgba(120, 90, 40, .12); }
