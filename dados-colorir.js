@@ -614,7 +614,7 @@ window.COLORIR_DATA = {
 "win": "Deus prometeu um Salvador que venceria o mal.",
 "w": 1200,
 "h": 900,
-"r": 114
+"r": 117
 }
 ]
 };
