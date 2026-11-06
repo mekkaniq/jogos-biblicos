@@ -7,28 +7,43 @@
 
   // fundo animado, bem devagar: vermelho e verde de Natal (WebGL; sem WebGL fica um degradê parado)
   const VS = 'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
+  // Noite de Natal em Belém: céu azul profundo, estrelas piscando e a estrela de Belém brilhando no alto
   const FS = `precision mediump float;uniform vec2 r;uniform float t;
     float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
     float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),f.x),f.y);}
-    void main(){
-      vec2 uv=gl_FragCoord.xy/r; uv.x*=r.x/r.y;
-      vec2 q=uv*1.6; float k=t*.06;
-      q+=vec2(n(q+k),n(q-k+3.7))*1.1;
-      float a=n(q*1.3+vec2(k,-k));
-      float b=n(q*.9+vec2(-k*.7,k)+9.1);
-      vec3 red=vec3(.62,.10,.17), red2=vec3(.80,.17,.23), grn=vec3(.08,.38,.25), grn2=vec3(.18,.55,.36), gold=vec3(.91,.78,.42);
-      vec3 c=mix(mix(red,red2,b),mix(grn,grn2,b),smoothstep(.32,.68,a));
-      c=mix(c,gold,.10*smoothstep(.62,.9,n(q*2.2-k*2.)));
-      float v=smoothstep(1.25,.25,length(gl_FragCoord.xy/r-.5)); c*=.72+.28*v;
+    float stars(vec2 uv,float sc,float th){vec2 g=uv*sc,id=floor(g),f=fract(g)-.5;float rnd=h(id);if(rnd<th)return 0.;vec2 o=vec2(h(id+3.1),h(id+7.7))-.5;float d=length(f-o*.7);float tw=.55+.45*sin(t*(1.+rnd*3.)+rnd*40.);return smoothstep(.07,0.,d)*tw*(rnd-th)/(1.-th);}
+    void main(){vec2 uv=gl_FragCoord.xy/r;float asp=r.x/r.y;vec2 q=vec2(uv.x*asp,uv.y);
+      vec3 top=vec3(.035,.06,.17),mid=vec3(.08,.13,.32),low=vec3(.22,.16,.30),hor=vec3(.55,.33,.22);
+      vec3 c=mix(low,mid,smoothstep(.05,.55,uv.y));c=mix(c,top,smoothstep(.55,1.,uv.y));c=mix(hor,c,smoothstep(0.,.22,uv.y));
+      c+=vec3(.05,.07,.16)*n(q*2.+vec2(t*.01,0.))*smoothstep(.2,.9,uv.y);
+      float s=stars(q,38.,.86)+stars(q+5.,70.,.9)*.7;c+=vec3(1.,.96,.85)*s*smoothstep(.15,.5,uv.y);
+      vec2 sp=vec2(.5*asp,.84),d=q-sp;float L=length(d);
+      float glow=exp(-L*7.)*.6+exp(-L*22.)*.9;
+      float rays=(exp(-abs(d.x)*90.)*exp(-abs(d.y)*2.2)+exp(-abs(d.y)*90.)*exp(-abs(d.x)*3.))*.55;
+      vec2 e=vec2(d.x+d.y,d.x-d.y)*.7071;rays+=(exp(-abs(e.x)*140.)+exp(-abs(e.y)*140.))*exp(-L*5.)*.5;
+      float pulse=.88+.12*sin(t*1.3);c+=vec3(1.,.88,.6)*(glow+rays)*pulse;
+      c+=vec3(.25,.18,.08)*exp(-L*2.2)*.6;
       gl_FragColor=vec4(c,1.);}`;
+  // silhueta das colinas e casinhas de Belém, com janelas acesas
+  const TOWN = `<svg viewBox="0 0 400 120" preserveAspectRatio="xMidYMax meet"><defs><linearGradient id="tw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141a36"/><stop offset="1" stop-color="#070a18"/></linearGradient></defs>
+    <path d="M0 78 Q60 58 120 70 T240 64 T400 72 V120 H0z" fill="#0f1530" opacity=".9"/>
+    <g fill="url(#tw)"><path d="M0 92 Q50 80 100 88 T200 84 T300 90 T400 86 V120 H0z"/>
+    <rect x="132" y="66" width="22" height="24"/><rect x="152" y="58" width="18" height="32"/><path d="M150 58 l11 -9 l11 9z"/><rect x="170" y="70" width="26" height="20"/>
+    <rect x="196" y="62" width="14" height="28"/><circle cx="203" cy="61" r="7"/><rect x="210" y="72" width="30" height="18"/><rect x="238" y="64" width="18" height="26"/>
+    <rect x="256" y="74" width="24" height="16"/><rect x="60" y="80" width="20" height="14"/><rect x="318" y="78" width="24" height="14"/><rect x="340" y="72" width="14" height="20"/></g>
+    <g fill="#ffcf6e"><rect x="138" y="72" width="3" height="4"/><rect x="157" y="66" width="3" height="5"/><rect x="164" y="66" width="3" height="5"/><rect x="178" y="76" width="4" height="4"/>
+    <rect x="201" y="70" width="3" height="5"/><rect x="218" y="77" width="3" height="4"/><rect x="226" y="77" width="3" height="4"/><rect x="244" y="70" width="3" height="5"/><rect x="264" y="79" width="4" height="3"/>
+    <rect x="66" y="85" width="3" height="3"/><rect x="326" y="83" width="4" height="3"/><rect x="345" y="78" width="3" height="4"/></g></svg>`;
   function startShader() {
     const cv = document.createElement('canvas'); cv.className = 'nt-bg'; cv.setAttribute('aria-hidden', 'true');
     document.body.appendChild(cv);
+    const town = document.createElement('div'); town.className = 'nt-town'; town.setAttribute('aria-hidden', 'true'); town.innerHTML = TOWN; document.body.appendChild(town);
+    const rm = () => { cv.remove(); town.remove(); };
     const gl = cv.getContext('webgl', { antialias: false, alpha: false, powerPreference: 'low-power' });
-    if (!gl) return () => cv.remove();
+    if (!gl) return rm;
     const sh = (ty, src) => { const o = gl.createShader(ty); gl.shaderSource(o, src); gl.compileShader(o); return o; };
     const pr = gl.createProgram(); gl.attachShader(pr, sh(gl.VERTEX_SHADER, VS)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, FS)); gl.linkProgram(pr);
-    if (!gl.getProgramParameter(pr, gl.LINK_STATUS)) return () => cv.remove();
+    if (!gl.getProgramParameter(pr, gl.LINK_STATUS)) return rm;
     gl.useProgram(pr);
     const bf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, bf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
     const lp = gl.getAttribLocation(pr, 'p'); gl.enableVertexAttribArray(lp); gl.vertexAttribPointer(lp, 2, gl.FLOAT, false, 0, 0);
@@ -43,7 +58,7 @@
     }
     raf = requestAnimationFrame(draw);
     if (still) setTimeout(() => draw(performance.now() + 100), 50);
-    return () => { dead = true; cancelAnimationFrame(raf); cv.remove(); };
+    return () => { dead = true; cancelAnimationFrame(raf); rm(); };
   }
 
 

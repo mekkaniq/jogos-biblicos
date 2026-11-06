@@ -1138,10 +1138,12 @@ html.cl-on #appTabs { display: none !important; }
 .nt-panel { padding: 2px 0 6px; }
 .nt-panel[hidden] { display: none; }
 /* Natal: fundo animado vermelho e verde */
-.nt-bg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; background: linear-gradient(135deg, #8f1d2c, #1f6b45); }
+.nt-bg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; background: linear-gradient(180deg, #090f2b, #1b2a5c 60%, #3a2a4a); }
+.nt-town { position: fixed; left: 0; right: 0; bottom: 0; height: 30vw; max-height: 260px; z-index: 0; pointer-events: none; }
+.nt-town svg { width: 100%; height: 100%; display: block; }
 html.nt-on #app { position: relative; z-index: 1; }
 html.nt-on .topbar .ttl, html.nt-on .nt-foot { text-shadow: 0 1px 6px rgba(0, 0, 0, .45); }
-.nt-hero { background: rgba(24, 8, 12, .38) !important; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border-color: rgba(233, 207, 140, .8) !important; }
+.nt-hero { background: rgba(10, 16, 44, .42) !important; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border-color: rgba(233, 207, 140, .8) !important; }
 .nt-glow { background: radial-gradient(circle, rgba(255, 224, 140, .45), rgba(255, 224, 140, 0) 65%) !important; }
 .nt-tab[data-tab="h"] { background: linear-gradient(180deg, #b32d40, #7d1a2a); }
 .nt-tab[data-tab="d"] { background: linear-gradient(180deg, #2f8a58, #1b5a3b); }
