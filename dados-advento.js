@@ -7,42 +7,50 @@ window.ADVENTO_DATA = {
   // m = mês, d = dia; story = id da lição (adv* são novas; natal* já existem em dados-natal.js)
   // talk = pergunta para conversar em família; learn = frase do "Hoje aprendi" para compartilhar
   days: [
-    { m: 11, d: 29, story: 'adv1', talk: 'Que promessa você já recebeu de alguém e que foi cumprida? Deus sempre cumpre as dele!', learn: 'Desde o começo, Deus prometeu um Salvador que venceria o mal.' },
-    { m: 11, d: 30, story: 'adv2', talk: 'Quem são as famílias que você gostaria que conhecessem Jesus? Vamos orar por elas?', learn: 'Deus prometeu abençoar todas as famílias da terra, e essa bênção chega por Jesus.' },
-    { m: 12, d: 1, story: 'adv3', talk: 'Quando vocês olharem para as estrelas hoje, lembrem: Deus cuida até das estrelas e cumpre o que promete.', learn: 'Deus anunciou uma estrela e um Rei que viria de Israel: Jesus.' },
-    { m: 12, d: 2, story: 'adv4', talk: 'Como seria um rei que nunca deixa de ser bom? Jesus é assim!', learn: 'Deus prometeu a Davi um Rei que reinaria para sempre: Jesus.' },
-    { m: 12, d: 3, story: 'adv5', talk: 'Em que momentos você gosta de saber que Deus está com você?', learn: 'Emanuel quer dizer "Deus conosco". Em Jesus, Deus veio ficar perto de nós.' },
-    { m: 12, d: 4, story: 'adv6', talk: 'Qual dos nomes do menino você mais gostou: Maravilhoso, Conselheiro, Deus Forte, Pai da Eternidade ou Príncipe da Paz? Por quê?', learn: 'Jesus é a grande luz que brilha para quem está nas trevas.' },
-    { m: 12, d: 5, story: 'adv7', talk: 'Já viu uma plantinha nascer de um toco de árvore cortada? Deus faz nascer esperança onde parecia não ter mais nada.', learn: 'Quando parecia não haver mais esperança, Deus fez nascer Jesus da família de Davi.' },
-    { m: 12, d: 6, story: 'adv8', talk: 'Deus escolheu uma cidade pequena. Você já se sentiu pequeno? Deus também cuida de você!', learn: 'Deus escolheu a pequena Belém para o nascimento do Rei Jesus.' },
-    { m: 12, d: 7, story: 'adv9', talk: 'Como a nossa família pode preparar o coração para o Natal?', learn: 'Deus mandou alguém preparar o caminho para Jesus chegar.' },
-    { m: 12, d: 8, story: 'adv10', talk: 'Esperar é difícil! O que vocês estão esperando? Deus nunca se esquece das promessas dele.', learn: 'Mesmo depois de 400 anos de silêncio, Deus não esqueceu: Jesus é o Sol da justiça.' },
-    { m: 12, d: 9, story: 'adv11', talk: 'Zacarias orou por muitos anos. Pelo que vocês têm orado em família?', learn: 'Deus ouve as orações e estava preparando a chegada de Jesus.' },
-    { m: 12, d: 10, story: 'adv12', talk: 'Existe algo que parece impossível para vocês? Vamos entregar isso a Deus em oração.', learn: 'Para Deus nada é impossível: Ele cumpre tudo o que promete.' },
-    { m: 12, d: 11, story: 'natal1', talk: 'Maria disse "sim" para Deus. Como podemos dizer "sim" para Deus no nosso dia a dia?', learn: 'Maria confiou na promessa de Deus: o seu Filho se chamaria Jesus.' },
-    { m: 12, d: 12, story: 'adv13', talk: 'Quem você pode visitar ou chamar nesta semana para levar uma alegria?', learn: 'Antes mesmo de nascer, Jesus já trazia alegria.' },
-    { m: 12, d: 13, story: 'adv14', talk: 'Pelo que vocês querem agradecer a Deus hoje? Façam uma oração de louvor, como Maria.', learn: 'Maria louvou a Deus, o seu Salvador, que olha para os humildes.' },
-    { m: 12, d: 14, story: 'adv15', talk: 'Vocês sabem o que o seu nome quer dizer? Peça para alguém contar a história do seu nome.', learn: 'Deus cumpriu a promessa e mandou João, que prepararia o caminho de Jesus.' },
-    { m: 12, d: 15, story: 'adv16', talk: 'O que ajuda você quando está com medo do escuro? Jesus é a luz que vem do alto.', learn: 'Jesus é a luz que veio do alto para nos guiar no caminho da paz.' },
-    { m: 12, d: 16, story: 'natal2', talk: 'José obedeceu a Deus mesmo sem entender tudo. Quando é difícil obedecer?', learn: 'José confiou em Deus e obedeceu ao que Ele mandou.' },
-    { m: 12, d: 17, story: 'adv17', talk: 'Quem cuida de você todos os dias? Agradeça a Deus por essa pessoa e, se puder, dê um abraço nela hoje.', learn: 'Deus deu a Jesus um pai aqui na terra, José, que cuidou dele com amor.' },
-    { m: 12, d: 18, story: 'natal3', talk: 'Você já fez uma viagem longa? Como foi esperar para chegar?', learn: 'Até a ordem de um imperador serviu ao plano de Deus: Jesus nasceria em Belém.' },
-    { m: 12, d: 19, story: 'adv18', talk: 'O que quer dizer ser filho de Deus? Como é bom fazer parte da família dele!', learn: 'No tempo certo, Deus enviou seu Filho para nos fazer filhos de Deus.' },
-    { m: 12, d: 20, story: 'adv19', talk: 'Antes de você nascer, você já existia? E Jesus? Ele sempre existiu, porque Ele é Deus!', learn: 'Jesus já existia antes de nascer em Belém: Ele é Deus desde sempre.' },
-    { m: 12, d: 21, story: 'adv20', talk: 'Jesus foi bebê, criança e adulto como nós. Do que você mais gosta em saber que Ele sabe como é ser criança?', learn: 'O Filho de Deus se fez gente como nós e veio morar entre nós.' },
-    { m: 12, d: 22, story: 'adv21', talk: 'Como podemos ser humildes e servir uns aos outros, como Jesus fez?', learn: 'Jesus, o Rei, se fez pequeno por amor a nós.' },
-    { m: 12, d: 23, story: 'adv22', talk: 'Qual é o seu pão ou comida preferida? Jesus é ainda melhor: Ele é o pão que sustenta o nosso coração.', learn: 'Jesus nasceu em Belém, a "casa do pão", e Ele é o Pão da vida.' },
-    { m: 12, d: 24, story: 'natal4', talk: 'Por que o Rei dos reis nasceu num lugar tão simples?', learn: 'O Salvador nasceu num lugar humilde, para ficar perto de todos nós.' },
-    { m: 12, d: 25, story: 'natal5', talk: 'Feliz Natal! Qual é o maior presente que Deus nos deu? Agradeçam juntos por Jesus.', learn: 'Hoje é dia de alegria: nasceu o Salvador, que é Cristo, o Senhor!' }
+    { m: 11, d: 29, story: 'adv1', talk: 'Que promessa você já recebeu de alguém e que foi cumprida? Deus sempre cumpre as dele!', learn: 'Desde o começo, Deus prometeu um Salvador que venceria o mal.', verse: 'Esta te ferirá a cabeça, e tu lhe ferirás o calcanhar.', vref: 'Gênesis 3:15', pray: 'Querido Deus, obrigado porque o Senhor não desistiu de nós. Obrigado por prometer Jesus desde o começo. Ajuda a gente a confiar no Senhor. Em nome de Jesus, amém.', next: 'Amanhã no caminho: Deus chama um homem a sair de casa e olhar as estrelas.' },
+    { m: 11, d: 30, story: 'adv2', talk: 'Quem são as famílias que você gostaria que conhecessem Jesus? Vamos orar por elas?', learn: 'Deus prometeu abençoar todas as famílias da terra, e essa bênção chega por Jesus.', verse: 'Em ti serão benditas todas as famílias da terra.', vref: 'Gênesis 12:3', pray: 'Senhor, obrigado porque a sua bênção é para todas as famílias. Abençoa a nossa família e as famílias dos nossos amigos. Ensina a gente a confiar como Abraão. Em nome de Jesus, amém.', next: 'Amanhã no caminho: um homem que não queria abençoar acaba vendo uma estrela.' },
+    { m: 12, d: 1, story: 'adv3', talk: 'Quando vocês olharem para as estrelas hoje, lembrem: Deus cuida até das estrelas e cumpre o que promete.', learn: 'Deus anunciou uma estrela e um Rei que viria de Israel: Jesus.', verse: 'Uma estrela procederá de Jacó e um cetro subirá de Israel.', vref: 'Números 24:17', pray: 'Deus, obrigado porque ninguém pode desfazer as suas promessas. Obrigado por Jesus, a estrela que brilha para nós. Ajuda a gente a seguir a luz dele. Em nome de Jesus, amém.', next: 'Amanhã no caminho: um menino pastor vira rei e recebe uma promessa para sempre.' },
+    { m: 12, d: 2, story: 'adv4', talk: 'Como seria um rei que nunca deixa de ser bom? Jesus é assim!', learn: 'Deus prometeu a Davi um Rei que reinaria para sempre: Jesus.', verse: 'Teu trono será firme para sempre.', vref: '2 Samuel 7:16', pray: 'Senhor, obrigado porque Jesus é o nosso Rei para sempre. Olha o nosso coração e faz ele parecido com o de Davi, que amava o Senhor. Em nome de Jesus, amém.', next: 'Amanhã no caminho: um rei com medo recebe um sinal, e um nome muito especial.' },
+    { m: 12, d: 3, story: 'adv5', talk: 'Em que momentos você gosta de saber que Deus está com você?', learn: 'Emanuel quer dizer "Deus conosco". Em Jesus, Deus veio ficar perto de nós.', verse: 'E chamará o seu nome Emanuel.', vref: 'Isaías 7:14', pray: 'Querido Deus, obrigado porque, em Jesus, o Senhor está com a gente. Quando a gente tiver medo, lembra a gente de que o Senhor está perto. Em nome de Jesus, amém.', next: 'Amanhã no caminho: uma grande luz para quem estava no escuro, e quatro nomes maravilhosos.' },
+    { m: 12, d: 4, story: 'adv6', talk: 'Qual dos nomes do menino você mais gostou: Maravilhoso, Conselheiro, Deus Forte, Pai da Eternidade ou Príncipe da Paz? Por quê?', learn: 'Jesus é a grande luz que brilha para quem está nas trevas.', verse: 'O povo que andava em trevas viu uma grande luz.', vref: 'Isaías 9:2', pray: 'Jesus, o Senhor é Maravilhoso, Conselheiro, Deus Forte, Pai da Eternidade e Príncipe da Paz. Brilha no nosso coração e enche a nossa casa da sua paz. Amém.', next: 'Amanhã no caminho: uma árvore cortada, e um brotinho que ninguém esperava.' },
+    { m: 12, d: 5, story: 'adv7', talk: 'Já viu uma plantinha nascer de um toco de árvore cortada? Deus faz nascer esperança onde parecia não ter mais nada.', learn: 'Quando parecia não haver mais esperança, Deus fez nascer Jesus da família de Davi.', verse: 'Brotará um rebento do tronco de Jessé.', vref: 'Isaías 11:1', pray: 'Senhor, obrigado porque o Senhor faz nascer esperança onde parecia não ter mais nada. Quando a gente ficar triste, lembra a gente de Jesus. Em nome de Jesus, amém.', next: 'Amanhã no caminho: uma cidade pequenininha que Deus escolheu para algo muito grande.' },
+    { m: 12, d: 6, story: 'adv8', talk: 'Deus escolheu uma cidade pequena. Você já se sentiu pequeno? Deus também cuida de você!', learn: 'Deus escolheu a pequena Belém para o nascimento do Rei Jesus.', verse: 'E tu, Belém Efrata, posto que pequena entre os milhares de Judá, de ti me sairá o que governará em Israel.', vref: 'Miqueias 5:2', pray: 'Senhor, obrigado porque o Senhor cuida das coisas pequenas e de gente pequena também. Obrigado por Jesus, o Rei que nasceu em Belém. Em nome de Jesus, amém.', next: 'Amanhã no caminho: uma voz no deserto pede para preparar o caminho.' },
+    { m: 12, d: 7, story: 'adv9', talk: 'Como a nossa família pode preparar o coração para o Natal?', learn: 'Deus mandou alguém preparar o caminho para Jesus chegar.', verse: 'Preparai o caminho do Senhor.', vref: 'Isaías 40:3', pray: 'Jesus, queremos preparar o nosso coração para o Senhor. Perdoa os nossos pecados e tira de nós o que atrapalha. Vem morar em nós. Amém.', next: 'Amanhã no caminho: a última promessa antes de um longo silêncio, e um sol que nasce.' },
+    { m: 12, d: 8, story: 'adv10', talk: 'Esperar é difícil! O que vocês estão esperando? Deus nunca se esquece das promessas dele.', learn: 'Mesmo depois de 400 anos de silêncio, Deus não esqueceu: Jesus é o Sol da justiça.', verse: 'Nascerá o sol da justiça, e cura trará nas suas asas.', vref: 'Malaquias 4:2', pray: 'Senhor, às vezes esperar é difícil. Ensina a gente a esperar no Senhor com paciência e alegria. Obrigado por Jesus, o nosso Sol. Em nome de Jesus, amém.', next: 'Amanhã no caminho: o silêncio acaba, dentro do templo, com um sacerdote bem velhinho.' },
+    { m: 12, d: 9, story: 'adv11', talk: 'Zacarias orou por muitos anos. Pelo que vocês têm orado em família?', learn: 'Deus ouve as orações e estava preparando a chegada de Jesus.', verse: 'Não temas, porque a tua oração foi ouvida.', vref: 'Lucas 1:13', pray: 'Deus, obrigado porque o Senhor ouve as nossas orações. Ajuda a gente a continuar orando e a confiar, mesmo quando a resposta demora. Em nome de Jesus, amém.', next: 'Amanhã no caminho: Isabel em casa, esperando com fé um milagre.' },
+    { m: 12, d: 10, story: 'adv12', talk: 'Existe algo que parece impossível para vocês? Vamos entregar isso a Deus em oração.', learn: 'Para Deus nada é impossível: Ele cumpre tudo o que promete.', verse: 'Porque para Deus nada é impossível.', vref: 'Lucas 1:37', pray: 'Senhor, para o Senhor nada é impossível. Entregamos hoje nas suas mãos as coisas que parecem difíceis para nós. Em nome de Jesus, amém.', next: 'Amanhã no caminho: Gabriel visita Maria em Nazaré, com a notícia mais importante de todas.' },
+    { m: 12, d: 11, story: 'natal1', talk: 'Maria disse "sim" para Deus. Como podemos dizer "sim" para Deus no nosso dia a dia?', learn: 'Maria confiou na promessa de Deus: o seu Filho se chamaria Jesus.', verse: 'Eis aqui a serva do Senhor; cumpra-se em mim segundo a tua palavra.', vref: 'Lucas 1:38', pray: 'Querido Deus, obrigado por Jesus, o Salvador. Ajuda a gente a confiar no Senhor como Maria confiou, e a dizer sim para o Senhor todos os dias. Em nome de Jesus, amém.', next: 'Amanhã no caminho: Maria faz uma viagem pelas montanhas, e um bebê pula de alegria.' },
+    { m: 12, d: 12, story: 'adv13', talk: 'Quem você pode visitar ou chamar nesta semana para levar uma alegria?', learn: 'Antes mesmo de nascer, Jesus já trazia alegria.', verse: 'Bem-aventurada a que creu.', vref: 'Lucas 1:45', pray: 'Jesus, obrigado pela alegria que o Senhor traz. Ajuda a gente a levar essa alegria para outras pessoas, visitando, ajudando e contando de ti. Amém.', next: 'Amanhã no caminho: Maria canta uma canção que a gente pode cantar também.' },
+    { m: 12, d: 13, story: 'adv14', talk: 'Pelo que vocês querem agradecer a Deus hoje? Façam uma oração de louvor, como Maria.', learn: 'Maria louvou a Deus, o seu Salvador, que olha para os humildes.', verse: 'A minha alma engrandece ao Senhor, e o meu espírito se alegra em Deus meu Salvador.', vref: 'Lucas 1:46-47', pray: 'Senhor, como Maria, queremos contar como o Senhor é grande. Obrigado por cuidar de nós e por Jesus, o nosso Salvador. Em nome de Jesus, amém.', next: 'Amanhã no caminho: o bebê de Isabel nasce, e todo mundo quer saber o nome dele.' },
+    { m: 12, d: 14, story: 'adv15', talk: 'Vocês sabem o que o seu nome quer dizer? Peça para alguém contar a história do seu nome.', learn: 'Deus cumpriu a promessa e mandou João, que prepararia o caminho de Jesus.', verse: 'O seu nome é João.', vref: 'Lucas 1:63', pray: 'Deus, obrigado porque o Senhor é bondoso e cumpre o que promete. Ajuda a gente a obedecer ao Senhor, como Zacarias e Isabel. Em nome de Jesus, amém.', next: 'Amanhã no caminho: Zacarias, que ficou mudo tanto tempo, faz uma canção sobre o sol que nasce.' },
+    { m: 12, d: 15, story: 'adv16', talk: 'O que ajuda você quando está com medo do escuro? Jesus é a luz que vem do alto.', learn: 'Jesus é a luz que veio do alto para nos guiar no caminho da paz.', verse: 'Bendito o Senhor Deus de Israel, porque visitou e remiu o seu povo.', vref: 'Lucas 1:68', pray: 'Senhor, obrigado porque o Senhor veio nos visitar em Jesus. Ilumina o nosso caminho e guia os nossos pés no caminho da paz. Em nome de Jesus, amém.', next: 'Amanhã no caminho: José tem um sonho, e precisa tomar uma decisão.' },
+    { m: 12, d: 16, story: 'natal2', talk: 'José obedeceu a Deus mesmo sem entender tudo. Quando é difícil obedecer?', learn: 'José confiou em Deus e obedeceu ao que Ele mandou.', verse: 'Ele salvará o seu povo dos seus pecados.', vref: 'Mateus 1:21', pray: 'Deus, quando a gente não entender tudo, ajuda a gente a confiar e obedecer como José. Obrigado por Jesus, que veio nos salvar. Em nome de Jesus, amém.', next: 'Amanhã no caminho: o homem que Deus escolheu para ser o pai de Jesus aqui na terra.' },
+    { m: 12, d: 17, story: 'adv17', talk: 'Quem cuida de você todos os dias? Agradeça a Deus por essa pessoa e, se puder, dê um abraço nela hoje.', learn: 'Deus deu a Jesus um pai aqui na terra, José, que cuidou dele com amor.', verse: 'E crescia Jesus em sabedoria, e em estatura, e em graça para com Deus e os homens.', vref: 'Lucas 2:52', pray: 'Pai nosso que estás no céu, obrigado pelos pais e por quem cuida de nós. Abençoa e protege a nossa família, como o Senhor protegeu a família de Jesus. Em nome de Jesus, amém.', next: 'Amanhã no caminho: uma ordem do imperador, uma viagem longa e um burrinho. Rumo a Belém!' },
+    { m: 12, d: 18, story: 'natal3', talk: 'Você já fez uma viagem longa? Como foi esperar para chegar?', learn: 'Até a ordem de um imperador serviu ao plano de Deus: Jesus nasceria em Belém.', verse: 'O Senhor guardará a tua entrada e a tua saída.', vref: 'Salmo 121:8', pray: 'Senhor, obrigado porque o Senhor cuida de cada detalhe. Guarda a nossa família quando a gente sai e quando a gente volta, como guardou Maria e José. Em nome de Jesus, amém.', next: 'Amanhã no caminho: por que Jesus nasceu exatamente naquela época? Deus tinha um tempo certo.' },
+    { m: 12, d: 19, story: 'adv18', talk: 'O que quer dizer ser filho de Deus? Como é bom fazer parte da família dele!', learn: 'No tempo certo, Deus enviou seu Filho para nos fazer filhos de Deus.', verse: 'Mas, vindo a plenitude dos tempos, Deus enviou seu Filho.', vref: 'Gálatas 4:4', pray: 'Pai, obrigado porque o tempo do Senhor é perfeito. Obrigado por enviar Jesus e por nos receber na sua família. Ensina a gente a esperar no Senhor. Em nome de Jesus, amém.', next: 'Amanhã no caminho: voltamos lá para antes do jardim, antes de tudo existir.' },
+    { m: 12, d: 20, story: 'adv19', talk: 'Antes de você nascer, você já existia? E Jesus? Ele sempre existiu, porque Ele é Deus!', learn: 'Jesus já existia antes de nascer em Belém: Ele é Deus desde sempre.', verse: 'No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.', vref: 'João 1:1', pray: 'Jesus, o Senhor criou todas as coisas e é a luz do mundo. Obrigado por vir até nós. Brilha no nosso coração e espanta todo escuro. Amém.', next: 'Amanhã no caminho: o Criador de tudo se faz pequeno e vem morar com a gente.' },
+    { m: 12, d: 21, story: 'adv20', talk: 'Jesus foi bebê, criança e adulto como nós. Do que você mais gosta em saber que Ele sabe como é ser criança?', learn: 'O Filho de Deus se fez gente como nós e veio morar entre nós.', verse: 'E o Verbo se fez carne, e habitou entre nós.', vref: 'João 1:14', pray: 'Jesus, obrigado por vir morar com a gente. Queremos receber o Senhor no nosso coração e na nossa casa. Ensina a gente a ser cheio de graça e verdade. Amém.', next: 'Amanhã no caminho: o Rei que deixou o trono e escolheu ser servo.' },
+    { m: 12, d: 22, story: 'adv21', talk: 'Como podemos ser humildes e servir uns aos outros, como Jesus fez?', learn: 'Jesus, o Rei, se fez pequeno por amor a nós.', verse: 'De sorte que haja em vós o mesmo sentimento que houve também em Cristo Jesus.', vref: 'Filipenses 2:5', pray: 'Jesus, o Senhor era Rei e escolheu ser servo por amor a nós. Ensina a gente a ser humilde e a servir as pessoas com alegria, como o Senhor. Amém.', next: 'Amanhã no caminho: o nome Belém esconde um segredo. Tem a ver com pão!' },
+    { m: 12, d: 23, story: 'adv22', talk: 'Qual é o seu pão ou comida preferida? Jesus é ainda melhor: Ele é o pão que sustenta o nosso coração.', learn: 'Jesus nasceu em Belém, a "casa do pão", e Ele é o Pão da vida.', verse: 'Eu sou o pão da vida.', vref: 'João 6:35', pray: 'Jesus, o Senhor é o pão da vida. Obrigado pela comida da nossa mesa e por alimentar o nosso coração. Faz a gente ter fome do Senhor. Amém.', next: 'Amanhã no caminho: a noite mais esperada de todas. Chegamos a Belém!' },
+    { m: 12, d: 24, story: 'natal4', talk: 'Por que o Rei dos reis nasceu num lugar tão simples?', learn: 'O Salvador nasceu num lugar humilde, para ficar perto de todos nós.', verse: 'Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito.', vref: 'João 3:16', pray: 'Querido Deus, obrigado por esta noite tão especial. Obrigado por cumprir todas as suas promessas e por nos dar Jesus. Que Ele tenha lugar no nosso coração. Em nome de Jesus, amém.', next: 'Amanhã é Natal! Uns pastores no campo vão receber a notícia mais alegre do mundo.' },
+    { m: 12, d: 25, story: 'natal5', talk: 'Feliz Natal! Qual é o maior presente que Deus nos deu? Agradeçam juntos por Jesus.', learn: 'Hoje é dia de alegria: nasceu o Salvador, que é Cristo, o Senhor!', verse: 'Na cidade de Davi, vos nasceu hoje o Salvador, que é Cristo, o Senhor.', vref: 'Lucas 2:11', pray: 'Jesus, feliz aniversário! Obrigado por vir como nosso Salvador. Enche a nossa família de alegria e ajuda a gente a contar essa boa notícia para todo mundo. Amém.', next: 'O caminho chegou a Belém! Ainda tem três histórias de Natal para continuar: os pastores, a estrela dos magos e os presentes para o Rei.' }
   ],
   stories: [
     {
       id: 'adv1', natal: 1, name: 'A promessa no jardim', icon: '🌿', sticker: '🌿', scene: 'jardim', ref: 'Gênesis 3:15',
       scenes: [
-        { art: '🌳🌸', bg: 'jardim', fx: 'brilho', text: 'No começo, Deus fez um jardim lindo e colocou ali Adão e Eva. Tudo era muito bom, e eles viviam perto de Deus.', r: 'Gênesis 2:8' },
-        { art: '🐍🍎', bg: 'jardim', text: 'Mas a serpente enganou Eva, e eles desobedeceram a Deus. O pecado entrou no mundo, e Adão e Eva ficaram com medo e se esconderam.', r: 'Gênesis 3:1-8' },
-        { art: '✨💛', bg: 'aurora', fx: 'luz', text: 'Mesmo assim, Deus não desistiu deles. Ele fez uma promessa: um dia nasceria um descendente da mulher que esmagaria a cabeça da serpente.', r: 'Gênesis 3:15' },
-        { art: '⭐✝️', bg: 'aurora', fx: 'estrelas', text: 'Essa foi a primeira promessa do Natal! Muitos anos depois, Jesus nasceu para vencer o pecado e o mal. Deus sempre cumpre o que promete.', r: 'Gálatas 4:4' }
+        { art: '🌳🌸', bg: 'jardim', fx: 'brilho', text: 'Hoje começa o nosso Caminho até Belém! E ele começa lá no início de tudo. Deus criou o céu, a terra, os rios, os animais e as flores. E viu que tudo era muito bom.', r: 'Gênesis 1:31; 2:8' },
+        { art: '🌿🦋', bg: 'jardim', text: 'Deus plantou um jardim lindo, chamado Éden, e colocou ali o primeiro homem, Adão, e a primeira mulher, Eva. Eles cuidavam do jardim e viviam pertinho de Deus.', r: 'Gênesis 2:8, 15' },
+        { art: '💛🌳', bg: 'jardim', fx: 'coracoes', text: 'Deus deu tudo para eles com amor. Só pediu uma coisa: que não comessem do fruto de uma árvore. Era um jeito de mostrar que confiavam nele.', r: 'Gênesis 2:16-17' },
+        { art: '🐍🍎', bg: 'jardim', text: 'Mas apareceu uma serpente muito esperta, e ela enganou Eva. Disse que Deus estava escondendo algo bom deles. Era mentira!', r: 'Gênesis 3:1-5' },
+        { art: '🍎😟', bg: 'jardim', fx: 'vento', text: 'Eva comeu do fruto e deu a Adão, e ele também comeu. Eles desobedeceram a Deus. Na mesma hora, sentiram vergonha e medo.', r: 'Gênesis 3:6-7' },
+        { art: '🌳🙈', bg: 'jardim', fx: 'vento', text: 'Quando ouviram Deus andando no jardim, Adão e Eva se esconderam atrás das árvores. O pecado tinha estragado a amizade com Deus.', r: 'Gênesis 3:8-10' },
+        { art: '🌧️💔', bg: 'aurora', fx: 'chuva', text: 'O pecado é quando a gente desobedece a Deus. Ele entrou no mundo naquele dia, e trouxe tristeza, dor e morte. Nós também erramos e precisamos de ajuda.', r: 'Romanos 5:12' },
+        { art: '✨💛', bg: 'aurora', fx: 'luz', text: 'Mas Deus não desistiu deles. Ele foi procurar Adão e Eva! E, ali mesmo, fez uma promessa maravilhosa, a primeira promessa do Natal.', r: 'Gênesis 3:9, 15' },
+        { art: '👣🐍', bg: 'aurora', fx: 'brilho', text: 'Deus disse que um dia nasceria um menino, um descendente da mulher, que esmagaria a cabeça da serpente. Ele venceria o mal de uma vez por todas.', r: 'Gênesis 3:15' },
+        { art: '🧥💛', bg: 'jardim', fx: 'coracoes', text: 'Antes de Adão e Eva saírem do jardim, Deus fez roupas para eles. Mesmo quando erramos, Deus continua cuidando de nós.', r: 'Gênesis 3:21' },
+        { art: '👣⭐', bg: 'noite', fx: 'estrelas', text: 'A partir daquele dia, todo o povo de Deus ficou esperando o menino prometido. Esse caminho de espera é o Advento, e ele vai nos levar até Belém!', r: 'Gálatas 4:4' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'O menino prometido é Jesus! Ele nasceu, viveu sem pecado, morreu na cruz e ressuscitou para vencer o pecado e o mal. Deus sempre cumpre o que promete.', r: '1 João 3:8' }
       ],
       small: [
         { q: 'Onde Adão e Eva moravam?', o: [['🌳', 'Num jardim'], ['🏰', 'Num castelo'], ['🚀', 'Num foguete']] },
@@ -58,10 +66,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv2', natal: 1, name: 'Abraão, bênção para todas as famílias', icon: '⭐', sticker: '⭐', scene: 'deserto', ref: 'Gênesis 12:1-3',
       scenes: [
-        { art: '⛺🐪', bg: 'deserto', text: 'Deus chamou um homem chamado Abraão e disse: "Sai da tua terra e vai para a terra que eu te mostrarei." E Abraão obedeceu.', r: 'Gênesis 12:1, 4' },
-        { art: '💛👨‍👩‍👧', bg: 'aurora', fx: 'luz', text: 'Deus fez uma promessa enorme: por meio da família de Abraão, todas as famílias da terra seriam abençoadas.', r: 'Gênesis 12:3' },
-        { art: '🌌⭐', bg: 'noite', fx: 'estrelas', text: 'Abraão olhou para o céu cheio de estrelas, e Deus disse que a sua família seria assim, grande demais para contar. Abraão creu em Deus.', r: 'Gênesis 15:5-6' },
-        { art: '🌍✝️', bg: 'aurora', fx: 'coracoes', text: 'Jesus nasceu da família de Abraão. Por meio de Jesus, a bênção de Deus chega a pessoas do mundo inteiro, e também à nossa família!', r: 'Gálatas 3:8, 14' }
+        { art: '👣🌿', bg: 'aurora', fx: 'luz', text: 'Ontem, no jardim, Deus prometeu um menino que venceria o mal. Muitos e muitos anos se passaram, e o mundo ficou cheio de gente. Mas Deus não tinha esquecido!', r: 'Gênesis 3:15' },
+        { art: '🏙️👴', bg: 'cidade', text: 'Numa cidade chamada Ur vivia um homem chamado Abrão, com sua esposa, Sarai. Um dia, Deus falou com ele.', r: 'Gênesis 11:31; 12:1' },
+        { art: '🗣️✨', bg: 'aurora', fx: 'luz', text: 'Deus disse: "Sai da tua terra e da casa de teu pai, e vai para a terra que eu te mostrarei." Abrão nem sabia para onde ia!', r: 'Gênesis 12:1' },
+        { art: '⛺🐪', bg: 'deserto', fx: 'vento', text: 'Mas Abrão confiou em Deus e obedeceu. Arrumou as tendas, os camelos, as ovelhas e a família, e partiu pela estrada.', r: 'Gênesis 12:4-5' },
+        { art: '💛👨‍👩‍👧', bg: 'aurora', fx: 'coracoes', text: 'No caminho, Deus fez uma promessa enorme: "Em ti serão benditas todas as famílias da terra." Todas mesmo, até a sua família!', r: 'Gênesis 12:2-3' },
+        { art: '👵⏳', bg: 'deserto', text: 'Só tinha um problema: Abrão e Sarai eram bem velhinhos e não tinham filhos. Como a família deles ia abençoar o mundo inteiro?', r: 'Gênesis 15:2-3' },
+        { art: '🌌⭐', bg: 'noite', fx: 'estrelas', text: 'Numa noite, Deus levou Abrão para fora da tenda e disse: "Olha agora para os céus, e conta as estrelas." Abrão olhou, olhou... eram estrelas demais!', r: 'Gênesis 15:5' },
+        { art: '⭐🙏', bg: 'noite', fx: 'estrelas', text: '"Assim será a tua descendência", disse Deus. E Abrão creu no Senhor. Deus até mudou o nome dele para Abraão, que quer dizer "pai de muitos povos".', r: 'Gênesis 15:5-6' },
+        { art: '👶🎉', bg: 'deserto', fx: 'coracoes', text: 'E Deus cumpriu a promessa: Sara, já velhinha, teve um bebê chamado Isaque! O nome dele lembra riso, porque a família ficou muito feliz.', r: 'Gênesis 21:1-3' },
+        { art: '🐑⛰️', bg: 'monte', fx: 'luz', text: 'Mais tarde, num monte, Abraão disse a Isaque: "Deus proverá para si o cordeiro." E Deus mandou um carneiro no lugar de Isaque. Isso apontava para algo ainda maior.', r: 'Gênesis 22:8, 13' },
+        { art: '🌳👨‍👩‍👧‍👦', bg: 'campo', text: 'Da família de Abraão nasceu Isaque, depois Jacó, e muitos outros. Geração depois de geração, o caminho da promessa continuava.', r: 'Mateus 1:1-2' },
+        { art: '🌍✝️', bg: 'aurora', fx: 'luz', text: 'Jesus nasceu da família de Abraão. Ele é o Cordeiro de Deus que tira o pecado do mundo. Por meio de Jesus, a bênção chega a todas as famílias, e também à nossa!', r: 'Gálatas 3:8, 14; João 1:29' }
       ],
       small: [
         { q: 'Quem Deus chamou para ir a uma nova terra?', o: [['⛺', 'Abraão'], ['🐟', 'Jonas'], ['🦁', 'Daniel']] },
@@ -77,10 +93,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv3', natal: 1, name: 'A estrela de Jacó', icon: '🌟', sticker: '🌟', scene: 'noite', ref: 'Números 24:17',
       scenes: [
-        { art: '⛺⛺⛺', bg: 'deserto', text: 'O povo de Deus estava acampado no deserto. Um rei inimigo chamou um homem chamado Balaão para falar mal do povo de Deus.', r: 'Números 22:4-6' },
-        { art: '🗣️💛', bg: 'monte', fx: 'brilho', text: 'Mas Deus não deixou! Toda vez que Balaão abria a boca, só conseguia dizer as bênçãos que Deus colocava nela.', r: 'Números 23:11-12' },
-        { art: '🌟👑', bg: 'noite', fx: 'estrelas', text: 'E Deus fez Balaão anunciar algo maravilhoso: "Uma estrela procederá de Jacó e um cetro subirá de Israel." Um Rei viria do povo de Deus!', r: 'Números 24:17' },
-        { art: '⭐✝️', bg: 'noite', fx: 'luz', text: 'Muitos anos depois, uma estrela guiou os magos até o menino Jesus. Ele é o Rei prometido, e nenhum plano contra o povo de Deus pode impedir as promessas dele.', r: 'Mateus 2:2' }
+        { art: '👣⭐', bg: 'noite', fx: 'estrelas', text: 'Lembra das estrelas de Abraão? A família dele cresceu tanto que virou um povo enorme, o povo de Israel. Agora eles estavam viajando pelo deserto, rumo à terra prometida.', r: 'Gênesis 15:5' },
+        { art: '⛺⛺⛺', bg: 'deserto', text: 'O povo acampou perto das terras de Moabe. Eram tantas tendas que pareciam um mar de tendas no deserto!', r: 'Números 22:1' },
+        { art: '👑😠', bg: 'palacio', text: 'O rei de Moabe, chamado Balaque, ficou com medo daquele povo tão grande. Então chamou um homem chamado Balaão e pediu: "Vem e amaldiçoa esse povo para mim."', r: 'Números 22:2-6' },
+        { art: '🫏🛤️', bg: 'deserto', fx: 'vento', text: 'Balaão subiu na sua jumenta e foi pela estrada. Mas Deus não queria que ele amaldiçoasse o seu povo.', r: 'Números 22:21-22' },
+        { art: '🫏🗣️', bg: 'deserto', fx: 'brilho', text: 'No caminho, a jumenta parou e não quis andar mais. E então aconteceu algo incrível: Deus fez a jumenta falar! Balaão levou o maior susto.', r: 'Números 22:28' },
+        { art: '⛰️👀', bg: 'monte', text: 'Balaão subiu num monte e olhou para as tendas de Israel. Abriu a boca para amaldiçoar, mas só conseguiu abençoar. Ninguém pode amaldiçoar quem Deus abençoou!', r: 'Números 23:7-8' },
+        { art: '🙏✨', bg: 'monte', fx: 'luz', text: 'Balaão disse: "Deus não é homem, para que minta." Quando Deus promete, Ele cumpre. Sempre!', r: 'Números 23:19' },
+        { art: '🌌⭐', bg: 'noite', fx: 'estrelas', text: 'Então Deus deu a Balaão uma visão do futuro, bem lá longe: "Uma estrela procederá de Jacó e um cetro subirá de Israel."', r: 'Números 24:17' },
+        { art: '⭐👑', bg: 'noite', fx: 'luz', text: 'A estrela e o cetro eram sinais de um Rei. Um Rei muito especial ia nascer da família de Jacó, neto de Abraão. Mas não seria logo: "não agora", disse Balaão.', r: 'Números 24:17' },
+        { art: '😤👑', bg: 'palacio', text: 'O rei Balaque ficou muito bravo e mandou Balaão embora. O plano dele não deu certo. O plano de Deus sempre dá.', r: 'Números 24:10-11' },
+        { art: '🐪⭐', bg: 'deserto', fx: 'estrelas', text: 'Muitos e muitos anos depois, uns sábios do Oriente viram uma estrela no céu e saíram procurando o Rei que tinha nascido. Vamos encontrar com eles no fim do nosso caminho!', r: 'Mateus 2:1-2' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'Esse Rei é Jesus. Ele mesmo disse: "Eu sou a resplandecente estrela da manhã." Jesus é a luz que Deus prometeu.', r: 'Apocalipse 22:16' }
       ],
       small: [
         { q: 'O que Balaão anunciou que viria de Jacó?', o: [['🌟', 'Uma estrela'], ['🌧️', 'Uma chuva'], ['🐸', 'Um sapo']] },
@@ -96,10 +120,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv4', natal: 1, name: 'Um rei para sempre', icon: '👑', sticker: '👑', scene: 'palacio', ref: '2 Samuel 7:12-13',
       scenes: [
-        { art: '🐑🎶', bg: 'campo', text: 'Davi era um pastorzinho que cuidava de ovelhas e tocava harpa. Deus o escolheu para ser rei de Israel.', r: '1 Samuel 16:11-13' },
-        { art: '🏛️💭', bg: 'palacio', text: 'Já rei, Davi queria construir uma casa para Deus. Mas Deus disse que Ele é quem faria uma "casa" para Davi: uma família de reis.', r: '2 Samuel 7:2, 11' },
-        { art: '👑✨', bg: 'aurora', fx: 'luz', text: 'Deus prometeu: "Confirmarei o trono do seu reino para sempre." Da família de Davi viria um Rei que nunca deixaria de reinar.', r: '2 Samuel 7:13' },
-        { art: '⭐👑', bg: 'aurora', fx: 'estrelas', text: 'Esse Rei é Jesus! O anjo disse a Maria que Deus daria a Jesus o trono de Davi, e que o seu reino não teria fim.', r: 'Lucas 1:32-33' }
+        { art: '👣👑', bg: 'aurora', fx: 'luz', text: 'Ontem vimos que um Rei ia nascer da família de Jacó. O povo de Israel chegou à terra prometida e, depois de muito tempo, pediu um rei.', r: 'Números 24:17' },
+        { art: '🐑🌾', bg: 'campo', text: 'Em Belém, um menino chamado Davi cuidava das ovelhas do pai. Ele era o mais novo da família, e ninguém imaginava que ele seria rei.', r: '1 Samuel 16:11' },
+        { art: '🎵🐑', bg: 'campo', fx: 'coracoes', text: 'Enquanto cuidava das ovelhas, Davi tocava harpa e cantava para Deus. Ele escreveu: "O Senhor é o meu pastor, nada me faltará."', r: 'Salmo 23:1' },
+        { art: '🫒✨', bg: 'campo', fx: 'luz', text: 'Deus mandou o profeta Samuel a Belém e escolheu Davi para ser rei. As pessoas olham por fora, mas Deus olha o coração.', r: '1 Samuel 16:7, 13' },
+        { art: '🪨💪', bg: 'monte', text: 'Davi confiava tanto em Deus que enfrentou um gigante chamado Golias só com uma funda e uma pedrinha. E Deus deu a vitória!', r: '1 Samuel 17:45, 50' },
+        { art: '👑🏰', bg: 'palacio', fx: 'brilho', text: 'Depois de muitos anos, Davi se tornou rei de todo o povo de Israel. Ele morava num palácio em Jerusalém.', r: '2 Samuel 5:3-4' },
+        { art: '🏠💭', bg: 'palacio', text: 'Um dia, Davi pensou: "Eu moro numa casa bonita, e a arca de Deus fica numa tenda. Vou construir uma casa para Deus!"', r: '2 Samuel 7:1-2' },
+        { art: '🗣️✨', bg: 'noite', fx: 'luz', text: 'Mas, naquela noite, Deus falou com o profeta Natã: "Diga a Davi que eu é que vou construir uma casa para ele." Uma casa que quer dizer família.', r: '2 Samuel 7:4-5, 11' },
+        { art: '👑♾️', bg: 'aurora', fx: 'brilho', text: 'Deus prometeu que da família de Davi viria um Rei, e que o reino dele seria firmado para sempre. Para sempre mesmo, sem fim!', r: '2 Samuel 7:12-13, 16' },
+        { art: '🙏💛', bg: 'palacio', fx: 'coracoes', text: 'Davi ficou tão emocionado que se sentou diante de Deus e disse: "Quem sou eu, Senhor Deus, para que me tenhas trazido até aqui?"', r: '2 Samuel 7:18' },
+        { art: '📜⏳', bg: 'cidade', text: 'Os reis que vieram depois de Davi foram passando, um por um. Alguns foram bons, outros não. Nenhum reinou para sempre. O povo continuou esperando.', r: 'Isaías 9:7' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'Até que um anjo disse a Maria: "Deus lhe dará o trono de Davi, seu pai, e o seu reino não terá fim." Jesus é o Rei para sempre, e Ele é bom o tempo todo.', r: 'Lucas 1:32-33' }
       ],
       small: [
         { q: 'O que Davi fazia quando era menino?', o: [['🐑', 'Cuidava de ovelhas'], ['🚗', 'Dirigia carros'], ['🎮', 'Jogava videogame']] },
@@ -115,10 +147,17 @@ window.ADVENTO_DATA = {
     {
       id: 'adv5', natal: 1, name: 'O menino chamado Emanuel', icon: '💛', sticker: '💛', scene: 'cidade', ref: 'Isaías 7:14',
       scenes: [
-        { art: '📜🕯️', bg: 'cidade', text: 'Isaías era um profeta, alguém que levava ao povo as mensagens de Deus. Naquele tempo, o povo e o rei estavam com muito medo dos inimigos.', r: 'Isaías 7:1-2' },
-        { art: '✨💛', bg: 'aurora', fx: 'luz', text: 'Deus mandou Isaías dar um sinal: "Eis que a virgem conceberá, e dará à luz um filho, e chamará o seu nome Emanuel."', r: 'Isaías 7:14' },
-        { art: '💛🤝', bg: 'aurora', fx: 'coracoes', text: 'Emanuel quer dizer "Deus conosco". Deus estava dizendo: "Não tenham medo, eu vou estar com vocês."', r: 'Mateus 1:23' },
-        { art: '⭐🏘️', bg: 'noite', fx: 'estrelas', text: 'Essa promessa se cumpriu quando Jesus nasceu da virgem Maria. Em Jesus, Deus veio estar conosco de verdade, e Ele prometeu estar conosco todos os dias.', r: 'Mateus 28:20' }
+        { art: '👣👑', bg: 'aurora', fx: 'luz', text: 'Ontem, Deus prometeu a Davi um Rei para sempre. Passaram-se muitos anos, e agora quem reinava em Jerusalém era Acaz, da família de Davi.', r: '2 Samuel 7:16' },
+        { art: '⚔️😨', bg: 'cidade', fx: 'vento', text: 'Dois reis inimigos vinham atacar Jerusalém. O rei Acaz e o povo tremiam de medo, como as árvores tremem quando bate o vento.', r: 'Isaías 7:1-2' },
+        { art: '👴📜', bg: 'cidade', text: 'Deus mandou o profeta Isaías falar com o rei: "Não temas. Fica tranquilo. Esses reis não vão vencer."', r: 'Isaías 7:3-4' },
+        { art: '🙏❓', bg: 'palacio', text: 'Isaías disse: "Pede um sinal a Deus." Mas Acaz não quis. Ele não queria confiar em Deus; preferia pedir ajuda a outros reis.', r: 'Isaías 7:10-12' },
+        { art: '✨🎁', bg: 'aurora', fx: 'luz', text: 'Então Isaías disse: "Portanto o mesmo Senhor vos dará um sinal." Era um sinal que Deus mesmo ia dar, um sinal para todos nós.', r: 'Isaías 7:13-14' },
+        { art: '🤰💛', bg: 'aurora', fx: 'brilho', text: '"Eis que a virgem conceberá, e dará à luz um filho, e chamará o seu nome Emanuel." Uma moça que nunca tinha se casado teria um filho. Só Deus poderia fazer isso!', r: 'Isaías 7:14' },
+        { art: '🔤💛', bg: 'aurora', fx: 'coracoes', text: 'E o nome do menino seria Emanuel. Sabe o que quer dizer? "Deus conosco." Deus mesmo viria ficar com o seu povo.', r: 'Mateus 1:23' },
+        { art: '🌙⏳', bg: 'noite', fx: 'estrelas', text: 'O povo guardou essa promessa no coração. Os anos passaram, os reis passaram, e eles continuavam lembrando: um dia virá o Emanuel.', r: 'Isaías 7:14' },
+        { art: '🌙💤', bg: 'noite', fx: 'estrelas', text: 'Uns setecentos anos depois, Deus falou com José num sonho e lembrou dessa promessa: Maria teria um filho, e Ele seria o Emanuel.', r: 'Mateus 1:20-23' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'Esse menino é Jesus! Em Jesus, Deus não ficou longe, lá no céu. Ele veio morar perto de nós, como um de nós.', r: 'Mateus 1:23' },
+        { art: '🏠💛', bg: 'jardim', fx: 'coracoes', text: 'Quando temos medo, como o rei Acaz, podemos lembrar: Jesus disse "Eis que eu estou convosco todos os dias." Deus está com a gente na escola, em casa e de noite também.', r: 'Mateus 28:20' }
       ],
       small: [
         { q: 'O que quer dizer Emanuel?', o: [['💛', 'Deus conosco'], ['🍞', 'Pão quentinho'], ['🌧️', 'Dia de chuva']] },
@@ -134,10 +173,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv6', natal: 1, name: 'Maravilhoso, Conselheiro', icon: '🕯️', sticker: '🕯️', scene: 'noite', ref: 'Isaías 9:2, 6',
       scenes: [
-        { art: '🌑😟', bg: 'noite', text: 'Houve um tempo em que o povo de Deus estava triste, como quem anda no escuro sem enxergar o caminho.', r: 'Isaías 9:1' },
-        { art: '🕯️✨', bg: 'aurora', fx: 'luz', text: 'Mas Deus prometeu: "O povo que andava em trevas viu uma grande luz." A tristeza não ia durar para sempre!', r: 'Isaías 9:2' },
-        { art: '⭐💛', bg: 'aurora', fx: 'estrelas', text: '"Porque um menino nos nasceu, um filho se nos deu." E os nomes dele seriam: Maravilhoso, Conselheiro, Deus Forte, Pai da Eternidade, Príncipe da Paz.', r: 'Isaías 9:6' },
-        { art: '🕊️✝️', bg: 'aurora', fx: 'coracoes', text: 'Esse menino é Jesus! Ele disse: "Eu sou a luz do mundo." Quem segue Jesus não anda nas trevas.', r: 'João 8:12' }
+        { art: '👣💛', bg: 'aurora', fx: 'luz', text: 'Ontem aprendemos o nome Emanuel, Deus conosco. Hoje o profeta Isaías tem mais uma notícia sobre esse menino.', r: 'Isaías 7:14' },
+        { art: '🌑😔', bg: 'noite', text: 'Naquele tempo, o povo estava triste. Tinham se afastado de Deus, e era como se andassem no escuro, sem ver o caminho.', r: 'Isaías 9:2' },
+        { art: '🏞️🌑', bg: 'noite', fx: 'vento', text: 'A região da Galileia, no norte, era a que mais sofria. Inimigos tinham passado por lá, e as pessoas estavam sem esperança.', r: 'Isaías 9:1' },
+        { art: '🌅✨', bg: 'aurora', fx: 'luz', text: 'Mas Isaías anunciou: "O povo que andava em trevas viu uma grande luz." Uma luz ia brilhar justamente ali, na Galileia!', r: 'Isaías 9:2' },
+        { art: '😄🎉', bg: 'aurora', fx: 'coracoes', text: 'A tristeza ia virar alegria, como a alegria de quem faz uma grande colheita ou de quem ganha uma festa.', r: 'Isaías 9:3' },
+        { art: '🎁💛', bg: 'aurora', fx: 'brilho', text: 'E qual seria o motivo dessa alegria? "Porque um menino nos nasceu, um filho se nos deu." Um presente de Deus!', r: 'Isaías 9:6' },
+        { art: '🌟🧭', bg: 'aurora', fx: 'estrelas', text: 'Esse menino teria nomes muito especiais. O primeiro: Maravilhoso, Conselheiro. Ele é maravilhoso e sabe nos ensinar o melhor caminho.', r: 'Isaías 9:6' },
+        { art: '💪🛡️', bg: 'aurora', fx: 'luz', text: 'O segundo: Deus Forte. Ele não seria só um homem bom: seria o próprio Deus, forte para salvar.', r: 'Isaías 9:6' },
+        { art: '🤗♾️', bg: 'aurora', fx: 'coracoes', text: 'O terceiro: Pai da Eternidade. Ele cuida do seu povo com amor, como um pai, para sempre.', r: 'Isaías 9:6' },
+        { art: '🕊️🌿', bg: 'jardim', fx: 'brilho', text: 'E o quarto: Príncipe da Paz. Ele traz paz com Deus e paz no coração. E o seu reino nunca teria fim.', r: 'Isaías 9:6-7' },
+        { art: '🏞️⭐', bg: 'galileia', fx: 'luz', text: 'Sabe onde Jesus cresceu e começou a ensinar? Na Galileia! A luz brilhou exatamente onde Deus tinha prometido.', r: 'Mateus 4:13-16' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'Jesus disse: "Eu sou a luz do mundo; quem me segue não andará em trevas." Quando estamos tristes ou com medo do escuro, Jesus é a nossa luz.', r: 'João 8:12' }
       ],
       small: [
         { q: 'O povo que andava no escuro viu uma grande...', o: [['🕯️', 'Luz'], ['🐘', 'Elefante'], ['🌊', 'Onda']] },
@@ -154,10 +201,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv7', natal: 1, name: 'Um renovo do tronco de Jessé', icon: '🌱', sticker: '🌱', scene: 'campo', ref: 'Isaías 11:1-2',
       scenes: [
-        { art: '🪵🪓', bg: 'campo', text: 'Imagine uma árvore grande que foi cortada. Sobrou só o tronco no chão. Parece que acabou tudo, não é?', r: 'Isaías 11:1' },
-        { art: '👑😢', bg: 'cidade', text: 'A família do rei Davi era como essa árvore. Os reis desobedeceram a Deus, o reino caiu, e o povo pensou que nunca mais teria um rei da família de Davi.', r: '2 Reis 25:9-11' },
-        { art: '🌱✨', bg: 'aurora', fx: 'luz', text: 'Mas Deus prometeu: "Brotará um rebento do tronco de Jessé." Jessé era o pai de Davi. Do tronco cortado ia nascer um broto novo, cheio do Espírito de Deus!', r: 'Isaías 11:1-2' },
-        { art: '🌿⭐', bg: 'aurora', fx: 'estrelas', text: 'Esse broto é Jesus, que nasceu da família de Davi. Quando tudo parecia perdido, Deus fez nascer a maior esperança do mundo.', r: 'Romanos 15:12' }
+        { art: '👣💛', bg: 'aurora', fx: 'luz', text: 'Ontem, Isaías falou dos quatro nomes maravilhosos do menino prometido. Hoje ele usa uma figura bem diferente: uma árvore.', r: 'Isaías 9:6' },
+        { art: '🌳👑', bg: 'campo', text: 'Lembra do rei Davi? O pai dele se chamava Jessé. A família de Jessé e Davi era como uma árvore grande e forte, cheia de galhos: os reis de Israel.', r: '1 Samuel 16:1' },
+        { art: '😔🏚️', bg: 'cidade', fx: 'vento', text: 'Mas o povo desobedeceu a Deus muitas vezes. Os reis se afastaram do Senhor, e inimigos vieram, destruíram Jerusalém e levaram o povo para longe.', r: '2 Reis 25:9-11' },
+        { art: '🪵🪓', bg: 'campo', fx: 'vento', text: 'Era como se aquela árvore grande tivesse sido cortada. Sobrou só um toco no chão. Parecia o fim da família de Davi.', r: 'Isaías 6:13' },
+        { art: '😢❓', bg: 'noite', text: 'O povo chorava e pensava: "E agora? E a promessa do Rei para sempre? Será que Deus esqueceu?"', r: 'Salmo 137:1' },
+        { art: '🌱✨', bg: 'aurora', fx: 'luz', text: 'Mas Isaías já tinha anunciado: "Brotará um rebento do tronco de Jessé." Do toco cortado ia nascer um brotinho verde!', r: 'Isaías 11:1' },
+        { art: '🕊️💛', bg: 'aurora', fx: 'brilho', text: 'Sobre esse brotinho, o Rei prometido, ia repousar o Espírito do Senhor: espírito de sabedoria, de entendimento, de conselho e de força.', r: 'Isaías 11:2' },
+        { art: '⚖️💛', bg: 'palacio', text: 'Esse Rei seria justo. Ele não julgaria só pela aparência, mas cuidaria dos pobres e dos pequenos com bondade.', r: 'Isaías 11:3-4' },
+        { art: '🐺🐑', bg: 'campo', fx: 'coracoes', text: 'E no reino dele haveria uma paz tão grande que "morará o lobo com o cordeiro", e uma criancinha conduziria os animais. Imagina só!', r: 'Isaías 11:6' },
+        { art: '🌍💧', bg: 'mar', fx: 'ondas', text: 'A terra inteira ficaria cheia do conhecimento do Senhor, como as águas cobrem o mar.', r: 'Isaías 11:9' },
+        { art: '🌱⭐', bg: 'aurora', fx: 'luz', text: 'Muito tempo depois, da família de Jessé e Davi, quase esquecida e sem palácio, nasceu um menino em Belém. O brotinho tinha nascido!', r: 'Mateus 1:6, 16' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'Esse brotinho é Jesus. Quando parece que não há mais esperança, Deus faz nascer vida nova. Jesus traz esperança para nós também.', r: 'Romanos 15:12' }
       ],
       small: [
         { q: 'O que nasceu do tronco cortado?', o: [['🌱', 'Um broto novo'], ['🍄', 'Um cogumelo'], ['🐛', 'Uma lagarta']] },
@@ -173,10 +228,17 @@ window.ADVENTO_DATA = {
     {
       id: 'adv8', natal: 1, name: 'Belém, pequena mas escolhida', icon: '🏘️', sticker: '🏘️', scene: 'campo', ref: 'Miqueias 5:2',
       scenes: [
-        { art: '🏘️🌾', bg: 'campo', text: 'Belém era uma cidade bem pequena, cercada de campos de trigo e de pastores com suas ovelhas. Lá tinha nascido o rei Davi.', r: '1 Samuel 16:1' },
-        { art: '📜✨', bg: 'aurora', fx: 'luz', text: 'Uns 700 anos antes de Jesus nascer, Deus falou por meio do profeta Miqueias: "E tu, Belém Efrata, posto que pequena entre os milhares de Judá, de ti me sairá o que governará em Israel."', r: 'Miqueias 5:2' },
-        { art: '♾️⭐', bg: 'noite', fx: 'estrelas', text: 'E Miqueias disse algo surpreendente: as "saídas" desse Rei são desde a eternidade. Ele já existia antes de nascer!', r: 'Miqueias 5:2' },
-        { art: '🏘️💛', bg: 'aurora', fx: 'coracoes', text: 'E foi em Belém que Jesus nasceu, exatamente como Deus disse. Deus gosta de usar coisas pequenas para fazer coisas grandes.', r: 'Mateus 2:5-6' }
+        { art: '👣🌱', bg: 'aurora', fx: 'luz', text: 'Já sabemos que o Rei prometido viria da família de Davi. Mas onde Ele ia nascer? Deus contou isso também!', r: 'Isaías 11:1' },
+        { art: '🏘️🌾', bg: 'campo', text: 'Belém era uma cidadezinha pequena, perto de Jerusalém, cercada de campos de trigo e cevada. Lá viveram Rute e Boaz, os bisavós de Davi.', r: 'Rute 1:22; 2:3' },
+        { art: '🐑🎵', bg: 'campo', fx: 'coracoes', text: 'E foi em Belém que o menino Davi cresceu cuidando das ovelhas. Belém era a cidade de Davi.', r: '1 Samuel 16:1, 11' },
+        { art: '👴📜', bg: 'cidade', text: 'Uns setecentos anos antes de Jesus nascer, Deus falou com um profeta chamado Miqueias.', r: 'Miqueias 1:1' },
+        { art: '😔🏙️', bg: 'cidade', fx: 'vento', text: 'Miqueias via que os chefes do povo eram injustos e não amavam a Deus. Ele avisou que viriam tempos difíceis.', r: 'Miqueias 3:9-12' },
+        { art: '✨🏘️', bg: 'aurora', fx: 'luz', text: 'Mas também trouxe uma promessa: "E tu, Belém Efrata, posto que pequena entre os milhares de Judá, de ti me sairá o que governará em Israel."', r: 'Miqueias 5:2' },
+        { art: '♾️⭐', bg: 'noite', fx: 'estrelas', text: 'E disse mais: esse Governante seria muito antigo, "desde os dias da eternidade". Como um bebê pode ser tão antigo? Porque Ele é Deus!', r: 'Miqueias 5:2' },
+        { art: '🐑🧑‍🌾', bg: 'campo', fx: 'coracoes', text: 'E esse Rei cuidaria do povo como um bom pastor, com a força do Senhor. E Ele seria a nossa paz.', r: 'Miqueias 5:4' },
+        { art: '👑❓', bg: 'palacio', text: 'Muito tempo depois, quando os magos chegaram perguntando pelo Rei, os sábios de Jerusalém abriram os livros e responderam: "Em Belém de Judeia, porque assim está escrito pelo profeta."', r: 'Mateus 2:4-6' },
+        { art: '🫏🛤️', bg: 'campo', fx: 'vento', text: 'E, para que a promessa se cumprisse, Deus fez Maria e José viajarem de Nazaré até Belém. Vamos acompanhar essa viagem daqui a alguns dias!', r: 'Lucas 2:4' },
+        { art: '⭐✝️', bg: 'noite', fx: 'luz', text: 'Jesus nasceu em Belém, a cidade pequena. Deus gosta de usar as coisas pequenas e simples. Você pode se sentir pequeno, mas é muito importante para Deus.', r: 'João 7:42' }
       ],
       small: [
         { q: 'Belém era uma cidade...', o: [['🏘️', 'Pequena'], ['🏙️', 'Gigante'], ['🏝️', 'No meio do mar']] },
@@ -192,10 +254,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv9', natal: 1, name: 'Uma voz no deserto', icon: '🛤️', sticker: '🛤️', scene: 'deserto', ref: 'Isaías 40:3',
       scenes: [
-        { art: '👑🛤️', bg: 'deserto', text: 'Antigamente, quando um rei ia visitar uma cidade, mandavam alguém na frente para arrumar a estrada: tirar pedras, encher buracos e avisar que o rei estava chegando.', r: 'Isaías 40:3-4' },
-        { art: '📜🗣️', bg: 'aurora', fx: 'luz', text: 'Deus prometeu pelo profeta Isaías: "Voz do que clama no deserto: Preparai o caminho do Senhor." Alguém viria preparar a chegada do próprio Senhor!', r: 'Isaías 40:3' },
-        { art: '🏜️💧', bg: 'deserto', fx: 'brilho', text: 'Essa voz foi João Batista. Ele pregava no deserto e dizia ao povo: "Arrependam-se!", ou seja, voltem o coração para Deus.', r: 'Mateus 3:1-3' },
-        { art: '💛✝️', bg: 'aurora', fx: 'coracoes', text: 'João preparou o caminho para Jesus. E no Advento nós também preparamos o coração: pedimos perdão, voltamos para Deus e esperamos Jesus com alegria.', r: 'Lucas 3:4-6' }
+        { art: '👣🏘️', bg: 'aurora', fx: 'luz', text: 'Já sabemos onde o Rei ia nascer: em Belém. Mas, antes de um rei chegar, alguém precisa preparar o caminho.', r: 'Miqueias 5:2' },
+        { art: '👑🛣️', bg: 'deserto', text: 'Antigamente, quando um rei ia visitar uma cidade, mandavam um mensageiro na frente. O povo limpava a estrada, tirava as pedras e tapava os buracos.', r: 'Isaías 40:3' },
+        { art: '😢⛓️', bg: 'cidade', fx: 'vento', text: 'O povo de Deus estava longe de casa, triste por causa dos seus pecados. Mas Deus mandou Isaías dizer: "Consolai, consolai o meu povo."', r: 'Isaías 40:1-2' },
+        { art: '🗣️🏜️', bg: 'deserto', fx: 'vento', text: 'E Isaías ouviu: "Voz do que clama no deserto: Preparai o caminho do Senhor; endireitai no ermo vereda a nosso Deus."', r: 'Isaías 40:3' },
+        { art: '⛰️🛤️', bg: 'monte', text: 'Todo vale seria levantado e todo monte seria abaixado. O caminho ficaria reto e plano, pronto para o Rei passar.', r: 'Isaías 40:4' },
+        { art: '✨🌍', bg: 'aurora', fx: 'luz', text: '"E a glória do Senhor se manifestará, e toda a carne juntamente a verá." Deus mesmo estava vindo!', r: 'Isaías 40:5' },
+        { art: '🌸🍂', bg: 'jardim', fx: 'vento', text: 'Isaías também disse: "Seca-se a erva, e caem as flores, mas a palavra de nosso Deus subsiste eternamente." As promessas de Deus não murcham!', r: 'Isaías 40:8' },
+        { art: '🐑🤗', bg: 'campo', fx: 'coracoes', text: 'E como Deus viria? Como um pastor que carrega os cordeirinhos no colo e guia as ovelhas com carinho.', r: 'Isaías 40:11' },
+        { art: '🐫🏜️', bg: 'deserto', text: 'Centenas de anos depois, apareceu no deserto um homem chamado João, vestido com pelo de camelo, comendo gafanhotos e mel silvestre.', r: 'Mateus 3:1-4' },
+        { art: '🗣️💧', bg: 'mar', fx: 'ondas', text: 'João dizia: "Arrependei-vos, porque é chegado o Reino dos céus!" Ele era a voz no deserto. Daqui a alguns dias vamos ver como ele nasceu!', r: 'Mateus 3:2-3' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'Quando Jesus chegou, João apontou para Ele e disse: "Eis o Cordeiro de Deus, que tira o pecado do mundo." Jesus é o Rei que veio pelo caminho preparado.', r: 'João 1:29' },
+        { art: '💛🏠', bg: 'jardim', fx: 'coracoes', text: 'E nós? No Advento, preparamos o coração para Jesus: pedimos perdão, tiramos as pedras da briga e abrimos espaço para Ele.', r: 'Lucas 3:4' }
       ],
       small: [
         { q: 'Onde a voz clamava?', o: [['🏜️', 'No deserto'], ['🏊', 'Na piscina'], ['🎪', 'No circo']] },
@@ -211,10 +281,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv10', natal: 1, name: 'O Sol da justiça', icon: '🌅', sticker: '🌅', scene: 'aurora', ref: 'Malaquias 4:2',
       scenes: [
-        { art: '📜🕯️', bg: 'cidade', text: 'Malaquias foi o último profeta do Antigo Testamento. O povo tinha voltado para Jerusalém, mas muitos estavam com o coração frio para Deus.', r: 'Malaquias 1:2' },
-        { art: '🌅✨', bg: 'aurora', fx: 'luz', text: 'Mesmo assim, Deus prometeu: "Para vós, que temeis o meu nome, nascerá o sol da justiça, e cura trará nas suas asas."', r: 'Malaquias 4:2' },
-        { art: '🤫⏳', bg: 'noite', fx: 'estrelas', text: 'Depois de Malaquias vieram uns 400 anos sem nenhum profeta novo. Será que Deus tinha esquecido? Não! Ele estava preparando tudo.', r: 'Gálatas 4:4' },
-        { art: '☀️💛', bg: 'aurora', fx: 'coracoes', text: 'Jesus é o Sol da justiça que nasceu! Ele curou muitos doentes e traz cura para o nosso coração. Deus nunca se esquece das suas promessas.', r: 'Lucas 1:78-79' }
+        { art: '👣🗣️', bg: 'aurora', fx: 'luz', text: 'Ontem ouvimos a voz no deserto. Hoje encontramos o último profeta do Antigo Testamento, chamado Malaquias.', r: 'Isaías 40:3' },
+        { art: '🏛️😕', bg: 'cidade', text: 'O povo já tinha voltado para casa e reconstruído o templo. Mas o coração deles estava frio: davam a Deus as sobras e reclamavam muito.', r: 'Malaquias 1:6; 3:7' },
+        { art: '💬❓', bg: 'cidade', fx: 'vento', text: 'Eles até diziam: "Onde está o Deus do juízo?" Era como se achassem que Deus não ia fazer mais nada.', r: 'Malaquias 2:17' },
+        { art: '📯✨', bg: 'aurora', fx: 'luz', text: 'Mas Deus respondeu: "Eis que eu envio o meu anjo, que preparará o caminho diante de mim; e de repente virá ao seu templo o Senhor."', r: 'Malaquias 3:1' },
+        { art: '🔥💛', bg: 'aurora', fx: 'brilho', text: 'Deus ia limpar o coração do povo, como quem limpa o ouro no fogo para que ele brilhe.', r: 'Malaquias 3:2-3' },
+        { art: '🌅☀️', bg: 'aurora', fx: 'luz', text: 'E Deus fez uma promessa linda: "Mas para vós, que temeis o meu nome, nascerá o sol da justiça, e cura trará nas suas asas."', r: 'Malaquias 4:2' },
+        { art: '🐄🎉', bg: 'campo', fx: 'coracoes', text: '"E saireis e crescereis como os bezerros do cevadouro." Sabe aqueles bezerrinhos que pulam de alegria quando saem para o pasto? Assim seria!', r: 'Malaquias 4:2' },
+        { art: '🗣️👨‍👦', bg: 'cidade', text: 'Malaquias disse que viria um mensageiro como o profeta Elias, que faria o coração dos pais se voltar para os filhos, e o dos filhos para os pais.', r: 'Malaquias 4:5-6' },
+        { art: '🤫⏳', bg: 'noite', fx: 'estrelas', text: 'E então... silêncio. Durante uns quatrocentos anos, Deus não mandou nenhum profeta novo. As famílias esperavam, esperavam...', r: 'Malaquias 4:6' },
+        { art: '🌙🕯️', bg: 'noite', fx: 'estrelas', text: 'Imagina esperar tanto tempo! Mas quem confiava em Deus continuava lendo as promessas e orando. Esperar em Deus é bom.', r: 'Lamentações 3:25-26' },
+        { art: '🌅⭐', bg: 'aurora', fx: 'luz', text: 'Até que um dia, no templo, Deus quebrou o silêncio. O mensageiro como Elias ia nascer. Isso é a história de amanhã!', r: 'Lucas 1:17' },
+        { art: '☀️✝️', bg: 'aurora', fx: 'luz', text: 'Jesus é o Sol da justiça. Assim como o sol espanta a noite, Jesus espanta o medo, cura e traz alegria. Deus nunca esquece o que prometeu.', r: 'Lucas 1:78-79' }
       ],
       small: [
         { q: 'Que sol Deus prometeu que nasceria?', o: [['☀️', 'O Sol da justiça'], ['🌧️', 'Um sol de chuva'], ['🌙', 'Uma lua']] },
@@ -230,10 +308,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv11', natal: 1, name: 'Zacarias no templo', icon: '🕯️', sticker: '🕯️', scene: 'palacio', ref: 'Lucas 1:5-17',
       scenes: [
-        { art: '👴👵', bg: 'cidade', text: 'Zacarias era sacerdote e Isabel era sua esposa. Os dois amavam a Deus e obedeciam a Ele. Mas eram velhinhos e não tinham filhos.', r: 'Lucas 1:5-7' },
-        { art: '🕯️💨', bg: 'palacio', fx: 'brilho', text: 'Um dia, Zacarias entrou no templo para queimar o incenso, enquanto o povo orava do lado de fora.', r: 'Lucas 1:8-10' },
-        { art: '✨🕯️', bg: 'palacio', fx: 'luz', text: 'De repente, um anjo do Senhor apareceu e disse: "Zacarias, não temas, porque a tua oração foi ouvida, e Isabel, tua mulher, dará à luz um filho, e lhe porás o nome de João."', r: 'Lucas 1:11-13' },
-        { art: '🛤️⭐', bg: 'aurora', fx: 'estrelas', text: 'O anjo disse que João seria grande diante de Deus e prepararia o povo para o Senhor. Ele seria a voz no deserto que abriria o caminho para Jesus!', r: 'Lucas 1:15-17' }
+        { art: '👣☀️', bg: 'aurora', fx: 'luz', text: 'Depois de quatrocentos anos de silêncio, a história do Natal começa a acontecer de verdade! Vamos a Jerusalém, no tempo do rei Herodes.', r: 'Malaquias 4:2' },
+        { art: '👴👵', bg: 'cidade', text: 'Ali vivia um sacerdote chamado Zacarias, com sua esposa, Isabel. Os dois amavam a Deus e obedeciam aos seus mandamentos.', r: 'Lucas 1:5-6' },
+        { art: '😢🙏', bg: 'cidade', text: 'Mas eles estavam tristes, porque não tinham filhos. E agora já eram bem velhinhos. Mesmo assim, continuavam orando.', r: 'Lucas 1:7' },
+        { art: '🏛️🎲', bg: 'palacio', text: 'Havia muitos sacerdotes, e eles faziam um sorteio para ver quem entraria no lugar santo do templo. Naquele dia, o escolhido foi Zacarias!', r: 'Lucas 1:8-9' },
+        { art: '🕯️🌫️', bg: 'palacio', fx: 'brilho', text: 'Zacarias entrou para queimar o incenso, que subia como uma fumacinha cheirosa, como as orações que sobem a Deus. Lá fora, o povo orava.', r: 'Lucas 1:9-10' },
+        { art: '✨😨', bg: 'palacio', fx: 'luz', text: 'De repente, apareceu uma luz ao lado do altar: era um anjo do Senhor! Zacarias ficou muito assustado.', r: 'Lucas 1:11-12' },
+        { art: '💛👶', bg: 'palacio', fx: 'coracoes', text: 'O anjo disse: "Zacarias, não temas, porque a tua oração foi ouvida, e Isabel, tua mulher, dará à luz um filho, e lhe porás o nome de João."', r: 'Lucas 1:13' },
+        { art: '🎉🗣️', bg: 'aurora', fx: 'brilho', text: 'O menino traria muita alegria. Ele seria cheio do Espírito Santo e prepararia o povo para o Senhor, como Elias. Era a voz no deserto!', r: 'Lucas 1:14-17' },
+        { art: '🤔❓', bg: 'palacio', text: 'Mas Zacarias não acreditou. Perguntou: "Como vou saber disso? Eu sou velho, e minha mulher também."', r: 'Lucas 1:18' },
+        { art: '📯🌟', bg: 'palacio', fx: 'luz', text: 'O anjo respondeu: "Eu sou Gabriel, que assisto diante de Deus, e fui enviado a falar-te e dar-te estas alegres novas."', r: 'Lucas 1:19' },
+        { art: '🤐⏳', bg: 'palacio', text: 'Por não ter acreditado, Zacarias ficou mudo até o menino nascer. Quando saiu, só conseguia fazer sinais com as mãos!', r: 'Lucas 1:20-22' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'João ia preparar o caminho, e Jesus era Aquele que vinha depois dele. Deus ouve as nossas orações, até as que fazemos há muito tempo.', r: 'Lucas 1:76' }
       ],
       small: [
         { q: 'Onde Zacarias estava quando o anjo apareceu?', o: [['🏛️', 'No templo'], ['🏖️', 'Na praia'], ['🛒', 'No mercado']] },
@@ -249,10 +335,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv12', natal: 1, name: 'Isabel espera com fé', icon: '🤫', sticker: '🤫', scene: 'cidade', ref: 'Lucas 1:18-25',
       scenes: [
-        { art: '🤔👴', bg: 'palacio', text: 'Zacarias achou difícil acreditar e perguntou ao anjo: "Como saberei isto? Eu sou velho, e minha mulher também."', r: 'Lucas 1:18' },
-        { art: '🤫✨', bg: 'palacio', fx: 'luz', text: 'O anjo respondeu que ficaria mudo até o dia em que tudo se cumprisse, porque ele não tinha crido nas palavras de Deus. Era um sinal de que Deus falava sério.', r: 'Lucas 1:19-20' },
-        { art: '👵💛', bg: 'cidade', fx: 'coracoes', text: 'E aconteceu como Deus disse: Isabel ficou grávida! Cheia de alegria, ela louvou a Deus, que tinha olhado para ela com bondade.', r: 'Lucas 1:24-25' },
-        { art: '🙏⭐', bg: 'aurora', fx: 'estrelas', text: 'Às vezes demoramos para crer, mas Deus continua fiel. "Para Deus nada é impossível!" E Ele estava preparando a chegada de Jesus.', r: 'Lucas 1:37' }
+        { art: '👣🕯️', bg: 'aurora', fx: 'luz', text: 'Ontem, no templo, Gabriel anunciou que Zacarias e Isabel teriam um filho. E Zacarias ficou mudinho! Agora ele volta para casa.', r: 'Lucas 1:13' },
+        { art: '🏡⛰️', bg: 'monte', text: 'Zacarias e Isabel moravam numa cidade nas montanhas da Judeia. Quando terminou o seu trabalho no templo, ele foi para casa.', r: 'Lucas 1:23, 39' },
+        { art: '✍️😮', bg: 'monte', text: 'Imagina Zacarias tentando contar tudo para Isabel sem conseguir falar! Talvez ele tenha escrito a mensagem do anjo.', r: 'Lucas 1:22' },
+        { art: '🤰💛', bg: 'monte', fx: 'coracoes', text: 'E aconteceu exatamente como Deus disse: Isabel ficou grávida! Na sua velhice, ia ter um bebê.', r: 'Lucas 1:24' },
+        { art: '🏠🌿', bg: 'jardim', text: 'Isabel ficou em casa por cinco meses, cuidando de si e do bebê que crescia dentro dela, guardando no coração o que Deus estava fazendo.', r: 'Lucas 1:24' },
+        { art: '🙏😊', bg: 'jardim', fx: 'brilho', text: 'Ela dizia: "Assim me fez o Senhor, nos dias em que atentou em mim." Isabel sabia que aquele bebê era um presente de Deus.', r: 'Lucas 1:25' },
+        { art: '😢➡️😄', bg: 'aurora', fx: 'coracoes', text: 'Por muitos anos, as pessoas olharam para ela com pena, porque não tinha filhos. Mas Deus tirou essa tristeza e lhe deu alegria.', r: 'Lucas 1:25' },
+        { art: '🌟📜', bg: 'noite', fx: 'estrelas', text: 'Lembra de Abraão e Sara, que também eram velhinhos? Naquela época Deus perguntou: "Haveria coisa alguma difícil ao Senhor?"', r: 'Gênesis 18:14' },
+        { art: '📯🏡', bg: 'galileia', fx: 'luz', text: 'E, no sexto mês da gravidez de Isabel, Deus mandou o anjo Gabriel de novo, agora a uma cidadezinha chamada Nazaré, para falar com uma parente de Isabel.', r: 'Lucas 1:26, 36' },
+        { art: '✨💬', bg: 'aurora', fx: 'luz', text: 'Gabriel contou a essa moça que Isabel estava esperando um bebê, e disse uma frase que vale a pena guardar: "Porque para Deus nada é impossível."', r: 'Lucas 1:36-37' },
+        { art: '🌙🙏', bg: 'noite', fx: 'estrelas', text: 'Isabel esperava com fé. Esperar com fé é continuar confiando, mesmo antes de ver tudo acontecer.', r: 'Lucas 1:45' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'E logo, logo, Deus ia fazer o maior milagre de todos: o seu próprio Filho ia nascer. Para Deus nada é impossível!', r: 'Lucas 1:37' }
       ],
       small: [
         { q: 'O que aconteceu com Zacarias até o bebê nascer?', o: [['🤫', 'Ficou sem falar'], ['🦘', 'Pulou muito'], ['😴', 'Dormiu sem parar']] },
@@ -268,10 +362,17 @@ window.ADVENTO_DATA = {
     {
       id: 'adv13', natal: 1, name: 'Maria visita Isabel', icon: '🤗', sticker: '🤗', scene: 'campo', ref: 'Lucas 1:39-45',
       scenes: [
-        { art: '🚶‍♀️⛰️', bg: 'monte', text: 'Depois da visita do anjo, Maria se apressou e foi até as montanhas da Judeia visitar sua parente Isabel.', r: 'Lucas 1:39-40' },
-        { art: '🤗💛', bg: 'cidade', fx: 'coracoes', text: 'Quando Isabel ouviu a saudação de Maria, o bebê João pulou de alegria dentro da barriga dela! E Isabel ficou cheia do Espírito Santo.', r: 'Lucas 1:41' },
-        { art: '✨👑', bg: 'aurora', fx: 'luz', text: 'Isabel disse bem alto: "Bendita és tu entre as mulheres, e bendito o fruto do teu ventre!" E chamou Maria de "a mãe do meu Senhor".', r: 'Lucas 1:42-43' },
-        { art: '⭐💛', bg: 'aurora', fx: 'estrelas', text: 'Antes mesmo de nascer, Jesus já trazia alegria! O bebê João se alegrou porque o Salvador estava chegando.', r: 'Lucas 1:44-45' }
+        { art: '👣💛', bg: 'aurora', fx: 'luz', text: 'Ontem Maria disse sim a Deus. E o anjo tinha contado que Isabel, sua parente, também ia ter um bebê. Maria não quis esperar!', r: 'Lucas 1:38' },
+        { art: '🎒🛤️', bg: 'monte', fx: 'vento', text: 'Logo depois, Maria arrumou suas coisas e foi depressa para as montanhas da Judeia, até a cidade onde moravam Zacarias e Isabel.', r: 'Lucas 1:39' },
+        { art: '⛰️🌄', bg: 'monte', text: 'Era uma viagem longa, de vários dias, subindo e descendo montanhas. Maria levava no coração a notícia mais linda do mundo.', r: 'Lucas 1:39' },
+        { art: '🚪🏡', bg: 'monte', text: 'Quando chegou, Maria entrou na casa de Zacarias e cumprimentou Isabel: "Shalom!", que quer dizer "paz".', r: 'Lucas 1:40' },
+        { art: '🤰💫', bg: 'monte', fx: 'brilho', text: 'Assim que Isabel ouviu a voz de Maria, o bebê dentro da barriga dela pulou! E Isabel ficou cheia do Espírito Santo.', r: 'Lucas 1:41' },
+        { art: '🗣️💛', bg: 'aurora', fx: 'coracoes', text: 'Isabel exclamou bem alto: "Bendita és tu entre as mulheres, e bendito o fruto do teu ventre!"', r: 'Lucas 1:42' },
+        { art: '🙇‍♀️👑', bg: 'aurora', fx: 'luz', text: 'E disse mais: "E de onde me provém isto a mim, que venha visitar-me a mãe do meu Senhor?" Isabel chamou o bebê de Maria de "meu Senhor"!', r: 'Lucas 1:43' },
+        { art: '👶🎉', bg: 'monte', fx: 'coracoes', text: '"Pois eis que, ao chegar aos meus ouvidos a voz da tua saudação, a criancinha saltou de alegria no meu ventre." O pequeno João já estava feliz com Jesus!', r: 'Lucas 1:44' },
+        { art: '🙏✨', bg: 'aurora', fx: 'brilho', text: '"Bem-aventurada a que creu, pois hão de cumprir-se as coisas que da parte do Senhor lhe foram ditas." Maria acreditou, e Deus ia cumprir.', r: 'Lucas 1:45' },
+        { art: '🏡🤗', bg: 'monte', fx: 'coracoes', text: 'Maria ficou com Isabel uns três meses. As duas conversavam, oravam e se ajudavam. Que bom ter alguém para alegrar-se com a gente!', r: 'Lucas 1:56' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'Antes mesmo de nascer, Jesus já trazia alegria. E até hoje, onde Jesus chega, chega alegria de verdade.', r: 'Lucas 1:43-44' }
       ],
       small: [
         { q: 'Quem Maria foi visitar?', o: [['👵', 'Isabel'], ['👑', 'O rei'], ['🐪', 'Os camelos']] },
@@ -287,10 +388,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv14', natal: 1, name: 'O cântico de Maria', icon: '🎶', sticker: '🎶', scene: 'aurora', ref: 'Lucas 1:46-55',
       scenes: [
-        { art: '🎶💛', bg: 'aurora', fx: 'coracoes', text: 'Na casa de Isabel, Maria cantou uma canção de louvor: "A minha alma engrandece ao Senhor, e o meu espírito se alegra em Deus meu Salvador."', r: 'Lucas 1:46-47' },
-        { art: '🙏🌾', bg: 'campo', fx: 'brilho', text: 'Maria era uma moça simples, mas Deus olhou para ela com amor. Ela cantou: "Grandes coisas me fez o Poderoso; e santo é seu nome."', r: 'Lucas 1:48-49' },
-        { art: '🍞🤲', bg: 'aurora', fx: 'luz', text: 'Maria cantou que Deus cuida dos humildes e dos que têm fome, e que Ele é fiel às promessas que fez a Abraão.', r: 'Lucas 1:52-55' },
-        { art: '⭐🎶', bg: 'noite', fx: 'estrelas', text: 'Maria chamou Deus de "meu Salvador". Ela também precisava ser salva, e o bebê que ela esperava era o Salvador prometido: Jesus!', r: 'Lucas 1:47' }
+        { art: '👣🤗', bg: 'aurora', fx: 'luz', text: 'Ontem, na casa de Isabel, o bebê João pulou de alegria. E Maria ficou tão feliz que começou a cantar!', r: 'Lucas 1:41-44' },
+        { art: '🎶💛', bg: 'aurora', fx: 'coracoes', text: 'Maria cantou: "A minha alma engrandece ao Senhor, e o meu espírito se alegra em Deus meu Salvador." Engrandecer quer dizer contar como Deus é grande!', r: 'Lucas 1:46-47' },
+        { art: '🙇‍♀️👀', bg: 'galileia', text: '"Porque atentou na humildade de sua serva." Maria era uma moça simples de uma cidade pequena. E Deus olhou para ela com amor.', r: 'Lucas 1:48' },
+        { art: '👨‍👩‍👧‍👦⏳', bg: 'campo', fx: 'coracoes', text: '"Pois eis que desde agora todas as gerações me chamarão bem-aventurada." Até hoje, dois mil anos depois, lembramos de Maria.', r: 'Lucas 1:48' },
+        { art: '💪✨', bg: 'aurora', fx: 'luz', text: '"Porque me fez grandes coisas o Poderoso; e santo é o seu nome." Quem fez grandes coisas foi Deus. Maria louvava a Ele.', r: 'Lucas 1:49' },
+        { art: '🤍♾️', bg: 'aurora', fx: 'brilho', text: '"E a sua misericórdia é de geração em geração sobre os que o temem." A bondade de Deus vale para os avós, os pais, as crianças... e os filhos das crianças!', r: 'Lucas 1:50' },
+        { art: '👑⬇️', bg: 'palacio', fx: 'vento', text: '"Depôs dos tronos os poderosos, e elevou os humildes." Deus não se impressiona com quem se acha importante. Ele se aproxima de quem é humilde.', r: 'Lucas 1:51-52' },
+        { art: '🍞🧺', bg: 'campo', fx: 'coracoes', text: '"Encheu de bens os famintos." Deus cuida de quem precisa e de quem sabe que precisa dele.', r: 'Lucas 1:53' },
+        { art: '📜⭐', bg: 'noite', fx: 'estrelas', text: '"Como falou a nossos pais, para com Abraão e a sua posteridade, para sempre." Maria lembrou da promessa a Abraão! Deus estava cumprindo tudo.', r: 'Lucas 1:54-55' },
+        { art: '👣✨', bg: 'aurora', fx: 'luz', text: 'Do jardim até Abraão, de Abraão até Davi, de Davi até Maria: o canto de Maria mostra que o caminho todo era um plano de Deus.', r: 'Gênesis 12:3; Lucas 1:55' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'Maria chamou Deus de "meu Salvador". Ela também precisava de Jesus, como todos nós. Jesus é o Salvador de quem confia nele.', r: 'Lucas 1:47' },
+        { art: '🎵🏠', bg: 'jardim', fx: 'coracoes', text: 'Que tal fazer como Maria? Podemos cantar, agradecer e contar para alguém hoje as coisas boas que Deus fez por nós.', r: 'Salmo 34:3' }
       ],
       small: [
         { q: 'O que Maria fez na casa de Isabel?', o: [['🎶', 'Cantou louvando a Deus'], ['🍳', 'Fez um bolo'], ['💤', 'Tirou uma soneca']] },
@@ -306,10 +415,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv15', natal: 1, name: 'Nasce João', icon: '📝', sticker: '📝', scene: 'cidade', ref: 'Lucas 1:57-66',
       scenes: [
-        { art: '👶🎉', bg: 'cidade', fx: 'coracoes', text: 'Chegou o dia: Isabel deu à luz um menino! Os vizinhos e parentes se alegraram com ela, porque viram a grande bondade de Deus.', r: 'Lucas 1:57-58' },
-        { art: '🤔👨‍👩‍👧', bg: 'cidade', text: 'Todos queriam que o bebê se chamasse Zacarias, como o pai. Mas Isabel disse: "Não, porém será chamado João."', r: 'Lucas 1:59-60' },
-        { art: '📝✨', bg: 'aurora', fx: 'luz', text: 'Zacarias, ainda mudo, pediu uma tabuinha e escreveu: "O seu nome é João." Na mesma hora, a boca dele se abriu, e ele louvou a Deus!', r: 'Lucas 1:63-64' },
-        { art: '🛤️⭐', bg: 'aurora', fx: 'estrelas', text: 'Todos ficaram admirados e perguntavam: "Quem será este menino?" Ele era João, que ia preparar o caminho para Jesus.', r: 'Lucas 1:65-66' }
+        { art: '👣🎶', bg: 'aurora', fx: 'luz', text: 'Ontem Maria cantou para Deus na casa de Isabel. Depois de três meses, ela voltou para Nazaré. E chegou a hora do bebê de Isabel nascer!', r: 'Lucas 1:46' },
+        { art: '👶🎉', bg: 'monte', fx: 'coracoes', text: 'Isabel deu à luz um menino! Depois de tantos anos de espera e de oração, o bebê prometido tinha chegado.', r: 'Lucas 1:57' },
+        { art: '👨‍👩‍👧‍👦🏡', bg: 'monte', fx: 'coracoes', text: 'Os vizinhos e parentes ouviram que o Senhor tinha sido tão bondoso com Isabel, e vieram todos se alegrar com ela.', r: 'Lucas 1:58' },
+        { art: '📅👶', bg: 'monte', text: 'No oitavo dia, como mandava a lei de Deus, a família se reuniu para a cerimônia do bebê e para dar a ele um nome.', r: 'Lucas 1:59' },
+        { art: '🗣️👴', bg: 'monte', text: 'Todo mundo dizia: "Vamos chamar ele de Zacarias, como o pai!" Era costume dar ao filho o nome de alguém da família.', r: 'Lucas 1:59' },
+        { art: '🙅‍♀️💬', bg: 'monte', text: 'Mas Isabel disse: "Não, porém será chamado João." Os parentes estranharam: "Ninguém na família tem esse nome!"', r: 'Lucas 1:60-61' },
+        { art: '🤐✍️', bg: 'monte', text: 'Então perguntaram por sinais a Zacarias, que continuava mudo. Ele pediu uma tabuinha e escreveu: "O seu nome é João."', r: 'Lucas 1:62-63' },
+        { art: '🗣️✨', bg: 'aurora', fx: 'luz', text: 'Na mesma hora, a boca de Zacarias se abriu, a língua se soltou, e ele começou a falar louvando a Deus! Ele tinha obedecido ao anjo.', r: 'Lucas 1:64' },
+        { art: '😮⛰️', bg: 'monte', fx: 'vento', text: 'Todos ficaram admirados, e a notícia correu por todas as montanhas da Judeia. As pessoas comentavam umas com as outras.', r: 'Lucas 1:65' },
+        { art: '❓💭', bg: 'monte', fx: 'brilho', text: 'E perguntavam: "Quem será, pois, este menino?" Porque a mão do Senhor estava com ele.', r: 'Lucas 1:66' },
+        { art: '🌱🏜️', bg: 'deserto', text: 'O menino João crescia e ficava forte no espírito. Quando ficou grande, foi morar no deserto. Ele seria a voz no deserto, lembra?', r: 'Lucas 1:80' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'O nome João quer dizer "Deus é bondoso". João não era a luz, mas veio para falar da luz, que é Jesus. Jesus estava quase chegando!', r: 'João 1:6-8' }
       ],
       small: [
         { q: 'Qual foi o nome do bebê de Isabel?', o: [['👶', 'João'], ['🐻', 'Teddy'], ['🌙', 'Lua']] },
@@ -325,10 +442,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv16', natal: 1, name: 'O cântico de Zacarias', icon: '🌄', sticker: '🌄', scene: 'aurora', ref: 'Lucas 1:67-79',
       scenes: [
-        { art: '🎶👴', bg: 'cidade', fx: 'brilho', text: 'Cheio do Espírito Santo, Zacarias cantou: "Bendito o Senhor Deus de Israel, porque visitou e remiu o seu povo."', r: 'Lucas 1:67-68' },
-        { art: '👑📜', bg: 'palacio', fx: 'luz', text: 'Ele louvou a Deus porque estava enviando o Salvador da casa de Davi, como os profetas tinham prometido havia muito tempo.', r: 'Lucas 1:69-70' },
-        { art: '👶🛤️', bg: 'aurora', text: 'Depois Zacarias olhou para o seu bebê e disse: "E tu, ó menino, serás chamado profeta do Altíssimo, porque hás de ir ante a face do Senhor, a preparar os seus caminhos."', r: 'Lucas 1:76' },
-        { art: '🌄⭐', bg: 'aurora', fx: 'estrelas', text: 'E terminou falando de Jesus como o sol que nasce: "O oriente do alto nos visitou, para iluminar aos que estão assentados em trevas." Jesus é a nossa luz!', r: 'Lucas 1:78-79' }
+        { art: '👣👶', bg: 'aurora', fx: 'luz', text: 'Ontem nasceu João, e Zacarias voltou a falar! Sabe qual foi a primeira coisa que ele fez com a voz de volta? Louvou a Deus!', r: 'Lucas 1:63-64' },
+        { art: '🕊️🎶', bg: 'aurora', fx: 'brilho', text: 'Zacarias ficou cheio do Espírito Santo e começou a cantar uma profecia, uma mensagem de Deus.', r: 'Lucas 1:67' },
+        { art: '🙌💛', bg: 'aurora', fx: 'coracoes', text: '"Bendito o Senhor Deus de Israel, porque visitou e remiu o seu povo." Deus veio visitar o seu povo e salvá-lo!', r: 'Lucas 1:68' },
+        { art: '👑🏘️', bg: 'palacio', fx: 'luz', text: '"E nos levantou uma salvação poderosa na casa de Davi, seu servo." Zacarias estava falando de Jesus, o Rei da família de Davi.', r: 'Lucas 1:69' },
+        { art: '📜👴', bg: 'cidade', text: '"Como falou pela boca dos seus santos profetas." Isaías, Miqueias, Malaquias... todos tinham falado disso!', r: 'Lucas 1:70' },
+        { art: '⭐🤝', bg: 'noite', fx: 'estrelas', text: '"Para lembrar-se da sua santa aliança e do juramento que jurou a Abraão, nosso pai." Deus nunca esqueceu a promessa a Abraão.', r: 'Lucas 1:72-73' },
+        { art: '🛡️🕊️', bg: 'jardim', fx: 'coracoes', text: 'Por causa dessa salvação, o povo poderia servir a Deus sem medo, com o coração puro, todos os dias da vida.', r: 'Lucas 1:74-75' },
+        { art: '👶🗣️', bg: 'monte', fx: 'luz', text: 'Depois Zacarias olhou para o seu bebê e disse: "E tu, ó menino, serás chamado profeta do Altíssimo, porque hás de ir ante a face do Senhor, a preparar os seus caminhos."', r: 'Lucas 1:76' },
+        { art: '💧🤍', bg: 'mar', fx: 'ondas', text: 'João ensinaria o povo que a salvação vem pelo perdão dos pecados. Deus quer perdoar a gente!', r: 'Lucas 1:77' },
+        { art: '🌄☀️', bg: 'aurora', fx: 'luz', text: '"Pelas entranhas da misericórdia do nosso Deus, com que o oriente do alto nos visitou." O oriente é onde o sol nasce. Lembra do Sol da justiça de Malaquias?', r: 'Lucas 1:78' },
+        { art: '🌑➡️🌅', bg: 'noite', fx: 'luz', text: '"Para iluminar os que estão assentados em trevas e sombra de morte; a fim de dirigir os nossos pés pelo caminho da paz."', r: 'Lucas 1:79' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'Esse sol que nasce é Jesus! Ele ilumina quem está no escuro e guia os nossos pés no caminho da paz. Faltam poucas paradas para Belém!', r: 'João 8:12' }
       ],
       small: [
         { q: 'O que Zacarias fez cheio do Espírito Santo?', o: [['🎶', 'Cantou louvando a Deus'], ['🏃', 'Saiu correndo'], ['🧹', 'Varreu a casa']] },
@@ -344,10 +469,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv17', natal: 1, name: 'José, o pai que cuidou de Jesus', icon: '🪚', sticker: '🪚', scene: 'galileia', ref: 'Mateus 1:24-25; 2:13-15; Lucas 2:51-52',
       scenes: [
-        { art: '🪚🏠', bg: 'galileia', text: 'José era carpinteiro em Nazaré. Ele não era o pai biológico de Jesus, porque Jesus é o Filho de Deus. Mas Deus escolheu José para ser o pai de Jesus aqui na terra.', r: 'Mateus 1:18, 20; 13:55' },
-        { art: '💛🙏', bg: 'aurora', fx: 'coracoes', text: 'Quando Deus falou com ele em sonho, José obedeceu na hora: recebeu Maria como esposa e deu ao bebê o nome que Deus mandou, Jesus.', r: 'Mateus 1:24-25' },
-        { art: '🌙🫏', bg: 'noite', fx: 'estrelas', text: 'Depois que Jesus nasceu, Deus avisou José que o rei Herodes queria fazer mal ao menino. José se levantou de noite, pegou o menino e sua mãe e os levou para o Egito, para protegê-los.', r: 'Mateus 2:13-14' },
-        { art: '🪵🌱', bg: 'galileia', fx: 'luz', text: 'Na casa de José, Jesus cresceu obedecendo a seus pais e aprendendo o trabalho de carpinteiro. "Crescia Jesus em sabedoria, e em estatura, e em graça para com Deus e os homens."', r: 'Lucas 2:51-52' }
+        { art: '👣🛠️', bg: 'aurora', fx: 'luz', text: 'Ontem José obedeceu a Deus e recebeu Maria como esposa. Deus escolheu José para uma missão enorme: ser o pai de Jesus aqui na terra.', r: 'Mateus 1:24' },
+        { art: '🤍👑', bg: 'aurora', fx: 'brilho', text: 'Jesus é o Filho de Deus. O Pai dele está no céu. Mas Deus quis que Jesus crescesse numa família, com um pai que cuidasse dele: José.', r: 'Lucas 1:35; 2:49' },
+        { art: '🔤💛', bg: 'jardim', fx: 'coracoes', text: 'Quando o menino nasceu, foi José quem deu o nome a Ele, como o anjo mandou: Jesus. Naquele tempo, dar o nome era coisa de pai.', r: 'Mateus 1:25' },
+        { art: '🌙⚠️', bg: 'noite', fx: 'estrelas', text: 'Um dia, o rei Herodes quis fazer mal ao menino. De noite, Deus avisou José num sonho: "Levanta-te, e toma o menino e sua mãe, e foge para o Egito."', r: 'Mateus 2:13' },
+        { art: '🫏🌙', bg: 'deserto', fx: 'vento', text: 'José não esperou amanhecer! Levantou-se de noite, pegou Maria e o menino, e partiu para o Egito. Ele protegeu a sua família.', r: 'Mateus 2:14' },
+        { art: '🌴⏳', bg: 'deserto', text: 'A família morou no Egito até Herodes morrer. Então Deus avisou José de novo, e ele levou todos de volta para casa.', r: 'Mateus 2:15, 19-21' },
+        { art: '🏡🌿', bg: 'galileia', fx: 'coracoes', text: 'Eles foram morar em Nazaré, na Galileia. Ali Jesus cresceu brincando, aprendendo e ajudando em casa.', r: 'Mateus 2:23' },
+        { art: '🪵🔨', bg: 'galileia', text: 'José ensinou a Jesus o trabalho com madeira. Jesus ficou conhecido como "o carpinteiro" e "o filho do carpinteiro".', r: 'Marcos 6:3; Mateus 13:55' },
+        { art: '📜🛤️', bg: 'cidade', text: 'Todo ano, José e Maria iam a Jerusalém para a festa da Páscoa. Quando Jesus tinha doze anos, foi junto.', r: 'Lucas 2:41-42' },
+        { art: '🏛️💬', bg: 'palacio', fx: 'brilho', text: 'Jesus ficou no templo conversando com os mestres, e José e Maria o procuraram por três dias! Jesus disse: "Não sabeis que me convém tratar dos negócios de meu Pai?"', r: 'Lucas 2:46-49' },
+        { art: '🏡🌱', bg: 'galileia', fx: 'coracoes', text: 'Jesus voltou com eles para Nazaré e lhes era obediente. "E crescia Jesus em sabedoria, e em estatura, e em graça para com Deus e os homens."', r: 'Lucas 2:51-52' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'José cuidou de Jesus na terra, e Deus Pai cuida de nós do céu. Por causa de Jesus, nós também podemos chamar Deus de "Pai nosso".', r: 'Mateus 6:9' }
       ],
       small: [
         { q: 'Qual era o trabalho de José?', o: [['🪚', 'Carpinteiro'], ['🚀', 'Astronauta'], ['🎤', 'Cantor']] },
@@ -363,10 +496,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv18', natal: 1, name: 'No tempo certo', icon: '⏳', sticker: '⏳', scene: 'noite', ref: 'Gálatas 4:4-5',
       scenes: [
-        { art: '⏳📜', bg: 'noite', fx: 'estrelas', text: 'Deus fez muitas promessas durante milhares de anos: para Adão e Eva, para Abraão, para Davi e pelos profetas. O povo esperou muito!', r: 'Hebreus 1:1' },
-        { art: '⏰✨', bg: 'aurora', fx: 'luz', text: 'E quando chegou o tempo certo, Deus cumpriu: "Mas, vindo a plenitude dos tempos, Deus enviou seu Filho, nascido de mulher."', r: 'Gálatas 4:4' },
-        { art: '👨‍👩‍👧💛', bg: 'aurora', fx: 'coracoes', text: 'E por que Deus enviou seu Filho? Para nos resgatar e nos fazer filhos de Deus! Quem crê em Jesus entra na família de Deus.', r: 'Gálatas 4:5; João 1:12' },
-        { art: '🙏⭐', bg: 'noite', fx: 'estrelas', text: 'Deus nunca está atrasado. Quando temos que esperar, podemos confiar: o tempo dele é sempre o melhor.', r: 'Eclesiastes 3:11' }
+        { art: '👣🏘️', bg: 'cidade', fx: 'luz', text: 'Maria e José chegaram a Belém. Enquanto eles esperam, vamos pensar numa pergunta: por que Jesus nasceu exatamente naquele tempo?', r: 'Lucas 2:6' },
+        { art: '⏳🌿', bg: 'jardim', text: 'Desde a promessa no jardim até Belém passaram-se milhares de anos! Para nós, parece muito tempo. Mas Deus nunca se atrasa.', r: 'Gênesis 3:15' },
+        { art: '🍞🔥', bg: 'jardim', text: 'Sabe quando a gente faz um bolo? Se tirar do forno antes, ele fica cru. Tudo tem o seu tempo certo. "Tudo tem o seu tempo determinado."', r: 'Eclesiastes 3:1' },
+        { art: '📜⭐', bg: 'noite', fx: 'estrelas', text: 'O apóstolo Paulo escreveu: "Mas, vindo a plenitude dos tempos, Deus enviou seu Filho." Plenitude dos tempos quer dizer: quando chegou a hora exata.', r: 'Gálatas 4:4' },
+        { art: '🛣️🏛️', bg: 'cidade', text: 'Naquele tempo, havia estradas ligando muitos países, e muita gente falava a mesma língua. A boa notícia de Jesus ia poder viajar pelo mundo!', r: 'Gálatas 4:4' },
+        { art: '📖👴', bg: 'cidade', fx: 'brilho', text: 'E havia pessoas como Simeão e Ana, que esperavam no templo, lendo as promessas e orando. Os corações estavam prontos.', r: 'Lucas 2:25, 38' },
+        { art: '👶🤍', bg: 'aurora', fx: 'coracoes', text: '"Nascido de mulher." Jesus não apareceu já grande, de repente: Ele nasceu bebê, de uma mãe, como nós.', r: 'Gálatas 4:4' },
+        { art: '📜⚖️', bg: 'palacio', text: '"Nascido sob a lei, para remir os que estavam debaixo da lei." Ninguém conseguia obedecer à lei de Deus de forma perfeita. Jesus veio fazer o que nós não conseguimos.', r: 'Gálatas 4:4-5' },
+        { art: '🔓💛', bg: 'aurora', fx: 'luz', text: 'Remir quer dizer pagar o preço para libertar alguém. Jesus veio pagar o preço do nosso pecado, para nos libertar.', r: 'Gálatas 4:5' },
+        { art: '👨‍👩‍👧💛', bg: 'jardim', fx: 'coracoes', text: 'E tem mais: Ele veio "a fim de recebermos a adoção de filhos". Quem confia em Jesus entra para a família de Deus!', r: 'Gálatas 4:5-7' },
+        { art: '🗣️👨‍👧', bg: 'aurora', fx: 'brilho', text: 'E Deus coloca no nosso coração o seu Espírito, que nos faz chamar Deus de "Aba, Pai", que é como dizer "Papai".', r: 'Gálatas 4:6' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'Deus enviou Jesus no tempo certo. Quando a gente estiver esperando alguma coisa, podemos lembrar: o tempo de Deus é perfeito.', r: '2 Pedro 3:9' }
       ],
       small: [
         { q: 'Deus enviou o seu Filho no tempo...', o: [['⏰', 'Certo'], ['🐢', 'Atrasado'], ['❓', 'Errado']] },
@@ -382,10 +523,17 @@ window.ADVENTO_DATA = {
     {
       id: 'adv19', natal: 1, name: 'No princípio era o Verbo', icon: '📖', sticker: '📖', scene: 'noite', ref: 'João 1:1-5',
       scenes: [
-        { art: '🌌✨', bg: 'noite', fx: 'estrelas', text: 'Antes de existir o céu, a terra, as estrelas e as pessoas, já existia Alguém. O apóstolo João o chama de "o Verbo", que quer dizer "a Palavra".', r: 'João 1:1' },
-        { art: '📖💛', bg: 'aurora', fx: 'luz', text: '"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus." O Verbo é Jesus! Ele é Deus e sempre existiu.', r: 'João 1:1-2' },
-        { art: '🌍🌳', bg: 'jardim', fx: 'brilho', text: 'Tudo o que existe foi feito por meio dele: as montanhas, os mares, os animais, as estrelas e até você!', r: 'João 1:3' },
-        { art: '🕯️⭐', bg: 'noite', fx: 'luz', text: '"Nele estava a vida, e a vida era a luz dos homens." O bebê que nasceu em Belém é o Criador de tudo, que veio trazer luz e vida para nós.', r: 'João 1:4-5' }
+        { art: '👣⏳', bg: 'aurora', fx: 'luz', text: 'Ontem vimos que Deus enviou seu Filho no tempo certo. Mas onde estava o Filho antes de nascer em Belém? Vamos voltar lá para o começo de tudo.', r: 'Gálatas 4:4' },
+        { art: '🌌✨', bg: 'noite', fx: 'estrelas', text: 'O apóstolo João, amigo de Jesus, começou o seu livro assim: "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus."', r: 'João 1:1' },
+        { art: '💬💛', bg: 'aurora', fx: 'brilho', text: 'Verbo quer dizer Palavra. A gente usa palavras para mostrar o que pensa e sente. Jesus é a Palavra de Deus: Ele nos mostra quem Deus é.', r: 'João 1:1, 14' },
+        { art: '♾️🤍', bg: 'aurora', fx: 'luz', text: 'Antes do mundo existir, antes do jardim, antes das estrelas, o Filho já estava com o Pai. Ele nunca teve começo, porque Ele é Deus.', r: 'João 1:2; 17:5' },
+        { art: '🌍🌱', bg: 'jardim', fx: 'brilho', text: '"Todas as coisas foram feitas por ele, e sem ele nada do que foi feito se fez." As montanhas, os mares, os bichinhos e você também!', r: 'João 1:3' },
+        { art: '☀️🌳', bg: 'jardim', fx: 'luz', text: 'Pensa só: o bebê que vai nascer em Belém é o mesmo que fez o sol, as árvores e as estrelas. E é Ele quem mantém tudo funcionando.', r: 'Colossenses 1:16-17' },
+        { art: '💓💡', bg: 'aurora', fx: 'coracoes', text: '"Nele estava a vida, e a vida era a luz dos homens." Toda vida vem de Jesus, e Ele é a luz que mostra o caminho.', r: 'João 1:4' },
+        { art: '🌑🌟', bg: 'noite', fx: 'luz', text: '"E a luz resplandece nas trevas, e as trevas não a compreenderam." Sabe quando a gente acende uma vela num quarto escuro? A escuridão não consegue apagar a luz.', r: 'João 1:5' },
+        { art: '🐍🌑', bg: 'jardim', fx: 'vento', text: 'Desde o dia do jardim, o mal tentou apagar a luz de Deus. Mas não conseguiu! A luz continua brilhando.', r: 'Gênesis 3:15; João 1:5' },
+        { art: '🗣️🏜️', bg: 'deserto', text: 'João Batista, o menino que nasceu de Isabel, veio para falar dessa luz, para que todos acreditassem.', r: 'João 1:6-8' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'Jesus é "a luz verdadeira, que alumia a todo homem". O Criador de tudo está chegando a Belém, para ser a nossa luz.', r: 'João 1:9' }
       ],
       small: [
         { q: 'Jesus já existia antes de nascer em Belém?', o: [['♾️', 'Sim, sempre existiu'], ['🙅', 'Não existia'], ['🤷', 'Ninguém sabe']] },
@@ -401,10 +549,17 @@ window.ADVENTO_DATA = {
     {
       id: 'adv20', natal: 1, name: 'O Verbo se fez carne', icon: '🏕️', sticker: '🏕️', scene: 'aurora', ref: 'João 1:14',
       scenes: [
-        { art: '♾️✨', bg: 'noite', fx: 'estrelas', text: 'Ontem vimos que Jesus é Deus e sempre existiu. Hoje vem uma notícia maravilhosa: esse mesmo Jesus se tornou gente como nós!', r: 'João 1:1, 14' },
-        { art: '💛🏕️', bg: 'aurora', fx: 'luz', text: '"E o Verbo se fez carne, e habitou entre nós." Habitar é morar. É como se Deus armasse a sua tenda bem no meio do nosso acampamento.', r: 'João 1:14' },
-        { art: '🍼🌱', bg: 'galileia', fx: 'brilho', text: 'Jesus foi bebê, aprendeu a andar, a falar e a trabalhar. Sentiu fome, sono e cansaço. Ele sabe como é ser criança e como é ser gente.', r: 'Lucas 2:40; Hebreus 4:15' },
-        { art: '✨⭐', bg: 'aurora', fx: 'coracoes', text: 'Mas Jesus nunca deixou de ser Deus. Os discípulos viram a sua glória, "cheio de graça e de verdade". No Natal celebramos isto: Deus veio morar conosco!', r: 'João 1:14' }
+        { art: '👣💬', bg: 'aurora', fx: 'luz', text: 'Ontem aprendemos que Jesus é o Verbo, a Palavra que estava com Deus no princípio. Hoje, João conta a coisa mais surpreendente de todas.', r: 'João 1:1' },
+        { art: '🤍👶', bg: 'aurora', fx: 'brilho', text: '"E o Verbo se fez carne." O Filho de Deus, que criou tudo, se tornou um ser humano de verdade, com corpo, como nós.', r: 'João 1:14' },
+        { art: '🍼😴', bg: 'noite', fx: 'coracoes', text: 'Jesus foi bebê. Teve fome, sono, aprendeu a andar e a falar. Mais tarde, ficou cansado, chorou com os amigos e sentiu dor.', r: 'Lucas 2:7, 40' },
+        { art: '💛❌', bg: 'aurora', fx: 'luz', text: 'Ele foi igual a nós em tudo, menos numa coisa: Jesus nunca pecou. Nem uma vezinha!', r: 'Hebreus 4:15' },
+        { art: '⛺✨', bg: 'deserto', fx: 'luz', text: '"E habitou entre nós." A palavra que João usou lembra uma tenda. No deserto, Deus mostrava a sua presença numa tenda no meio do acampamento.', r: 'Êxodo 40:34; João 1:14' },
+        { art: '🏕️🏘️', bg: 'cidade', fx: 'coracoes', text: 'Agora Deus não ia ficar só numa tenda: Ele mesmo veio morar no meio do seu povo, como vizinho, como amigo.', r: 'João 1:14' },
+        { art: '🌟👀', bg: 'aurora', fx: 'brilho', text: '"E vimos a sua glória." Os amigos de Jesus viram com os próprios olhos as coisas maravilhosas que Ele fez: curou doentes, acalmou o mar, deu vida.', r: 'João 1:14' },
+        { art: '🤍✨', bg: 'aurora', fx: 'luz', text: 'Ele era "cheio de graça e de verdade". Graça é o amor que a gente não merece, e verdade é que Jesus nunca engana ninguém.', r: 'João 1:14' },
+        { art: '🎁🙏', bg: 'jardim', fx: 'coracoes', text: '"Mas a todos quantos o receberam, deu-lhes o poder de serem feitos filhos de Deus." Quem recebe Jesus ganha o maior presente.', r: 'João 1:12' },
+        { art: '🙈🚪', bg: 'cidade', fx: 'vento', text: 'Mas muitos não reconheceram Jesus. Ele veio para o seu povo, e muitos não o receberam. Daqui a pouco vamos ver que nem lugar na hospedaria Ele teve.', r: 'João 1:10-11' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'Ninguém nunca viu Deus. Mas Jesus veio para nos mostrar como Deus é. Quer saber como Deus é? Olhe para Jesus!', r: 'João 1:18' }
       ],
       small: [
         { q: 'Jesus se tornou gente como...', o: [['🧒', 'Nós'], ['🐟', 'Um peixe'], ['🌳', 'Uma árvore']] },
@@ -420,10 +575,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv21', natal: 1, name: 'O Rei que se fez pequeno', icon: '🤲', sticker: '🤲', scene: 'palacio', ref: 'Filipenses 2:6-8',
       scenes: [
-        { art: '👑✨', bg: 'palacio', fx: 'luz', text: 'Jesus é Deus. Ele tinha toda a glória do céu, mais do que todos os reis e palácios do mundo juntos.', r: 'Filipenses 2:6' },
-        { art: '🤲💛', bg: 'aurora', fx: 'coracoes', text: 'Mas, por amor, Ele não se agarrou a essa glória. Ele se esvaziou e tomou a forma de servo, fazendo-se semelhante aos homens.', r: 'Filipenses 2:7' },
-        { art: '🌾🐑', bg: 'campo', fx: 'brilho', text: 'O Rei dos reis nasceu num lugar de animais. Depois serviu as pessoas, lavou os pés dos discípulos e foi obediente até a cruz, para nos salvar.', r: 'Filipenses 2:8; João 13:5' },
-        { art: '✝️⭐', bg: 'aurora', fx: 'estrelas', text: 'Por isso Deus o exaltou, e um dia todo joelho vai se dobrar diante de Jesus. E Ele nos ensina a servir uns aos outros com humildade.', r: 'Filipenses 2:5, 9-11' }
+        { art: '👣⛺', bg: 'aurora', fx: 'luz', text: 'Ontem vimos que o Verbo se fez carne. Hoje o apóstolo Paulo nos ajuda a entender o tamanho desse amor.', r: 'João 1:14' },
+        { art: '👑✨', bg: 'palacio', fx: 'luz', text: 'Jesus sempre foi Deus, com toda a glória e o poder. Ele tinha tudo no céu.', r: 'Filipenses 2:6' },
+        { art: '🤝❓', bg: 'palacio', text: 'Mas Ele não ficou agarrado a isso, como uma criança que não quer emprestar o brinquedo. Ele pensou em nós.', r: 'Filipenses 2:6' },
+        { art: '⬇️💛', bg: 'aurora', fx: 'brilho', text: '"Mas esvaziou-se a si mesmo, tomando a forma de servo, fazendo-se semelhante aos homens." O Rei de tudo escolheu ser servo!', r: 'Filipenses 2:7' },
+        { art: '🏰➡️🌾', bg: 'campo', text: 'Ele não nasceu num palácio, com cama de ouro. Nasceu numa família simples, e a sua primeira caminha foi uma manjedoura de palha.', r: 'Lucas 2:7' },
+        { art: '🧺💧', bg: 'jardim', fx: 'coracoes', text: 'Quando cresceu, Jesus fez coisas que só os servos faziam. Uma vez, lavou os pés sujos dos seus amigos!', r: 'João 13:4-5, 14' },
+        { art: '🙇💛', bg: 'aurora', fx: 'coracoes', text: '"Humilhou-se a si mesmo, sendo obediente até à morte, e morte de cruz." Ele obedeceu ao Pai até o fim, por amor a nós.', r: 'Filipenses 2:8' },
+        { art: '✝️🌅', bg: 'aurora', fx: 'luz', text: 'Mas a história não acabou na cruz! Jesus ressuscitou, e Deus "o exaltou soberanamente, e lhe deu um nome que é sobre todo o nome".', r: 'Filipenses 2:9' },
+        { art: '🙌🌍', bg: 'aurora', fx: 'brilho', text: 'Um dia, todo mundo vai dobrar os joelhos e dizer que Jesus Cristo é o Senhor. O bebê da manjedoura é o Rei de todos!', r: 'Filipenses 2:10-11' },
+        { art: '🤗🏠', bg: 'jardim', fx: 'coracoes', text: 'E Paulo diz que nós podemos ter "o mesmo sentimento que houve também em Cristo Jesus": ajudar, servir, pensar nos outros.', r: 'Filipenses 2:3-5' },
+        { art: '🎁🙏', bg: 'jardim', fx: 'coracoes', text: 'No Natal, além de ganhar presentes, podemos fazer como Jesus: servir alguém em casa, emprestar, ajudar sem que peçam.', r: 'Filipenses 2:4' },
+        { art: '⭐✝️', bg: 'noite', fx: 'luz', text: 'Jesus, que era rico, se fez pobre por amor de nós, para que nós fôssemos enriquecidos com o seu amor. Que Rei maravilhoso!', r: '2 Coríntios 8:9' }
       ],
       small: [
         { q: 'Jesus, o Rei dos reis, nasceu num...', o: [['🌾', 'Lugar simples'], ['🏰', 'Castelo de ouro'], ['🛳️', 'Navio']] },
@@ -439,10 +602,18 @@ window.ADVENTO_DATA = {
     {
       id: 'adv22', natal: 1, name: 'Belém, a casa do pão', icon: '🍞', sticker: '🍞', scene: 'campo', ref: 'João 6:35',
       scenes: [
-        { art: '🌾🏘️', bg: 'campo', fx: 'brilho', text: 'Você sabia que o nome Belém quer dizer "casa do pão"? A cidade ficava cercada de campos de trigo, de onde se fazia o pão.', r: 'Rute 1:22; 2:3' },
-        { art: '🍞💛', bg: 'aurora', fx: 'luz', text: 'Deus escolheu a "casa do pão" para Jesus nascer. E o bebê foi deitado numa manjedoura, o cocho onde os animais comiam!', r: 'Lucas 2:7' },
-        { art: '🧺🐟', bg: 'mar', fx: 'ondas', text: 'Quando cresceu, Jesus alimentou mais de cinco mil pessoas com cinco pães e dois peixes. E depois explicou que Ele mesmo era um pão ainda melhor.', r: 'João 6:9-11' },
-        { art: '🍞⭐', bg: 'aurora', fx: 'coracoes', text: 'Jesus disse: "Eu sou o pão da vida; aquele que vem a mim não terá fome." O pão alimenta o corpo; Jesus alimenta o nosso coração para sempre.', r: 'João 6:35' }
+        { art: '👣👑', bg: 'aurora', fx: 'luz', text: 'Ontem vimos o Rei que se fez pequeno. Amanhã é véspera de Natal! Hoje vamos descobrir um segredo escondido no nome da cidade onde Jesus ia nascer.', r: 'Filipenses 2:7' },
+        { art: '🏘️🍞', bg: 'campo', fx: 'brilho', text: 'Na língua do povo de Israel, Belém quer dizer "casa do pão". Era uma terra boa, cheia de campos de trigo e cevada.', r: 'Miqueias 5:2' },
+        { art: '🌾🧺', bg: 'campo', fx: 'vento', text: 'Lembra de Rute? Ela colhia espigas de cevada nos campos de Belém para fazer pão para ela e a sogra, Noemi.', r: 'Rute 2:2-3' },
+        { art: '🏜️😟', bg: 'deserto', text: 'Muito tempo antes, no deserto, o povo de Israel teve fome e reclamou. Não tinha pão, nem mercado, nem plantação.', r: 'Êxodo 16:3' },
+        { art: '🌅⚪', bg: 'deserto', fx: 'brilho', text: 'E Deus mandou do céu um pão diferente, o maná! Toda manhã o chão amanhecia coberto de flocos branquinhos e doces, como mel.', r: 'Êxodo 16:14-15' },
+        { art: '🌾🐑', bg: 'campo', text: 'E foi justamente em Belém, a casa do pão, que Jesus ia nascer e ser deitado numa manjedoura, que é onde os animais comem.', r: 'Lucas 2:7' },
+        { art: '👥🧺', bg: 'mar', fx: 'ondas', text: 'Quando Jesus cresceu, multiplicou cinco pães e dois peixinhos de um menino, e alimentou mais de cinco mil pessoas!', r: 'João 6:9-11' },
+        { art: '🗣️🍞', bg: 'mar', fx: 'luz', text: 'No dia seguinte, Jesus disse: "Eu sou o pão da vida; aquele que vem a mim não terá fome, e quem crê em mim nunca terá sede."', r: 'João 6:35' },
+        { art: '💛🍞', bg: 'aurora', fx: 'coracoes', text: 'O pão alimenta o corpo por um dia. Mas Jesus alimenta o coração para sempre. Ele é o pão que desceu do céu e dá vida ao mundo.', r: 'João 6:33' },
+        { art: '🍷🍞', bg: 'palacio', fx: 'luz', text: 'Na última ceia, Jesus partiu o pão e disse: "Isto é o meu corpo, que por vós é dado." Ele deu a vida por nós na cruz.', r: 'Lucas 22:19' },
+        { art: '🙏🍽️', bg: 'jardim', fx: 'coracoes', text: 'Quando a gente ora "o pão nosso de cada dia nos dá hoje", lembra que tudo vem de Deus: a comida da mesa e Jesus, o pão do coração.', r: 'Mateus 6:11' },
+        { art: '⭐✝️', bg: 'noite', fx: 'luz', text: 'Amanhã, em Belém, a casa do pão, vai nascer o Pão da vida. O caminho está chegando ao fim. Está quase!', r: 'João 6:51' }
       ],
       small: [
         { q: 'O nome Belém quer dizer...', o: [['🍞', 'Casa do pão'], ['🍕', 'Casa da pizza'], ['🍦', 'Casa do sorvete']] },
