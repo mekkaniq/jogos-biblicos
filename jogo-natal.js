@@ -217,6 +217,7 @@
     App.setScene('noite');
     const stopBg = startShader(), stopSnow = startSnow(); document.documentElement.classList.add('nt-on');
     const x = advStory(d.story), s = st(), heard = !!s.stickers[x.id], draw = DRAW[x.id];
+    window.__advDoor = { id: x.id, go: '#/natal/dia/' + n };
     el.innerHTML = `
       <div class="topbar"><button class="icon-btn" data-back="#/natal" aria-label="Voltar">${I.back}</button><div class="ttl"><b>PORTA ${n}</b><small>${d.d} de ${MES[d.m - 1]}</small></div><span style="width:44px"></span></div>
       ${stripHTML(+n)}
@@ -226,6 +227,7 @@
         <p class="adv-ref">${esc(x.ref)} · ACF</p>
         <button class="btn btn-gold adv-go" data-go="#/kids/h/${x.id}">${heard ? NI.check + ' Ouvir de novo' : NI.book + ' Ouvir a lição'}</button>
       </section>
+      ${heard ? `
       ${d.verse ? `<section class="adv-day parch adv-verse"><small>Versículo para guardar</small><p>“${esc(d.verse)}”</p><cite>${esc(d.vref)} · ACF</cite></section>` : ''}
       <section class="adv-day parch">
         <h2>Para fazer juntos</h2>
@@ -236,6 +238,7 @@
         <button class="btn btn-green adv-go" data-share>${NI.share} Compartilhar o que aprendi</button>
       </section>
       ${d.next ? `<section class="adv-next"><small>${+n < ADV().days.length ? 'Amanhã no caminho' : 'E agora?'}</small><p>${esc(d.next.replace(/^Amanhã no caminho: /, ''))}</p></section>` : ''}
+` : `<p class="adv-wait">Ouça a lição até o fim. Depois, aqui aparecem o versículo para guardar, a conversa em família, a oração e o que vem amanhã.</p>`}
       <p class="nt-foot">Sem pressa: as portas que já abriram ficam sempre abertas.</p>`;
     el.addEventListener('click', e => {
       const b = e.target.closest('[data-back]'); if (b) { go(b.dataset.back); return; }

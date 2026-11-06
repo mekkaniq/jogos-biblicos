@@ -1273,3 +1273,4 @@ html.nt-on #app { padding-bottom: min(34vw, 380px); }
 .adv-next { margin-top: 12px; padding: 14px 16px; border-radius: 20px; text-align: center; background: rgba(20, 14, 6, .5); border: 1px dashed rgba(240, 205, 126, .45); }
 .adv-next small { color: #f0cd7e; }
 .adv-next p { margin-top: 4px; color: rgba(251, 241, 216, .95); font-style: italic; }
+.adv-wait { margin: 12px 6px 0; text-align: center; color: rgba(251, 241, 216, .85); font-size: .92rem; font-style: italic; }
