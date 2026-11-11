@@ -80,7 +80,7 @@
     requestAnimationFrame(() => w.classList.add('on'));
     const lu = w.querySelector('.nine');
     setTimeout(() => { anim(lu, 'hop', 800); burst(lu, ['🧡', '✨'], 6); }, 450);
-    const close = () => { markSeen(); w.classList.remove('on'); setTimeout(() => w.remove(), 350); };
+    const close = () => { markSeen(); w.classList.remove('on'); setTimeout(() => { w.remove(); document.dispatchEvent(new CustomEvent('nine:intro-done')); }, 350); };
     w.querySelector('.nh-btn').addEventListener('click', () => { anim(lu, 'hop', 600); burst(lu, ['🧡'], 5); setTimeout(close, 450); });
     w.addEventListener('click', e => { if (e.target === w) close(); });
   };

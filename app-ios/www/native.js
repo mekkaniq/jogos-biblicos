@@ -144,6 +144,39 @@
     const r = ev && ev.notification && ev.notification.extra && ev.notification.extra.route;
     if (r && window.App) App.go(r);
   });
+  // ---------- 5) Convite ao lembrete, logo no começo (uma única vez) ----------
+  // O iOS só deixa pedir a permissão uma vez; por isso a Nine explica antes, e o aviso do sistema só aparece se a pessoa disser "Sim".
+  const HORAS_CONVITE = [7, 8, 12, 19, 20];
+  function jaPerguntou() { const c = readCfg(); return !!(c.on || c.asked); }
+  function convidarLembrete() {
+    const A = window.App; if (!A || !LN || jaPerguntou() || document.querySelector('.nine-hi') || document.querySelector('.overlay')) return;
+    const c = readCfg(); c.h = 8;
+    const nine = A.nine ? A.nine.html('lendo', 'quiet') : '';
+    const m = A.modal(`<div style="width:130px;margin:0 auto 6px">${nine}</div><h2 style="text-align:center">Quer que eu te lembre da Palavra?</h2>
+      <p style="text-align:center">Uma vez por dia, eu te mando um versículo (ACF). Sem cobrança, sem contagem de dias, e nada sai do seu aparelho. Você muda ou desliga quando quiser, em Ajustes.</p>
+      <p style="text-align:center;margin:10px 0 4px"><b>Que horas é melhor?</b></p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 8px">${HORAS_CONVITE.map(h => `<button class="btn ${h === c.h ? 'btn-gold' : 'btn-ghost'}" style="min-height:44px;padding:0 13px" data-ch="${h}">${h}h</button>`).join('')}</div>
+      <p class="cv-msg" style="min-height:1.2em;text-align:center;color:#9b3b2a"></p>
+      <div class="actions" style="flex-direction:column;gap:8px"><button class="btn btn-green" data-cv-sim>Sim, quero o lembrete</button><button class="btn btn-ghost" data-cv-nao>Agora não</button></div>`, { dismiss: false });
+    const msg = t => { const p = m.el.querySelector('.cv-msg'); if (p) p.textContent = t; };
+    m.el.addEventListener('click', async e => {
+      const hb = e.target.closest('[data-ch]');
+      if (hb) { c.h = +hb.dataset.ch; m.el.querySelectorAll('[data-ch]').forEach(b => { b.classList.toggle('btn-gold', +b.dataset.ch === c.h); b.classList.toggle('btn-ghost', +b.dataset.ch !== c.h); }); return; }
+      if (e.target.closest('[data-cv-nao]')) { c.asked = 1; writeCfg(c); m.close(); return; }
+      if (e.target.closest('[data-cv-sim]')) {
+        let ok = false;
+        try { let p = await LN.checkPermissions(); if (p.display !== 'granted') p = await LN.requestPermissions(); ok = p.display === 'granted'; } catch (x) { }
+        c.asked = 1;
+        if (!ok) { writeCfg(c); msg('Sem problema! Se mudar de ideia: Ajustes → Lembrete diário.'); setTimeout(m.close, 2200); return; }
+        c.on = true; writeCfg(c); await schedule(c.h); m.close();
+        try { A.toast && A.toast('Lembrete ligado às ' + c.h + 'h 🔔'); } catch (x) { }
+      }
+    });
+  }
+  document.addEventListener('nine:intro-done', () => setTimeout(convidarLembrete, 400));
+  // quem já viu a apresentação (versões anteriores) e nunca decidiu: pergunta uma vez, na tela inicial
+  addEventListener('load', () => setTimeout(() => { const h = location.hash; if ((h === '' || h === '#' || h === '#/') && localStorage.getItem('nine-oi')) convidarLembrete(); }, 2500));
+
   function reminderSheet() {
     const A = window.App; if (!A) return;
     const c = readCfg();
