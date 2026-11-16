@@ -2,7 +2,7 @@
    Lições no mesmo formato das histórias do Kids (cenas, perguntas para Pequeninos e Leitores, figurinha).
    Regras: sem imagem de Jesus nem de anjos (só luz e estrelas); toda lição aponta para Jesus; versículo à vista.
    Em cada pergunta a PRIMEIRA opção é a certa (o app embaralha na hora de mostrar).
-   TEXTOS PARA REVISÃO DO PASTOR (Rev. Wellington). Citações entre aspas: conferir palavra por palavra na ACF. */
+   Revisão: Eduardo. Citações entre aspas: conferir palavra por palavra na ACF. */
 window.ADVENTO_DATA = {
   // m = mês, d = dia; story = id da lição (adv* são novas; natal* já existem em dados-natal.js)
   // talk = pergunta para conversar em família; learn = frase do "Hoje aprendi" para compartilhar

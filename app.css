@@ -1075,6 +1075,11 @@ html.cl-on #appTabs { display: none !important; }
 .cl-row.v { padding: 0; }
 .cl-sw { width: 100%; max-width: 46px; justify-self: center; aspect-ratio: 1; border-radius: 50%; border: 2px solid rgba(255, 255, 255, .55); box-shadow: inset 0 -3px 5px rgba(0, 0, 0, .1), 0 2px 4px rgba(0, 0, 0, .35); transition: transform .12s; }
 .cl-sw.on { transform: scale(1.14); border: 3px solid #e9cf8c; box-shadow: 0 0 0 3px rgba(255, 255, 255, .9), 0 3px 8px rgba(0, 0, 0, .45); }
+/* paleta por família: 1ª fileira = famílias, 2ª = tons da família escolhida */
+.cl-fb { width: 100%; max-width: 46px; justify-self: center; aspect-ratio: 1; border-radius: 12px; border: 2px solid rgba(255, 255, 255, .45); box-shadow: 0 2px 4px rgba(0, 0, 0, .35); position: relative; transition: transform .12s; }
+.cl-fb.has::after { content: ''; position: absolute; left: 50%; bottom: -7px; width: 6px; height: 6px; margin-left: -3px; border-radius: 50%; background: #e9cf8c; }
+.cl-fb.on { transform: scale(1.1); border: 3px solid #e9cf8c; box-shadow: 0 0 0 2px rgba(255, 255, 255, .85), 0 3px 8px rgba(0, 0, 0, .45); }
+.cl-famname { text-align: center; font-family: var(--display); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #e9cf8c; opacity: .9; margin-top: 2px; }
 .cl-act { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
 .cl-act .btn { min-height: 46px; padding: 0 2px; font-size: .76rem; white-space: nowrap; min-width: 0; letter-spacing: -.01em; }
 .cl-act .btn.on { background: var(--gold-grad); color: #3b2a0c; border-color: #a47b2a; }
@@ -1089,7 +1094,8 @@ html.cl-on #appTabs { display: none !important; }
   .cl-dock { grid-column: 2; grid-row: 2; border-top: 0; border-left: 1px solid rgba(216, 178, 92, .4); align-content: start; overflow: auto; padding: 8px 10px calc(8px + var(--safe-bottom)); }
   .cl-pal { grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 5px; }
   .cl-row, .cl-row.v { display: contents; }
-  .cl-sw { max-width: 30px; }
+  .cl-sw, .cl-fb { max-width: 30px; }
+  .cl-famname { grid-column: 1 / -1; }
   .cl-pal { gap: 4px; }
   .cl-dock { gap: 6px; }
   .cl-full { grid-template-columns: 1fr 300px; }
