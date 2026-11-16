@@ -17,9 +17,22 @@
                 ['Ébano', '#573D35'], ['Terracota', '#C87556'], ['Ocre', '#C99A45'], ['Verde-oliva', '#A4A66F']];
   const RICH2 = [['Sálvia', '#8DAE91'], ['Petróleo', '#2F8F8B'], ['Cerúleo', '#679FC2'], ['Vinho rosado', '#A66B7C'],
                  ['Ameixa', '#5E3A7A'], ['Violeta', '#9A7AB5'], ['Bordô', '#7A1F2B'], ['Preto suave', '#2B2B30']];
-  const SOFT = SOFT0.concat(SOFT1), VIVID = VIVID0.concat(VIVID1);
-  const ALL = SOFT0.concat(VIVID0, SOFT1, VIVID1, DEEP, RICH, RICH2);   // cor número c (1..24) = ALL[c-1]; 0 = sem cor
-  const idx = c => ALL.indexOf(c) + 1;
+  // v3 (Natal 2026): cores que faltavam. Sempre no fim.
+  const NOVAS = [['Amarelo vivo', '#FFD84D'], ['Laranja queimado', '#D9772B'], ['Azul-noite', '#1F2A5A'], ['Madeira', '#C49A6C'], ['Cinza médio', '#A3A6AD']];
+  RICH[0][0] = 'Dourado';                         // havia dois "Ouro"
+  const ALL = SOFT0.concat(VIVID0, SOFT1, VIVID1, DEEP, RICH, RICH2, NOVAS);   // cor número c (1..) = ALL[c-1]; 0 = sem cor
+  // Na tela, as cores aparecem por família (do claro ao escuro). Os números acima não mudam.
+  const FAM = [
+    ['Vermelhos e rosas', [1, 15, 23, 31, 9, 44, 25, 47]],
+    ['Amarelos e laranjas', [3, 49, 11, 33, 2, 10, 50, 39]],
+    ['Verdes', [16, 4, 41, 30, 12, 27, 40, 26]],
+    ['Azuis', [5, 17, 29, 43, 13, 42, 28, 51]],
+    ['Roxos', [6, 18, 46, 24, 45]],
+    ['Peles e cabelos', [34, 19, 7, 20, 35, 21, 36, 37]],
+    ['Terra e madeira', [8, 52, 38, 14]],
+    ['Cinzas', [22, 53, 32, 48]]
+  ];
+  const famOf = c => Math.max(0, FAM.findIndex(f => f[1].includes(c)));
   const rgb = h => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
   const C32 = [0xFFFFFFFF].concat(ALL.map(([, h]) => { const [r, g, b] = rgb(h); return (0xFF000000 | (b << 16) | (g << 8) | r) >>> 0; }));
   const TRK = ['', 'Fáceis', 'Médios', 'Detalhados', 'Natal'], TRK_IC = ['', '🌱', '🌼', '🌳', '⭐'];
@@ -65,7 +78,10 @@
     const S = K.st('colorir', { p: {}, trk: 1 });
     const rec = S.p[it.n] || (S.p[it.n] = { r: {} });
     const { w, h } = it;
-    const sw = c => `<button class="cl-sw" data-c="${idx(c)}" style="background:${c[1]}" aria-label="${c[0]}" title="${c[0]}"></button>`;
+    const sw = n => `<button class="cl-sw" data-c="${n}" style="background:${ALL[n - 1][1]}" aria-label="${ALL[n - 1][0]}" title="${ALL[n - 1][0]}"></button>`;
+    const fb = (f, i) => { const t = f[1], g = [t[0], t[Math.floor(t.length / 2)], t[t.length - 1]].map(n => ALL[n - 1][1]);
+      return `<button class="cl-fb" data-f="${i}" style="background:linear-gradient(135deg,${g[0]} 0 33%,${g[1]} 33% 66%,${g[2]} 66%)" aria-label="${f[0]}" title="${f[0]}"></button>`; };
+    const tones = i => FAM[i][1].map(sw).join('');
     el.innerHTML = '';
     const full = document.createElement('div'); full.className = 'cl-full'; full.id = 'clfull';
     full.innerHTML = `<header class="cl-head">
@@ -76,7 +92,7 @@
       <div class="cl-view" id="clv"><div class="cl-world" id="clw"><canvas id="clc" width="${w}" height="${h}"></canvas><img class="cl-lines" id="cll" src="colorir-${it.n}.lines.png" alt="" draggable="false"></div>
         <div class="cl-load" id="cld">Preparando o desenho…</div><div class="cl-hint" id="cltip">Toque para pintar · dois dedos para ampliar</div></div>
       <footer class="cl-dock">
-        <div class="cl-pal"><div class="cl-row">${SOFT.map(sw).join('')}</div><div class="cl-row">${VIVID.map(sw).join('')}</div><div class="cl-row">${DEEP.map(sw).join('')}</div><div class="cl-row">${RICH.map(sw).join('')}</div><div class="cl-row">${RICH2.map(sw).join('')}</div></div>
+        <div class="cl-pal"><div class="cl-row cl-fams">${FAM.map(fb).join('')}</div><div class="cl-famname" id="clfn"></div><div class="cl-row" id="clt"></div></div>
         <div class="cl-act"><button class="btn btn-ghost" data-undo>↶ Desfazer</button><button class="btn btn-ghost" data-erase>⌫ Borracha</button><button class="btn btn-ghost" data-clear>Limpar</button><button class="btn btn-gold" data-fin>Pronto ✓</button></div>
       </footer>`;
     document.body.appendChild(full); document.documentElement.classList.add('cl-on');
@@ -84,7 +100,10 @@
     const view = $('#clv', full), world = $('#clw', full), cv = $('#clc', full), linesImg = $('#cll', full), loadEl = $('#cld', full), tip = $('#cltip', full);
     const ctx = cv.getContext('2d');
     let reg = null, bb = null, pix = null, pix32 = null, ready = false;
-    let cur = 1, erase = false; const undo = [];
+    let cur = S.cor && ALL[S.cor - 1] ? S.cor : 1, erase = false; const undo = [];
+    let fam = famOf(cur);
+    const showFam = i => { fam = i; $('#clt', full).innerHTML = tones(i); $('#clfn', full).textContent = FAM[i][0]; };
+    showFam(fam);
     const colors = rec.r;                          // { regiao: cor }
     setTimeout(() => { tip.classList.add('off'); }, 5000);
 
@@ -145,11 +164,13 @@
     // ---- paleta / ferramentas ----
     function mark() {
       full.querySelectorAll('.cl-sw').forEach(b => b.classList.toggle('on', !erase && +b.dataset.c === cur));
+      full.querySelectorAll('.cl-fb').forEach(b => { b.classList.toggle('on', +b.dataset.f === fam); b.classList.toggle('has', +b.dataset.f === famOf(cur)); });
       $('[data-erase]', full).classList.toggle('on', erase);
     }
     mark();
     full.addEventListener('click', e => {
-      const s = e.target.closest('.cl-sw'); if (s) { cur = +s.dataset.c; erase = false; mark(); sfx.tap(); return; }
+      const f = e.target.closest('.cl-fb'); if (f) { showFam(+f.dataset.f); mark(); sfx.tap(); return; }
+      const s = e.target.closest('.cl-sw'); if (s) { cur = +s.dataset.c; S.cor = cur; erase = false; mark(); sfx.tap(); return; }
       if (e.target.closest('[data-erase]')) { erase = !erase; mark(); sfx.tap(); return; }
       if (e.target.closest('[data-undo]')) { const u = undo.pop(); if (u && ready) { setColor(u[0], u[1], false); sfx.tap(); } return; }
       if (e.target.closest('[data-zi]')) { zoomAt(VW / 2, VH / 2, sc * 1.5); return; }
@@ -229,9 +250,46 @@
       const nx = D.find(x => x.n === it.n + 1 && x.t === it.t);
       const m = modal(`<div class="win-card" style="box-shadow:none;border:0;background:none;padding:0"><div class="wc-top"><div class="wc-badge">🎨</div><div><h2>${esc(it.nome)}</h2></div></div>
         <p class="wc-text">${esc(it.win)}</p><div class="wc-learned"><div>${I.book} <b>${esc(it.ref)}</b></div></div>
-        <div class="wc-actions">${nx ? `<button class="btn btn-gold btn-block" data-wn>Próximo desenho ${I.arrow}</button>` : ''}<button class="btn btn-ghost btn-block" data-wl>Ver todos os desenhos</button><button class="btn btn-ghost btn-block" data-close>Continuar pintando</button></div></div>`);
-      m.el.addEventListener('click', ev => { if (ev.target.closest('[data-wn]')) { m.close(); go('#/colorir/' + nx.n); } if (ev.target.closest('[data-wl]')) { m.close(); go(it.t === 4 ? '#/natal' : '#/colorir'); } });
+        <div class="wc-actions"><button class="btn btn-gold btn-block" data-ws>Compartilhar meu desenho</button>${nx ? `<button class="btn btn-ghost btn-block" data-wn>Próximo desenho ${I.arrow}</button>` : ''}<button class="btn btn-ghost btn-block" data-wl>Ver todos os desenhos</button><button class="btn btn-ghost btn-block" data-close>Continuar pintando</button></div></div>`);
+      m.el.addEventListener('click', ev => {
+        const b = ev.target.closest('[data-ws]');
+        if (b) { b.disabled = true; b.textContent = 'Preparando a imagem…'; shareDrawing().finally(() => { b.disabled = false; b.textContent = 'Compartilhar meu desenho'; }); return; }
+        if (ev.target.closest('[data-wn]')) { m.close(); go('#/colorir/' + nx.n); } if (ev.target.closest('[data-wl]')) { m.close(); go(it.t === 4 ? '#/natal' : '#/colorir'); }
+      });
       sfx.good();
+    }
+
+    // ---- compartilhar: imagem 9:16 (status e stories) com o desenho no miolo 3:4 que o WhatsApp mostra ----
+    function wrapTx(c, t, mw) { const out = []; let l = ''; for (const p of t.split(/\s+/)) { const k = l ? l + ' ' + p : p; if (c.measureText(k).width > mw && l) { out.push(l); l = p; } else l = k; } if (l) out.push(l); return out; }
+    function rrect(c, x, y, ww, hh, r) { c.beginPath(); c.moveTo(x + r, y); c.arcTo(x + ww, y, x + ww, y + hh, r); c.arcTo(x + ww, y + hh, x, y + hh, r); c.arcTo(x, y + hh, x, y, r); c.arcTo(x, y, x + ww, y, r); c.closePath(); }
+    async function shareDrawing() {
+      try { await Promise.all([document.fonts.load('700 60px Cinzel'), document.fonts.load('italic 400 46px Lora'), document.fonts.load('400 34px Lora')]); } catch (e) { }
+      const W = 1080, H = 1920, out = document.createElement('canvas'); out.width = W; out.height = H; const c = out.getContext('2d');
+      const g = c.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#141a3c'); g.addColorStop(.5, '#1d2347'); g.addColorStop(1, '#120f1e'); c.fillStyle = g; c.fillRect(0, 0, W, H);
+      c.fillStyle = 'rgba(255,255,255,.6)'; for (let i = 0; i < 110; i++) { const x = (i * 337 + 41) % W, y = (i * 211 + 17) % H, r = (i % 4 === 0) ? 2.4 : (i % 3) * .6 + .8; c.globalAlpha = .35 + (i % 5) * .12; c.beginPath(); c.arc(x, y, r, 0, 6.283); c.fill(); }
+      c.globalAlpha = 1; c.textAlign = 'center';
+      const DW = 940, DH = Math.round(DW * h / w), MW = W - 200;
+      c.font = '700 58px Cinzel'; const T = wrapTx(c, it.nome, MW);
+      c.font = 'italic 400 44px Lora'; const L = wrapTx(c, it.win, MW);
+      const total = 44 + 30 + T.length * 70 + 40 + DH + 50 + L.length * 60 + 20 + 44 + 70 + 34 + 50;
+      let y = Math.round((H - total) / 2);
+      c.fillStyle = '#f0cd7e'; c.font = '700 40px Cinzel'; y += 44; c.fillText('EU PINTEI', W / 2, y); y += 30;
+      c.fillStyle = '#fbf1d8'; c.font = '700 58px Cinzel'; for (const l of T) { y += 70; c.fillText(l, W / 2, y - 10); } y += 40;
+      const x0 = (W - DW) / 2;
+      c.save(); c.shadowColor = 'rgba(0,0,0,.5)'; c.shadowBlur = 40; c.shadowOffsetY = 14; c.fillStyle = '#fff'; rrect(c, x0 - 14, y - 14, DW + 28, DH + 28, 30); c.fill(); c.restore();
+      c.save(); rrect(c, x0, y, DW, DH, 18); c.clip(); c.drawImage(cv, x0, y, DW, DH); c.globalCompositeOperation = 'multiply'; c.drawImage(linesImg, x0, y, DW, DH); c.restore();
+      c.strokeStyle = '#e9cf8c'; c.lineWidth = 4; rrect(c, x0 - 14, y - 14, DW + 28, DH + 28, 30); c.stroke();
+      y += DH + 50;
+      c.fillStyle = '#fbf1d8'; c.font = 'italic 400 44px Lora'; for (const l of L) { y += 60; c.fillText(l, W / 2, y - 12); }
+      y += 20; c.fillStyle = '#f0cd7e'; c.font = '700 40px Cinzel'; y += 44; c.fillText(it.ref, W / 2, y);
+      y += 70; c.fillStyle = 'rgba(251,241,216,.8)'; c.font = '400 34px Lora'; c.fillText('Pintado no app Verso Vivo · pinte também', W / 2, y);
+      y += 50; c.fillStyle = '#f0cd7e'; c.font = '700 38px Cinzel'; c.fillText('editoraversovivo.com.br/jogos', W / 2, y);
+      const blob = await new Promise(r => out.toBlob(r, 'image/png'));
+      const file = new File([blob], 'verso-vivo-meu-desenho.png', { type: 'image/png' });
+      const text = `Eu pintei "${it.nome}" (${it.ref}) no app Verso Vivo. Pinte também: editoraversovivo.com.br/jogos`;
+      try { if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], text }); return; } } catch (e) { if (e && e.name === 'AbortError') return; }
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = file.name; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+      if (App.toast) App.toast('Imagem salva. Agora é só compartilhar!');
     }
     return { leave };
   });

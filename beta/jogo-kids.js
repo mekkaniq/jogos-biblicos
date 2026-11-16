@@ -4,7 +4,7 @@
   const K = App.kit;
   const D = () => window.KIDS_DATA;
   const S = () => K.st('kids', { band: 'small', stickers: {}, voice: 1 });
-  const storyOf = id => D().stories.find(s => s.id === id) || (window.NATAL_DATA && window.NATAL_DATA.stories.find(s => s.id === id));
+  const storyOf = id => D().stories.find(s => s.id === id) || (window.NATAL_DATA && window.NATAL_DATA.stories.find(s => s.id === id)) || (window.ADVENTO_DATA && window.ADVENTO_DATA.stories.find(s => s.id === id));
   const pick = a => a[Math.floor(Math.random() * a.length)];
 
   // a Nine animada vem do arquivo nine.js (compartilhada com os jogos dos adultos)
@@ -150,7 +150,8 @@
   route(/^\/kids\/h\/(\w+)$/, (el, id) => {
     reset();
     const st = storyOf(id); if (!st) return go('#/kids');
-    const home = st.natal ? '#/natal' : '#/kids';
+    const door = st.natal && window.__advDoor && window.__advDoor.id === id ? window.__advDoor.go : '';
+    const home = door || (st.natal ? '#/natal' : '#/kids');
     document.body.dataset.natal = st.natal ? '1' : '';
     document.body.classList.add('kids');
     const s = S(); const small = s.band === 'small';
@@ -206,7 +207,7 @@
     function sticker() {
       App.setScene('aurora'); hush();
       const first = !s.stickers[id]; s.stickers[id] = 1; save(); sfx.win();
-      const left = (st.natal ? window.NATAL_DATA.stories : D().stories).filter(x => !s.stickers[x.id]).length;
+      const left = (st.natal ? (/^adv/.test(st.id) ? window.ADVENTO_DATA.stories : window.NATAL_DATA.stories) : D().stories).filter(x => !s.stickers[x.id]).length;
       el.innerHTML = `${top(home, 'PARABÉNS!', st.name)}
         <div class="kd-win">
           <div class="kd-nine solo">${nineHTML('festa', 'enter party')}</div>
@@ -214,7 +215,7 @@
           <h2>${first ? 'Você ganhou uma figurinha!' : 'Você ouviu de novo!'}</h2>
           <p>${small ? 'A Nine está muito feliz com você!' : `Você respondeu tudo${mist ? '' : ' sem errar nenhuma'}! A figurinha já está guardada.`}${left ? '' : '<br><b>Você completou o álbum inteiro! 🎉</b>'}</p>
         </div>
-        <div class="kd-row">${st.natal ? '' : '<button class="btn btn-gold" data-go="#/kids/album">📒 Meu álbum</button>'}<button class="btn btn-ghost" data-go="${home}">Outras histórias</button></div>`;
+        <div class="kd-row">${st.natal ? '' : '<button class="btn btn-gold" data-go="#/kids/album">📒 Meu álbum</button>'}${door ? `<button class="btn btn-gold" data-go="${door}">Continuar na porta ▶</button>` : `<button class="btn btn-ghost" data-go="${home}">Outras histórias</button>`}</div>`;
       later(() => { confetti(); burst($('.nine', el), ['✨', '⭐', '🌟', '💛'], 12); }, 350);
       every(() => { const lu = $('.nine', el); lu && burst(lu, ['✨', '⭐'], 3); }, 1600);
       speak(first ? 'Parabéns! Você ganhou uma figurinha!' : 'Parabéns! Você ouviu a história de novo!');

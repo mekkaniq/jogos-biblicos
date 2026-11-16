@@ -6,10 +6,18 @@ window.NATAL_DATA = {
     {
       id: 'natal1', natal: 1, name: 'Uma boa notícia para Maria', icon: '🌟', sticker: '🌟', scene: 'noite', ref: 'Lucas 1:26-38',
       scenes: [
-        { art: '🏡🙏', bg: 'galileia', text: 'Numa cidadezinha chamada Nazaré vivia uma moça chamada Maria. Ela amava a Deus e confiava nele.', r: 'Lucas 1:26-27' },
-        { art: '✨🕯️', bg: 'noite', fx: 'luz', text: 'Um dia, Deus enviou um anjo com uma mensagem especial. Maria levou um susto! Mas o anjo disse: "Maria, não temas, porque achaste graça diante de Deus."', r: 'Lucas 1:28-30' },
-        { art: '⭐👑', bg: 'noite', fx: 'estrelas', text: 'O anjo contou que ela teria um filho e que o nome dele seria Jesus. Ele seria chamado Filho do Altíssimo, e o seu reino não teria fim.', r: 'Lucas 1:31-33' },
-        { art: '💛🙏', bg: 'aurora', fx: 'coracoes', text: 'Maria respondeu com confiança: "Eis aqui a serva do Senhor; cumpra-se em mim segundo a tua palavra." Ela acreditou na promessa de Deus.', r: 'Lucas 1:38' }
+        { art: '👣💛', bg: 'aurora', fx: 'luz', text: 'Ontem aprendemos que para Deus nada é impossível. Hoje chegamos à notícia mais importante de todo o nosso caminho!', r: 'Lucas 1:37' },
+        { art: '🏡🌿', bg: 'galileia', text: 'Numa cidadezinha da Galileia chamada Nazaré vivia uma moça chamada Maria. Ela era noiva de José, um homem da família do rei Davi.', r: 'Lucas 1:26-27' },
+        { art: '🙏💛', bg: 'galileia', fx: 'coracoes', text: 'Maria amava a Deus e confiava nele. Um dia, o anjo Gabriel foi enviado por Deus até ela.', r: 'Lucas 1:28' },
+        { art: '✨🕯️', bg: 'noite', fx: 'luz', text: 'O anjo disse: "Salve, agraciada; o Senhor é contigo." Maria ficou assustada e pensou: "Que saudação é essa?"', r: 'Lucas 1:28-29' },
+        { art: '💛😌', bg: 'noite', fx: 'brilho', text: 'Gabriel disse: "Maria, não temas, porque achaste graça diante de Deus." Graça é um presente que a gente não merece, mas Deus dá por amor.', r: 'Lucas 1:30' },
+        { art: '⭐🔤', bg: 'noite', fx: 'estrelas', text: '"E eis que em teu ventre conceberás e darás à luz um filho, e pôr-lhe-ás o nome de Jesus." O nome Jesus quer dizer "o Senhor salva".', r: 'Lucas 1:31' },
+        { art: '👑♾️', bg: 'aurora', fx: 'luz', text: '"Este será grande, e será chamado Filho do Altíssimo; e o Senhor Deus lhe dará o trono de Davi, seu pai, e o seu reino não terá fim." Lembra da promessa a Davi?', r: 'Lucas 1:32-33' },
+        { art: '❓🤔', bg: 'galileia', text: 'Maria perguntou: "Como se fará isto, visto que não conheço homem?" Ela ainda não era casada.', r: 'Lucas 1:34' },
+        { art: '🕊️✨', bg: 'aurora', fx: 'brilho', text: 'O anjo explicou: "Descerá sobre ti o Espírito Santo, e a virtude do Altíssimo te cobrirá com a sua sombra." Seria um milagre de Deus, como Isaías tinha prometido: a virgem teria um filho!', r: 'Lucas 1:35' },
+        { art: '👵🤰', bg: 'monte', fx: 'coracoes', text: 'E Gabriel contou: "Isabel, tua parente, também concebeu um filho em sua velhice. Porque para Deus nada é impossível."', r: 'Lucas 1:36-37' },
+        { art: '🙏💛', bg: 'aurora', fx: 'coracoes', text: 'Maria respondeu: "Eis aqui a serva do Senhor; cumpra-se em mim segundo a tua palavra." Maria disse sim a Deus!', r: 'Lucas 1:38' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'O Filho de Maria é Jesus, o Salvador prometido. Como Maria, nós também podemos confiar em Deus e dizer: "Sim, Senhor, eu confio em ti."', r: 'Mateus 1:21' }
       ],
       small: [
         { q: 'Qual era o nome da moça de Nazaré?', o: [['💛', 'Maria'], ['🐑', 'Nine'], ['🌟', 'Estrela']] },
@@ -25,10 +33,18 @@ window.NATAL_DATA = {
     {
       id: 'natal2', natal: 1, name: 'José confia em Deus', icon: '🛠️', sticker: '🛠️', scene: 'noite', ref: 'Mateus 1:18-25',
       scenes: [
-        { art: '🛠️🏠', bg: 'galileia', text: 'José era um homem bom, que trabalhava com madeira. Ele ia se casar com Maria. Mas José ficou preocupado e pensativo.', r: 'Mateus 1:18-19' },
-        { art: '🌙💤', bg: 'noite', fx: 'estrelas', text: 'De noite, enquanto dormia, Deus falou com José num sonho: "José, não temas receber Maria, tua mulher, porque o que nela está gerado é do Espírito Santo."', r: 'Mateus 1:20' },
-        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'E Deus disse também: "Ela dará à luz um filho, e chamarás o seu nome Jesus, porque ele salvará o seu povo dos seus pecados."', r: 'Mateus 1:21' },
-        { art: '💛🏡', bg: 'jardim', fx: 'coracoes', text: 'Quando acordou, José fez exatamente o que Deus mandou. Ele cuidou de Maria e confiou no plano de Deus.', r: 'Mateus 1:24' }
+        { art: '👣🌅', bg: 'aurora', fx: 'luz', text: 'Ontem Zacarias cantou sobre o sol que nasce do alto. Agora voltamos para Nazaré, para conhecer melhor um homem muito importante nessa história: José.', r: 'Lucas 1:78' },
+        { art: '🛠️🪵', bg: 'galileia', text: 'José era carpinteiro. Ele trabalhava com madeira, fazendo portas, mesas e ferramentas. Era um homem trabalhador e bom.', r: 'Mateus 13:55' },
+        { art: '💍💛', bg: 'galileia', fx: 'coracoes', text: 'José estava noivo de Maria. Os dois iam se casar e começar uma família.', r: 'Mateus 1:18' },
+        { art: '😟💭', bg: 'galileia', fx: 'vento', text: 'Mas José descobriu que Maria estava esperando um bebê, e ele sabia que o bebê não era dele. José ficou muito preocupado e triste.', r: 'Mateus 1:18-19' },
+        { art: '🤫💛', bg: 'galileia', text: 'José era justo e bondoso. Ele não queria envergonhar Maria na frente de ninguém. Pensou em desfazer o noivado em segredo.', r: 'Mateus 1:19' },
+        { art: '🌙💤', bg: 'noite', fx: 'estrelas', text: 'Enquanto José pensava nisso, adormeceu. E, num sonho, um anjo do Senhor falou com ele.', r: 'Mateus 1:20' },
+        { art: '✨🗣️', bg: 'noite', fx: 'luz', text: '"José, filho de Davi, não temas receber a Maria, tua mulher, porque o que nela está gerado é do Espírito Santo."', r: 'Mateus 1:20' },
+        { art: '⭐🔤', bg: 'noite', fx: 'brilho', text: '"E dará à luz um filho, e chamarás o seu nome Jesus; porque ele salvará o seu povo dos seus pecados."', r: 'Mateus 1:21' },
+        { art: '📜💛', bg: 'aurora', fx: 'luz', text: 'Tudo isso aconteceu para cumprir o que Deus tinha dito pelo profeta Isaías: "Eis que a virgem conceberá, e dará à luz um filho, e chamá-lo-ão pelo nome de Emanuel."', r: 'Mateus 1:22-23' },
+        { art: '🌅🙏', bg: 'aurora', fx: 'coracoes', text: 'Quando José acordou, fez exatamente como o anjo mandou. Não esperou, não reclamou: obedeceu a Deus.', r: 'Mateus 1:24' },
+        { art: '🏡💍', bg: 'jardim', fx: 'coracoes', text: 'José recebeu Maria como sua esposa e cuidou dela com carinho. E, quando o menino nasceu, foi José quem deu a ele o nome: Jesus.', r: 'Mateus 1:24-25' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'José confiou em Deus mesmo sem entender tudo. Nós também podemos confiar. O nome de Jesus nos lembra: Ele veio nos salvar.', r: 'Mateus 1:21' }
       ],
       small: [
         { q: 'No que José trabalhava?', o: [['🛠️', 'Com madeira'], ['🐟', 'Com peixes'], ['🍞', 'Com pão']] },
@@ -44,10 +60,18 @@ window.NATAL_DATA = {
     {
       id: 'natal3', natal: 1, name: 'A viagem a Belém', icon: '🫏', sticker: '🫏', scene: 'campo', ref: 'Lucas 2:1-5',
       scenes: [
-        { art: '📜👑', bg: 'cidade', text: 'O imperador mandou que todo mundo fosse se registrar na cidade de sua família. José era da família do rei Davi, por isso precisava ir a Belém.', r: 'Lucas 2:1-4' },
-        { art: '🫏🌄', bg: 'campo', text: 'Foi uma viagem longa, de Nazaré até Belém. José cuidou de Maria com carinho por todo o caminho, entre pedras e poeira.', r: 'Lucas 2:4-5' },
-        { art: '🌙⭐', bg: 'noite', fx: 'estrelas', text: 'Há muitos anos, o profeta Miqueias tinha dito que o Salvador nasceria em Belém. Deus estava cumprindo a sua promessa!', r: 'Miqueias 5:2' },
-        { art: '🏘️💛', bg: 'cidade', fx: 'luz', text: 'Quando chegaram, Belém estava cheia de gente. Mas Deus já sabia de tudo e cuidava de cada passo.', r: 'Lucas 2:5-6' }
+        { art: '👣🫏', bg: 'aurora', fx: 'luz', text: 'Lembra da promessa de Miqueias? O Rei nasceria em Belém. Mas Maria e José moravam em Nazaré, bem longe dali. Como Deus ia resolver isso?', r: 'Miqueias 5:2' },
+        { art: '👑📜', bg: 'palacio', text: 'Lá em Roma, o imperador César Augusto deu uma ordem: todas as pessoas do império precisavam ser contadas e escrever o nome numa lista.', r: 'Lucas 2:1' },
+        { art: '🏘️👣', bg: 'cidade', text: 'Cada pessoa tinha que ir para a cidade da sua família. E sabe de que família José era? Da família de Davi!', r: 'Lucas 2:3' },
+        { art: '🏘️⭐', bg: 'campo', fx: 'luz', text: 'Então José precisava ir para Belém, a cidade de Davi. O imperador nem sabia, mas Deus estava usando aquela ordem para cumprir a sua promessa.', r: 'Lucas 2:4' },
+        { art: '🎒🤰', bg: 'galileia', text: 'Maria foi com José. A barriga dela já estava grande: o bebê ia nascer logo, logo.', r: 'Lucas 2:5' },
+        { art: '🫏🛤️', bg: 'campo', fx: 'vento', text: 'Eles pegaram a estrada. Eram uns 150 quilômetros, por caminhos de terra, subindo e descendo morros. Muita gente fazia essa viagem a pé.', r: 'Lucas 2:4-5' },
+        { art: '⛰️☀️', bg: 'monte', text: 'Foram vários dias de caminhada. De dia, o sol esquentava. José cuidava de Maria e ia devagar, um passo de cada vez.', r: 'Lucas 2:4' },
+        { art: '🌙🔥', bg: 'noite', fx: 'estrelas', text: 'De noite, paravam para descansar, faziam uma fogueirinha e olhavam as estrelas. Talvez lembrassem das estrelas de Abraão e da estrela de Jacó.', r: 'Lucas 2:4' },
+        { art: '🙏💛', bg: 'noite', fx: 'coracoes', text: 'Mesmo cansados, eles confiavam em Deus. "O Senhor guardará a tua entrada e a tua saída."', r: 'Salmo 121:7-8' },
+        { art: '🏘️🌅', bg: 'cidade', fx: 'brilho', text: 'Até que, num fim de tarde, apareceram as casinhas de Belém lá no alto do morro. Chegaram!', r: 'Lucas 2:4' },
+        { art: '🏘️👥', bg: 'cidade', text: 'A cidade estava lotada de gente que tinha vindo para a contagem. Maria e José estavam em Belém, esperando a hora do bebê nascer.', r: 'Lucas 2:6' },
+        { art: '⭐✝️', bg: 'noite', fx: 'luz', text: 'Deus cuida de cada detalhe para cumprir as suas promessas. Enquanto Maria e José esperam em Belém, nos próximos dias vamos descobrir quem é esse menino tão esperado.', r: 'Lucas 2:6' }
       ],
       small: [
         { q: 'Para onde José e Maria foram?', o: [['🏘️', 'Belém'], ['🌊', 'O mar'], ['🏝️', 'Uma ilha']] },
@@ -63,10 +87,18 @@ window.NATAL_DATA = {
     {
       id: 'natal4', natal: 1, name: 'Nasceu o Salvador', icon: '⭐', sticker: '⭐', scene: 'noite', ref: 'Lucas 2:6-7',
       scenes: [
-        { art: '🌙🏚️', bg: 'noite', fx: 'estrelas', text: 'Em Belém não havia lugar para eles na hospedaria. Então ficaram num lugar simples, onde se guardavam os animais.', r: 'Lucas 2:7' },
-        { art: '⭐🌾', bg: 'noite', fx: 'luz', text: 'Ali nasceu Jesus, o Filho de Deus. Maria o envolveu em panos e o deitou numa manjedoura, que é uma caminha de palha para os animais.', r: 'Lucas 2:7' },
-        { art: '👑💛', bg: 'aurora', fx: 'coracoes', text: 'O Rei dos reis não nasceu num palácio, mas num lugar humilde. Ele veio para ficar perto de todos nós.', r: 'Filipenses 2:6-7' },
-        { art: '🕊️✨', bg: 'aurora', fx: 'brilho', text: 'O nome Emanuel quer dizer "Deus conosco". Jesus é Deus que veio morar entre nós, por amor.', r: 'Mateus 1:23' }
+        { art: '👣🍞', bg: 'noite', fx: 'estrelas', text: 'Do jardim até aqui, foram muitas paradas: promessas, profetas, anjos, sonhos e uma longa viagem. Esta é a noite mais esperada de todo o caminho!', r: 'Gênesis 3:15' },
+        { art: '🏘️🌙', bg: 'cidade', fx: 'estrelas', text: 'Maria e José estavam em Belém. E, enquanto eles estavam ali, chegou o dia: o bebê ia nascer.', r: 'Lucas 2:6' },
+        { art: '🚪🙅', bg: 'cidade', fx: 'vento', text: 'Mas a cidade estava cheia de gente, e não havia lugar para eles na hospedaria. Todas as portas pareciam fechadas.', r: 'Lucas 2:7' },
+        { art: '🐄🫏', bg: 'noite', text: 'Então eles ficaram num lugar simples, onde se guardavam os animais. Tinha cheiro de palha, de bicho e de feno.', r: 'Lucas 2:7' },
+        { art: '🌌🤫', bg: 'noite', fx: 'estrelas', text: 'A noite estava silenciosa. Ninguém em Belém sabia o que estava para acontecer ali.', r: 'Lucas 2:7' },
+        { art: '⭐🌾', bg: 'noite', fx: 'luz', text: 'E ali nasceu Jesus, o Filho de Deus! Maria o envolveu em panos e o deitou numa manjedoura, uma caminha de palha onde os animais comiam.', r: 'Lucas 2:7' },
+        { art: '📜✅', bg: 'aurora', fx: 'brilho', text: 'A promessa do jardim se cumpriu. A estrela de Jacó, o Rei de Davi, o Emanuel de Isaías, o menino de Belém de Miqueias: tudo se cumpriu naquela noite!', r: 'Gênesis 3:15; Miqueias 5:2' },
+        { art: '👑🌾', bg: 'aurora', fx: 'coracoes', text: 'O Rei dos reis não nasceu num palácio, mas num lugar humilde. O Criador do mundo estava deitado na palha.', r: 'Filipenses 2:6-7' },
+        { art: '🍞🏘️', bg: 'campo', fx: 'luz', text: 'Na casa do pão, nasceu o Pão da vida. O Verbo se fez carne. A luz chegou na escuridão.', r: 'João 6:35' },
+        { art: '💛🤍', bg: 'aurora', fx: 'coracoes', text: 'Maria olhava para o seu bebê e guardava tudo no coração. José estava ali, cuidando dos dois.', r: 'Lucas 2:19' },
+        { art: '🕊️✨', bg: 'aurora', fx: 'brilho', text: 'O nome Emanuel quer dizer "Deus conosco". Naquela noite, Deus veio morar entre nós, por amor.', r: 'Mateus 1:23' },
+        { art: '⭐✝️', bg: 'noite', fx: 'luz', text: '"Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito." Na noite de Natal, o maior presente de todos é Jesus.', r: 'João 3:16' }
       ],
       small: [
         { q: 'Onde Jesus foi deitado?', o: [['🌾', 'Na manjedoura'], ['🛏️', 'Numa cama de rei'], ['🏰', 'Num castelo']] },
@@ -82,10 +114,18 @@ window.NATAL_DATA = {
     {
       id: 'natal5', natal: 1, name: 'Boas novas aos pastores', icon: '🐑', sticker: '🐑', scene: 'campo', ref: 'Lucas 2:8-14',
       scenes: [
-        { art: '🌙🐑', bg: 'campo', fx: 'estrelas', text: 'Perto de Belém havia pastores cuidando das ovelhas durante a noite. Era uma noite calma, com as ovelhinhas dormindo.', r: 'Lucas 2:8' },
-        { art: '✨🌟', bg: 'noite', fx: 'luz', text: 'De repente, uma luz grande brilhou no céu, e os pastores sentiram muito medo! Mas ouviram: "Não temais, porque eis que vos trago novas de grande alegria."', r: 'Lucas 2:9-10' },
-        { art: '⭐💛', bg: 'aurora', fx: 'brilho', text: 'E disseram: "Hoje, na cidade de Davi, vos nasceu o Salvador, que é Cristo, o Senhor." Era a melhor notícia do mundo!', r: 'Lucas 2:11' },
-        { art: '🎶🌌', bg: 'noite', fx: 'estrelas', text: 'Então o céu se encheu de louvor: "Glória a Deus nas alturas, paz na terra, boa vontade para com os homens!"', r: 'Lucas 2:13-14' }
+        { art: '👣⭐', bg: 'aurora', fx: 'luz', text: 'Feliz Natal! Ontem à noite, Jesus nasceu em Belém. Mas quem ia ficar sabendo dessa notícia primeiro?', r: 'Lucas 2:7' },
+        { art: '🌙🐑', bg: 'campo', fx: 'estrelas', text: 'Nos campos perto de Belém, havia pastores cuidando das ovelhas durante a noite. Eram homens simples, que muita gente nem notava.', r: 'Lucas 2:8' },
+        { art: '✨😨', bg: 'noite', fx: 'luz', text: 'De repente, um anjo do Senhor apareceu, e a glória do Senhor brilhou ao redor deles. Os pastores ficaram com muito medo!', r: 'Lucas 2:9' },
+        { art: '💛🗣️', bg: 'noite', fx: 'brilho', text: 'Mas o anjo disse: "Não temais, porque eis aqui vos trago novas de grande alegria, que será para todo o povo." Para todo o povo: para você também!', r: 'Lucas 2:10' },
+        { art: '⭐🏘️', bg: 'aurora', fx: 'luz', text: '"Pois, na cidade de Davi, vos nasceu hoje o Salvador, que é Cristo, o Senhor." Era a melhor notícia do mundo!', r: 'Lucas 2:11' },
+        { art: '🌾🔍', bg: 'noite', fx: 'estrelas', text: '"E isto vos será por sinal: achareis o menino envolto em panos, e deitado numa manjedoura." Um Rei numa manjedoura! Que sinal diferente.', r: 'Lucas 2:12' },
+        { art: '🎶🌌', bg: 'noite', fx: 'estrelas', text: 'Então o céu se encheu de louvor: "Glória a Deus nas alturas, paz na terra, boa vontade para com os homens!"', r: 'Lucas 2:13-14' },
+        { art: '🏃‍♂️🌙', bg: 'campo', fx: 'vento', text: 'Quando a luz sumiu, os pastores disseram: "Vamos até Belém!" E foram depressa, correndo pela noite.', r: 'Lucas 2:15-16' },
+        { art: '🌾💛', bg: 'noite', fx: 'coracoes', text: 'Chegando lá, encontraram Maria, José e o menino deitado na manjedoura, exatamente como o anjo tinha dito.', r: 'Lucas 2:16' },
+        { art: '📣😄', bg: 'cidade', fx: 'coracoes', text: 'Os pastores contaram para todo mundo o que tinham ouvido sobre o menino. E todos que ouviam ficavam maravilhados.', r: 'Lucas 2:17-18' },
+        { art: '👣✨', bg: 'aurora', fx: 'luz', text: 'O nosso caminho começou num jardim, com uma promessa, e terminou numa manjedoura, com o Salvador. Os pastores voltaram louvando a Deus, e nós também!', r: 'Gênesis 3:15; Lucas 2:20' },
+        { art: '⭐✝️', bg: 'aurora', fx: 'luz', text: 'O bebê de Belém cresceu, morreu na cruz por nós e ressuscitou. Ele é o Salvador, Cristo, o Senhor. Essa boa notícia é para você contar também. Feliz Natal!', r: 'Lucas 2:11' }
       ],
       small: [
         { q: 'Quem cuidava das ovelhas?', o: [['🐑', 'Os pastores'], ['👑', 'Os reis'], ['🐟', 'Os pescadores']] },

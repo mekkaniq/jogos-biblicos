@@ -145,7 +145,8 @@
         <button class="setting" style="width:100%" data-s="big"><div><b>Letras grandes</b><span>Aumenta textos e botões</span></div><i class="switch ${st.big ? 'on' : ''}"></i></button>
         <button class="setting" style="width:100%" data-s="sound"><div><b>Sons</b><span>Toques suaves ao acertar</span></div><i class="switch ${st.sound ? 'on' : ''}"></i></button>
         <button class="setting" style="width:100%" data-aboutset><div><b>Sobre o texto bíblico</b><span>Almeida Corrigida Fiel (ACF)</span></div>${I.next}</button>
-        ${NATIVE ? `<button class="setting" style="width:100%" data-remind><div><b>Lembrete diário</b><span>Uma notificação por dia, no horário que escolher</span></div>${I.next}</button>` : `<button class="setting" style="width:100%" data-install><div><b>Instalar no iPhone</b><span>Ter o ícone na tela inicial</span></div>${I.next}</button>`}
+        ${NATIVE ? `<button class="setting" style="width:100%" data-remind><div><b>Lembrete diário</b><span>Uma notificação por dia, no horário que escolher</span></div>${I.next}</button>` : `<button class="setting" style="width:100%" data-install><div><b>${/Android/i.test(navigator.userAgent) ? 'Instalar no celular' : 'Instalar no iPhone'}</b><span>Ter o ícone na tela inicial</span></div>${I.next}</button>`}
+        <a class="setting" style="width:100%;text-decoration:none;color:inherit" href="mailto:editoraversovivo@gmail.com?subject=Sugest%C3%A3o%20%E2%80%94%20Jogos%20B%C3%ADblicos" data-feedback><div><b>Sugestões ou críticas</b><span>Escreva para a Editora Verso Vivo</span></div>${I.next}</a>
         <button class="setting" style="width:100%;border:0" data-reset><div><b>Recomeçar do zero</b><span>Apaga o progresso deste aparelho</span></div>${I.next}</button>
       </div>
       <div class="actions"><button class="btn btn-green" data-close>Pronto</button></div>`, { onClose: () => { if (changed) App.rerender(); } });
@@ -164,6 +165,17 @@
     });
   }
   function installHelp() {
+    if (/Android/i.test(navigator.userAgent)) {
+      modal(`<div class="badge">📱</div><h2>Instalar no celular</h2>
+      <p>Assim os jogos ficam com um ícone na tela inicial, como um aplicativo, e funcionam até sem internet.</p>
+      <div class="steps-ios">
+        <div><i>1</i><span>Abra este endereço no <b>Chrome</b>.</span></div>
+        <div><i>2</i><span>Toque nos <b>três pontinhos ⋮</b> no canto de cima.</span></div>
+        <div><i>3</i><span>Escolha <b>Instalar app</b> (ou <b>Adicionar à tela inicial</b>) e confirme.</span></div>
+      </div>
+      <div class="actions"><button class="btn btn-green" data-close>Entendi</button></div>`);
+      return;
+    }
     modal(`<div class="badge">📱</div><h2>Instalar no iPhone</h2>
       <p>Assim os jogos ficam com um ícone na tela inicial, como um aplicativo, e funcionam até sem internet.</p>
       <div class="steps-ios">
