@@ -135,6 +135,14 @@ document.documentElement.classList.add('natal');
   }
   const sfx = { tap: () => tone([660], .05, 0, .025), good: () => tone([523, 659, 784], .16, .08), win: () => tone([523, 659, 784, 1047], .3, .12, .07), bad: () => tone([220], .12, 0, .04) };
 
+
+  // Versão de teste: data escolhida nos Ajustes simula o dia (as portas usam esse dia)
+  document.addEventListener('change', e => {
+    if (e.target && e.target.id === 'dataTeste') {
+      try { if (e.target.value) localStorage.setItem('adv-hoje', e.target.value); else localStorage.removeItem('adv-hoje'); } catch (x) { }
+      if (window.App && App.toast) App.toast('Data de teste salva. Abra a aba Natal.');
+    }
+  });
   // ---------- Ajustes ----------
   function applySettings() { document.documentElement.classList.toggle('big', !!load().settings.big); }
   const NATIVE = !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
@@ -145,6 +153,7 @@ document.documentElement.classList.add('natal');
       <div style="margin-top:10px">
         <button class="setting" style="width:100%" data-s="big"><div><b>Letras grandes</b><span>Aumenta textos e botões</span></div><i class="switch ${st.big ? 'on' : ''}"></i></button>
         <button class="setting" style="width:100%" data-s="sound"><div><b>Sons</b><span>Toques suaves ao acertar</span></div><i class="switch ${st.sound ? 'on' : ''}"></i></button>
+        ${window.__TESTE ? `<div class="setting" style="width:100%"><div><b>Data de teste</b><span>Só na versão de teste: escolha o dia para ver as portas</span></div><input id="dataTeste" type="date" value="${(()=>{try{return localStorage.getItem('adv-hoje')||''}catch(e){return ''}})()}" style="font:inherit;padding:6px"></div>` : ''}
         <button class="setting" style="width:100%" data-aboutset><div><b>Sobre o texto bíblico</b><span>Almeida Corrigida Fiel (ACF)</span></div>${I.next}</button>
         ${NATIVE ? `<button class="setting" style="width:100%" data-remind><div><b>Lembrete diário</b><span>Uma notificação por dia, no horário que escolher</span></div>${I.next}</button>` : `<button class="setting" style="width:100%" data-install><div><b>${/Android/i.test(navigator.userAgent) ? 'Instalar no celular' : 'Instalar no iPhone'}</b><span>Ter o ícone na tela inicial</span></div>${I.next}</button>`}
         <a class="setting" style="width:100%;text-decoration:none;color:inherit" href="mailto:editoraversovivo@gmail.com?subject=Sugest%C3%A3o%20%E2%80%94%20Jogos%20B%C3%ADblicos" data-feedback><div><b>Sugestões ou críticas</b><span>Escreva para a Editora Verso Vivo</span></div>${I.next}</a>
