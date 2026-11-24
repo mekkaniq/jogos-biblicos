@@ -11,6 +11,10 @@ on:
         description: "Versão que aparece na loja (ex.: 1.0)"
         required: true
         default: "1.0"
+      bundle_id:
+        description: "Identificador do app (deixe vazio para o app Verso Vivo; para a versão teste no app antigo use br.com.lumi.jogosbiblicos)"
+        required: false
+        default: ""
 jobs:
   ios:
     runs-on: macos-26
@@ -19,7 +23,7 @@ jobs:
       TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
       KEY_ID: ${{ secrets.ASC_KEY_ID }}
       ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
-      BUNDLE_ID: br.com.editoraversovivo.jogosbiblicos
+      BUNDLE_ID: ${{ inputs.bundle_id != '' && inputs.bundle_id || 'br.com.editoraversovivo.jogosbiblicos' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
