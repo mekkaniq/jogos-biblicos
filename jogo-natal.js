@@ -94,7 +94,10 @@
   const MES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
   const MESC = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
   // para testar (so no beta): ?hoje=2026-12-10 grava localStorage 'adv-hoje'
-  function advNow() { try { const o = window.__BETA && localStorage.getItem('adv-hoje'); if (o) return new Date(o + 'T12:00:00'); } catch (e) { } return new Date(); }
+  // Data de Brasília, e não a do aparelho: todo mundo abre a mesma porta no mesmo dia (virada à meia-noite de Brasília).
+  // Usa meio-dia local para não depender de horário de verão.
+  function brasilia() { const p = {}; new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date()).forEach(x => p[x.type] = x.value); return new Date(+p.year, +p.month - 1, +p.day, 12); }
+  function advNow() { try { const o = window.__BETA && localStorage.getItem('adv-hoje'); if (o) return new Date(o + 'T12:00:00'); } catch (e) { } return brasilia(); }
   function dayDate(d) { const now = advNow(); let y = now.getFullYear(); if (now.getMonth() < 10) y -= 1; return new Date(y, d.m - 1, d.d); } // jan a out: o Advento que passou
   const isOpen = d => advNow() >= dayDate(d);
   const isToday = d => { const a = advNow(), b = dayDate(d); return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate(); };
