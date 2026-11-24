@@ -1,4 +1,4 @@
-/* Edição de Natal — Calendário do Advento (29/11 a 25/12). Uma porta por dia, que abre à meia-noite do horário do aparelho.
+/* Edição de Natal — Calendário do Advento (29/11 a 25/12). Uma porta por dia, que abre à meia-noite do horário de Brasília (America/Sao_Paulo), não o do aparelho.
    Lições no mesmo formato das histórias do Kids (cenas, perguntas para Pequeninos e Leitores, figurinha).
    Regras: sem imagem de Jesus nem de anjos (só luz e estrelas); toda lição aponta para Jesus; versículo à vista.
    Em cada pergunta a PRIMEIRA opção é a certa (o app embaralha na hora de mostrar).
