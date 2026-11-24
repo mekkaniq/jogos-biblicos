@@ -213,6 +213,7 @@
       clearLive();
       if (hit >= 0) {
         got.add(hit); fw()[ph.id] = [...got].map(i => pw(ph.w[i].w)); save();
+        stage.querySelectorAll('.ws-cell.hint').forEach(c => c.classList.remove('hint'));
         sfx.good(); drawFound(); showDisc(hit); popFound(hit);
         const chip = $(`.chip[data-w="${hit}"]`, el); chip.classList.remove('flash'); void chip.offsetWidth; chip.classList.add('flash');
         if (got.size === total) afterDone(true);
@@ -250,7 +251,7 @@
       if (e.target.closest('#hint')) {
         const i = ph.w.findIndex((_, k) => !got.has(k)); if (i < 0) return;
         const [r, c] = ph.w[i].at; const cell = cellAt(r, c);
-        cell.classList.remove('hint'); void cell.offsetWidth; cell.classList.add('hint');
+        stage.querySelectorAll('.ws-cell.hint').forEach(c => c.classList.remove('hint')); void cell.offsetWidth; cell.classList.add('hint');
         load().caca.hints[ph.id] = (load().caca.hints[ph.id] || 0) + 1; save();
         toast(`A palavra ${ph.w[i].w} começa na letra que está piscando.`, 3200);
       }

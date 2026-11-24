@@ -9,7 +9,7 @@ window.COLORIR_DATA = {
 "win": "Deus abriu o mar, e o povo passou em terra seca.",
 "w": 1200,
 "h": 1200,
-"r": 115
+"r": 116
 },
 {
 "n": 2,
@@ -20,7 +20,7 @@ window.COLORIR_DATA = {
 "win": "Deus deu ao seu povo os Dez Mandamentos.",
 "w": 1200,
 "h": 900,
-"r": 111
+"r": 113
 },
 {
 "n": 3,
@@ -31,7 +31,7 @@ window.COLORIR_DATA = {
 "win": "Débora animou o povo a confiar no Senhor.",
 "w": 1200,
 "h": 1200,
-"r": 125
+"r": 126
 },
 {
 "n": 4,
@@ -42,7 +42,7 @@ window.COLORIR_DATA = {
 "win": "O Senhor é o meu pastor: ele cuida das suas ovelhas.",
 "w": 1200,
 "h": 1200,
-"r": 156
+"r": 157
 },
 {
 "n": 5,
@@ -53,7 +53,7 @@ window.COLORIR_DATA = {
 "win": "Deus mandou corvos levarem pão e carne a Elias.",
 "w": 1200,
 "h": 900,
-"r": 152
+"r": 153
 },
 {
 "n": 6,
@@ -64,7 +64,7 @@ window.COLORIR_DATA = {
 "win": "Deus enviou um grande peixe, e Jonas foi guardado.",
 "w": 1200,
 "h": 900,
-"r": 157
+"r": 160
 },
 {
 "n": 7,
@@ -97,7 +97,7 @@ window.COLORIR_DATA = {
 "win": "Daniel confiou em Deus, e Deus o livrou dos leões.",
 "w": 1200,
 "h": 900,
-"r": 139
+"r": 140
 },
 {
 "n": 10,
@@ -108,7 +108,7 @@ window.COLORIR_DATA = {
 "win": "O rei recebeu Ester com bondade, e ela pôde falar.",
 "w": 1200,
 "h": 1200,
-"r": 116
+"r": 119
 },
 {
 "n": 11,
@@ -119,7 +119,7 @@ window.COLORIR_DATA = {
 "win": "Neemias animou o povo: vamos levantar o muro!",
 "w": 1200,
 "h": 1200,
-"r": 127
+"r": 128
 },
 {
 "n": 12,
@@ -141,7 +141,7 @@ window.COLORIR_DATA = {
 "win": "Uma grande tempestade veio, mas Jesus acalmou o mar.",
 "w": 1200,
 "h": 900,
-"r": 111
+"r": 112
 },
 {
 "n": 14,
@@ -152,7 +152,7 @@ window.COLORIR_DATA = {
 "win": "Zaqueu subiu numa árvore para ver Jesus passar.",
 "w": 1200,
 "h": 900,
-"r": 120
+"r": 122
 },
 {
 "n": 15,
@@ -174,7 +174,7 @@ window.COLORIR_DATA = {
 "win": "Jesus nos ensina a ajudar quem precisa.",
 "w": 1200,
 "h": 900,
-"r": 177
+"r": 178
 },
 {
 "n": 17,
@@ -185,7 +185,7 @@ window.COLORIR_DATA = {
 "win": "Jesus ressuscitou! O túmulo está vazio.",
 "w": 1200,
 "h": 1200,
-"r": 150
+"r": 153
 },
 {
 "n": 101,
@@ -196,7 +196,7 @@ window.COLORIR_DATA = {
 "win": "De dois em dois, os animais entraram na arca, como Deus tinha ordenado.",
 "w": 1200,
 "h": 900,
-"r": 157
+"r": 158
 },
 {
 "n": 102,
@@ -207,7 +207,7 @@ window.COLORIR_DATA = {
 "win": "A pomba voltou com um ramo de oliveira: as águas tinham baixado.",
 "w": 1200,
 "h": 900,
-"r": 157
+"r": 160
 },
 {
 "n": 103,
@@ -218,7 +218,7 @@ window.COLORIR_DATA = {
 "win": "Abraão confiou em Deus, e Deus providenciou um carneiro.",
 "w": 1200,
 "h": 900,
-"r": 194
+"r": 197
 },
 {
 "n": 104,
@@ -262,7 +262,7 @@ window.COLORIR_DATA = {
 "win": "Rute ficou ao lado de Noemi e disse: o teu povo será o meu povo.",
 "w": 1200,
 "h": 900,
-"r": 175
+"r": 178
 },
 {
 "n": 108,
@@ -306,7 +306,7 @@ window.COLORIR_DATA = {
 "win": "Com uma funda e uma pedra, confiando em Deus, Davi venceu o gigante.",
 "w": 1200,
 "h": 1200,
-"r": 152
+"r": 154
 },
 {
 "n": 112,
@@ -317,7 +317,7 @@ window.COLORIR_DATA = {
 "win": "Que alegria quando disseram: vamos à casa do Senhor!",
 "w": 1200,
 "h": 1200,
-"r": 203
+"r": 205
 },
 {
 "n": 113,
@@ -328,7 +328,7 @@ window.COLORIR_DATA = {
 "win": "Jerusalém, a cidade do nosso Deus.",
 "w": 1200,
 "h": 1200,
-"r": 169
+"r": 170
 },
 {
 "n": 114,
@@ -350,7 +350,7 @@ window.COLORIR_DATA = {
 "win": "O samaritano parou e cuidou de quem precisava.",
 "w": 1200,
 "h": 900,
-"r": 182
+"r": 184
 },
 {
 "n": 116,
@@ -383,7 +383,7 @@ window.COLORIR_DATA = {
 "win": "Deus mandou Noé entrar na arca com a sua família, e ali ficaram seguros.",
 "w": 1200,
 "h": 900,
-"r": 238
+"r": 239
 },
 {
 "n": 202,
@@ -394,7 +394,7 @@ window.COLORIR_DATA = {
 "win": "Os homens quiseram construir uma torre que chegasse até o céu.",
 "w": 1200,
 "h": 900,
-"r": 247
+"r": 249
 },
 {
 "n": 203,
@@ -405,7 +405,7 @@ window.COLORIR_DATA = {
 "win": "Jacó deu a José uma túnica colorida, porque o amava.",
 "w": 1200,
 "h": 900,
-"r": 219
+"r": 227
 },
 {
 "n": 204,
@@ -427,7 +427,7 @@ window.COLORIR_DATA = {
 "win": "A mãe de Moisés o pôs num cesto no rio, e Deus cuidou dele.",
 "w": 1200,
 "h": 900,
-"r": 223
+"r": 225
 },
 {
 "n": 206,
@@ -438,7 +438,7 @@ window.COLORIR_DATA = {
 "win": "O povo caminhou no meio do mar, com as águas como muros dos dois lados.",
 "w": 1200,
 "h": 900,
-"r": 195
+"r": 200
 },
 {
 "n": 207,
@@ -449,7 +449,7 @@ window.COLORIR_DATA = {
 "win": "Ester foi corajosa e se apresentou ao rei para ajudar o seu povo.",
 "w": 1200,
 "h": 900,
-"r": 254
+"r": 255
 },
 {
 "n": 208,
@@ -460,7 +460,7 @@ window.COLORIR_DATA = {
 "win": "O povo reconstruiu o templo e louvou ao Senhor.",
 "w": 1200,
 "h": 1200,
-"r": 285
+"r": 300
 },
 {
 "n": 209,
@@ -471,7 +471,7 @@ window.COLORIR_DATA = {
 "win": "O sacerdote leu o livro da Lei, e o povo escutou com atenção.",
 "w": 1200,
 "h": 1200,
-"r": 235
+"r": 236
 },
 {
 "n": 210,
@@ -482,7 +482,7 @@ window.COLORIR_DATA = {
 "win": "Com todos trabalhando juntos, o muro de Jerusalém foi sendo reconstruído.",
 "w": 1200,
 "h": 900,
-"r": 239
+"r": 253
 },
 {
 "n": 211,
@@ -493,7 +493,7 @@ window.COLORIR_DATA = {
 "win": "Jesus disse para lançarem as redes, e a rede ficou cheia de peixes.",
 "w": 1200,
 "h": 1200,
-"r": 274
+"r": 278
 },
 {
 "n": 401,
@@ -504,7 +504,7 @@ window.COLORIR_DATA = {
 "win": "O anjo disse a Maria: não temas, porque achaste graça diante de Deus.",
 "w": 1200,
 "h": 900,
-"r": 66
+"r": 67
 },
 {
 "n": 402,
@@ -604,6 +604,17 @@ window.COLORIR_DATA = {
 "w": 1200,
 "h": 900,
 "r": 147
+},
+{
+"n": 501,
+"t": 4,
+"i": 11,
+"nome": "A promessa no jardim",
+"ref": "Gênesis 3:15",
+"win": "Deus prometeu um Salvador que venceria o mal.",
+"w": 1200,
+"h": 900,
+"r": 119
 }
 ]
 };
