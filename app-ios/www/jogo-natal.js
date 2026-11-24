@@ -240,7 +240,7 @@
         <button class="btn btn-gold adv-go" data-go="#/kids/h/${x.id}">${heard ? NI.check + ' Ouvir de novo' : NI.book + ' Ouvir a lição'}</button>
       </section>
       ${heard ? `
-      ${d.verse ? `<section class="adv-day parch adv-verse"><small>Versículo para guardar</small><p>“${esc(d.verse)}”</p><cite>${esc(d.vref)} · ACF</cite></section>` : ''}
+      ${d.verse ? `<section class="adv-day parch adv-verse"><small>Versículo para guardar</small><p>“${esc(d.verse)}”</p><cite>${esc(d.vref)} · ACF · SBTB</cite></section>` : ''}
       <section class="adv-day parch">
         <h2>Para fazer juntos</h2>
         <p class="adv-talk"><i class="adv-ti">${NI.talk}</i>${esc(d.talk)}</p>
