@@ -220,30 +220,6 @@ window.KIDS_DATA = {
       ]
     },
     {
-      id: 'natal', name: 'O nascimento de Jesus', icon: '⭐', sticker: '⭐', scene: 'noite', ref: 'Lucas 2 e Mateus 2',
-      scenes: [
-        { art: '😇👩', bg: 'aurora', fx: 'luz', text: 'O anjo Gabriel visitou Maria e disse: "Você vai ter um bebê, e ele vai se chamar Jesus. Ele é o Filho de Deus!"', r: 'Lucas 1:26-33' },
-        { art: '🧔👩🫏', bg: 'deserto', text: 'Maria e José viajaram até a cidade de Belém. Era longe, e Maria ia montada num jumentinho.', r: 'Lucas 2:1-5' },
-        { art: '🏠🚫🐄', bg: 'noite', fx: 'estrelas', text: 'Em Belém não havia lugar na hospedaria. Então eles ficaram num lugar simples, onde moravam os animais.', r: 'Lucas 2:7' },
-        { art: '👩🌾🧔', bg: 'noite', fx: 'luz', text: 'Ali nasceu Jesus! Maria o enrolou em panos e o deitou numa manjedoura, o cocho onde os animais comem.', r: 'Lucas 2:6-7' },
-        { art: '😇🐑👨‍🌾', bg: 'campo', fx: 'estrelas', text: 'No campo, anjos apareceram aos pastores: "Nasceu o Salvador!" Os pastores correram para ver o menino Jesus.', r: 'Lucas 2:8-16' },
-        { art: '⭐🐪🎁', bg: 'noite', fx: 'brilho', text: 'Uma estrela brilhante guiou uns sábios do Oriente, os magos, que vieram adorar Jesus e trouxeram presentes. Jesus é o maior presente de Deus!', r: 'Mateus 2:1-11' }
-      ],
-      small: [
-        { q: 'Quem nasceu em Belém?', o: [['✝️', 'O menino Jesus'], ['🐣', 'Um pintinho'], ['🤴', 'Um príncipe bravo']] },
-        { q: 'Onde Jesus foi deitado?', o: [['🌾', 'Na manjedoura'], ['🛏️', 'Numa cama de rei'], ['🚗', 'Num carro']] },
-        { q: 'Quem cantou para os pastores?', o: [['😇', 'Os anjos'], ['🐸', 'Os sapos'], ['🎤', 'Um cantor']] },
-        { q: 'O que guiou os magos?', o: [['⭐', 'Uma estrela'], ['🗺️', 'Um mapa'], ['📱', 'Um celular']] }
-      ],
-      big: [
-        { q: 'Qual anjo visitou Maria?', o: ['Gabriel', 'Miguel', 'Rafael', 'Nenhum'], e: 'O anjo Gabriel anunciou o nascimento de Jesus (Lucas 1:26-31).' },
-        { q: 'Em que cidade Jesus nasceu?', o: ['Belém', 'Nazaré', 'Jerusalém', 'Jericó'], e: 'Belém é a cidade de Davi.' },
-        { q: 'Por que Jesus nasceu num lugar simples?', o: ['Não havia lugar na hospedaria', 'Maria quis assim', 'Estava chovendo', 'Os animais pediram'], e: 'Não havia lugar para eles na hospedaria (Lucas 2:7).' },
-        { q: 'O que os anjos anunciaram aos pastores?', o: ['Que nasceu o Salvador', 'Que ia chover', 'Que as ovelhas fugiram', 'Que era hora de dormir'], e: '"Hoje vos nasceu o Salvador, que é Cristo, o Senhor" (Lucas 2:11).' },
-        { q: 'O que os magos levaram para Jesus?', o: ['Ouro, incenso e mirra', 'Brinquedos', 'Frutas e pão', 'Roupas novas'], e: 'Eles adoraram Jesus e abriram seus tesouros (Mateus 2:11).' }
-      ]
-    },
-    {
       id: 'tempestade', name: 'Jesus acalma o mar', icon: '⛵', sticker: '⛵', scene: 'galileia', ref: 'Marcos 4:35-41',
       scenes: [
         { art: '⛵👥', bg: 'galileia', text: 'Depois de um dia ensinando muita gente, Jesus disse aos discípulos: "Vamos para o outro lado do lago." E entraram no barco.', r: 'Marcos 4:35-36' },
