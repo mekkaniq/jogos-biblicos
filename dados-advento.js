@@ -10,7 +10,7 @@ window.ADVENTO_DATA = {
   "story": "adv1",
   "talk": "Quem já cumpriu uma promessa que parecia impossível? Deus também cumpre as dele.",
   "learn": "Logo depois da queda, Deus já prometeu um Salvador que venceria o mal.",
-  "verse": "Porei inimizade entre ti e a mulher, e entre a tua descendência e a descendência dela; esta te ferirá a cabeça, e tu lhe ferirás o calcanhar.",
+  "verse": "E porei inimizade entre ti e a mulher, e entre a tua semente e a sua semente; esta te ferirá a cabeça, e tu lhe ferirás o calcanhar.",
   "vref": "Gênesis 3:15",
   "pray": "Senhor, obrigado porque o Senhor não desistiu de nós. Obrigado pela promessa de um Salvador. Em nome de Jesus, amém.",
   "next": "Amanhã: Deus chama um homem para uma promessa maior ainda."
@@ -21,7 +21,7 @@ window.ADVENTO_DATA = {
   "story": "adv2",
   "talk": "Quem da sua família você gostaria que conhecesse Jesus?",
   "learn": "Deus prometeu abençoar todas as famílias da terra, e essa bênção chega por Jesus.",
-  "verse": "...e em ti serão benditas todas as famílias da terra.",
+  "verse": "E abençoarei os que te abençoarem, e amaldiçoarei os que te amaldiçoarem; e em ti serão benditas todas as famílias da terra.",
   "vref": "Gênesis 12:3",
   "pray": "Senhor, obrigado porque a sua bênção é para todas as famílias. Abençoa a nossa casa e as famílias que a gente ama. Em nome de Jesus, amém.",
   "next": "Amanhã: a promessa de um cetro que nunca sai de Judá."
@@ -32,7 +32,7 @@ window.ADVENTO_DATA = {
   "story": "adv3",
   "talk": "Por que é bom saber que um rei virá e vai reinar com justiça?",
   "learn": "O rei que Deus prometeu vem da tribo de Judá, e Jesus é esse Rei.",
-  "verse": "Não será tirado de Judá o cetro, nem o legislador de entre os seus pés, até que venha Siló; e a ele obedecerão os povos.",
+  "verse": "O cetro não se arredará de Judá, nem o legislador dentre seus pés, até que venha Siló; e a ele se congregarão os povos.",
   "vref": "Gênesis 49:10",
   "pray": "Jesus, o Senhor é o Rei para sempre. Obrigado por reinar com justiça e amor. Em nome de Jesus, amém.",
   "next": "Amanhã: uma estrela que se levanta de Jacó."
@@ -43,7 +43,7 @@ window.ADVENTO_DATA = {
   "story": "adv4",
   "talk": "Quando você olha para o céu à noite, o que sente? Deus cuida até das estrelas.",
   "learn": "Deus anunciou uma estrela que guiaria até o Rei, e essa estrela aponta para Jesus.",
-  "verse": "Uma estrela procederá de Jacó, e um cetro subirá de Israel.",
+  "verse": "Vê-lo-ei, mas não agora, contemplá-lo-ei, mas não de perto; uma estrela procederá de Jacó e um cetro subirá de Israel, que ferirá os termos dos moabitas, e destruirá todos os filhos de Sete.",
   "vref": "Números 24:17",
   "pray": "Deus, obrigado porque a sua promessa brilha como uma estrela. Obrigado por Jesus, a luz que nos guia. Em nome de Jesus, amém.",
   "next": "Amanhã: um rei que vai reinar para sempre."
@@ -54,7 +54,7 @@ window.ADVENTO_DATA = {
   "story": "adv5",
   "talk": "Em quem você confia para ouvir a palavra de Deus com atenção?",
   "learn": "Deus prometeu um profeta como Moisés, e esse profeta é Jesus.",
-  "verse": "O Senhor teu Deus te suscitará um profeta do meio de ti, de teus irmãos, como eu; a ele ouvireis.",
+  "verse": "O Senhor teu Deus te levantará um profeta do meio de ti, de teus irmãos, como eu; a ele ouvireis;",
   "vref": "Deuteronômio 18:15",
   "pray": "Senhor, ajuda a gente a ouvir o que Jesus diz, como os primeiros ouvintes da promessa. Em nome de Jesus, amém.",
   "next": "Amanhã: Deus dá a Davi a promessa de um filho que vai reinar para sempre."
@@ -65,7 +65,7 @@ window.ADVENTO_DATA = {
   "story": "adv6",
   "talk": "O que faz uma promessa durar para sempre? Quem é fiel?",
   "learn": "Deus prometeu a Davi um Rei cujo trono dura para sempre, e esse Rei é Jesus.",
-  "verse": "E a tua casa e o teu reino serão firmes para sempre diante de mim; o teu trono será firme para sempre.",
+  "verse": "Porém a tua casa e o teu reino serão firmados para sempre diante de ti; teu trono será firme para sempre.",
   "vref": "2 Samuel 7:16",
   "pray": "Jesus, obrigado porque o seu reino não tem fim. Ajuda a gente a confiar na sua fidelidade. Em nome de Jesus, amém.",
   "next": "Amanhã: 'Tu és meu Filho', uma palavra que Deus fala sobre o Rei."
@@ -76,7 +76,7 @@ window.ADVENTO_DATA = {
   "story": "adv7",
   "talk": "O que significa ser filho de alguém que ama você?",
   "learn": "Deus chama o Rei prometido de Filho, e Jesus é o Filho de Deus.",
-  "verse": "...O Senhor me disse: Tu és meu Filho; eu hoje te gerei.",
+  "verse": "Proclamarei o decreto: O Senhor me disse: Tu és meu Filho, eu hoje te gerei.",
   "vref": "Salmo 2:7",
   "pray": "Pai, obrigado por Jesus, o seu Filho amado. Ajuda a gente a ser filho e filha da sua família. Em nome de Jesus, amém.",
   "next": "Amanhã: a ordem de sentar à direita, um Senhor que reina."
@@ -87,7 +87,7 @@ window.ADVENTO_DATA = {
   "story": "adv8",
   "talk": "Quem é o rei da sua vida? Como você honra esse Rei?",
   "learn": "Davi chamou o Rei prometido de Senhor, e Jesus é esse Senhor que reina.",
-  "verse": "Disse o Senhor ao meu Senhor: Assenta-te à minha direita, até que eu ponha a teus inimigos por estrado de teus pés.",
+  "verse": "Disse o Senhor ao meu Senhor: Assenta-te à minha mão direita, até que ponha os teus inimigos por escabelo dos teus pés.",
   "vref": "Salmo 110:1",
   "pray": "Jesus, o Senhor é o meu Rei. Reina no meu coração e na minha casa. Em nome de Jesus, amém.",
   "next": "Amanhã: uma profecia que mostra um Rei que é também Deus conosco."
@@ -98,7 +98,7 @@ window.ADVENTO_DATA = {
   "story": "adv9",
   "talk": "Quando você sente que Deus está perto? O que ajuda você nesses momentos?",
   "learn": "Isaías anunciou que Deus estaria conosco, e Jesus é Emanuel: Deus conosco.",
-  "verse": "Portanto, o mesmo Senhor vos dará um sinal: Eis que a virgem conceberá, e dará à luz um filho, e chamará o seu nome Emanuel.",
+  "verse": "Portanto o mesmo Senhor vos dará um sinal: Eis que a virgem conceberá, e dará à luz um filho, e chamará o seu nome Emanuel.",
   "vref": "Isaías 7:14",
   "pray": "Senhor, obrigado porque o Senhor está conosco. Em Jesus, você mora perto de nós. Em nome de Jesus, amém.",
   "next": "Amanhã: a luz que brilha para quem andava em trevas."
@@ -109,7 +109,7 @@ window.ADVENTO_DATA = {
   "story": "adv10",
   "talk": "O que você mais precisa de paz hoje? Quem pode dar paz de verdade?",
   "learn": "Isaías anunciou um menino que traria paz eterna, e esse menino é Jesus.",
-  "verse": "Porque um menino nos nasceu, um filho se nos deu, e o principado está sobre os seus ombros; e o seu nome será Maravilhoso, Conselheiro, o Deus forte, o Pai da eternidade, o Príncipe da Paz.",
+  "verse": "Porque um menino nos nasceu, um filho se nos deu, e o principado estará sobre os seus ombros, e se chamará o seu nome: Maravilhoso, Conselheiro, Deus Forte, Pai da Eternidade, Príncipe da Paz.",
   "vref": "Isaías 9:6",
   "pray": "Jesus, Príncipe da Paz, acalma o nosso coração. Obrigado pela paz que só o Senhor dá. Em nome de Jesus, amém.",
   "next": "Amanhã: um renovo que sai do tronco de Jessé."
@@ -120,7 +120,7 @@ window.ADVENTO_DATA = {
   "story": "adv11",
   "talk": "O que você acha que nasce de uma coisa que parecia morta?",
   "learn": "Deus fez nascer esperança do tronco cortado de Jessé, e esse renovo é Jesus.",
-  "verse": "E sairá um rebento do tronco de Jessé, e um renovo das suas raízes frutificará.",
+  "verse": "Porque brotará um rebento do tronco de Jessé, e das suas raízes um renovo frutificará.",
   "vref": "Isaías 11:1",
   "pray": "Senhor, obrigado porque da sua promessa nasce vida nova. Faz brotar esperança no nosso coração. Em nome de Jesus, amém.",
   "next": "Amanhã: Belém, a pequena cidade que tinha uma promessa."
@@ -131,7 +131,7 @@ window.ADVENTO_DATA = {
   "story": "adv12",
   "talk": "Você já se sentiu pequeno para algo grande? Deus usa o pequeno.",
   "learn": "Deus escolheu a pequena Belém para a vinda do Governante, que é Jesus.",
-  "verse": "E tu, Belém Efrata, posto que pequena entre os milhares de Judá, de ti me sairá o que governará em Israel; e cujas saídas são desde a antiguidade, desde os dias da eternidade.",
+  "verse": "E tu, Belém Efrata, posto que pequena entre os milhares de Judá, de ti me sairá o que governará em Israel, e cujas saídas são desde os tempos antigos, desde os dias da eternidade.",
   "vref": "Miqueias 5:2",
   "pray": "Senhor, obrigado porque o Senhor usa o pequeno e o simples. Obrigado por Jesus, nascido em Belém. Em nome de Jesus, amém.",
   "next": "Amanhã: a voz no deserto que prepara o caminho."
@@ -153,7 +153,7 @@ window.ADVENTO_DATA = {
   "story": "adv14",
   "talk": "Como a nossa família pode preparar o coração para o Natal?",
   "learn": "Deus mandou uma voz preparar o caminho para o Senhor, e essa voz foi João Batista.",
-  "verse": "Uma voz clama: No deserto preparai o caminho do Senhor; endireitai no ermo uma estrada a nosso Deus.",
+  "verse": "Voz do que clama no deserto: Preparai o caminho do Senhor; endireitai no ermo vereda a nosso Deus.",
   "vref": "Isaías 40:3",
   "pray": "Senhor, prepara o nosso coração para receber Jesus. Tira o que atrapalha e faz morada em nós. Em nome de Jesus, amém.",
   "next": "Amanhã: o mensageiro que vai na frente do Senhor."
@@ -164,7 +164,7 @@ window.ADVENTO_DATA = {
   "story": "adv15",
   "talk": "Quem ajudou você a chegar mais perto de Deus?",
   "learn": "Deus enviou um mensageiro para preparar a vinda do Senhor, e esse mensageiro é João Batista.",
-  "verse": "Eis que eu envio o meu mensageiro, que preparará o caminho diante de mim; e de repente virá ao seu templo o Senhor, a quem vós buscais.",
+  "verse": "Eis que eu envio o meu mensageiro, que preparará o caminho diante de mim; e de repente virá ao seu templo o Senhor, a quem vós buscais; e o mensageiro da aliança, a quem vós desejais, eis que ele vem, diz o Senhor dos Exércitos.",
   "vref": "Malaquias 3:1",
   "pray": "Senhor, obrigado por quem nos ajuda a conhecer o Senhor. Ajuda a gente a ser um mensageiro da sua boa notícia. Em nome de Jesus, amém.",
   "next": "Amanhã: o profeta Elias, que deve voltar antes do grande dia."
@@ -175,7 +175,7 @@ window.ADVENTO_DATA = {
   "story": "adv16",
   "talk": "Quando alguém precisa de coragem, quem ajuda você a seguir em frente?",
   "learn": "Deus prometeu enviar Elias antes do grande dia, e João veio com o espírito de Elias para preparar o Senhor.",
-  "verse": "Eis que eu vos enviarei o profeta Elias, antes que venha o grande e terrível dia do Senhor.",
+  "verse": "Eis que eu vos enviarei o profeta Elias, antes que venha o grande e terrível dia do Senhor;",
   "vref": "Malaquias 4:5",
   "pray": "Senhor, dá coragem para a gente falar da sua verdade. Ajuda a preparar o caminho para Jesus. Em nome de Jesus, amém.",
   "next": "Amanhã: o Filho do Homem, que vem com as nuvens do céu."
@@ -186,7 +186,7 @@ window.ADVENTO_DATA = {
   "story": "adv17",
   "talk": "O que faz você sentir que alguém maior está cuidando de você?",
   "learn": "Daniel viu um como o Filho do homem recebendo um reino eterno, e esse Filho é Jesus.",
-  "verse": "Eu estava olhando nas minhas visões da noite, e eis que vinha com as nuvens do céu um como o Filho do homem, e chegou até o Ancião de Dias.",
+  "verse": "Eu estava olhando nas minhas visões da noite, e eis que vinha nas nuvens do céu um como o filho do homem; e dirigiu-se ao ancião de dias, e o fizeram chegar até ele.",
   "vref": "Daniel 7:13",
   "pray": "Senhor, obrigado porque o seu reino é eterno. Jesus, reina no nosso coração. Em nome de Jesus, amém.",
   "next": "Amanhã: o servo escolhido, que traz justiça às nações."
@@ -197,7 +197,7 @@ window.ADVENTO_DATA = {
   "story": "adv18",
   "talk": "Quando você ajuda alguém sem fazer barulho, que bem isso faz?",
   "learn": "Deus escolheu um servo cheio do seu Espírito, e esse servo é Jesus, que traz justiça com mansidão.",
-  "verse": "Eis aqui o meu servo, a quem sustento; o meu escolhido, em quem se apraz a minha alma; pus o meu espírito sobre ele; ele trará justiça às nações.",
+  "verse": "Eis aqui o meu servo, a quem sustenho, o meu eleito, em quem se compraz a minha alma; pus o meu espírito sobre ele; ele trará justiça aos gentios.",
   "vref": "Isaías 42:1",
   "pray": "Jesus, obrigado porque o Senhor serve com mansidão. Ajuda a gente a cuidar dos outros do mesmo jeito. Em nome de Jesus, amém.",
   "next": "Amanhã: o Rei que foi traspassado, e que cumpre o Salmo 22."
@@ -208,7 +208,7 @@ window.ADVENTO_DATA = {
   "story": "adv19",
   "talk": "Como você se sente quando alguém sofre e você não consegue ajudar?",
   "learn": "Davi descreveu um sofrimento que parecia impossível, e esse sofrimento se cumpre em Jesus na cruz.",
-  "verse": "Pois cães me rodearam; uma multidão de malfeitores me cercou; traspassaram-me as mãos e os pés.",
+  "verse": "Pois me rodearam cães; o ajuntamento de malfeitores me cercou, traspassaram-me as mãos e os pés.",
   "vref": "Salmo 22:16",
   "pray": "Jesus, obrigado porque o Senhor sofreu por nós. Ajuda a gente a lembrar do seu amor na cruz. Em nome de Jesus, amém.",
   "next": "Amanhã: um rei que entra em Jerusalém montado num jumento."
@@ -219,7 +219,7 @@ window.ADVENTO_DATA = {
   "story": "adv20",
   "talk": "Que tipo de líder você admira? Por quê?",
   "learn": "Zacarias anunciou um Rei humilde e salvador, e esse Rei é Jesus, que entrou em Jerusalém montado num jumento.",
-  "verse": "Alegra-te muito, ó filha de Sião; exulta, ó filha de Jerusalém; eis que o teu Rei virá a ti; justo e salvador, pobre, e montado num jumento.",
+  "verse": "Alegra-te muito, ó filha de Sião; exulta, ó filha de Jerusalém; eis que o teu rei virá a ti, justo e Salvador, pobre, e montado sobre um jumento, e sobre um jumentinho, filho de jumenta.",
   "vref": "Zacarias 9:9",
   "pray": "Jesus, obrigado porque o seu reinado é humilde e cheio de amor. Ajuda a gente a ser humilde também. Em nome de Jesus, amém.",
   "next": "Amanhã: a paz que Jesus traz ao mundo."
@@ -230,7 +230,7 @@ window.ADVENTO_DATA = {
   "story": "adv21",
   "talk": "O que você faria hoje para trazer paz a alguém da sua família?",
   "learn": "Miqueias anunciou que o Governante seria a nossa paz, e Jesus traz paz com Deus e entre as pessoas.",
-  "verse": "E este será a nossa paz.",
+  "verse": "E este será a nossa paz; quando a Assíria vier à nossa terra, e quando pisar em nossos palácios, levantaremos contra ela sete pastores e oito príncipes dentre os homens.",
   "vref": "Miqueias 5:5",
   "pray": "Senhor, faz da tua paz o nosso caminho. Ajuda a gente a perdoar e a viver em paz. Em nome de Jesus, amém.",
   "next": "Amanhã: o reino que nunca será destruído."
@@ -241,7 +241,7 @@ window.ADVENTO_DATA = {
   "story": "adv22",
   "talk": "O que você acha que dura para sempre? O que passa?",
   "learn": "Daniel anunciou um reino que nunca será destruído, e esse reino é o de Jesus.",
-  "verse": "E nos dias destes reis o Deus do céu levantará um reino que nunca será destruído; e este reino não passará a outro povo; esmiuçará e consumirá todos estes reinos, e ele mesmo permanecerá para sempre.",
+  "verse": "Mas, nos dias desses reis, o Deus do céu levantará um reino que não será jamais destruído; e este reino não passará a outro povo; esmiuçará e consumirá todos esses reinos, mas ele mesmo subsistirá para sempre,",
   "vref": "Daniel 2:44",
   "pray": "Senhor, obrigado porque o seu reino não tem fim. Ajuda a gente a colocar a esperança no que dura. Em nome de Jesus, amém.",
   "next": "Amanhã: o Deus conosco que nasce em Belém, na véspera."
@@ -252,7 +252,7 @@ window.ADVENTO_DATA = {
   "story": "adv23",
   "talk": "Quando Deus pede algo difícil, o que ajuda você a dizer sim?",
   "learn": "Maria disse sim à promessa de Deus, e por ela o Emanuel prometido por Isaías chegou ao mundo.",
-  "verse": "Eis que a virgem conceberá, e dará à luz um filho, e chamará o seu nome Emanuel.",
+  "verse": "Portanto o mesmo Senhor vos dará um sinal: Eis que a virgem conceberá, e dará à luz um filho, e chamará o seu nome Emanuel.",
   "vref": "Isaías 7:14",
   "pray": "Senhor, ajuda a gente a dizer sim para o seu plano, como Maria disse. Em nome de Jesus, amém.",
   "next": "Amanhã: José, da casa de Davi, que cuida do menino."
@@ -263,7 +263,7 @@ window.ADVENTO_DATA = {
   "story": "adv24",
   "talk": "Quem cuida de você todos os dias? Como você pode agradecer?",
   "learn": "Deus prometeu a Davi um descendente no trono, e José, da família de Davi, cuidou do Filho prometido.",
-  "verse": "Jurou o Senhor a Davi a verdade, e não se desviará dela: Do fruto do teu ventre porei sobre o teu trono.",
+  "verse": "O Senhor jurou com verdade a Davi, e não se apartará dela: Do fruto do teu ventre porei sobre o teu trono.",
   "vref": "Salmo 132:11",
   "pray": "Pai, obrigado pelas pessoas que cuidam de nós com fidelidade. Abençoa as nossas famílias. Em nome de Jesus, amém.",
   "next": "Amanhã: a luz que brilha para quem andava em trevas."
@@ -274,7 +274,7 @@ window.ADVENTO_DATA = {
   "story": "adv25",
   "talk": "O que a luz faz quando entra num lugar escuro?",
   "learn": "Isaías anunciou uma luz para quem vivia na escuridão, e essa luz é Jesus.",
-  "verse": "O povo que andava em trevas viu uma grande luz; sobre os que habitavam na terra da sombra da morte resplandeceu a luz.",
+  "verse": "O povo que andava em trevas, viu uma grande luz, e sobre os que habitavam na região da sombra da morte resplandeceu a luz.",
   "vref": "Isaías 9:2",
   "pray": "Jesus, luz do mundo, brilha no nosso coração. Espanta todo o escuro. Em nome de Jesus, amém.",
   "next": "Amanhã: a viagem a Belém, a cidade da promessa."
@@ -285,7 +285,7 @@ window.ADVENTO_DATA = {
   "story": "adv26",
   "talk": "O que a sua família espera nesta noite de véspera?",
   "learn": "Deus prometeu que uma descendência traria bênção ao mundo, e essa descendência é Jesus, nascido em Belém.",
-  "verse": "E em tua descendência serão benditas todas as nações da terra, porquanto obedeceste à minha voz.",
+  "verse": "E em tua descendência serão benditas todas as nações da terra; porquanto obedeceste à minha voz.",
   "vref": "Gênesis 22:18",
   "pray": "Senhor, nesta noite de véspera, a nossa espera chega ao fim. Obrigado por Jesus. Em nome de Jesus, amém.",
   "next": "Amanhã: a noite de Natal, quando o Salvador nasce."
@@ -296,7 +296,7 @@ window.ADVENTO_DATA = {
   "story": "adv27",
   "talk": "O que você mais agradece a Deus por ter enviado Jesus?",
   "learn": "O Salvador prometido desde o jardim nasceu em Belém: Jesus, o Filho de Deus, Emanuel, Deus conosco.",
-  "verse": "Porque um menino nos nasceu, um filho se nos deu, e o principado está sobre os seus ombros.",
+  "verse": "Porque um menino nos nasceu, um filho se nos deu, e o principado estará sobre os seus ombros, e se chamará o seu nome: Maravilhoso, Conselheiro, Deus Forte, Pai da Eternidade, Príncipe da Paz.",
   "vref": "Isaías 9:6",
   "pray": "Jesus, feliz aniversário! Obrigado por nascer e vir nos salvar. Enche a nossa casa de alegria. Em nome de Jesus, amém.",
   "next": "Feliz Natal! O Caminho até Belém chegou ao fim, e Jesus está conosco."
