@@ -1,3 +1,4 @@
+document.documentElement.classList.add('natal');
 /* Jogos Bíblicos — núcleo: progresso, rotas, ícones, avisos, sons */
 (function () {
   'use strict';

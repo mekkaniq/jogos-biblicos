@@ -1280,3 +1280,14 @@ html.nt-on #app { padding-bottom: min(34vw, 380px); }
 .adv-next small { color: #f0cd7e; }
 .adv-next p { margin-top: 4px; color: rgba(251, 241, 216, .95); font-style: italic; }
 .adv-wait { margin: 12px 6px 0; text-align: center; color: rgba(251, 241, 216, .85); font-size: .92rem; font-style: italic; }
+
+/* ===== Tema de Natal (todo o app): vermelho com dourado e neve caindo.
+   Para voltar ao tema verde, apague a linha document.documentElement.classList.add('natal') no início de core.js. */
+html.natal body { background: radial-gradient(120% 80% at 50% 0%, #8a1a28 0%, #55101a 55%, #2c060d 100%) !important; }
+html.natal body::before { background: linear-gradient(180deg, rgba(90, 14, 26, .12), rgba(50, 8, 16, .55) 50%, rgba(30, 4, 10, .86)) !important; }
+html.natal body::after { content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 1; opacity: .8;
+  background-image: radial-gradient(circle, #fffaf0 1.3px, transparent 1.8px), radial-gradient(circle, #f6e7c1 1px, transparent 1.5px), radial-gradient(circle, #fff 0.8px, transparent 1.2px);
+  background-size: 130px 170px, 95px 140px, 60px 90px; animation: nevecai 16s linear infinite; }
+@keyframes nevecai { from { background-position: 0 0, 0 0, 0 0; } to { background-position: 0 340px, 0 280px, 0 180px; } }
+html.natal.in-app.has-tabs #appTabs { background: linear-gradient(180deg, rgba(150, 26, 40, .92), rgba(70, 8, 18, .97)) !important; border-top: 1px solid #d8b25c !important; }
+html.natal .gold-text, html.natal h1, html.natal h2 { text-shadow: 0 1px 0 rgba(0, 0, 0, .35); }
