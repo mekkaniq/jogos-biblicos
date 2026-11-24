@@ -1,6 +1,6 @@
 /* Edição de Natal — "Caminho até Belém". Mesmo formato das histórias do Kids (cenas, perguntas para Pequeninos e Leitores, figurinha).
    Regras: sem imagem de Jesus nem de anjos (só luz e estrelas); toda história aponta para Jesus; versículo à vista.
-   Em cada pergunta a PRIMEIRA opção é a certa (o app embaralha na hora de mostrar). TEXTOS PARA REVISÃO DO PASTOR. */
+   Em cada pergunta a PRIMEIRA opção é a certa (o app embaralha na hora de mostrar). REVISÃO: EDUARDO DE SOUZA (decisão de 24/11/2026; o pastor Wellington não participa mais). */
 window.NATAL_DATA = {
   stories: [
     {
