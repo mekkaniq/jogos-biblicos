@@ -125,7 +125,7 @@
         <button class="${s.band === 'small' ? 'on' : ''}" data-band="small"><span>🐣</span><b>Pequeninos</b><small>4 a 6 anos</small></button>
         <button class="${s.band === 'big' ? 'on' : ''}" data-band="big"><span>📚</span><b>Leitores</b><small>7 a 10 anos</small></button>
       </div>
-      ${App.historia ? (pr => `<button class="kd-hbanner" data-go="#/kids/historia"><span class="ic">📜</span><span class="tx"><b>A Grande História da Bíblia</b><small>Do começo ao fim, lição por lição. Toda a Bíblia aponta para Jesus!</small><i class="bar"><u style="width:${Math.round(pr.done / pr.total * 100)}%"></u></i><small>${pr.done} de ${pr.total} lições</small></span><em class="nw">NOVO</em></button>`)(App.historia.progress()) : ''}
+      ${App.historia ? (pr => `<button class="kd-hbanner" data-go="#/kids/historia"><span class="ic">📜</span><span class="tx"><b>A Grande História da Bíblia</b><small>Do começo ao fim, lição por lição. Toda a Bíblia aponta para Jesus!</small><i class="bar"><u style="width:${Math.round(pr.done / pr.total * 100)}%"></u></i><small>${pr.done} de ${pr.total} lições</small></span></button>`)(App.historia.progress()) : ''}
       <div class="section-title"><h2>Histórias favoritas</h2><span>${got} de ${d.stories.length} figurinhas</span></div>
       <div class="kd-stories">
         ${d.stories.map((st, i) => `<button class="kd-story" data-story="${st.id}" style="background-image:${App.sceneUrl(st.scene)};--d:${i * 40}ms"><span class="ic">${st.icon}</span><b>${esc(st.name)}</b>${s.stickers[st.id] ? `<em>${st.sticker} já tenho</em>` : '<em class="new">Começar ▶</em>'}</button>`).join('')}
