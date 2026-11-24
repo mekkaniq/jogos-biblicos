@@ -102,7 +102,7 @@
   const isOpen = d => advNow() >= dayDate(d);
   const isToday = d => { const a = advNow(), b = dayDate(d); return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate(); };
   const advStory = id => ADV().stories.find(s => s.id === id) || window.NATAL_DATA.stories.find(s => s.id === id);
-  const DRAW = { natal1: 401, natal3: 402, natal4: 403, natal5: 404, adv1: 501, adv4: 406, adv9: 409, adv12: 407, adv23: 401, adv24: 402, adv25: 404, adv27: 403 }; // desenhos novos entram aqui quando ficarem prontos
+  const DRAW = { natal1: 401, natal3: 402, natal4: 403, natal5: 404, adv1: 501, adv4: 406, adv9: 409, adv12: 407, adv23: 401, adv24: 402, adv25: 404, adv27: 403, adv2: 502, adv3: 503, adv5: 505, adv6: 506, adv7: 507, adv8: 508, adv10: 510, adv11: 511, adv13: 513, adv14: 514, adv15: 515, adv16: 516, adv17: 517, adv18: 518, adv19: 519, adv20: 520, adv21: 521, adv22: 522, adv26: 526 }; // desenhos novos entram aqui quando ficarem prontos
 
   // Caminho até Belém: 27 paradas em 5 etapas, numa trilha que vai acendendo
   const STAGES = [
