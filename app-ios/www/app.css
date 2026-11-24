@@ -1291,3 +1291,17 @@ html.natal body::after { content: ''; position: fixed; inset: 0; pointer-events:
 @keyframes nevecai { from { background-position: 0 0, 0 0, 0 0; } to { background-position: 0 340px, 0 280px, 0 180px; } }
 html.natal.in-app.has-tabs #appTabs { background: linear-gradient(180deg, rgba(150, 26, 40, .92), rgba(70, 8, 18, .97)) !important; border-top: 1px solid #d8b25c !important; }
 html.natal .gold-text, html.natal h1, html.natal h2 { text-shadow: 0 1px 0 rgba(0, 0, 0, .35); }
+
+/* Passada completa do Natal: as cores verdes viram vinho e vermelho; o dourado fica. */
+html.natal {
+  --green-950: #2c060d; --green-900: #3e0a13; --green-800: #5a1020; --green-700: #7a1a2b; --green-600: #9a2638; --green-500: #b8364a;
+  --green-grad: linear-gradient(180deg, #a52a3d 0%, #7d1a2a 55%, #5c1020 100%);
+}
+html.natal .dark-card { background: linear-gradient(180deg, rgba(122, 26, 43, .94), rgba(62, 10, 19, .95)); }
+html.natal .journey { background: rgba(70, 12, 22, .9); }
+html.natal .game-card::after { background: linear-gradient(90deg, rgba(60, 8, 18, .93) 0%, rgba(60, 8, 18, .72) 55%, rgba(60, 8, 18, .18) 100%); }
+html.natal .bar i { background: linear-gradient(90deg, #f6e2a6, #d8b25c); }
+html.natal .btn-green { border-color: rgba(246, 226, 166, .7); }
+html.natal .nt-banner { background: linear-gradient(180deg, #b8364a 0%, #7d1a2a 60%, #5c1020 100%) !important; border: 1px solid rgba(246, 226, 166, .6) !important; }
+html.natal .nt-tab[data-tab="d"] { background: linear-gradient(180deg, #b8364a, #6e1424) !important; }
+html.natal .dark-card { border-color: rgba(246, 226, 166, .55); }
