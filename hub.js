@@ -63,7 +63,7 @@
         <button class="btn" data-settings>${I.gear} Ajustes</button>
         ${standalone ? '' : `<button class="btn" data-install>${I.share} Instalar no iPhone</button>`}
       </div>
-      <p class="credit">Textos bíblicos: Almeida Corrigida Fiel (ACF), fonte oficial deste app · <button class="lnk" data-about>Sobre</button> · Foto da capa: Pisit Heng / Unsplash · versão claude v2.2${window.__BETA ? ' beta ' + window.__BETA : ''}</p>`;
+      <p class="credit">Textos bíblicos: Almeida Corrigida Fiel (ACF), fonte oficial deste app · <button class="lnk" data-about>Sobre</button> · <a class="lnk" href="https://editoraversovivo.com.br/redes" target="_blank" rel="noopener">Siga @editoraversovivo</a> · Foto da capa: Pisit Heng / Unsplash · versão claude v2.2${window.__BETA ? ' beta ' + window.__BETA : ''}</p>`;
     el.addEventListener('click', e => {
       const g = e.target.closest('[data-go]'); if (g) { App.sfx.tap(); go(g.dataset.go); }
       if (e.target.closest('[data-settings]')) openSettings();

@@ -149,6 +149,17 @@ footer a{text-decoration-color:var(--gold)}
 #wbub.on{opacity:1;transform:none}
 #wbub cite{display:block;margin-top:4px;font-style:normal;font-family:var(--title);font-size:.7rem;letter-spacing:.12em;color:var(--gold)}
 @media(prefers-reduced-motion:reduce){#walker img,.nine-btn img,.scrollhint i{animation:none}}
+.redes{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.redes a{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:rgba(28,20,10,.55);border:1px solid rgba(240,205,126,.55);color:var(--cream);text-decoration:none;font-weight:600;font-size:.92rem;backdrop-filter:blur(6px)}
+.redes a:hover{border-color:var(--gold);background:rgba(28,20,10,.75)}
+.redes svg{width:20px;height:20px;fill:none;stroke:var(--gold);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.redes svg .f{fill:var(--gold);stroke:none}
+#topo .redes{justify-content:center}
+.redes-box{margin:40px 0 10px;padding:26px 22px;border-radius:22px;text-align:center}
+.redes-box h3{font-family:var(--title);color:var(--gold);font-size:1.4rem;margin:0 0 8px}
+.redes-box .redes{justify-content:center}
+.redes-box .mini{margin-top:14px;font-size:.85rem}
+.redes-box .mini a{color:var(--gold)}
 </style>
 </head>
 <body>
@@ -162,7 +173,7 @@ footer a{text-decoration-color:var(--gold)}
 <header class="top">
   <a class="brand" href="#topo" aria-label="Editora Verso Vivo, voltar ao início"><img src="/_ed/img/nine-rosto.webp" alt="" width="34" height="34"><span>Verso Vivo</span></a>
   <nav class="top" aria-label="Principal">
-    <a href="#caminhos">Caminhos</a><a href="#historia">A Grande História</a><a href="#nine">Nine</a>
+    <a href="#caminhos">Caminhos</a><a href="#historia">A Grande História</a><a href="#nine">Nine</a><a href="#redes">Redes</a>
     <a class="cta" href="/jogos/">Jogar agora</a>
   </nav>
 </header>
@@ -174,8 +185,26 @@ footer a{text-decoration-color:var(--gold)}
     <h1 class="rv">Editora<br>Verso Vivo</h1>
     <p class="lead rv">Jogos, catecismos e materiais para aprender a Bíblia em família e na igreja, com calma e sempre apontando para Jesus.</p>
     <p class="rv" style="margin-top:26px"><a class="btn" href="https://apps.apple.com/br/app/id6830327976" target="_blank" rel="noopener">Baixar o app grátis na App Store</a></p>
+    <div class="redes rv">
+      <a href="https://www.instagram.com/editoraversovivo" target="_blank" rel="noopener" aria-label="Instagram @editoraversovivo"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="f"/></svg><span>Instagram</span></a>
+      <a href="https://www.youtube.com/@VersoVivoEditora" target="_blank" rel="noopener" aria-label="YouTube Verso Vivo Editora"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" class="f"/></svg><span>YouTube</span></a>
+      <a href="https://www.tiktok.com/@versvovivo" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 2.5 2.3 4 5 4.3"/></svg><span>TikTok</span></a>
+      <a href="https://apps.apple.com/br/app/id6830327976" target="_blank" rel="noopener" aria-label="App na App Store"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 18.5h3"/></svg><span>App iPhone</span></a>
+    </div>
     <div class="verse glass rv"><p>“Lâmpada para os meus pés é tua palavra, e luz para o meu caminho.”</p><cite>Salmos 119:105 · ACF</cite></div>
     <p class="scrollhint rv">Role para caminhar<i>↓</i></p>
+  </div>
+</section>
+
+<section id="advento">
+  <div class="wrap">
+    <p class="kicker rv">Advento 2026 · de 29/11 ao Natal</p>
+    <h2 class="rv">Uma porta por dia<br>até Jesus</h2>
+    <p class="lead rv">São 27 portas. Cada uma conta uma passagem do Antigo Testamento e mostra como ela se cumpre em Jesus, com o versículo para guardar, uma conversa para a família e um desenho para colorir.</p>
+    <div class="cards">
+      <article class="card glass rv"><span class="ic">🚪</span><h3>No app</h3><p>A porta do dia se abre no app Jogos Bíblicos: a lição, o versículo e o desenho.</p><a class="btn" href="https://apps.apple.com/br/app/id6830327976" target="_blank" rel="noopener">Baixar na App Store</a><a class="btn sec" href="/jogos/#/natal">Abrir no navegador</a></article>
+      <article class="card glass rv"><span class="ic">🎬</span><h3>Nos vídeos</h3><p>Abriu a porta, é o vídeo do dia: um Reel curto com a lição, no Instagram, no YouTube e no TikTok.</p><a class="btn" href="https://www.instagram.com/editoraversovivo" target="_blank" rel="noopener">Seguir no Instagram</a><a class="btn sec" href="https://www.youtube.com/@VersoVivoEditora" target="_blank" rel="noopener">Ver no YouTube</a></article>
+    </div>
   </div>
 </section>
 
@@ -256,6 +285,17 @@ footer a{text-decoration-color:var(--gold)}
       <div class="chip glass rv"><span>📕</span><span><b>Livro</b> · A Grande História da Bíblia</span></div>
       <div class="chip glass rv"><span>🎙️</span><span><b>Podcast</b> · em preparo</span></div>
       <div class="chip glass rv"><span>🧒</span><span><b>Materiais educativos</b> · em preparo</span></div>
+    </div>
+    <div id="redes" class="redes-box glass rv">
+      <h3>Siga a Verso Vivo</h3>
+      <p>Um versículo, uma história e um caminho até Jesus, todos os dias. Use o mesmo @ em toda parte: <b>@editoraversovivo</b>.</p>
+      <div class="redes ">
+      <a href="https://www.instagram.com/editoraversovivo" target="_blank" rel="noopener" aria-label="Instagram @editoraversovivo"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="f"/></svg><span>Instagram</span></a>
+      <a href="https://www.youtube.com/@VersoVivoEditora" target="_blank" rel="noopener" aria-label="YouTube Verso Vivo Editora"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" class="f"/></svg><span>YouTube</span></a>
+      <a href="https://www.tiktok.com/@versvovivo" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 2.5 2.3 4 5 4.3"/></svg><span>TikTok</span></a>
+      <a href="https://apps.apple.com/br/app/id6830327976" target="_blank" rel="noopener" aria-label="App na App Store"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 18.5h3"/></svg><span>App iPhone</span></a>
+    </div>
+      <p class="mini"><a href="/redes">Todas as redes</a></p>
     </div>
     <footer>
       <p><b>Editora Verso Vivo</b> · Jogos, catecismos e materiais para aprender a Bíblia.</p>
