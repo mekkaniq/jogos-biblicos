@@ -97,7 +97,7 @@
   // Data de Brasília, e não a do aparelho: todo mundo abre a mesma porta no mesmo dia (virada à meia-noite de Brasília).
   // Usa meio-dia local para não depender de horário de verão.
   function brasilia() { const p = {}; new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date()).forEach(x => p[x.type] = x.value); return new Date(+p.year, +p.month - 1, +p.day, 12); }
-  function advNow() { try { const o = (window.__BETA || window.__TESTE) && localStorage.getItem('adv-hoje'); if (o) return new Date(o + 'T12:00:00'); } catch (e) { } return brasilia(); }
+  function advNow() { try { const o = window.__BETA && localStorage.getItem('adv-hoje'); if (o) return new Date(o + 'T12:00:00'); } catch (e) { } return brasilia(); }
   function dayDate(d) { const now = advNow(); let y = now.getFullYear(); if (now.getMonth() < 10) y -= 1; return new Date(y, d.m - 1, d.d); } // jan a out: o Advento que passou
   const isOpen = d => advNow() >= dayDate(d);
   const isToday = d => { const a = advNow(), b = dayDate(d); return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate(); };
@@ -192,8 +192,7 @@
     const stopBg = startShader(), stopSnow = startSnow(), stop = () => { stopBg(); stopSnow(); }; document.documentElement.classList.add('nt-on');
     const stories = window.NATAL_DATA.stories, s = st(), c = cl();
     const open = window.__ntOpen || '';
-    const draws = window.COLORIR_DATA.items.filter(x => x.t === 4);
-    const doneS = stories.filter(x => s.stickers[x.id]).length, doneD = draws.filter(x => (c.done || {})[x.n]).length;
+    const doneS = stories.filter(x => s.stickers[x.id]).length;
     el.innerHTML = `
       <div class="topbar"><button class="icon-btn" data-back="#/" aria-label="Voltar">${I.back}</button><div class="ttl"><b>EDIÇÃO DE NATAL</b><small>Caminho até Belém</small></div><span style="width:44px"></span></div>
       <div class="nt-heroW"><section class="nt-hero"><i class="nt-glow"></i><div class="nt-art"><img class="nt-star" src="natal-estrela.webp" alt="" draggable="false"><img class="nt-crib" src="natal-manjedoura.webp" alt="Manjedoura iluminada" draggable="false"></div>
@@ -202,12 +201,6 @@
         <small>Sem pressa e sem contagem de dias: siga no seu ritmo.</small></section></div>
       ${mapHTML(s)}
       ${calendarHTML(s)}
-      <div class="nt-tabs">
-        <button class="nt-tab ${open === 'd' ? 'on' : ''}" data-tab="d" aria-expanded="${open === 'd'}"><span class="nt-ti">${NI.palette}</span><span class="nt-tt"><b>Desenhos para colorir</b><small>${doneD} de ${draws.length} prontos</small></span><i>▾</i></button>
-        <div class="nt-panel" data-panel="d" ${open === 'd' ? '' : 'hidden'}>
-          <div class="nt-draws">${draws.map(x => `<button class="nt-draw ${(c.done || {})[x.n] ? 'ok' : ''}" data-go="#/colorir/${x.n}"><span class="nt-th"><img src="${(c.p && c.p[x.n] && c.p[x.n].th) || 'colorir-' + x.n + '.th.webp'}" alt="" loading="lazy">${(c.done || {})[x.n] ? '<em>✓ Pronto</em>' : (c.p && c.p[x.n] && Object.keys(c.p[x.n].r || {}).length) ? '<em class="wip">Pintando</em>' : ''}</span><b>${esc(x.nome)}</b><small>${esc(x.ref)}</small></button>`).join('')}</div>
-        </div>
-      </div>
       <p class="nt-foot">Todas as histórias apontam para Jesus, o Salvador que Deus prometeu e enviou por amor a nós.</p>`;
     el.addEventListener('click', e => {
       const b = e.target.closest('[data-back]'); if (b) { go(b.dataset.back); return; }
